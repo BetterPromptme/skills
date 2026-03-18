@@ -26,9 +26,9 @@ jobs:
     runs-on: ubuntu-latest
     environment: ${{ matrix.environment }}
     if: >-
-      github.event_name == 'schedule' ||
+      ${{ github.event_name == 'schedule' ||
       github.event.inputs.environment == '' ||
-      github.event.inputs.environment == matrix.environment
+      github.event.inputs.environment == matrix.environment }}
     steps:
       - uses: actions/checkout@v4
         with:
