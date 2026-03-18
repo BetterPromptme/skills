@@ -1,7 +1,7 @@
 import { $ } from "bun";
-import { buildSkillmd, type BuildSkillmdParams } from "./skillmd/build-skillmd";
 import { mkdir } from "node:fs/promises";
 import { join } from "node:path";
+import { buildSkillmd, type BuildSkillmdParams } from "./skillmd/build-skillmd";
 
 const BACKEND_URL = process.env.BACKEND_URL;
 const INTERNAL_API_SECRET = process.env.INTERNAL_API_SECRET;
@@ -52,7 +52,7 @@ if (!response.ok) {
   process.exit(1);
 }
 
-const { rows } = (await response.json()) as { rows: BuildSkillmdParams[] };
+const { data: { rows } } = (await response.json()) as { data: { rows: BuildSkillmdParams[] } };
 console.log(`Found ${rows.length} pending skills`);
 
 if (rows.length === 0) {
