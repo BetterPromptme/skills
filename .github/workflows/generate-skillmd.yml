@@ -1,15 +1,15 @@
 name: Generate SKILL.md files
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
       environment:
-        description: 'Environment to run (leave empty for both)'
+        description: "Environment to run (leave empty for both)"
         required: false
         type: choice
         options:
-          - ''
+          - ""
           - staging
           - production
 concurrency:
