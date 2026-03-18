@@ -18,17 +18,26 @@ concurrency:
 permissions:
   contents: write
 jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      environments: ${{ steps.set-matrix.outputs.environments }}
+    steps:
+      - id: set-matrix
+        run: |
+          if [[ "${{ github.event_name }}" == "schedule" ]] || [[ -z "${{ github.event.inputs.environment }}" ]]; then
+            echo 'environments=["staging","production"]' >> "$GITHUB_OUTPUT"
+          else
+            echo 'environments=["${{ github.event.inputs.environment }}"]' >> "$GITHUB_OUTPUT"
+          fi
   generate:
+    needs: setup
     strategy:
       max-parallel: 1
       matrix:
-        environment: [staging, production]
+        environment: ${{ fromJSON(needs.setup.outputs.environments) }}
     runs-on: ubuntu-latest
     environment: ${{ matrix.environment }}
-    if: >-
-      github.event_name == 'schedule' ||
-      github.event.inputs.environment == '' ||
-      github.event.inputs.environment == matrix.environment
     steps:
       - uses: actions/checkout@v4
         with:
