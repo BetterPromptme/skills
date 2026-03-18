@@ -41,7 +41,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
           fetch-depth: 0
       - uses: oven-sh/setup-bun@v2
       - run: cd builder && bun install
