@@ -30,8 +30,11 @@ const REPO = "BetterPromptme/skills";
 await $`git config user.name "skillmd-bot"`;
 await $`git config user.email "skillmd-bot@betterprompt.me"`;
 
+// Detect current branch
+const BRANCH = (await $`git rev-parse --abbrev-ref HEAD`.text()).trim();
+
 // Pull latest to avoid push conflicts
-const pull = await $`git pull --rebase origin main`.quiet().nothrow();
+const pull = await $`git pull --rebase origin ${BRANCH}`.quiet().nothrow();
 if (pull.exitCode !== 0) {
   await $`git rebase --abort`.nothrow();
   console.error("Failed to pull latest, aborting");
@@ -112,7 +115,7 @@ if (results.length === 0) {
 }
 
 // Pull again before push in case remote advanced
-const prePush = await $`git pull --rebase origin main`.quiet().nothrow();
+const prePush = await $`git pull --rebase origin ${BRANCH}`.quiet().nothrow();
 if (prePush.exitCode !== 0) {
   await $`git rebase --abort`.nothrow();
   console.error("Failed to rebase before push, aborting");
@@ -121,7 +124,7 @@ if (prePush.exitCode !== 0) {
 
 // Push all commits
 console.log(`Pushing ${results.length} commits...`);
-await $`git push origin main`;
+await $`git push origin ${BRANCH}`;
 
 // Write URLs back to backend
 console.log("Writing URLs to backend...");
