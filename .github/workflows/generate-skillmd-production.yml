@@ -1,7 +1,7 @@
 name: "Generate SKILL.md files (production)"
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "15 * * * *"
 concurrency:
   group: skillmd-gen
   cancel-in-progress: false
