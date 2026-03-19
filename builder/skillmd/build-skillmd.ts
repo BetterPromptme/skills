@@ -8,7 +8,7 @@ import type {
   VariableInputMetadata,
 } from "../types/input-metadata";
 import { INPUT_BLOCK_TYPE } from "../types/input-type";
-import template from "../../SKILL_TEMPLATE.md" with { type: "text" };
+import template from "../../template/SKILL.md" with { type: "text" };
 
 Handlebars.registerHelper("pluralize", function (count, singular, plural) {
   return count === 1 ? singular : plural;
