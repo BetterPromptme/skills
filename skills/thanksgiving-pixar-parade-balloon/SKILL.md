@@ -1,0 +1,90 @@
+---
+name: thanksgiving-pixar-parade-balloon
+description: This prompt instructs the AI to generate a polished, Pixar-style 3D cinematic parade illustration set in bright daylight, featuring a giant floating balloon shaped like a specified animal and held by a specified group of joyful, expressive animal characters below. It defines the desired look (high-end rendering, realistic materials, soft global illumination, depth of field, vibrant colors, confetti, and lively city atmosphere) while enforcing constraints like avoiding humans, brands, and copyrighted characters, resulting in a family-safe, whimsical, story-ready scene suitable for animation concepts or social content.
+skillVersionId: 019ac894-acd6-72e9-b456-605104713b81
+---
+
+## What it does
+
+This prompt instructs the AI to generate a polished, Pixar-style 3D cinematic parade illustration set in bright daylight, featuring a giant floating balloon shaped like a specified animal and held by a specified group of joyful, expressive animal characters below. It defines the desired look (high-end rendering, realistic materials, soft global illumination, depth of field, vibrant colors, confetti, and lively city atmosphere) while enforcing constraints like avoiding humans, brands, and copyrighted characters, resulting in a family-safe, whimsical, story-ready scene suitable for animation concepts or social content.
+
+> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+
+## Inputs
+
+
+### textInputs
+
+Pass each text input using `--input <key>=<value>` flags.
+
+| Variable key | Required? | Description | Defaults |
+| --- | ---: | --- | --- |
+| `Balloon_animal` | Optional | The creature the giant parade balloon should resemble  | `Poodle dog` |
+| `Balloon_holders` | Optional | The group of animals holding the balloon below | `Dog, cat, bunny, snake, bird,...` |
+
+
+
+### Models and options
+
+This skill's modality is: **`image`**.
+
+To discover which `model` values you can use (and which `options` keys/values are valid for each model), run:
+
+```bash
+betterprompt resources --models-only --json
+```
+
+Then filter the returned JSON array to entries where `modality` is `"image"`.
+
+## How to run
+
+### Step 1: Collect inputs
+
+First, run `betterprompt resources --models-only --json` and filter to `modality: "image"` to discover valid models and available options:
+
+```bash
+betterprompt resources --models-only --json
+```
+
+Use only the models and option values that appear in the filtered results.
+
+Then collect all inputs from the human:
+
+- Optional text inputs (use defaults if not provided by the human):
+    - `Balloon_animal` (default: `Poodle dog`)
+  - `Balloon_holders` (default: `Dog, cat, bunny, snake, bird,...`)
+- Optional: model and options.
+  - Present the human with the default model **`gemini-3-pro-image-preview`** and its available options. Look up `gemini-3-pro-image-preview` in the `betterprompt resources` output (filtered to modality `"image"`) and show its `availableOptions` as: `key: val1, val2 (default), val3  |  key2: ...`. Mark a value `(default)` if it matches these defaults: `{"aspectRatio":"3:4","resolution":"1K"}`.
+  - If the human does not specify, defaults are used: model `gemini-3-pro-image-preview`, options `{"aspectRatio":"3:4","resolution":"1K"}`. Other models from the resources call are also available.
+
+
+### Step 2: Run via BetterPrompt CLI
+
+Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ac894-acd6-72e9-b456-605104713b81`).
+
+Command form:
+
+```bash
+betterprompt generate 019ac894-acd6-72e9-b456-605104713b81 \
+  [--input <key>=<value>] \
+  [--model <model>] \
+  [--options <options JSON>] \
+  [--json]
+```
+
+Notes:
+
+- Pass each text input as a separate `--input <key>=<value>` flag.
+- If the human does **not** mention a model, **omit** `--model` and BetterPrompt will use the default model: **`gemini-3-pro-image-preview`**.
+- If the human does **not** mention options, **omit** `--options` and BetterPrompt will use the default options: **`{"aspectRatio":"3:4","resolution":"1K"}`**.
+- If the run times out, the response will include a `runId` you can use to fetch the result later.
+
+Example (using defaults shown above):
+
+```bash
+betterprompt generate 019ac894-acd6-72e9-b456-605104713b81 \
+  --input 'Balloon_animal=Poodle dog' \
+  --input 'Balloon_holders=Dog, cat, bunny, snake, bird,...' \
+  --model gemini-3-pro-image-preview \
+  --options '{"aspectRatio":"3:4","resolution":"1K"}'
+```
