@@ -1,0 +1,92 @@
+---
+name: ugc-zoom-in-skin-texture-beauty-shot
+description: This prompt instructs an image generation/editing system to take two user-supplied images—a portrait of a specific person and a photo of a beauty product—and create a high-resolution, extreme close-up UGC-style beauty visual in which the person’s exact identity and facial features are preserved while the product is reproduced with precise, readable label and identical packaging details. The resulting image places the product held near the face, includes a realistic serum droplet application on the cheek/under-eye area that matches the product’s applicator and droplet look, and uses soft natural studio lighting with a neutral minimal background and a color palette aligned to the product photo.
+skillVersionId: 019b11f7-4b45-765f-a8f4-8926e150b81f
+---
+
+## What it does
+
+This prompt instructs an image generation/editing system to take two user-supplied images—a portrait of a specific person and a photo of a beauty product—and create a high-resolution, extreme close-up UGC-style beauty visual in which the person’s exact identity and facial features are preserved while the product is reproduced with precise, readable label and identical packaging details. The resulting image places the product held near the face, includes a realistic serum droplet application on the cheek/under-eye area that matches the product’s applicator and droplet look, and uses soft natural studio lighting with a neutral minimal background and a color palette aligned to the product photo.
+
+> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+
+## Inputs
+
+
+
+### imageInputs
+
+This prompt requires **exactly 2 images**. You **must pass exactly 2 image flags** (no more, no fewer), in the order matching the descriptions below.
+
+| Index | Required | Description | Allowed CLI flags |
+| ---: | ---: | --- | --- |
+| 1 | Yes | Upload your clear portrait photo. | `--image-input-url <url>` or `--image-input-base64 <base64>` or `--image-input-path <absolute path to image>` |
+| 2 | Yes | The most clear product image, showing the exact bottle, logo, color, label layout, typography, cap shape, transparency, and texture | `--image-input-url <url>` or `--image-input-base64 <base64>` or `--image-input-path <absolute path to image>` |
+
+
+### Models and options
+
+This skill's modality is: **`image`**.
+
+To discover which `model` values you can use (and which `options` keys/values are valid for each model), run:
+
+```bash
+betterprompt resources --models-only --json
+```
+
+Then filter the returned JSON array to entries where `modality` is `"image"`.
+
+## How to run
+
+### Step 1: Collect inputs
+
+First, run `betterprompt resources --models-only --json` and filter to `modality: "image"` to discover valid models and available options:
+
+```bash
+betterprompt resources --models-only --json
+```
+
+Use only the models and option values that appear in the filtered results.
+
+Then collect all inputs from the human:
+
+- Required images:
+  - **Exactly 2** images: image 1 (Upload your clear portrait photo.) and image 2 (The most clear product image, showing the exact bottle, logo, color, label layout, typography, cap shape, transparency, and texture). Images must be provided in this order.
+- Optional: model and options.
+  - Present the human with the default model **`gemini-3-pro-image-preview`** and its available options. Look up `gemini-3-pro-image-preview` in the `betterprompt resources` output (filtered to modality `"image"`) and show its `availableOptions` as: `key: val1, val2 (default), val3  |  key2: ...`. Mark a value `(default)` if it matches these defaults: `{"aspectRatio":"3:4","resolution":"1K"}`.
+  - If the human does not specify, defaults are used: model `gemini-3-pro-image-preview`, options `{"aspectRatio":"3:4","resolution":"1K"}`. Other models from the resources call are also available.
+
+If the required images are missing, **ask the human for what's missing**. Do not assume or fabricate values. Tell the human: **"Please provide images in this order: image 1 (Upload your clear portrait photo.) and image 2 (The most clear product image, showing the exact bottle, logo, color, label layout, typography, cap shape, transparency, and texture)"**.
+
+### Step 2: Run via BetterPrompt CLI
+
+Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b11f7-4b45-765f-a8f4-8926e150b81f`).
+
+Command form:
+
+```bash
+betterprompt generate 019b11f7-4b45-765f-a8f4-8926e150b81f \
+  [--image-input-url <url>] \
+  [--image-input-base64 <base64>] \
+  [--image-input-path <absolute path to image>] \
+  [--model <model>] \
+  [--options <options JSON>] \
+  [--json]
+```
+
+Notes:
+
+- Pass each image using one of `--image-input-url`, `--image-input-base64`, or `--image-input-path`, in the order matching the imageInputs descriptions (image 1 first, then image 2, etc.).
+- If the human does **not** mention a model, **omit** `--model` and BetterPrompt will use the default model: **`gemini-3-pro-image-preview`**.
+- If the human does **not** mention options, **omit** `--options` and BetterPrompt will use the default options: **`{"aspectRatio":"3:4","resolution":"1K"}`**.
+- If the run times out, the response will include a `runId` you can use to fetch the result later.
+
+Example (using defaults shown above):
+
+```bash
+betterprompt generate 019b11f7-4b45-765f-a8f4-8926e150b81f \
+  --image-input-url https://example.com/image1.png \
+  --image-input-path /path/to/image2.png \
+  --model gemini-3-pro-image-preview \
+  --options '{"aspectRatio":"3:4","resolution":"1K"}'
+```
