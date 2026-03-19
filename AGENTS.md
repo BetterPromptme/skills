@@ -16,7 +16,8 @@ The pipeline supports **two environments** (staging and production) with separat
 - `skills/` — Output directory for **production** SKILL.md files (`skills/<name>/SKILL.md`). Treated as build artifacts.
 - `.testing/staging/skills/` — Output directory for **staging** SKILL.md files (`.testing/staging/skills/<name>/SKILL.md`). Kept separate to avoid slug collisions with production.
 - `builder/` — TypeScript/Bun project containing the build pipeline (`index.ts`) and the skillmd rendering logic (`skillmd/build-skillmd.ts`).
-- `.github/workflows/generate-skillmd.yml` — GitHub Actions workflow using a matrix strategy over `[staging, production]` environments.
+- `.github/workflows/generate-skillmd-staging.yml` — GitHub Actions workflow for **staging** (runs every 5 min on `self-hosted` runner).
+- `.github/workflows/generate-skillmd-production.yml` — GitHub Actions workflow for **production** (runs every 15 min on `ubuntu-latest`).
 
 ## Multi-Environment Setup
 
@@ -29,9 +30,9 @@ skills/<name>/SKILL.md                        # production
 
 Staging uses a dot-prefixed `.testing/` directory to stay hidden by convention. The structure is extensible for future environments (e.g., `.testing/dev/skills/`).
 
-### Execution order
+### Workflow scheduling
 
-The workflow matrix runs with `max-parallel: 1` — staging runs first (canary), then production. A global concurrency group (`skillmd-gen`) prevents overlapping workflow runs.
+Each environment has its own workflow file with an independent cron schedule. A shared concurrency group (`skillmd-gen`) prevents simultaneous runs across environments. Individual workflows can be disabled from the GitHub Actions UI.
 
 ### GitHub Environments
 
