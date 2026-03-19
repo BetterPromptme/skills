@@ -61,6 +61,7 @@ if (rows.length === 0) {
 }
 
 const results: { skillVersionId: string; skillmdUrl: string }[] = [];
+let hasNewCommits = false;
 
 for (const skill of rows) {
   try {
@@ -77,13 +78,26 @@ for (const skill of rows) {
     // Check if there are staged changes (exit 0 = no changes)
     const diff = await $`git diff --cached --quiet`.nothrow();
     if (diff.exitCode === 0) {
-      console.log(`No changes for ${skill.name}, skipping`);
+      // File already committed — look up existing commit to retry write-urls
+      const existingSha = (await $`git log -1 --format=%H -- ${skillPath}`.text()).trim();
+      if (existingSha) {
+        const encodedName = encodeURIComponent(skill.name);
+        const pathPrefix = ENVIRONMENT === "production"
+          ? "skills"
+          : `.testing/${ENVIRONMENT}/skills`;
+        const skillmdUrl = `https://raw.githubusercontent.com/${REPO}/${existingSha}/${pathPrefix}/${encodedName}/SKILL.md`;
+        results.push({ skillVersionId: skill.skillVersionId, skillmdUrl });
+        console.log(`No changes for ${skill.name}, retrying write-url (${existingSha.slice(0, 7)})`);
+      } else {
+        console.log(`No changes for ${skill.name}, skipping`);
+      }
       continue;
     }
 
     // Commit
     const envTag = ENVIRONMENT === "production" ? "" : `[${ENVIRONMENT}] `;
     await $`git commit -m ${`feat(skills): ${envTag}generate ${skill.name}`}`;
+    hasNewCommits = true;
 
     // Get commit SHA
     const sha = (await $`git rev-parse HEAD`.text()).trim();
@@ -108,22 +122,23 @@ for (const skill of rows) {
   }
 }
 
+if (hasNewCommits) {
+  // Pull again before push in case remote advanced
+  const prePush = await $`git pull --rebase origin ${BRANCH}`.quiet().nothrow();
+  if (prePush.exitCode !== 0) {
+    await $`git rebase --abort`.nothrow();
+    console.error("Failed to rebase before push, aborting");
+    process.exit(1);
+  }
+
+  console.log(`Pushing commits...`);
+  await $`git push origin ${BRANCH}`;
+}
+
 if (results.length === 0) {
-  console.log("No new commits to push");
+  console.log("No results to write");
   process.exit(0);
 }
-
-// Pull again before push in case remote advanced
-const prePush = await $`git pull --rebase origin ${BRANCH}`.quiet().nothrow();
-if (prePush.exitCode !== 0) {
-  await $`git rebase --abort`.nothrow();
-  console.error("Failed to rebase before push, aborting");
-  process.exit(1);
-}
-
-// Push all commits
-console.log(`Pushing ${results.length} commits...`);
-await $`git push origin ${BRANCH}`;
 
 // Write URLs back to backend
 console.log("Writing URLs to backend...");
