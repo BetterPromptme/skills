@@ -16,6 +16,9 @@ Handlebars.registerHelper("pluralize", function (count, singular, plural) {
 
 export interface BuildSkillmdParams {
   name: string;
+  /**
+   * @deprecated Use whatItDoes instead
+   */
   description: string;
   skillVersionId: string;
   whatItDoes: string;
@@ -239,7 +242,8 @@ export function buildSkillmd(params: BuildSkillmdParams): string {
   const compiled = Handlebars.compile(template);
   return compiled({
     name,
-    description,
+    // Decisions: use whatItDoes instead of description
+    description: whatItDoes,
     skillVersionId,
     whatItDoes,
     hasTextInputs,
