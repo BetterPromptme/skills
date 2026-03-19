@@ -19,7 +19,7 @@ permissions:
   contents: write
 jobs:
   setup:
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     outputs:
       environments: ${{ steps.set-matrix.outputs.environments }}
     steps:
@@ -36,7 +36,7 @@ jobs:
       max-parallel: 1
       matrix:
         environment: ${{ fromJSON(needs.setup.outputs.environments) }}
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-4vcpu-ubuntu-2404
     environment: ${{ matrix.environment }}
     steps:
       - uses: actions/checkout@v4
