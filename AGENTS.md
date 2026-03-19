@@ -12,7 +12,7 @@ The pipeline supports **two environments** (staging and production) with separat
 
 ## Architecture
 
-- `SKILL_TEMPLATE.md` — Handlebars template with `{{{variable}}}` placeholders and `{{#if}}`/`{{#each}}` blocks. Single source of truth for the generated skill format.
+- `template/SKILL.md` — Handlebars template with `{{{variable}}}` placeholders and `{{#if}}`/`{{#each}}` blocks. Single source of truth for the generated skill format.
 - `skills/` — Output directory for **production** SKILL.md files (`skills/<name>/SKILL.md`). Treated as build artifacts.
 - `.testing/staging/skills/` — Output directory for **staging** SKILL.md files (`.testing/staging/skills/<name>/SKILL.md`). Kept separate to avoid slug collisions with production.
 - `builder/` — TypeScript/Bun project containing the build pipeline (`index.ts`) and the skillmd rendering logic (`skillmd/build-skillmd.ts`).
