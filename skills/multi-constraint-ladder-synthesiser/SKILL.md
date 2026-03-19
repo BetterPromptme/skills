@@ -1,0 +1,104 @@
+---
+name: multi-constraint-ladder-synthesiser
+description: This prompt instructs the AI to act as an expert systems designer and produce a structured solution to a provided problem while satisfying multiple explicit constraints and stated assumptions. The expected outcome is a concise final plan within a word limit, a bullet-point mapping that demonstrates how each constraint is met by specific parts of the plan, and a short section outlining risks, trade-offs, or assumptions made to reconcile competing requirements.
+skillVersionId: 0197eea4-f097-7604-ba6f-7a33533cb475
+---
+
+## What it does
+
+This prompt instructs the AI to act as an expert systems designer and produce a structured solution to a provided problem while satisfying multiple explicit constraints and stated assumptions. The expected outcome is a concise final plan within a word limit, a bullet-point mapping that demonstrates how each constraint is met by specific parts of the plan, and a short section outlining risks, trade-offs, or assumptions made to reconcile competing requirements.
+
+> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+
+## Inputs
+
+
+### textInputs
+
+Pass each text input using `--input <key>=<value>` flags.
+
+| Variable key | Required? | Description | Defaults |
+| --- | ---: | --- | --- |
+| `problem` | Required |  | (none) |
+| `Assumptions` | Required |  | (none) |
+| `constraint1` | Required |  | (none) |
+| `constraint2` | Required |  | (none) |
+| `constraint3` | Required |  | (none) |
+| `constraint4` | Required |  | (none) |
+
+
+
+### Models and options
+
+This skill's modality is: **`text`**.
+
+To discover which `model` values you can use (and which `options` keys/values are valid for each model), run:
+
+```bash
+betterprompt resources --models-only --json
+```
+
+Then filter the returned JSON array to entries where `modality` is `"text"`.
+
+## How to run
+
+### Step 1: Collect inputs
+
+First, run `betterprompt resources --models-only --json` and filter to `modality: "text"` to discover valid models and available options:
+
+```bash
+betterprompt resources --models-only --json
+```
+
+Use only the models and option values that appear in the filtered results.
+
+Then collect all inputs from the human:
+
+
+- Required text inputs:
+    - `problem`
+  - `Assumptions`
+  - `constraint1`
+  - `constraint2`
+  - `constraint3`
+  - `constraint4`
+- Optional: model and options.
+  - Present the human with the default model **`gpt-4.1-mini`** and its available options. Look up `gpt-4.1-mini` in the `betterprompt resources` output (filtered to modality `"text"`) and show its `availableOptions` as: `key: val1, val2 (default), val3  |  key2: ...`. Mark a value `(default)` if it matches these defaults: `{}`.
+  - If the human does not specify, defaults are used: model `gpt-4.1-mini`, options `{}`. Other models from the resources call are also available.
+
+If any required text input is missing, **ask the human for what's missing**. Do not assume or fabricate values.
+
+### Step 2: Run via BetterPrompt CLI
+
+Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197eea4-f097-7604-ba6f-7a33533cb475`).
+
+Command form:
+
+```bash
+betterprompt generate 0197eea4-f097-7604-ba6f-7a33533cb475 \
+  [--input <key>=<value>] \
+  [--model <model>] \
+  [--options <options JSON>] \
+  [--json]
+```
+
+Notes:
+
+- Pass each text input as a separate `--input <key>=<value>` flag.
+- If the human does **not** mention a model, **omit** `--model` and BetterPrompt will use the default model: **`gpt-4.1-mini`**.
+- If the human does **not** mention options, **omit** `--options` and BetterPrompt will use the default options: **`{}`**.
+- If the run times out, the response will include a `runId` you can use to fetch the result later.
+
+Example (using defaults shown above):
+
+```bash
+betterprompt generate 0197eea4-f097-7604-ba6f-7a33533cb475 \
+  --input problem=<value> \
+  --input Assumptions=<value> \
+  --input constraint1=<value> \
+  --input constraint2=<value> \
+  --input constraint3=<value> \
+  --input constraint4=<value> \
+  --model gpt-4.1-mini \
+  --options '{}'
+```
