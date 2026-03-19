@@ -60,7 +60,7 @@ if (rows.length === 0) {
   process.exit(0);
 }
 
-const results: { skillVersionId: string; skillmdUrl: string; skillmd: string }[] = [];
+const results: { skillVersionId: string; skillmdUrl: string }[] = [];
 
 for (const skill of rows) {
   try {
@@ -98,7 +98,6 @@ for (const skill of rows) {
     results.push({
       skillVersionId: skill.skillVersionId,
       skillmdUrl,
-      skillmd,
     });
 
     console.log(`Committed ${skill.name} (${sha.slice(0, 7)})`);
