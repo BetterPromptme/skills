@@ -1,7 +1,7 @@
-name: Generate SKILL.md files
+name: "Generate SKILL.md files (production)"
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/30 * * * *"
 concurrency:
   group: skillmd-gen
   cancel-in-progress: false
@@ -9,16 +9,8 @@ permissions:
   contents: write
 jobs:
   generate:
-    strategy:
-      max-parallel: 1
-      matrix:
-        include:
-          - environment: staging
-            runner: self-hosted
-          - environment: production
-            runner: ubuntu-latest
-    runs-on: ${{ matrix.runner }}
-    environment: ${{ matrix.environment }}
+    runs-on: ubuntu-latest
+    environment: production
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,4 +22,4 @@ jobs:
         env:
           BACKEND_URL: ${{ secrets.BACKEND_URL }}
           INTERNAL_API_SECRET: ${{ secrets.INTERNAL_API_SECRET }}
-          ENVIRONMENT: ${{ matrix.environment }}
+          ENVIRONMENT: production
