@@ -2,41 +2,22 @@ name: Generate SKILL.md files
 on:
   schedule:
     - cron: "*/15 * * * *"
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: "Environment to run (leave empty for both)"
-        required: false
-        type: choice
-        options:
-          - ""
-          - staging
-          - production
 concurrency:
   group: skillmd-gen
   cancel-in-progress: false
 permissions:
   contents: write
 jobs:
-  setup:
-    runs-on: ubuntu-latest
-    outputs:
-      environments: ${{ steps.set-matrix.outputs.environments }}
-    steps:
-      - id: set-matrix
-        run: |
-          if [[ "${{ github.event_name }}" == "schedule" ]] || [[ -z "${{ github.event.inputs.environment }}" ]]; then
-            echo 'environments=["staging","production"]' >> "$GITHUB_OUTPUT"
-          else
-            echo 'environments=["${{ github.event.inputs.environment }}"]' >> "$GITHUB_OUTPUT"
-          fi
   generate:
-    needs: setup
     strategy:
       max-parallel: 1
       matrix:
-        environment: ${{ fromJSON(needs.setup.outputs.environments) }}
-    runs-on: ubuntu-latest
+        include:
+          - environment: staging
+            runner: self-hosted
+          - environment: production
+            runner: ubuntu-latest
+    runs-on: ${{ matrix.runner }}
     environment: ${{ matrix.environment }}
     steps:
       - uses: actions/checkout@v4
