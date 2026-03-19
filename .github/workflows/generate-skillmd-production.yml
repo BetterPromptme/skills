@@ -1,0 +1,25 @@
+name: "Generate SKILL.md files (production)"
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+concurrency:
+  group: skillmd-gen
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: oven-sh/setup-bun@v2
+      - run: cd builder && bun install
+      - run: cd builder && bun run index.ts
+        env:
+          BACKEND_URL: ${{ secrets.BACKEND_URL }}
+          INTERNAL_API_SECRET: ${{ secrets.INTERNAL_API_SECRET }}
+          ENVIRONMENT: production
