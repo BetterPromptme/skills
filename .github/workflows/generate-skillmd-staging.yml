@@ -1,7 +1,7 @@
 name: "Generate SKILL.md files (staging)"
 on:
   schedule:
-    - cron: "15 * * * *"
+    - cron: "45 * * * *"
 concurrency:
   group: skillmd-gen-staging
   cancel-in-progress: false
@@ -9,7 +9,7 @@ permissions:
   contents: write
 jobs:
   generate:
-    timeout-minutes: 5
+    timeout-minutes: 2
     runs-on: self-hosted
     environment: staging
     steps:
