@@ -70,7 +70,7 @@ This separation is what makes skills safe and easy to verify. The SKILL.md you i
 - Asks you for inputs (text values, images, model preferences)
 - Runs a single CLI command: `betterprompt generate <id> --input key=value ...`
 
-There's nothing else to audit. The generation is fully isolated on BetterPrompt's side, and the instruction is just structured markdown.
+There's nothing else to audit. The generation is **fully isolated** on BetterPrompt's side, and the instruction is just structured markdown.
 
 ## What is BetterPrompt?
 
