@@ -15,8 +15,8 @@ if (!INTERNAL_API_SECRET) {
   console.error("INTERNAL_API_SECRET env var is required");
   process.exit(1);
 }
-if (!ENVIRONMENT || !["production", "staging"].includes(ENVIRONMENT)) {
-  console.error("ENVIRONMENT env var must be 'production' or 'staging'");
+if (!ENVIRONMENT || !["production", "staging", "local"].includes(ENVIRONMENT)) {
+  console.error("ENVIRONMENT env var must be 'production' or 'staging' or 'local'");
   process.exit(1);
 }
 
