@@ -32,7 +32,7 @@ Staging uses a dot-prefixed `.testing/` directory to stay hidden by convention. 
 
 ### Workflow scheduling
 
-Each environment has its own workflow file with an independent cron schedule. A shared concurrency group (`skillmd-gen`) prevents simultaneous runs across environments. Individual workflows can be disabled from the GitHub Actions UI.
+Each environment has its own workflow file with an independent cron schedule. Each environment uses its own concurrency group (`skillmd-gen-staging`, `skillmd-gen-production`) to prevent overlapping runs within the same environment without blocking the other. The staging job has a 5-minute timeout to prevent hanging when the self-hosted runner is unavailable. Individual workflows can be disabled from the GitHub Actions UI.
 
 ### GitHub Environments
 
