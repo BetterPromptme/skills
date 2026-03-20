@@ -3,7 +3,7 @@ on:
   schedule:
     - cron: "15 * * * *"
 concurrency:
-  group: skillmd-gen
+  group: skillmd-gen-production
   cancel-in-progress: false
 permissions:
   contents: write
