@@ -1,12 +1,12 @@
 ---
 name: travel-planner
-description: A detailed template-driven guide for creating comprehensive packing lists tailored to various trip parameters and conditions.
+description: This prompt instructs the AI to create a detailed, category-organized packing list in markdown for a trip, customized to the specified destination, trip duration, trip type, expected weather, and planned activities. The result is a comprehensive checklist with clear headings and relevant quantities that covers clothing, toiletries, electronics, medications, documents, and other essentials appropriate to the trip context.
 skillVersionId: 01979b27-a861-7873-9c35-0aecf965bf1c
 ---
 
 ## What it does
 
-This prompt instructs the AI to create a detailed, destination- and trip-specific packing list for a given duration, tailored to the trip type, expected weather, and planned activities. The result is a comprehensive checklist organized into clear markdown headings (e.g., Clothing, Toiletries, Electronics, Medications, Documents, Other Essentials) with suggested quantities where appropriate.
+This prompt instructs the AI to create a detailed, category-organized packing list in markdown for a trip, customized to the specified destination, trip duration, trip type, expected weather, and planned activities. The result is a comprehensive checklist with clear headings and relevant quantities that covers clothing, toiletries, electronics, medications, documents, and other essentials appropriate to the trip context.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
