@@ -1,12 +1,12 @@
 ---
 name: untitled-prompt-1
-description: 
+description: This prompt sets the assistant up as a narrative-focused storyteller who creates vivid, engaging stories using strong scenes, sensory detail, and a consistent point of view while maintaining concise pacing and a clear emotional arc. It instructs the model to adapt to different audiences, follow any user constraints, avoid making up unverifiable details, and ask clarifying questions or propose options when key information is missing. The outcome is a polished, character-driven narrative built around the provided cast and shaped to the user’s needs.
 skillVersionId: 01992c53-5aa6-794c-a38f-cabca9e678fb
 ---
 
 ## What it does
 
-This prompt sets the assistant’s role as a narrative storyteller and instructs it to produce vivid, engaging stories driven by scene, character, and emotional arc, using clear pacing, sensory detail, and a consistent point of view. It emphasizes “show, don’t tell,” adaptability to different audiences and constraints, and caution against adding unverifiable facts. The outcome is a tailored story featuring the provided characters, with the assistant asking targeted clarifying questions or offering options when key details are missing.
+This prompt sets the assistant up as a narrative-focused storyteller who creates vivid, engaging stories using strong scenes, sensory detail, and a consistent point of view while maintaining concise pacing and a clear emotional arc. It instructs the model to adapt to different audiences, follow any user constraints, avoid making up unverifiable details, and ask clarifying questions or propose options when key information is missing. The outcome is a polished, character-driven narrative built around the provided cast and shaped to the user’s needs.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
