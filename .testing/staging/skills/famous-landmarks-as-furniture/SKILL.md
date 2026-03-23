@@ -1,12 +1,12 @@
 ---
 name: famous-landmarks-as-furniture
-description: A creative depiction of renowned landmarks transformed into functional furniture pieces within a realistic living room setting.
+description: This prompt directs the AI to generate a photorealistic image of a chosen landmark redesigned as a fully functional, normally scaled piece of living-room furniture, emphasizing realistic materials, craftsmanship, and integration into a typical interior. If a main color is provided, the output will prioritize that color in the furniture’s design while keeping the scene detailed and believable.
 skillVersionId: 0197cf47-49dd-71e2-87b1-aa69d319da19
 ---
 
 ## What it does
 
-This prompt generates a photorealistic image of a well-known landmark designed as a fully functional, normally scaled piece of living-room furniture, emphasizing realistic materials and fine detail. It uses the provided landmark and furniture type, and optionally applies a specified main color to guide the overall appearance, resulting in a believable, detailed furniture object that retains recognizable architectural features of the landmark.
+This prompt directs the AI to generate a photorealistic image of a chosen landmark redesigned as a fully functional, normally scaled piece of living-room furniture, emphasizing realistic materials, craftsmanship, and integration into a typical interior. If a main color is provided, the output will prioritize that color in the furniture’s design while keeping the scene detailed and believable.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
