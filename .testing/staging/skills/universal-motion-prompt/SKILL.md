@@ -1,12 +1,12 @@
 ---
 name: universal-motion-prompt
-description: A prompt requesting an enhanced, more dynamic rendition of an existing visual while preserving its core composition, lighting, and mood.
+description: This prompt instructs the model to take a provided still image and enhance it with realistic, cinematic motion cues—such as subtle motion blur, wind-driven movement, light shifts, or gentle camera-like panning—while preserving the original composition, lighting, atmosphere, and mood. The outcome is an image that feels like a mid-action frame, energized and alive, without warping or altering the core subject or scene tone.
 skillVersionId: 019c9e11-7b81-76ec-be1d-e844927be6f0
 ---
 
 ## What it does
 
-This prompt directs an AI to animate a single still image into a lively, realistic-looking moment by preserving the original framing, lighting, and mood while adding subtle cinematic motion cues (e.g., motion blur, environmental movement, shifting light, or gentle camera motion). The outcome is a dynamic scene that feels captured mid-action and full of kinetic energy without altering or distorting the main subject or overall atmosphere.
+This prompt instructs the model to take a provided still image and enhance it with realistic, cinematic motion cues—such as subtle motion blur, wind-driven movement, light shifts, or gentle camera-like panning—while preserving the original composition, lighting, atmosphere, and mood. The outcome is an image that feels like a mid-action frame, energized and alive, without warping or altering the core subject or scene tone.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
