@@ -1,12 +1,12 @@
 ---
 name: note-summarization
-description: Create a concise bullet-point outline from a document that highlights actionable items and their deadlines.
+description: This prompt instructs the AI to take a provided document and convert it into a clear bullet-point outline, highlighting key points, actionable tasks, and assigning deadlines where they are stated or can be reasonably inferred from the text, producing a structured summary suitable for planning and follow-up.
 skillVersionId: 019974e9-c73c-73b6-aa8d-67022db7f216
 ---
 
 ## What it does
 
-This prompt instructs the AI to take a provided document and convert it into a clear, structured bullet-point outline that highlights the main points, extracts concrete action items, and assigns or infers deadlines where available, resulting in an organized, task-oriented summary suitable for planning and follow-up.
+This prompt instructs the AI to take a provided document and convert it into a clear bullet-point outline, highlighting key points, actionable tasks, and assigning deadlines where they are stated or can be reasonably inferred from the text, producing a structured summary suitable for planning and follow-up.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
