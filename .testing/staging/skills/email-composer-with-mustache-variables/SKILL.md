@@ -1,12 +1,12 @@
 ---
 name: email-composer-with-mustache-variables
-description: A prompt that instructs an email-drafting assistant to turn provided recipients and content into a polished, professional email, beginning with a friendly greeting and ending with a proper closing, outputting only the final email text.
+description: This prompt instructs the assistant to draft a polished, professional email addressed to the specified recipients using the provided content, improving clarity, grammar, and tone while adding an appropriate greeting and closing. The result is a ready-to-send email containing only the finalized message text without any placeholders or additional commentary.
 skillVersionId: 019999d8-4aea-7531-acbd-d3d80e8492b6
 ---
 
 ## What it does
 
-This prompt instructs the AI to draft a polished, professional email to specified recipients using provided content, refining grammar and tone for clarity and courtesy. The result is a complete email with an appropriate greeting and closing, output as final email text without placeholders or additional commentary.
+This prompt instructs the assistant to draft a polished, professional email addressed to the specified recipients using the provided content, improving clarity, grammar, and tone while adding an appropriate greeting and closing. The result is a ready-to-send email containing only the finalized message text without any placeholders or additional commentary.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
