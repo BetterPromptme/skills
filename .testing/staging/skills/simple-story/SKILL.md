@@ -1,12 +1,12 @@
 ---
 name: simple-story
-description: wqdqwedddd
+description: This prompt instructs the AI to generate a 100-word, mysterious short story centered on a specified main character, placing them in an evocative setting that reinforces the mood. The narrative must include a brief conflict or emotional beat that reveals character traits and conclude with a subtle twist or reflective ending, resulting in a compact, atmospheric vignette tailored to the provided character placeholder.
 skillVersionId: 019a4dab-0726-7263-b56d-37c4a6f49170
 ---
 
 ## What it does
 
-Generates a 100-word mysterious short story starring the specified main character, set in an evocative location that reinforces the mood. The narrative includes a brief conflict or emotional beat to reveal the character’s personality and concludes with a subtle twist or reflective ending.
+This prompt instructs the AI to generate a 100-word, mysterious short story centered on a specified main character, placing them in an evocative setting that reinforces the mood. The narrative must include a brief conflict or emotional beat that reveals character traits and conclude with a subtle twist or reflective ending, resulting in a compact, atmospheric vignette tailored to the provided character placeholder.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
