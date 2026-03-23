@@ -1,12 +1,12 @@
 ---
 name: high-fidelity-outfit-swap-generator
-description: Generate a high-fidelity, hyper-realistic composite that seamlessly transfers an item from one photo onto a person from another while preserving the subject’s identity and the garment’s detailed appearance in a studio-quality result.
+description: This prompt instructs the AI to create a hyper-realistic virtual try-on composite by keeping the person from the first image fully consistent while extracting and fitting the garment from the second image onto them. It directs the model to realistically drape and tension the fabric to match the wearer’s pose and body shape, preserve all garment textures and details, match lighting and add accurate contact shadows, and avoid altering any non-target clothing. The intended outcome is a seamless, high-end e-commerce catalog style image rendered at very high resolution with studio-quality, lifelike fabric and clean presentation.
 skillVersionId: 019cdb0e-da49-7422-9407-cb64620d9b2a
 ---
 
 ## What it does
 
-This prompt instructs the AI to create a high-fidelity virtual try-on by taking the person from the first reference image as the unchanged base and transferring the exact garment from the second image onto them. The model’s identity and physical features are preserved while the clothing is realistically wrapped to match pose and body shape, retaining precise texture details (color, stitching, logos, hardware) and aligning lighting with natural shadows and contact points. The result is a seamless, photorealistic, high-end studio catalog image where only the targeted clothing item is replaced and all other elements remain consistent.
+This prompt instructs the AI to create a hyper-realistic virtual try-on composite by keeping the person from the first image fully consistent while extracting and fitting the garment from the second image onto them. It directs the model to realistically drape and tension the fabric to match the wearer’s pose and body shape, preserve all garment textures and details, match lighting and add accurate contact shadows, and avoid altering any non-target clothing. The intended outcome is a seamless, high-end e-commerce catalog style image rendered at very high resolution with studio-quality, lifelike fabric and clean presentation.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
