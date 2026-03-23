@@ -1,12 +1,12 @@
 ---
 name: ultra-realistic-cinematic-portrait
-description: Provide guidance for generating a highly detailed, cinematic portrait of a photographed subject emphasizing dramatic lighting, motion blur, and textured wardrobe elements.
+description: This prompt directs the AI to generate an ultra-realistic, cinematic portrait based on the uploaded person, depicting them at night in an urban environment with windswept messy hair and a distressed black leather jacket. It specifies dynamic lighting from bright white train light streaks passing behind the subject, selectively illuminating the face and jacket while keeping the background in motion blur. The result is a dramatic, high-tension scene with strong contrast, realistic textures, and a film-like atmosphere.
 skillVersionId: 019cfb29-f242-7315-b0a7-ae82bc519894
 ---
 
 ## What it does
 
-This prompt directs an image-generation/editing model to create an ultra-realistic, cinematic night-time portrait based on an uploaded person, depicting them with windswept messy hair and a distressed black leather jacket. It specifies a dynamic urban scene with motion-blurred surroundings and bright white train light streaks passing behind the subject to intermittently highlight the face and jacket, resulting in a tense, dramatic, film-like image.
+This prompt directs the AI to generate an ultra-realistic, cinematic portrait based on the uploaded person, depicting them at night in an urban environment with windswept messy hair and a distressed black leather jacket. It specifies dynamic lighting from bright white train light streaks passing behind the subject, selectively illuminating the face and jacket while keeping the background in motion blur. The result is a dramatic, high-tension scene with strong contrast, realistic textures, and a film-like atmosphere.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
