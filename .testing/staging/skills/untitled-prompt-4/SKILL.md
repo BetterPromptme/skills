@@ -1,12 +1,12 @@
 ---
 name: untitled-prompt-4
-description: ok
+description: This prompt asks the AI to generate or describe an image featuring a cup placed in a forest setting, focusing on composing a nature scene where the cup is a clear subject among trees and foliage. The result is a forest-themed picture (or detailed visual description) that centers on the cup and conveys the atmosphere, lighting, and surroundings of the woodland environment.
 skillVersionId: 019b2bdd-bbbe-70bf-baf3-74194e44f2bf
 ---
 
 ## What it does
 
-This prompt asks the AI to generate an image depicting a cup placed in a forest setting, resulting in a forest scene where the cup is a clear focal subject amid natural elements like trees, foliage, and ambient outdoor lighting.
+This prompt asks the AI to generate or describe an image featuring a cup placed in a forest setting, focusing on composing a nature scene where the cup is a clear subject among trees and foliage. The result is a forest-themed picture (or detailed visual description) that centers on the cup and conveys the atmosphere, lighting, and surroundings of the woodland environment.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
