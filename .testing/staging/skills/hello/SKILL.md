@@ -1,12 +1,12 @@
 ---
 name: hello
-description: qwd
+description: This prompt asks the AI to look at the provided flower image and produce a clear, user-friendly description of what’s shown—identifying notable visual details such as the type or appearance of the flower, its colors, surrounding elements, and overall scene—resulting in a concise summary of the image’s contents.
 skillVersionId: 019a0f1a-7046-7501-8f08-d60b724500ed
 ---
 
 ## What it does
 
-This prompt asks the AI to interpret a flower image and provide a clear, user-friendly response describing what’s shown—such as identifying the type of flower if possible, noting visible characteristics (color, petals, leaves, setting), and summarizing the overall appearance or context based on the image.
+This prompt asks the AI to look at the provided flower image and produce a clear, user-friendly description of what’s shown—identifying notable visual details such as the type or appearance of the flower, its colors, surrounding elements, and overall scene—resulting in a concise summary of the image’s contents.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
