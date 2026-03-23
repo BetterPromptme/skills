@@ -1,12 +1,12 @@
 ---
 name: movie-storyboard
-description: Produce a four-panel, wordless neo-noir storyboard following a lone detective pursuing a missing treasure, with consistent appearance and atmosphere across frames and a suspenseful twist ending.
+description: This prompt instructs the AI to create a cohesive four-image storyboard in cinematic color neo-noir style, following a lone detective’s escalating search for a missing treasure across distinct story beats with rising tension, emotional shifts, and a final twist that resolves the mystery. The outcome is a sequence of exactly four text-free, high-contrast, smoky urban frames that preserve strict continuity—especially the detective’s unchanged face, consistent wardrobe and props, and a unified atmosphere—while avoiding gore, explicit content, and out-of-place elements.
 skillVersionId: 01999ed9-2c81-7d1e-b98d-7b6da814d9c1
 ---
 
 ## What it does
 
-This prompt instructs the AI to create a cohesive four-image storyboard in cinematic color neo-noir, depicting a lone detective’s escalating search for missing treasure across four distinct story beats, with consistent character appearance, wardrobe, props, and atmosphere throughout. The result is a suspenseful, high-contrast, smoke-laced urban sequence that progresses through discoveries and emotional shifts, avoids any on-image text or disallowed content, and culminates in a surprising twist and satisfying final reveal of the treasure.
+This prompt instructs the AI to create a cohesive four-image storyboard in cinematic color neo-noir style, following a lone detective’s escalating search for a missing treasure across distinct story beats with rising tension, emotional shifts, and a final twist that resolves the mystery. The outcome is a sequence of exactly four text-free, high-contrast, smoky urban frames that preserve strict continuity—especially the detective’s unchanged face, consistent wardrobe and props, and a unified atmosphere—while avoiding gore, explicit content, and out-of-place elements.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
