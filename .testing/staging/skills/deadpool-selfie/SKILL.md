@@ -1,12 +1,12 @@
 ---
 name: deadpool-selfie
-description: Place a playful, costumed figure beside the person in the photo, interacting cheekily while preserving the selfie framing and integrating both characters naturally into a dramatic urban rooftop backdrop.
+description: This prompt instructs the AI to edit a provided selfie by seamlessly adding Deadpool beside the pictured person, posing with playful “bunny ears” behind the man’s head and a mischievous look toward the camera, while replacing the background with the Avengers Tower rooftop overlooking New York City. The expected result is a natural-looking composite that preserves the original selfie framing and lighting so both characters appear convincingly present in the same shot.
 skillVersionId: 019ac918-79f2-7082-8414-796fefb9d3d4
 ---
 
 ## What it does
 
-This prompt instructs the AI to edit a selfie by adding Deadpool beside the pictured person, posing with mischievous eye contact and making bunny ears behind the man’s head, while replacing the background with the Avengers Tower rooftop overlooking New York City. The intended outcome is a believable composite that preserves the original selfie framing and lighting, integrates both characters naturally, and maintains a cohesive, realistic scene.
+This prompt instructs the AI to edit a provided selfie by seamlessly adding Deadpool beside the pictured person, posing with playful “bunny ears” behind the man’s head and a mischievous look toward the camera, while replacing the background with the Avengers Tower rooftop overlooking New York City. The expected result is a natural-looking composite that preserves the original selfie framing and lighting so both characters appear convincingly present in the same shot.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
