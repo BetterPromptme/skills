@@ -1,12 +1,12 @@
 ---
 name: dramatic-cinematic-portrait-of-a-rugged-young-man
-description: Create a high-impact cinematic portrait emphasizing moody, high-contrast lighting, ultra-realistic skin and textures, and atmospheric particles for a dramatic, movie-poster feel.
+description: This prompt directs the AI to generate an ultra-realistic, movie-poster style cinematic portrait of a rugged young man in a smoky, ember-filled environment, using dramatic low-key lighting with warm firelight and cool shadows, shallow depth of field, volumetric haze, and high-detail facial texture. The result is a high-resolution, high-contrast image with sharp subject focus, floating particles, and a dark atmospheric background that conveys a serious, introspective mood.
 skillVersionId: 019c27b8-5dbe-7159-a136-658ebcb25665
 ---
 
 ## What it does
 
-This prompt instructs an AI image generator to create a high-realism, movie-poster style portrait of a rugged young man in a smoky, ember-filled environment, using dramatic low-key lighting with warm firelight and cool shadows, shallow depth of field, and volumetric haze. The intended outcome is an ultra-detailed, cinematic 8K-quality image with sharp facial features, realistic skin texture, floating particles, and a dark, atmospheric background.
+This prompt directs the AI to generate an ultra-realistic, movie-poster style cinematic portrait of a rugged young man in a smoky, ember-filled environment, using dramatic low-key lighting with warm firelight and cool shadows, shallow depth of field, volumetric haze, and high-detail facial texture. The result is a high-resolution, high-contrast image with sharp subject focus, floating particles, and a dark atmospheric background that conveys a serious, introspective mood.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
