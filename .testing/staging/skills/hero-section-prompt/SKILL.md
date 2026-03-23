@@ -1,12 +1,12 @@
 ---
 name: hero-section-prompt
-description: A comprehensive template for creating a detailed feature specification document to guide the development of a new product feature.
+description: This prompt instructs the AI to produce a structured feature specification document for a provided product feature concept, tailored to a defined audience, functionality set, and development timeline. The output is a clear, implementation-ready spec organized into overview, goals with success metrics, user stories, acceptance criteria mapped to those stories, a high-level technical design, and future enhancements to guide both planning and development.
 skillVersionId: 01991973-e811-70db-a8db-f1af90f2d4e4
 ---
 
 ## What it does
 
-This prompt directs the AI to produce a structured feature specification document for a proposed product feature, tailored to specified target users, key functionalities, and an estimated development timeline. The resulting output is a clear, developer-ready spec organized into overview, goals with success metrics, user stories, acceptance criteria mapped to those stories, a high-level technical design, and future enhancements to guide implementation and iteration.
+This prompt instructs the AI to produce a structured feature specification document for a provided product feature concept, tailored to a defined audience, functionality set, and development timeline. The output is a clear, implementation-ready spec organized into overview, goals with success metrics, user stories, acceptance criteria mapped to those stories, a high-level technical design, and future enhancements to guide both planning and development.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
