@@ -1,12 +1,12 @@
 ---
 name: change-to-gradient-color
-description: Test
+description: This prompt instructs the AI to apply a horizontal gradient overlay to a supplied image, using the specified left and right colors as endpoints. The result is an edited version of the original image with a smooth color transition from the left side to the right side matching the provided color values.
 skillVersionId: 0196f6d5-a621-7083-af29-82da68c366c8
 ---
 
 ## What it does
 
-This prompt instructs the AI to edit the provided image by applying a left-to-right color gradient overlay, using the specified left_color on the left side and right_color on the right side. The outcome is a new version of the image with a smooth transition between the two colors across the image width while preserving the original image content beneath the gradient.
+This prompt instructs the AI to apply a horizontal gradient overlay to a supplied image, using the specified left and right colors as endpoints. The result is an edited version of the original image with a smooth color transition from the left side to the right side matching the provided color values.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
