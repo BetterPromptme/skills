@@ -1,12 +1,12 @@
 ---
 name: vintage-patent-drawing-with-nano-banana-pro-in-openart
-description: Generate a period-authentic, museum-worthy technical patent illustration rendered on aged parchment, featuring precise linework, labeled cross-sections, numbered callouts, and an official-looking patent frame.
+description: Generates a museum-quality, 1890s-inspired patent technical illustration of the specified object, rendered as black-ink linework with sepia accents on aged cream parchment. The result includes hand-lettered labels, numbered component callouts, cross-section views, and an official-looking patent border with a fictional patent number and date, producing an elegant, authoritative vintage engineering drawing.
 skillVersionId: 019c27d2-908b-75c3-8aab-45abc6b215a7
 ---
 
 ## What it does
 
-This prompt directs an AI image generator to produce a museum-quality, 1890s-style patent drawing of a specified object, rendered as black-ink technical linework with sepia accents on aged parchment. The resulting illustration includes period-accurate features such as hand-lettered labels, numbered component callouts, cross-section views, and a formal patent-style border with an invented patent number and date for an authentic archival look.
+Generates a museum-quality, 1890s-inspired patent technical illustration of the specified object, rendered as black-ink linework with sepia accents on aged cream parchment. The result includes hand-lettered labels, numbered component callouts, cross-section views, and an official-looking patent border with a fictional patent number and date, producing an elegant, authoritative vintage engineering drawing.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
