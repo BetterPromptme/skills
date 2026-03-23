@@ -1,12 +1,12 @@
 ---
 name: naturalist-field-journal-ecosystem-scene
-description: Compose a richly detailed, photorealistic tableau in which illustrated elements from a naturalist’s field journal animate and interact with the surrounding campsite environment.
+description: This prompt instructs an image model to generate an epic, photorealistic 3D documentary-style scene of a naturalist’s campsite where an open, weathered field journal magically transforms its drawn and pressed contents into living ecosystems. The outcome is a highly detailed 8K composition featuring animated botanical and insect elements, expanding watercolor landscapes, miniature camps formed from margin notes, a real creature swimming in a jar on the page, and a sketched animal stepping off the paper, all lit by lantern glow and fireflies with a pine-forest atmosphere, with placeholder variables ready to be filled for specific plants and an animal.
 skillVersionId: 019c27ca-c2e5-711b-baf3-5541951c8314
 ---
 
 ## What it does
 
-This prompt directs an image model to generate an epic, photorealistic 3D documentary-style scene of a naturalist’s camp table where an open, weathered field journal magically transforms its illustrated contents into living ecosystems: specified plants and an animal emerge from drawings, insects take flight, landscapes become walkable terrain, notes and pressed specimens animate, and page elements like jars and coffee stains become real environments, all framed by a nearby tent and lantern-lit forest ambience rendered in high detail (8K).
+This prompt instructs an image model to generate an epic, photorealistic 3D documentary-style scene of a naturalist’s campsite where an open, weathered field journal magically transforms its drawn and pressed contents into living ecosystems. The outcome is a highly detailed 8K composition featuring animated botanical and insect elements, expanding watercolor landscapes, miniature camps formed from margin notes, a real creature swimming in a jar on the page, and a sketched animal stepping off the paper, all lit by lantern glow and fireflies with a pine-forest atmosphere, with placeholder variables ready to be filled for specific plants and an animal.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
