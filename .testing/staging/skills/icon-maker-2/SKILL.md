@@ -1,12 +1,12 @@
 ---
 name: icon-maker-2
-description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+description: This prompt instructs an AI image generator to create an icon depicting a specified item, matching a given visual style and using a designated primary color. If the transparency option is enabled, it also requires the icon to have a transparent background, producing a ready-to-use asset suitable for UI or branding.
 skillVersionId: 019918d5-3ac7-7ef6-b203-0eb0b56d727e
 ---
 
 ## What it does
 
-This prompt instructs an AI to generate an icon depicting a specified item, rendered in a consistent visual style and using a given primary color. If the transparency option is enabled, the output icon is produced with a transparent background, resulting in a ready-to-use asset matching the requested subject, style, and color constraints.
+This prompt instructs an AI image generator to create an icon depicting a specified item, matching a given visual style and using a designated primary color. If the transparency option is enabled, it also requires the icon to have a transparent background, producing a ready-to-use asset suitable for UI or branding.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
