@@ -1,12 +1,12 @@
 ---
 name: chiet-tu
-description: Một yêu cầu để trợ lý đóng vai giáo viên tiếng Trung, phân tích chi tiết cấu trúc một chữ Hán giản thể và cung cấp thông tin phát âm, Hán–Việt, chiết tự và ví dụ minh họa.
+description: Prompt này yêu cầu AI đóng vai giáo viên tiếng Trung và khi người dùng đưa vào một chữ Hán giản thể, AI sẽ phân tích chữ đó theo cấu tạo/bộ thủ (chiết tự), đồng thời cung cấp pinyin, âm Hán‑Việt, nghĩa gốc và một số từ ghép thường gặp; kết quả được trình bày theo bố cục rõ ràng như ví dụ để người học hiểu cách hình thành chữ và cách dùng trong thực tế.
 skillVersionId: 019a2a29-acc3-70df-8d34-0f29c29ee5b0
 ---
 
 ## What it does
 
-Prompt này yêu cầu AI đóng vai giáo viên tiếng Trung để phân tích một chữ Hán giản thể do người dùng cung cấp: trình bày thông tin cơ bản (chữ, pinyin, Hán‑Việt, nghĩa gốc, từ ghép thường gặp) và chiết tự theo bộ thủ/cấu tạo thành phần của chữ (giản thể, có thể so với phồn thể nếu liên quan), sau đó tóm tắt lại kết quả theo định dạng giống ví dụ.
+Prompt này yêu cầu AI đóng vai giáo viên tiếng Trung và khi người dùng đưa vào một chữ Hán giản thể, AI sẽ phân tích chữ đó theo cấu tạo/bộ thủ (chiết tự), đồng thời cung cấp pinyin, âm Hán‑Việt, nghĩa gốc và một số từ ghép thường gặp; kết quả được trình bày theo bố cục rõ ràng như ví dụ để người học hiểu cách hình thành chữ và cách dùng trong thực tế.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
