@@ -1,12 +1,12 @@
 ---
 name: i-will-change-the-background-behind-an-object-use-now
-description: A professional image-editing prompt focused on extracting a subject from one image and seamlessly compositing it into a different background with precise edge preservation and a non-destructive workflow.
+description: This prompt instructs the AI to extract a specified foreground object from a first image without altering it, then replace that image’s background with the background from a second image, compositing the object so it blends realistically. The outcome is a seamless, undetectable composite that preserves fine edge detail (including hair or transparency), maintains original shadows/reflections and perspective, matches lighting/color temperature/grain/depth of field to the new scene, and provides non-destructive layered deliverables plus export-ready versions.
 skillVersionId: 0198f4ee-cce3-7a65-a902-48083a80ef0a
 ---
 
 ## What it does
 
-This prompt instructs the AI to extract a specified foreground object from a first image without altering it, then replace the first image’s background with the background from a second image. It requires a realistic, seamless composite by preserving fine edges (including hair or transparency), maintaining original shadows/reflections and perspective, and matching lighting, color temperature, grain, and depth of field so the object blends undetectably into the new scene, with deliverables that include non-destructive layered files and export-ready outputs.
+This prompt instructs the AI to extract a specified foreground object from a first image without altering it, then replace that image’s background with the background from a second image, compositing the object so it blends realistically. The outcome is a seamless, undetectable composite that preserves fine edge detail (including hair or transparency), maintains original shadows/reflections and perspective, matches lighting/color temperature/grain/depth of field to the new scene, and provides non-destructive layered deliverables plus export-ready versions.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
