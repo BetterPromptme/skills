@@ -1,12 +1,12 @@
 ---
 name: humanize-ai
-description: You give an input, and the prompt turns your input into a single short paragraph. You get a plain purpose statement plus the expected outcome. The result tells you what task the AI performs and what you receive, without exposing the prompt text.
+description: You give this prompt an input, and you get one short paragraph explaining what the prompt aims to do and what output you will receive. You get a plain description of the task and the expected result. You get no quotes from the prompt and no extra commentary.
 skillVersionId: 019d044d-d325-74fd-9692-b910e2a55cca
 ---
 
 ## What it does
 
-You give an input, and the prompt turns your input into a single short paragraph. You get a plain purpose statement plus the expected outcome. The result tells you what task the AI performs and what you receive, without exposing the prompt text.
+You give this prompt an input, and you get one short paragraph explaining what the prompt aims to do and what output you will receive. You get a plain description of the task and the expected result. You get no quotes from the prompt and no extra commentary.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
