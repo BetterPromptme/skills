@@ -1,12 +1,12 @@
 ---
 name: generate-json-from-data
-description: A prompt that converts input data into JSON and outputs the result inside a Markdown code block.
+description: This prompt instructs the AI to take provided text or an image as input, extract the relevant information, and convert it into a structured JSON representation. The outcome is a JSON output formatted inside a Markdown code block, suitable for easy copying, parsing, or downstream processing.
 skillVersionId: 0199a7e6-48af-7a65-9381-8d378f3052f0
 ---
 
 ## What it does
 
-This prompt takes either provided text or an uploaded image, extracts the relevant information, and converts it into a structured JSON object. The output is returned inside a Markdown code block, producing a machine-readable representation of the original content suitable for downstream processing or storage.
+This prompt instructs the AI to take provided text or an image as input, extract the relevant information, and convert it into a structured JSON representation. The outcome is a JSON output formatted inside a Markdown code block, suitable for easy copying, parsing, or downstream processing.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
