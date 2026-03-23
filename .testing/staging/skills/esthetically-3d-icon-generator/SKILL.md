@@ -1,12 +1,12 @@
 ---
 name: esthetically-3d-icon-generator
-description: 
+description: This prompt defines a cohesive visual style guide for generating an isometric, slightly top-down miniature product diorama rendered as a hyper-detailed, photorealistic 3D scene. It specifies the desired materials, textures, lighting direction and behavior, color palette, background cleanliness, and micro-surface realism to ensure handcrafted, premium object fidelity. The outcome is a clean studio-style image of the provided subject description that looks tactile, material-rich, and color-accurate without distracting shadows or noise.
 skillVersionId: 0199a843-a5ee-79c2-891c-6a94a3c2b947
 ---
 
 ## What it does
 
-This prompt defines a cohesive visual style guide for generating a premium, handcrafted miniature product diorama: it specifies the camera angle, photorealistic 3D rendering approach, restrained warm-neutral palette with select accents, physically believable materials and micro-textures, soft studio lighting from the top-left, and a clean white background for accurate color. The outcome is a consistent, high-fidelity render of a user-supplied item description that emphasizes tactile realism, subtle surface imperfections, and material-rich detail without distracting shadows or background noise.
+This prompt defines a cohesive visual style guide for generating an isometric, slightly top-down miniature product diorama rendered as a hyper-detailed, photorealistic 3D scene. It specifies the desired materials, textures, lighting direction and behavior, color palette, background cleanliness, and micro-surface realism to ensure handcrafted, premium object fidelity. The outcome is a clean studio-style image of the provided subject description that looks tactile, material-rich, and color-accurate without distracting shadows or noise.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
