@@ -1,12 +1,12 @@
 ---
 name: vocabulary-list-game-maker
-description: 
+description: This prompt instructs the assistant to act as a language-teaching aid that creates a themed vocabulary set tailored to specified language, topic, proficiency level, and age group, providing brief meanings or translations for each item. It also requires the assistant to design a printable, classroom-ready word game in a chosen format and include clear step-by-step instructions so teachers can immediately use the activity to practice the target vocabulary.
 skillVersionId: 019918cd-120c-77da-b16e-52a1db3086c7
 ---
 
 ## What it does
 
-This prompt instructs the AI to act as a language-teaching assistant and, using the specified language, topic, learner level, age group, and preferred game type, produce a themed set of 10–20 level-appropriate vocabulary items with brief explanations or translations, plus a ready-to-print classroom word game based on that vocabulary and clear steps for teachers to run the activity in class.
+This prompt instructs the assistant to act as a language-teaching aid that creates a themed vocabulary set tailored to specified language, topic, proficiency level, and age group, providing brief meanings or translations for each item. It also requires the assistant to design a printable, classroom-ready word game in a chosen format and include clear step-by-step instructions so teachers can immediately use the activity to practice the target vocabulary.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
