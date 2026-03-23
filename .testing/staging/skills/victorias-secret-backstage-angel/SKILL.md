@@ -1,12 +1,12 @@
 ---
 name: victorias-secret-backstage-angel
-description: A glamorous backstage moment in the style of Victoria’s Secret — radiant skin, glittering crystals, and confident sensuality captured in cinematic flash detail
+description: This prompt instructs an image-generation/editing system to produce a photorealistic, high-fashion backstage portrait just before a runway show, using a waist-up diagonal composition with a makeup artist’s hands applying lipstick, crystal-embroidered lingerie styling, and feathered wings in a dim backstage environment. It specifies flash-driven editorial lighting, color/texture fidelity, and a sensual, cinematic mood while requiring the subject’s face, hair, and expression to remain identical to the provided input image. The intended outcome is an 8K, 4:5 portrait that convincingly matches a luxury backstage fashion aesthetic with sharp facial detail, sparkling materials, and realistic depth-of-field.
 skillVersionId: 019aa5d7-6a62-70cf-a856-851df252756c
 ---
 
 ## What it does
 
-This prompt instructs an image-generation/editing system to create a photorealistic, Victoria’s Secret–style backstage fashion portrait based on an input photo, preserving the subject’s exact face, hairstyle, and expression while placing them in a dim runway-prep environment. It specifies the camera framing, pose, makeup-artist interaction (hands applying lipstick), wardrobe elements (crystal corset, fluffy skirt, feather wings), and a flash-driven lighting setup to emphasize skin sheen and sparkling textures. The intended outcome is an 8K, 4:5 editorial image with sharp facial and garment detail, realistic highlights and shadows, and a cinematic, luxurious behind-the-scenes mood.
+This prompt instructs an image-generation/editing system to produce a photorealistic, high-fashion backstage portrait just before a runway show, using a waist-up diagonal composition with a makeup artist’s hands applying lipstick, crystal-embroidered lingerie styling, and feathered wings in a dim backstage environment. It specifies flash-driven editorial lighting, color/texture fidelity, and a sensual, cinematic mood while requiring the subject’s face, hair, and expression to remain identical to the provided input image. The intended outcome is an 8K, 4:5 portrait that convincingly matches a luxury backstage fashion aesthetic with sharp facial detail, sparkling materials, and realistic depth-of-field.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
