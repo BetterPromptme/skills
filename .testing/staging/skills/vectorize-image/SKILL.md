@@ -1,12 +1,12 @@
 ---
 name: vectorize-image
-description: A prompt that transforms a likeness into a bold, high-contrast black-and-white vector illustration with ink-like lines and minimal shading, executed in a clean, comic-book aesthetic.
+description: This prompt instructs the AI to take a provided portrait photo and transform it into a high-contrast black-and-white ink line illustration with a clean, vector-like comic book aesthetic. The result should feature bold outlines, minimal shading, a realistic-yet-stylized look, and a plain white background, with the assistant requesting any missing details needed to match the desired style.
 skillVersionId: 0199a843-a5ee-7167-a8a4-8e7f8e91dd3d
 ---
 
 ## What it does
 
-This prompt instructs the AI to take a provided portrait photo and transform it into a clean, high-contrast black-and-white ink line illustration in a realistic-yet-stylized comic/vector style, emphasizing bold outlines, minimal shading, and a white background, resulting in a crisp, print-ready drawing that preserves the subject’s likeness while simplifying details into graphic line art.
+This prompt instructs the AI to take a provided portrait photo and transform it into a high-contrast black-and-white ink line illustration with a clean, vector-like comic book aesthetic. The result should feature bold outlines, minimal shading, a realistic-yet-stylized look, and a plain white background, with the assistant requesting any missing details needed to match the desired style.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
