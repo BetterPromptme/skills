@@ -1,12 +1,12 @@
 ---
 name: create-cartoon-image
-description: Design a charming, hand-drawn cartoon illustration of an office scene that incorporates Chinese cultural elements and symbolism.
+description: This prompt instructs an AI image generator to produce a playful, hand-drawn cartoon infographic of a specified office, depicting two desk-working characters and a break-room doorway while visually integrating five color-coded objects that symbolize the Chinese five elements, plus extra office details. The result is a soft pastel, clean-line illustration with a Chinese aesthetic that includes clear English annotations describing the office’s benefits and a cute yet practical overall atmosphere.
 skillVersionId: 01971b93-89bf-760f-aaab-8d9415d2b709
 ---
 
 ## What it does
 
-This prompt directs an image model to generate a playful, hand-drawn cartoon infographic of a specific office, depicting two employees at desks and an adjacent break room while visually incorporating five color-coded objects that symbolize the traditional Chinese elements. The result is a soft pastel, clean-line illustration with a Chinese-inspired atmosphere, practical office details (like a calendar and file organizer), and clear English callouts that annotate the office’s benefits.
+This prompt instructs an AI image generator to produce a playful, hand-drawn cartoon infographic of a specified office, depicting two desk-working characters and a break-room doorway while visually integrating five color-coded objects that symbolize the Chinese five elements, plus extra office details. The result is a soft pastel, clean-line illustration with a Chinese aesthetic that includes clear English annotations describing the office’s benefits and a cute yet practical overall atmosphere.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
