@@ -1,12 +1,12 @@
 ---
 name: restore-old-image
-description: This prompt instructs a photo conservator to restore an aged image by removing damage, restoring tonal range, and applying era-appropriate colorization that preserves detail and texture while avoiding artifacts.
+description: This prompt instructs the AI to take an attached aged black-and-white photograph and restore it into a natural-looking, era-faithful color image by repairing physical damage artifacts, correcting tonal range and white balance, and applying realistic period-appropriate colorization while preserving authentic texture, identity details, and subtle film grain. The expected outcome is a clean, gently graded, film-like color version with controlled contrast, believable skin and material tones, minimal noise and sharpening artifacts, and no invented content or unnecessary cropping.
 skillVersionId: 0198f487-4b6a-7e28-b186-43ecaeb868bf
 ---
 
 ## What it does
 
-This prompt instructs an AI, acting as a professional photo conservator and colorist, to restore an attached aged black‑and‑white photograph into a clean, naturally colorized image that remains faithful to the photo’s historical era. The task includes repairing physical damage (dust, scratches, creases, stains), correcting tonal range and white balance without losing detail, and applying realistic, period-appropriate color while preserving facial identity and original textures (grain, fabric, skin detail) without artificial smoothing or added elements. The expected outcome is a final “era-faithful” version with subtle, film-like color, controlled contrast, mild denoise/sharpening, and no modern-looking artifacts such as oversaturation, halos, banding, or color casts.
+This prompt instructs the AI to take an attached aged black-and-white photograph and restore it into a natural-looking, era-faithful color image by repairing physical damage artifacts, correcting tonal range and white balance, and applying realistic period-appropriate colorization while preserving authentic texture, identity details, and subtle film grain. The expected outcome is a clean, gently graded, film-like color version with controlled contrast, believable skin and material tones, minimal noise and sharpening artifacts, and no invented content or unnecessary cropping.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
