@@ -1,12 +1,12 @@
 ---
 name: very-simple-prompt
-description: ahuhu
+description: This prompt provides a brief greeting that acknowledges the user’s message, uses the supplied name placeholder as the person’s name, and responds politely to the introduction, resulting in a friendly, personalized reply.
 skillVersionId: 0198f415-05a8-73ac-9b60-79247c817ae2
 ---
 
 ## What it does
 
-This prompt introduces the user by name using a placeholder and prompts the AI to respond with a friendly greeting that acknowledges the provided name and the sentiment of meeting, resulting in a personalized, polite introduction exchange.
+This prompt provides a brief greeting that acknowledges the user’s message, uses the supplied name placeholder as the person’s name, and responds politely to the introduction, resulting in a friendly, personalized reply.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
