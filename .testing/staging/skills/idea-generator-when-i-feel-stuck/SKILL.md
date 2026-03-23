@@ -1,12 +1,12 @@
 ---
 name: idea-generator-when-i-feel-stuck
-description: A prompt that helps unblock you by asking brief clarifying questions and producing a short, prioritized set of actionable ideas with quick test steps and a recommended high-impact low-effort option.
+description: This prompt turns the AI into a practical brainstorming partner for an unspecified problem by first gathering a few key details, then generating five progressively more demanding solution ideas. Each idea includes a rapid 15-minute test to validate it quickly, and it concludes by identifying the option with the best effort-to-upside ratio so the user knows what to try first.
 skillVersionId: 019ab54a-6a87-70cb-9773-a41341a37e51
 ---
 
 ## What it does
 
-This prompt turns the AI into a practical brainstorming partner who first asks up to three clarifying questions about your stated problem, then generates five solution ideas ordered from easiest to hardest, each with a quick 15-minute test plan, and finally highlights the option that offers the best upside for the least effort.
+This prompt turns the AI into a practical brainstorming partner for an unspecified problem by first gathering a few key details, then generating five progressively more demanding solution ideas. Each idea includes a rapid 15-minute test to validate it quickly, and it concludes by identifying the option with the best effort-to-upside ratio so the user knows what to try first.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
