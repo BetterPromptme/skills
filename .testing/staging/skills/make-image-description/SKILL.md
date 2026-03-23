@@ -1,12 +1,12 @@
 ---
 name: make-image-description
-description: Provide a clear, objective description of the provided image, detailing visible elements, composition, and notable features without interpretation or assumptions.
+description: This prompt instructs the AI to look at the provided image and produce a concise, user-friendly description of what is visible in it, summarizing the main subjects, setting, and any notable details so the user understands the image’s content without needing to see it.
 skillVersionId: 019b11c3-e545-71ea-a3c7-1096e901c1f4
 ---
 
 ## What it does
 
-This prompt asks the AI to look at an image and produce a natural-language description of what it contains, summarizing the main subjects, setting, and any notable details visible so the reader understands the image without seeing it.
+This prompt instructs the AI to look at the provided image and produce a concise, user-friendly description of what is visible in it, summarizing the main subjects, setting, and any notable details so the user understands the image’s content without needing to see it.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
