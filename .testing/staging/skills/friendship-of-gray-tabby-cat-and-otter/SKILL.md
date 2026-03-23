@@ -1,12 +1,12 @@
 ---
 name: friendship-of-gray-tabby-cat-and-otter
-description: Create a warm, detailed illustration of an unlikely animal pair sharing a tender embrace in a cozy, stylized scene.
+description: This prompt instructs an AI image generator to create a beach scene featuring a gray tabby cat hugging an otter that is wearing an orange scarf, resulting in a single cohesive illustration that places the characters clearly in a seaside background with the specified details.
 skillVersionId: 019cadc5-5d78-7069-925f-f93a4478c7cd
 ---
 
 ## What it does
 
-This prompt instructs the AI to create a beach-themed image featuring a gray tabby cat affectionately hugging an otter that is wearing an orange scarf, resulting in a single cohesive illustration or render that combines these characters and setting into a warm, visually clear scene.
+This prompt instructs an AI image generator to create a beach scene featuring a gray tabby cat hugging an otter that is wearing an orange scarf, resulting in a single cohesive illustration that places the characters clearly in a seaside background with the specified details.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
