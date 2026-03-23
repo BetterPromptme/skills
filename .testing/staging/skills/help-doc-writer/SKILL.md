@@ -1,12 +1,12 @@
 ---
 name: help-doc-writer
-description: Produce a concise Markdown outline for a help-center article based on a given topic and context, adhering to strict style, content, and structure rules without inventing details.
+description: This prompt instructs the AI to produce a concise, skimmable help center article outline in Markdown for a provided topic, using only details explicitly included in the accompanying context and otherwise using neutral, generic guidance with clarifying notes. The output emphasizes second-person, step-based procedures with bold UI labels, brief sections, result-verification lines after each flow, and includes pragmatic Troubleshooting and FAQ entries without inventing product specifics, plan limits, or screenshots.
 skillVersionId: 019a4f2e-f796-755e-8d3c-0bb6efef7f81
 ---
 
 ## What it does
 
-This prompt instructs the AI to produce a concise, skimmable Help Center article outline in Markdown for a provided topic, using only details explicitly supplied in the accompanying context. The result is a structured set of headings and short procedural steps written in second-person voice, with bolded UI labels, per-step outcome checks, optional screenshot placeholders only when referenced, and practical Troubleshooting and FAQ sections that avoid inventing product-specific information.
+This prompt instructs the AI to produce a concise, skimmable help center article outline in Markdown for a provided topic, using only details explicitly included in the accompanying context and otherwise using neutral, generic guidance with clarifying notes. The output emphasizes second-person, step-based procedures with bold UI labels, brief sections, result-verification lines after each flow, and includes pragmatic Troubleshooting and FAQ entries without inventing product specifics, plan limits, or screenshots.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
