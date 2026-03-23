@@ -1,12 +1,12 @@
 ---
 name: test-social-account-ahihi
-description: A prompt designed to generate personalized greetings based on user-provided names.
+description: This prompt instructs the AI to generate a simple greeting addressed to a specific person by inserting the provided name into a “hello” message, resulting in a personalized salutation output for that named recipient.
 skillVersionId: 01979c31-0177-7e81-a515-979238824e6a
 ---
 
 ## What it does
 
-This prompt instructs the AI to generate a simple greeting addressed to a specified person by substituting the provided name into a hello message, resulting in a personalized salutation.
+This prompt instructs the AI to generate a simple greeting addressed to a specific person by inserting the provided name into a “hello” message, resulting in a personalized salutation output for that named recipient.
 
 > Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
 
