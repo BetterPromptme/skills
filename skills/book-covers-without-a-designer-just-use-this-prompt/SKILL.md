@@ -1,14 +1,14 @@
 ---
 name: book-covers-without-a-designer-just-use-this-prompt
 description: This prompt instructs an AI to generate a visually striking 3D book cover concept tailored to a specified title, genre, and author, emphasizing imaginative symbolism, bold cinematic color and lighting, expressive typography, and an intriguing metaphorical focal element. The expected outcome is an iconic, modern, intellectually engaging cover design that feels emotionally impactful and commercially compelling, suitable for a bestselling book.
-skillVersionId: 01970b6a-4bb8-7928-857c-49aa997fa561
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate a visually striking 3D book cover concept tailored to a specified title, genre, and author, emphasizing imaginative symbolism, bold cinematic color and lighting, expressive typography, and an intriguing metaphorical focal element. The expected outcome is an iconic, modern, intellectually engaging cover design that feels emotionally impactful and commercially compelling, suitable for a bestselling book.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01970b6a-4bb8-7928-857c-49aa997fa561`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `book-covers-without-a-designer-just-use-this-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 01970b6a-4bb8-7928-857c-49aa997fa561 \
+betterprompt generate book-covers-without-a-designer-just-use-this-prompt \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01970b6a-4bb8-7928-857c-49aa997fa561 \
+betterprompt generate book-covers-without-a-designer-just-use-this-prompt \
   --input GENRE=<value> \
   --input BOOK_TITLE=<value> \
   --input AUTHOR_NAME=<value> \
