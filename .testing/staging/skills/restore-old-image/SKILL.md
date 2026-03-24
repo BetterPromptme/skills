@@ -1,14 +1,14 @@
 ---
 name: restore-old-image
 description: This prompt instructs the AI to take an attached aged black-and-white photograph and restore it into a natural-looking, era-faithful color image by repairing physical damage artifacts, correcting tonal range and white balance, and applying realistic period-appropriate colorization while preserving authentic texture, identity details, and subtle film grain. The expected outcome is a clean, gently graded, film-like color version with controlled contrast, believable skin and material tones, minimal noise and sharpening artifacts, and no invented content or unnecessary cropping.
-skillVersionId: 0198f487-4b6a-7e28-b186-43ecaeb868bf
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take an attached aged black-and-white photograph and restore it into a natural-looking, era-faithful color image by repairing physical damage artifacts, correcting tonal range and white balance, and applying realistic period-appropriate colorization while preserving authentic texture, identity details, and subtle film grain. The expected outcome is a clean, gently graded, film-like color version with controlled contrast, believable skin and material tones, minimal noise and sharpening artifacts, and no invented content or unnecessary cropping.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198f487-4b6a-7e28-b186-43ecaeb868bf`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `restore-old-image`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198f487-4b6a-7e28-b186-43ecaeb868bf \
+betterprompt generate restore-old-image \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198f487-4b6a-7e28-b186-43ecaeb868bf \
+betterprompt generate restore-old-image \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
