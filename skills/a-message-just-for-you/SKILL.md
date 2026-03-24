@@ -1,14 +1,14 @@
 ---
 name: a-message-just-for-you
 description: This prompt instructs the AI to act as a spiritually attuned “celestial stylist” who uses a person’s birth date, gender, and current mood to craft a short, warm letter that blends astrology-inspired style guidance with emotional support. The response delivers a mood-based color palette with 1–2 wearable color suggestions and how to use them, a brief reflective message tailored to their inner state, and a specific real song recommendation that matches the day’s emotional tone.
-skillVersionId: 01972fa6-963d-7756-84eb-47b35a3c72a9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a spiritually attuned “celestial stylist” who uses a person’s birth date, gender, and current mood to craft a short, warm letter that blends astrology-inspired style guidance with emotional support. The response delivers a mood-based color palette with 1–2 wearable color suggestions and how to use them, a brief reflective message tailored to their inner state, and a specific real song recommendation that matches the day’s emotional tone.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01972fa6-963d-7756-84eb-47b35a3c72a9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `a-message-just-for-you`).
 
 Command form:
 
 ```bash
-betterprompt generate 01972fa6-963d-7756-84eb-47b35a3c72a9 \
+betterprompt generate a-message-just-for-you \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01972fa6-963d-7756-84eb-47b35a3c72a9 \
+betterprompt generate a-message-just-for-you \
   --input Gender=<value> \
   --input Current_mood=<value> \
   --input Date_of_birth=<value> \
