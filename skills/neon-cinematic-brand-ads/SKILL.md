@@ -1,14 +1,14 @@
 ---
 name: neon-cinematic-brand-ads
 description: This prompt directs an image-generation model to create a square, ultra-cinematic sci‑fi poster-style branded visual with the brand’s real logo centered, surrounded by a surreal neon abstract background that reflects the brand identity, enhanced with HDR lighting, glowing edges, and motion trails, and finished with a bold futuristic-font slogan placed beneath the logo for a vibrant, photorealistic, visually epic result.
-skillVersionId: 01976319-eed2-7d4d-b695-b101983e278c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation model to create a square, ultra-cinematic sci‑fi poster-style branded visual with the brand’s real logo centered, surrounded by a surreal neon abstract background that reflects the brand identity, enhanced with HDR lighting, glowing edges, and motion trails, and finished with a bold futuristic-font slogan placed beneath the logo for a vibrant, photorealistic, visually epic result.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01976319-eed2-7d4d-b695-b101983e278c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `neon-cinematic-brand-ads`).
 
 Command form:
 
 ```bash
-betterprompt generate 01976319-eed2-7d4d-b695-b101983e278c \
+betterprompt generate neon-cinematic-brand-ads \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01976319-eed2-7d4d-b695-b101983e278c \
+betterprompt generate neon-cinematic-brand-ads \
   --input Slogan=<value> \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
