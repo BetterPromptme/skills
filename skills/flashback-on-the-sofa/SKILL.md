@@ -1,14 +1,14 @@
 ---
 name: flashback-on-the-sofa
 description: This prompt instructs an AI image generator to create a high-resolution, vertical, realistic portrait that preserves a provided face reference while depicting the subject lounging on an olive-green vintage sofa and holding a red rotary phone, styled like an authentic 1980s flash-lit editorial shoot. It specifies warm direct-flash lighting with crisp shadows, shallow depth of field, subtle analog grain, a simple uncluttered background, and an outfit that adapts to the subject’s gender, while forbidding logos, extra people, distracting props, over-stylization, or any suggestive content. The result should look like a believable retro magazine photo—confident, relaxed, centered, and ready for social or editorial use.
-skillVersionId: 0199f121-84b1-73f1-a645-d6c0f6ac1f62
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a high-resolution, vertical, realistic portrait that preserves a provided face reference while depicting the subject lounging on an olive-green vintage sofa and holding a red rotary phone, styled like an authentic 1980s flash-lit editorial shoot. It specifies warm direct-flash lighting with crisp shadows, shallow depth of field, subtle analog grain, a simple uncluttered background, and an outfit that adapts to the subject’s gender, while forbidding logos, extra people, distracting props, over-stylization, or any suggestive content. The result should look like a believable retro magazine photo—confident, relaxed, centered, and ready for social or editorial use.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199f121-84b1-73f1-a645-d6c0f6ac1f62`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `flashback-on-the-sofa`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199f121-84b1-73f1-a645-d6c0f6ac1f62 \
+betterprompt generate flashback-on-the-sofa \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199f121-84b1-73f1-a645-d6c0f6ac1f62 \
+betterprompt generate flashback-on-the-sofa \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
