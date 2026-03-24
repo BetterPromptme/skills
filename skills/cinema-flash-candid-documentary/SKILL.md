@@ -1,14 +1,14 @@
 ---
 name: cinema-flash-candid-documentary
 description: This prompt instructs an AI to transform an input image into a vertical, candid documentary-style snapshot that feels spontaneously captured with a harsh on-camera flash, emphasizing imperfect framing, mid-action natural expression, and gritty realism. The intended result is a close-to-medium 9:16 photo with strong flash shadows, occasional blur or focus imperfection, visible grain and skin texture, and an unpolished “caught in the moment” look while avoiding polished studio lighting, heavy retouching, or any text/logos/watermarks.
-skillVersionId: 019c4184-13b6-759a-8852-3dd6d32a6b46
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to transform an input image into a vertical, candid documentary-style snapshot that feels spontaneously captured with a harsh on-camera flash, emphasizing imperfect framing, mid-action natural expression, and gritty realism. The intended result is a close-to-medium 9:16 photo with strong flash shadows, occasional blur or focus imperfection, visible grain and skin texture, and an unpolished “caught in the moment” look while avoiding polished studio lighting, heavy retouching, or any text/logos/watermarks.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c4184-13b6-759a-8852-3dd6d32a6b46`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cinema-flash-candid-documentary`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c4184-13b6-759a-8852-3dd6d32a6b46 \
+betterprompt generate cinema-flash-candid-documentary \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c4184-13b6-759a-8852-3dd6d32a6b46 \
+betterprompt generate cinema-flash-candid-documentary \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
