@@ -1,14 +1,14 @@
 ---
 name: golden-hour-glow
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic golden-hour lifestyle portrait of a specific young woman in a relaxed outdoor beach-bar setting, with strict rules to preserve her exact facial identity and natural texture while detailing composition, pose, wardrobe, accessories, props, background elements, and warm sunlight direction. The expected outcome is a vertically framed three-quarter body image with the subject casually leaning on a white bar counter holding a beer bottle, set against softly blurred bar details, palm shadows, and a coastal summer mood with realistic lighting and no added text or beautification.
-skillVersionId: 019cf1b5-073e-77fa-b1a7-e74f54949be5
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a high-resolution, photorealistic golden-hour lifestyle portrait of a specific young woman in a relaxed outdoor beach-bar setting, with strict rules to preserve her exact facial identity and natural texture while detailing composition, pose, wardrobe, accessories, props, background elements, and warm sunlight direction. The expected outcome is a vertically framed three-quarter body image with the subject casually leaning on a white bar counter holding a beer bottle, set against softly blurred bar details, palm shadows, and a coastal summer mood with realistic lighting and no added text or beautification.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019cf1b5-073e-77fa-b1a7-e74f54949be5`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `golden-hour-glow`).
 
 Command form:
 
 ```bash
-betterprompt generate 019cf1b5-073e-77fa-b1a7-e74f54949be5 \
+betterprompt generate golden-hour-glow \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019cf1b5-073e-77fa-b1a7-e74f54949be5 \
+betterprompt generate golden-hour-glow \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
