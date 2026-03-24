@@ -1,14 +1,14 @@
 ---
 name: cozy-natural-light-mirror-selfie-portrait
 description: This prompt instructs an AI image generator to produce a hyper-realistic indoor mirror selfie that matches a provided reference subject with strict identity preservation, specifying the exact pose, expression, outfit, accessories, lighting, smartphone selfie look, and cozy warm interior environment, and the expected outcome is a photorealistic portrait in a 3:4 or 4:5 ratio that recreates the original scene without facial alteration, beautification, or stylistic changes.
-skillVersionId: 019afc4b-213b-74fb-bfea-930ad51d353b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a hyper-realistic indoor mirror selfie that matches a provided reference subject with strict identity preservation, specifying the exact pose, expression, outfit, accessories, lighting, smartphone selfie look, and cozy warm interior environment, and the expected outcome is a photorealistic portrait in a 3:4 or 4:5 ratio that recreates the original scene without facial alteration, beautification, or stylistic changes.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019afc4b-213b-74fb-bfea-930ad51d353b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cozy-natural-light-mirror-selfie-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019afc4b-213b-74fb-bfea-930ad51d353b \
+betterprompt generate cozy-natural-light-mirror-selfie-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019afc4b-213b-74fb-bfea-930ad51d353b \
+betterprompt generate cozy-natural-light-mirror-selfie-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{"aspectRatio":"3:4"}'
