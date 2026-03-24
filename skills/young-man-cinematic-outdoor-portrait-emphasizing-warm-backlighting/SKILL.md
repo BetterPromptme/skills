@@ -1,14 +1,14 @@
 ---
 name: young-man-cinematic-outdoor-portrait-emphasizing-warm-backlighting
 description: This prompt directs an image-generation model to create an ultra-realistic, cinematic fashion portrait of a young dark-haired man in a light suit and open-collar striped shirt, seated outdoors beside a canal in Venice. It specifies golden-hour backlighting with warm reflections on the water, a soft-focus background with shallow depth of field, and a photorealistic, high-resolution look styled like Kodak Portra 400 film. The expected result is a polished 8K, editorial-quality photograph with strong natural light and a romantic waterfront atmosphere.
-skillVersionId: 019a5f4d-0bc3-77b2-9fe8-341f45026f55
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation model to create an ultra-realistic, cinematic fashion portrait of a young dark-haired man in a light suit and open-collar striped shirt, seated outdoors beside a canal in Venice. It specifies golden-hour backlighting with warm reflections on the water, a soft-focus background with shallow depth of field, and a photorealistic, high-resolution look styled like Kodak Portra 400 film. The expected result is a polished 8K, editorial-quality photograph with strong natural light and a romantic waterfront atmosphere.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a5f4d-0bc3-77b2-9fe8-341f45026f55`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `young-man-cinematic-outdoor-portrait-emphasizing-warm-backlighting`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a5f4d-0bc3-77b2-9fe8-341f45026f55 \
+betterprompt generate young-man-cinematic-outdoor-portrait-emphasizing-warm-backlighting \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a5f4d-0bc3-77b2-9fe8-341f45026f55 \
+betterprompt generate young-man-cinematic-outdoor-portrait-emphasizing-warm-backlighting \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
