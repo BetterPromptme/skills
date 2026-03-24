@@ -1,14 +1,14 @@
 ---
 name: 1980s-cinematic-couple-split-bedroom-editorial
 description: This prompt instructs an AI image editor to take an uploaded couple’s photo and recreate it as a hyper-photorealistic late-1980s split-room editorial portrait: the pair are separated by a wall yet emotionally connected via vintage rotary phones, with one side lit by cool natural daylight and the other by warm tungsten. It emphasizes exact facial preservation, realistic anatomy, authentic film-era camera/film characteristics and lighting (without artificial grading or stylized artifacts), and outputs a high-resolution vertical cinematic image suitable for editorial or concept use.
-skillVersionId: 0199cc58-a653-7516-969e-a3c7bb9d7957
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image editor to take an uploaded couple’s photo and recreate it as a hyper-photorealistic late-1980s split-room editorial portrait: the pair are separated by a wall yet emotionally connected via vintage rotary phones, with one side lit by cool natural daylight and the other by warm tungsten. It emphasizes exact facial preservation, realistic anatomy, authentic film-era camera/film characteristics and lighting (without artificial grading or stylized artifacts), and outputs a high-resolution vertical cinematic image suitable for editorial or concept use.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199cc58-a653-7516-969e-a3c7bb9d7957`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `1980s-cinematic-couple-split-bedroom-editorial`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199cc58-a653-7516-969e-a3c7bb9d7957 \
+betterprompt generate 1980s-cinematic-couple-split-bedroom-editorial \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199cc58-a653-7516-969e-a3c7bb9d7957 \
+betterprompt generate 1980s-cinematic-couple-split-bedroom-editorial \
   --input 'gender_pair=two early-twenties lovers.' \
   --input 'outfit_details=cream blouse and corduroy shirt with soft retro texture.' \
   --image-input-url https://example.com/image1.png \
