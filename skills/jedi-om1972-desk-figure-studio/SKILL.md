@@ -1,14 +1,14 @@
 ---
 name: jedi-om1972-desk-figure-studio
 description: This prompt instructs an AI to create a realistic, commercial-grade 1/7 scale figure concept based on the user’s uploaded likeness, staged on a computer desk atop a clear circular acrylic base labeled “JEDI OM1972,” dressed in classic Jedi robes and holding a glowing blue lightsaber. It also specifies a scene composition that includes an iMac displaying the Blender modeling workflow for the figure and a Star Wars–inspired toy-style packaging box with original Jedi-themed artwork placed beside the monitor, resulting in a cohesive product-style render or design visualization.
-skillVersionId: 01992736-926d-7626-9618-80ad7eca4070
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to create a realistic, commercial-grade 1/7 scale figure concept based on the user’s uploaded likeness, staged on a computer desk atop a clear circular acrylic base labeled “JEDI OM1972,” dressed in classic Jedi robes and holding a glowing blue lightsaber. It also specifies a scene composition that includes an iMac displaying the Blender modeling workflow for the figure and a Star Wars–inspired toy-style packaging box with original Jedi-themed artwork placed beside the monitor, resulting in a cohesive product-style render or design visualization.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01992736-926d-7626-9618-80ad7eca4070`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `jedi-om1972-desk-figure-studio`).
 
 Command form:
 
 ```bash
-betterprompt generate 01992736-926d-7626-9618-80ad7eca4070 \
+betterprompt generate jedi-om1972-desk-figure-studio \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01992736-926d-7626-9618-80ad7eca4070 \
+betterprompt generate jedi-om1972-desk-figure-studio \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
