@@ -1,14 +1,14 @@
 ---
 name: cinematic-mirror-self-portrait
 description: This prompt instructs an image model to create a hyperrealistic, full-body cinematic self-portrait of a specific woman based on a provided reference image, shown as a standing-mirror reflection in a minimalist bedroom. It specifies the exact pose (drawing a red heart on the mirror with lipstick), wardrobe and jewelry details, lens and depth-of-field choices, and a single diffused neutral-warm lighting setup to achieve a moody, intimate filmic look. The expected result is a vertically framed, identity-faithful portrait with sharp focus on the face and reflection, soft background blur, clean composition, and no added text, distortions, or clutter.
-skillVersionId: 019a2470-0e91-709d-a531-0bfcedea6fbb
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to create a hyperrealistic, full-body cinematic self-portrait of a specific woman based on a provided reference image, shown as a standing-mirror reflection in a minimalist bedroom. It specifies the exact pose (drawing a red heart on the mirror with lipstick), wardrobe and jewelry details, lens and depth-of-field choices, and a single diffused neutral-warm lighting setup to achieve a moody, intimate filmic look. The expected result is a vertically framed, identity-faithful portrait with sharp focus on the face and reflection, soft background blur, clean composition, and no added text, distortions, or clutter.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -79,12 +79,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a2470-0e91-709d-a531-0bfcedea6fbb`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cinematic-mirror-self-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a2470-0e91-709d-a531-0bfcedea6fbb \
+betterprompt generate cinematic-mirror-self-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -105,7 +105,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a2470-0e91-709d-a531-0bfcedea6fbb \
+betterprompt generate cinematic-mirror-self-portrait \
   --input image=<value> \
   --input outfit_style=<value> \
   --input jewelry_style=<value> \
