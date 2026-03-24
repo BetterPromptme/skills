@@ -1,14 +1,14 @@
 ---
 name: pet-action-figure-boxed-studio
 description: This prompt instructs an image generator to create a single, square, photorealistic studio-style product photo that transforms the user’s pet from a reference image into a glossy 6-inch PVC action figure, shown as one loose figure placed in front of a matching window-box package. It specifies a clean modern catalog look, a natural species-appropriate pose, strong preservation of the pet’s identity and outfit details, and packaging that clearly reveals a second identical in-box figure secured in a clear tray, while avoiding real-world branding, excessive reflections, clutter, or anatomical errors.
-skillVersionId: 019936d7-8c8c-7698-84c1-9443f453da99
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a single, square, photorealistic studio-style product photo that transforms the user’s pet from a reference image into a glossy 6-inch PVC action figure, shown as one loose figure placed in front of a matching window-box package. It specifies a clean modern catalog look, a natural species-appropriate pose, strong preservation of the pet’s identity and outfit details, and packaging that clearly reveals a second identical in-box figure secured in a clear tray, while avoiding real-world branding, excessive reflections, clutter, or anatomical errors.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019936d7-8c8c-7698-84c1-9443f453da99`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `pet-action-figure-boxed-studio`).
 
 Command form:
 
 ```bash
-betterprompt generate 019936d7-8c8c-7698-84c1-9443f453da99 \
+betterprompt generate pet-action-figure-boxed-studio \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019936d7-8c8c-7698-84c1-9443f453da99 \
+betterprompt generate pet-action-figure-boxed-studio \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
