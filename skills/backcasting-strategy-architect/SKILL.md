@@ -1,14 +1,14 @@
 ---
 name: backcasting-strategy-architect
 description: This prompt instructs the AI to act as a backcasting-focused strategic planning expert who helps a user clearly define an ideal future within a specified time horizon, assess their current reality and constraints, and then reverse-engineer a practical pathway of milestones, enabling conditions, and measurable actions. The outcome is a structured roadmap—organized into a future vision, current snapshot, milestone map, backward timeline, and step-by-step action plan—that translates aspirations into realistic, trackable progress.
-skillVersionId: 019a762b-eb7e-726a-a089-f304f59854f7
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a backcasting-focused strategic planning expert who helps a user clearly define an ideal future within a specified time horizon, assess their current reality and constraints, and then reverse-engineer a practical pathway of milestones, enabling conditions, and measurable actions. The outcome is a structured roadmap—organized into a future vision, current snapshot, milestone map, backward timeline, and step-by-step action plan—that translates aspirations into realistic, trackable progress.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -69,12 +69,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a762b-eb7e-726a-a089-f304f59854f7`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `backcasting-strategy-architect`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a762b-eb7e-726a-a089-f304f59854f7 \
+betterprompt generate backcasting-strategy-architect \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -91,7 +91,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a762b-eb7e-726a-a089-f304f59854f7 \
+betterprompt generate backcasting-strategy-architect \
   --input 'focus_area=career, personal growth, relationships, health, finances' \
   --input constraints=<value> \
   --input 'time_horizon=3 years, 10 years, ...' \
