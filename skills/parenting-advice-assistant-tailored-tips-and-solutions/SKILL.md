@@ -1,14 +1,14 @@
 ---
 name: parenting-advice-assistant-tailored-tips-and-solutions
 description: This prompt instructs the AI to act as an expert parenting coach and generate age-appropriate, tailored guidance for a specific child behavior challenge, using the provided age, context, desired outcome, and preferred parenting style. The output is a clearly organized plan that explains likely developmental reasons for the behavior, offers 3–5 practical strategies grounded in positive reinforcement and consistency, provides ready-to-use phrases for parent–child conversations, and suggests relevant follow-up resources, concluding with a brief summary and noting that approaches may need adjustment for the individual child.
-skillVersionId: 0197c3c3-86c0-73d8-bef4-62636c775bb0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an expert parenting coach and generate age-appropriate, tailored guidance for a specific child behavior challenge, using the provided age, context, desired outcome, and preferred parenting style. The output is a clearly organized plan that explains likely developmental reasons for the behavior, offers 3–5 practical strategies grounded in positive reinforcement and consistency, provides ready-to-use phrases for parent–child conversations, and suggests relevant follow-up resources, concluding with a brief summary and noting that approaches may need adjustment for the individual child.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c3c3-86c0-73d8-bef4-62636c775bb0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `parenting-advice-assistant-tailored-tips-and-solutions`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c3c3-86c0-73d8-bef4-62636c775bb0 \
+betterprompt generate parenting-advice-assistant-tailored-tips-and-solutions \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c3c3-86c0-73d8-bef4-62636c775bb0 \
+betterprompt generate parenting-advice-assistant-tailored-tips-and-solutions \
   --input Behavior=<value> \
   --input Child's Age=<value> \
   --input Desired Outcome=<value> \
