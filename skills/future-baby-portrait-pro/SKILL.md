@@ -1,14 +1,14 @@
 ---
 name: future-baby-portrait-pro
 description: 该提示旨在根据图片中两位人物的外貌特征，合成生成他们孩子的可能长相，并以专业摄影风格输出一张逼真的人像成片；结果是一幅高质量、写实、光影与质感接近商业肖像摄影的儿童面部图像，体现两位人物特征的融合与遗传倾向。
-skillVersionId: 0199181a-a77c-7885-88f6-129b786d7b04
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 该提示旨在根据图片中两位人物的外貌特征，合成生成他们孩子的可能长相，并以专业摄影风格输出一张逼真的人像成片；结果是一幅高质量、写实、光影与质感接近商业肖像摄影的儿童面部图像，体现两位人物特征的融合与遗传倾向。
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199181a-a77c-7885-88f6-129b786d7b04`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `future-baby-portrait-pro`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199181a-a77c-7885-88f6-129b786d7b04 \
+betterprompt generate future-baby-portrait-pro \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199181a-a77c-7885-88f6-129b786d7b04 \
+betterprompt generate future-baby-portrait-pro \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-2.5-flash-image-preview \
