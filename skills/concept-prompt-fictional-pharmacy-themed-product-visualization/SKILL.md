@@ -1,14 +1,14 @@
 ---
 name: concept-prompt-fictional-pharmacy-themed-product-visualization
 description: Generates a square, modern product-photo style image of a fictional pharmaceutical package branded for a specified pharmacy, with a minimalist box on the left displaying the given product name and a witty dosing line, alongside a silver blister pack holding 6–10 themed pills or capsules shaped like the provided icon description, all set against a neutral background with soft lighting and sharp focus.
-skillVersionId: 0196f81c-870f-79b5-ab8f-c357a8ede304
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 Generates a square, modern product-photo style image of a fictional pharmaceutical package branded for a specified pharmacy, with a minimalist box on the left displaying the given product name and a witty dosing line, alongside a silver blister pack holding 6–10 themed pills or capsules shaped like the provided icon description, all set against a neutral background with soft lighting and sharp focus.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f81c-870f-79b5-ab8f-c357a8ede304`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `concept-prompt-fictional-pharmacy-themed-product-visualization`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f81c-870f-79b5-ab8f-c357a8ede304 \
+betterprompt generate concept-prompt-fictional-pharmacy-themed-product-visualization \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f81c-870f-79b5-ab8f-c357a8ede304 \
+betterprompt generate concept-prompt-fictional-pharmacy-themed-product-visualization \
   --input Brand_Name=<value> \
   --input PRODUCT_NAME=<value> \
   --input describe_icon=<value> \
