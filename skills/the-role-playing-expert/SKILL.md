@@ -1,14 +1,14 @@
 ---
 name: the-role-playing-expert
 description: This prompt instructs the AI to adopt a specified professional persona and deliver an expert-quality output for a defined goal, using provided context and tailored to a particular audience. It requires the response to explicitly state the assumed role up front, apply domain-appropriate reasoning, and, when details are missing, make clear assumptions rather than guessing. It also sets guardrails to keep the output professional and in-scope, avoiding unsupported claims, irrelevant content, and regulated advice unless explicitly requested.
-skillVersionId: 019a3401-c920-7d13-89a5-4ba232ee828b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to adopt a specified professional persona and deliver an expert-quality output for a defined goal, using provided context and tailored to a particular audience. It requires the response to explicitly state the assumed role up front, apply domain-appropriate reasoning, and, when details are missing, make clear assumptions rather than guessing. It also sets guardrails to keep the output professional and in-scope, avoiding unsupported claims, irrelevant content, and regulated advice unless explicitly requested.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a3401-c920-7d13-89a5-4ba232ee828b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-role-playing-expert`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a3401-c920-7d13-89a5-4ba232ee828b \
+betterprompt generate the-role-playing-expert \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a3401-c920-7d13-89a5-4ba232ee828b \
+betterprompt generate the-role-playing-expert \
   --input 'key_criteria=Focus on conversion rate and mobile usability' \
   --input 'target_audience=Startup founders' \
   --input 'background_or_context=Short background that explains the situation or purpose of the task.' \
