@@ -1,14 +1,14 @@
 ---
 name: crochet-doll-style
 description: This prompt directs an image generator to create a crochet doll-style depiction of a chosen subject with soft yarn textures and detailed handcrafted features. It specifies bright and secondary clothing colors, includes a small handheld prop, and places the figure in a cozy setting with a warm, muted mood to produce a charming, nostalgic scene.
-skillVersionId: 01977828-ec70-737d-a070-2be57e12a946
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image generator to create a crochet doll-style depiction of a chosen subject with soft yarn textures and detailed handcrafted features. It specifies bright and secondary clothing colors, includes a small handheld prop, and places the figure in a cozy setting with a warm, muted mood to produce a charming, nostalgic scene.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01977828-ec70-737d-a070-2be57e12a946`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `crochet-doll-style`).
 
 Command form:
 
 ```bash
-betterprompt generate 01977828-ec70-737d-a070-2be57e12a946 \
+betterprompt generate crochet-doll-style \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01977828-ec70-737d-a070-2be57e12a946 \
+betterprompt generate crochet-doll-style \
   --input prop=<value> \
   --input color1=<value> \
   --input color2=<value> \
