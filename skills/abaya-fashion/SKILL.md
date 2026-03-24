@@ -1,14 +1,14 @@
 ---
 name: abaya-fashion
 description: This prompt instructs the AI to use a provided reference image of a person to generate a full-body, high-fashion portrait featuring a sage green embroidered abaya, matching hijab, and gold earrings, set against a softly blurred twilight Arabian souq with lantern bokeh. The intended outcome is a cinematic, photorealistic vertical (9:16) image with a razor-sharp subject and creamy background blur, styled as if shot on a 35mm lens at f/1.4.
-skillVersionId: 019ca9fb-d2c7-7442-95df-bcd151dc972a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to use a provided reference image of a person to generate a full-body, high-fashion portrait featuring a sage green embroidered abaya, matching hijab, and gold earrings, set against a softly blurred twilight Arabian souq with lantern bokeh. The intended outcome is a cinematic, photorealistic vertical (9:16) image with a razor-sharp subject and creamy background blur, styled as if shot on a 35mm lens at f/1.4.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ca9fb-d2c7-7442-95df-bcd151dc972a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `abaya-fashion`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ca9fb-d2c7-7442-95df-bcd151dc972a \
+betterprompt generate abaya-fashion \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ca9fb-d2c7-7442-95df-bcd151dc972a \
+betterprompt generate abaya-fashion \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"9:16","resolution":"1K"}'
 ```
