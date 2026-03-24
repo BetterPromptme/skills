@@ -1,14 +1,14 @@
 ---
 name: stranger-things-photobooth-strip
 description: This prompt instructs an image model to generate a realistic 4-frame, 2×2 photobooth strip on a white canvas in an authentic 1980s film aesthetic, using the provided reference image to keep the subject’s identity strictly unchanged (face, hair, glasses, skin texture, body shape) and gender-neutral. It specifies a constant “alphabet wall” living-room background with Christmas lights, requires the subject to wear a Hellfire Club raglan shirt, and defines distinct poses and Stranger Things-themed props for each frame, while enforcing strict negatives to prevent any stylization, beautification, layout changes, or identity alteration.
-skillVersionId: 019ae25d-b795-726e-84e8-3776af2d8196
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a realistic 4-frame, 2×2 photobooth strip on a white canvas in an authentic 1980s film aesthetic, using the provided reference image to keep the subject’s identity strictly unchanged (face, hair, glasses, skin texture, body shape) and gender-neutral. It specifies a constant “alphabet wall” living-room background with Christmas lights, requires the subject to wear a Hellfire Club raglan shirt, and defines distinct poses and Stranger Things-themed props for each frame, while enforcing strict negatives to prevent any stylization, beautification, layout changes, or identity alteration.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ae25d-b795-726e-84e8-3776af2d8196`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `stranger-things-photobooth-strip`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ae25d-b795-726e-84e8-3776af2d8196 \
+betterprompt generate stranger-things-photobooth-strip \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ae25d-b795-726e-84e8-3776af2d8196 \
+betterprompt generate stranger-things-photobooth-strip \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
