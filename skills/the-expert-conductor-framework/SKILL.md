@@ -1,14 +1,14 @@
 ---
 name: the-expert-conductor-framework
 description: This prompt instructs the AI to act as a facilitator who assembles and moderates a diverse panel of domain experts to solve a user-specified task, capturing their iterative debate, critique, and refinement in a structured “reasoning” section, then delivering a final, self-contained solution in a separate “answer” section that synthesizes the experts’ key insights into a complete outcome.
-skillVersionId: 0197c90b-0907-79ec-8907-a69ed5b7c6c3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a facilitator who assembles and moderates a diverse panel of domain experts to solve a user-specified task, capturing their iterative debate, critique, and refinement in a structured “reasoning” section, then delivering a final, self-contained solution in a separate “answer” section that synthesizes the experts’ key insights into a complete outcome.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c90b-0907-79ec-8907-a69ed5b7c6c3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-expert-conductor-framework`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c90b-0907-79ec-8907-a69ed5b7c6c3 \
+betterprompt generate the-expert-conductor-framework \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c90b-0907-79ec-8907-a69ed5b7c6c3 \
+betterprompt generate the-expert-conductor-framework \
   --input Task=<value> \
   --model gpt-4.1-mini \
   --options '{}'
