@@ -1,14 +1,14 @@
 ---
 name: cinematic-mirror-reflection-generator
 description: This prompt instructs an AI video generator to produce a short, hyper-realistic cinematic mirror-shot sequence of a specified character performing a specified grooming or self-adjustment action, framed chest-up with both the subject and their synchronized reflection visible under bright, clean lighting against a dark background. The intended result is an intimate, modern-feeling clip with subtle handheld camera micro-movement, accurate mirror behavior and lighting consistency, faithful preservation of the character’s appearance from an input image, and action-matched natural sound effects with no music, text, logos, or stylized/CGI elements.
-skillVersionId: 0199ec0c-3cb3-7153-a4ff-1117170add98
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI video generator to produce a short, hyper-realistic cinematic mirror-shot sequence of a specified character performing a specified grooming or self-adjustment action, framed chest-up with both the subject and their synchronized reflection visible under bright, clean lighting against a dark background. The intended result is an intimate, modern-feeling clip with subtle handheld camera micro-movement, accurate mirror behavior and lighting consistency, faithful preservation of the character’s appearance from an input image, and action-matched natural sound effects with no music, text, logos, or stylized/CGI elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199ec0c-3cb3-7153-a4ff-1117170add98`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cinematic-mirror-reflection-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199ec0c-3cb3-7153-a4ff-1117170add98 \
+betterprompt generate cinematic-mirror-reflection-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199ec0c-3cb3-7153-a4ff-1117170add98 \
+betterprompt generate cinematic-mirror-reflection-generator \
   --input 'action=applying lip gloss' \
   --input 'character_description=a young woman with long wavy brown hair wearing a black tank top' \
   --model sora-2 \
