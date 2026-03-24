@@ -1,14 +1,14 @@
 ---
 name: whispering-dusk-three-panel-portrait
 description: This prompt instructs an image-generation workflow to produce a photorealistic, cinematic 9:16 triptych set at the beach during blue hour, depicting a three-beat emotional progression from distant solitude to intimate connection. It specifies consistent subject identity across all frames, detailed compositions for a rear horizon view, a side-profile reflective moment, and a close-up portrait, along with wardrobe, symbolic hair detail, natural lighting, color palette, film-like texture, and camera settings. The intended outcome is a cohesive three-panel visual story with realistic twilight atmosphere, subtle grain and bokeh, and a calm, introspective mood without stylized artifacts, text, or identity changes.
-skillVersionId: 019a5d01-50b8-733e-b3ce-9774f211d5ac
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation workflow to produce a photorealistic, cinematic 9:16 triptych set at the beach during blue hour, depicting a three-beat emotional progression from distant solitude to intimate connection. It specifies consistent subject identity across all frames, detailed compositions for a rear horizon view, a side-profile reflective moment, and a close-up portrait, along with wardrobe, symbolic hair detail, natural lighting, color palette, film-like texture, and camera settings. The intended outcome is a cohesive three-panel visual story with realistic twilight atmosphere, subtle grain and bokeh, and a calm, introspective mood without stylized artifacts, text, or identity changes.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a5d01-50b8-733e-b3ce-9774f211d5ac`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `whispering-dusk-three-panel-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a5d01-50b8-733e-b3ce-9774f211d5ac \
+betterprompt generate whispering-dusk-three-panel-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a5d01-50b8-733e-b3ce-9774f211d5ac \
+betterprompt generate whispering-dusk-three-panel-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
