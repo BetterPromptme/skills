@@ -1,14 +1,14 @@
 ---
 name: making-american-style-advertising-signs-from-the-50s-70s
 description: This prompt instructs an image-generation model to create a square, mid-century (1950s diner) vintage American roadside sign featuring user-supplied text and a user-specified icon-shaped sign silhouette, rendered in colorful, slightly weathered painted metal or neon with retro fonts, drop shadows, and playful composition against a clear blue sky, producing a polished retro sign illustration in a raw, realistic style.
-skillVersionId: 0197108c-66ed-7844-8610-0ff1636414ab
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to create a square, mid-century (1950s diner) vintage American roadside sign featuring user-supplied text and a user-specified icon-shaped sign silhouette, rendered in colorful, slightly weathered painted metal or neon with retro fonts, drop shadows, and playful composition against a clear blue sky, producing a polished retro sign illustration in a raw, realistic style.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197108c-66ed-7844-8610-0ff1636414ab`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `making-american-style-advertising-signs-from-the-50s-70s`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197108c-66ed-7844-8610-0ff1636414ab \
+betterprompt generate making-american-style-advertising-signs-from-the-50s-70s \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197108c-66ed-7844-8610-0ff1636414ab \
+betterprompt generate making-american-style-advertising-signs-from-the-50s-70s \
   --input INSERT_YOUR_TEXT_HERE=<value> \
   --input INSERT_YOUR_SYMBOL_HERE=<value> \
   --model gpt-image-1 \
