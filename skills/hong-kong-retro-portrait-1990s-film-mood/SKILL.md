@@ -1,14 +1,14 @@
 ---
 name: hong-kong-retro-portrait-1990s-film-mood
 description: This prompt directs an AI image generator to produce a high-resolution, photorealistic vertical ¾-body portrait of a woman in a cramped, cluttered 1990s Hong Kong room, with precise pose and expression, period-accurate set dressing, and mixed tungsten-plus red/cyan neon lighting diffused through mist. It specifies an analog film look (shallow depth of field, heavy grain, gentle bloom, muted nostalgic color grade) and enforces tasteful realism while emphasizing emotional restraint and cultural authenticity. The intended outcome is a single cinematic, Wong Kar-wai–like film-still portrait that preserves the subject’s facial identity exactly and conveys quiet melancholy within a lived-in retro interior.
-skillVersionId: 019a09cf-ba48-7e10-9e23-6ba087930758
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an AI image generator to produce a high-resolution, photorealistic vertical ¾-body portrait of a woman in a cramped, cluttered 1990s Hong Kong room, with precise pose and expression, period-accurate set dressing, and mixed tungsten-plus red/cyan neon lighting diffused through mist. It specifies an analog film look (shallow depth of field, heavy grain, gentle bloom, muted nostalgic color grade) and enforces tasteful realism while emphasizing emotional restraint and cultural authenticity. The intended outcome is a single cinematic, Wong Kar-wai–like film-still portrait that preserves the subject’s facial identity exactly and conveys quiet melancholy within a lived-in retro interior.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a09cf-ba48-7e10-9e23-6ba087930758`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `hong-kong-retro-portrait-1990s-film-mood`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a09cf-ba48-7e10-9e23-6ba087930758 \
+betterprompt generate hong-kong-retro-portrait-1990s-film-mood \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -100,7 +100,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a09cf-ba48-7e10-9e23-6ba087930758 \
+betterprompt generate hong-kong-retro-portrait-1990s-film-mood \
   --input Clothing=<value> \
   --input 'Accessories=layered gold necklaces, small hoops or pearl earrings' \
   --image-input-url https://example.com/image1.png \
