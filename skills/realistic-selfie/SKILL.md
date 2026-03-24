@@ -1,14 +1,14 @@
 ---
 name: realistic-selfie
 description: This prompt instructs an image model to generate an ultra-realistic, high-angle close-up selfie of a young woman in a dark room, using strong flash lighting to create dramatic contrast and a minimalist background. It specifies detailed attributes for hair, makeup, clothing, accessories, nails, pose, expression, mood, and camera aesthetics to achieve a cool-toned, cinematic film-noir look with sharp facial illumination and textured knit details as the final outcome.
-skillVersionId: 019abedc-a2f7-71f4-93a1-096eb95d03c2
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate an ultra-realistic, high-angle close-up selfie of a young woman in a dark room, using strong flash lighting to create dramatic contrast and a minimalist background. It specifies detailed attributes for hair, makeup, clothing, accessories, nails, pose, expression, mood, and camera aesthetics to achieve a cool-toned, cinematic film-noir look with sharp facial illumination and textured knit details as the final outcome.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019abedc-a2f7-71f4-93a1-096eb95d03c2`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `realistic-selfie`).
 
 Command form:
 
 ```bash
-betterprompt generate 019abedc-a2f7-71f4-93a1-096eb95d03c2 \
+betterprompt generate realistic-selfie \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019abedc-a2f7-71f4-93a1-096eb95d03c2 \
+betterprompt generate realistic-selfie \
   --model imagen-4.0-ultra-generate-001 \
   --options '{"aspectRatio":"1:1"}'
 ```
