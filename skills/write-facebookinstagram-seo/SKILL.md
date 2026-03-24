@@ -1,14 +1,14 @@
 ---
 name: write-facebookinstagram-seo
 description: This prompt instructs the AI to create an engaging, Facebook-optimized promotional post based on a product photo, showcasing stylish wireless earbuds with specified signature features, color, and a premium modern aesthetic. The resulting post is formatted with emojis and line breaks, targets young adults and professionals, includes persuasive yet natural-sounding calls-to-action, highlights any exclusive promotions, and ends with a time-sensitive urgency message to drive immediate purchases.
-skillVersionId: 0196e6ea-86b5-7cf4-84dd-828ea5ed6bea
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create an engaging, Facebook-optimized promotional post based on a product photo, showcasing stylish wireless earbuds with specified signature features, color, and a premium modern aesthetic. The resulting post is formatted with emojis and line breaks, targets young adults and professionals, includes persuasive yet natural-sounding calls-to-action, highlights any exclusive promotions, and ends with a time-sensitive urgency message to drive immediate purchases.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -77,12 +77,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196e6ea-86b5-7cf4-84dd-828ea5ed6bea`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `write-facebookinstagram-seo`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196e6ea-86b5-7cf4-84dd-828ea5ed6bea \
+betterprompt generate write-facebookinstagram-seo \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -103,7 +103,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196e6ea-86b5-7cf4-84dd-828ea5ed6bea \
+betterprompt generate write-facebookinstagram-seo \
   --input color=<value> \
   --input product=<value> \
   --input Signature_feature=<value> \
