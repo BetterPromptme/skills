@@ -1,14 +1,14 @@
 ---
 name: turn-images-into-dreamy-iridescent
 description: This prompt instructs the AI to retexture the attached image by applying an iridescent, ethereal sky-gradient color scheme (sky blue to lavender to pale pink with soft white edging) and rendering it as polished transparent acrylic with high gloss, medium reflectivity, and a subtle subsurface glow/refraction effect. The outcome is an updated version of the original image that retains its structure while adopting a smooth mixed radial/linear gradient finish under soft, diffused ambient lighting with gentle bloom and minimal feathered shadows.
-skillVersionId: 0197af50-6866-7aac-a5b8-e4a1edff6d88
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to retexture the attached image by applying an iridescent, ethereal sky-gradient color scheme (sky blue to lavender to pale pink with soft white edging) and rendering it as polished transparent acrylic with high gloss, medium reflectivity, and a subtle subsurface glow/refraction effect. The outcome is an updated version of the original image that retains its structure while adopting a smooth mixed radial/linear gradient finish under soft, diffused ambient lighting with gentle bloom and minimal feathered shadows.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197af50-6866-7aac-a5b8-e4a1edff6d88`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `turn-images-into-dreamy-iridescent`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197af50-6866-7aac-a5b8-e4a1edff6d88 \
+betterprompt generate turn-images-into-dreamy-iridescent \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197af50-6866-7aac-a5b8-e4a1edff6d88 \
+betterprompt generate turn-images-into-dreamy-iridescent \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
