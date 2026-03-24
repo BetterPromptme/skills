@@ -1,14 +1,14 @@
 ---
 name: product-packaging-design
 description: This prompt instructs an AI to create a photorealistic, retail-ready packaging mockup by placing an uploaded product image into an appropriate package design defined by user-supplied style, colors, material, quantity, and a clear main title. It specifies studio lighting, a pure white background, high resolution, legible minimal text, and generic branding unless assets are provided, while avoiding unrelated elements or prohibited content. The outcome is a clean, high-fidelity e-commerce–style packaging visualization suitable for online listings, marketing presentations, and rapid design iteration.
-skillVersionId: 01995fb1-5acc-7717-8fd5-ceda0ad16a2c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to create a photorealistic, retail-ready packaging mockup by placing an uploaded product image into an appropriate package design defined by user-supplied style, colors, material, quantity, and a clear main title. It specifies studio lighting, a pure white background, high resolution, legible minimal text, and generic branding unless assets are provided, while avoiding unrelated elements or prohibited content. The outcome is a clean, high-fidelity e-commerce–style packaging visualization suitable for online listings, marketing presentations, and rapid design iteration.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -80,12 +80,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01995fb1-5acc-7717-8fd5-ceda0ad16a2c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `product-packaging-design`).
 
 Command form:
 
 ```bash
-betterprompt generate 01995fb1-5acc-7717-8fd5-ceda0ad16a2c \
+betterprompt generate product-packaging-design \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -106,7 +106,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01995fb1-5acc-7717-8fd5-ceda0ad16a2c \
+betterprompt generate product-packaging-design \
   --input 'style=minimalist, luxury, playful, futuristic' \
   --input 'material= cardboard, plastic, kraft paper, glass' \
   --input main_title=<value> \
