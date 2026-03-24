@@ -1,14 +1,14 @@
 ---
 name: hot-wheels-collectors-edition-figurine
 description: This prompt instructs an image-generation/editing model to create an ultra-premium Hot Wheels–style collectible blister-pack render using an uploaded person as the reference for a full-body toy figure posed on the left, paired with a rare supercar on the right, both enclosed in a realistic clear plastic blister. It specifies luxury-toy stylization that preserves recognizability while refining facial aesthetics, and demands high-end materials (glossy paint, clean lines), accurate figure-to-car scaling, and photoreal packaging details like reflections and shadows. The result is a polished, branded product-style mockup featuring metallic Hot Wheels branding with bold flame graphics, presented as a convincing retail-ready collectible package.
-skillVersionId: 0198503e-95ed-72a6-9ee8-58b55f1e596f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation/editing model to create an ultra-premium Hot Wheels–style collectible blister-pack render using an uploaded person as the reference for a full-body toy figure posed on the left, paired with a rare supercar on the right, both enclosed in a realistic clear plastic blister. It specifies luxury-toy stylization that preserves recognizability while refining facial aesthetics, and demands high-end materials (glossy paint, clean lines), accurate figure-to-car scaling, and photoreal packaging details like reflections and shadows. The result is a polished, branded product-style mockup featuring metallic Hot Wheels branding with bold flame graphics, presented as a convincing retail-ready collectible package.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198503e-95ed-72a6-9ee8-58b55f1e596f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `hot-wheels-collectors-edition-figurine`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198503e-95ed-72a6-9ee8-58b55f1e596f \
+betterprompt generate hot-wheels-collectors-edition-figurine \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198503e-95ed-72a6-9ee8-58b55f1e596f \
+betterprompt generate hot-wheels-collectors-edition-figurine \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
