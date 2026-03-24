@@ -1,14 +1,14 @@
 ---
 name: travel-dream-budget-planner
 description: This prompt instructs the assistant to act as a travel budget planner who, using the user’s trip details (destination, dates, trip length, travelers, budget range, travel style, and must-haves), produces a complete cost estimate and money-allocation plan. The expected outcome is a structured breakdown of total and category-level expenses, a daily spending allowance, percentage-based budgeting guidance, practical cost-saving tactics, budget-versus-luxury scenario comparisons, destination-specific food/experience/packing/etiquette tips, and a brief motivational close to encourage saving and enjoying the trip.
-skillVersionId: 01985f73-549e-71fc-b8cd-16a471688670
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the assistant to act as a travel budget planner who, using the user’s trip details (destination, dates, trip length, travelers, budget range, travel style, and must-haves), produces a complete cost estimate and money-allocation plan. The expected outcome is a structured breakdown of total and category-level expenses, a daily spending allowance, percentage-based budgeting guidance, practical cost-saving tactics, budget-versus-luxury scenario comparisons, destination-specific food/experience/packing/etiquette tips, and a brief motivational close to encourage saving and enjoying the trip.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01985f73-549e-71fc-b8cd-16a471688670`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `travel-dream-budget-planner`).
 
 Command form:
 
 ```bash
-betterprompt generate 01985f73-549e-71fc-b8cd-16a471688670 \
+betterprompt generate travel-dream-budget-planner \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01985f73-549e-71fc-b8cd-16a471688670 \
+betterprompt generate travel-dream-budget-planner \
   --input Destination=<value> \
   --input Trip_length=<value> \
   --input Budget_range=<value> \
