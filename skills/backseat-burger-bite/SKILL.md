@@ -1,14 +1,14 @@
 ---
 name: backseat-burger-bite
 description: This prompt instructs an image-generation model to produce a photorealistic, amateur iPhone-style candid photo taken from a car’s backseat, showing the referenced person mid-bite into a large burger wrapped in white paper with red lettering. It specifies composition (tilted, off-center, mid-close framing), environment details (softly blurred dashboard/infotainment), natural daylight lighting, muted iPhone-like color and texture (including visible pores and mild noise), and wardrobe/accessory options by gender, with the outcome being an unfiltered, spontaneous snapshot that preserves the subject’s exact identity and realistic skin detail.
-skillVersionId: 019a47a0-0b59-77fe-b614-038e53d1957e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to produce a photorealistic, amateur iPhone-style candid photo taken from a car’s backseat, showing the referenced person mid-bite into a large burger wrapped in white paper with red lettering. It specifies composition (tilted, off-center, mid-close framing), environment details (softly blurred dashboard/infotainment), natural daylight lighting, muted iPhone-like color and texture (including visible pores and mild noise), and wardrobe/accessory options by gender, with the outcome being an unfiltered, spontaneous snapshot that preserves the subject’s exact identity and realistic skin detail.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a47a0-0b59-77fe-b614-038e53d1957e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `backseat-burger-bite`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a47a0-0b59-77fe-b614-038e53d1957e \
+betterprompt generate backseat-burger-bite \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a47a0-0b59-77fe-b614-038e53d1957e \
+betterprompt generate backseat-burger-bite \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
