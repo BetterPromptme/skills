@@ -1,14 +1,14 @@
 ---
 name: crimson-chiaroscuro-close-up
 description: This prompt instructs an image-generation/editing system to create a photorealistic, cinematic, high-contrast extreme close-up fashion portrait using the provided reference person while strictly preserving their identity. It specifies red glossy leather gloves partially covering the face, gold statement jewelry, slightly messy hair, an intense direct gaze with one eye emphasized, and a minimalist gray studio background with dramatic chiaroscuro lighting. The intended outcome is a high-resolution editorial-style image with sharp texture detail, shallow depth of field, and no added text, logos, or watermarks.
-skillVersionId: 019c1dc0-5c79-743d-b071-41213d2fc3cc
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation/editing system to create a photorealistic, cinematic, high-contrast extreme close-up fashion portrait using the provided reference person while strictly preserving their identity. It specifies red glossy leather gloves partially covering the face, gold statement jewelry, slightly messy hair, an intense direct gaze with one eye emphasized, and a minimalist gray studio background with dramatic chiaroscuro lighting. The intended outcome is a high-resolution editorial-style image with sharp texture detail, shallow depth of field, and no added text, logos, or watermarks.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c1dc0-5c79-743d-b071-41213d2fc3cc`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `crimson-chiaroscuro-close-up`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c1dc0-5c79-743d-b071-41213d2fc3cc \
+betterprompt generate crimson-chiaroscuro-close-up \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c1dc0-5c79-743d-b071-41213d2fc3cc \
+betterprompt generate crimson-chiaroscuro-close-up \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
