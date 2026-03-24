@@ -1,14 +1,14 @@
 ---
 name: the-post-workout-glow
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical handheld selfie of a young woman walking mid-motion on a quiet residential street, dressed in coordinated sporty attire with specific accessories, hair, and subtle natural makeup, captured in soft overcast daylight. It tightly controls composition, environment details, color palette, and camera feel while enforcing strict identity preservation and realistic texture/lighting, resulting in a natural, casual urban lifestyle portrait without stylization, reshaping, or added text.
-skillVersionId: 019d1554-6775-71ad-9446-bd4a65d21e4e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical handheld selfie of a young woman walking mid-motion on a quiet residential street, dressed in coordinated sporty attire with specific accessories, hair, and subtle natural makeup, captured in soft overcast daylight. It tightly controls composition, environment details, color palette, and camera feel while enforcing strict identity preservation and realistic texture/lighting, resulting in a natural, casual urban lifestyle portrait without stylization, reshaping, or added text.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019d1554-6775-71ad-9446-bd4a65d21e4e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-post-workout-glow`).
 
 Command form:
 
 ```bash
-betterprompt generate 019d1554-6775-71ad-9446-bd4a65d21e4e \
+betterprompt generate the-post-workout-glow \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019d1554-6775-71ad-9446-bd4a65d21e4e \
+betterprompt generate the-post-workout-glow \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
