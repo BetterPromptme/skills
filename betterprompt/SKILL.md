@@ -47,29 +47,29 @@ betterprompt skill info <skill-slug>
 
 ## Output Generation
 
-Run a skill to generate output:
+A skill is essentially a prompt with instructions. Run the following command to generate output::
 
 ```sh
-betterprompt generate <skillVersionId> [input flags] [--model <model>] [--options <json>] [--json]
+betterprompt generate <skill-slug> [input flags] [--model <model>] [--options <json>] [--json]
 ```
 
 Input methods (use the one that matches the skill's input contract):
 
 ```sh
 # Key-value pairs (repeatable)
-betterprompt generate <skillVersionId> --input key=value --input key2=value2
+betterprompt generate <skill-slug> --input key=value --input key2=value2
 
 # Image via URL
-betterprompt generate <skillVersionId> --image-input-url <url>
+betterprompt generate <skill-slug> --image-input-url <url>
 
 # Image via base64
-betterprompt generate <skillVersionId> --image-input-base64 <base64string>
+betterprompt generate <skill-slug> --image-input-base64 <base64string>
 
 # JSON payload (all inputs as a single JSON object)
-betterprompt generate <skillVersionId> --input-payload '{"key": "value"}'
+betterprompt generate <skill-slug> --input-payload '{"key": "value"}'
 
 # Stdin pipe
-echo "input text" | betterprompt generate <skillVersionId> --stdin
+echo "input text" | betterprompt generate <skill-slug> --stdin
 ```
 
 Flags:
