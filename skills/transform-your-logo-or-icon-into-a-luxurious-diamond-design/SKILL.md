@@ -1,14 +1,14 @@
 ---
 name: transform-your-logo-or-icon-into-a-luxurious-diamond-design
 description: This prompt instructs the AI to generate an ultra‑high‑resolution 3D render of an existing logo, preserving its original shape and text layout while transforming it into a realistic diamond‑crafted object with transparent, faceted, highly reflective surfaces and subtle white/pale‑blue/soft‑violet refraction shimmer, all presented on a pure white background at 8K detail.
-skillVersionId: 01970b7d-3315-76a7-bd42-fd508600a4d5
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate an ultra‑high‑resolution 3D render of an existing logo, preserving its original shape and text layout while transforming it into a realistic diamond‑crafted object with transparent, faceted, highly reflective surfaces and subtle white/pale‑blue/soft‑violet refraction shimmer, all presented on a pure white background at 8K detail.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01970b7d-3315-76a7-bd42-fd508600a4d5`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `transform-your-logo-or-icon-into-a-luxurious-diamond-design`).
 
 Command form:
 
 ```bash
-betterprompt generate 01970b7d-3315-76a7-bd42-fd508600a4d5 \
+betterprompt generate transform-your-logo-or-icon-into-a-luxurious-diamond-design \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01970b7d-3315-76a7-bd42-fd508600a4d5 \
+betterprompt generate transform-your-logo-or-icon-into-a-luxurious-diamond-design \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"size":0,"quality":0},"quality":"low"}'
