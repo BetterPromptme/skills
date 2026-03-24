@@ -1,14 +1,14 @@
 ---
 name: create-professional-food-poster-shapes
 description: This prompt instructs an image model to generate a studio-style food photograph depicting a deconstructed “explosion” of a specified dish, with the listed ingredients suspended midair in a dynamic, fresh, appetizing composition. The result is a high-resolution, raw-styled image with controlled studio lighting and a Canon EOS R5 look, framed in a 7:8 aspect ratio with moderate chaos and strong stylization for dramatic motion and detail.
-skillVersionId: 0196fae7-d9b5-722f-876c-04172b688bd2
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a studio-style food photograph depicting a deconstructed “explosion” of a specified dish, with the listed ingredients suspended midair in a dynamic, fresh, appetizing composition. The result is a high-resolution, raw-styled image with controlled studio lighting and a Canon EOS R5 look, framed in a 7:8 aspect ratio with moderate chaos and strong stylization for dramatic motion and detail.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196fae7-d9b5-722f-876c-04172b688bd2`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `create-professional-food-poster-shapes`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196fae7-d9b5-722f-876c-04172b688bd2 \
+betterprompt generate create-professional-food-poster-shapes \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196fae7-d9b5-722f-876c-04172b688bd2 \
+betterprompt generate create-professional-food-poster-shapes \
   --input dish_name=<value> \
   --input list_of_ingredients=<value> \
   --model gpt-image-1 \
