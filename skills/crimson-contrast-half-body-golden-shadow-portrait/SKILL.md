@@ -1,14 +1,14 @@
 ---
 name: crimson-contrast-half-body-golden-shadow-portrait
 description: Generates instructions for creating a 1080x1920 vertical portrait image featuring a half-body subject in a black suit and shirt, shot from a slightly low upward angle with stark cinematic, high-contrast lighting. The result is a sculptural, dominant mood achieved through warm directional highlights on one side of the face, deep shadow on the other, and a saturated customizable background color that intensifies the contrast with the subject’s luminous skin and dark wardrobe.
-skillVersionId: 01997422-b965-7196-9d2e-8fa9edc63824
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 Generates instructions for creating a 1080x1920 vertical portrait image featuring a half-body subject in a black suit and shirt, shot from a slightly low upward angle with stark cinematic, high-contrast lighting. The result is a sculptural, dominant mood achieved through warm directional highlights on one side of the face, deep shadow on the other, and a saturated customizable background color that intensifies the contrast with the subject’s luminous skin and dark wardrobe.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01997422-b965-7196-9d2e-8fa9edc63824`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `crimson-contrast-half-body-golden-shadow-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 01997422-b965-7196-9d2e-8fa9edc63824 \
+betterprompt generate crimson-contrast-half-body-golden-shadow-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01997422-b965-7196-9d2e-8fa9edc63824 \
+betterprompt generate crimson-contrast-half-body-golden-shadow-portrait \
   --input 'the_background_color=crimson red' \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
