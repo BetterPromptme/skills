@@ -1,14 +1,14 @@
 ---
 name: make-your-images-fantastical-and-dreamy
 description: This prompt instructs an AI image generator to create a hyperrealistic macro botanical-style portrait of a chosen subject with softly glowing, iridescent pastel petals, morning dew, and dreamy cinematic lighting. The result is a fantasy-inspired, high-contrast artwork with enhanced luminosity and fine natural-illustration detail, set against a deep black background to emphasize color, texture, and sparkle.
-skillVersionId: 0196fb10-b6bf-73b4-88d8-bc114a10d213
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a hyperrealistic macro botanical-style portrait of a chosen subject with softly glowing, iridescent pastel petals, morning dew, and dreamy cinematic lighting. The result is a fantasy-inspired, high-contrast artwork with enhanced luminosity and fine natural-illustration detail, set against a deep black background to emphasize color, texture, and sparkle.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196fb10-b6bf-73b4-88d8-bc114a10d213`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `make-your-images-fantastical-and-dreamy`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196fb10-b6bf-73b4-88d8-bc114a10d213 \
+betterprompt generate make-your-images-fantastical-and-dreamy \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196fb10-b6bf-73b4-88d8-bc114a10d213 \
+betterprompt generate make-your-images-fantastical-and-dreamy \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"size":0,"quality":0},"quality":"low"}'
