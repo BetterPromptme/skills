@@ -1,14 +1,14 @@
 ---
 name: bookworm-fever
 description: This prompt instructs an AI image generator to create a cohesive, three-panel vertical triptych of photorealistic, golden-hour fine-art portraits featuring the same subject consistently across all frames, with a warm pastoral film aesthetic. It specifies the composition and actions for each panel (an intimate restful close-up, a wider full-body meadow scene, and an expressive sensory close-up), recurring props and flora, and detailed camera/film characteristics (lens, shallow depth of field, grain, halation, color grade) to produce a timeless, serene, cinematic sequence that feels like analog film photography.
-skillVersionId: 019a5749-8fa3-726d-9525-06bd70555cc2
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a cohesive, three-panel vertical triptych of photorealistic, golden-hour fine-art portraits featuring the same subject consistently across all frames, with a warm pastoral film aesthetic. It specifies the composition and actions for each panel (an intimate restful close-up, a wider full-body meadow scene, and an expressive sensory close-up), recurring props and flora, and detailed camera/film characteristics (lens, shallow depth of field, grain, halation, color grade) to produce a timeless, serene, cinematic sequence that feels like analog film photography.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a5749-8fa3-726d-9525-06bd70555cc2`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `bookworm-fever`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a5749-8fa3-726d-9525-06bd70555cc2 \
+betterprompt generate bookworm-fever \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a5749-8fa3-726d-9525-06bd70555cc2 \
+betterprompt generate bookworm-fever \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
