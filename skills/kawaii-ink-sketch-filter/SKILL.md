@@ -1,14 +1,14 @@
 ---
 name: kawaii-ink-sketch-filter
 description: This prompt instructs the AI to convert an uploaded photo into a high-contrast black-and-white Japanese manga illustration that preserves the subject’s likeness while adding 1990s shoujo romantic slice-of-life aesthetics. The result is detailed hand-drawn-style line art with soft halftone screen tones, expressive anime-inspired eyes, and energetic manga speed lines in the background to heighten mood and motion.
-skillVersionId: 0198301b-3897-7039-91d0-128b90885918
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to convert an uploaded photo into a high-contrast black-and-white Japanese manga illustration that preserves the subject’s likeness while adding 1990s shoujo romantic slice-of-life aesthetics. The result is detailed hand-drawn-style line art with soft halftone screen tones, expressive anime-inspired eyes, and energetic manga speed lines in the background to heighten mood and motion.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198301b-3897-7039-91d0-128b90885918`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `kawaii-ink-sketch-filter`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198301b-3897-7039-91d0-128b90885918 \
+betterprompt generate kawaii-ink-sketch-filter \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198301b-3897-7039-91d0-128b90885918 \
+betterprompt generate kawaii-ink-sketch-filter \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
