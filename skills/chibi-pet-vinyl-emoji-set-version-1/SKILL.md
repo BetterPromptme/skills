@@ -1,14 +1,14 @@
 ---
 name: chibi-pet-vinyl-emoji-set-version-1
 description: This prompt instructs an image-generation workflow to create a cohesive pack of nine polished, 3D-rendered digital stickers depicting a chibi-style vinyl capsule toy version of a specific real pet based on an uploaded reference photo, preserving the pet’s exact identifying traits while translating them into a smooth collectible-toy aesthetic. The result is a modern, consistent 2025-style “pet emoji” sticker set on a clean background, with each sticker showing a different specified facial expression and maintaining uniform lighting, materials, and toy proportions for easy cropping and pack-wide visual cohesion.
-skillVersionId: 0197ed83-ab84-7fcf-82fa-679bbdae737a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation workflow to create a cohesive pack of nine polished, 3D-rendered digital stickers depicting a chibi-style vinyl capsule toy version of a specific real pet based on an uploaded reference photo, preserving the pet’s exact identifying traits while translating them into a smooth collectible-toy aesthetic. The result is a modern, consistent 2025-style “pet emoji” sticker set on a clean background, with each sticker showing a different specified facial expression and maintaining uniform lighting, materials, and toy proportions for easy cropping and pack-wide visual cohesion.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197ed83-ab84-7fcf-82fa-679bbdae737a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `chibi-pet-vinyl-emoji-set-version-1`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197ed83-ab84-7fcf-82fa-679bbdae737a \
+betterprompt generate chibi-pet-vinyl-emoji-set-version-1 \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197ed83-ab84-7fcf-82fa-679bbdae737a \
+betterprompt generate chibi-pet-vinyl-emoji-set-version-1 \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
