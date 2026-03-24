@@ -1,14 +1,14 @@
 ---
 name: sunlit-architectural-editorial-portrait
 description: This prompt directs an image model to generate a high-resolution, photorealistic, chest-up outdoor editorial fashion portrait using the provided reference image as the sole, unaltered face source, preserving identical facial identity and natural skin texture. It specifies a vertical, centered composition in strong direct sunlight with the subject shading her eyes by hand, styled in modern fashion (cream zip sweater, yellow-tinted sunglasses, gold jewelry, manicured nails) against a light gray classical stone building with a visible fluted column. The intended outcome is a confident, sun-drenched, modern-meets-classic architectural portrait with sharp detail, natural contrast, and no beauty filters, retouching, or stylistic effects that would change identity or realism.
-skillVersionId: 019bdad3-0bab-7289-9701-78a0cd906057
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image model to generate a high-resolution, photorealistic, chest-up outdoor editorial fashion portrait using the provided reference image as the sole, unaltered face source, preserving identical facial identity and natural skin texture. It specifies a vertical, centered composition in strong direct sunlight with the subject shading her eyes by hand, styled in modern fashion (cream zip sweater, yellow-tinted sunglasses, gold jewelry, manicured nails) against a light gray classical stone building with a visible fluted column. The intended outcome is a confident, sun-drenched, modern-meets-classic architectural portrait with sharp detail, natural contrast, and no beauty filters, retouching, or stylistic effects that would change identity or realism.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019bdad3-0bab-7289-9701-78a0cd906057`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `sunlit-architectural-editorial-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019bdad3-0bab-7289-9701-78a0cd906057 \
+betterprompt generate sunlit-architectural-editorial-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019bdad3-0bab-7289-9701-78a0cd906057 \
+betterprompt generate sunlit-architectural-editorial-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{"aspectRatio":"3:4"}'
