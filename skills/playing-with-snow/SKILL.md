@@ -1,14 +1,14 @@
 ---
 name: playing-with-snow
 description: This prompt instructs an image generator to create a highly realistic, winter-cinematic vertical triptych (three stacked panels) using a provided reference photo, preserving the subject’s face, hairstyle, and hair color exactly. It specifies gender-inclusive styling, wardrobe, environment, lighting, color palette, and mood, and defines distinct narrative actions for each panel—snow-in-hands warmth, a calm close-up portrait, and a sparkler-lit moment—resulting in a cohesive three-panel winter story portrait with consistent identity and cinematic atmosphere.
-skillVersionId: 019a9006-4cf8-75bb-bfa7-e0bcd447647b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a highly realistic, winter-cinematic vertical triptych (three stacked panels) using a provided reference photo, preserving the subject’s face, hairstyle, and hair color exactly. It specifies gender-inclusive styling, wardrobe, environment, lighting, color palette, and mood, and defines distinct narrative actions for each panel—snow-in-hands warmth, a calm close-up portrait, and a sparkler-lit moment—resulting in a cohesive three-panel winter story portrait with consistent identity and cinematic atmosphere.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a9006-4cf8-75bb-bfa7-e0bcd447647b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `playing-with-snow`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a9006-4cf8-75bb-bfa7-e0bcd447647b \
+betterprompt generate playing-with-snow \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a9006-4cf8-75bb-bfa7-e0bcd447647b \
+betterprompt generate playing-with-snow \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
