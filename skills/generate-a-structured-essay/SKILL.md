@@ -1,14 +1,14 @@
 ---
 name: generate-a-structured-essay
 description: This prompt instructs the AI to create an academically formatted, detailed essay outline using the user’s supplied topic, thesis, essay type, and desired number of body paragraphs, incorporating any provided key points or generating appropriate ones if none are given. The resulting output includes a structured introduction, logically ordered body paragraphs with main ideas, supporting evidence, and transitions, and a conclusion that reinforces the thesis, with the outline tailored to the specified essay type (including counterarguments and rebuttals for argumentative essays or heightened persuasive emphasis for persuasive essays).
-skillVersionId: 01977706-bb7f-7b1f-9e99-b008b18835dd
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create an academically formatted, detailed essay outline using the user’s supplied topic, thesis, essay type, and desired number of body paragraphs, incorporating any provided key points or generating appropriate ones if none are given. The resulting output includes a structured introduction, logically ordered body paragraphs with main ideas, supporting evidence, and transitions, and a conclusion that reinforces the thesis, with the outline tailored to the specified essay type (including counterarguments and rebuttals for argumentative essays or heightened persuasive emphasis for persuasive essays).
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01977706-bb7f-7b1f-9e99-b008b18835dd`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `generate-a-structured-essay`).
 
 Command form:
 
 ```bash
-betterprompt generate 01977706-bb7f-7b1f-9e99-b008b18835dd \
+betterprompt generate generate-a-structured-essay \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01977706-bb7f-7b1f-9e99-b008b18835dd \
+betterprompt generate generate-a-structured-essay \
   --input Essay_type=<value> \
   --input Essay_Topic=<value> \
   --input Thesis_Statement=<value> \
