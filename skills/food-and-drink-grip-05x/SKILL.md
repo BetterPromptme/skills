@@ -1,14 +1,14 @@
 ---
 name: food-and-drink-grip-05x
 description: This prompt instructs the AI to generate a realistic, unedited-looking iPhone 0.5x ultra‑wide lifestyle photo by compositing the provided person and the provided dish/drink into a bright, natural café setting that matches the supplied style references. The result is a slightly top‑down wide‑angle shot where the seated subject leans forward and holds the exact dish/drink very close to the camera as the dominant foreground element, while preserving the person’s identity, natural skin texture, and true-to-source food appearance, with no added people, graphics, or unrealistic alterations.
-skillVersionId: 019b0c9c-434a-70a8-a0a4-1dabe57b7b7f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a realistic, unedited-looking iPhone 0.5x ultra‑wide lifestyle photo by compositing the provided person and the provided dish/drink into a bright, natural café setting that matches the supplied style references. The result is a slightly top‑down wide‑angle shot where the seated subject leans forward and holds the exact dish/drink very close to the camera as the dominant foreground element, while preserving the person’s identity, natural skin texture, and true-to-source food appearance, with no added people, graphics, or unrealistic alterations.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b0c9c-434a-70a8-a0a4-1dabe57b7b7f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `food-and-drink-grip-05x`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b0c9c-434a-70a8-a0a4-1dabe57b7b7f \
+betterprompt generate food-and-drink-grip-05x \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b0c9c-434a-70a8-a0a4-1dabe57b7b7f \
+betterprompt generate food-and-drink-grip-05x \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-3-pro-image-preview \
