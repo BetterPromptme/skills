@@ -1,14 +1,14 @@
 ---
 name: signature-dog-method-builder
 description: This prompt instructs the AI to act as both a canine behavior specialist and brand strategist to help a professional dog trainer design a distinctive, signature training system tailored to a specific breed and training objective. It guides the AI to clarify the trainer’s core philosophy and training style, then generate a memorable branded name for the method, while asking targeted follow-up questions to ensure the framework fits the trainer’s niche, values, and local market differentiation.
-skillVersionId: 019806c2-f937-7fc0-97b3-28fe72eb54e6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as both a canine behavior specialist and brand strategist to help a professional dog trainer design a distinctive, signature training system tailored to a specific breed and training objective. It guides the AI to clarify the trainer’s core philosophy and training style, then generate a memorable branded name for the method, while asking targeted follow-up questions to ensure the framework fits the trainer’s niche, values, and local market differentiation.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019806c2-f937-7fc0-97b3-28fe72eb54e6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `signature-dog-method-builder`).
 
 Command form:
 
 ```bash
-betterprompt generate 019806c2-f937-7fc0-97b3-28fe72eb54e6 \
+betterprompt generate signature-dog-method-builder \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019806c2-f937-7fc0-97b3-28fe72eb54e6 \
+betterprompt generate signature-dog-method-builder \
   --input insert_dog_breed=<value> \
   --input insert_training_goal=<value> \
   --model gpt-4o \
