@@ -1,14 +1,14 @@
 ---
 name: naturalist-field-journal-ecosystem-scene
 description: This prompt instructs an image model to generate an epic, photorealistic 3D documentary-style scene of a naturalist’s campsite where an open, weathered field journal magically transforms its drawn and pressed contents into living ecosystems. The outcome is a highly detailed 8K composition featuring animated botanical and insect elements, expanding watercolor landscapes, miniature camps formed from margin notes, a real creature swimming in a jar on the page, and a sketched animal stepping off the paper, all lit by lantern glow and fireflies with a pine-forest atmosphere, with placeholder variables ready to be filled for specific plants and an animal.
-skillVersionId: 019c27ca-c2e5-711b-baf3-5541951c8314
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate an epic, photorealistic 3D documentary-style scene of a naturalist’s campsite where an open, weathered field journal magically transforms its drawn and pressed contents into living ecosystems. The outcome is a highly detailed 8K composition featuring animated botanical and insect elements, expanding watercolor landscapes, miniature camps formed from margin notes, a real creature swimming in a jar on the page, and a sketched animal stepping off the paper, all lit by lantern glow and fireflies with a pine-forest atmosphere, with placeholder variables ready to be filled for specific plants and an animal.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -65,12 +65,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c27ca-c2e5-711b-baf3-5541951c8314`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `naturalist-field-journal-ecosystem-scene`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c27ca-c2e5-711b-baf3-5541951c8314 \
+betterprompt generate naturalist-field-journal-ecosystem-scene \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -87,7 +87,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c27ca-c2e5-711b-baf3-5541951c8314 \
+betterprompt generate naturalist-field-journal-ecosystem-scene \
   --input animal=otter \
   --input plant_1=<value> \
   --input plant_2=Hypoxis \
