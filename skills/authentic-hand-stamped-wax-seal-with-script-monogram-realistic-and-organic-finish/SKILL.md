@@ -1,14 +1,14 @@
 ---
 name: authentic-hand-stamped-wax-seal-with-script-monogram-realistic-and-organic-finish
 description: This prompt instructs an image generator to produce a close-up, photorealistic wax seal freshly stamped on paper, emphasizing natural imperfections such as uneven edges, pressure marks, marbled texture, and angled lighting reflections. It also specifies a slightly recessed, hand-engraved script monogram using a provided letter, encircled by a subtly irregular ornamental rim, and rendered in a user-selected wax color with realistic tonal variation, resulting in an authentic hand-made seal appearance rather than a digitally perfect graphic.
-skillVersionId: 01971a3f-2620-7ec5-a1c4-645362e8362f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to produce a close-up, photorealistic wax seal freshly stamped on paper, emphasizing natural imperfections such as uneven edges, pressure marks, marbled texture, and angled lighting reflections. It also specifies a slightly recessed, hand-engraved script monogram using a provided letter, encircled by a subtly irregular ornamental rim, and rendered in a user-selected wax color with realistic tonal variation, resulting in an authentic hand-made seal appearance rather than a digitally perfect graphic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01971a3f-2620-7ec5-a1c4-645362e8362f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `authentic-hand-stamped-wax-seal-with-script-monogram-realistic-and-organic-finish`).
 
 Command form:
 
 ```bash
-betterprompt generate 01971a3f-2620-7ec5-a1c4-645362e8362f \
+betterprompt generate authentic-hand-stamped-wax-seal-with-script-monogram-realistic-and-organic-finish \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01971a3f-2620-7ec5-a1c4-645362e8362f \
+betterprompt generate authentic-hand-stamped-wax-seal-with-script-monogram-realistic-and-organic-finish \
   --input Wax_Color=<value> \
   --input Your_Letter=<value> \
   --model gpt-image-1 \
