@@ -1,14 +1,14 @@
 ---
 name: youtube-reaction-thumbnail-maker
 description: This prompt instructs an AI thumbnail designer to produce a hyper-realistic 16:9 YouTube reaction thumbnail by compositing a provided reactor photo with an excited, surprised expression alongside the provided reaction content displayed inside a realistic, dimensional device/player mockup, then adding the exact specified title text in a single white bold font with no extra wording. The intended outcome is a clean, high-CTR thumbnail with natural lighting, accurate skin texture, professional blending/shadows, vibrant but controlled color grading, strict identity preservation, and a clear composition hierarchy (reactor → text → content → background).
-skillVersionId: 019ae364-71f1-712e-b3ac-a5b5d396e423
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI thumbnail designer to produce a hyper-realistic 16:9 YouTube reaction thumbnail by compositing a provided reactor photo with an excited, surprised expression alongside the provided reaction content displayed inside a realistic, dimensional device/player mockup, then adding the exact specified title text in a single white bold font with no extra wording. The intended outcome is a clean, high-CTR thumbnail with natural lighting, accurate skin texture, professional blending/shadows, vibrant but controlled color grading, strict identity preservation, and a clear composition hierarchy (reactor → text → content → background).
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ae364-71f1-712e-b3ac-a5b5d396e423`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `youtube-reaction-thumbnail-maker`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ae364-71f1-712e-b3ac-a5b5d396e423 \
+betterprompt generate youtube-reaction-thumbnail-maker \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ae364-71f1-712e-b3ac-a5b5d396e423 \
+betterprompt generate youtube-reaction-thumbnail-maker \
   --input 'main_text=Best MV I've ever seen' \
   --input 'Main_video_or_content=Taylor Swift's Me! MV' \
   --image-input-url https://example.com/image1.png \
