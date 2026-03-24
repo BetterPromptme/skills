@@ -1,14 +1,14 @@
 ---
 name: dreamy-y2k-suburban-night
 description: This prompt instructs an image generator to create a full-body, photorealistic cinematic portrait based on an input face, preserving the subject’s identity while styling them in Y2K-inspired fashion and placing them in a dim suburban night setting. It specifies environment details, pose, props, lighting, lens and film-grain texture to produce a dreamy, nostalgic frame with a subtle horror undertone, resulting in a high-detail vertical image that feels like a still from a late-90s/early-2000s movie.
-skillVersionId: 019a23b7-4d72-785d-a433-329d36d8fd4d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a full-body, photorealistic cinematic portrait based on an input face, preserving the subject’s identity while styling them in Y2K-inspired fashion and placing them in a dim suburban night setting. It specifies environment details, pose, props, lighting, lens and film-grain texture to produce a dreamy, nostalgic frame with a subtle horror undertone, resulting in a high-detail vertical image that feels like a still from a late-90s/early-2000s movie.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -81,12 +81,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a23b7-4d72-785d-a433-329d36d8fd4d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `dreamy-y2k-suburban-night`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a23b7-4d72-785d-a433-329d36d8fd4d \
+betterprompt generate dreamy-y2k-suburban-night \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -107,7 +107,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a23b7-4d72-785d-a433-329d36d8fd4d \
+betterprompt generate dreamy-y2k-suburban-night \
   --input image=<value> \
   --input gender=<value> \
   --input hairstyle=<value> \
