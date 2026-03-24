@@ -1,14 +1,14 @@
 ---
 name: icon-maker-2
 description: This prompt instructs an AI image generator to create an icon depicting a specified item, matching a given visual style and using a designated primary color. If the transparency option is enabled, it also requires the icon to have a transparent background, producing a ready-to-use asset suitable for UI or branding.
-skillVersionId: 019918d5-3ac7-7ef6-b203-0eb0b56d727e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create an icon depicting a specified item, matching a given visual style and using a designated primary color. If the transparency option is enabled, it also requires the icon to have a transparent background, producing a ready-to-use asset suitable for UI or branding.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -65,12 +65,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019918d5-3ac7-7ef6-b203-0eb0b56d727e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `icon-maker-2`).
 
 Command form:
 
 ```bash
-betterprompt generate 019918d5-3ac7-7ef6-b203-0eb0b56d727e \
+betterprompt generate icon-maker-2 \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -87,7 +87,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019918d5-3ac7-7ef6-b203-0eb0b56d727e \
+betterprompt generate icon-maker-2 \
   --input item=<value> \
   --input color=red \
   --input tranparent=true \
