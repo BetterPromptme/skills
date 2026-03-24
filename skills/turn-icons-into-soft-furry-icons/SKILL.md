@@ -1,14 +1,14 @@
 ---
 name: turn-icons-into-soft-furry-icons
 description: This prompt instructs the AI to take a specified flat vector icon and reimagine it as a soft, three-dimensional, fur-covered object with hyperrealistic hair detail, gentle floating presentation, and modern studio-lit rendering on a clean light gray background, resulting in a high-resolution, tactile, playful 3D image that preserves the original icon’s silhouette while adding plush depth, texture, and soft shadows.
-skillVersionId: 0196f11d-3c64-73ab-80bd-4bfc73910ef6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take a specified flat vector icon and reimagine it as a soft, three-dimensional, fur-covered object with hyperrealistic hair detail, gentle floating presentation, and modern studio-lit rendering on a clean light gray background, resulting in a high-resolution, tactile, playful 3D image that preserves the original icon’s silhouette while adding plush depth, texture, and soft shadows.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f11d-3c64-73ab-80bd-4bfc73910ef6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `turn-icons-into-soft-furry-icons`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f11d-3c64-73ab-80bd-4bfc73910ef6 \
+betterprompt generate turn-icons-into-soft-furry-icons \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f11d-3c64-73ab-80bd-4bfc73910ef6 \
+betterprompt generate turn-icons-into-soft-furry-icons \
   --input insert_icon_you_want_here=<value> \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"size":0,"quality":0},"quality":"low"}'
