@@ -1,14 +1,14 @@
 ---
 name: translucent-hyperglass-close-up
 description: This prompt directs an image retexturing process to keep an object’s original shape while transforming its surface into a hyperreal translucent “hyperglass” look, emphasizing refraction, internal scattering, bubbles, and subtle iridescent glints. It specifies hard studio lighting with crisp shadows and sharp specular highlights, a pure black void background, and a macro close-up render with shallow depth of field. The outcome is a silhouette-faithful, glossy, crystal-clear glass-like version of the object with pronounced internal reflections and curved distortions.
-skillVersionId: 01981616-6888-7530-8416-fe656ec1995c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image retexturing process to keep an object’s original shape while transforming its surface into a hyperreal translucent “hyperglass” look, emphasizing refraction, internal scattering, bubbles, and subtle iridescent glints. It specifies hard studio lighting with crisp shadows and sharp specular highlights, a pure black void background, and a macro close-up render with shallow depth of field. The outcome is a silhouette-faithful, glossy, crystal-clear glass-like version of the object with pronounced internal reflections and curved distortions.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01981616-6888-7530-8416-fe656ec1995c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `translucent-hyperglass-close-up`).
 
 Command form:
 
 ```bash
-betterprompt generate 01981616-6888-7530-8416-fe656ec1995c \
+betterprompt generate translucent-hyperglass-close-up \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01981616-6888-7530-8416-fe656ec1995c \
+betterprompt generate translucent-hyperglass-close-up \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
