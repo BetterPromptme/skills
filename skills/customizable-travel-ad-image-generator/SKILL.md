@@ -1,14 +1,14 @@
 ---
 name: customizable-travel-ad-image-generator
 description: This prompt instructs an AI image generator to produce an advertising-style travel campaign visual tailored to a specific brand or service, location, time of day, and seasonal or weather conditions, featuring designated landmarks and added scene details to achieve a chosen mood. The outcome is a cohesive, marketing-ready image that visually emphasizes the requested destination attributes and atmosphere in a polished promotional style.
-skillVersionId: 0198c08e-b78e-7e08-8a8f-2ca8b5f070f4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce an advertising-style travel campaign visual tailored to a specific brand or service, location, time of day, and seasonal or weather conditions, featuring designated landmarks and added scene details to achieve a chosen mood. The outcome is a cohesive, marketing-ready image that visually emphasizes the requested destination attributes and atmosphere in a polished promotional style.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198c08e-b78e-7e08-8a8f-2ca8b5f070f4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `customizable-travel-ad-image-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198c08e-b78e-7e08-8a8f-2ca8b5f070f4 \
+betterprompt generate customizable-travel-ad-image-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -94,7 +94,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198c08e-b78e-7e08-8a8f-2ca8b5f070f4 \
+betterprompt generate customizable-travel-ad-image-generator \
   --input Time_of_Day=<value> \
   --input Season_or_Weather=<value> \
   --input Additional_Details=<value> \
