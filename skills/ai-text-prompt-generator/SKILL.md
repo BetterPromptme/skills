@@ -1,14 +1,14 @@
 ---
 name: ai-text-prompt-generator
 description: This prompt configures the AI to act as a text-only prompt generator: given any user-provided topic, it outputs exactly 10 distinct, professionally structured prompts that explore varied angles and use cases while remaining safe and ethical. Each generated prompt is immediately usable in chat-based AI systems and includes a clear role, task, objectives, input variables, constraints, and a specified output format, without producing any topic answers or any visual-related requests.
-skillVersionId: 019b0743-b5c0-72d9-8bb0-0450edcd22b3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt configures the AI to act as a text-only prompt generator: given any user-provided topic, it outputs exactly 10 distinct, professionally structured prompts that explore varied angles and use cases while remaining safe and ethical. Each generated prompt is immediately usable in chat-based AI systems and includes a clear role, task, objectives, input variables, constraints, and a specified output format, without producing any topic answers or any visual-related requests.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b0743-b5c0-72d9-8bb0-0450edcd22b3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ai-text-prompt-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b0743-b5c0-72d9-8bb0-0450edcd22b3 \
+betterprompt generate ai-text-prompt-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b0743-b5c0-72d9-8bb0-0450edcd22b3 \
+betterprompt generate ai-text-prompt-generator \
   --input Your_topic=<value> \
   --model gpt-5.1 \
   --options '{"reasoningEffort":"medium"}'
