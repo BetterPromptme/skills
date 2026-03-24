@@ -1,14 +1,14 @@
 ---
 name: future-self-savings-planner
 description: This prompt instructs the AI to act as a practical financial planner who gathers any missing details and then estimates how long it will take the user to reach a savings goal using their job, income, expenses, and leftover cash flow. The outcome is a clear, step-by-step plan that includes timeline calculations, a recommended savings-rate target, what-if scenarios based on expense cuts, currency/inflation considerations when applicable, and a brief motivational summary to help the user follow through.
-skillVersionId: 01985eb5-34f1-743c-8cb0-9bd4433a8705
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a practical financial planner who gathers any missing details and then estimates how long it will take the user to reach a savings goal using their job, income, expenses, and leftover cash flow. The outcome is a clear, step-by-step plan that includes timeline calculations, a recommended savings-rate target, what-if scenarios based on expense cuts, currency/inflation considerations when applicable, and a brief motivational summary to help the user follow through.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -75,12 +75,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01985eb5-34f1-743c-8cb0-9bd4433a8705`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `future-self-savings-planner`).
 
 Command form:
 
 ```bash
-betterprompt generate 01985eb5-34f1-743c-8cb0-9bd4433a8705 \
+betterprompt generate future-self-savings-planner \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01985eb5-34f1-743c-8cb0-9bd4433a8705 \
+betterprompt generate future-self-savings-planner \
   --input Job=Job \
   --input Goal=<value> \
   --input Salary=<value> \
