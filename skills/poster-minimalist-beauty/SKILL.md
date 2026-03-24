@@ -1,14 +1,14 @@
 ---
 name: poster-minimalist-beauty
 description: This prompt instructs an AI image generator to produce a premium, minimal commercial poster centered on a specified apparel item, shown front-facing and crisply lit while floating with realistic shadows. It directs the model to auto-match a smooth gradient background to the product’s dominant colors, add subtle atmospheric effects like fog or light flares for depth, and incorporate faint, non-readable background echoes of the apparel word without any actual text or branding, resulting in an ultra-HD 4:5 modern product-focused poster.
-skillVersionId: 0197aa44-5710-73ae-bb5c-dc3fb7d3af62
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a premium, minimal commercial poster centered on a specified apparel item, shown front-facing and crisply lit while floating with realistic shadows. It directs the model to auto-match a smooth gradient background to the product’s dominant colors, add subtle atmospheric effects like fog or light flares for depth, and incorporate faint, non-readable background echoes of the apparel word without any actual text or branding, resulting in an ultra-HD 4:5 modern product-focused poster.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197aa44-5710-73ae-bb5c-dc3fb7d3af62`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `poster-minimalist-beauty`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197aa44-5710-73ae-bb5c-dc3fb7d3af62 \
+betterprompt generate poster-minimalist-beauty \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197aa44-5710-73ae-bb5c-dc3fb7d3af62 \
+betterprompt generate poster-minimalist-beauty \
   --input APPAREL=<value> \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
