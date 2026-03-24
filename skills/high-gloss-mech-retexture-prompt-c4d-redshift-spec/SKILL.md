@@ -1,14 +1,14 @@
 ---
 name: high-gloss-mech-retexture-prompt-c4d-redshift-spec
 description: This prompt instructs an image-editing model to retexture the attached object into a hyper-realistic, Cinema 4D–style 3D render with high-poly mechanical detailing, glossy polished plastic and carbon-fiber materials, subtle decals and emissive/anodized accents, and a specific teal/black/white/red color palette. It specifies studio HDRI three-point lighting, strong specular highlights, soft contact shadows, a centered three-quarter front camera view with a slightly elevated 35mm lens, and a clean white background, resulting in a 4K+ object-focused render that appears to float with a realistic shadow beneath it.
-skillVersionId: 0197d49d-9a32-797a-9429-6c83f6d2b2ca
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-editing model to retexture the attached object into a hyper-realistic, Cinema 4D–style 3D render with high-poly mechanical detailing, glossy polished plastic and carbon-fiber materials, subtle decals and emissive/anodized accents, and a specific teal/black/white/red color palette. It specifies studio HDRI three-point lighting, strong specular highlights, soft contact shadows, a centered three-quarter front camera view with a slightly elevated 35mm lens, and a clean white background, resulting in a 4K+ object-focused render that appears to float with a realistic shadow beneath it.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197d49d-9a32-797a-9429-6c83f6d2b2ca`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `high-gloss-mech-retexture-prompt-c4d-redshift-spec`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197d49d-9a32-797a-9429-6c83f6d2b2ca \
+betterprompt generate high-gloss-mech-retexture-prompt-c4d-redshift-spec \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197d49d-9a32-797a-9429-6c83f6d2b2ca \
+betterprompt generate high-gloss-mech-retexture-prompt-c4d-redshift-spec \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
