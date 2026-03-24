@@ -1,14 +1,14 @@
 ---
 name: the-7-day-kickstart-plan
 description: This prompt instructs the AI to act as a supportive learning coach and produce a simple 7-day beginner starter plan for a chosen skill, with each day containing a short plain-language lesson, a practice activity that takes under 30 minutes, and a brief open-ended reflection question. The outcome is a consistent, easy-to-skim weeklong schedule designed to reduce overwhelm, build early confidence, and create momentum while avoiding jargon, advanced material, and any unsafe advice (including adding a brief caution to seek professional guidance for sensitive topics).
-skillVersionId: 019a9618-1456-74a9-98fa-935c0cf11695
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a supportive learning coach and produce a simple 7-day beginner starter plan for a chosen skill, with each day containing a short plain-language lesson, a practice activity that takes under 30 minutes, and a brief open-ended reflection question. The outcome is a consistent, easy-to-skim weeklong schedule designed to reduce overwhelm, build early confidence, and create momentum while avoiding jargon, advanced material, and any unsafe advice (including adding a brief caution to seek professional guidance for sensitive topics).
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -58,12 +58,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a9618-1456-74a9-98fa-935c0cf11695`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-7-day-kickstart-plan`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a9618-1456-74a9-98fa-935c0cf11695 \
+betterprompt generate the-7-day-kickstart-plan \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -80,7 +80,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a9618-1456-74a9-98fa-935c0cf11695 \
+betterprompt generate the-7-day-kickstart-plan \
   --input 'skill=Graphic design basics' \
   --model grok-4-fast \
   --options '{"reasoningEffort":"low"}'
