@@ -1,14 +1,14 @@
 ---
 name: review-and-revise-your-application-cv
 description: This prompt instructs the AI to edit and optimize a resume for a specified target role by correcting language errors, tightening and professionalizing the writing, standardizing formatting, and rewriting content to be more achievement-focused with strong action verbs and measurable results, while also identifying missing or unclear sections and recommending improvements so the final CV is cleaner, more impactful, and better suited for job applications.
-skillVersionId: 0196e6ee-18f9-7fd2-a36e-7a15cfa218ac
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to edit and optimize a resume for a specified target role by correcting language errors, tightening and professionalizing the writing, standardizing formatting, and rewriting content to be more achievement-focused with strong action verbs and measurable results, while also identifying missing or unclear sections and recommending improvements so the final CV is cleaner, more impactful, and better suited for job applications.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196e6ee-18f9-7fd2-a36e-7a15cfa218ac`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `review-and-revise-your-application-cv`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196e6ee-18f9-7fd2-a36e-7a15cfa218ac \
+betterprompt generate review-and-revise-your-application-cv \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196e6ee-18f9-7fd2-a36e-7a15cfa218ac \
+betterprompt generate review-and-revise-your-application-cv \
   --input The_CV_is_targeted_at=<value> \
   --image-input-url https://example.com/image1.png \
   --model gpt-4.1-mini \
