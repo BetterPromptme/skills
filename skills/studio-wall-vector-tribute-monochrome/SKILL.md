@@ -1,14 +1,14 @@
 ---
 name: studio-wall-vector-tribute-monochrome
 description: This prompt instructs an image model to generate a high-resolution, photorealistic full-body studio portrait of the person in the provided reference image, with strict identity preservation of their face while posing against a light gray wall in a minimal black-and-white outfit. It also directs the model to add a clean, high-contrast geometric black-and-white vector-style portrait of the same person on the wall, with specified title and handle text placed beneath it, resulting in a modern premium monochrome composition with controlled lighting and no extraneous elements.
-skillVersionId: 01997466-0666-7b43-8cbe-07e45024ac87
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a high-resolution, photorealistic full-body studio portrait of the person in the provided reference image, with strict identity preservation of their face while posing against a light gray wall in a minimal black-and-white outfit. It also directs the model to add a clean, high-contrast geometric black-and-white vector-style portrait of the same person on the wall, with specified title and handle text placed beneath it, resulting in a modern premium monochrome composition with controlled lighting and no extraneous elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01997466-0666-7b43-8cbe-07e45024ac87`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `studio-wall-vector-tribute-monochrome`).
 
 Command form:
 
 ```bash
-betterprompt generate 01997466-0666-7b43-8cbe-07e45024ac87 \
+betterprompt generate studio-wall-vector-tribute-monochrome \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -100,7 +100,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01997466-0666-7b43-8cbe-07e45024ac87 \
+betterprompt generate studio-wall-vector-tribute-monochrome \
   --input Name=Noi \
   --input Channel=Instagram \
   --input Account_name=noinguyentran \
