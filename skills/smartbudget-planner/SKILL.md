@@ -1,14 +1,14 @@
 ---
 name: smartbudget-planner
 description: This prompt instructs the AI to act as a financial assistant that builds a realistic, personalized monthly budget using a user’s income, fixed and variable expenses, savings target, debt repayment needs, and chosen budgeting method. It calculates total spending and remaining funds, prioritizes savings, allocates an appropriate amount toward debt while preserving stability, and then formats the full budget according to the selected strategy (e.g., 50/30/20, zero-based, envelope, or custom). The result is a structured monthly breakdown with category allocations and tailored recommendations to reduce wasteful spending and improve savings progress.
-skillVersionId: 0197f87d-31e5-752d-b790-5f0762fa8002
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a financial assistant that builds a realistic, personalized monthly budget using a user’s income, fixed and variable expenses, savings target, debt repayment needs, and chosen budgeting method. It calculates total spending and remaining funds, prioritizes savings, allocates an appropriate amount toward debt while preserving stability, and then formats the full budget according to the selected strategy (e.g., 50/30/20, zero-based, envelope, or custom). The result is a structured monthly breakdown with category allocations and tailored recommendations to reduce wasteful spending and improve savings progress.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197f87d-31e5-752d-b790-5f0762fa8002`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `smartbudget-planner`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197f87d-31e5-752d-b790-5f0762fa8002 \
+betterprompt generate smartbudget-planner \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -92,7 +92,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197f87d-31e5-752d-b790-5f0762fa8002 \
+betterprompt generate smartbudget-planner \
   --input savings_goal=<value> \
   --input debt_repayment=<value> \
   --input fixed_expenses=<value> \
