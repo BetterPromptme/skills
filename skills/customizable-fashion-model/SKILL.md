@@ -1,14 +1,14 @@
 ---
 name: customizable-fashion-model
 description: This prompt instructs an AI image generator to produce a highly detailed, photorealistic fashion model illustration tailored to user-defined attributes (such as demographics, facial features, hair, body type, expression, pose, wardrobe, makeup, setting, lighting, style, and mood), resulting in a visually striking, vibrant, professional composition with refined textures and background detail suitable for a high-end fashion magazine cover.
-skillVersionId: 0196e755-4834-78c3-b1c7-22265e3b62e6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a highly detailed, photorealistic fashion model illustration tailored to user-defined attributes (such as demographics, facial features, hair, body type, expression, pose, wardrobe, makeup, setting, lighting, style, and mood), resulting in a visually striking, vibrant, professional composition with refined textures and background detail suitable for a high-end fashion magazine cover.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -88,12 +88,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196e755-4834-78c3-b1c7-22265e3b62e6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `customizable-fashion-model`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196e755-4834-78c3-b1c7-22265e3b62e6 \
+betterprompt generate customizable-fashion-model \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -110,7 +110,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196e755-4834-78c3-b1c7-22265e3b62e6 \
+betterprompt generate customizable-fashion-model \
   --input Age=<value> \
   --input Hair=<value> \
   --input Pose=<value> \
