@@ -1,14 +1,14 @@
 ---
 name: untitled-prompt-4
 description: This prompt asks the AI to generate or describe an image featuring a cup placed in a forest setting, focusing on composing a nature scene where the cup is a clear subject among trees and foliage. The result is a forest-themed picture (or detailed visual description) that centers on the cup and conveys the atmosphere, lighting, and surroundings of the woodland environment.
-skillVersionId: 019b2bdd-bbbe-70bf-baf3-74194e44f2bf
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to generate or describe an image featuring a cup placed in a forest setting, focusing on composing a nature scene where the cup is a clear subject among trees and foliage. The result is a forest-themed picture (or detailed visual description) that centers on the cup and conveys the atmosphere, lighting, and surroundings of the woodland environment.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b2bdd-bbbe-70bf-baf3-74194e44f2bf`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `untitled-prompt-4`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b2bdd-bbbe-70bf-baf3-74194e44f2bf \
+betterprompt generate untitled-prompt-4 \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b2bdd-bbbe-70bf-baf3-74194e44f2bf \
+betterprompt generate untitled-prompt-4 \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"1:1","resolution":"1K"}'
 ```
