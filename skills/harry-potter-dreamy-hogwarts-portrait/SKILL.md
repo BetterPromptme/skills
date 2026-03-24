@@ -1,14 +1,14 @@
 ---
 name: harry-potter-dreamy-hogwarts-portrait
 description: This prompt instructs an AI image generator to produce a photorealistic, cinematic fantasy portrait set inside a Hogwarts-like castle, depicting a Gryffindor-uniformed student holding a glowing wand in a dreamy yet dark academic atmosphere. It specifies detailed styling, wardrobe, pose, lighting, camera framing, and color grading to achieve a high-budget film-still look while strictly preserving the subject’s exact facial identity from a provided reference image. The expected result is a vertical, ultra-detailed portrait where warm wand light contrasts with cool castle ambience, with realistic textures, subtle magical particles, and a dramatic but believable mood.
-skillVersionId: 019a141a-0afe-71d6-b82b-4f5a8e93955c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a photorealistic, cinematic fantasy portrait set inside a Hogwarts-like castle, depicting a Gryffindor-uniformed student holding a glowing wand in a dreamy yet dark academic atmosphere. It specifies detailed styling, wardrobe, pose, lighting, camera framing, and color grading to achieve a high-budget film-still look while strictly preserving the subject’s exact facial identity from a provided reference image. The expected result is a vertical, ultra-detailed portrait where warm wand light contrasts with cool castle ambience, with realistic textures, subtle magical particles, and a dramatic but believable mood.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a141a-0afe-71d6-b82b-4f5a8e93955c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `harry-potter-dreamy-hogwarts-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a141a-0afe-71d6-b82b-4f5a8e93955c \
+betterprompt generate harry-potter-dreamy-hogwarts-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a141a-0afe-71d6-b82b-4f5a8e93955c \
+betterprompt generate harry-potter-dreamy-hogwarts-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
