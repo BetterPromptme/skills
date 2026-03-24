@@ -1,14 +1,14 @@
 ---
 name: the-cognitive-cartographer-mental-map-reset
 description: This prompt instructs the AI to convert a user’s brief description of mental clutter into a structured map: a table that lists recurring surface thoughts, the likely underlying motives driving them, and a 1–10 estimate of how mentally draining each is. It then identifies the primary cognitive pattern organizing the user’s overthinking and proposes a single counterintuitive, immediately doable micro-action intended to interrupt the loop and restore clearer decision-making, presented in a practical, non-clinical tone.
-skillVersionId: 019a538d-1c60-731f-ae28-a20588563736
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to convert a user’s brief description of mental clutter into a structured map: a table that lists recurring surface thoughts, the likely underlying motives driving them, and a 1–10 estimate of how mentally draining each is. It then identifies the primary cognitive pattern organizing the user’s overthinking and proposes a single counterintuitive, immediately doable micro-action intended to interrupt the loop and restore clearer decision-making, presented in a practical, non-clinical tone.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a538d-1c60-731f-ae28-a20588563736`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-cognitive-cartographer-mental-map-reset`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a538d-1c60-731f-ae28-a20588563736 \
+betterprompt generate the-cognitive-cartographer-mental-map-reset \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a538d-1c60-731f-ae28-a20588563736 \
+betterprompt generate the-cognitive-cartographer-mental-map-reset \
   --input context=<value> \
   --model grok-4-fast \
   --options '{"reasoningEffort":"low"}'
