@@ -25,11 +25,6 @@ yarn global add betterprompt@latest
 pnpm add -g betterprompt@latest
 ```
 
-```sh
-# Binary release (macOS / Linux, no Node.js required)
-curl -fsSL https://raw.githubusercontent.com/BetterPromptme/betterprompt/main/install.sh | bash
-```
-
 ## Authentication
 
 Authenticate via browser:
