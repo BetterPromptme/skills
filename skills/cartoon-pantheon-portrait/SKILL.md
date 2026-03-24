@@ -1,14 +1,14 @@
 ---
 name: cartoon-pantheon-portrait
 description: This prompt instructs an image-generation system to produce an ultra-detailed, cinematic 3D scene of a casually dressed man posed as a collectible figure atop a vibrant toy-like pedestal, with multiple well-known cartoon characters arranged around him in playful interactions. The intended result is an 8K, richly colored, ultra-realistic render that blends nostalgic cartoon energy with modern action-figure aesthetics and dramatic lighting.
-skillVersionId: 01990f12-68cc-7146-81a5-d8a3b26586c7
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce an ultra-detailed, cinematic 3D scene of a casually dressed man posed as a collectible figure atop a vibrant toy-like pedestal, with multiple well-known cartoon characters arranged around him in playful interactions. The intended result is an 8K, richly colored, ultra-realistic render that blends nostalgic cartoon energy with modern action-figure aesthetics and dramatic lighting.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01990f12-68cc-7146-81a5-d8a3b26586c7`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cartoon-pantheon-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 01990f12-68cc-7146-81a5-d8a3b26586c7 \
+betterprompt generate cartoon-pantheon-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01990f12-68cc-7146-81a5-d8a3b26586c7 \
+betterprompt generate cartoon-pantheon-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
