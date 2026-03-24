@@ -1,14 +1,14 @@
 ---
 name: a-classical-oil-painting-gallery-prompt
 description: This prompt instructs an AI to generate a realistic oil painting-style image depicting a chosen country as a classical gallery artwork, featuring its most iconic landmark centered and surrounded by culturally and historically meaningful elements in a richly detailed, balanced composition. The final result is presented as a photographed canvas in an art gallery setting against a matte black wall, captured from a 45-degree angle with overhead white studio lighting that emphasizes texture and brushwork.
-skillVersionId: 01985947-88fa-7ea5-a278-4dbc49c8c435
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate a realistic oil painting-style image depicting a chosen country as a classical gallery artwork, featuring its most iconic landmark centered and surrounded by culturally and historically meaningful elements in a richly detailed, balanced composition. The final result is presented as a photographed canvas in an art gallery setting against a matte black wall, captured from a 45-degree angle with overhead white studio lighting that emphasizes texture and brushwork.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01985947-88fa-7ea5-a278-4dbc49c8c435`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `a-classical-oil-painting-gallery-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 01985947-88fa-7ea5-a278-4dbc49c8c435 \
+betterprompt generate a-classical-oil-painting-gallery-prompt \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01985947-88fa-7ea5-a278-4dbc49c8c435 \
+betterprompt generate a-classical-oil-painting-gallery-prompt \
   --input COUNTRY=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
