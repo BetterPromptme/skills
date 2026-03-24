@@ -1,14 +1,14 @@
 ---
 name: stranger-things-eddie-munson-expression-portrait
 description: This prompt instructs an image-generation/editing system to turn a user-provided portrait into an ultra-realistic, 80s gritty, rebellious, TV-cinematic character-style medium close-up while preserving the person’s exact facial identity. It specifies replicating a particular outfit style (a themed graphic tee with a worn denim jacket), matching a precise pose (hands behind the head forming “devil horns”) and expression (wide eyes, open mouth, tongue out), and aligning lighting, color palette, camera angle, and film-grain mood to a reference, while explicitly avoiding copying the reference person’s identity, face, or hairstyle.
-skillVersionId: 019ac8a8-3bff-71c5-9cb7-4e19fd5ab8d4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation/editing system to turn a user-provided portrait into an ultra-realistic, 80s gritty, rebellious, TV-cinematic character-style medium close-up while preserving the person’s exact facial identity. It specifies replicating a particular outfit style (a themed graphic tee with a worn denim jacket), matching a precise pose (hands behind the head forming “devil horns”) and expression (wide eyes, open mouth, tongue out), and aligning lighting, color palette, camera angle, and film-grain mood to a reference, while explicitly avoiding copying the reference person’s identity, face, or hairstyle.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ac8a8-3bff-71c5-9cb7-4e19fd5ab8d4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `stranger-things-eddie-munson-expression-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ac8a8-3bff-71c5-9cb7-4e19fd5ab8d4 \
+betterprompt generate stranger-things-eddie-munson-expression-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ac8a8-3bff-71c5-9cb7-4e19fd5ab8d4 \
+betterprompt generate stranger-things-eddie-munson-expression-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{"aspectRatio":"3:4"}'
