@@ -1,14 +1,14 @@
 ---
 name: blossoms-of-spring-triptych-portrait
 description: This prompt instructs an image model to generate a photorealistic, cinematic three-panel vertical triptych of a single person in a golden-hour cherry blossom grove, with each panel shifting from an intimate portrait to an abstract eye close-up to a wider environmental scene, all unified by warm film color, soft grain, and shallow depth of field. It also enforces strict identity preservation so the subject’s face, hair, and proportions match the provided reference exactly, resulting in a dreamy, romantic, timeless sequence that reads like a visual poem.
-skillVersionId: 019a56d5-aa20-74e9-a092-0240c0a9a2f7
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a photorealistic, cinematic three-panel vertical triptych of a single person in a golden-hour cherry blossom grove, with each panel shifting from an intimate portrait to an abstract eye close-up to a wider environmental scene, all unified by warm film color, soft grain, and shallow depth of field. It also enforces strict identity preservation so the subject’s face, hair, and proportions match the provided reference exactly, resulting in a dreamy, romantic, timeless sequence that reads like a visual poem.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a56d5-aa20-74e9-a092-0240c0a9a2f7`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `blossoms-of-spring-triptych-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a56d5-aa20-74e9-a092-0240c0a9a2f7 \
+betterprompt generate blossoms-of-spring-triptych-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a56d5-aa20-74e9-a092-0240c0a9a2f7 \
+betterprompt generate blossoms-of-spring-triptych-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
