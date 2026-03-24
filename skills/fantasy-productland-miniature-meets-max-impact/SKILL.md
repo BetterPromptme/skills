@@ -1,14 +1,14 @@
 ---
 name: fantasy-productland-miniature-meets-max-impact
 description: This prompt directs the AI to keep the provided product image completely unchanged while generating a high‑resolution, surreal miniature “toyland” environment around it. The result is an editorial-style scene where the product appears oversized in the center of soft, fur-like mossy hills that blend naturally into its base, populated by small adventurous human-like figures interacting with the landscape or the product, all lit with consistent, soft cinematic lighting that matches the product’s existing shadows.
-skillVersionId: 01976848-95e1-72e2-8707-afb034013f47
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs the AI to keep the provided product image completely unchanged while generating a high‑resolution, surreal miniature “toyland” environment around it. The result is an editorial-style scene where the product appears oversized in the center of soft, fur-like mossy hills that blend naturally into its base, populated by small adventurous human-like figures interacting with the landscape or the product, all lit with consistent, soft cinematic lighting that matches the product’s existing shadows.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01976848-95e1-72e2-8707-afb034013f47`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `fantasy-productland-miniature-meets-max-impact`).
 
 Command form:
 
 ```bash
-betterprompt generate 01976848-95e1-72e2-8707-afb034013f47 \
+betterprompt generate fantasy-productland-miniature-meets-max-impact \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01976848-95e1-72e2-8707-afb034013f47 \
+betterprompt generate fantasy-productland-miniature-meets-max-impact \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
