@@ -1,14 +1,14 @@
 ---
 name: cap-om1972-desk-figure-studio
 description: This prompt instructs an image-generation/editing system to create a realistic 1/7 scale commercial figure based on the user’s uploaded portrait, placing the unhelmeted, face-accurate Captain America–costumed figure on a computer desk atop a clear round acrylic base labeled “CAP OM1972,” with an iMac displaying a Blender modeling workflow of the same figure and a nearby Captain America–themed toy packaging box featuring original artwork and an included shield element.
-skillVersionId: 01992731-6d6e-74c0-8173-45d2ac2f65eb
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation/editing system to create a realistic 1/7 scale commercial figure based on the user’s uploaded portrait, placing the unhelmeted, face-accurate Captain America–costumed figure on a computer desk atop a clear round acrylic base labeled “CAP OM1972,” with an iMac displaying a Blender modeling workflow of the same figure and a nearby Captain America–themed toy packaging box featuring original artwork and an included shield element.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01992731-6d6e-74c0-8173-45d2ac2f65eb`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cap-om1972-desk-figure-studio`).
 
 Command form:
 
 ```bash
-betterprompt generate 01992731-6d6e-74c0-8173-45d2ac2f65eb \
+betterprompt generate cap-om1972-desk-figure-studio \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01992731-6d6e-74c0-8173-45d2ac2f65eb \
+betterprompt generate cap-om1972-desk-figure-studio \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
