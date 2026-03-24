@@ -1,14 +1,14 @@
 ---
 name: cctv-door-cam
 description: This prompt instructs an AI video generator to create a short, photorealistic vertical CCTV-style clip of a suburban front yard viewed from a fixed camera above a front door, with bright natural sunlight and subtle grain. A specified subject approaches along the pathway, stops beneath the camera, looks up, smiles, and says “Hello,” while realistic ambient outdoor sounds and a voice matched to the subject’s characteristics complete the scene.
-skillVersionId: 0199f178-d90c-767b-a114-55114c5b5816
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI video generator to create a short, photorealistic vertical CCTV-style clip of a suburban front yard viewed from a fixed camera above a front door, with bright natural sunlight and subtle grain. A specified subject approaches along the pathway, stops beneath the camera, looks up, smiles, and says “Hello,” while realistic ambient outdoor sounds and a voice matched to the subject’s characteristics complete the scene.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -58,12 +58,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199f178-d90c-767b-a114-55114c5b5816`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cctv-door-cam`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199f178-d90c-767b-a114-55114c5b5816 \
+betterprompt generate cctv-door-cam \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -80,7 +80,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199f178-d90c-767b-a114-55114c5b5816 \
+betterprompt generate cctv-door-cam \
   --input 'subject=An American young woman' \
   --model sora-2 \
   --options '{"seconds":"4","size":"720x1280"}'
