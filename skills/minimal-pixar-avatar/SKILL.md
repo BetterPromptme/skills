@@ -1,14 +1,14 @@
 ---
 name: minimal-pixar-avatar
 description: This prompt instructs the AI to transform the person in the provided image into a friendly, soft 3D cartoon character with a clean, Pixar-inspired look while preserving the original hairstyle, outfit, pose, and any existing accessories (including sunglasses), and without adding new items. The result is a simplified, clay-textured, pastel-toned render with softened facial features and subtle shadows, placed on a plain light background for a UI-friendly, respectful depiction.
-skillVersionId: 01977d44-eb61-7c4f-a058-2196812a1d3f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to transform the person in the provided image into a friendly, soft 3D cartoon character with a clean, Pixar-inspired look while preserving the original hairstyle, outfit, pose, and any existing accessories (including sunglasses), and without adding new items. The result is a simplified, clay-textured, pastel-toned render with softened facial features and subtle shadows, placed on a plain light background for a UI-friendly, respectful depiction.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01977d44-eb61-7c4f-a058-2196812a1d3f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `minimal-pixar-avatar`).
 
 Command form:
 
 ```bash
-betterprompt generate 01977d44-eb61-7c4f-a058-2196812a1d3f \
+betterprompt generate minimal-pixar-avatar \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01977d44-eb61-7c4f-a058-2196812a1d3f \
+betterprompt generate minimal-pixar-avatar \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
