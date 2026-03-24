@@ -1,14 +1,14 @@
 ---
 name: vogue-editorial-torn-collage-cover-style
 description: This prompt instructs an AI image generator to produce a 4:5 high-fashion magazine cover in a minimal torn-paper editorial style, featuring a dominant, uninterrupted top portrait against a deep royal-blue background with oversized white serif type partially obscured behind the subject, and a single horizontal torn-paper strip across the lower third that reveals only a close-up of the lips. It also specifies premium Vogue-like layout elements (logo bottom left, small centered editorial text, barcode bottom right) and luxury beauty lighting/retouching, ensuring the outcome is elegant, intentional, and limited to exactly two image sections.
-skillVersionId: 019c9273-0282-776d-ad08-f4612570701a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a 4:5 high-fashion magazine cover in a minimal torn-paper editorial style, featuring a dominant, uninterrupted top portrait against a deep royal-blue background with oversized white serif type partially obscured behind the subject, and a single horizontal torn-paper strip across the lower third that reveals only a close-up of the lips. It also specifies premium Vogue-like layout elements (logo bottom left, small centered editorial text, barcode bottom right) and luxury beauty lighting/retouching, ensuring the outcome is elegant, intentional, and limited to exactly two image sections.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c9273-0282-776d-ad08-f4612570701a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `vogue-editorial-torn-collage-cover-style`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c9273-0282-776d-ad08-f4612570701a \
+betterprompt generate vogue-editorial-torn-collage-cover-style \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c9273-0282-776d-ad08-f4612570701a \
+betterprompt generate vogue-editorial-torn-collage-cover-style \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
