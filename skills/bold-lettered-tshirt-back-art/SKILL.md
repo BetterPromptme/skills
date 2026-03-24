@@ -1,14 +1,14 @@
 ---
 name: bold-lettered-tshirt-back-art
 description: This prompt instructs the AI to generate a black-and-white, whimsical hand-drawn cartoon illustration based on a user-provided description, featuring bold outlines, stipple shading, and a minimal background. The outcome is a fun, energetic, cartoonish scene that clearly incorporates the user’s specific details while keeping the focus on the main character and action.
-skillVersionId: 0197a69f-ecc5-7261-9480-187fbab3c364
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a black-and-white, whimsical hand-drawn cartoon illustration based on a user-provided description, featuring bold outlines, stipple shading, and a minimal background. The outcome is a fun, energetic, cartoonish scene that clearly incorporates the user’s specific details while keeping the focus on the main character and action.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197a69f-ecc5-7261-9480-187fbab3c364`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `bold-lettered-tshirt-back-art`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197a69f-ecc5-7261-9480-187fbab3c364 \
+betterprompt generate bold-lettered-tshirt-back-art \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197a69f-ecc5-7261-9480-187fbab3c364 \
+betterprompt generate bold-lettered-tshirt-back-art \
   --input description=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
