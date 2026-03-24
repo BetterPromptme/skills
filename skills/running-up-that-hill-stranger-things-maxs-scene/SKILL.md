@@ -1,14 +1,14 @@
 ---
 name: running-up-that-hill-stranger-things-maxs-scene
 description: This prompt instructs an AI image generator to create a high-resolution, cinematic golden-hour photograph in a tranquil graveyard where a young person levitates while three 1980s-styled onlookers watch in awe, blending grounded filmic realism with subtle supernatural energy. It specifies strict identity preservation for the main subject, consistent anatomy, shadows, and lighting, a restrained story-first composition, and an analog nostalgic color grade with haze, grain, and gentle bloom. The intended outcome is a visually coherent, emotionally tense yet reverent coming-of-age scene that feels like a still from an 1980s supernatural adventure film, delivered in a wide cinematic aspect ratio with detailed environment and mood cues.
-skillVersionId: 019a76b7-cc6a-747c-b5ff-c834ffb33c89
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a high-resolution, cinematic golden-hour photograph in a tranquil graveyard where a young person levitates while three 1980s-styled onlookers watch in awe, blending grounded filmic realism with subtle supernatural energy. It specifies strict identity preservation for the main subject, consistent anatomy, shadows, and lighting, a restrained story-first composition, and an analog nostalgic color grade with haze, grain, and gentle bloom. The intended outcome is a visually coherent, emotionally tense yet reverent coming-of-age scene that feels like a still from an 1980s supernatural adventure film, delivered in a wide cinematic aspect ratio with detailed environment and mood cues.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a76b7-cc6a-747c-b5ff-c834ffb33c89`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `running-up-that-hill-stranger-things-maxs-scene`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a76b7-cc6a-747c-b5ff-c834ffb33c89 \
+betterprompt generate running-up-that-hill-stranger-things-maxs-scene \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a76b7-cc6a-747c-b5ff-c834ffb33c89 \
+betterprompt generate running-up-that-hill-stranger-things-maxs-scene \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
