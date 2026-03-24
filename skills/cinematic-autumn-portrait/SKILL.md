@@ -1,14 +1,14 @@
 ---
 name: cinematic-autumn-portrait
 description: This prompt instructs an AI image generator to use the provided photo as the only reference for the subject’s identity and to produce a highly realistic, cinematic autumn head-and-shoulders portrait that matches the original framing and emotional tone. It specifies film-grade photographic choices—golden-hour natural light, shallow depth of field with an 85mm look, foreground leaf bokeh, minimal uncluttered background, and accurate skin and material micro-texture—while enforcing physically based rendering realism, restrained color grading, and strict negatives to prevent artifacts, stylization, overlays, or any changes to facial features or hair. The intended outcome is an editorial-quality, lifelike fall portrait with tack-sharp eye focus, smooth highlight roll-off, authentic texture, and immersive depth.
-skillVersionId: 019a1057-a28e-7343-8e94-745e03d59d18
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to use the provided photo as the only reference for the subject’s identity and to produce a highly realistic, cinematic autumn head-and-shoulders portrait that matches the original framing and emotional tone. It specifies film-grade photographic choices—golden-hour natural light, shallow depth of field with an 85mm look, foreground leaf bokeh, minimal uncluttered background, and accurate skin and material micro-texture—while enforcing physically based rendering realism, restrained color grading, and strict negatives to prevent artifacts, stylization, overlays, or any changes to facial features or hair. The intended outcome is an editorial-quality, lifelike fall portrait with tack-sharp eye focus, smooth highlight roll-off, authentic texture, and immersive depth.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a1057-a28e-7343-8e94-745e03d59d18`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cinematic-autumn-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a1057-a28e-7343-8e94-745e03d59d18 \
+betterprompt generate cinematic-autumn-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a1057-a28e-7343-8e94-745e03d59d18 \
+betterprompt generate cinematic-autumn-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
