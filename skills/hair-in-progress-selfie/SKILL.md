@@ -1,14 +1,14 @@
 ---
 name: hair-in-progress-selfie
 description: This prompt instructs an AI image generator to create a photorealistic, vertical mirror-selfie scene of a blonde woman in a walk-in closet/dressing room, captured from the waist up with a phone in her right hand, symmetrical shelving in the background, and bright natural daylight. It specifies her exact styling (hair rollers with clips, black cropped tank and black belted pants with a silver rectangular buckle, minimal jewelry and neutral nails), her playful exaggerated expression and relaxed stance, and a tidy-but-lived-in closet setting with folded clothes, hanging garments, and items on the carpet. The intended outcome is an authentic, unfiltered, realistic lifestyle snapshot that preserves the subject’s identity and natural texture while avoiding beautification, text, logos, or cinematic effects.
-skillVersionId: 019c2318-38eb-768d-9edf-405ede8e12f8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a photorealistic, vertical mirror-selfie scene of a blonde woman in a walk-in closet/dressing room, captured from the waist up with a phone in her right hand, symmetrical shelving in the background, and bright natural daylight. It specifies her exact styling (hair rollers with clips, black cropped tank and black belted pants with a silver rectangular buckle, minimal jewelry and neutral nails), her playful exaggerated expression and relaxed stance, and a tidy-but-lived-in closet setting with folded clothes, hanging garments, and items on the carpet. The intended outcome is an authentic, unfiltered, realistic lifestyle snapshot that preserves the subject’s identity and natural texture while avoiding beautification, text, logos, or cinematic effects.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c2318-38eb-768d-9edf-405ede8e12f8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `hair-in-progress-selfie`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c2318-38eb-768d-9edf-405ede8e12f8 \
+betterprompt generate hair-in-progress-selfie \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c2318-38eb-768d-9edf-405ede8e12f8 \
+betterprompt generate hair-in-progress-selfie \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
