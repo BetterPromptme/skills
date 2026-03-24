@@ -1,14 +1,14 @@
 ---
 name: minimal-black-and-white-portrait
 description: This prompt instructs the AI to take an uploaded selfie or portrait and convert it into a minimalist, high-contrast black-and-white studio editorial image: the subject is posed squatting on a stool in simple streetwear, lit with soft studio lighting against a plain wall with negative space, while preserving identity, natural proportions, and realistic texture. The expected outcome is a clean, modern, slightly moody monochrome near full-body portrait with sharp facial focus, visible stool and shoes, subtle accessories for realism, and strict constraints to avoid distortions, extra limbs, heavy retouching, text, logos, or any off-style elements.
-skillVersionId: 019c2d44-8324-76d8-98c1-da6880224c50
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take an uploaded selfie or portrait and convert it into a minimalist, high-contrast black-and-white studio editorial image: the subject is posed squatting on a stool in simple streetwear, lit with soft studio lighting against a plain wall with negative space, while preserving identity, natural proportions, and realistic texture. The expected outcome is a clean, modern, slightly moody monochrome near full-body portrait with sharp facial focus, visible stool and shoes, subtle accessories for realism, and strict constraints to avoid distortions, extra limbs, heavy retouching, text, logos, or any off-style elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c2d44-8324-76d8-98c1-da6880224c50`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `minimal-black-and-white-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c2d44-8324-76d8-98c1-da6880224c50 \
+betterprompt generate minimal-black-and-white-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c2d44-8324-76d8-98c1-da6880224c50 \
+betterprompt generate minimal-black-and-white-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
