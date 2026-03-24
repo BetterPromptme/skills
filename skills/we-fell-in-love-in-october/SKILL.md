@@ -1,14 +1,14 @@
 ---
 name: we-fell-in-love-in-october
 description: This prompt instructs an image-generation/editing system to turn an input portrait into a photorealistic, dreamy Scandinavian-autumn film still with a specific nostalgic mood, while keeping the subject’s facial identity and expression exactly unchanged. It specifies the exact pose, environment, composition, color palette, lighting, depth of field, and analog-film artifacts to emulate, and it explicitly forbids common unwanted additions or stylistic deviations. The intended outcome is a square, overhead, leaf-strewn autumn portrait that looks like a cinematic poster frame with natural grain, soft haze, and authentic fabric and texture detail.
-skillVersionId: 019a107f-5f4f-7fb8-b8d0-19d6022aa416
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation/editing system to turn an input portrait into a photorealistic, dreamy Scandinavian-autumn film still with a specific nostalgic mood, while keeping the subject’s facial identity and expression exactly unchanged. It specifies the exact pose, environment, composition, color palette, lighting, depth of field, and analog-film artifacts to emulate, and it explicitly forbids common unwanted additions or stylistic deviations. The intended outcome is a square, overhead, leaf-strewn autumn portrait that looks like a cinematic poster frame with natural grain, soft haze, and authentic fabric and texture detail.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a107f-5f4f-7fb8-b8d0-19d6022aa416`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `we-fell-in-love-in-october`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a107f-5f4f-7fb8-b8d0-19d6022aa416 \
+betterprompt generate we-fell-in-love-in-october \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a107f-5f4f-7fb8-b8d0-19d6022aa416 \
+betterprompt generate we-fell-in-love-in-october \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
