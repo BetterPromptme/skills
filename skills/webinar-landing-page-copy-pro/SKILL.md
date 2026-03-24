@@ -1,14 +1,14 @@
 ---
 name: webinar-landing-page-copy-pro
 description: This prompt instructs the AI to act as a webinar-registration copywriting expert and generate persuasive landing page text for a free webinar, tailored to the provided webinar name and target audience. The result is a script-only output containing a compelling headline, three benefit-focused bullet points, and a clear, high-converting call-to-action designed to maximize sign-ups.
-skillVersionId: 0198a21b-f8fe-70c5-b8cc-485bfaa44982
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a webinar-registration copywriting expert and generate persuasive landing page text for a free webinar, tailored to the provided webinar name and target audience. The result is a script-only output containing a compelling headline, three benefit-focused bullet points, and a clear, high-converting call-to-action designed to maximize sign-ups.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198a21b-f8fe-70c5-b8cc-485bfaa44982`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `webinar-landing-page-copy-pro`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198a21b-f8fe-70c5-b8cc-485bfaa44982 \
+betterprompt generate webinar-landing-page-copy-pro \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198a21b-f8fe-70c5-b8cc-485bfaa44982 \
+betterprompt generate webinar-landing-page-copy-pro \
   --input your_name_webinar=<value> \
   --input your_target_audience=<value> \
   --model gpt-5 \
