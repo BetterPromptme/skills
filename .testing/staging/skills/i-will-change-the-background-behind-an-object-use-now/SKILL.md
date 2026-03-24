@@ -1,14 +1,14 @@
 ---
 name: i-will-change-the-background-behind-an-object-use-now
 description: This prompt instructs the AI to extract a specified foreground object from a first image without altering it, then replace that image’s background with the background from a second image, compositing the object so it blends realistically. The outcome is a seamless, undetectable composite that preserves fine edge detail (including hair or transparency), maintains original shadows/reflections and perspective, matches lighting/color temperature/grain/depth of field to the new scene, and provides non-destructive layered deliverables plus export-ready versions.
-skillVersionId: 0198f4ee-cce3-7a65-a902-48083a80ef0a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to extract a specified foreground object from a first image without altering it, then replace that image’s background with the background from a second image, compositing the object so it blends realistically. The outcome is a seamless, undetectable composite that preserves fine edge detail (including hair or transparency), maintains original shadows/reflections and perspective, matches lighting/color temperature/grain/depth of field to the new scene, and provides non-destructive layered deliverables plus export-ready versions.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198f4ee-cce3-7a65-a902-48083a80ef0a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `i-will-change-the-background-behind-an-object-use-now`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198f4ee-cce3-7a65-a902-48083a80ef0a \
+betterprompt generate i-will-change-the-background-behind-an-object-use-now \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198f4ee-cce3-7a65-a902-48083a80ef0a \
+betterprompt generate i-will-change-the-background-behind-an-object-use-now \
   --input object=<value> \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
