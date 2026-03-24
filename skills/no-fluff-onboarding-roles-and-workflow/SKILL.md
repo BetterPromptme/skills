@@ -1,14 +1,14 @@
 ---
 name: no-fluff-onboarding-roles-and-workflow
 description: This prompt instructs the AI to act as an expert onboarding guide for a new employee on their first day at a specified company and department, providing a clear overview of the typical roles and responsibilities of team members in that department and explaining the common collaboration practices. The expected result is a direct, department-focused summary of what the employee will generally do, who they’ll work with, and how work is coordinated, with no introductory preamble.
-skillVersionId: 019830c9-9696-7718-81bd-bc6f377088a7
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an expert onboarding guide for a new employee on their first day at a specified company and department, providing a clear overview of the typical roles and responsibilities of team members in that department and explaining the common collaboration practices. The expected result is a direct, department-focused summary of what the employee will generally do, who they’ll work with, and how work is coordinated, with no introductory preamble.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019830c9-9696-7718-81bd-bc6f377088a7`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `no-fluff-onboarding-roles-and-workflow`).
 
 Command form:
 
 ```bash
-betterprompt generate 019830c9-9696-7718-81bd-bc6f377088a7 \
+betterprompt generate no-fluff-onboarding-roles-and-workflow \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019830c9-9696-7718-81bd-bc6f377088a7 \
+betterprompt generate no-fluff-onboarding-roles-and-workflow \
   --input Company_Name=<value> \
   --input Department_Name=<value> \
   --model gpt-4.1-mini \
