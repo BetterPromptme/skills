@@ -1,14 +1,14 @@
 ---
 name: premium-vinyl-icon-render
 description: This prompt instructs an AI image generator to produce a premium, photorealistic 3D render of a specified character as a modern designer-style collectible vinyl figure, emphasizing glossy translucent material, bold accurate colors, simplified smooth geometry, and high-end product photography lighting. The intended outcome is a clean, minimalist, square 1080×1080 marketing-ready image with the figure centered in a confident pose against a subtle gray-to-white gradient background, captured with shallow depth of field and crisp ultra-high-resolution detail, without any text or distracting elements.
-skillVersionId: 01985f82-cbce-7f51-9741-fdab4c0f7aa7
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a premium, photorealistic 3D render of a specified character as a modern designer-style collectible vinyl figure, emphasizing glossy translucent material, bold accurate colors, simplified smooth geometry, and high-end product photography lighting. The intended outcome is a clean, minimalist, square 1080×1080 marketing-ready image with the figure centered in a confident pose against a subtle gray-to-white gradient background, captured with shallow depth of field and crisp ultra-high-resolution detail, without any text or distracting elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01985f82-cbce-7f51-9741-fdab4c0f7aa7`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `premium-vinyl-icon-render`).
 
 Command form:
 
 ```bash
-betterprompt generate 01985f82-cbce-7f51-9741-fdab4c0f7aa7 \
+betterprompt generate premium-vinyl-icon-render \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01985f82-cbce-7f51-9741-fdab4c0f7aa7 \
+betterprompt generate premium-vinyl-icon-render \
   --input FIGURE_NAME=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
