@@ -1,14 +1,14 @@
 ---
 name: morning-balcony-realism
 description: This prompt instructs an image model to use an uploaded portrait as a strict identity reference and generate an ultra-realistic, DSLR-quality 8K lifestyle portrait of the same person standing naturally on a warm, vintage southern European balcony. It specifies cinematic yet natural morning lighting, a low-angle architectural composition with detailed balcony elements (flowers, turquoise windows, vines), and lifelike textures in skin, fabric, and masonry while avoiding stylization or unrealistic edits. The intended outcome is a tranquil, photorealistic scene that preserves the subject’s facial accuracy and delivers a cozy, timeless European atmosphere.
-skillVersionId: 019a771e-6b24-73b0-a2a5-1a24dcbce78f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to use an uploaded portrait as a strict identity reference and generate an ultra-realistic, DSLR-quality 8K lifestyle portrait of the same person standing naturally on a warm, vintage southern European balcony. It specifies cinematic yet natural morning lighting, a low-angle architectural composition with detailed balcony elements (flowers, turquoise windows, vines), and lifelike textures in skin, fabric, and masonry while avoiding stylization or unrealistic edits. The intended outcome is a tranquil, photorealistic scene that preserves the subject’s facial accuracy and delivers a cozy, timeless European atmosphere.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a771e-6b24-73b0-a2a5-1a24dcbce78f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `morning-balcony-realism`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a771e-6b24-73b0-a2a5-1a24dcbce78f \
+betterprompt generate morning-balcony-realism \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -100,7 +100,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a771e-6b24-73b0-a2a5-1a24dcbce78f \
+betterprompt generate morning-balcony-realism \
   --input outfit_description=<value> \
   --input 'Props_and_Expression=Holding a teacup with a faint, confident smile while looking at the camera.' \
   --image-input-url https://example.com/image1.png \
