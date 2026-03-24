@@ -1,14 +1,14 @@
 ---
 name: stranger-things-5-poster
 description: This prompt directs an image-generation model to create a vertical, ultra-realistic cinematic character poster with an ominous 1980s neon-horror aesthetic, featuring a close-up young man in a varsity jacket under intense red neon lighting against a black background, with a glowing retro-styled number 5 behind his head for halo-like rim light and depth. The result is a high-resolution, shallow–depth-of-field, film-grain portrait designed to resemble a premium streaming-series promotional poster, leaving space for title typography at the bottom.
-skillVersionId: 019a5997-c080-71bd-8a00-ba850a7adb5c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation model to create a vertical, ultra-realistic cinematic character poster with an ominous 1980s neon-horror aesthetic, featuring a close-up young man in a varsity jacket under intense red neon lighting against a black background, with a glowing retro-styled number 5 behind his head for halo-like rim light and depth. The result is a high-resolution, shallow–depth-of-field, film-grain portrait designed to resemble a premium streaming-series promotional poster, leaving space for title typography at the bottom.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a5997-c080-71bd-8a00-ba850a7adb5c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `stranger-things-5-poster`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a5997-c080-71bd-8a00-ba850a7adb5c \
+betterprompt generate stranger-things-5-poster \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a5997-c080-71bd-8a00-ba850a7adb5c \
+betterprompt generate stranger-things-5-poster \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
 ```
