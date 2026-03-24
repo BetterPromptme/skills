@@ -1,14 +1,14 @@
 ---
 name: flash-bloom-confident-internal-selfie-portrait
 description: This prompt instructs an AI image generator to produce a high-resolution, vertically framed, realistic fashion selfie that looks like a candid point-and-shoot flash photo taken outside a coffee shop at night. It specifies the subject’s expression, pose, styling (silk halter top, gold jewelry, reflective nails), and strict realism constraints (accurate anatomy, preserved facial proportions, sharp focus, direct-flash highlights, subtle analog grain, and flash bloom), resulting in a confident, spontaneous portrait with an urban café backdrop and a visible matcha drink for authenticity.
-skillVersionId: 019a0efe-9ef6-7784-b5bc-6d158c66b383
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a high-resolution, vertically framed, realistic fashion selfie that looks like a candid point-and-shoot flash photo taken outside a coffee shop at night. It specifies the subject’s expression, pose, styling (silk halter top, gold jewelry, reflective nails), and strict realism constraints (accurate anatomy, preserved facial proportions, sharp focus, direct-flash highlights, subtle analog grain, and flash bloom), resulting in a confident, spontaneous portrait with an urban café backdrop and a visible matcha drink for authenticity.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a0efe-9ef6-7784-b5bc-6d158c66b383`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `flash-bloom-confident-internal-selfie-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a0efe-9ef6-7784-b5bc-6d158c66b383 \
+betterprompt generate flash-bloom-confident-internal-selfie-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a0efe-9ef6-7784-b5bc-6d158c66b383 \
+betterprompt generate flash-bloom-confident-internal-selfie-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
