@@ -1,14 +1,14 @@
 ---
 name: baby-lift-portrait
 description: This prompt instructs an image-generation model to create a high-resolution, documentary-style winter outdoor portrait of a baby being safely lifted upward, matching a specified pose and facial expression while preserving realistic proportions. It defines precise requirements for the baby’s winter outfit, the visible adult hands and clothing, the vertical upward camera angle, and crisp diffused daylight with shallow depth of field. The intended result is a clean, uplifting family moment set against a softly blurred snowy pine forest and bright winter sky, rendered with believable textures, natural lighting, and no stylization, distortion, or added graphic elements.
-skillVersionId: 019aa04b-5947-76bd-8c30-f7f46bcbcc1f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to create a high-resolution, documentary-style winter outdoor portrait of a baby being safely lifted upward, matching a specified pose and facial expression while preserving realistic proportions. It defines precise requirements for the baby’s winter outfit, the visible adult hands and clothing, the vertical upward camera angle, and crisp diffused daylight with shallow depth of field. The intended result is a clean, uplifting family moment set against a softly blurred snowy pine forest and bright winter sky, rendered with believable textures, natural lighting, and no stylization, distortion, or added graphic elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019aa04b-5947-76bd-8c30-f7f46bcbcc1f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `baby-lift-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019aa04b-5947-76bd-8c30-f7f46bcbcc1f \
+betterprompt generate baby-lift-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019aa04b-5947-76bd-8c30-f7f46bcbcc1f \
+betterprompt generate baby-lift-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
