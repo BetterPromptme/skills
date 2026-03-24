@@ -1,14 +1,14 @@
 ---
 name: 3d-kawaii-chibi-sticker-set-for-social-media
 description: This prompt instructs an image generator to create a 10:15 vertical 3D kawaii scene featuring nine chibi sticker characters inspired by the provided reference image, each with a white sticker border and a speech bubble containing short everyday phrases. The final result is a cohesive, fun, positive sticker-sheet style composition placed on a soft white-to-pastel blue gradient background, optimized for sharing on specified social media platforms.
-skillVersionId: 0196f602-0a9e-7ae0-b81f-c07a8a8b9534
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a 10:15 vertical 3D kawaii scene featuring nine chibi sticker characters inspired by the provided reference image, each with a white sticker border and a speech bubble containing short everyday phrases. The final result is a cohesive, fun, positive sticker-sheet style composition placed on a soft white-to-pastel blue gradient background, optimized for sharing on specified social media platforms.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f602-0a9e-7ae0-b81f-c07a8a8b9534`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `3d-kawaii-chibi-sticker-set-for-social-media`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f602-0a9e-7ae0-b81f-c07a8a8b9534 \
+betterprompt generate 3d-kawaii-chibi-sticker-set-for-social-media \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f602-0a9e-7ae0-b81f-c07a8a8b9534 \
+betterprompt generate 3d-kawaii-chibi-sticker-set-for-social-media \
   --input Short_dialogues=<value> \
   --input Names_of_social_networks=<value> \
   --image-input-url https://example.com/image1.png \
