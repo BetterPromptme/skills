@@ -1,14 +1,14 @@
 ---
 name: machine-error-greater-human-readable-response-writer
 description: This prompt instructs the AI to take an HTTP error (status code plus what the user was trying to do, and optional context) and rewrite it into a short, user-friendly message. The output clearly explains what happened in plain language, suggests 1–3 concrete next steps, uses a specified tone, avoids blame, and redacts any sensitive technical details while keeping the response brief and text-only.
-skillVersionId: 0198cafe-ec7a-7910-84a8-5363d06d93e6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take an HTTP error (status code plus what the user was trying to do, and optional context) and rewrite it into a short, user-friendly message. The output clearly explains what happened in plain language, suggests 1–3 concrete next steps, uses a specified tone, avoids blame, and redacts any sensitive technical details while keeping the response brief and text-only.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -67,12 +67,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198cafe-ec7a-7910-84a8-5363d06d93e6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `machine-error-greater-human-readable-response-writer`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198cafe-ec7a-7910-84a8-5363d06d93e6 \
+betterprompt generate machine-error-greater-human-readable-response-writer \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -89,7 +89,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198cafe-ec7a-7910-84a8-5363d06d93e6 \
+betterprompt generate machine-error-greater-human-readable-response-writer \
   --input Tone=friendly \
   --input 'User_Action=uploading a photo' \
   --input Error_Context=<value> \
