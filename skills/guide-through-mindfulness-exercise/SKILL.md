@@ -1,14 +1,14 @@
 ---
 name: guide-through-mindfulness-exercise
 description: This prompt instructs the AI to act as a mindfulness expert and deliver a beginner-friendly, portable mindfulness session that reduces stress and improves mental clarity. It asks for a brief explanation of mindfulness and its benefits, followed by a structured, step-by-step exercise incorporating breathing, a body scan, and visualization, with reminders to stay present and non-judgmental. The outcome is a complete guided practice that ends with practical advice for building consistency and weaving mindfulness into everyday routines.
-skillVersionId: 0196f6ed-004f-7111-ad81-63ab79ec5a91
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a mindfulness expert and deliver a beginner-friendly, portable mindfulness session that reduces stress and improves mental clarity. It asks for a brief explanation of mindfulness and its benefits, followed by a structured, step-by-step exercise incorporating breathing, a body scan, and visualization, with reminders to stay present and non-judgmental. The outcome is a complete guided practice that ends with practical advice for building consistency and weaving mindfulness into everyday routines.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f6ed-004f-7111-ad81-63ab79ec5a91`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `guide-through-mindfulness-exercise`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f6ed-004f-7111-ad81-63ab79ec5a91 \
+betterprompt generate guide-through-mindfulness-exercise \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f6ed-004f-7111-ad81-63ab79ec5a91 \
+betterprompt generate guide-through-mindfulness-exercise \
   --model gpt-4.1-mini \
   --options '{}'
 ```
