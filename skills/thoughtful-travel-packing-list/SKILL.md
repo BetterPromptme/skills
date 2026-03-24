@@ -1,14 +1,14 @@
 ---
 name: thoughtful-travel-packing-list
 description: This prompt instructs the assistant to create a comprehensive, carefully organized packing list tailored to a traveler’s destination, trip length, expected weather, planned activities, traveler type, and any special conditions. The result is a categorized checklist that covers essentials and contingencies—such as clothing, footwear, personal care, health and safety, documents, electronics, comfort items, and destination-specific gear—where each item includes a brief, practical reason for packing it, presented in a caring, preparedness-focused tone.
-skillVersionId: 0198acb8-8eac-7e08-af1c-bc116b230f12
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the assistant to create a comprehensive, carefully organized packing list tailored to a traveler’s destination, trip length, expected weather, planned activities, traveler type, and any special conditions. The result is a categorized checklist that covers essentials and contingencies—such as clothing, footwear, personal care, health and safety, documents, electronics, comfort items, and destination-specific gear—where each item includes a brief, practical reason for packing it, presented in a caring, preparedness-focused tone.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198acb8-8eac-7e08-af1c-bc116b230f12`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `thoughtful-travel-packing-list`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198acb8-8eac-7e08-af1c-bc116b230f12 \
+betterprompt generate thoughtful-travel-packing-list \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -92,7 +92,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198acb8-8eac-7e08-af1c-bc116b230f12 \
+betterprompt generate thoughtful-travel-packing-list \
   --input Activities=<value> \
   --input Destination=<value> \
   --input Traveler_Type=<value> \
