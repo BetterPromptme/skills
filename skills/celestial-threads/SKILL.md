@@ -1,14 +1,14 @@
 ---
 name: celestial-threads
 description: This prompt instructs an AI image generator to create a highly detailed, surreal depiction of a celestial subject formed from flowing fiber-optic filaments and glowing particles, posed in a graceful curved silhouette with semi-transparent, pearlescent white and deep-blue luminosity. The result is an ethereal, majestic figure set against a dark void, with starlight-like streams, drifting sparks, and magical dust accentuating the glowing, otherworldly atmosphere.
-skillVersionId: 0197e81a-3fe5-7945-8fe6-725afbb816c9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a highly detailed, surreal depiction of a celestial subject formed from flowing fiber-optic filaments and glowing particles, posed in a graceful curved silhouette with semi-transparent, pearlescent white and deep-blue luminosity. The result is an ethereal, majestic figure set against a dark void, with starlight-like streams, drifting sparks, and magical dust accentuating the glowing, otherworldly atmosphere.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197e81a-3fe5-7945-8fe6-725afbb816c9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `celestial-threads`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197e81a-3fe5-7945-8fe6-725afbb816c9 \
+betterprompt generate celestial-threads \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197e81a-3fe5-7945-8fe6-725afbb816c9 \
+betterprompt generate celestial-threads \
   --input SUBJECT=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
