@@ -1,14 +1,14 @@
 ---
 name: martin-cortis-bubble-trend
 description: This prompt instructs the AI to transform a single-person portrait into a single 3:4 vertical image containing two stacked film-style frames that preserve the subject’s exact identity and outfit while placing them outdoors in a lush green park at golden hour, adding realistic soap-bubble overlays (one overlapping the face and others floating nearby) and finishing the composite with authentic 35mm-inspired color grading, grain, and subtle bloom for a playful early-2000s candid nostalgia look.
-skillVersionId: 019c8d82-1278-73d7-ba68-7c616cc71bc9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to transform a single-person portrait into a single 3:4 vertical image containing two stacked film-style frames that preserve the subject’s exact identity and outfit while placing them outdoors in a lush green park at golden hour, adding realistic soap-bubble overlays (one overlapping the face and others floating nearby) and finishing the composite with authentic 35mm-inspired color grading, grain, and subtle bloom for a playful early-2000s candid nostalgia look.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c8d82-1278-73d7-ba68-7c616cc71bc9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `martin-cortis-bubble-trend`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c8d82-1278-73d7-ba68-7c616cc71bc9 \
+betterprompt generate martin-cortis-bubble-trend \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c8d82-1278-73d7-ba68-7c616cc71bc9 \
+betterprompt generate martin-cortis-bubble-trend \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
