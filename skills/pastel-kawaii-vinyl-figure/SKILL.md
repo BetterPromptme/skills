@@ -1,14 +1,14 @@
 ---
 name: pastel-kawaii-vinyl-figure
 description: This prompt instructs an image model to generate a studio-style product photo of a kawaii pastel vinyl figure depicting a user-specified character or object, with rounded features, big eyes, and a friendly expression in a lavender–pink–baby-blue palette. It also requests that a chosen name be incorporated as a stylized detail on the figure or base, and includes matching toy packaging in the background with themed artwork, shot with soft lighting and minimal shadows.
-skillVersionId: 0197ce58-b972-7b81-a6b7-6eb035558cd9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a studio-style product photo of a kawaii pastel vinyl figure depicting a user-specified character or object, with rounded features, big eyes, and a friendly expression in a lavender–pink–baby-blue palette. It also requests that a chosen name be incorporated as a stylized detail on the figure or base, and includes matching toy packaging in the background with themed artwork, shot with soft lighting and minimal shadows.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197ce58-b972-7b81-a6b7-6eb035558cd9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `pastel-kawaii-vinyl-figure`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197ce58-b972-7b81-a6b7-6eb035558cd9 \
+betterprompt generate pastel-kawaii-vinyl-figure \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197ce58-b972-7b81-a6b7-6eb035558cd9 \
+betterprompt generate pastel-kawaii-vinyl-figure \
   --input The_name_you’d_like_to_use=<value> \
   --input INSERT_YOUR_CHARACTER_OR_OBJECT=<value> \
   --model gpt-image-1 \
