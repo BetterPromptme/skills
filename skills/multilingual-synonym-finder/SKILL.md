@@ -1,14 +1,14 @@
 ---
 name: multilingual-synonym-finder
 description: This prompt instructs the AI to act as a multilingual vocabulary expert and generate a curated set of natural, native-sounding synonyms for a given word in a specified language. The output is organized by nuance (such as formal vs. casual or stronger vs. softer meanings), and each synonym includes a brief meaning note plus a short example sentence to demonstrate correct usage. The result is an educational, learner-friendly synonym guide that improves word choice while staying strictly within the target language and clarifying subtle tone or context differences.
-skillVersionId: 019abe1a-19ea-73a4-bbdd-c9ef86909071
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a multilingual vocabulary expert and generate a curated set of natural, native-sounding synonyms for a given word in a specified language. The output is organized by nuance (such as formal vs. casual or stronger vs. softer meanings), and each synonym includes a brief meaning note plus a short example sentence to demonstrate correct usage. The result is an educational, learner-friendly synonym guide that improves word choice while staying strictly within the target language and clarifying subtle tone or context differences.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019abe1a-19ea-73a4-bbdd-c9ef86909071`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `multilingual-synonym-finder`).
 
 Command form:
 
 ```bash
-betterprompt generate 019abe1a-19ea-73a4-bbdd-c9ef86909071 \
+betterprompt generate multilingual-synonym-finder \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019abe1a-19ea-73a4-bbdd-c9ef86909071 \
+betterprompt generate multilingual-synonym-finder \
   --input Language=<value> \
   --input Your_word=<value> \
   --model claude-haiku-4.5 \
