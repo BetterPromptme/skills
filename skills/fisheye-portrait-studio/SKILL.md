@@ -1,14 +1,14 @@
 ---
 name: fisheye-portrait-studio
 description: This prompt instructs an AI to take a user-provided portrait photo and generate a realistic, playful high-angle fisheye-style close-up that preserves the person’s true identity while applying an exaggerated big-head/small-body perspective. It uses two text inputs—outfit description and facial expression—to guide the subject’s styling and mood, and it requires the final image to match a specified reference look in camera angle, bright white background, soft even lighting, and sharp eye focus. The intended outcome is a single-person, professional-quality, modern fisheye portrait with consistent tone and no added elements, text, props, or stylizations outside the defined photographic style.
-skillVersionId: 019a57e9-fd3d-741a-8e0a-f7d861864549
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to take a user-provided portrait photo and generate a realistic, playful high-angle fisheye-style close-up that preserves the person’s true identity while applying an exaggerated big-head/small-body perspective. It uses two text inputs—outfit description and facial expression—to guide the subject’s styling and mood, and it requires the final image to match a specified reference look in camera angle, bright white background, soft even lighting, and sharp eye focus. The intended outcome is a single-person, professional-quality, modern fisheye portrait with consistent tone and no added elements, text, props, or stylizations outside the defined photographic style.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a57e9-fd3d-741a-8e0a-f7d861864549`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `fisheye-portrait-studio`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a57e9-fd3d-741a-8e0a-f7d861864549 \
+betterprompt generate fisheye-portrait-studio \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a57e9-fd3d-741a-8e0a-f7d861864549 \
+betterprompt generate fisheye-portrait-studio \
   --input 'facial_expression=smiling, surprised, funny face, curious, pouting,...' \
   --input 'outfit_description=bright yellow hoodie' \
   --image-input-url https://example.com/image1.png \
