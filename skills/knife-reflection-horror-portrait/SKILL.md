@@ -1,14 +1,14 @@
 ---
 name: knife-reflection-horror-portrait
 description: This prompt instructs an image model to generate a hyper-realistic, modern slasher-inspired horror poster portrait that preserves the subject’s exact identity from a provided reference photo, placing them in a straight-on, high-contrast, cinematic composition with a vertically held reflective knife, a black-gloved hand, a fully dark background, and optional faint title typography, resulting in an 8K, 4:5, film-grade promotional-style image with cold key lighting, subtle rim color, and sharp focus on the eyes and blade.
-skillVersionId: 019a2de7-b845-7d67-a477-39bf17af1b2c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a hyper-realistic, modern slasher-inspired horror poster portrait that preserves the subject’s exact identity from a provided reference photo, placing them in a straight-on, high-contrast, cinematic composition with a vertically held reflective knife, a black-gloved hand, a fully dark background, and optional faint title typography, resulting in an 8K, 4:5, film-grade promotional-style image with cold key lighting, subtle rim color, and sharp focus on the eyes and blade.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a2de7-b845-7d67-a477-39bf17af1b2c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `knife-reflection-horror-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a2de7-b845-7d67-a477-39bf17af1b2c \
+betterprompt generate knife-reflection-horror-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a2de7-b845-7d67-a477-39bf17af1b2c \
+betterprompt generate knife-reflection-horror-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
