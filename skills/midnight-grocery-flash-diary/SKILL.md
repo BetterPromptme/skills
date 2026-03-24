@@ -1,14 +1,14 @@
 ---
 name: midnight-grocery-flash-diary
 description: This prompt instructs an image-generation/editing system to create a raw, candid direct-flash documentary-style photo of a person pushing a grocery cart in a real, fully stocked supermarket aisle at night, while strictly preserving the subject’s original facial identity, hair, body proportions, skin tone, and exact outfit from an input photo. The intended result is an imperfect, messy, spontaneous-looking wide-angle shot with harsh on-camera flash, strong shadows, blown highlights, slight motion blur, visible grain/noise, and zero beautification or retouching, capturing an authentic late-night errand atmosphere rather than a polished or cinematic image.
-skillVersionId: 019cadbe-51a6-73a8-a00d-2bea2a0790d3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation/editing system to create a raw, candid direct-flash documentary-style photo of a person pushing a grocery cart in a real, fully stocked supermarket aisle at night, while strictly preserving the subject’s original facial identity, hair, body proportions, skin tone, and exact outfit from an input photo. The intended result is an imperfect, messy, spontaneous-looking wide-angle shot with harsh on-camera flash, strong shadows, blown highlights, slight motion blur, visible grain/noise, and zero beautification or retouching, capturing an authentic late-night errand atmosphere rather than a polished or cinematic image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019cadbe-51a6-73a8-a00d-2bea2a0790d3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `midnight-grocery-flash-diary`).
 
 Command form:
 
 ```bash
-betterprompt generate 019cadbe-51a6-73a8-a00d-2bea2a0790d3 \
+betterprompt generate midnight-grocery-flash-diary \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019cadbe-51a6-73a8-a00d-2bea2a0790d3 \
+betterprompt generate midnight-grocery-flash-diary \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
