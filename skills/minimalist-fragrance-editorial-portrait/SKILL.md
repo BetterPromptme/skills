@@ -1,14 +1,14 @@
 ---
 name: minimalist-fragrance-editorial-portrait
 description: This prompt instructs the AI to generate an ultra-high-resolution, photorealistic studio fashion editorial portrait in a clean high-key cyclorama, featuring the referenced person seated on large matte pastel 3D letters spelling a specified word, with a small apple-shaped perfume bottle placed nearby. It defines precise composition, lighting, styling options by gender, color palette, camera/lens characteristics, and realism constraints, with the intended outcome being a modern, minimalist fragrance-campaign image that preserves the subject’s exact likeness while delivering a balanced, elegant, softly lit final portrait.
-skillVersionId: 019a3945-2027-76b0-aa96-5fd9305f14e6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate an ultra-high-resolution, photorealistic studio fashion editorial portrait in a clean high-key cyclorama, featuring the referenced person seated on large matte pastel 3D letters spelling a specified word, with a small apple-shaped perfume bottle placed nearby. It defines precise composition, lighting, styling options by gender, color palette, camera/lens characteristics, and realism constraints, with the intended outcome being a modern, minimalist fragrance-campaign image that preserves the subject’s exact likeness while delivering a balanced, elegant, softly lit final portrait.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a3945-2027-76b0-aa96-5fd9305f14e6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `minimalist-fragrance-editorial-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a3945-2027-76b0-aa96-5fd9305f14e6 \
+betterprompt generate minimalist-fragrance-editorial-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a3945-2027-76b0-aa96-5fd9305f14e6 \
+betterprompt generate minimalist-fragrance-editorial-portrait \
   --input COLOR=<value> \
   --input LETTERS=<value> \
   --image-input-url https://example.com/image1.png \
