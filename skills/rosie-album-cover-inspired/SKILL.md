@@ -1,14 +1,14 @@
 ---
 name: rosie-album-cover-inspired
 description: This prompt instructs an image model to generate a high-resolution, photorealistic, film-textured close-up portrait with a warm, nostalgic editorial mood: a young blonde woman lying on a wooden floor, shot from a slightly top-down angle with soft makeup, golden diffused lighting, and subtle grain. It specifies tight composition, color palette, and typography details—adding bold red “rosie” text along the bottom—while requiring strict preservation of the subject’s identity from a provided reference image for an intimate, timeless cinematic result.
-skillVersionId: 019a6c01-145e-7522-9b12-9a35d1beed41
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a high-resolution, photorealistic, film-textured close-up portrait with a warm, nostalgic editorial mood: a young blonde woman lying on a wooden floor, shot from a slightly top-down angle with soft makeup, golden diffused lighting, and subtle grain. It specifies tight composition, color palette, and typography details—adding bold red “rosie” text along the bottom—while requiring strict preservation of the subject’s identity from a provided reference image for an intimate, timeless cinematic result.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a6c01-145e-7522-9b12-9a35d1beed41`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `rosie-album-cover-inspired`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a6c01-145e-7522-9b12-9a35d1beed41 \
+betterprompt generate rosie-album-cover-inspired \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a6c01-145e-7522-9b12-9a35d1beed41 \
+betterprompt generate rosie-album-cover-inspired \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
