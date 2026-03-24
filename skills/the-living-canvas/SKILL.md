@@ -1,14 +1,14 @@
 ---
 name: the-living-canvas
 description: This prompt instructs the AI to generate a photorealistic contemporary art gallery scene that preserves the exact likeness of the person from an input portrait, showing them standing full-body in front of a large, expressive oil-painted version of themselves mounted on a solid red gallery wall. It specifies strict identity consistency between the live subject and the painted portrait (including matching hair and clothing), along with minimalist gallery lighting, subdued painterly aesthetics, and a quiet contemplative mood, producing a high-detail cinematic composition with visible brush texture and no added text, logos, or watermarks.
-skillVersionId: 019c1dcd-6e82-7179-9994-a222caf3ad4b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a photorealistic contemporary art gallery scene that preserves the exact likeness of the person from an input portrait, showing them standing full-body in front of a large, expressive oil-painted version of themselves mounted on a solid red gallery wall. It specifies strict identity consistency between the live subject and the painted portrait (including matching hair and clothing), along with minimalist gallery lighting, subdued painterly aesthetics, and a quiet contemplative mood, producing a high-detail cinematic composition with visible brush texture and no added text, logos, or watermarks.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c1dcd-6e82-7179-9994-a222caf3ad4b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-living-canvas`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c1dcd-6e82-7179-9994-a222caf3ad4b \
+betterprompt generate the-living-canvas \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c1dcd-6e82-7179-9994-a222caf3ad4b \
+betterprompt generate the-living-canvas \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{"aspectRatio":"3:4"}'
