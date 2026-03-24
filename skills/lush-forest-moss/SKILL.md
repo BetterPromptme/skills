@@ -1,14 +1,14 @@
 ---
 name: lush-forest-moss
 description: This prompt instructs an image model to produce a centered, highly detailed 3D render of a specific logo transformed into a living, nature-grown object, fully coated in lush moss, fine grass, visible roots, moisture, and small pink/white/violet wildflowers. It specifies bright natural lighting with soft shadows and a clean black background for strong contrast, aiming for a soft, tactile, richly organic surface while avoiding any additional elements beyond the moss-covered logo.
-skillVersionId: 0197778b-67c1-75e0-8577-3b83cd23484d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to produce a centered, highly detailed 3D render of a specific logo transformed into a living, nature-grown object, fully coated in lush moss, fine grass, visible roots, moisture, and small pink/white/violet wildflowers. It specifies bright natural lighting with soft shadows and a clean black background for strong contrast, aiming for a soft, tactile, richly organic surface while avoiding any additional elements beyond the moss-covered logo.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197778b-67c1-75e0-8577-3b83cd23484d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `lush-forest-moss`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197778b-67c1-75e0-8577-3b83cd23484d \
+betterprompt generate lush-forest-moss \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197778b-67c1-75e0-8577-3b83cd23484d \
+betterprompt generate lush-forest-moss \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
