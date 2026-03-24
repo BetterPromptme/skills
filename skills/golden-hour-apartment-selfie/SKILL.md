@@ -1,14 +1,14 @@
 ---
 name: golden-hour-apartment-selfie
 description: This prompt instructs an image-restyling system to transform an input portrait into a photorealistic, cinematic golden-hour selfie set in a modern high-rise apartment, preserving the person’s identity and natural realism while adding physically accurate metallic silver snowflake cheek decals and sunset lighting effects. It also applies specific soft-glam makeup details only when the subject is female and enforces gender-appropriate posing, resulting in a premium DSLR-like sunset portrait with realistic reflections, textures, and an authentic apartment background.
-skillVersionId: 019b0611-529a-767b-b9ae-83938fb1649f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-restyling system to transform an input portrait into a photorealistic, cinematic golden-hour selfie set in a modern high-rise apartment, preserving the person’s identity and natural realism while adding physically accurate metallic silver snowflake cheek decals and sunset lighting effects. It also applies specific soft-glam makeup details only when the subject is female and enforces gender-appropriate posing, resulting in a premium DSLR-like sunset portrait with realistic reflections, textures, and an authentic apartment background.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b0611-529a-767b-b9ae-83938fb1649f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `golden-hour-apartment-selfie`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b0611-529a-767b-b9ae-83938fb1649f \
+betterprompt generate golden-hour-apartment-selfie \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b0611-529a-767b-b9ae-83938fb1649f \
+betterprompt generate golden-hour-apartment-selfie \
   --input Gender=<value> \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
