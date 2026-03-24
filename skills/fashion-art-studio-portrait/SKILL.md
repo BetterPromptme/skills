@@ -1,14 +1,14 @@
 ---
 name: fashion-art-studio-portrait
 description: This prompt directs an AI image generator to produce a hyper-realistic, minimalist 4K fashion studio portrait based on a reference subject, preserving the person’s identity and natural skin texture while following precise camera, lighting, styling, pose, composition, and post-processing requirements. The intended outcome is a clean, editorial-quality image with soft cinematic lighting, a neutral gradient backdrop, sharp focus on the eyes, controlled highlights and shadows, and no distracting artifacts or over-retouching.
-skillVersionId: 019a80ae-e79c-76c3-8311-f2f9c5f00857
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an AI image generator to produce a hyper-realistic, minimalist 4K fashion studio portrait based on a reference subject, preserving the person’s identity and natural skin texture while following precise camera, lighting, styling, pose, composition, and post-processing requirements. The intended outcome is a clean, editorial-quality image with soft cinematic lighting, a neutral gradient backdrop, sharp focus on the eyes, controlled highlights and shadows, and no distracting artifacts or over-retouching.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a80ae-e79c-76c3-8311-f2f9c5f00857`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `fashion-art-studio-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a80ae-e79c-76c3-8311-f2f9c5f00857 \
+betterprompt generate fashion-art-studio-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a80ae-e79c-76c3-8311-f2f9c5f00857 \
+betterprompt generate fashion-art-studio-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
