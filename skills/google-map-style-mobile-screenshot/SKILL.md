@@ -1,14 +1,14 @@
 ---
 name: google-map-style-mobile-screenshot
 description: This prompt instructs the AI to create a realistic 9:16 mobile screenshot styled like a Google Maps place preview, using the user’s uploaded group selfie unchanged as the top image area and generating an authentic-looking Google Maps info card beneath it. The user can customize the place name, rating, review count, category, open/close status, action buttons, and the language/UI style, while the AI reconstructs matching Maps typography, icons, spacing, colors, and rounded card layout. The intended result is a high-quality, Google Maps–identical composite screenshot where the photo remains intact and all UI elements look native to the app.
-skillVersionId: 019aa5ec-e723-749e-8743-e75297e5fda3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a realistic 9:16 mobile screenshot styled like a Google Maps place preview, using the user’s uploaded group selfie unchanged as the top image area and generating an authentic-looking Google Maps info card beneath it. The user can customize the place name, rating, review count, category, open/close status, action buttons, and the language/UI style, while the AI reconstructs matching Maps typography, icons, spacing, colors, and rounded card layout. The intended result is a high-quality, Google Maps–identical composite screenshot where the photo remains intact and all UI elements look native to the app.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -76,12 +76,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019aa5ec-e723-749e-8743-e75297e5fda3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `google-map-style-mobile-screenshot`).
 
 Command form:
 
 ```bash
-betterprompt generate 019aa5ec-e723-749e-8743-e75297e5fda3 \
+betterprompt generate google-map-style-mobile-screenshot \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -102,7 +102,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019aa5ec-e723-749e-8743-e75297e5fda3 \
+betterprompt generate google-map-style-mobile-screenshot \
   --input Place_name=<value> \
   --input 'Place_category=Convenience store, restaurant or shop' \
   --input 'Language_of_map=English, Korean, Japanese,...' \
