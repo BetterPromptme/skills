@@ -1,14 +1,14 @@
 ---
 name: lead-gen-campaign-timeline-planner-with-roles-and-dates
 description: It instructs the AI to act as a project manager and produce a date-specific, step-by-step implementation timeline for a lead generation campaign for a specified business type running between given start and end dates. The output should map each phase—planning/content creation, platform setup/testing, launch milestones, optimization checkpoints, and final evaluation—to concrete dates and assign accountable roles such as content, ads, and design, presented immediately without any introductory text.
-skillVersionId: 01981c88-7dc4-791b-a2e8-efa749e62165
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 It instructs the AI to act as a project manager and produce a date-specific, step-by-step implementation timeline for a lead generation campaign for a specified business type running between given start and end dates. The output should map each phase—planning/content creation, platform setup/testing, launch milestones, optimization checkpoints, and final evaluation—to concrete dates and assign accountable roles such as content, ads, and design, presented immediately without any introductory text.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01981c88-7dc4-791b-a2e8-efa749e62165`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `lead-gen-campaign-timeline-planner-with-roles-and-dates`).
 
 Command form:
 
 ```bash
-betterprompt generate 01981c88-7dc4-791b-a2e8-efa749e62165 \
+betterprompt generate lead-gen-campaign-timeline-planner-with-roles-and-dates \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01981c88-7dc4-791b-a2e8-efa749e62165 \
+betterprompt generate lead-gen-campaign-timeline-planner-with-roles-and-dates \
   --input End_Date=<value> \
   --input Start_Date=<value> \
   --input Type_of_business=<value> \
