@@ -1,14 +1,14 @@
 ---
 name: crimson-halo-cinematic-portrait
 description: This prompt instructs an AI image editor to convert a provided portrait into a high-fashion, cinematic studio campaign image by keeping the subject’s facial identity intact while restyling them in a gender-appropriate formal outfit, placing them in a confident editorial pose, and replacing the scene with a seamless deep crimson studio background. It specifies dramatic high-contrast lighting with strong back/rim light and minimal front fill, along with detailed pose and mood guidance, to produce a polished, realistic, high-resolution editorial portrait with sharp eyes, clean texture, and no facial structure distortion.
-skillVersionId: 019c5fbd-64a3-77af-9206-2f19699ca212
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image editor to convert a provided portrait into a high-fashion, cinematic studio campaign image by keeping the subject’s facial identity intact while restyling them in a gender-appropriate formal outfit, placing them in a confident editorial pose, and replacing the scene with a seamless deep crimson studio background. It specifies dramatic high-contrast lighting with strong back/rim light and minimal front fill, along with detailed pose and mood guidance, to produce a polished, realistic, high-resolution editorial portrait with sharp eyes, clean texture, and no facial structure distortion.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c5fbd-64a3-77af-9206-2f19699ca212`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `crimson-halo-cinematic-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c5fbd-64a3-77af-9206-2f19699ca212 \
+betterprompt generate crimson-halo-cinematic-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c5fbd-64a3-77af-9206-2f19699ca212 \
+betterprompt generate crimson-halo-cinematic-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
