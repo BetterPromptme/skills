@@ -1,14 +1,14 @@
 ---
 name: christmas-gift
 description: This prompt directs an image-generation system to create an ultra-realistic, cinematic Christmas-themed full-body seated portrait based on a provided reference photo, preserving the subject’s exact facial identity, hairstyle, and hair color while applying gender-appropriate festive wardrobe styling. It specifies a cozy holiday environment (decorated tree, gifts, carpet, fairy lights), golden-hour lighting with warm ambient glow, detailed camera settings, a calm serious expression and floor-level perspective, plus controlled post-processing for natural skin texture and subtle festive sparkle. The outcome is a high-end fashion-art holiday portrait that matches the reference person precisely while delivering a warm, dreamy, ultra-detailed seasonal scene.
-skillVersionId: 019a8ffd-16c3-73a6-90f8-dcbc2f8095dc
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation system to create an ultra-realistic, cinematic Christmas-themed full-body seated portrait based on a provided reference photo, preserving the subject’s exact facial identity, hairstyle, and hair color while applying gender-appropriate festive wardrobe styling. It specifies a cozy holiday environment (decorated tree, gifts, carpet, fairy lights), golden-hour lighting with warm ambient glow, detailed camera settings, a calm serious expression and floor-level perspective, plus controlled post-processing for natural skin texture and subtle festive sparkle. The outcome is a high-end fashion-art holiday portrait that matches the reference person precisely while delivering a warm, dreamy, ultra-detailed seasonal scene.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a8ffd-16c3-73a6-90f8-dcbc2f8095dc`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `christmas-gift`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a8ffd-16c3-73a6-90f8-dcbc2f8095dc \
+betterprompt generate christmas-gift \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a8ffd-16c3-73a6-90f8-dcbc2f8095dc \
+betterprompt generate christmas-gift \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
