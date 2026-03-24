@@ -1,14 +1,14 @@
 ---
 name: lessons-learned-from-a-similar-startup
 description: This prompt asks the AI to role‑play as an experienced founder who has already built a similar company in your chosen business sector, scale ambition, and target audience, and to deliver five high‑impact lessons drawn from real‑world execution. The output is a concise set of founder insights that explicitly covers major mistakes to avoid, decisions that worked well, and actionable advice the founder would give their earlier self when starting over, tailored to the specified market and growth goals.
-skillVersionId: 019776fb-4f05-76be-816d-5c6c9907485c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to role‑play as an experienced founder who has already built a similar company in your chosen business sector, scale ambition, and target audience, and to deliver five high‑impact lessons drawn from real‑world execution. The output is a concise set of founder insights that explicitly covers major mistakes to avoid, decisions that worked well, and actionable advice the founder would give their earlier self when starting over, tailored to the specified market and growth goals.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019776fb-4f05-76be-816d-5c6c9907485c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `lessons-learned-from-a-similar-startup`).
 
 Command form:
 
 ```bash
-betterprompt generate 019776fb-4f05-76be-816d-5c6c9907485c \
+betterprompt generate lessons-learned-from-a-similar-startup \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019776fb-4f05-76be-816d-5c6c9907485c \
+betterprompt generate lessons-learned-from-a-similar-startup \
   --input BUSINESS_SCALE=<value> \
   --input TARGET_AUDIENCE=<value> \
   --input TYPE_OF_BUSINESS=<value> \
