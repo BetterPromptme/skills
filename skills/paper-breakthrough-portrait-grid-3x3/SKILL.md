@@ -1,14 +1,14 @@
 ---
 name: paper-breakthrough-portrait-grid-3x3
 description: Prompt này hướng dẫn AI tạo một ảnh collage studio 3x3 tỷ lệ 9:16 theo phong cách photoreal thương mại, trong đó cùng một nhân vật từ ảnh tham chiếu xuất hiện ở 9 ô với cử chỉ và trang phục khác nhau, hiệu ứng chui qua lỗ giấy xé 3D và ánh sáng nhất quán trên nền xám nhạt. Kết quả mong muốn là một ảnh chất lượng cao (>=2160x3840) không chữ/không watermark, có kiểm soát chặt để khóa danh tính (khuôn mặt, tóc, màu mắt, tông da) và đảm bảo mỗi ô khác biệt, rìa giấy và bóng tiếp xúc trông chân thực.
-skillVersionId: 01993d6f-4e92-7d18-b966-7447734d1630
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 Prompt này hướng dẫn AI tạo một ảnh collage studio 3x3 tỷ lệ 9:16 theo phong cách photoreal thương mại, trong đó cùng một nhân vật từ ảnh tham chiếu xuất hiện ở 9 ô với cử chỉ và trang phục khác nhau, hiệu ứng chui qua lỗ giấy xé 3D và ánh sáng nhất quán trên nền xám nhạt. Kết quả mong muốn là một ảnh chất lượng cao (>=2160x3840) không chữ/không watermark, có kiểm soát chặt để khóa danh tính (khuôn mặt, tóc, màu mắt, tông da) và đảm bảo mỗi ô khác biệt, rìa giấy và bóng tiếp xúc trông chân thực.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01993d6f-4e92-7d18-b966-7447734d1630`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `paper-breakthrough-portrait-grid-3x3`).
 
 Command form:
 
 ```bash
-betterprompt generate 01993d6f-4e92-7d18-b966-7447734d1630 \
+betterprompt generate paper-breakthrough-portrait-grid-3x3 \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01993d6f-4e92-7d18-b966-7447734d1630 \
+betterprompt generate paper-breakthrough-portrait-grid-3x3 \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
