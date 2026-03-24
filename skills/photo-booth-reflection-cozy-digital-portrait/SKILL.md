@@ -1,14 +1,14 @@
 ---
 name: photo-booth-reflection-cozy-digital-portrait
 description: This prompt instructs an image-generation system to produce an 8K ultra-realistic, softly cinematic Y2K-style self-portrait seen entirely through a laptop screen, where the subject’s face appears as a slightly blurred, glowy reflection while she lies on a white bed in warm light. It specifies exact scene composition (angled view of screen and keyboard), on-screen UI details (desktop icons and Photo Booth interface with pink heart effects), and precise styling (hair, sweater, makeup, jewelry, phone and nail color) to achieve a cozy, playful, nostalgic webcam aesthetic. The intended outcome is a photorealistic laptop-screen reflection portrait that preserves the subject’s original likeness and proportions while capturing intimate early-2000s digital charm.
-skillVersionId: 019a48a9-1c0e-76a8-b099-16991a79c30c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce an 8K ultra-realistic, softly cinematic Y2K-style self-portrait seen entirely through a laptop screen, where the subject’s face appears as a slightly blurred, glowy reflection while she lies on a white bed in warm light. It specifies exact scene composition (angled view of screen and keyboard), on-screen UI details (desktop icons and Photo Booth interface with pink heart effects), and precise styling (hair, sweater, makeup, jewelry, phone and nail color) to achieve a cozy, playful, nostalgic webcam aesthetic. The intended outcome is a photorealistic laptop-screen reflection portrait that preserves the subject’s original likeness and proportions while capturing intimate early-2000s digital charm.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a48a9-1c0e-76a8-b099-16991a79c30c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `photo-booth-reflection-cozy-digital-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a48a9-1c0e-76a8-b099-16991a79c30c \
+betterprompt generate photo-booth-reflection-cozy-digital-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a48a9-1c0e-76a8-b099-16991a79c30c \
+betterprompt generate photo-booth-reflection-cozy-digital-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
