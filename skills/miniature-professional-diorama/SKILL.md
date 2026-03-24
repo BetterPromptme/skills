@@ -1,14 +1,14 @@
 ---
 name: miniature-professional-diorama
 description: This prompt instructs an image model to generate a top-down, wide-angle photograph of a handcrafted-looking miniature dollhouse diorama set on a real wooden surface, recreating the subject’s real professional workspace in accurate themed detail. It requires a fully visible, properly scaled toy figurine with the subject’s realistic face and profession-specific attire, along with custom furniture, tools, décor, and layout that clearly signal the occupation. The intended outcome is a warm-lit, cozy, collectible-style miniature scene that includes a themed nameplate displaying the person’s full name and occupation.
-skillVersionId: 0196f5cc-84ac-76b7-a1b1-13bee30a468e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a top-down, wide-angle photograph of a handcrafted-looking miniature dollhouse diorama set on a real wooden surface, recreating the subject’s real professional workspace in accurate themed detail. It requires a fully visible, properly scaled toy figurine with the subject’s realistic face and profession-specific attire, along with custom furniture, tools, décor, and layout that clearly signal the occupation. The intended outcome is a warm-lit, cozy, collectible-style miniature scene that includes a themed nameplate displaying the person’s full name and occupation.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f5cc-84ac-76b7-a1b1-13bee30a468e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `miniature-professional-diorama`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f5cc-84ac-76b7-a1b1-13bee30a468e \
+betterprompt generate miniature-professional-diorama \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f5cc-84ac-76b7-a1b1-13bee30a468e \
+betterprompt generate miniature-professional-diorama \
   --input Your_Full_name=<value> \
   --input Your_occupation=<value> \
   --image-input-url https://example.com/image1.png \
