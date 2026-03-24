@@ -1,14 +1,14 @@
 ---
 name: grace-in-motion-cinematic-fashion-turn
 description: This prompt instructs an AI video generator to produce a calm, modern, editorial fashion clip in which a character is filmed from behind and slowly turns into a profile view, showcasing an elegant outfit through subtle movement, fabric texture, and light glints. It specifies a soft neutral background and refined lighting to emphasize depth and sophistication, resulting in a cinematic, high-end fashion video focused on graceful motion and detailed styling.
-skillVersionId: 0199e76b-48df-734b-8640-a277be627911
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI video generator to produce a calm, modern, editorial fashion clip in which a character is filmed from behind and slowly turns into a profile view, showcasing an elegant outfit through subtle movement, fabric texture, and light glints. It specifies a soft neutral background and refined lighting to emphasize depth and sophistication, resulting in a cinematic, high-end fashion video focused on graceful motion and detailed styling.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199e76b-48df-734b-8640-a277be627911`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `grace-in-motion-cinematic-fashion-turn`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199e76b-48df-734b-8640-a277be627911 \
+betterprompt generate grace-in-motion-cinematic-fashion-turn \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199e76b-48df-734b-8640-a277be627911 \
+betterprompt generate grace-in-motion-cinematic-fashion-turn \
   --input 'lighting_style=Soft key from camera left with warm rim on shoulders and hair' \
   --input 'background_style=Soft beige studio gradient with faint falloff' \
   --input 'outfit_description=Ivory silk blouse tucked into high waisted tailored trousers with soft pleats' \
