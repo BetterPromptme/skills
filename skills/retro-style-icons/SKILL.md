@@ -1,14 +1,14 @@
 ---
 name: retro-style-icons
 description: This prompt instructs an AI to generate a square, retro cartoon-style illustration of a specified object using a simplified flat-color palette, thick black outlines, and clean blocky shading, with optional small sparkle or motion accents. The expected outcome is a crisp, vector-friendly icon on a plain white background with sharp edges, no textures, and no gradient or blur effects.
-skillVersionId: 0197d362-a75a-7e2a-bbe2-d11eb293e802
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate a square, retro cartoon-style illustration of a specified object using a simplified flat-color palette, thick black outlines, and clean blocky shading, with optional small sparkle or motion accents. The expected outcome is a crisp, vector-friendly icon on a plain white background with sharp edges, no textures, and no gradient or blur effects.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197d362-a75a-7e2a-bbe2-d11eb293e802`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `retro-style-icons`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197d362-a75a-7e2a-bbe2-d11eb293e802 \
+betterprompt generate retro-style-icons \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197d362-a75a-7e2a-bbe2-d11eb293e802 \
+betterprompt generate retro-style-icons \
   --input OBJECT=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
