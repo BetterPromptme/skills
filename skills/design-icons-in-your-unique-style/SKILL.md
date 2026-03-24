@@ -1,14 +1,14 @@
 ---
 name: design-icons-in-your-unique-style
 description: This prompt instructs an image-generation system to create a high‑resolution, 3D‑rendered cute character tailored for a specific UI screen, with configurable character type, action, expression, and design details aligned to the UI’s purpose. It specifies a playful minimalist look with soft studio lighting, matte plush materials, centered full‑body composition, and no background, resulting in a transparent PNG (square, 1024×1024+), saved with a UI‑relevant filename.
-skillVersionId: 01985a05-d5b9-7797-ad6d-30d767b925ba
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to create a high‑resolution, 3D‑rendered cute character tailored for a specific UI screen, with configurable character type, action, expression, and design details aligned to the UI’s purpose. It specifies a playful minimalist look with soft studio lighting, matte plush materials, centered full‑body composition, and no background, resulting in a transparent PNG (square, 1024×1024+), saved with a UI‑relevant filename.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -77,12 +77,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01985a05-d5b9-7797-ad6d-30d767b925ba`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `design-icons-in-your-unique-style`).
 
 Command form:
 
 ```bash
-betterprompt generate 01985a05-d5b9-7797-ad6d-30d767b925ba \
+betterprompt generate design-icons-in-your-unique-style \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01985a05-d5b9-7797-ad6d-30d767b925ba \
+betterprompt generate design-icons-in-your-unique-style \
   --input Body_shape=Small \
   --input Expression=sad \
   --input 'UI_purpose=404 Page, , Loading Screen, Maintenance Notice' \
