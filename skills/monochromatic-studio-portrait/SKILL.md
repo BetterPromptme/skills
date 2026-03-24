@@ -1,14 +1,14 @@
 ---
 name: monochromatic-studio-portrait
 description: This prompt instructs an image generator to create a high-contrast, black-and-white studio editorial portrait of the same woman as in a provided reference, strictly preserving her facial identity, natural asymmetries, and hair characteristics. It specifies a seated floor pose with a reflective sideward gaze, tailored styling (oversized black blazer, opaque black tights, hoop earrings, visible long red nails), and a clean light-gray studio backdrop. The intended outcome is a cinematic, fashion-forward, hyper-realistic monochrome image with soft directional lighting, rich shadows, crisp texture detail, and fine film grain, while maintaining tasteful, non-sexualized editorial presentation.
-skillVersionId: 019aa534-a5ff-715d-8eaf-553712770609
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a high-contrast, black-and-white studio editorial portrait of the same woman as in a provided reference, strictly preserving her facial identity, natural asymmetries, and hair characteristics. It specifies a seated floor pose with a reflective sideward gaze, tailored styling (oversized black blazer, opaque black tights, hoop earrings, visible long red nails), and a clean light-gray studio backdrop. The intended outcome is a cinematic, fashion-forward, hyper-realistic monochrome image with soft directional lighting, rich shadows, crisp texture detail, and fine film grain, while maintaining tasteful, non-sexualized editorial presentation.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019aa534-a5ff-715d-8eaf-553712770609`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `monochromatic-studio-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019aa534-a5ff-715d-8eaf-553712770609 \
+betterprompt generate monochromatic-studio-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019aa534-a5ff-715d-8eaf-553712770609 \
+betterprompt generate monochromatic-studio-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
