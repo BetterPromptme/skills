@@ -1,14 +1,14 @@
 ---
 name: realistic-bee-flight-pov
 description: This prompt instructs an AI to produce an ultra-photorealistic, documentary-style video shot from a bee’s point of view as it flies through a real-looking apartment, with the camera tracking just behind the insect so its body and wings are partially visible. It specifies physically accurate flight motion, true-to-life lighting, depth of field, and detailed interior textures (including a wooden green closet), while enforcing strict constraints against any stylized/CGI appearance. It also defines a realistic soundscape dominated by spatially accurate buzzing with subtle distant human reactions and no music or artificial effects, resulting in footage intended to be indistinguishable from real wildlife cinematography.
-skillVersionId: 0199ebfe-2eab-750e-9dc5-8eaa8c684de3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to produce an ultra-photorealistic, documentary-style video shot from a bee’s point of view as it flies through a real-looking apartment, with the camera tracking just behind the insect so its body and wings are partially visible. It specifies physically accurate flight motion, true-to-life lighting, depth of field, and detailed interior textures (including a wooden green closet), while enforcing strict constraints against any stylized/CGI appearance. It also defines a realistic soundscape dominated by spatially accurate buzzing with subtle distant human reactions and no music or artificial effects, resulting in footage intended to be indistinguishable from real wildlife cinematography.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199ebfe-2eab-750e-9dc5-8eaa8c684de3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `realistic-bee-flight-pov`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199ebfe-2eab-750e-9dc5-8eaa8c684de3 \
+betterprompt generate realistic-bee-flight-pov \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199ebfe-2eab-750e-9dc5-8eaa8c684de3 \
+betterprompt generate realistic-bee-flight-pov \
   --model sora-2 \
   --options '{"seconds":"4","size":"720x1280"}'
 ```
