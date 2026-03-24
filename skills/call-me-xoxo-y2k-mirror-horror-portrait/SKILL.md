@@ -1,14 +1,14 @@
 ---
 name: call-me-xoxo-y2k-mirror-horror-portrait
 description: This prompt instructs an image model to generate a vertical, ultra-photorealistic Y2K-era bedroom mirror selfie with a cinematic, slightly eerie mood: the subject (matching the provided reference identity) poses chest-up holding a pink early-2000s digital camera, styled with specified hair, satin outfit, and chunky gold jewelry under warm, diffused vanity lighting and point-and-shoot flash. The mirror is hazy with lens flares and has “CALL ME XOXO” written in pink lipstick, while a blurred but recognizable masked figure appears faintly in the background reflection near the doorway, creating a glamorous yet suspenseful narrative without added logos or heavy effects.
-skillVersionId: 019a2f17-d7ac-7b90-a14a-af0a578666a6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a vertical, ultra-photorealistic Y2K-era bedroom mirror selfie with a cinematic, slightly eerie mood: the subject (matching the provided reference identity) poses chest-up holding a pink early-2000s digital camera, styled with specified hair, satin outfit, and chunky gold jewelry under warm, diffused vanity lighting and point-and-shoot flash. The mirror is hazy with lens flares and has “CALL ME XOXO” written in pink lipstick, while a blurred but recognizable masked figure appears faintly in the background reflection near the doorway, creating a glamorous yet suspenseful narrative without added logos or heavy effects.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -87,12 +87,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a2f17-d7ac-7b90-a14a-af0a578666a6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `call-me-xoxo-y2k-mirror-horror-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a2f17-d7ac-7b90-a14a-af0a578666a6 \
+betterprompt generate call-me-xoxo-y2k-mirror-horror-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -113,7 +113,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a2f17-d7ac-7b90-a14a-af0a578666a6 \
+betterprompt generate call-me-xoxo-y2k-mirror-horror-portrait \
   --input image=<value> \
   --input gender=<value> \
   --input hairstyle=<value> \
