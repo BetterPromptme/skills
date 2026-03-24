@@ -1,14 +1,14 @@
 ---
 name: ugc-clothing-item-photo-generator
 description: This prompt instructs an image generation/editing system to produce a realistic, high-end UGC fashion photoshoot image by keeping the woman’s face, identity, and hair exactly as shown in the first reference photo while swapping her outfit to match the specific clothing item from the second reference photo with accurate fit, material, and lighting. It also defines a luxurious studio scene with a giant cream gift box, burgundy velvet curtains, and directional editorial lighting, plus a precise pose and expression, and it constrains the output by forbidding any changes to the person’s identity, the garment design, or the established background and style so the result looks like an authentic photograph of the user wearing the chosen outfit.
-skillVersionId: 019b114a-76c2-775a-8f87-52b9ce83cbde
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generation/editing system to produce a realistic, high-end UGC fashion photoshoot image by keeping the woman’s face, identity, and hair exactly as shown in the first reference photo while swapping her outfit to match the specific clothing item from the second reference photo with accurate fit, material, and lighting. It also defines a luxurious studio scene with a giant cream gift box, burgundy velvet curtains, and directional editorial lighting, plus a precise pose and expression, and it constrains the output by forbidding any changes to the person’s identity, the garment design, or the established background and style so the result looks like an authentic photograph of the user wearing the chosen outfit.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b114a-76c2-775a-8f87-52b9ce83cbde`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ugc-clothing-item-photo-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b114a-76c2-775a-8f87-52b9ce83cbde \
+betterprompt generate ugc-clothing-item-photo-generator \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b114a-76c2-775a-8f87-52b9ce83cbde \
+betterprompt generate ugc-clothing-item-photo-generator \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-3-pro-image-preview \
