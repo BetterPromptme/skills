@@ -1,14 +1,14 @@
 ---
 name: chiet-tu-chu-han
 description: Prompt này yêu cầu AI đóng vai giáo viên tiếng Trung để phân tích một chữ Hán giản thể do người dùng cung cấp, trình bày pinyin, âm Hán‑Việt, nghĩa gốc và các từ ghép thường gặp, đồng thời chiết tự chữ đó thành các bộ/thành phần cấu tạo (kèm giải thích liên hệ giữa các phần) theo đúng cấu trúc và phong cách của ví dụ, nhằm tạo ra một bài phân tích rõ ràng, có hệ thống và dễ học.
-skillVersionId: 019a2984-683c-761c-9a33-f93afd98d0bc
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 Prompt này yêu cầu AI đóng vai giáo viên tiếng Trung để phân tích một chữ Hán giản thể do người dùng cung cấp, trình bày pinyin, âm Hán‑Việt, nghĩa gốc và các từ ghép thường gặp, đồng thời chiết tự chữ đó thành các bộ/thành phần cấu tạo (kèm giải thích liên hệ giữa các phần) theo đúng cấu trúc và phong cách của ví dụ, nhằm tạo ra một bài phân tích rõ ràng, có hệ thống và dễ học.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a2984-683c-761c-9a33-f93afd98d0bc`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `chiet-tu-chu-han`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a2984-683c-761c-9a33-f93afd98d0bc \
+betterprompt generate chiet-tu-chu-han \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a2984-683c-761c-9a33-f93afd98d0bc \
+betterprompt generate chiet-tu-chu-han \
   --input chữ_cần_chiết_tự=<value> \
   --model grok-4-fast \
   --options '{"reasoningEffort":"low"}'
