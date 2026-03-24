@@ -1,14 +1,14 @@
 ---
 name: prompt-engineer-pro-mode
 description: This prompt sets up the assistant to operate as an expert prompt engineer who designs overlooked, high-impact prompt templates tailored to a specific niche, goal, target audience, and preferred style provided by the user. The outcome is a curated set of effective, ready-to-use prompts (and typically brief guidance on how to apply them) optimized for creative throughput and NLP-aware results aligned with the supplied context variables.
-skillVersionId: 0197c914-cae9-78d4-be7d-20a0297d7ff6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt sets up the assistant to operate as an expert prompt engineer who designs overlooked, high-impact prompt templates tailored to a specific niche, goal, target audience, and preferred style provided by the user. The outcome is a curated set of effective, ready-to-use prompts (and typically brief guidance on how to apply them) optimized for creative throughput and NLP-aware results aligned with the supplied context variables.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c914-cae9-78d4-be7d-20a0297d7ff6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `prompt-engineer-pro-mode`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c914-cae9-78d4-be7d-20a0297d7ff6 \
+betterprompt generate prompt-engineer-pro-mode \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c914-cae9-78d4-be7d-20a0297d7ff6 \
+betterprompt generate prompt-engineer-pro-mode \
   --input Goal=<value> \
   --input Style=<value> \
   --input Target_audience=<value> \
