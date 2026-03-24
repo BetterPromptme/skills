@@ -1,14 +1,14 @@
 ---
 name: focus-describe
 description: This prompt instructs the AI to examine an input image and generate a concise, vivid, and neutral accessibility-focused description of a user-specified subject, covering visible elements such as colors, composition, objects, actions, and overall mood while avoiding opinions, copyrighted content creation, and unsupported inferences; if details are unclear, it explicitly requires the AI to note uncertainty.
-skillVersionId: 0198c6d8-faa9-775e-82cd-a626d3f5b363
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to examine an input image and generate a concise, vivid, and neutral accessibility-focused description of a user-specified subject, covering visible elements such as colors, composition, objects, actions, and overall mood while avoiding opinions, copyrighted content creation, and unsupported inferences; if details are unclear, it explicitly requires the AI to note uncertainty.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198c6d8-faa9-775e-82cd-a626d3f5b363`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `focus-describe`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198c6d8-faa9-775e-82cd-a626d3f5b363 \
+betterprompt generate focus-describe \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198c6d8-faa9-775e-82cd-a626d3f5b363 \
+betterprompt generate focus-describe \
   --input what_do_you_want_to_describe=<value> \
   --image-input-url https://example.com/image1.png \
   --model gpt-5-nano \
