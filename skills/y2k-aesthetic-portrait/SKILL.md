@@ -1,14 +1,14 @@
 ---
 name: y2k-aesthetic-portrait
 description: This prompt instructs an image-generation system to produce a high-resolution, photorealistic vertical street-fashion portrait of a specific young woman in bright midday sunlight, posed casually against a white stucco wall at a Mediterranean-style urban street corner. It tightly defines framing, pose, wardrobe, accessories, background elements (including a “Beverly St” sign), lighting, and color palette while enforcing strict constraints to preserve the subject’s exact facial identity and natural skin texture without beautification or reshaping. The expected outcome is a clean, editorial-quality three-quarter-body image with crisp shadows and minimalist architecture that matches the described coastal urban aesthetic.
-skillVersionId: 019cf1be-1a19-72df-b41e-f8648b6fca4a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce a high-resolution, photorealistic vertical street-fashion portrait of a specific young woman in bright midday sunlight, posed casually against a white stucco wall at a Mediterranean-style urban street corner. It tightly defines framing, pose, wardrobe, accessories, background elements (including a “Beverly St” sign), lighting, and color palette while enforcing strict constraints to preserve the subject’s exact facial identity and natural skin texture without beautification or reshaping. The expected outcome is a clean, editorial-quality three-quarter-body image with crisp shadows and minimalist architecture that matches the described coastal urban aesthetic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019cf1be-1a19-72df-b41e-f8648b6fca4a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `y2k-aesthetic-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019cf1be-1a19-72df-b41e-f8648b6fca4a \
+betterprompt generate y2k-aesthetic-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019cf1be-1a19-72df-b41e-f8648b6fca4a \
+betterprompt generate y2k-aesthetic-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
