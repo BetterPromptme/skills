@@ -1,14 +1,14 @@
 ---
 name: 90s-minimalist-editorial
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic, vertically framed indoor fashion portrait of a young woman posed centered before a dark wooden door, with specified hair, makeup, outfit, accessories, and body language, in warm, softly dim cinematic lighting. The expected outcome is a clean, minimal, elegant three-quarter portrait with realistic skin texture and lighting, strong subject-to-background separation, accurate interior details (door panels, brass hardware, neutral wall edge), and strict preservation of the subject’s facial identity without reshaping or beautification effects.
-skillVersionId: 019ced81-796b-70f8-9558-4023aebdece7
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a high-resolution, photorealistic, vertically framed indoor fashion portrait of a young woman posed centered before a dark wooden door, with specified hair, makeup, outfit, accessories, and body language, in warm, softly dim cinematic lighting. The expected outcome is a clean, minimal, elegant three-quarter portrait with realistic skin texture and lighting, strong subject-to-background separation, accurate interior details (door panels, brass hardware, neutral wall edge), and strict preservation of the subject’s facial identity without reshaping or beautification effects.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ced81-796b-70f8-9558-4023aebdece7`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `90s-minimalist-editorial`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ced81-796b-70f8-9558-4023aebdece7 \
+betterprompt generate 90s-minimalist-editorial \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ced81-796b-70f8-9558-4023aebdece7 \
+betterprompt generate 90s-minimalist-editorial \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
