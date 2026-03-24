@@ -1,14 +1,14 @@
 ---
 name: vocabulary-list-game-maker
 description: This prompt instructs the assistant to act as a language-teaching aid that creates a themed vocabulary set tailored to specified language, topic, proficiency level, and age group, providing brief meanings or translations for each item. It also requires the assistant to design a printable, classroom-ready word game in a chosen format and include clear step-by-step instructions so teachers can immediately use the activity to practice the target vocabulary.
-skillVersionId: 019918cd-120c-77da-b16e-52a1db3086c7
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the assistant to act as a language-teaching aid that creates a themed vocabulary set tailored to specified language, topic, proficiency level, and age group, providing brief meanings or translations for each item. It also requires the assistant to design a printable, classroom-ready word game in a chosen format and include clear step-by-step instructions so teachers can immediately use the activity to practice the target vocabulary.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -69,12 +69,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019918cd-120c-77da-b16e-52a1db3086c7`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `vocabulary-list-game-maker`).
 
 Command form:
 
 ```bash
-betterprompt generate 019918cd-120c-77da-b16e-52a1db3086c7 \
+betterprompt generate vocabulary-list-game-maker \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -91,7 +91,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019918cd-120c-77da-b16e-52a1db3086c7 \
+betterprompt generate vocabulary-list-game-maker \
   --input topic=auto \
   --input language=Chinese \
   --input age_range=14-16 \
