@@ -1,14 +1,14 @@
 ---
 name: pinterest-mirror-selfie-ultra-realistic
 description: This prompt instructs an image model to generate a hyper-realistic mirror selfie of a gender-neutral person in a specified location, wearing a defined outfit with particular hair and accessories, conveying a chosen vibe and pose under specified lighting. It emphasizes an authentic smartphone aesthetic with natural skin and fabric detail, subtle lens distortion, and realistic reflections while explicitly forbidding common artificial or stylized traits, resulting in a believable iPhone-style RAW photo rather than a polished or cinematic image.
-skillVersionId: 019bf0f1-3e0b-7648-af77-b5432808cdd0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a hyper-realistic mirror selfie of a gender-neutral person in a specified location, wearing a defined outfit with particular hair and accessories, conveying a chosen vibe and pose under specified lighting. It emphasizes an authentic smartphone aesthetic with natural skin and fabric detail, subtle lens distortion, and realistic reflections while explicitly forbidding common artificial or stylized traits, resulting in a believable iPhone-style RAW photo rather than a polished or cinematic image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019bf0f1-3e0b-7648-af77-b5432808cdd0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `pinterest-mirror-selfie-ultra-realistic`).
 
 Command form:
 
 ```bash
-betterprompt generate 019bf0f1-3e0b-7648-af77-b5432808cdd0 \
+betterprompt generate pinterest-mirror-selfie-ultra-realistic \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019bf0f1-3e0b-7648-af77-b5432808cdd0 \
+betterprompt generate pinterest-mirror-selfie-ultra-realistic \
   --input 'Pose=PHONE IN ONE HAND, OTHER HAND IN POCKET' \
   --input 'Vibe=SERIOUS / MOODY' \
   --input 'Lighting=COOL WHITE BATHROOM LIGHT' \
