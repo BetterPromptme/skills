@@ -1,14 +1,14 @@
 ---
 name: zootopia-couple-mirror-selfie
 description: This prompt instructs an image model to generate an ultra-photorealistic 8K iPhone-style mirror selfie of two specific people—locking the man’s face to Photo 1 and the woman’s face to Photo 2—posed together in a brightly lit, Zootopia-themed Disney toy store. It specifies exact wardrobe and character plush hats, the woman’s wink-and-phone pose, detailed makeup and accessories, and a shallow depth-of-field environment with realistic mirror reflections and imperfections, resulting in a crisp, identity-preserved couple portrait centered in the mirror with playful, saturated mall lighting and richly detailed textures.
-skillVersionId: 019ae28b-ca07-727e-b3ef-9687473e1c14
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate an ultra-photorealistic 8K iPhone-style mirror selfie of two specific people—locking the man’s face to Photo 1 and the woman’s face to Photo 2—posed together in a brightly lit, Zootopia-themed Disney toy store. It specifies exact wardrobe and character plush hats, the woman’s wink-and-phone pose, detailed makeup and accessories, and a shallow depth-of-field environment with realistic mirror reflections and imperfections, resulting in a crisp, identity-preserved couple portrait centered in the mirror with playful, saturated mall lighting and richly detailed textures.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ae28b-ca07-727e-b3ef-9687473e1c14`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `zootopia-couple-mirror-selfie`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ae28b-ca07-727e-b3ef-9687473e1c14 \
+betterprompt generate zootopia-couple-mirror-selfie \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ae28b-ca07-727e-b3ef-9687473e1c14 \
+betterprompt generate zootopia-couple-mirror-selfie \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-3-pro-image-preview \
