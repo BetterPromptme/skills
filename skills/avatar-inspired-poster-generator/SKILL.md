@@ -1,14 +1,14 @@
 ---
 name: avatar-inspired-poster-generator
 description: This prompt instructs an AI to act as an image director and design a cinematic, highly detailed movie-poster-style artwork inspired by the Avatar film universe, using provided inputs for title, characters, theme, visual elements, color palette, and optional tagline. The expected outcome is a cohesive, official-looking promotional poster with epic composition, glowing bioluminescent atmosphere, and clear typography placement for the title and tagline, all aligned to the specified mood and palette.
-skillVersionId: 0198c571-2e37-7ce1-b52f-f77b216d455a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to act as an image director and design a cinematic, highly detailed movie-poster-style artwork inspired by the Avatar film universe, using provided inputs for title, characters, theme, visual elements, color palette, and optional tagline. The expected outcome is a cohesive, official-looking promotional poster with epic composition, glowing bioluminescent atmosphere, and clear typography placement for the title and tagline, all aligned to the specified mood and palette.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198c571-2e37-7ce1-b52f-f77b216d455a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `avatar-inspired-poster-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198c571-2e37-7ce1-b52f-f77b216d455a \
+betterprompt generate avatar-inspired-poster-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -92,7 +92,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198c571-2e37-7ce1-b52f-f77b216d455a \
+betterprompt generate avatar-inspired-poster-generator \
   --input Tagline=<value> \
   --input Theme_Mood=<value> \
   --input Poster_Title=<value> \
