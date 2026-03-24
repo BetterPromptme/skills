@@ -1,14 +1,14 @@
 ---
 name: old-portrait-photo-restoration-prompt
 description: This prompt instructs the AI to restore an old portrait photograph by repairing physical damage and improving clarity while preserving the subject’s authentic appearance and the photo’s historical mood. It uses the provided ethnicity/nationality, age, gender, and chosen restoration type (color or black-and-white) to guide accurate, natural-looking enhancement without adding new elements or over-editing. The expected outcome is a high-resolution, archival-quality restored portrait with balanced tones, refined facial detail, and culturally appropriate coloration if colorization is requested.
-skillVersionId: 01973dc4-d59d-7be5-ae45-38856a8cd526
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to restore an old portrait photograph by repairing physical damage and improving clarity while preserving the subject’s authentic appearance and the photo’s historical mood. It uses the provided ethnicity/nationality, age, gender, and chosen restoration type (color or black-and-white) to guide accurate, natural-looking enhancement without adding new elements or over-editing. The expected outcome is a high-resolution, archival-quality restored portrait with balanced tones, refined facial detail, and culturally appropriate coloration if colorization is requested.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -77,12 +77,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01973dc4-d59d-7be5-ae45-38856a8cd526`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `old-portrait-photo-restoration-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 01973dc4-d59d-7be5-ae45-38856a8cd526 \
+betterprompt generate old-portrait-photo-restoration-prompt \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -103,7 +103,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01973dc4-d59d-7be5-ae45-38856a8cd526 \
+betterprompt generate old-portrait-photo-restoration-prompt \
   --input Age=<value> \
   --input Gender=<value> \
   --input Restoration_type=<value> \
