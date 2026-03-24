@@ -143,13 +143,13 @@ export function buildMissingInputsMessage(
 }
 
 export function buildExampleCommand(
-  skillVersionId: string,
+  name: string,
   variables: Record<string, VariableInputMetadata>,
   images: ImageInputMetadata[],
   defaultModel: string,
   defaultOptions: Record<string, unknown>
 ): string {
-  const parts: string[] = [`betterprompt generate ${skillVersionId}`];
+  const parts: string[] = [`betterprompt generate ${name}`];
 
   for (const [key, v] of Object.entries(variables)) {
     if (isTextVariable(v) && v.defaultValues && v.defaultValues.length > 0) {
@@ -216,7 +216,7 @@ export function buildSkillmd(params: BuildSkillmdParams): string {
   const hasRequiredTextInputs = requiredTextInputsList.length > 0;
   const hasOptionalTextInputs = optionalTextInputsList.length > 0;
   const exampleCommand = buildExampleCommand(
-    skillVersionId,
+    name,
     inputMetadata.variables,
     inputMetadata.images,
     defaultModel,
