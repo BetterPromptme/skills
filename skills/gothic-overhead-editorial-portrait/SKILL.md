@@ -1,14 +1,14 @@
 ---
 name: gothic-overhead-editorial-portrait
 description: This prompt instructs an AI to generate a photorealistic, full-body gothic editorial portrait with a bridal-inspired mood, shot from an overhead angle in warm candlelight. It specifies the subject’s gender-dependent styling, outfit and jewelry details, a curated set of antique props, a neutral draped backdrop, and a calm seated pose to achieve a quiet, romantic, introspective atmosphere. The expected result is a cinematic, editorial-grade image with balanced top-down composition, soft chiaroscuro shadows, and an ivory-and-amber palette that emphasizes lace, glass, and texture.
-skillVersionId: 019a238d-164d-7128-9d5b-c058b536d453
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate a photorealistic, full-body gothic editorial portrait with a bridal-inspired mood, shot from an overhead angle in warm candlelight. It specifies the subject’s gender-dependent styling, outfit and jewelry details, a curated set of antique props, a neutral draped backdrop, and a calm seated pose to achieve a quiet, romantic, introspective atmosphere. The expected result is a cinematic, editorial-grade image with balanced top-down composition, soft chiaroscuro shadows, and an ivory-and-amber palette that emphasizes lace, glass, and texture.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -79,12 +79,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a238d-164d-7128-9d5b-c058b536d453`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `gothic-overhead-editorial-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a238d-164d-7128-9d5b-c058b536d453 \
+betterprompt generate gothic-overhead-editorial-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -105,7 +105,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a238d-164d-7128-9d5b-c058b536d453 \
+betterprompt generate gothic-overhead-editorial-portrait \
   --input gender=<value> \
   --input outfit_color=<value> \
   --input outfit_style=<value> \
