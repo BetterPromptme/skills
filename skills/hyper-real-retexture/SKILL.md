@@ -1,14 +1,14 @@
 ---
 name: hyper-real-retexture
 description: This prompt instructs an image retexturing operation that keeps the attached object’s exact shape and surface geometry while replacing its material appearance with a hyper-realistic aqua-tinted translucent glass look featuring glossy highlights, micro-bubble clusters, and a frosted green tip and stem. It specifies high-angle natural daylight with strong specular reflections and soft diffused shadows, and it standardizes the scene to a centered, top-down flat lay on a pure white matte background with only a single cast shadow, producing a high-contrast, sharply focused final render.
-skillVersionId: 01980698-f3f0-7766-897c-3bbe6f538548
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image retexturing operation that keeps the attached object’s exact shape and surface geometry while replacing its material appearance with a hyper-realistic aqua-tinted translucent glass look featuring glossy highlights, micro-bubble clusters, and a frosted green tip and stem. It specifies high-angle natural daylight with strong specular reflections and soft diffused shadows, and it standardizes the scene to a centered, top-down flat lay on a pure white matte background with only a single cast shadow, producing a high-contrast, sharply focused final render.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01980698-f3f0-7766-897c-3bbe6f538548`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `hyper-real-retexture`).
 
 Command form:
 
 ```bash
-betterprompt generate 01980698-f3f0-7766-897c-3bbe6f538548 \
+betterprompt generate hyper-real-retexture \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01980698-f3f0-7766-897c-3bbe6f538548 \
+betterprompt generate hyper-real-retexture \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
