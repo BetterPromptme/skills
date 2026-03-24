@@ -1,14 +1,14 @@
 ---
 name: bts-spring-day-station-portrait-poster-accurate
 description: This prompt instructs the AI to produce a photorealistic reconstruction of a specific iconic bus-stop scene from the BTS Spring Day era, treating that reference as the definitive blueprint for architecture, composition, color grading, lighting, and mood, while inserting the exact person or group from an input photo without altering their identity. The intended outcome is a wide, eye-level image that matches the original station’s structure and seaside backdrop with poster-like pastel overcast tones, showing the input subjects seated in a straight line on the bench as if they were always part of the original environment, with no redesigns, added elements, or stylistic reinterpretation.
-skillVersionId: 019b9218-3da7-752e-96d0-5d9aa72d2ac9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to produce a photorealistic reconstruction of a specific iconic bus-stop scene from the BTS Spring Day era, treating that reference as the definitive blueprint for architecture, composition, color grading, lighting, and mood, while inserting the exact person or group from an input photo without altering their identity. The intended outcome is a wide, eye-level image that matches the original station’s structure and seaside backdrop with poster-like pastel overcast tones, showing the input subjects seated in a straight line on the bench as if they were always part of the original environment, with no redesigns, added elements, or stylistic reinterpretation.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b9218-3da7-752e-96d0-5d9aa72d2ac9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `bts-spring-day-station-portrait-poster-accurate`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b9218-3da7-752e-96d0-5d9aa72d2ac9 \
+betterprompt generate bts-spring-day-station-portrait-poster-accurate \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b9218-3da7-752e-96d0-5d9aa72d2ac9 \
+betterprompt generate bts-spring-day-station-portrait-poster-accurate \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"4:3","resolution":"1K"}'
