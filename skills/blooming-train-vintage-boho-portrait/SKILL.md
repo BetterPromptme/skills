@@ -1,14 +1,14 @@
 ---
 name: blooming-train-vintage-boho-portrait
 description: This prompt instructs an AI image generator to produce an ultra-high-resolution, photorealistic fine-art cinematic portrait of a Korean woman seated in a flower-overgrown vintage train carriage, specifying composition, lighting, styling, color palette, mood, and camera settings to achieve a warm, nostalgic, dreamlike spring aesthetic while preserving the subject’s exact likeness from a reference photo.
-skillVersionId: 019a4785-2ae9-706c-8de3-ce82c5e82570
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce an ultra-high-resolution, photorealistic fine-art cinematic portrait of a Korean woman seated in a flower-overgrown vintage train carriage, specifying composition, lighting, styling, color palette, mood, and camera settings to achieve a warm, nostalgic, dreamlike spring aesthetic while preserving the subject’s exact likeness from a reference photo.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a4785-2ae9-706c-8de3-ce82c5e82570`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `blooming-train-vintage-boho-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a4785-2ae9-706c-8de3-ce82c5e82570 \
+betterprompt generate blooming-train-vintage-boho-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a4785-2ae9-706c-8de3-ce82c5e82570 \
+betterprompt generate blooming-train-vintage-boho-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
