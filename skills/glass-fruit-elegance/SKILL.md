@@ -1,14 +1,14 @@
 ---
 name: glass-fruit-elegance
 description: This prompt directs an image model to generate a hyper-realistic macro-style 3D render of a specified fruit depicted as translucent glass, emphasizing glossy reflections, crystal clarity, internal air bubbles, and soft shadows on a clean surface. The result is a photorealistic, minimal-background composition with sharp studio lighting and a smooth rounded form that reads as a glass sculpture of the chosen fruit.
-skillVersionId: 01979a9d-7c16-7f9d-b993-cd6aa2771b91
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image model to generate a hyper-realistic macro-style 3D render of a specified fruit depicted as translucent glass, emphasizing glossy reflections, crystal clarity, internal air bubbles, and soft shadows on a clean surface. The result is a photorealistic, minimal-background composition with sharp studio lighting and a smooth rounded form that reads as a glass sculpture of the chosen fruit.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01979a9d-7c16-7f9d-b993-cd6aa2771b91`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `glass-fruit-elegance`).
 
 Command form:
 
 ```bash
-betterprompt generate 01979a9d-7c16-7f9d-b993-cd6aa2771b91 \
+betterprompt generate glass-fruit-elegance \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01979a9d-7c16-7f9d-b993-cd6aa2771b91 \
+betterprompt generate glass-fruit-elegance \
   --input fruit_name=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
