@@ -1,14 +1,14 @@
 ---
 name: hyperreal-extreme-close-up-portrait
 description: This prompt instructs an AI to transform an uploaded portrait into an ultra-photorealistic, 8K DSLR-style macro close-up that tightly frames the eyes, lashes, nose, and surrounding skin while preserving the subject’s identity. It specifies cinematic macro lens aesthetics, dramatic directional lighting, shallow depth of field, and a dark blurred background, with strict requirements to retain natural imperfections—pores, fine hairs, freckles, oils, and micro-texture—without smoothing, beautifying, or altering facial structure. The result is a clinical-yet-cinematic extreme close-up image that looks like high-end macro photography rather than an illustration or stylized render.
-skillVersionId: 01999f3d-e7bc-7fea-bbd6-8a0a1afc4ce0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to transform an uploaded portrait into an ultra-photorealistic, 8K DSLR-style macro close-up that tightly frames the eyes, lashes, nose, and surrounding skin while preserving the subject’s identity. It specifies cinematic macro lens aesthetics, dramatic directional lighting, shallow depth of field, and a dark blurred background, with strict requirements to retain natural imperfections—pores, fine hairs, freckles, oils, and micro-texture—without smoothing, beautifying, or altering facial structure. The result is a clinical-yet-cinematic extreme close-up image that looks like high-end macro photography rather than an illustration or stylized render.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01999f3d-e7bc-7fea-bbd6-8a0a1afc4ce0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `hyperreal-extreme-close-up-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 01999f3d-e7bc-7fea-bbd6-8a0a1afc4ce0 \
+betterprompt generate hyperreal-extreme-close-up-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01999f3d-e7bc-7fea-bbd6-8a0a1afc4ce0 \
+betterprompt generate hyperreal-extreme-close-up-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
