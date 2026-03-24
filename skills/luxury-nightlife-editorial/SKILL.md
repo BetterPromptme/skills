@@ -1,14 +1,14 @@
 ---
 name: luxury-nightlife-editorial
 description: This prompt directs an AI image generator to produce a high-resolution, photorealistic, full-body vertical nighttime fashion portrait of a young woman posed confidently at the entrance of a luxury hotel or upscale building, with specific requirements for her hairstyle, makeup, outfit, accessories, and flash-lit editorial lighting while keeping her facial identity and natural skin texture unchanged; the result is a crisp, upscale nightlife photograph featuring marble columns, glowing glass doors, and subtle urban street context for a glamorous, luxury-entrance aesthetic.
-skillVersionId: 019c9b21-77cf-7185-9042-292ccf4efb5b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an AI image generator to produce a high-resolution, photorealistic, full-body vertical nighttime fashion portrait of a young woman posed confidently at the entrance of a luxury hotel or upscale building, with specific requirements for her hairstyle, makeup, outfit, accessories, and flash-lit editorial lighting while keeping her facial identity and natural skin texture unchanged; the result is a crisp, upscale nightlife photograph featuring marble columns, glowing glass doors, and subtle urban street context for a glamorous, luxury-entrance aesthetic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c9b21-77cf-7185-9042-292ccf4efb5b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `luxury-nightlife-editorial`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c9b21-77cf-7185-9042-292ccf4efb5b \
+betterprompt generate luxury-nightlife-editorial \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c9b21-77cf-7185-9042-292ccf4efb5b \
+betterprompt generate luxury-nightlife-editorial \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
