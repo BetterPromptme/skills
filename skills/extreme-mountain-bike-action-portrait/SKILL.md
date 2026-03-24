@@ -1,14 +1,14 @@
 ---
 name: extreme-mountain-bike-action-portrait
 description: This prompt directs an AI image editor to use an uploaded portrait as the identity source and generate an ultra-photorealistic, cinematic action photograph of that same person mid-air on a mountain bike high jump in a sunlit forest. It specifies an extreme low (frog-eye) camera angle with oversized, highly detailed tires in the foreground, warm afternoon lighting, sharp 8K DSLR realism, and a wide 4:3 landscape composition, while enforcing strict constraints to preserve the subject’s facial identity and proportions and to avoid stylization, distortions, text, or unrelated elements.
-skillVersionId: 0199cc67-5fcc-74fd-aaa6-51a33f75b4e7
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an AI image editor to use an uploaded portrait as the identity source and generate an ultra-photorealistic, cinematic action photograph of that same person mid-air on a mountain bike high jump in a sunlit forest. It specifies an extreme low (frog-eye) camera angle with oversized, highly detailed tires in the foreground, warm afternoon lighting, sharp 8K DSLR realism, and a wide 4:3 landscape composition, while enforcing strict constraints to preserve the subject’s facial identity and proportions and to avoid stylization, distortions, text, or unrelated elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199cc67-5fcc-74fd-aaa6-51a33f75b4e7`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `extreme-mountain-bike-action-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199cc67-5fcc-74fd-aaa6-51a33f75b4e7 \
+betterprompt generate extreme-mountain-bike-action-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199cc67-5fcc-74fd-aaa6-51a33f75b4e7 \
+betterprompt generate extreme-mountain-bike-action-portrait \
   --input 'outfit=cream-colored windbreaker jacket, black denim jeans, black baseball cap worn backward, black gloves' \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
