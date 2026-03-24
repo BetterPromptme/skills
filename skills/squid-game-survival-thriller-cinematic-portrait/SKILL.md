@@ -1,14 +1,14 @@
 ---
 name: squid-game-survival-thriller-cinematic-portrait
 description: This prompt instructs an image-generation system to produce a photorealistic, portrait-oriented survival-thriller scene: a waist-up central protagonist in a worn green “016” tracksuit, lit by a single overhead spotlight in a foggy, dark enclosed arena, while five to six red-hooded, geometrically masked guards form a symmetrical semicircle behind. It specifies camera framing, depth of field, lighting color temperature, palette contrast, textures, and subtle blood details, and it constrains the output to preserve the subject’s exact facial identity, hair, and skin tone from a reference image, resulting in an 8K, matte film-graded cinematic portrait emphasizing tension and defiance.
-skillVersionId: 019a240d-3f32-74b6-a201-3961112cd042
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce a photorealistic, portrait-oriented survival-thriller scene: a waist-up central protagonist in a worn green “016” tracksuit, lit by a single overhead spotlight in a foggy, dark enclosed arena, while five to six red-hooded, geometrically masked guards form a symmetrical semicircle behind. It specifies camera framing, depth of field, lighting color temperature, palette contrast, textures, and subtle blood details, and it constrains the output to preserve the subject’s exact facial identity, hair, and skin tone from a reference image, resulting in an 8K, matte film-graded cinematic portrait emphasizing tension and defiance.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a240d-3f32-74b6-a201-3961112cd042`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `squid-game-survival-thriller-cinematic-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a240d-3f32-74b6-a201-3961112cd042 \
+betterprompt generate squid-game-survival-thriller-cinematic-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a240d-3f32-74b6-a201-3961112cd042 \
+betterprompt generate squid-game-survival-thriller-cinematic-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
