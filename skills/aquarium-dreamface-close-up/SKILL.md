@@ -1,14 +1,14 @@
 ---
 name: aquarium-dreamface-close-up
 description: This prompt instructs an image-generation model to produce a hyper-realistic, cinematic extreme close-up portrait of a young woman viewed through the glass of a water tank, specifying her facial features, expression, hair behavior in water, a hand posed against the glass, and detailed aquatic elements like bubbles, surface ripples, refraction, and small orange-yellow fish with subtle motion blur. It also defines a direct-flash, high-contrast photographic look with a dark background, slight macro/fisheye feel, realistic skin texture, and a dreamy, melancholic mood, while excluding stylized or low-quality artifacts via a negative prompt to ensure a natural, photoreal outcome.
-skillVersionId: 019aed7e-8bba-70c0-b372-75fa632fa81a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to produce a hyper-realistic, cinematic extreme close-up portrait of a young woman viewed through the glass of a water tank, specifying her facial features, expression, hair behavior in water, a hand posed against the glass, and detailed aquatic elements like bubbles, surface ripples, refraction, and small orange-yellow fish with subtle motion blur. It also defines a direct-flash, high-contrast photographic look with a dark background, slight macro/fisheye feel, realistic skin texture, and a dreamy, melancholic mood, while excluding stylized or low-quality artifacts via a negative prompt to ensure a natural, photoreal outcome.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019aed7e-8bba-70c0-b372-75fa632fa81a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `aquarium-dreamface-close-up`).
 
 Command form:
 
 ```bash
-betterprompt generate 019aed7e-8bba-70c0-b372-75fa632fa81a \
+betterprompt generate aquarium-dreamface-close-up \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019aed7e-8bba-70c0-b372-75fa632fa81a \
+betterprompt generate aquarium-dreamface-close-up \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
