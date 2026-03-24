@@ -1,14 +1,14 @@
 ---
 name: soft-pastel-childrens-book-style-conversion
 description: This prompt instructs the AI to take the user’s uploaded image and recreate it as a whimsical watercolor children’s-book illustration, using a soft pastel palette and airy blended background, with visible hand-painted brush textures, gentle shading, subtle outlines, and cute large-eyed stylized characters, resulting in a dreamy, playful, artistic rendition of the original scene.
-skillVersionId: 0197bed4-224d-754a-aa06-046db8af3547
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take the user’s uploaded image and recreate it as a whimsical watercolor children’s-book illustration, using a soft pastel palette and airy blended background, with visible hand-painted brush textures, gentle shading, subtle outlines, and cute large-eyed stylized characters, resulting in a dreamy, playful, artistic rendition of the original scene.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197bed4-224d-754a-aa06-046db8af3547`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `soft-pastel-childrens-book-style-conversion`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197bed4-224d-754a-aa06-046db8af3547 \
+betterprompt generate soft-pastel-childrens-book-style-conversion \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197bed4-224d-754a-aa06-046db8af3547 \
+betterprompt generate soft-pastel-childrens-book-style-conversion \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
