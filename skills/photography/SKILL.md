@@ -1,14 +1,14 @@
 ---
 name: photography
 description: This prompt directs an image-generation task to create a high-quality lifestyle photograph of a woman in a modern minimalist living room, specifying her outfit, the neutral curated decor, and the soft natural lighting. The expected result is an Instagram-ready, sharply focused, well-composed scene with a calm, airy atmosphere and elegant, cohesive styling.
-skillVersionId: 019bdd6b-b917-713c-ad78-7b42392f22d9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation task to create a high-quality lifestyle photograph of a woman in a modern minimalist living room, specifying her outfit, the neutral curated decor, and the soft natural lighting. The expected result is an Instagram-ready, sharply focused, well-composed scene with a calm, airy atmosphere and elegant, cohesive styling.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019bdd6b-b917-713c-ad78-7b42392f22d9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `photography`).
 
 Command form:
 
 ```bash
-betterprompt generate 019bdd6b-b917-713c-ad78-7b42392f22d9 \
+betterprompt generate photography \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019bdd6b-b917-713c-ad78-7b42392f22d9 \
+betterprompt generate photography \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"1:1","resolution":"1K"}'
 ```
