@@ -1,14 +1,14 @@
 ---
 name: seo-optimized-blog-post-writer-1
 description: This prompt instructs the AI to create a complete, SEO-optimized blog post tailored to a given topic, keyword, tone, and word count, including an on-brand title and meta description, a well-structured article with headings and concise paragraphs, a keyword-focused FAQ, internal link ideas, and a clear call-to-action, resulting in a publish-ready piece designed to rank for the primary keyword and guide readers toward next steps.
-skillVersionId: 019ce159-f331-7192-8ed1-52d8ba499921
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a complete, SEO-optimized blog post tailored to a given topic, keyword, tone, and word count, including an on-brand title and meta description, a well-structured article with headings and concise paragraphs, a keyword-focused FAQ, internal link ideas, and a clear call-to-action, resulting in a publish-ready piece designed to rank for the primary keyword and guide readers toward next steps.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -67,12 +67,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ce159-f331-7192-8ed1-52d8ba499921`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `seo-optimized-blog-post-writer-1`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ce159-f331-7192-8ed1-52d8ba499921 \
+betterprompt generate seo-optimized-blog-post-writer-1 \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -89,7 +89,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ce159-f331-7192-8ed1-52d8ba499921 \
+betterprompt generate seo-optimized-blog-post-writer-1 \
   --input tone=persuasive \
   --input 'topic=How to Start a Vegetable Garden' \
   --input length=800 \
