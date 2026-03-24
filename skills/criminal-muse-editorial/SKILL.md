@@ -1,14 +1,14 @@
 ---
 name: criminal-muse-editorial
 description: This prompt instructs an AI image system to edit a provided portrait into a hyperreal, mugshot-inspired high-fashion editorial image, keeping the subject’s identity completely unchanged (face shape, features, skin tone, hair, and natural texture) while changing the setting and styling. The output is a head-and-shoulders, eye-level lineup-style portrait against a height-chart wall with harsh on-camera flash, strong contrast and shadows, and rebellious luxury wardrobe/accessories, optionally including a small attitude prop, resulting in a crisp, magazine-quality fashion mugshot aesthetic.
-skillVersionId: 019cb266-6aa8-7541-a214-68569e08f12b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image system to edit a provided portrait into a hyperreal, mugshot-inspired high-fashion editorial image, keeping the subject’s identity completely unchanged (face shape, features, skin tone, hair, and natural texture) while changing the setting and styling. The output is a head-and-shoulders, eye-level lineup-style portrait against a height-chart wall with harsh on-camera flash, strong contrast and shadows, and rebellious luxury wardrobe/accessories, optionally including a small attitude prop, resulting in a crisp, magazine-quality fashion mugshot aesthetic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019cb266-6aa8-7541-a214-68569e08f12b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `criminal-muse-editorial`).
 
 Command form:
 
 ```bash
-betterprompt generate 019cb266-6aa8-7541-a214-68569e08f12b \
+betterprompt generate criminal-muse-editorial \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019cb266-6aa8-7541-a214-68569e08f12b \
+betterprompt generate criminal-muse-editorial \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
