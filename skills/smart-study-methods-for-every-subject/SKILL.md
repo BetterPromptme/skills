@@ -1,14 +1,14 @@
 ---
 name: smart-study-methods-for-every-subject
 description: This prompt asks the AI to generate tailored, subject-by-subject study recommendations based on the user’s subjects, perceived difficulty for each, and learning style, delivering for every subject a specific best-fit study technique, an ideal study schedule (frequency and session length), and one high-achiever tip, written in a friendly, direct, no-fluff format.
-skillVersionId: 01987434-b45b-7c3b-a6c4-31f7a42ca1c3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to generate tailored, subject-by-subject study recommendations based on the user’s subjects, perceived difficulty for each, and learning style, delivering for every subject a specific best-fit study technique, an ideal study schedule (frequency and session length), and one high-achiever tip, written in a friendly, direct, no-fluff format.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01987434-b45b-7c3b-a6c4-31f7a42ca1c3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `smart-study-methods-for-every-subject`).
 
 Command form:
 
 ```bash
-betterprompt generate 01987434-b45b-7c3b-a6c4-31f7a42ca1c3 \
+betterprompt generate smart-study-methods-for-every-subject \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01987434-b45b-7c3b-a6c4-31f7a42ca1c3 \
+betterprompt generate smart-study-methods-for-every-subject \
   --input My_learning_style=<value> \
   --input Subjects_studying=<value> \
   --input Difficulty_level_of_each=<value> \
