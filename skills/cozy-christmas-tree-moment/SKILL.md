@@ -1,14 +1,14 @@
 ---
 name: cozy-christmas-tree-moment
 description: This prompt directs an AI image generator to create a realistic, cozy holiday lifestyle photograph featuring a person decorating a Christmas tree in a warm, modern living room. It specifies the camera angle, medium framing, subject placement, pose, expression, grooming, outfit options by gender, lighting style, and background details to achieve a calm, candid, intimate mood. The expected outcome is a balanced, eye-level, warmly lit scene with natural textures and soft bokeh that feels like an authentic at-home decorating moment while avoiding exaggerated posing, cinematic lighting, clutter, or full-body/leg visibility.
-skillVersionId: 019b4e9d-17de-735e-b7b2-5752366f87d9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an AI image generator to create a realistic, cozy holiday lifestyle photograph featuring a person decorating a Christmas tree in a warm, modern living room. It specifies the camera angle, medium framing, subject placement, pose, expression, grooming, outfit options by gender, lighting style, and background details to achieve a calm, candid, intimate mood. The expected outcome is a balanced, eye-level, warmly lit scene with natural textures and soft bokeh that feels like an authentic at-home decorating moment while avoiding exaggerated posing, cinematic lighting, clutter, or full-body/leg visibility.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b4e9d-17de-735e-b7b2-5752366f87d9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cozy-christmas-tree-moment`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b4e9d-17de-735e-b7b2-5752366f87d9 \
+betterprompt generate cozy-christmas-tree-moment \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b4e9d-17de-735e-b7b2-5752366f87d9 \
+betterprompt generate cozy-christmas-tree-moment \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
