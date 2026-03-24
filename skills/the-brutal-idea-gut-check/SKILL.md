@@ -1,14 +1,14 @@
 ---
 name: the-brutal-idea-gut-check
 description: This prompt configures the AI to act as a brutally honest strategic advisor who pressure-tests a user’s proposed idea or major decision, interrogating assumptions, motivations, and likely failure modes with a risk-first, unsentimental lens. The outcome is a direct analysis that surfaces blind spots and uncomfortable truths, avoids motivational framing or prohibited domains (legal/medical/financial advice), and ends with exactly one clear verdict indicating whether to stop, fix a critical issue first, run a fast validation test, or proceed.
-skillVersionId: 019a9111-178b-72c9-ba5a-393db1489656
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt configures the AI to act as a brutally honest strategic advisor who pressure-tests a user’s proposed idea or major decision, interrogating assumptions, motivations, and likely failure modes with a risk-first, unsentimental lens. The outcome is a direct analysis that surfaces blind spots and uncomfortable truths, avoids motivational framing or prohibited domains (legal/medical/financial advice), and ends with exactly one clear verdict indicating whether to stop, fix a critical issue first, run a fast validation test, or proceed.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -58,12 +58,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a9111-178b-72c9-ba5a-393db1489656`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-brutal-idea-gut-check`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a9111-178b-72c9-ba5a-393db1489656 \
+betterprompt generate the-brutal-idea-gut-check \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -80,7 +80,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a9111-178b-72c9-ba5a-393db1489656 \
+betterprompt generate the-brutal-idea-gut-check \
   --input 'idea_description=I want to build a subscription-based AI tool for resume writing because people struggle to create strong CVs and I think there’s big demand.' \
   --model gpt-5-mini \
   --options '{"reasoningEffort":"low"}'
