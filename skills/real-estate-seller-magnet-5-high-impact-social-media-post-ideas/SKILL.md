@@ -1,14 +1,14 @@
 ---
 name: real-estate-seller-magnet-5-high-impact-social-media-post-ideas
 description: This prompt instructs the AI to generate five seller-focused social media post concepts tailored to a specific real estate role, market/property niche, location, target platforms, and desired tone, each designed to advance a stated campaign goal. For each concept, it outputs the theme, the optimal content format per platform, a short ready-to-post caption, market-relevant hashtags, and a clear call-to-action aimed at attracting and converting potential home sellers.
-skillVersionId: 01981c8e-0b9c-7181-8178-fa2167720cdd
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate five seller-focused social media post concepts tailored to a specific real estate role, market/property niche, location, target platforms, and desired tone, each designed to advance a stated campaign goal. For each concept, it outputs the theme, the optimal content format per platform, a short ready-to-post caption, market-relevant hashtags, and a clear call-to-action aimed at attracting and converting potential home sellers.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01981c8e-0b9c-7181-8178-fa2167720cdd`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `real-estate-seller-magnet-5-high-impact-social-media-post-ideas`).
 
 Command form:
 
 ```bash
-betterprompt generate 01981c8e-0b9c-7181-8178-fa2167720cdd \
+betterprompt generate real-estate-seller-magnet-5-high-impact-social-media-post-ideas \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -92,7 +92,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01981c8e-0b9c-7181-8178-fa2167720cdd \
+betterprompt generate real-estate-seller-magnet-5-high-impact-social-media-post-ideas \
   --input location=<value> \
   --input campaign_goal=<value> \
   --input tone_of_voice=<value> \
