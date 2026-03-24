@@ -1,14 +1,14 @@
 ---
 name: the-golden-hour-candid
 description: This prompt instructs an image model to generate a photorealistic, vertical daytime street-style portrait of a young blonde woman kneeling by a city curb while applying pink lip gloss, shot from a slightly elevated downward angle with tight mid-body framing and detailed urban ground texture. It specifies strict identity preservation from a reference image (no changes to facial features, skin texture, hair, or expression), defines exact pose, outfit, accessories, lighting, color palette, and camera realism, and aims to produce a natural, candid, summery editorial-style result without filters or stylization.
-skillVersionId: 019c29bb-b0f6-7298-8563-50402ef2af6e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a photorealistic, vertical daytime street-style portrait of a young blonde woman kneeling by a city curb while applying pink lip gloss, shot from a slightly elevated downward angle with tight mid-body framing and detailed urban ground texture. It specifies strict identity preservation from a reference image (no changes to facial features, skin texture, hair, or expression), defines exact pose, outfit, accessories, lighting, color palette, and camera realism, and aims to produce a natural, candid, summery editorial-style result without filters or stylization.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c29bb-b0f6-7298-8563-50402ef2af6e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-golden-hour-candid`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c29bb-b0f6-7298-8563-50402ef2af6e \
+betterprompt generate the-golden-hour-candid \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c29bb-b0f6-7298-8563-50402ef2af6e \
+betterprompt generate the-golden-hour-candid \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
