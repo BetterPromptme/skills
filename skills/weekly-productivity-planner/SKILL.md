@@ -1,14 +1,14 @@
 ---
 name: weekly-productivity-planner
 description: This prompt instructs the AI to act as a productivity and time-management coach who builds a personalized Monday–Sunday schedule from three user inputs: a weekly to-do list, fixed commitments, and available free-time blocks. The AI first places all non-negotiable activities, then distributes remaining tasks across realistic time slots, and finally suggests balanced restorative or productive use of leftover gaps. The outcome is a clear, encouraging 7-day plan with concise daily time blocks or action steps, while avoiding medical/therapeutic guidance and making only minimal, stated assumptions when details are missing.
-skillVersionId: 019a340c-09bd-7f85-be6f-5fd5398bbbf2
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a productivity and time-management coach who builds a personalized Monday–Sunday schedule from three user inputs: a weekly to-do list, fixed commitments, and available free-time blocks. The AI first places all non-negotiable activities, then distributes remaining tasks across realistic time slots, and finally suggests balanced restorative or productive use of leftover gaps. The outcome is a clear, encouraging 7-day plan with concise daily time blocks or action steps, while avoiding medical/therapeutic guidance and making only minimal, stated assumptions when details are missing.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a340c-09bd-7f85-be6f-5fd5398bbbf2`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `weekly-productivity-planner`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a340c-09bd-7f85-be6f-5fd5398bbbf2 \
+betterprompt generate weekly-productivity-planner \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a340c-09bd-7f85-be6f-5fd5398bbbf2 \
+betterprompt generate weekly-productivity-planner \
   --input 'free_time=Weekday evenings after 6 p.m., Sunday morning.' \
   --input 'weekly_to_do_list=Finish marketing deck, gym 3 times, clean apartment, meal prep, call parents.' \
   --input 'compulsory_schedule=Work 9–5 p.m. Mon–Fri; language class Wed 6–8 p.m.' \
