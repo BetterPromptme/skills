@@ -1,14 +1,14 @@
 ---
 name: couple-peanut-wallpaper
 description: This prompt instructs an AI illustrator to convert an uploaded person into a simple, recognizable cartoon character in a classic sketchy, flat-color children’s comic style, while preserving key identity traits like clothing, hair, accessories, pose, expression, and skin tone. It also sets wallpaper-specific output requirements (desktop vs. phone aspect ratio, with extra top space on phone) and limits the look to clean, family-friendly, minimal-shading artwork with optional background and accent color choices. The result is a playful, nostalgic character illustration formatted as a ready-to-use wallpaper or avatar.
-skillVersionId: 01995ae4-374a-77dd-b9e3-9aa96ef26478
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI illustrator to convert an uploaded person into a simple, recognizable cartoon character in a classic sketchy, flat-color children’s comic style, while preserving key identity traits like clothing, hair, accessories, pose, expression, and skin tone. It also sets wallpaper-specific output requirements (desktop vs. phone aspect ratio, with extra top space on phone) and limits the look to clean, family-friendly, minimal-shading artwork with optional background and accent color choices. The result is a playful, nostalgic character illustration formatted as a ready-to-use wallpaper or avatar.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -77,12 +77,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01995ae4-374a-77dd-b9e3-9aa96ef26478`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `couple-peanut-wallpaper`).
 
 Command form:
 
 ```bash
-betterprompt generate 01995ae4-374a-77dd-b9e3-9aa96ef26478 \
+betterprompt generate couple-peanut-wallpaper \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -103,7 +103,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01995ae4-374a-77dd-b9e3-9aa96ef26478 \
+betterprompt generate couple-peanut-wallpaper \
   --input background=transparent \
   --input 'accent_colors=yellow shirt' \
   --input wallpaper_type=desktop \
