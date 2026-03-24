@@ -1,14 +1,14 @@
 ---
 name: 2026-gold-balloon-editorial
 description: This prompt instructs an image model to generate a high-resolution, photorealistic studio editorial portrait with a festive party aesthetic, featuring a subject styled in gender-specific wardrobe options while preserving key hair attributes. The subject wears a gold party hat, poses with clearly readable gold foil number balloons “20” and “26,” and displays a playful off-camera expression in a clean beige studio setup. The intended outcome is a sharply detailed fashion-style image with realistic lighting, textures, and materials, free of logos, clutter, or exaggerated effects.
-skillVersionId: 019b684e-130f-7419-98c0-0dd312633d99
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a high-resolution, photorealistic studio editorial portrait with a festive party aesthetic, featuring a subject styled in gender-specific wardrobe options while preserving key hair attributes. The subject wears a gold party hat, poses with clearly readable gold foil number balloons “20” and “26,” and displays a playful off-camera expression in a clean beige studio setup. The intended outcome is a sharply detailed fashion-style image with realistic lighting, textures, and materials, free of logos, clutter, or exaggerated effects.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b684e-130f-7419-98c0-0dd312633d99`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `2026-gold-balloon-editorial`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b684e-130f-7419-98c0-0dd312633d99 \
+betterprompt generate 2026-gold-balloon-editorial \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b684e-130f-7419-98c0-0dd312633d99 \
+betterprompt generate 2026-gold-balloon-editorial \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
