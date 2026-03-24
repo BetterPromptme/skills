@@ -1,14 +1,14 @@
 ---
 name: disney-dreamland-hug-portrait
 description: This prompt instructs the AI to use a user-provided photo and a chosen Disney character as inputs to generate an ultra-realistic, cinematic theme-park portrait where the user appears with their face and proportions preserved, dressed in the character’s outfit, and sharing a natural, friendly hug with the character in front of the Disney Castle. The intended outcome is a high-resolution, family-friendly image with authentic park ambiance, soft dreamy lighting, accurate costume details, and safeguards against face/body distortion or unnatural blending.
-skillVersionId: 019a33cc-6aca-7d58-8817-32d2ddfed93a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to use a user-provided photo and a chosen Disney character as inputs to generate an ultra-realistic, cinematic theme-park portrait where the user appears with their face and proportions preserved, dressed in the character’s outfit, and sharing a natural, friendly hug with the character in front of the Disney Castle. The intended outcome is a high-resolution, family-friendly image with authentic park ambiance, soft dreamy lighting, accurate costume details, and safeguards against face/body distortion or unnatural blending.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a33cc-6aca-7d58-8817-32d2ddfed93a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `disney-dreamland-hug-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a33cc-6aca-7d58-8817-32d2ddfed93a \
+betterprompt generate disney-dreamland-hug-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a33cc-6aca-7d58-8817-32d2ddfed93a \
+betterprompt generate disney-dreamland-hug-portrait \
   --input 'disney_character=Minnie, Mickey' \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
