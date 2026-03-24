@@ -1,14 +1,14 @@
 ---
 name: cinematic-overhead-streetwear-portrait
 description: This prompt instructs an AI to generate a photorealistic, cinematic overhead streetwear campaign image of a model standing on a zebra crossing, using provided wardrobe and accessory variables to keep styling consistent. It defines a clean, balanced editorial composition with minimal background clutter, tailored for urban fashion lookbooks and brand/magazine use, while enforcing safety rules that avoid nudity, sexualization, and depicting minors in adult styling.
-skillVersionId: 01994b44-236f-76bc-8d1a-4bb902d9d4ab
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate a photorealistic, cinematic overhead streetwear campaign image of a model standing on a zebra crossing, using provided wardrobe and accessory variables to keep styling consistent. It defines a clean, balanced editorial composition with minimal background clutter, tailored for urban fashion lookbooks and brand/magazine use, while enforcing safety rules that avoid nudity, sexualization, and depicting minors in adult styling.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -76,12 +76,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01994b44-236f-76bc-8d1a-4bb902d9d4ab`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cinematic-overhead-streetwear-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 01994b44-236f-76bc-8d1a-4bb902d9d4ab \
+betterprompt generate cinematic-overhead-streetwear-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -102,7 +102,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01994b44-236f-76bc-8d1a-4bb902d9d4ab \
+betterprompt generate cinematic-overhead-streetwear-portrait \
   --input 'top_style=White fitted crop top' \
   --input 'accessories=Black aviator shades, silver chain' \
   --input 'pants_style=Loose baggy ripped denim' \
