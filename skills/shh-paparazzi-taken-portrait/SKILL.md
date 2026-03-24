@@ -1,14 +1,14 @@
 ---
 name: shh-paparazzi-taken-portrait
 description: This prompt instructs an image-generation model to produce an 8K, 4:5 photorealistic, low-key cinematic fashion portrait set in a dim underground mall parking garage, featuring a young woman whose face, hairstyle, and proportions must exactly match a provided reference. It specifies camera, lighting, color grade, wardrobe, pose, and mood, and adds narrative props—multiple surrounding smartphones displaying her from different angles with realistic reflections—to create a gritty-yet-futuristic editorial scene exploring identity, technology, and voyeurism without adding logos or artificial distortion.
-skillVersionId: 019a5c19-ff2a-758d-8b66-8395b099442d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to produce an 8K, 4:5 photorealistic, low-key cinematic fashion portrait set in a dim underground mall parking garage, featuring a young woman whose face, hairstyle, and proportions must exactly match a provided reference. It specifies camera, lighting, color grade, wardrobe, pose, and mood, and adds narrative props—multiple surrounding smartphones displaying her from different angles with realistic reflections—to create a gritty-yet-futuristic editorial scene exploring identity, technology, and voyeurism without adding logos or artificial distortion.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a5c19-ff2a-758d-8b66-8395b099442d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `shh-paparazzi-taken-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a5c19-ff2a-758d-8b66-8395b099442d \
+betterprompt generate shh-paparazzi-taken-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a5c19-ff2a-758d-8b66-8395b099442d \
+betterprompt generate shh-paparazzi-taken-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
