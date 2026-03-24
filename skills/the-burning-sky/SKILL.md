@@ -1,14 +1,14 @@
 ---
 name: the-burning-sky
 description: This prompt instructs an AI to generate a dramatic fantasy battle scene dominated by a divine firestorm, specifying the core action (flaming torrents and serpentine strikes), the intended magical behavior, and detailed visual cues for lighting and texture. The expected outcome is a vividly rendered image or cinematic description with molten, branching flames, golden-crimson illumination, and a scorched battlefield environment shaped by intense, precise, all-consuming fire effects.
-skillVersionId: 0199ce42-8a6e-79e9-ba4f-8cce2bcebbde
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate a dramatic fantasy battle scene dominated by a divine firestorm, specifying the core action (flaming torrents and serpentine strikes), the intended magical behavior, and detailed visual cues for lighting and texture. The expected outcome is a vividly rendered image or cinematic description with molten, branching flames, golden-crimson illumination, and a scorched battlefield environment shaped by intense, precise, all-consuming fire effects.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199ce42-8a6e-79e9-ba4f-8cce2bcebbde`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-burning-sky`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199ce42-8a6e-79e9-ba4f-8cce2bcebbde \
+betterprompt generate the-burning-sky \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199ce42-8a6e-79e9-ba4f-8cce2bcebbde \
+betterprompt generate the-burning-sky \
   --model sora-2 \
   --options '{"seconds":"4","size":"720x1280"}'
 ```
