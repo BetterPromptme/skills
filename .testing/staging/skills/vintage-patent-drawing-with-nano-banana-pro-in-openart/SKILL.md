@@ -1,14 +1,14 @@
 ---
 name: vintage-patent-drawing-with-nano-banana-pro-in-openart
 description: Generates a museum-quality, 1890s-inspired patent technical illustration of the specified object, rendered as black-ink linework with sepia accents on aged cream parchment. The result includes hand-lettered labels, numbered component callouts, cross-section views, and an official-looking patent border with a fictional patent number and date, producing an elegant, authoritative vintage engineering drawing.
-skillVersionId: 019c27d2-908b-75c3-8aab-45abc6b215a7
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 Generates a museum-quality, 1890s-inspired patent technical illustration of the specified object, rendered as black-ink linework with sepia accents on aged cream parchment. The result includes hand-lettered labels, numbered component callouts, cross-section views, and an official-looking patent border with a fictional patent number and date, producing an elegant, authoritative vintage engineering drawing.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -58,12 +58,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c27d2-908b-75c3-8aab-45abc6b215a7`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `vintage-patent-drawing-with-nano-banana-pro-in-openart`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c27d2-908b-75c3-8aab-45abc6b215a7 \
+betterprompt generate vintage-patent-drawing-with-nano-banana-pro-in-openart \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -80,7 +80,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c27d2-908b-75c3-8aab-45abc6b215a7 \
+betterprompt generate vintage-patent-drawing-with-nano-banana-pro-in-openart \
   --input 'object=a complex mechanical device' \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"1:1","resolution":"1K"}'
