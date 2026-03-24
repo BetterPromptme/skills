@@ -1,14 +1,14 @@
 ---
 name: cyber-preppy-girl
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic, waist-up studio fashion portrait of a young woman centered against a solid teal backdrop, styled with braided pigtails, specific makeup and accessories, and a playful pose involving a pink lollipop, lit with strong directional studio lighting and a soft wall shadow. It tightly constrains composition, wardrobe, color palette, and environment while enforcing strict identity preservation and natural skin texture, resulting in a clean, bold, editorial-style portrait with crisp detail and realistic lighting behavior.
-skillVersionId: 019ced93-1d25-72df-887f-7bbadd6a8e71
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a high-resolution, photorealistic, waist-up studio fashion portrait of a young woman centered against a solid teal backdrop, styled with braided pigtails, specific makeup and accessories, and a playful pose involving a pink lollipop, lit with strong directional studio lighting and a soft wall shadow. It tightly constrains composition, wardrobe, color palette, and environment while enforcing strict identity preservation and natural skin texture, resulting in a clean, bold, editorial-style portrait with crisp detail and realistic lighting behavior.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ced93-1d25-72df-887f-7bbadd6a8e71`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cyber-preppy-girl`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ced93-1d25-72df-887f-7bbadd6a8e71 \
+betterprompt generate cyber-preppy-girl \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ced93-1d25-72df-887f-7bbadd6a8e71 \
+betterprompt generate cyber-preppy-girl \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
