@@ -1,14 +1,14 @@
 ---
 name: christmas-golden-ornament-reflection
 description: This prompt instructs an image transformation system to take a user-provided portrait and re-render it as a photorealistic, macro close-up scene of a reflective golden Christmas ornament hanging on a spruce branch, using a separate reference image only for overall style, lighting, color, and mood. The user’s face and identity must remain fully preserved and recognizable while appearing centered within the ornament’s fisheye reflection of a nostalgic late-Soviet/1990s New Year interior (holiday table, warm incandescent light, vintage TV, decorated tree), with the subject dressed per a specified outfit style and holding champagne. The intended result is a family-friendly, cinematic, warm-toned ornament image with shallow depth of field, soft film grain, and bokeh, without copying any identity from the reference or altering the subject’s core features.
-skillVersionId: 019a8132-e391-7728-9cc5-8bc4ad4d52a0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image transformation system to take a user-provided portrait and re-render it as a photorealistic, macro close-up scene of a reflective golden Christmas ornament hanging on a spruce branch, using a separate reference image only for overall style, lighting, color, and mood. The user’s face and identity must remain fully preserved and recognizable while appearing centered within the ornament’s fisheye reflection of a nostalgic late-Soviet/1990s New Year interior (holiday table, warm incandescent light, vintage TV, decorated tree), with the subject dressed per a specified outfit style and holding champagne. The intended result is a family-friendly, cinematic, warm-toned ornament image with shallow depth of field, soft film grain, and bokeh, without copying any identity from the reference or altering the subject’s core features.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a8132-e391-7728-9cc5-8bc4ad4d52a0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `christmas-golden-ornament-reflection`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a8132-e391-7728-9cc5-8bc4ad4d52a0 \
+betterprompt generate christmas-golden-ornament-reflection \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a8132-e391-7728-9cc5-8bc4ad4d52a0 \
+betterprompt generate christmas-golden-ornament-reflection \
   --input 'outfit_style=Elegant dark outfit' \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
