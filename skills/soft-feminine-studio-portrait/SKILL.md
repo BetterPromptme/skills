@@ -1,14 +1,14 @@
 ---
 name: soft-feminine-studio-portrait
 description: This prompt instructs the AI to take an uploaded selfie or portrait and convert it into a realistic, minimalist studio-style lifestyle image with a soft, warm, feminine mood, using gentle diffused lighting, a clean light background, and a relaxed mid-shot pose in floral styling. The intended outcome is an airy, editorial-looking portrait that preserves natural facial proportions and skin texture while avoiding heavy retouching, distortions, stylized effects, text, or other unwanted artifacts.
-skillVersionId: 019c2d34-99c1-771c-a8dd-d835d56a6bcf
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take an uploaded selfie or portrait and convert it into a realistic, minimalist studio-style lifestyle image with a soft, warm, feminine mood, using gentle diffused lighting, a clean light background, and a relaxed mid-shot pose in floral styling. The intended outcome is an airy, editorial-looking portrait that preserves natural facial proportions and skin texture while avoiding heavy retouching, distortions, stylized effects, text, or other unwanted artifacts.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c2d34-99c1-771c-a8dd-d835d56a6bcf`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `soft-feminine-studio-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c2d34-99c1-771c-a8dd-d835d56a6bcf \
+betterprompt generate soft-feminine-studio-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c2d34-99c1-771c-a8dd-d835d56a6bcf \
+betterprompt generate soft-feminine-studio-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
