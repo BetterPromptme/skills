@@ -1,14 +1,14 @@
 ---
 name: lego-collectors-car-render
 description: This prompt instructs an image model to generate a photorealistic, studio-quality 3D render of a LEGO-built version of a specified car, using realistic LEGO construction, accurate proportions, and the vehicle’s iconic design cues and color scheme. The expected result is an ultra-detailed square-format image on a clean white gradient background, featuring authentic plastic sheen, visible studs and seams, closed doors, and professionally lit, sharp, collector-grade presentation.
-skillVersionId: 0198730e-7bad-7bc7-a895-1676e01a46d4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a photorealistic, studio-quality 3D render of a LEGO-built version of a specified car, using realistic LEGO construction, accurate proportions, and the vehicle’s iconic design cues and color scheme. The expected result is an ultra-detailed square-format image on a clean white gradient background, featuring authentic plastic sheen, visible studs and seams, closed doors, and professionally lit, sharp, collector-grade presentation.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198730e-7bad-7bc7-a895-1676e01a46d4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `lego-collectors-car-render`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198730e-7bad-7bc7-a895-1676e01a46d4 \
+betterprompt generate lego-collectors-car-render \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198730e-7bad-7bc7-a895-1676e01a46d4 \
+betterprompt generate lego-collectors-car-render \
   --input CAR_NAME=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
