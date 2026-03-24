@@ -1,14 +1,14 @@
 ---
 name: winter-street-portrait-in-suzy-vibe
 description: This prompt instructs an image-generation or editing system to take an uploaded person’s photo and produce a photorealistic, cinematic winter street portrait that preserves the subject’s true identity while shifting the scene to a calm, overcast snowy setting. It specifies the desired mood, expression, composition, lens depth-of-field, and film-like color grading, and it automatically adapts wardrobe and styling based on detected gender and a chosen background context. The expected result is a high-resolution vertical portrait with gentle snowfall, subtle bokeh, and a single blue-scarf color accent, maintaining a natural, unposed, emotionally introspective look without celebrity imitation or unrealistic beautification.
-skillVersionId: 019a47e6-7e48-7208-ac9b-8970b632dc5a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation or editing system to take an uploaded person’s photo and produce a photorealistic, cinematic winter street portrait that preserves the subject’s true identity while shifting the scene to a calm, overcast snowy setting. It specifies the desired mood, expression, composition, lens depth-of-field, and film-like color grading, and it automatically adapts wardrobe and styling based on detected gender and a chosen background context. The expected result is a high-resolution vertical portrait with gentle snowfall, subtle bokeh, and a single blue-scarf color accent, maintaining a natural, unposed, emotionally introspective look without celebrity imitation or unrealistic beautification.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a47e6-7e48-7208-ac9b-8970b632dc5a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `winter-street-portrait-in-suzy-vibe`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a47e6-7e48-7208-ac9b-8970b632dc5a \
+betterprompt generate winter-street-portrait-in-suzy-vibe \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a47e6-7e48-7208-ac9b-8970b632dc5a \
+betterprompt generate winter-street-portrait-in-suzy-vibe \
   --input gender_detected=male/female \
   --input 'background_context=European park' \
   --image-input-url https://example.com/image1.png \
