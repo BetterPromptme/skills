@@ -1,14 +1,14 @@
 ---
 name: create-focus-challenges-for-adhd-person
 description: This prompt instructs the AI to create an interactive, ADHD-friendly focus challenge that breaks concentration and productivity skills into small, daily, easy-to-follow steps, using gamified progress tracking to keep participants motivated. The resulting output is a structured yet flexible program with clear instructions, objectives, and expected outcomes for each segment, offering varied activities to suit different learning styles, plus practical strategies to handle distractions and sustain attention so participants can build lasting habits that improve personal and professional performance.
-skillVersionId: 0196f6e7-b69c-7e26-a6ab-69642d84dfba
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create an interactive, ADHD-friendly focus challenge that breaks concentration and productivity skills into small, daily, easy-to-follow steps, using gamified progress tracking to keep participants motivated. The resulting output is a structured yet flexible program with clear instructions, objectives, and expected outcomes for each segment, offering varied activities to suit different learning styles, plus practical strategies to handle distractions and sustain attention so participants can build lasting habits that improve personal and professional performance.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f6e7-b69c-7e26-a6ab-69642d84dfba`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `create-focus-challenges-for-adhd-person`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f6e7-b69c-7e26-a6ab-69642d84dfba \
+betterprompt generate create-focus-challenges-for-adhd-person \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f6e7-b69c-7e26-a6ab-69642d84dfba \
+betterprompt generate create-focus-challenges-for-adhd-person \
   --model gpt-4.1-mini \
   --options '{}'
 ```
