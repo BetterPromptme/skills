@@ -1,14 +1,14 @@
 ---
 name: navigate-and-decide
 description: This prompt instructs the AI to act as an expert psychologist to help the user examine a recurring emotional difficulty within their personal context by identifying likely root causes, patterns of thinking, and triggers, then producing deeper insights, targeted reflective questions, and practical, evidence-informed exercises aimed at building daily stability and improvement rather than offering generic advice.
-skillVersionId: 01977816-deb9-72ff-aa50-f997ebd30bdb
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an expert psychologist to help the user examine a recurring emotional difficulty within their personal context by identifying likely root causes, patterns of thinking, and triggers, then producing deeper insights, targeted reflective questions, and practical, evidence-informed exercises aimed at building daily stability and improvement rather than offering generic advice.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01977816-deb9-72ff-aa50-f997ebd30bdb`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `navigate-and-decide`).
 
 Command form:
 
 ```bash
-betterprompt generate 01977816-deb9-72ff-aa50-f997ebd30bdb \
+betterprompt generate navigate-and-decide \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01977816-deb9-72ff-aa50-f997ebd30bdb \
+betterprompt generate navigate-and-decide \
   --input Describe_your_emotional=<value> \
   --input Describe_your_personal_context=<value> \
   --model gpt-4.1-mini \
