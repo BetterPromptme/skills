@@ -1,14 +1,14 @@
 ---
 name: enigmatic-bunny-flash-portrait
 description: This prompt instructs an image-editing AI to use an uploaded portrait as a likeness reference and restyle it into a medium close-up, high-fashion cinematic smartphone-flash photo: the subject wears a black bunny mask with elongated ears, a chic black outfit with long gloves, and refined makeup, posed with a subtle, mysterious tilt against a neutral wall. It specifies iPhone-style flash realism with sharp contrast, deep shadows, and a clearly defined elongated ear shadow on the background, while enforcing a glamorous, non-explicit editorial tone and avoiding horror, parody, or exaggerated stylization.
-skillVersionId: 019a28cc-b1b8-7718-b128-823467e8ee3b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-editing AI to use an uploaded portrait as a likeness reference and restyle it into a medium close-up, high-fashion cinematic smartphone-flash photo: the subject wears a black bunny mask with elongated ears, a chic black outfit with long gloves, and refined makeup, posed with a subtle, mysterious tilt against a neutral wall. It specifies iPhone-style flash realism with sharp contrast, deep shadows, and a clearly defined elongated ear shadow on the background, while enforcing a glamorous, non-explicit editorial tone and avoiding horror, parody, or exaggerated stylization.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a28cc-b1b8-7718-b128-823467e8ee3b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `enigmatic-bunny-flash-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a28cc-b1b8-7718-b128-823467e8ee3b \
+betterprompt generate enigmatic-bunny-flash-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a28cc-b1b8-7718-b128-823467e8ee3b \
+betterprompt generate enigmatic-bunny-flash-portrait \
   --input 'pose=chin lifted confidently' \
   --input 'makeup_style=soft natural glow' \
   --image-input-url https://example.com/image1.png \
