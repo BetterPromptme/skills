@@ -1,14 +1,14 @@
 ---
 name: commercial-portrait-photo-of-the-lady
 description: This prompt instructs an image-generation or photo-editing system to create a high-end commercial half-body portrait of the woman from the provided image while preserving her identity, specifying her hairstyle, natural dewy makeup, black spaghetti-strap dress with rhinestone/chain details, coordinated jewelry, and a seated sideways pose with direct eye contact. It defines a minimalist studio setup with a plain gray backdrop, a glossy black marble/glass table, soft side studio lighting, and a shallow depth-of-field medium-telephoto portrait look with low-saturation warm-gray tones. The intended outcome is a clean, sophisticated, professionally lit portrait that keeps attention on the subject and maintains consistent facial features.
-skillVersionId: 01995c23-2010-704b-9f72-1471d02f3c48
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation or photo-editing system to create a high-end commercial half-body portrait of the woman from the provided image while preserving her identity, specifying her hairstyle, natural dewy makeup, black spaghetti-strap dress with rhinestone/chain details, coordinated jewelry, and a seated sideways pose with direct eye contact. It defines a minimalist studio setup with a plain gray backdrop, a glossy black marble/glass table, soft side studio lighting, and a shallow depth-of-field medium-telephoto portrait look with low-saturation warm-gray tones. The intended outcome is a clean, sophisticated, professionally lit portrait that keeps attention on the subject and maintains consistent facial features.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01995c23-2010-704b-9f72-1471d02f3c48`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `commercial-portrait-photo-of-the-lady`).
 
 Command form:
 
 ```bash
-betterprompt generate 01995c23-2010-704b-9f72-1471d02f3c48 \
+betterprompt generate commercial-portrait-photo-of-the-lady \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01995c23-2010-704b-9f72-1471d02f3c48 \
+betterprompt generate commercial-portrait-photo-of-the-lady \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
