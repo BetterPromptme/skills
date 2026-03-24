@@ -1,14 +1,14 @@
 ---
 name: cross-view-image-generation
 description: This prompt instructs the assistant to generate a photorealistic, spatially consistent top-down (bird’s-eye) view corresponding to a given ground-level photograph, conditioned on specified environment type, preferred resolution, and output format. The result is a technical, informative overhead map that preserves real-world proportions, lighting, and color fidelity while explicitly marking the photographer’s location with a red dot labeled “Photographer,” avoiding any stylized or non-photographic renderings.
-skillVersionId: 01993821-6a20-7784-aa7c-fdc1928ecde1
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the assistant to generate a photorealistic, spatially consistent top-down (bird’s-eye) view corresponding to a given ground-level photograph, conditioned on specified environment type, preferred resolution, and output format. The result is a technical, informative overhead map that preserves real-world proportions, lighting, and color fidelity while explicitly marking the photographer’s location with a red dot labeled “Photographer,” avoiding any stylized or non-photographic renderings.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01993821-6a20-7784-aa7c-fdc1928ecde1`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cross-view-image-generation`).
 
 Command form:
 
 ```bash
-betterprompt generate 01993821-6a20-7784-aa7c-fdc1928ecde1 \
+betterprompt generate cross-view-image-generation \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -100,7 +100,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01993821-6a20-7784-aa7c-fdc1928ecde1 \
+betterprompt generate cross-view-image-generation \
   --input 'output_format=PNG, JPEG, vector map, annotated diagram' \
   --input 'environment_type=urban, rural, indoor' \
   --input 'resolution_preference=low, medium, high, 4K' \
