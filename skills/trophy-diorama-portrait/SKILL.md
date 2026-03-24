@@ -1,14 +1,14 @@
 ---
 name: trophy-diorama-portrait
 description: This prompt instructs an image generator to create a hyper-realistic, cinematic 3D studio scene featuring a large, bold number representing a specified age, with the digits packed with high-end feminine luxury items, and a woman accurately matching an uploaded reference photo posed leaning on and pointing to the numbers. The intended outcome is a premium, ultra-detailed 8K square-format illustration on a neutral minimalist backdrop with soft shadows, emphasizing photorealism, likeness to the reference subject, and a polished luxury aesthetic.
-skillVersionId: 01992c71-48b1-739a-849b-234f13c28601
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a hyper-realistic, cinematic 3D studio scene featuring a large, bold number representing a specified age, with the digits packed with high-end feminine luxury items, and a woman accurately matching an uploaded reference photo posed leaning on and pointing to the numbers. The intended outcome is a premium, ultra-detailed 8K square-format illustration on a neutral minimalist backdrop with soft shadows, emphasizing photorealism, likeness to the reference subject, and a polished luxury aesthetic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01992c71-48b1-739a-849b-234f13c28601`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `trophy-diorama-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 01992c71-48b1-739a-849b-234f13c28601 \
+betterprompt generate trophy-diorama-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01992c71-48b1-739a-849b-234f13c28601 \
+betterprompt generate trophy-diorama-portrait \
   --input age=29 \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
