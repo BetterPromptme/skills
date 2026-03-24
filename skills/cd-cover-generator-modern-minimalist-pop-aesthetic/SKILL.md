@@ -1,14 +1,14 @@
 ---
 name: cd-cover-generator-modern-minimalist-pop-aesthetic
 description: This prompt directs an image model to create a high-resolution, square album cover featuring a tight, slightly side-angled close-up portrait of the user on a clean white studio background, preserving the user’s facial identity and natural appearance without stylization. It specifies minimalist pop styling, soft even lighting, and precise title typography using the provided album name plus a “Deluxe” subtitle, then composites the cover into a realistic clear CD jewel case with subtle reflections, a partially visible pastel-gradient disc, and a small parental advisory label, producing a polished, professional-looking final cover.
-skillVersionId: 019afcd7-eacd-7398-86db-9779e174a464
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image model to create a high-resolution, square album cover featuring a tight, slightly side-angled close-up portrait of the user on a clean white studio background, preserving the user’s facial identity and natural appearance without stylization. It specifies minimalist pop styling, soft even lighting, and precise title typography using the provided album name plus a “Deluxe” subtitle, then composites the cover into a realistic clear CD jewel case with subtle reflections, a partially visible pastel-gradient disc, and a small parental advisory label, producing a polished, professional-looking final cover.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019afcd7-eacd-7398-86db-9779e174a464`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cd-cover-generator-modern-minimalist-pop-aesthetic`).
 
 Command form:
 
 ```bash
-betterprompt generate 019afcd7-eacd-7398-86db-9779e174a464 \
+betterprompt generate cd-cover-generator-modern-minimalist-pop-aesthetic \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019afcd7-eacd-7398-86db-9779e174a464 \
+betterprompt generate cd-cover-generator-modern-minimalist-pop-aesthetic \
   --input ALBUM_NAME=<value> \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
