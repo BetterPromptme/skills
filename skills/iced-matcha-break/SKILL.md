@@ -1,14 +1,14 @@
 ---
 name: iced-matcha-break
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical lifestyle portrait of a young woman seated waist-up in the front passenger seat of a modern beige-interior car, captured in a playful candid moment with her hand partly covering her smile and an iced matcha drink in the other hand. It specifies exact styling (mauve athleisure set, pink cap, headphones, gold bangles), environment details (clean metallic-accented cabin with an urban street visible outside), and natural daylight from a panoramic sunroof, while enforcing strict guardrails to preserve the subject’s facial identity, proportions, realistic skin texture, and lighting without beautification or text overlays.
-skillVersionId: 019d1596-ca29-72e0-af4a-186bfbce36b8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical lifestyle portrait of a young woman seated waist-up in the front passenger seat of a modern beige-interior car, captured in a playful candid moment with her hand partly covering her smile and an iced matcha drink in the other hand. It specifies exact styling (mauve athleisure set, pink cap, headphones, gold bangles), environment details (clean metallic-accented cabin with an urban street visible outside), and natural daylight from a panoramic sunroof, while enforcing strict guardrails to preserve the subject’s facial identity, proportions, realistic skin texture, and lighting without beautification or text overlays.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019d1596-ca29-72e0-af4a-186bfbce36b8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `iced-matcha-break`).
 
 Command form:
 
 ```bash
-betterprompt generate 019d1596-ca29-72e0-af4a-186bfbce36b8 \
+betterprompt generate iced-matcha-break \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019d1596-ca29-72e0-af4a-186bfbce36b8 \
+betterprompt generate iced-matcha-break \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
