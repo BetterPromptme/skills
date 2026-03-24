@@ -1,14 +1,14 @@
 ---
 name: 3-in-1-vocabulary-trainer
 description: This prompt instructs the AI to create a curated list of exactly 80 vocabulary words in a specified target language centered on a given topic, organized into subtopics. The result is delivered as readable Markdown tables with six columns covering the word, a beginner-friendly phonetic transcription, a pronunciation guide, meanings in Vietnamese and English, and a trilingual example sentence for each entry.
-skillVersionId: 0198c0a1-635f-755a-ba0c-5c00fc3c2146
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a curated list of exactly 80 vocabulary words in a specified target language centered on a given topic, organized into subtopics. The result is delivered as readable Markdown tables with six columns covering the word, a beginner-friendly phonetic transcription, a pronunciation guide, meanings in Vietnamese and English, and a trilingual example sentence for each entry.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198c0a1-635f-755a-ba0c-5c00fc3c2146`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `3-in-1-vocabulary-trainer`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198c0a1-635f-755a-ba0c-5c00fc3c2146 \
+betterprompt generate 3-in-1-vocabulary-trainer \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198c0a1-635f-755a-ba0c-5c00fc3c2146 \
+betterprompt generate 3-in-1-vocabulary-trainer \
   --input Topic=<value> \
   --input Target_Language=<value> \
   --model gpt-5 \
