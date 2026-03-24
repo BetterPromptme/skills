@@ -1,14 +1,14 @@
 ---
 name: designer-layout-blueprint-generator
 description: This prompt instructs an AI, acting as a professional layout designer, to take supplied campaign inputs (message, audience, format size, and visual tone) and produce a dimensionally accurate blueprint-style mockup image for the specified surface, showing placeholder regions for key elements (headline, supporting text, imagery, logo/CTA) along with measured margins, spacing, safe zones, and alignment grids; the outcome is a ready-to-follow annotated layout image plus a brief rationale explaining why the arrangement suits the intended audience and format.
-skillVersionId: 0199761a-b556-7052-b66e-892dff8044cf
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI, acting as a professional layout designer, to take supplied campaign inputs (message, audience, format size, and visual tone) and produce a dimensionally accurate blueprint-style mockup image for the specified surface, showing placeholder regions for key elements (headline, supporting text, imagery, logo/CTA) along with measured margins, spacing, safe zones, and alignment grids; the outcome is a ready-to-follow annotated layout image plus a brief rationale explaining why the arrangement suits the intended audience and format.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -76,12 +76,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199761a-b556-7052-b66e-892dff8044cf`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `designer-layout-blueprint-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199761a-b556-7052-b66e-892dff8044cf \
+betterprompt generate designer-layout-blueprint-generator \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -102,7 +102,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199761a-b556-7052-b66e-892dff8044cf \
+betterprompt generate designer-layout-blueprint-generator \
   --input 'format_size=A3 vertical poster 297x420mm' \
   --input 'key_message=Stay energized, stay natural' \
   --input 'visual_tone=playful and colorful' \
