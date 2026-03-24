@@ -1,14 +1,14 @@
 ---
 name: spider-om1972-desk-figure-studio
 description: This prompt instructs the AI to create a realistic product-style concept image of a 1/7 scale figure modeled after the user’s uploaded photo, placed on a computer desk on a clear circular acrylic base labeled “SPIDER OM1972,” wearing a Spider-Man suit without the mask while preserving the user’s exact face. It also specifies environmental details: an iMac displaying a Blender modeling workflow of the figure and a Spider-Man–inspired toy packaging box with original web-pattern artwork positioned beside the monitor, resulting in a cohesive commercialized figure presentation scene.
-skillVersionId: 01992741-5db7-7cca-834f-59a7e777e2ba
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a realistic product-style concept image of a 1/7 scale figure modeled after the user’s uploaded photo, placed on a computer desk on a clear circular acrylic base labeled “SPIDER OM1972,” wearing a Spider-Man suit without the mask while preserving the user’s exact face. It also specifies environmental details: an iMac displaying a Blender modeling workflow of the figure and a Spider-Man–inspired toy packaging box with original web-pattern artwork positioned beside the monitor, resulting in a cohesive commercialized figure presentation scene.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01992741-5db7-7cca-834f-59a7e777e2ba`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `spider-om1972-desk-figure-studio`).
 
 Command form:
 
 ```bash
-betterprompt generate 01992741-5db7-7cca-834f-59a7e777e2ba \
+betterprompt generate spider-om1972-desk-figure-studio \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01992741-5db7-7cca-834f-59a7e777e2ba \
+betterprompt generate spider-om1972-desk-figure-studio \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
