@@ -1,14 +1,14 @@
 ---
 name: make-your-own-transparent-icon
 description: This prompt instructs the AI to generate a square (1:1) image that converts a simple flat vector icon or emoji into an isometric 3D set of objects rendered as realistic translucent matte glass, enhanced with a subtle inner glow. The final output is a high-contrast studio-lit composition on a black background with controlled lighting and a crisp rim light to emphasize edges and depth.
-skillVersionId: 0196f109-9111-7dfb-98dd-179694f0ffb9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a square (1:1) image that converts a simple flat vector icon or emoji into an isometric 3D set of objects rendered as realistic translucent matte glass, enhanced with a subtle inner glow. The final output is a high-contrast studio-lit composition on a black background with controlled lighting and a crisp rim light to emphasize edges and depth.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f109-9111-7dfb-98dd-179694f0ffb9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `make-your-own-transparent-icon`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f109-9111-7dfb-98dd-179694f0ffb9 \
+betterprompt generate make-your-own-transparent-icon \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f109-9111-7dfb-98dd-179694f0ffb9 \
+betterprompt generate make-your-own-transparent-icon \
   --input icon_or_emoji=<value> \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"size":0,"quality":0},"quality":"low"}'
