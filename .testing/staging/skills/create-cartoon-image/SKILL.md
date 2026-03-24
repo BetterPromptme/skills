@@ -1,14 +1,14 @@
 ---
 name: create-cartoon-image
 description: This prompt instructs an AI image generator to produce a playful, hand-drawn cartoon infographic of a specified office, depicting two desk-working characters and a break-room doorway while visually integrating five color-coded objects that symbolize the Chinese five elements, plus extra office details. The result is a soft pastel, clean-line illustration with a Chinese aesthetic that includes clear English annotations describing the office’s benefits and a cute yet practical overall atmosphere.
-skillVersionId: 01971b93-89bf-760f-aaab-8d9415d2b709
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a playful, hand-drawn cartoon infographic of a specified office, depicting two desk-working characters and a break-room doorway while visually integrating five color-coded objects that symbolize the Chinese five elements, plus extra office details. The result is a soft pastel, clean-line illustration with a Chinese aesthetic that includes clear English annotations describing the office’s benefits and a cute yet practical overall atmosphere.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -58,12 +58,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01971b93-89bf-760f-aaab-8d9415d2b709`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `create-cartoon-image`).
 
 Command form:
 
 ```bash
-betterprompt generate 01971b93-89bf-760f-aaab-8d9415d2b709 \
+betterprompt generate create-cartoon-image \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -80,7 +80,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01971b93-89bf-760f-aaab-8d9415d2b709 \
+betterprompt generate create-cartoon-image \
   --input 'office_name=Feng Shui-inspired' \
   --model imagen-3.0-generate-002 \
   --options '{"aspectRatio":"9:16"}'
