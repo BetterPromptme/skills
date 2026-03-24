@@ -1,14 +1,14 @@
 ---
 name: above-the-clouds
 description: This prompt instructs the AI to produce a high-resolution, luxury editorial-style surreal product showcase by keeping the uploaded product image completely unchanged while replacing only the surrounding scene with a dreamy pastel sky and soft, cinematic clouds. The product is centered and appears to float above marshmallow-like clouds, with gentle atmospheric accents (e.g., subtle glow, sparkles, mist, soft sun rays) and lighting that matches the product’s original direction for seamless integration. The intended result is an elegant dreamscape background that elevates the product’s presence without altering, cropping, recoloring, or obscuring any part of the original product image.
-skillVersionId: 01976805-fb05-70b6-a9e4-af24d43fc2e1
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to produce a high-resolution, luxury editorial-style surreal product showcase by keeping the uploaded product image completely unchanged while replacing only the surrounding scene with a dreamy pastel sky and soft, cinematic clouds. The product is centered and appears to float above marshmallow-like clouds, with gentle atmospheric accents (e.g., subtle glow, sparkles, mist, soft sun rays) and lighting that matches the product’s original direction for seamless integration. The intended result is an elegant dreamscape background that elevates the product’s presence without altering, cropping, recoloring, or obscuring any part of the original product image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01976805-fb05-70b6-a9e4-af24d43fc2e1`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `above-the-clouds`).
 
 Command form:
 
 ```bash
-betterprompt generate 01976805-fb05-70b6-a9e4-af24d43fc2e1 \
+betterprompt generate above-the-clouds \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01976805-fb05-70b6-a9e4-af24d43fc2e1 \
+betterprompt generate above-the-clouds \
   --input tone_of_the_background_sky_and_clouds=<value> \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
