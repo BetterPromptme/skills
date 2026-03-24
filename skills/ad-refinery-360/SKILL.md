@@ -1,14 +1,14 @@
 ---
 name: ad-refinery-360
 description: This prompt guides an AI to act as an advertising strategist and behavioral psychologist by taking product details, performance goals, market context, and a desired style to build three target personas, generate three ad concepts, run multiple rounds of persona-based critique and iterative refinement, and then select the best-performing ad with clear reasoning and actionable targeting and optimization recommendations.
-skillVersionId: 0197c4e6-46f6-7fb6-98cb-ea6e341cf1e9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt guides an AI to act as an advertising strategist and behavioral psychologist by taking product details, performance goals, market context, and a desired style to build three target personas, generate three ad concepts, run multiple rounds of persona-based critique and iterative refinement, and then select the best-performing ad with clear reasoning and actionable targeting and optimization recommendations.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c4e6-46f6-7fb6-98cb-ea6e341cf1e9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ad-refinery-360`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c4e6-46f6-7fb6-98cb-ea6e341cf1e9 \
+betterprompt generate ad-refinery-360 \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c4e6-46f6-7fb6-98cb-ea6e341cf1e9 \
+betterprompt generate ad-refinery-360 \
   --input ad_style=<value> \
   --input market_context=<value> \
   --input ENTER_PRODUCT_INFO_HERE=<value> \
