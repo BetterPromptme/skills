@@ -1,14 +1,14 @@
 ---
 name: justin-biebers-album-cover
 description: This prompt directs an AI image generator to turn a user-provided portrait into a square, ultra‑high‑resolution, photorealistic editorial album-cover image with a minimalist monochrome red look, featuring a half-body seated pose and soft cinematic side lighting reminiscent of a contemporary pop album mood. It specifies camera framing and depth of field, enforces a clean flat red background with ample negative space, and requires a calm, introspective expression while keeping the subject fully clothed. The intended result is a bold, emotionally raw cover-style portrait that preserves only the user’s identity and explicitly avoids any celebrity likeness, tattoos, bare chest, text, logos, or graphic overlays.
-skillVersionId: 01999380-8722-7867-a565-6de8847d41e4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an AI image generator to turn a user-provided portrait into a square, ultra‑high‑resolution, photorealistic editorial album-cover image with a minimalist monochrome red look, featuring a half-body seated pose and soft cinematic side lighting reminiscent of a contemporary pop album mood. It specifies camera framing and depth of field, enforces a clean flat red background with ample negative space, and requires a calm, introspective expression while keeping the subject fully clothed. The intended result is a bold, emotionally raw cover-style portrait that preserves only the user’s identity and explicitly avoids any celebrity likeness, tattoos, bare chest, text, logos, or graphic overlays.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01999380-8722-7867-a565-6de8847d41e4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `justin-biebers-album-cover`).
 
 Command form:
 
 ```bash
-betterprompt generate 01999380-8722-7867-a565-6de8847d41e4 \
+betterprompt generate justin-biebers-album-cover \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01999380-8722-7867-a565-6de8847d41e4 \
+betterprompt generate justin-biebers-album-cover \
   --input 'outfit=Plain black t-shirt' \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
