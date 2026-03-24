@@ -1,14 +1,14 @@
 ---
 name: reality-reminder-portrait
 description: This prompt instructs the AI to generate a single new urban, wide‑angle street-style image that preserves the exact identity and outfit of the provided person photo while using a separate reference image only to guide composition, pose, camera angle, typography placement, and overall aesthetic. The result is a gritty, candid full-body scene with oversized background text (exactly Text_input_2) positioned behind and partially occluded by the subject, plus an iOS-style “Reminder” alert box containing Text_input_1 that appears physically held in the subject’s extended hand with correct perspective, occlusion, and lighting, and a small bottom-center credit reading Text_input_3—all without copying the reference’s specific person, location, or wording.
-skillVersionId: 019b30b2-d264-7309-8715-a07303f2c951
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a single new urban, wide‑angle street-style image that preserves the exact identity and outfit of the provided person photo while using a separate reference image only to guide composition, pose, camera angle, typography placement, and overall aesthetic. The result is a gritty, candid full-body scene with oversized background text (exactly Text_input_2) positioned behind and partially occluded by the subject, plus an iOS-style “Reminder” alert box containing Text_input_1 that appears physically held in the subject’s extended hand with correct perspective, occlusion, and lighting, and a small bottom-center credit reading Text_input_3—all without copying the reference’s specific person, location, or wording.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b30b2-d264-7309-8715-a07303f2c951`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `reality-reminder-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b30b2-d264-7309-8715-a07303f2c951 \
+betterprompt generate reality-reminder-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -100,7 +100,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b30b2-d264-7309-8715-a07303f2c951 \
+betterprompt generate reality-reminder-portrait \
   --input 'Text_input_1=Fill in a few blanks and get instant AI results from expert-built templates. No more prompt tinkering.' \
   --input 'Text_input_2=Prompts that work like apps' \
   --input Text_input_3=BetterPrompt \
