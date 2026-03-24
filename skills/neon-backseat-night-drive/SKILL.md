@@ -1,14 +1,14 @@
 ---
 name: neon-backseat-night-drive
 description: This prompt instructs an image model to edit a provided portrait so the same person appears in a candid, handheld iPhone-like photo taken from the front passenger seat, capturing them leaning forward from the backseat at night. It specifies an intimate angle and medium close-up composition with the headrest foreground, preserves the subject’s exact identity and unchanged outfit, and places them inside a modern moving car amid neon-lit city streets. The intended result is a realistic, slightly imperfect snapshot with mixed neon/headlight/dashboard lighting, mild motion blur, and grain that conveys energetic nighttime urban motion.
-skillVersionId: 019cb86a-8857-7175-9860-455b02a8a0de
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to edit a provided portrait so the same person appears in a candid, handheld iPhone-like photo taken from the front passenger seat, capturing them leaning forward from the backseat at night. It specifies an intimate angle and medium close-up composition with the headrest foreground, preserves the subject’s exact identity and unchanged outfit, and places them inside a modern moving car amid neon-lit city streets. The intended result is a realistic, slightly imperfect snapshot with mixed neon/headlight/dashboard lighting, mild motion blur, and grain that conveys energetic nighttime urban motion.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019cb86a-8857-7175-9860-455b02a8a0de`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `neon-backseat-night-drive`).
 
 Command form:
 
 ```bash
-betterprompt generate 019cb86a-8857-7175-9860-455b02a8a0de \
+betterprompt generate neon-backseat-night-drive \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019cb86a-8857-7175-9860-455b02a8a0de \
+betterprompt generate neon-backseat-night-drive \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
