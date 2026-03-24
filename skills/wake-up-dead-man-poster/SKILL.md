@@ -1,14 +1,14 @@
 ---
 name: wake-up-dead-man-poster
 description: This prompt instructs an AI image compositor to recreate the official mystery ensemble poster’s exact composition, environment, perspective, lighting, and all supporting characters unchanged, while swapping only the central squatting figure with the provided person from the input photo. The expected outcome is a poster-grade, photorealistic composite where the inserted subject matches the original pose, scale, and cinematic color grading and blends seamlessly into the locked layout, with the subject’s face identity preserved exactly without any alteration.
-skillVersionId: 019b2b86-e10d-702e-b403-f8b29a68c4c9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image compositor to recreate the official mystery ensemble poster’s exact composition, environment, perspective, lighting, and all supporting characters unchanged, while swapping only the central squatting figure with the provided person from the input photo. The expected outcome is a poster-grade, photorealistic composite where the inserted subject matches the original pose, scale, and cinematic color grading and blends seamlessly into the locked layout, with the subject’s face identity preserved exactly without any alteration.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b2b86-e10d-702e-b403-f8b29a68c4c9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `wake-up-dead-man-poster`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b2b86-e10d-702e-b403-f8b29a68c4c9 \
+betterprompt generate wake-up-dead-man-poster \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b2b86-e10d-702e-b403-f8b29a68c4c9 \
+betterprompt generate wake-up-dead-man-poster \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"4:3","resolution":"1K"}'
