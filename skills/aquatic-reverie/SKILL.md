@@ -1,14 +1,14 @@
 ---
 name: aquatic-reverie
 description: This prompt directs an image-generation/editing model to create a realistic, surreal cinematic portrait using the uploaded person’s face, placing them in a dark minimalist room where a projector paints vivid orange-gold, goldfish-like light patterns across the surfaces to evoke an underwater illusion. It specifies gender-dependent wardrobe styling, dreamy immersive lighting with blue haze, soft depth of field, rim lighting, and reflective floor effects, resulting in a calm, contemplative scene that blends futuristic projection technology with magical aquatic fantasy while preserving facial likeness and photographic realism.
-skillVersionId: 0199e6e0-18ed-7c02-a3a1-a3afd10bf9ec
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation/editing model to create a realistic, surreal cinematic portrait using the uploaded person’s face, placing them in a dark minimalist room where a projector paints vivid orange-gold, goldfish-like light patterns across the surfaces to evoke an underwater illusion. It specifies gender-dependent wardrobe styling, dreamy immersive lighting with blue haze, soft depth of field, rim lighting, and reflective floor effects, resulting in a calm, contemplative scene that blends futuristic projection technology with magical aquatic fantasy while preserving facial likeness and photographic realism.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199e6e0-18ed-7c02-a3a1-a3afd10bf9ec`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `aquatic-reverie`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199e6e0-18ed-7c02-a3a1-a3afd10bf9ec \
+betterprompt generate aquatic-reverie \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199e6e0-18ed-7c02-a3a1-a3afd10bf9ec \
+betterprompt generate aquatic-reverie \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
