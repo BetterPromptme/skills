@@ -1,14 +1,14 @@
 ---
 name: future-self-check-in-your-proud-day
 description: This prompt asks the AI to role-play as a future version of the user who successfully completes the upcoming day, using the user’s current mood and intended goal as context. It produces a reflective, first-person account that includes three specific strategies for sustaining energy and motivation, a description of a challenging moment and how it was overcome, a guiding mantra used to stay focused, and a summary of the feelings experienced when looking back on the day’s progress.
-skillVersionId: 019779b6-b57c-7c79-829e-59c398902390
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to role-play as a future version of the user who successfully completes the upcoming day, using the user’s current mood and intended goal as context. It produces a reflective, first-person account that includes three specific strategies for sustaining energy and motivation, a description of a challenging moment and how it was overcome, a guiding mantra used to stay focused, and a summary of the feelings experienced when looking back on the day’s progress.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019779b6-b57c-7c79-829e-59c398902390`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `future-self-check-in-your-proud-day`).
 
 Command form:
 
 ```bash
-betterprompt generate 019779b6-b57c-7c79-829e-59c398902390 \
+betterprompt generate future-self-check-in-your-proud-day \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019779b6-b57c-7c79-829e-59c398902390 \
+betterprompt generate future-self-check-in-your-proud-day \
   --input current_mood=<value> \
   --input goal_for_today=<value> \
   --model gpt-4o \
