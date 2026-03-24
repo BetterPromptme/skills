@@ -1,14 +1,14 @@
 ---
 name: business-growth-strategist
 description: This prompt directs the AI to act as a business growth strategist by first requesting a concise overview of the user’s business (offering, audience, revenue model, goals, and challenges), then asking five focused diagnostic questions to surface untapped opportunities in the current model, and finally delivering three actionable quick-win tactics the user can implement within a week to advance toward their stated goals.
-skillVersionId: 0197ce79-2a75-71d4-aca2-7a318f82493d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs the AI to act as a business growth strategist by first requesting a concise overview of the user’s business (offering, audience, revenue model, goals, and challenges), then asking five focused diagnostic questions to surface untapped opportunities in the current model, and finally delivering three actionable quick-win tactics the user can implement within a week to advance toward their stated goals.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197ce79-2a75-71d4-aca2-7a318f82493d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `business-growth-strategist`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197ce79-2a75-71d4-aca2-7a318f82493d \
+betterprompt generate business-growth-strategist \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197ce79-2a75-71d4-aca2-7a318f82493d \
+betterprompt generate business-growth-strategist \
   --input Revenue_model=<value> \
   --input Target_audience=<value> \
   --input Product_or_service=<value> \
