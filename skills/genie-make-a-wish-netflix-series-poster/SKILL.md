@@ -1,14 +1,14 @@
 ---
 name: genie-make-a-wish-netflix-series-poster
 description: This prompt instructs an AI image generator to create a vertical, high-fashion Netflix-style promotional poster for a Korean series titled “Genie, Make a Wish,” featuring the subject from a provided reference photo with their face, hairstyle, proportions, and expression preserved exactly while placing them full-body in a surreal cosmic scene dominated by a glowing clock, magical gold particles, and cinematic lighting; the intended outcome is a polished key art image in 4K–8K with specific props (a sparking golden drill and radiant magic lamp), luxury sci‑fi color grading, and complete on-poster branding (title, repeated tagline text, Netflix logo, and release date) composed naturally and proportionally.
-skillVersionId: 019a4cea-293f-73eb-a0e4-c30b5e8f4875
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a vertical, high-fashion Netflix-style promotional poster for a Korean series titled “Genie, Make a Wish,” featuring the subject from a provided reference photo with their face, hairstyle, proportions, and expression preserved exactly while placing them full-body in a surreal cosmic scene dominated by a glowing clock, magical gold particles, and cinematic lighting; the intended outcome is a polished key art image in 4K–8K with specific props (a sparking golden drill and radiant magic lamp), luxury sci‑fi color grading, and complete on-poster branding (title, repeated tagline text, Netflix logo, and release date) composed naturally and proportionally.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a4cea-293f-73eb-a0e4-c30b5e8f4875`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `genie-make-a-wish-netflix-series-poster`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a4cea-293f-73eb-a0e4-c30b5e8f4875 \
+betterprompt generate genie-make-a-wish-netflix-series-poster \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a4cea-293f-73eb-a0e4-c30b5e8f4875 \
+betterprompt generate genie-make-a-wish-netflix-series-poster \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
