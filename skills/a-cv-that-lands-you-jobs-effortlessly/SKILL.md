@@ -1,14 +1,14 @@
 ---
 name: a-cv-that-lands-you-jobs-effortlessly
 description: This prompt asks the AI to tailor a candidate’s CV content to a specific job description by generating recruiter-aligned sections: a 3–5 line career summary, a JD-linked skills section with evidence, an action-oriented experience/key projects section, an internship/part-time description framed as measurable value contribution, and a clear career objective with 2–3 year goals. Using the provided JD and existing CV details, the outcome is a set of concise, professional, and role-relevant statements that directly map the candidate’s skills and achievements to the position’s requirements while emphasizing growth mindset, adaptability, and long-term commitment.
-skillVersionId: 019720bf-9a2e-763a-a5f2-6be765c7780d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to tailor a candidate’s CV content to a specific job description by generating recruiter-aligned sections: a 3–5 line career summary, a JD-linked skills section with evidence, an action-oriented experience/key projects section, an internship/part-time description framed as measurable value contribution, and a clear career objective with 2–3 year goals. Using the provided JD and existing CV details, the outcome is a set of concise, professional, and role-relevant statements that directly map the candidate’s skills and achievements to the position’s requirements while emphasizing growth mindset, adaptability, and long-term commitment.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019720bf-9a2e-763a-a5f2-6be765c7780d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `a-cv-that-lands-you-jobs-effortlessly`).
 
 Command form:
 
 ```bash
-betterprompt generate 019720bf-9a2e-763a-a5f2-6be765c7780d \
+betterprompt generate a-cv-that-lands-you-jobs-effortlessly \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019720bf-9a2e-763a-a5f2-6be765c7780d \
+betterprompt generate a-cv-that-lands-you-jobs-effortlessly \
   --input Your_CV=<value> \
   --input JD_of_your_company_apply=<value> \
   --model gemini-2.5-pro-preview \
