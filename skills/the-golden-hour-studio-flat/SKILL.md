@@ -1,14 +1,14 @@
 ---
 name: the-golden-hour-studio-flat
 description: This prompt instructs an AI image generator to produce a photorealistic, cozy home-lifestyle selfie portrait of a young woman lounging on a textured rug in a warm, minimalist apartment, with specific framing, pose, wardrobe, accessories, lighting, and color palette. It emphasizes preserving the subject’s exact facial identity and natural skin/hair details while avoiding heavy retouching, resulting in an intimate, social-media-ready indoor portrait with a modern interior backdrop and soft ambient illumination.
-skillVersionId: 019c29aa-d587-750a-bf85-0cdeff183c57
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a photorealistic, cozy home-lifestyle selfie portrait of a young woman lounging on a textured rug in a warm, minimalist apartment, with specific framing, pose, wardrobe, accessories, lighting, and color palette. It emphasizes preserving the subject’s exact facial identity and natural skin/hair details while avoiding heavy retouching, resulting in an intimate, social-media-ready indoor portrait with a modern interior backdrop and soft ambient illumination.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c29aa-d587-750a-bf85-0cdeff183c57`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-golden-hour-studio-flat`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c29aa-d587-750a-bf85-0cdeff183c57 \
+betterprompt generate the-golden-hour-studio-flat \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c29aa-d587-750a-bf85-0cdeff183c57 \
+betterprompt generate the-golden-hour-studio-flat \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
