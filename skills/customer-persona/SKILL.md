@@ -1,14 +1,14 @@
 ---
 name: customer-persona
 description: This prompt instructs the AI to create five distinct customer personas for a specified brand using the requested language, each detailing demographics, psychographics, and behavioral patterns, then summarizing key purchase drivers and barriers; the outcome is a clear markdown table that helps the user understand who the target customers are, how they think and behave, and what motivates or prevents them from buying or using the brand’s offering.
-skillVersionId: 0198c178-7fea-740b-aa42-94eab73988b3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create five distinct customer personas for a specified brand using the requested language, each detailing demographics, psychographics, and behavioral patterns, then summarizing key purchase drivers and barriers; the outcome is a clear markdown table that helps the user understand who the target customers are, how they think and behave, and what motivates or prevents them from buying or using the brand’s offering.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198c178-7fea-740b-aa42-94eab73988b3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `customer-persona`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198c178-7fea-740b-aa42-94eab73988b3 \
+betterprompt generate customer-persona \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198c178-7fea-740b-aa42-94eab73988b3 \
+betterprompt generate customer-persona \
   --input Language=Vietnamese \
   --input Brand_Name=Upcontent \
   --input 'Descriptions=Providing graphic design and content marketing solutions for SMEs including designing profiles, catalogs, menus, advertising images, website banners, fanpage care and website content, email marketing, scripts' \
