@@ -1,14 +1,14 @@
 ---
 name: retro-smile
 description: This prompt instructs an image model to generate a photorealistic, analog-film street portrait of a teenager on a subway platform, captured as if on a disposable camera with warm golden backlight, cinematic haze, and authentic film artifacts like grain, dust, halation, and vignette. It specifies the subject’s pose (holding the camera toward the viewer with a mid-smile), environment details (aged station, soft background blur, tunnel lights), wardrobe options, color palette, and camera-like settings to achieve a nostalgic rediscovered-print look. The intended result is a high-resolution 4:5 or 3:2 portrait that preserves the exact likeness from the provided reference image while avoiding digital beautification or stylized facial changes.
-skillVersionId: 019a5c38-8f2b-76f7-8511-d85efe5f05e1
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a photorealistic, analog-film street portrait of a teenager on a subway platform, captured as if on a disposable camera with warm golden backlight, cinematic haze, and authentic film artifacts like grain, dust, halation, and vignette. It specifies the subject’s pose (holding the camera toward the viewer with a mid-smile), environment details (aged station, soft background blur, tunnel lights), wardrobe options, color palette, and camera-like settings to achieve a nostalgic rediscovered-print look. The intended result is a high-resolution 4:5 or 3:2 portrait that preserves the exact likeness from the provided reference image while avoiding digital beautification or stylized facial changes.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a5c38-8f2b-76f7-8511-d85efe5f05e1`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `retro-smile`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a5c38-8f2b-76f7-8511-d85efe5f05e1 \
+betterprompt generate retro-smile \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a5c38-8f2b-76f7-8511-d85efe5f05e1 \
+betterprompt generate retro-smile \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
