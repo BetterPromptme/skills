@@ -1,14 +1,14 @@
 ---
 name: groom-noir-the-wedding-icon
 description: This prompt instructs an image-editing system to take an uploaded photo of a person and produce a fashion-editorial, full-body black-and-white wedding portrait that keeps the subject’s face and expression exactly the same while changing the outfit, pose, lighting, accessories, and background to depict a stylish groom in a high-contrast, retro film-grain studio/backstage setting, resulting in a polished magazine-style monochrome image.
-skillVersionId: 01981c3f-d15e-71dd-9c49-1aa041da1dbd
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-editing system to take an uploaded photo of a person and produce a fashion-editorial, full-body black-and-white wedding portrait that keeps the subject’s face and expression exactly the same while changing the outfit, pose, lighting, accessories, and background to depict a stylish groom in a high-contrast, retro film-grain studio/backstage setting, resulting in a polished magazine-style monochrome image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01981c3f-d15e-71dd-9c49-1aa041da1dbd`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `groom-noir-the-wedding-icon`).
 
 Command form:
 
 ```bash
-betterprompt generate 01981c3f-d15e-71dd-9c49-1aa041da1dbd \
+betterprompt generate groom-noir-the-wedding-icon \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01981c3f-d15e-71dd-9c49-1aa041da1dbd \
+betterprompt generate groom-noir-the-wedding-icon \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
