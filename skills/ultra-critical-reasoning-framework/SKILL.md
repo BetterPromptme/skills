@@ -1,14 +1,14 @@
 ---
 name: ultra-critical-reasoning-framework
 description: This prompt instructs the AI to handle a user-specified task with unusually high rigor by first decomposing it into clear subtasks, then analyzing each from multiple angles while actively challenging its own assumptions and attempting to find counterexamples. It requires repeated self-critique, explicit uncertainty tracking, and systematic cross-checking using alternative methods and external validation approaches, followed by a final end-to-end reconsideration of the entire reasoning chain. The intended outcome is a thoroughly vetted, transparently justified solution that documents verification steps, identifies potential pitfalls, and minimizes unnoticed errors or unsupported claims.
-skillVersionId: 0197c902-515d-7bef-b317-543d4feb139d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to handle a user-specified task with unusually high rigor by first decomposing it into clear subtasks, then analyzing each from multiple angles while actively challenging its own assumptions and attempting to find counterexamples. It requires repeated self-critique, explicit uncertainty tracking, and systematic cross-checking using alternative methods and external validation approaches, followed by a final end-to-end reconsideration of the entire reasoning chain. The intended outcome is a thoroughly vetted, transparently justified solution that documents verification steps, identifies potential pitfalls, and minimizes unnoticed errors or unsupported claims.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c902-515d-7bef-b317-543d4feb139d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ultra-critical-reasoning-framework`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c902-515d-7bef-b317-543d4feb139d \
+betterprompt generate ultra-critical-reasoning-framework \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c902-515d-7bef-b317-543d4feb139d \
+betterprompt generate ultra-critical-reasoning-framework \
   --input Task=<value> \
   --model gpt-4.1-mini \
   --options '{}'
