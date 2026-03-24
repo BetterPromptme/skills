@@ -1,14 +1,14 @@
 ---
 name: hot-wheels-blister-pack
 description: This prompt instructs an image-generation/editing task to turn the uploaded person into a stylized, vinyl-like Hot Wheels toy figure and place them fully inside a realistic clear blister bubble on a classic bright blue Hot Wheels card, alongside a chosen Hot Wheels vehicle in the same blister. The result is a convincing collectible blister-pack mockup with accurate packaging aesthetics—logo, gradient background, metallic flame accents, reflections, glare, and subtle embossed collector details—while ensuring the figure and car remain entirely enclosed by the plastic and no extra text is added.
-skillVersionId: 01985aac-8b30-7eae-aa63-6d50d0a4c694
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation/editing task to turn the uploaded person into a stylized, vinyl-like Hot Wheels toy figure and place them fully inside a realistic clear blister bubble on a classic bright blue Hot Wheels card, alongside a chosen Hot Wheels vehicle in the same blister. The result is a convincing collectible blister-pack mockup with accurate packaging aesthetics—logo, gradient background, metallic flame accents, reflections, glare, and subtle embossed collector details—while ensuring the figure and car remain entirely enclosed by the plastic and no extra text is added.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01985aac-8b30-7eae-aa63-6d50d0a4c694`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `hot-wheels-blister-pack`).
 
 Command form:
 
 ```bash
-betterprompt generate 01985aac-8b30-7eae-aa63-6d50d0a4c694 \
+betterprompt generate hot-wheels-blister-pack \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01985aac-8b30-7eae-aa63-6d50d0a4c694 \
+betterprompt generate hot-wheels-blister-pack \
   --input Vehicle=<value> \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
