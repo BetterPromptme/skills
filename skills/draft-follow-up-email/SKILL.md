@@ -1,14 +1,14 @@
 ---
 name: draft-follow-up-email
 description: This prompt instructs the AI to draft a professional follow-up email responding to an announcement or offer about a specified topic, starting with a polite acknowledgment and then clearly communicating the sender’s decision (accepting, requesting clarification, or declining with a brief, respectful reason). The resulting email maintains a confident, empathetic tone, includes any pertinent context and next steps, and ends with a courteous professional sign-off.
-skillVersionId: 019a09f3-4739-7395-a029-9f0ed0086684
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to draft a professional follow-up email responding to an announcement or offer about a specified topic, starting with a polite acknowledgment and then clearly communicating the sender’s decision (accepting, requesting clarification, or declining with a brief, respectful reason). The resulting email maintains a confident, empathetic tone, includes any pertinent context and next steps, and ends with a courteous professional sign-off.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a09f3-4739-7395-a029-9f0ed0086684`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `draft-follow-up-email`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a09f3-4739-7395-a029-9f0ed0086684 \
+betterprompt generate draft-follow-up-email \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a09f3-4739-7395-a029-9f0ed0086684 \
+betterprompt generate draft-follow-up-email \
   --input Topic=<value> \
   --model gpt-4o \
   --options '{}'
