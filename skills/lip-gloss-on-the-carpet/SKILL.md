@@ -1,14 +1,14 @@
 ---
 name: lip-gloss-on-the-carpet
 description: This prompt instructs an AI image generator to produce an ultra-realistic, high-resolution Y2K-inspired bedroom editorial photo of a young woman posed on a pink carpet amid scattered makeup, teen magazines, and reflective CDs, styled with early-2000s fashion and glossy beauty details and lit with warm on-camera flash plus soft ambient room light. It specifies the camera angle, props, color palette, textures, and period-accurate flash imperfections to achieve authentic nostalgic “teen-mag” energy, and it requires the subject’s face and proportions to match a provided reference image exactly. The intended outcome is a crisp 4:5 vertical portrait that feels intimate, glamorous, and unmistakably early-digital, with visible sparkle, sheen, and reflective highlights throughout the scene.
-skillVersionId: 019a3915-756f-704f-92fe-4b6f57c3e04d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce an ultra-realistic, high-resolution Y2K-inspired bedroom editorial photo of a young woman posed on a pink carpet amid scattered makeup, teen magazines, and reflective CDs, styled with early-2000s fashion and glossy beauty details and lit with warm on-camera flash plus soft ambient room light. It specifies the camera angle, props, color palette, textures, and period-accurate flash imperfections to achieve authentic nostalgic “teen-mag” energy, and it requires the subject’s face and proportions to match a provided reference image exactly. The intended outcome is a crisp 4:5 vertical portrait that feels intimate, glamorous, and unmistakably early-digital, with visible sparkle, sheen, and reflective highlights throughout the scene.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a3915-756f-704f-92fe-4b6f57c3e04d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `lip-gloss-on-the-carpet`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a3915-756f-704f-92fe-4b6f57c3e04d \
+betterprompt generate lip-gloss-on-the-carpet \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a3915-756f-704f-92fe-4b6f57c3e04d \
+betterprompt generate lip-gloss-on-the-carpet \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
