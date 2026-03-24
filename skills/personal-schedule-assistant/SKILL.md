@@ -1,14 +1,14 @@
 ---
 name: personal-schedule-assistant
 description: This prompt gathers your profession, fixed work hours and workdays, days off, and the additional commitments you want to prioritize (a personal project, a subject you’re studying, and preferred entertainment). Using those details, it enables an AI to generate a balanced weekly time plan that fits around your work schedule and intentionally allocates dedicated blocks for each goal and leisure activity, especially leveraging your days off.
-skillVersionId: 0197eeba-a566-7f29-8b5a-3bbc64360a30
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt gathers your profession, fixed work hours and workdays, days off, and the additional commitments you want to prioritize (a personal project, a subject you’re studying, and preferred entertainment). Using those details, it enables an AI to generate a balanced weekly time plan that fits around your work schedule and intentionally allocates dedicated blocks for each goal and leisure activity, especially leveraging your days off.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197eeba-a566-7f29-8b5a-3bbc64360a30`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `personal-schedule-assistant`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197eeba-a566-7f29-8b5a-3bbc64360a30 \
+betterprompt generate personal-schedule-assistant \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197eeba-a566-7f29-8b5a-3bbc64360a30 \
+betterprompt generate personal-schedule-assistant \
   --input subject=<value> \
   --input end_time=<value> \
   --input start_time=<value> \
