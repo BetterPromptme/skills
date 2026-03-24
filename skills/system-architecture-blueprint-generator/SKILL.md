@@ -1,14 +1,14 @@
 ---
 name: system-architecture-blueprint-generator
 description: This prompt instructs the AI to behave as a senior software architect and produce a complete, structured system architecture for a specified project, covering high-level design, service decomposition, technology and infrastructure choices, data/storage design, scalability, reliability, security/compliance, DevOps/CI/CD, and an MVP-to-scale roadmap with explicit trade-offs. The outcome is a pragmatic, actionable architecture document organized into clearly labeled sections with bullet points and a simple text diagram, tailored to the project description and expected user-base growth.
-skillVersionId: 0198c5a1-9f17-717b-9502-9753ba007824
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to behave as a senior software architect and produce a complete, structured system architecture for a specified project, covering high-level design, service decomposition, technology and infrastructure choices, data/storage design, scalability, reliability, security/compliance, DevOps/CI/CD, and an MVP-to-scale roadmap with explicit trade-offs. The outcome is a pragmatic, actionable architecture document organized into clearly labeled sections with bullet points and a simple text diagram, tailored to the project description and expected user-base growth.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198c5a1-9f17-717b-9502-9753ba007824`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `system-architecture-blueprint-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198c5a1-9f17-717b-9502-9753ba007824 \
+betterprompt generate system-architecture-blueprint-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198c5a1-9f17-717b-9502-9753ba007824 \
+betterprompt generate system-architecture-blueprint-generator \
   --input Project_Description=<value> \
   --input Expected_User_Base_Target=<value> \
   --input Expected_User_Base_Initial=<value> \
