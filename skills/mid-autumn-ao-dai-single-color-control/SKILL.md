@@ -1,14 +1,14 @@
 ---
 name: mid-autumn-ao-dai-single-color-control
 description: This prompt instructs an image-generation workflow to create a high-resolution, photoreal, cinematic 35mm-style editorial portrait set in a Vietnamese temple during the Mid-Autumn Festival, with a precisely defined pose, composition, lighting, and festival props. It enforces strict identity preservation so the subject’s face and hair remain exactly as in the provided reference, and it constrains the ao dai wardrobe to a single specified hex color while avoiding smoothing, artifacts, text, and extraneous elements. The result is a vertical 4:5 print-ready portrait with fine film grain, authentic textures, festive décor, and controlled color consistency centered on the ao dai.
-skillVersionId: 01998521-69cd-7f7c-aa71-83168f6043d6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation workflow to create a high-resolution, photoreal, cinematic 35mm-style editorial portrait set in a Vietnamese temple during the Mid-Autumn Festival, with a precisely defined pose, composition, lighting, and festival props. It enforces strict identity preservation so the subject’s face and hair remain exactly as in the provided reference, and it constrains the ao dai wardrobe to a single specified hex color while avoiding smoothing, artifacts, text, and extraneous elements. The result is a vertical 4:5 print-ready portrait with fine film grain, authentic textures, festive décor, and controlled color consistency centered on the ao dai.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01998521-69cd-7f7c-aa71-83168f6043d6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `mid-autumn-ao-dai-single-color-control`).
 
 Command form:
 
 ```bash
-betterprompt generate 01998521-69cd-7f7c-aa71-83168f6043d6 \
+betterprompt generate mid-autumn-ao-dai-single-color-control \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01998521-69cd-7f7c-aa71-83168f6043d6 \
+betterprompt generate mid-autumn-ao-dai-single-color-control \
   --input 'ao_dai_color=navy blue' \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
