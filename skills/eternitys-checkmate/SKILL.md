@@ -1,14 +1,14 @@
 ---
 name: eternitys-checkmate
 description: This prompt instructs an image model to create an epic, cinematic digital artwork of a surreal cosmic chessboard at the instant of checkmate, featuring a radiant cracked king and exploding pieces turning into constellations amid nebula clouds and dramatic blue‑gold lighting. The key outcome is a hooded, galaxy-forged reaper figure whose face is identity-locked to match the uploaded selfie with realistic proportions and recognizable features, while their body, hood, and reaching hand transform into starfields, dust, and constellation-like light trails. It also enforces strict realism constraints to prevent facial distortion, duplicate faces, or anatomical errors (like extra fingers) while maintaining ultra-detailed, HDR, wide-angle, masterpiece-level rendering.
-skillVersionId: 019c2bfd-1510-74cc-a6f7-43c82f12df7e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to create an epic, cinematic digital artwork of a surreal cosmic chessboard at the instant of checkmate, featuring a radiant cracked king and exploding pieces turning into constellations amid nebula clouds and dramatic blue‑gold lighting. The key outcome is a hooded, galaxy-forged reaper figure whose face is identity-locked to match the uploaded selfie with realistic proportions and recognizable features, while their body, hood, and reaching hand transform into starfields, dust, and constellation-like light trails. It also enforces strict realism constraints to prevent facial distortion, duplicate faces, or anatomical errors (like extra fingers) while maintaining ultra-detailed, HDR, wide-angle, masterpiece-level rendering.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c2bfd-1510-74cc-a6f7-43c82f12df7e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `eternitys-checkmate`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c2bfd-1510-74cc-a6f7-43c82f12df7e \
+betterprompt generate eternitys-checkmate \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c2bfd-1510-74cc-a6f7-43c82f12df7e \
+betterprompt generate eternitys-checkmate \
   --input test=<value> \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
