@@ -1,14 +1,14 @@
 ---
 name: excalidraw-style-architecture-diagram
 description: This prompt instructs an AI to produce a minimalist, Excalidraw-style architecture diagram for a specified system, choosing an appropriate 16:9 horizontal or vertical layout and organizing the design into clearly labeled modules with their key functions. It requires clean box-and-arrow visuals on a white background, uses arrows for primary data/process flows and dashed lines for auxiliary or supervisory relationships, and allows limited red highlights to emphasize important lines or labels, resulting in a professional technical sketch that communicates the system’s structure and interactions.
-skillVersionId: 019c465f-1e82-742a-94fa-c67738740794
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to produce a minimalist, Excalidraw-style architecture diagram for a specified system, choosing an appropriate 16:9 horizontal or vertical layout and organizing the design into clearly labeled modules with their key functions. It requires clean box-and-arrow visuals on a white background, uses arrows for primary data/process flows and dashed lines for auxiliary or supervisory relationships, and allows limited red highlights to emphasize important lines or labels, resulting in a professional technical sketch that communicates the system’s structure and interactions.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c465f-1e82-742a-94fa-c67738740794`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `excalidraw-style-architecture-diagram`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c465f-1e82-742a-94fa-c67738740794 \
+betterprompt generate excalidraw-style-architecture-diagram \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c465f-1e82-742a-94fa-c67738740794 \
+betterprompt generate excalidraw-style-architecture-diagram \
   --input architecture_name=<value> \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"5:4","resolution":"1K"}'
