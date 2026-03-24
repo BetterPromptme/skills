@@ -1,14 +1,14 @@
 ---
 name: startup-logo-creation
 description: This prompt instructs an AI to act as a startup-focused brand identity and logo designer that turns a user’s brand inputs—name, industry, personality, preferred style, motif, colors, and constraints—into a clean, modern, scalable logo concept suitable for real product use (websites, apps, pitch decks). It enforces professional design rules and safety guardrails (no altered brand names, no copyrighted or inappropriate imagery, no realistic faces, minimal clutter, legible typography) so the outcome is a startup-ready logo aligned with the brand’s positioning and visual direction.
-skillVersionId: 019b07a6-692b-7689-b1f7-cd834c75c5bc
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to act as a startup-focused brand identity and logo designer that turns a user’s brand inputs—name, industry, personality, preferred style, motif, colors, and constraints—into a clean, modern, scalable logo concept suitable for real product use (websites, apps, pitch decks). It enforces professional design rules and safety guardrails (no altered brand names, no copyrighted or inappropriate imagery, no realistic faces, minimal clutter, legible typography) so the outcome is a startup-ready logo aligned with the brand’s positioning and visual direction.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b07a6-692b-7689-b1f7-cd834c75c5bc`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `startup-logo-creation`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b07a6-692b-7689-b1f7-cd834c75c5bc \
+betterprompt generate startup-logo-creation \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -95,7 +95,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b07a6-692b-7689-b1f7-cd834c75c5bc \
+betterprompt generate startup-logo-creation \
   --input Industry=<value> \
   --input Brand_name=<value> \
   --input Logo_style=<value> \
