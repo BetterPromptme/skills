@@ -1,14 +1,14 @@
 ---
 name: comfort-zone-breakthrough-coach
 description: This prompt instructs the AI to act as an emotionally intelligent mentor and produce a numbered list of 10 warm, open-ended coaching questions tailored to a specified challenge context. The questions are designed to help a capable but hesitant colleague uncover underlying beliefs, fears, assumptions, and internal barriers driving their discomfort, without offering advice, action plans, or judgment. It also sets safety boundaries to avoid diagnosis or risky guidance and to encourage professional help if mental-health concerns are implicated.
-skillVersionId: 019a7c47-dc08-758e-a950-03ad847dd9cb
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an emotionally intelligent mentor and produce a numbered list of 10 warm, open-ended coaching questions tailored to a specified challenge context. The questions are designed to help a capable but hesitant colleague uncover underlying beliefs, fears, assumptions, and internal barriers driving their discomfort, without offering advice, action plans, or judgment. It also sets safety boundaries to avoid diagnosis or risky guidance and to encourage professional help if mental-health concerns are implicated.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -58,12 +58,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a7c47-dc08-758e-a950-03ad847dd9cb`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `comfort-zone-breakthrough-coach`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a7c47-dc08-758e-a950-03ad847dd9cb \
+betterprompt generate comfort-zone-breakthrough-coach \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -80,7 +80,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a7c47-dc08-758e-a950-03ad847dd9cb \
+betterprompt generate comfort-zone-breakthrough-coach \
   --input 'challenge_context=I'm anxious about taking on leadership responsibilities' \
   --model grok-4-fast \
   --options '{"reasoningEffort":"low"}'
