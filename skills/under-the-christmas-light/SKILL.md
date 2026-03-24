@@ -1,14 +1,14 @@
 ---
 name: under-the-christmas-light
 description: This prompt instructs an AI image generator to produce a realistic, cinematic nighttime holiday portrait that preserves the subject’s identity and hair exactly as in a provided reference photo, while placing them in a festive outdoor setting with warm street-lamp lighting, colorful bokeh Christmas lights, and a cheerful candid expression. The intended outcome is a believable winter holiday scene featuring the subject turning over their shoulder, wearing sparkly red bow ears and a light blue denim jacket with “HAPPY HOLIDAYS” embroidered in glittery gold on the back, rendered with natural skin texture and a cozy, joyful atmosphere.
-skillVersionId: 019a8fe9-fe0e-7156-a27f-8a06406cf815
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a realistic, cinematic nighttime holiday portrait that preserves the subject’s identity and hair exactly as in a provided reference photo, while placing them in a festive outdoor setting with warm street-lamp lighting, colorful bokeh Christmas lights, and a cheerful candid expression. The intended outcome is a believable winter holiday scene featuring the subject turning over their shoulder, wearing sparkly red bow ears and a light blue denim jacket with “HAPPY HOLIDAYS” embroidered in glittery gold on the back, rendered with natural skin texture and a cozy, joyful atmosphere.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a8fe9-fe0e-7156-a27f-8a06406cf815`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `under-the-christmas-light`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a8fe9-fe0e-7156-a27f-8a06406cf815 \
+betterprompt generate under-the-christmas-light \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a8fe9-fe0e-7156-a27f-8a06406cf815 \
+betterprompt generate under-the-christmas-light \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
