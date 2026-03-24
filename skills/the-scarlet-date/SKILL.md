@@ -1,14 +1,14 @@
 ---
 name: the-scarlet-date
 description: This prompt instructs an image-generation workflow to produce a photorealistic, luxury fine-dining lifestyle portrait of a woman in an upscale candle-lit restaurant, keeping her facial identity and natural textures exactly consistent with a provided reference while controlling pose, wardrobe, accessories, table props (roses, handbag, jewelry box, champagne), warm golden lighting, shallow depth of field, and a romantic celebratory mood for a refined, cinematic vertical waist-up composition.
-skillVersionId: 019c2373-a213-7316-824e-4dd62706226d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation workflow to produce a photorealistic, luxury fine-dining lifestyle portrait of a woman in an upscale candle-lit restaurant, keeping her facial identity and natural textures exactly consistent with a provided reference while controlling pose, wardrobe, accessories, table props (roses, handbag, jewelry box, champagne), warm golden lighting, shallow depth of field, and a romantic celebratory mood for a refined, cinematic vertical waist-up composition.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c2373-a213-7316-824e-4dd62706226d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-scarlet-date`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c2373-a213-7316-824e-4dd62706226d \
+betterprompt generate the-scarlet-date \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c2373-a213-7316-824e-4dd62706226d \
+betterprompt generate the-scarlet-date \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
