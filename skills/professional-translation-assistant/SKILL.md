@@ -1,14 +1,14 @@
 ---
 name: professional-translation-assistant
 description: This prompt instructs an AI to act as a professional translator and produce a fluent, culturally appropriate translation of a provided text into a specified target language while matching a chosen tone. It sets strict rules to preserve the original meaning, nuance, and emotional impact, avoid em dashes, and follow the linguistic conventions of the target language without sounding machine-generated. The expected outcome is a cleanly formatted translation only, with no extra commentary unless explicitly requested.
-skillVersionId: 019abe10-701b-725e-8c72-6be9a9b8951f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to act as a professional translator and produce a fluent, culturally appropriate translation of a provided text into a specified target language while matching a chosen tone. It sets strict rules to preserve the original meaning, nuance, and emotional impact, avoid em dashes, and follow the linguistic conventions of the target language without sounding machine-generated. The expected outcome is a cleanly formatted translation only, with no extra commentary unless explicitly requested.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -65,12 +65,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019abe10-701b-725e-8c72-6be9a9b8951f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `professional-translation-assistant`).
 
 Command form:
 
 ```bash
-betterprompt generate 019abe10-701b-725e-8c72-6be9a9b8951f \
+betterprompt generate professional-translation-assistant \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -87,7 +87,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019abe10-701b-725e-8c72-6be9a9b8951f \
+betterprompt generate professional-translation-assistant \
   --input Tone=Friendly \
   --input Your_text=<value> \
   --input Language_you_want=<value> \
