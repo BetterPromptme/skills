@@ -1,14 +1,14 @@
 ---
 name: chibi-plush-collector-studio
 description: This prompt directs an AI image generator to create a centered, full-body 1080×1080 render of a realistic, collectible-style plush toy version of a specified character, featuring a cute chibi-like proportion (oversized head, small body), fuzzy fabric with visible stitching and embroidered facial details, optional simple clothing or iconic accessories, and soft, even lighting against a neutral background.
-skillVersionId: 0199284c-1e99-744e-b22e-15d2ee9ffd69
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an AI image generator to create a centered, full-body 1080×1080 render of a realistic, collectible-style plush toy version of a specified character, featuring a cute chibi-like proportion (oversized head, small body), fuzzy fabric with visible stitching and embroidered facial details, optional simple clothing or iconic accessories, and soft, even lighting against a neutral background.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199284c-1e99-744e-b22e-15d2ee9ffd69`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `chibi-plush-collector-studio`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199284c-1e99-744e-b22e-15d2ee9ffd69 \
+betterprompt generate chibi-plush-collector-studio \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199284c-1e99-744e-b22e-15d2ee9ffd69 \
+betterprompt generate chibi-plush-collector-studio \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
