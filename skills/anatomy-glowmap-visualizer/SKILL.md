@@ -1,14 +1,14 @@
 ---
 name: anatomy-glowmap-visualizer
 description: This prompt instructs an AI to generate a digital illustration of a chosen subject depicted like an advanced anatomical scan, using luminous blue linework to define its structure against a dark background, while highlighting a specified body part with a contrasting red glow to draw attention. The result is an educational, visually striking image that emphasizes the subject’s form and the highlighted area as a focal point of significance.
-skillVersionId: 01980c5f-422e-7b8c-b7d0-052265255628
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate a digital illustration of a chosen subject depicted like an advanced anatomical scan, using luminous blue linework to define its structure against a dark background, while highlighting a specified body part with a contrasting red glow to draw attention. The result is an educational, visually striking image that emphasizes the subject’s form and the highlighted area as a focal point of significance.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01980c5f-422e-7b8c-b7d0-052265255628`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `anatomy-glowmap-visualizer`).
 
 Command form:
 
 ```bash
-betterprompt generate 01980c5f-422e-7b8c-b7d0-052265255628 \
+betterprompt generate anatomy-glowmap-visualizer \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01980c5f-422e-7b8c-b7d0-052265255628 \
+betterprompt generate anatomy-glowmap-visualizer \
   --input PART=<value> \
   --input SUBJECT=<value> \
   --model gpt-image-1 \
