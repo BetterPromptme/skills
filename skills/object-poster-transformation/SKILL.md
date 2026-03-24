@@ -1,14 +1,14 @@
 ---
 name: object-poster-transformation
 description: This prompt instructs the AI to take a user-supplied image of an object and redesign it into a polished, print-ready poster by applying the user’s chosen poster style, headline and subtext, color palette, and any requested design accents. It ensures the original object remains clearly recognizable and central, while guiding composition, lighting, typography hierarchy, and visual balance to achieve a cohesive, professional poster look. The outcome is a high-quality poster concept tailored to the user’s creative direction, with guardrails that prevent unwanted object replacement, distortions, or unrequested additions.
-skillVersionId: 019afcb3-2a99-73d7-b3a7-6c5fe207792f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take a user-supplied image of an object and redesign it into a polished, print-ready poster by applying the user’s chosen poster style, headline and subtext, color palette, and any requested design accents. It ensures the original object remains clearly recognizable and central, while guiding composition, lighting, typography hierarchy, and visual balance to achieve a cohesive, professional poster look. The outcome is a high-quality poster concept tailored to the user’s creative direction, with guardrails that prevent unwanted object replacement, distortions, or unrequested additions.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -80,12 +80,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019afcb3-2a99-73d7-b3a7-6c5fe207792f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `object-poster-transformation`).
 
 Command form:
 
 ```bash
-betterprompt generate 019afcb3-2a99-73d7-b3a7-6c5fe207792f \
+betterprompt generate object-poster-transformation \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -106,7 +106,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019afcb3-2a99-73d7-b3a7-6c5fe207792f \
+betterprompt generate object-poster-transformation \
   --input 'Sub_text=Tagline, slogan, or subordinate line,...' \
   --input 'Main_text=The headline, title,...' \
   --input Poster_style=<value> \
