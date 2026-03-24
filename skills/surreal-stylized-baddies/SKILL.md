@@ -1,14 +1,14 @@
 ---
 name: surreal-stylized-baddies
 description: This prompt instructs an image generator to transform the provided reference into a square, full-body, highly stylized cartoon character rendered in a bold Y2K punk pop‑surrealist aesthetic, emphasizing exaggerated attitude and proportions, gritty halftone/photocopied zine textures, heavy outlines, and saturated neon colors. The resulting image features rebellious punk fashion details (e.g., piercings and spiked accessories) against a flat neon or grainy gradient background with a blacklight-poster vibe.
-skillVersionId: 01978623-c011-7054-8395-57e19fc49979
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to transform the provided reference into a square, full-body, highly stylized cartoon character rendered in a bold Y2K punk pop‑surrealist aesthetic, emphasizing exaggerated attitude and proportions, gritty halftone/photocopied zine textures, heavy outlines, and saturated neon colors. The resulting image features rebellious punk fashion details (e.g., piercings and spiked accessories) against a flat neon or grainy gradient background with a blacklight-poster vibe.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01978623-c011-7054-8395-57e19fc49979`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `surreal-stylized-baddies`).
 
 Command form:
 
 ```bash
-betterprompt generate 01978623-c011-7054-8395-57e19fc49979 \
+betterprompt generate surreal-stylized-baddies \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01978623-c011-7054-8395-57e19fc49979 \
+betterprompt generate surreal-stylized-baddies \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
