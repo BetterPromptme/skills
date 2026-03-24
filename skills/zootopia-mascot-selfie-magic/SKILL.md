@@ -1,14 +1,14 @@
 ---
 name: zootopia-mascot-selfie-magic
 description: This prompt instructs an image model to generate an ultra-realistic, high-angle smartphone-style selfie featuring the exact likeness of the woman from a provided reference photo, centered in frame and smiling (with black braces visible), while posing outdoors against a simple concrete wall beside life-size 3D mascot-costume versions of Judy Hopps (left) and Nick Wilde (right). It specifies strict constraints for facial fidelity, outfit, accessories, character appearance, lighting, composition, camera characteristics, and negative traits to avoid, resulting in a bright, natural-looking, high-resolution selfie scene with crisp, believable textures and a cheerful mood.
-skillVersionId: 019ae33d-ed0f-7548-9707-fd482a85ff9c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate an ultra-realistic, high-angle smartphone-style selfie featuring the exact likeness of the woman from a provided reference photo, centered in frame and smiling (with black braces visible), while posing outdoors against a simple concrete wall beside life-size 3D mascot-costume versions of Judy Hopps (left) and Nick Wilde (right). It specifies strict constraints for facial fidelity, outfit, accessories, character appearance, lighting, composition, camera characteristics, and negative traits to avoid, resulting in a bright, natural-looking, high-resolution selfie scene with crisp, believable textures and a cheerful mood.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ae33d-ed0f-7548-9707-fd482a85ff9c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `zootopia-mascot-selfie-magic`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ae33d-ed0f-7548-9707-fd482a85ff9c \
+betterprompt generate zootopia-mascot-selfie-magic \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ae33d-ed0f-7548-9707-fd482a85ff9c \
+betterprompt generate zootopia-mascot-selfie-magic \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
