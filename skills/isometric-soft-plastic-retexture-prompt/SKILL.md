@@ -1,14 +1,14 @@
 ---
 name: isometric-soft-plastic-retexture-prompt
 description: This prompt directs an image retexturing/editing task where the attached object’s shape and silhouette are preserved while its surface materials, colors, and lighting are transformed into a “soft minimal 3D plastic” isometric render. The outcome is a simplified, clean version of the original object with matte plastic surfaces, satin metallic trim, and a semi-reflective black screen, rendered under soft ambient gradient lighting with minimal shadows and gentle highlights, placed on a smooth pastel blue-to-cream gradient background using the specified cool greys/blues with subtle pastel accent tones.
-skillVersionId: 01980696-b643-761c-9aec-0766b02bb3ee
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image retexturing/editing task where the attached object’s shape and silhouette are preserved while its surface materials, colors, and lighting are transformed into a “soft minimal 3D plastic” isometric render. The outcome is a simplified, clean version of the original object with matte plastic surfaces, satin metallic trim, and a semi-reflective black screen, rendered under soft ambient gradient lighting with minimal shadows and gentle highlights, placed on a smooth pastel blue-to-cream gradient background using the specified cool greys/blues with subtle pastel accent tones.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01980696-b643-761c-9aec-0766b02bb3ee`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `isometric-soft-plastic-retexture-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 01980696-b643-761c-9aec-0766b02bb3ee \
+betterprompt generate isometric-soft-plastic-retexture-prompt \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01980696-b643-761c-9aec-0766b02bb3ee \
+betterprompt generate isometric-soft-plastic-retexture-prompt \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
