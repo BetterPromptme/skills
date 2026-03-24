@@ -1,14 +1,14 @@
 ---
 name: black-and-gold-icon-soft-matte-3d-render
 description: This prompt instructs an image generator to create a clean, minimalist 3D render of a specified subject, styled with a soft matte look and refined black-and-antique-gold accents. The scene is set against a pristine white background in an isometric view, with subtle ambient glow and feathered shadows, resulting in a simple, elegant product-style visual.
-skillVersionId: 0197c3e9-1cb0-7a54-a569-705928b8b3bf
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a clean, minimalist 3D render of a specified subject, styled with a soft matte look and refined black-and-antique-gold accents. The scene is set against a pristine white background in an isometric view, with subtle ambient glow and feathered shadows, resulting in a simple, elegant product-style visual.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c3e9-1cb0-7a54-a569-705928b8b3bf`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `black-and-gold-icon-soft-matte-3d-render`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c3e9-1cb0-7a54-a569-705928b8b3bf \
+betterprompt generate black-and-gold-icon-soft-matte-3d-render \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c3e9-1cb0-7a54-a569-705928b8b3bf \
+betterprompt generate black-and-gold-icon-soft-matte-3d-render \
   --input Subject=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
