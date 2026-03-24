@@ -1,14 +1,14 @@
 ---
 name: make-an-3d-icon
 description: This prompt instructs the AI to generate a cute, minimalist 3D icon illustration of a specified symbol, rendered as a glossy, toy-like collectible with smooth curved surfaces, bright specular highlights, and pastel-to-vibrant gradient coloring. The intended outcome is a high-quality, kawaii-style image with strong depth and polished resin/enamel-pin realism, isolated on a clean or softly tinted background suitable for sticker or emoji pack use.
-skillVersionId: 01971502-44c9-79e0-a9c6-7ff275b086b4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a cute, minimalist 3D icon illustration of a specified symbol, rendered as a glossy, toy-like collectible with smooth curved surfaces, bright specular highlights, and pastel-to-vibrant gradient coloring. The intended outcome is a high-quality, kawaii-style image with strong depth and polished resin/enamel-pin realism, isolated on a clean or softly tinted background suitable for sticker or emoji pack use.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01971502-44c9-79e0-a9c6-7ff275b086b4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `make-an-3d-icon`).
 
 Command form:
 
 ```bash
-betterprompt generate 01971502-44c9-79e0-a9c6-7ff275b086b4 \
+betterprompt generate make-an-3d-icon \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01971502-44c9-79e0-a9c6-7ff275b086b4 \
+betterprompt generate make-an-3d-icon \
   --input Insert_an_icon_here=<value> \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"size":0,"quality":0},"quality":"low"}'
