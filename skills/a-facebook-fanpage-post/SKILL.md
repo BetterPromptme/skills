@@ -1,14 +1,14 @@
 ---
 name: a-facebook-fanpage-post
 description: This prompt instructs the AI to create a Facebook fanpage post that promotes a specified product or service by using provided details (name, key benefits, and target audience), opening with a compelling hook tied to the audience’s needs, emphasizing benefits in a friendly and engaging social-media tone, naturally repeating the primary SEO keyword multiple times, and ending with a clear call-to-action, while formatting the post for readability with line breaks and appropriate emojis.
-skillVersionId: 0196e6dc-cd44-7664-aba5-1cd7e941fdbe
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a Facebook fanpage post that promotes a specified product or service by using provided details (name, key benefits, and target audience), opening with a compelling hook tied to the audience’s needs, emphasizing benefits in a friendly and engaging social-media tone, naturally repeating the primary SEO keyword multiple times, and ending with a clear call-to-action, while formatting the post for readability with line breaks and appropriate emojis.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196e6dc-cd44-7664-aba5-1cd7e941fdbe`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `a-facebook-fanpage-post`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196e6dc-cd44-7664-aba5-1cd7e941fdbe \
+betterprompt generate a-facebook-fanpage-post \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196e6dc-cd44-7664-aba5-1cd7e941fdbe \
+betterprompt generate a-facebook-fanpage-post \
   --input Key_benefits=<value> \
   --input Target_audience=<value> \
   --input Product_or_Service_name=<value> \
