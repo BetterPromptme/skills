@@ -1,14 +1,14 @@
 ---
 name: extreme-wide-rapeseed-duo-one-hand-hold
 description: This prompt instructs an image-generation system to produce a high-resolution, photoreal extreme-wide establishing shot of two referenced individuals centered in a vast yellow rapeseed field, front-facing, with strict one-hand-only downward handholding and all other hands relaxed, while enforcing near-perfect preservation of each person’s identity, gender expression, facial features, hair, and skin tone from the provided reference images. The intended outcome is a calm, romantic, golden-hour scene with precise composition, camera and background constraints, and automatic rejection or retry rules if similarity, gender confidence, framing, hand-contact count, or prohibited elements (e.g., text/logos or specified banned objects) deviate from the requirements.
-skillVersionId: 0199513e-fe86-7b97-859b-f9d57ea7d224
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce a high-resolution, photoreal extreme-wide establishing shot of two referenced individuals centered in a vast yellow rapeseed field, front-facing, with strict one-hand-only downward handholding and all other hands relaxed, while enforcing near-perfect preservation of each person’s identity, gender expression, facial features, hair, and skin tone from the provided reference images. The intended outcome is a calm, romantic, golden-hour scene with precise composition, camera and background constraints, and automatic rejection or retry rules if similarity, gender confidence, framing, hand-contact count, or prohibited elements (e.g., text/logos or specified banned objects) deviate from the requirements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199513e-fe86-7b97-859b-f9d57ea7d224`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `extreme-wide-rapeseed-duo-one-hand-hold`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199513e-fe86-7b97-859b-f9d57ea7d224 \
+betterprompt generate extreme-wide-rapeseed-duo-one-hand-hold \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199513e-fe86-7b97-859b-f9d57ea7d224 \
+betterprompt generate extreme-wide-rapeseed-duo-one-hand-hold \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-2.5-flash-image-preview \
