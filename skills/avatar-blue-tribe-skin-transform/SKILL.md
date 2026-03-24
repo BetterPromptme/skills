@@ -1,14 +1,14 @@
 ---
 name: avatar-blue-tribe-skin-transform
 description: This prompt instructs the AI to take a single uploaded portrait photo and perform a high-end, photorealistic VFX-style makeover that preserves the subject’s identity, pose, and lighting while converting them into an original, Avatar-inspired tribal blue-skinned alien. The expected result is one final transformed image featuring realistic blue skin with anatomically wrapped darker striping, subtle bioluminescent freckles, slightly enlarged amber cat-like eyes with natural catchlights, and elongated pointed ears, all blended cleanly without altering the background, wardrobe, or adding artifacts or mature/unsafe content.
-skillVersionId: 019b4e2d-bfab-77f1-920a-d9769eb8251e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take a single uploaded portrait photo and perform a high-end, photorealistic VFX-style makeover that preserves the subject’s identity, pose, and lighting while converting them into an original, Avatar-inspired tribal blue-skinned alien. The expected result is one final transformed image featuring realistic blue skin with anatomically wrapped darker striping, subtle bioluminescent freckles, slightly enlarged amber cat-like eyes with natural catchlights, and elongated pointed ears, all blended cleanly without altering the background, wardrobe, or adding artifacts or mature/unsafe content.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b4e2d-bfab-77f1-920a-d9769eb8251e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `avatar-blue-tribe-skin-transform`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b4e2d-bfab-77f1-920a-d9769eb8251e \
+betterprompt generate avatar-blue-tribe-skin-transform \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b4e2d-bfab-77f1-920a-d9769eb8251e \
+betterprompt generate avatar-blue-tribe-skin-transform \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
