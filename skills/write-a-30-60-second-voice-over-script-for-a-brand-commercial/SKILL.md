@@ -1,14 +1,14 @@
 ---
 name: write-a-30-60-second-voice-over-script-for-a-brand-commercial
 description: This prompt instructs the AI to create a 30–60 second cinematic voice-over for a specified product, using soft, hypnotic, poetic language and vivid visual metaphors to build an emotional connection and curiosity. The resulting script follows a clear emotional arc, is designed to pair with evocative imagery, avoids clichés, and culminates in a striking, memorable tagline that leaves a lasting impression of the brand.
-skillVersionId: 0196e6c1-ecf7-7152-b8a7-b8c428a5d2dd
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a 30–60 second cinematic voice-over for a specified product, using soft, hypnotic, poetic language and vivid visual metaphors to build an emotional connection and curiosity. The resulting script follows a clear emotional arc, is designed to pair with evocative imagery, avoids clichés, and culminates in a striking, memorable tagline that leaves a lasting impression of the brand.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196e6c1-ecf7-7152-b8a7-b8c428a5d2dd`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `write-a-30-60-second-voice-over-script-for-a-brand-commercial`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196e6c1-ecf7-7152-b8a7-b8c428a5d2dd \
+betterprompt generate write-a-30-60-second-voice-over-script-for-a-brand-commercial \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196e6c1-ecf7-7152-b8a7-b8c428a5d2dd \
+betterprompt generate write-a-30-60-second-voice-over-script-for-a-brand-commercial \
   --input What_is_your_product=<value> \
   --model gpt-4.1-mini \
   --options '{}'
