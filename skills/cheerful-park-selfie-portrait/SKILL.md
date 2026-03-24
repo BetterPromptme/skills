@@ -1,14 +1,14 @@
 ---
 name: cheerful-park-selfie-portrait
 description: This prompt instructs an image model to generate a 4K, ultra-realistic DSLR-style first-person outdoor selfie of a young woman in a sunny park, with strict identity preservation so her face matches a provided reference exactly. It specifies the selfie angle, pose, expression, outfit and accessories, hair movement, lighting, and background details while prohibiting any retouching, beautification, text, or stylistic alterations. The intended outcome is a cheerful, natural-looking portrait where the subject fills most of the frame and the park setting supports realism without distracting from her unchanged facial features.
-skillVersionId: 019a99fe-b0ed-7124-8ce1-1f6d5bbb3edf
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a 4K, ultra-realistic DSLR-style first-person outdoor selfie of a young woman in a sunny park, with strict identity preservation so her face matches a provided reference exactly. It specifies the selfie angle, pose, expression, outfit and accessories, hair movement, lighting, and background details while prohibiting any retouching, beautification, text, or stylistic alterations. The intended outcome is a cheerful, natural-looking portrait where the subject fills most of the frame and the park setting supports realism without distracting from her unchanged facial features.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a99fe-b0ed-7124-8ce1-1f6d5bbb3edf`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cheerful-park-selfie-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a99fe-b0ed-7124-8ce1-1f6d5bbb3edf \
+betterprompt generate cheerful-park-selfie-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a99fe-b0ed-7124-8ce1-1f6d5bbb3edf \
+betterprompt generate cheerful-park-selfie-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
