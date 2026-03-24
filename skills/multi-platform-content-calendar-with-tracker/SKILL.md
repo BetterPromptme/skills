@@ -1,14 +1,14 @@
 ---
 name: multi-platform-content-calendar-with-tracker
 description: This prompt instructs the AI to act as a short-form, cross-platform social growth strategist and produce a ready-to-execute 7-day cross-posting plan for a campaign, tailored to a specified timezone and campaign inputs. The output is a platform-aware calendar with recommended posting times per channel, practical editing/logistics guidance (aspect ratios, cropping, and cover/thumbnail text placement), a reusable two-line caption/description template with a clear CTA, and a performance tracker table to log key metrics (views, watch time, saves, comments, clicks, opt-ins) so the creator can measure and optimize reach, engagement, and conversions across platforms.
-skillVersionId: 01994b24-5166-77d8-8997-a1d347d62bd8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a short-form, cross-platform social growth strategist and produce a ready-to-execute 7-day cross-posting plan for a campaign, tailored to a specified timezone and campaign inputs. The output is a platform-aware calendar with recommended posting times per channel, practical editing/logistics guidance (aspect ratios, cropping, and cover/thumbnail text placement), a reusable two-line caption/description template with a clear CTA, and a performance tracker table to log key metrics (views, watch time, saves, comments, clicks, opt-ins) so the creator can measure and optimize reach, engagement, and conversions across platforms.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01994b24-5166-77d8-8997-a1d347d62bd8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `multi-platform-content-calendar-with-tracker`).
 
 Command form:
 
 ```bash
-betterprompt generate 01994b24-5166-77d8-8997-a1d347d62bd8 \
+betterprompt generate multi-platform-content-calendar-with-tracker \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01994b24-5166-77d8-8997-a1d347d62bd8 \
+betterprompt generate multi-platform-content-calendar-with-tracker \
   --input 'CTA=Click link in bio 🌐' \
   --input TIMEZONE=America/New_York \
   --input 'CONTENT_TYPE=Behind-the-scenes of startup life' \
