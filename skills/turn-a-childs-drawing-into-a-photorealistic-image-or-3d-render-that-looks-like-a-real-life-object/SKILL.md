@@ -1,14 +1,14 @@
 ---
 name: turn-a-childs-drawing-into-a-photorealistic-image-or-3d-render-that-looks-like-a-real-life-object
 description: This prompt instructs the AI to take a child’s drawing and convert it into a photorealistic image or realistic 3D render that preserves the drawing’s exact silhouette, proportions, line placements, and imperfections without any “fixing” or stylizing. The result should look like the imagined subject exists in the real world, with believable materials, natural lighting, shadows, and an appropriate environment or background, while keeping every original detail of the child’s design unchanged.
-skillVersionId: 0197349a-4267-7c0e-b63d-d157b7c704d1
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take a child’s drawing and convert it into a photorealistic image or realistic 3D render that preserves the drawing’s exact silhouette, proportions, line placements, and imperfections without any “fixing” or stylizing. The result should look like the imagined subject exists in the real world, with believable materials, natural lighting, shadows, and an appropriate environment or background, while keeping every original detail of the child’s design unchanged.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197349a-4267-7c0e-b63d-d157b7c704d1`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `turn-a-childs-drawing-into-a-photorealistic-image-or-3d-render-that-looks-like-a-real-life-object`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197349a-4267-7c0e-b63d-d157b7c704d1 \
+betterprompt generate turn-a-childs-drawing-into-a-photorealistic-image-or-3d-render-that-looks-like-a-real-life-object \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197349a-4267-7c0e-b63d-d157b7c704d1 \
+betterprompt generate turn-a-childs-drawing-into-a-photorealistic-image-or-3d-render-that-looks-like-a-real-life-object \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"n":0,"size":0,"quality":1},"quality":"medium"}'
