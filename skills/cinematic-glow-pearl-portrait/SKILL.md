@@ -1,14 +1,14 @@
 ---
 name: cinematic-glow-pearl-portrait
 description: This prompt instructs an image generator to produce a hyper-realistic, high-end cinematic editorial close-up portrait using a provided face reference while preserving the subject’s identity and facial proportions exactly. It specifies camera framing, warm diffused daylight, hairstyle, wardrobe accessories, neutral blurred background, and micro-texture detail (eyes, lips, pores, hair) with subtle filmic qualities like gentle bloom and grain. The intended outcome is an 8K, 4:5 vertical beauty portrait that feels intimate and magazine-polished, with sharp facial focus, creamy depth-of-field, and no beautifying alterations or heavy filtering.
-skillVersionId: 019a3873-d173-77f9-bc13-5f21c6f22d5e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to produce a hyper-realistic, high-end cinematic editorial close-up portrait using a provided face reference while preserving the subject’s identity and facial proportions exactly. It specifies camera framing, warm diffused daylight, hairstyle, wardrobe accessories, neutral blurred background, and micro-texture detail (eyes, lips, pores, hair) with subtle filmic qualities like gentle bloom and grain. The intended outcome is an 8K, 4:5 vertical beauty portrait that feels intimate and magazine-polished, with sharp facial focus, creamy depth-of-field, and no beautifying alterations or heavy filtering.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -83,12 +83,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a3873-d173-77f9-bc13-5f21c6f22d5e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cinematic-glow-pearl-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a3873-d173-77f9-bc13-5f21c6f22d5e \
+betterprompt generate cinematic-glow-pearl-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -109,7 +109,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a3873-d173-77f9-bc13-5f21c6f22d5e \
+betterprompt generate cinematic-glow-pearl-portrait \
   --input gender=<value> \
   --input outfit=<value> \
   --input lighting=<value> \
