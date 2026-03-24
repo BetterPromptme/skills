@@ -1,14 +1,14 @@
 ---
 name: job-application-email-for-any-positions
 description: This prompt instructs the AI to generate a polished, persuasive job application email tailored to a specified position and company, using a formal yet authentic business tone. The resulting email includes a strong subject line, a brief introduction and referral source, a targeted statement of interest in the company, a concise summary of relevant experience, 2–4 role-aligned bullet points highlighting measurable strengths or achievements, and a professional closing that references attached application materials and invites follow-up, ending with a sign-off and contact information.
-skillVersionId: 019a2e1f-9a33-7816-8b61-2f9fae6eeac7
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a polished, persuasive job application email tailored to a specified position and company, using a formal yet authentic business tone. The resulting email includes a strong subject line, a brief introduction and referral source, a targeted statement of interest in the company, a concise summary of relevant experience, 2–4 role-aligned bullet points highlighting measurable strengths or achievements, and a professional closing that references attached application materials and invites follow-up, ending with a sign-off and contact information.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a2e1f-9a33-7816-8b61-2f9fae6eeac7`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `job-application-email-for-any-positions`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a2e1f-9a33-7816-8b61-2f9fae6eeac7 \
+betterprompt generate job-application-email-for-any-positions \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a2e1f-9a33-7816-8b61-2f9fae6eeac7 \
+betterprompt generate job-application-email-for-any-positions \
   --input Company_name=<value> \
   --input Position_title=<value> \
   --model gpt-5 \
