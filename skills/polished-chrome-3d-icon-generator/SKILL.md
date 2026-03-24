@@ -1,14 +1,14 @@
 ---
 name: polished-chrome-3d-icon-generator
 description: This prompt specifies a high-resolution, physically based 3D render of a single object in a polished chrome style, detailing its shape placeholder, mirror-gloss material properties, studio lighting, isometric/orthographic camera setup, and transparent background. The outcome is a centered PNG icon-like image with smooth gradients, sharp realistic reflections, and subtle grounding shadowing, with no text or additional elements.
-skillVersionId: 01988264-9a99-7dcc-a58b-dae3481230c6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt specifies a high-resolution, physically based 3D render of a single object in a polished chrome style, detailing its shape placeholder, mirror-gloss material properties, studio lighting, isometric/orthographic camera setup, and transparent background. The outcome is a centered PNG icon-like image with smooth gradients, sharp realistic reflections, and subtle grounding shadowing, with no text or additional elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01988264-9a99-7dcc-a58b-dae3481230c6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `polished-chrome-3d-icon-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 01988264-9a99-7dcc-a58b-dae3481230c6 \
+betterprompt generate polished-chrome-3d-icon-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01988264-9a99-7dcc-a58b-dae3481230c6 \
+betterprompt generate polished-chrome-3d-icon-generator \
   --input OBJECT=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
