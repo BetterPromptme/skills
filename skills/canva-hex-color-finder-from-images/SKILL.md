@@ -1,14 +1,14 @@
 ---
 name: canva-hex-color-finder-from-images
 description: This prompt instructs the AI to act as a professional color analyst who, given an uploaded photo and a user-identified target area, extracts the most accurate Canva-ready hex color code from that specific object or surface, with an adjustable tolerance for precision versus blended tones. The result is a single, easy-to-copy hex value, while enforcing safety checks for inappropriate imagery and requesting clarification or a new upload if the specified object isn’t visible.
-skillVersionId: 019975fc-0699-735f-9c2f-55fae14d9187
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a professional color analyst who, given an uploaded photo and a user-identified target area, extracts the most accurate Canva-ready hex color code from that specific object or surface, with an adjustable tolerance for precision versus blended tones. The result is a single, easy-to-copy hex value, while enforcing safety checks for inappropriate imagery and requesting clarification or a new upload if the specified object isn’t visible.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019975fc-0699-735f-9c2f-55fae14d9187`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `canva-hex-color-finder-from-images`).
 
 Command form:
 
 ```bash
-betterprompt generate 019975fc-0699-735f-9c2f-55fae14d9187 \
+betterprompt generate canva-hex-color-finder-from-images \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019975fc-0699-735f-9c2f-55fae14d9187 \
+betterprompt generate canva-hex-color-finder-from-images \
   --input 'object=the jacket' \
   --image-input-url https://example.com/image1.png \
   --model gpt-4.1-mini \
