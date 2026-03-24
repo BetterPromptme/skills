@@ -1,14 +1,14 @@
 ---
 name: software-project-specification-generator
 description: This prompt instructs the AI to produce a structured, developer-ready software feature specification for a given project by summarizing the project’s purpose and audience, enumerating and detailing core features, defining the intended technology stack, and capturing performance and security requirements. The expected outcome is a clear, technical document that stakeholders and engineers can use to align on scope, implementation expectations, and non-functional requirements.
-skillVersionId: 0197c4d0-d645-7f24-81c9-864a98b753f6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to produce a structured, developer-ready software feature specification for a given project by summarizing the project’s purpose and audience, enumerating and detailing core features, defining the intended technology stack, and capturing performance and security requirements. The expected outcome is a clear, technical document that stakeholders and engineers can use to align on scope, implementation expectations, and non-functional requirements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c4d0-d645-7f24-81c9-864a98b753f6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `software-project-specification-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c4d0-d645-7f24-81c9-864a98b753f6 \
+betterprompt generate software-project-specification-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -92,7 +92,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c4d0-d645-7f24-81c9-864a98b753f6 \
+betterprompt generate software-project-specification-generator \
   --input Tech_stack=<value> \
   --input Key_features=<value> \
   --input Project_name=<value> \
