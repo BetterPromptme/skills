@@ -1,14 +1,14 @@
 ---
 name: intimate-wine-bar-lifestyle-portrait
 description: This prompt instructs an image-generation workflow to recreate a photorealistic, warm, intimate evening restaurant portrait using a provided face reference, keeping the subject’s identity and natural skin texture unchanged while placing her in a cozy wine-bar setting with specific pose, outfit, jewelry, and props. It defines the desired composition (medium close-up, shallow depth of field), environment details (Edison bulbs, greenery, wooden blinds, blurred diners), and lighting/camera feel (soft golden ambient light, realistic color and texture, no stylized grading), so the resulting image reads like an authentic candid lifestyle photo focused sharply on her face and raised glass of red wine.
-skillVersionId: 019b978e-7b17-74ac-985b-38881a33ef31
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation workflow to recreate a photorealistic, warm, intimate evening restaurant portrait using a provided face reference, keeping the subject’s identity and natural skin texture unchanged while placing her in a cozy wine-bar setting with specific pose, outfit, jewelry, and props. It defines the desired composition (medium close-up, shallow depth of field), environment details (Edison bulbs, greenery, wooden blinds, blurred diners), and lighting/camera feel (soft golden ambient light, realistic color and texture, no stylized grading), so the resulting image reads like an authentic candid lifestyle photo focused sharply on her face and raised glass of red wine.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b978e-7b17-74ac-985b-38881a33ef31`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `intimate-wine-bar-lifestyle-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b978e-7b17-74ac-985b-38881a33ef31 \
+betterprompt generate intimate-wine-bar-lifestyle-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b978e-7b17-74ac-985b-38881a33ef31 \
+betterprompt generate intimate-wine-bar-lifestyle-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
