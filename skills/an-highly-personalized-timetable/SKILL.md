@@ -1,14 +1,14 @@
 ---
 name: an-highly-personalized-timetable
 description: This prompt instructs the AI to generate an achievable, well-structured weekly timetable tailored to the user’s provided routine, fixed commitments, and personal preferences, producing a clean day-by-day table of start–end time blocks that covers work/study, exercise, meals, rest, and includes short breaks plus a proper daily lunch break while balancing productivity with recovery.
-skillVersionId: 019a7629-2ed4-715d-b0c4-516df7967c29
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate an achievable, well-structured weekly timetable tailored to the user’s provided routine, fixed commitments, and personal preferences, producing a clean day-by-day table of start–end time blocks that covers work/study, exercise, meals, rest, and includes short breaks plus a proper daily lunch break while balancing productivity with recovery.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -65,12 +65,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a7629-2ed4-715d-b0c4-516df7967c29`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `an-highly-personalized-timetable`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a7629-2ed4-715d-b0c4-516df7967c29 \
+betterprompt generate an-highly-personalized-timetable \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -87,7 +87,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a7629-2ed4-715d-b0c4-516df7967c29 \
+betterprompt generate an-highly-personalized-timetable \
   --input Your_routine=<value> \
   --input 'Fixed_activities=Should include specific time blocks for your fixed activities as well' \
   --input 'Personalized_notes=Monday is a full-time working day so I want the Monday's routine should be less tense ' \
