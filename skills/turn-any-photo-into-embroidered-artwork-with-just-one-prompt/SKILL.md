@@ -1,14 +1,14 @@
 ---
 name: turn-any-photo-into-embroidered-artwork-with-just-one-prompt
 description: This prompt instructs an image model to generate a square, close-up photograph of an embroidered patch that reinterprets the uploaded subject in a clean cartoon style with vivid thread texture, placed on an off-white fabric background under natural light. It specifies the patch shape (while keeping the final image 1:1), adds capital-letter text in a chosen layout, and incorporates the represented country’s flag colors into elements like the border or accents to reinforce local identity, resulting in a realistic, tactile embroidered patch image.
-skillVersionId: 0197536c-fb4f-70cd-80a9-35a99067d36c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a square, close-up photograph of an embroidered patch that reinterprets the uploaded subject in a clean cartoon style with vivid thread texture, placed on an off-white fabric background under natural light. It specifies the patch shape (while keeping the final image 1:1), adds capital-letter text in a chosen layout, and incorporates the represented country’s flag colors into elements like the border or accents to reinforce local identity, resulting in a realistic, tactile embroidered patch image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197536c-fb4f-70cd-80a9-35a99067d36c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `turn-any-photo-into-embroidered-artwork-with-just-one-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197536c-fb4f-70cd-80a9-35a99067d36c \
+betterprompt generate turn-any-photo-into-embroidered-artwork-with-just-one-prompt \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197536c-fb4f-70cd-80a9-35a99067d36c \
+betterprompt generate turn-any-photo-into-embroidered-artwork-with-just-one-prompt \
   --input The_shape=<value> \
   --input Add_capital_letter_text=<value> \
   --image-input-url https://example.com/image1.png \
