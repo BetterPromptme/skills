@@ -1,14 +1,14 @@
 ---
 name: the-reflective-glamour
 description: This prompt directs an image-generation/editing system to produce a photorealistic, luxury nighttime city portrait using a provided woman’s photo as the identity reference, keeping her face, hair, and expression unchanged while placing her in a vertically framed, mid-thigh-up selfie-style pose beside a reflective pool with a dramatic illuminated skyline and a tall tapering skyscraper behind her. It specifies wardrobe, accessories, pose, environment details, lighting balance, color palette, and camera feel so the result is a sharp, realistic urban glamour photograph with accurate reflections and high-end nighttime ambiance.
-skillVersionId: 019c29b8-66c3-728e-9b3a-809ddd6a9888
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation/editing system to produce a photorealistic, luxury nighttime city portrait using a provided woman’s photo as the identity reference, keeping her face, hair, and expression unchanged while placing her in a vertically framed, mid-thigh-up selfie-style pose beside a reflective pool with a dramatic illuminated skyline and a tall tapering skyscraper behind her. It specifies wardrobe, accessories, pose, environment details, lighting balance, color palette, and camera feel so the result is a sharp, realistic urban glamour photograph with accurate reflections and high-end nighttime ambiance.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c29b8-66c3-728e-9b3a-809ddd6a9888`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-reflective-glamour`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c29b8-66c3-728e-9b3a-809ddd6a9888 \
+betterprompt generate the-reflective-glamour \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c29b8-66c3-728e-9b3a-809ddd6a9888 \
+betterprompt generate the-reflective-glamour \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
