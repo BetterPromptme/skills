@@ -1,14 +1,14 @@
 ---
 name: billie-eilish-subaquatic-album-cover
 description: This prompt directs the creation of a square, ultra‑high‑resolution, photorealistic underwater album cover by transforming a provided portrait into a cinematic scene where the same recognizable subject—kept fully identity-accurate—floats horizontally in loose dark streetwear beneath a pale wooden door near the water’s surface. It specifies precise pose, framing, lens and exposure characteristics, and a clean cobalt-to-navy environment with volumetric sunlight, subtle bubbles, and dreamy door reflections, while enforcing strict realism constraints to avoid cutout edges, graphic artifacts, or extraneous elements, resulting in a moody, editorial, Billie Eilish–inspired cover image ready for release use.
-skillVersionId: 01998434-501d-7585-aa82-706734d9ab82
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs the creation of a square, ultra‑high‑resolution, photorealistic underwater album cover by transforming a provided portrait into a cinematic scene where the same recognizable subject—kept fully identity-accurate—floats horizontally in loose dark streetwear beneath a pale wooden door near the water’s surface. It specifies precise pose, framing, lens and exposure characteristics, and a clean cobalt-to-navy environment with volumetric sunlight, subtle bubbles, and dreamy door reflections, while enforcing strict realism constraints to avoid cutout edges, graphic artifacts, or extraneous elements, resulting in a moody, editorial, Billie Eilish–inspired cover image ready for release use.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01998434-501d-7585-aa82-706734d9ab82`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `billie-eilish-subaquatic-album-cover`).
 
 Command form:
 
 ```bash
-betterprompt generate 01998434-501d-7585-aa82-706734d9ab82 \
+betterprompt generate billie-eilish-subaquatic-album-cover \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01998434-501d-7585-aa82-706734d9ab82 \
+betterprompt generate billie-eilish-subaquatic-album-cover \
   --input 'pose=horizontal floating with arms relaxed, head tilted upward, knees slightly bent' \
   --input 'wardrobe= loose, oversized, dark-colored outfit' \
   --image-input-url https://example.com/image1.png \
