@@ -1,14 +1,14 @@
 ---
 name: weekly-schedule-planner-for-busy-individuals
 description: This prompt instructs the assistant to act as a time-management and productivity-focused personal assistant and produce a detailed Monday–Sunday weekly timetable that balances work, study (including a Thursday class and homework), steady progress on an internship report toward a weekly deadline, and 2–3 badminton sessions, while guaranteeing 7–8 hours of sleep, scheduled meals, regular short breaks, relaxation blocks, and buffer time for flexibility. The expected outcome is a day-by-day timeline plus a notes section with practical productivity methods, stress-reduction techniques, energy/health guidance, and a scheduled weekly review slot to help the user stay productive without burnout.
-skillVersionId: 01973479-fc67-7f11-96d8-c6f4d7e57948
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the assistant to act as a time-management and productivity-focused personal assistant and produce a detailed Monday–Sunday weekly timetable that balances work, study (including a Thursday class and homework), steady progress on an internship report toward a weekly deadline, and 2–3 badminton sessions, while guaranteeing 7–8 hours of sleep, scheduled meals, regular short breaks, relaxation blocks, and buffer time for flexibility. The expected outcome is a day-by-day timeline plus a notes section with practical productivity methods, stress-reduction techniques, energy/health guidance, and a scheduled weekly review slot to help the user stay productive without burnout.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01973479-fc67-7f11-96d8-c6f4d7e57948`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `weekly-schedule-planner-for-busy-individuals`).
 
 Command form:
 
 ```bash
-betterprompt generate 01973479-fc67-7f11-96d8-c6f4d7e57948 \
+betterprompt generate weekly-schedule-planner-for-busy-individuals \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01973479-fc67-7f11-96d8-c6f4d7e57948 \
+betterprompt generate weekly-schedule-planner-for-busy-individuals \
   --input Describe_Your_Schedule=<value> \
   --model gpt-4o \
   --options '{}'
