@@ -1,14 +1,14 @@
 ---
 name: robloxify-anything
 description: This prompt instructs the AI to take the uploaded photo and recreate it as a high-detail 3D scene in a Roblox-like game style, converting all subjects, objects, and the setting into blocky, low-poly forms with appropriate avatar clothing, expressions, and accessories while preserving the original composition and mood. The outcome is an image that looks like an in-game Roblox screenshot, featuring soft lighting, realistic shadows, and a cool, slightly desaturated color grade to match the intended atmosphere.
-skillVersionId: 0197d477-5318-7fd7-be93-2a2eed1ae8fa
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take the uploaded photo and recreate it as a high-detail 3D scene in a Roblox-like game style, converting all subjects, objects, and the setting into blocky, low-poly forms with appropriate avatar clothing, expressions, and accessories while preserving the original composition and mood. The outcome is an image that looks like an in-game Roblox screenshot, featuring soft lighting, realistic shadows, and a cool, slightly desaturated color grade to match the intended atmosphere.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197d477-5318-7fd7-be93-2a2eed1ae8fa`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `robloxify-anything`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197d477-5318-7fd7-be93-2a2eed1ae8fa \
+betterprompt generate robloxify-anything \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197d477-5318-7fd7-be93-2a2eed1ae8fa \
+betterprompt generate robloxify-anything \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
