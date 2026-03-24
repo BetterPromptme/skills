@@ -1,14 +1,14 @@
 ---
 name: packing-list-generator-personalized-trip-checklists
 description: This prompt instructs the AI to create a comprehensive, carry-on–only packing list tailored to a specified destination, trip duration, trip type, expected weather, and planned activities. The result is a detailed checklist in markdown, organized under clear category headings (such as Clothing, Toiletries, Electronics, Medications, Documents, and Other Essentials) with suggested quantities and items appropriate for the climate and itinerary.
-skillVersionId: 0197c981-7f60-7ae8-abdb-9aa984d37dcf
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a comprehensive, carry-on–only packing list tailored to a specified destination, trip duration, trip type, expected weather, and planned activities. The result is a detailed checklist in markdown, organized under clear category headings (such as Clothing, Toiletries, Electronics, Medications, Documents, and Other Essentials) with suggested quantities and items appropriate for the climate and itinerary.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c981-7f60-7ae8-abdb-9aa984d37dcf`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `packing-list-generator-personalized-trip-checklists`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c981-7f60-7ae8-abdb-9aa984d37dcf \
+betterprompt generate packing-list-generator-personalized-trip-checklists \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c981-7f60-7ae8-abdb-9aa984d37dcf \
+betterprompt generate packing-list-generator-personalized-trip-checklists \
   --input Duration=<value> \
   --input Trip_type=<value> \
   --input Activities=<value> \
