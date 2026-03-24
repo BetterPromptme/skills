@@ -1,14 +1,14 @@
 ---
 name: coffee-and-cat-eyes-portrait
 description: This prompt directs an AI image generator to produce a high-resolution, photorealistic, vertical selfie-style portrait of a young woman in a modern café, precisely specifying her styling, pose, outfit, accessories, iced-coffee prop details, background elements, and soft natural lighting. It emphasizes a casual Parisian-inspired café lifestyle aesthetic with sharp focus on the face and drink while enforcing strict constraints to preserve the subject’s exact facial identity, natural skin texture, and realistic proportions without beautification or structural changes.
-skillVersionId: 019d1542-6b4a-7309-a249-ccbe279b2ff5
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an AI image generator to produce a high-resolution, photorealistic, vertical selfie-style portrait of a young woman in a modern café, precisely specifying her styling, pose, outfit, accessories, iced-coffee prop details, background elements, and soft natural lighting. It emphasizes a casual Parisian-inspired café lifestyle aesthetic with sharp focus on the face and drink while enforcing strict constraints to preserve the subject’s exact facial identity, natural skin texture, and realistic proportions without beautification or structural changes.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019d1542-6b4a-7309-a249-ccbe279b2ff5`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `coffee-and-cat-eyes-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019d1542-6b4a-7309-a249-ccbe279b2ff5 \
+betterprompt generate coffee-and-cat-eyes-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019d1542-6b4a-7309-a249-ccbe279b2ff5 \
+betterprompt generate coffee-and-cat-eyes-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
