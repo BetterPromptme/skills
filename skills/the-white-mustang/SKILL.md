@@ -1,14 +1,14 @@
 ---
 name: the-white-mustang
 description: This prompt instructs an image-generation model to produce a photorealistic, 1970s-inspired cinematic portrait of a specific woman, keeping her face, hair, proportions, and skin tone identical to a provided reference while placing her in a golden-hour field scene leaning out of a classic silver coupe. It specifies wardrobe, pose, expression, lighting, lens/film characteristics, color grading, and vehicle/environment details to achieve a warm sepia, fashion-editorial mood of solitary vintage glamour, resulting in a high-resolution frame-like still with shallow depth of field, subtle film grain, and grounded realism.
-skillVersionId: 019a56f2-d96f-74ce-83b9-b267ffbd9dc1
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to produce a photorealistic, 1970s-inspired cinematic portrait of a specific woman, keeping her face, hair, proportions, and skin tone identical to a provided reference while placing her in a golden-hour field scene leaning out of a classic silver coupe. It specifies wardrobe, pose, expression, lighting, lens/film characteristics, color grading, and vehicle/environment details to achieve a warm sepia, fashion-editorial mood of solitary vintage glamour, resulting in a high-resolution frame-like still with shallow depth of field, subtle film grain, and grounded realism.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a56f2-d96f-74ce-83b9-b267ffbd9dc1`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-white-mustang`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a56f2-d96f-74ce-83b9-b267ffbd9dc1 \
+betterprompt generate the-white-mustang \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a56f2-d96f-74ce-83b9-b267ffbd9dc1 \
+betterprompt generate the-white-mustang \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
