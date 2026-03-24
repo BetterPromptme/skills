@@ -1,14 +1,14 @@
 ---
 name: generate-50-personalized-english-vocabulary-words
 description: This prompt asks the AI to act as an English instructor and generate 50 two-sided flashcards tailored to the learner’s level, goal, and chosen topic focus. The flashcards’ fronts present key English concepts or terms, and the backs provide brief explanations plus a memorable image idea or example to aid recall. The outcome is a curated set of basic-to-intermediate English learning cards designed for efficient study and preparation for the specified purpose.
-skillVersionId: 01975428-bf51-739a-bf18-38cd18fed90b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to act as an English instructor and generate 50 two-sided flashcards tailored to the learner’s level, goal, and chosen topic focus. The flashcards’ fronts present key English concepts or terms, and the backs provide brief explanations plus a memorable image idea or example to aid recall. The outcome is a curated set of basic-to-intermediate English learning cards designed for efficient study and preparation for the specified purpose.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01975428-bf51-739a-bf18-38cd18fed90b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `generate-50-personalized-english-vocabulary-words`).
 
 Command form:
 
 ```bash
-betterprompt generate 01975428-bf51-739a-bf18-38cd18fed90b \
+betterprompt generate generate-50-personalized-english-vocabulary-words \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01975428-bf51-739a-bf18-38cd18fed90b \
+betterprompt generate generate-50-personalized-english-vocabulary-words \
   --input level=<value> \
   --input topic=<value> \
   --input purpose=<value> \
