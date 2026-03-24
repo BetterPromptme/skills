@@ -1,14 +1,14 @@
 ---
 name: universal-character-creator
 description: This prompt guides an AI image model to generate a hyper-realistic, cinematic studio portrait of a human character using user-specified traits (e.g., nationality/ethnicity, gender identity, age, framing, expression, and outfit), producing a natural, professionally lit casting-photo look. It enforces a softly lit warm off-white background, centered composition, accurate anatomy, and subtle emotional expression while prohibiting text, logos, props, stylization, fantasy elements, and unsafe or controversial content, resulting in a clean, timeless 4K portrait aligned to strict realism and safety constraints.
-skillVersionId: 0199cbfc-e0d1-7e9f-aecf-2e96acd3892b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt guides an AI image model to generate a hyper-realistic, cinematic studio portrait of a human character using user-specified traits (e.g., nationality/ethnicity, gender identity, age, framing, expression, and outfit), producing a natural, professionally lit casting-photo look. It enforces a softly lit warm off-white background, centered composition, accurate anatomy, and subtle emotional expression while prohibiting text, logos, props, stylization, fantasy elements, and unsafe or controversial content, resulting in a clean, timeless 4K portrait aligned to strict realism and safety constraints.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199cbfc-e0d1-7e9f-aecf-2e96acd3892b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `universal-character-creator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199cbfc-e0d1-7e9f-aecf-2e96acd3892b \
+betterprompt generate universal-character-creator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199cbfc-e0d1-7e9f-aecf-2e96acd3892b \
+betterprompt generate universal-character-creator \
   --input age=middle-aged \
   --input gender=male/female \
   --input 'outfit=casual shirt and jeans' \
