@@ -1,14 +1,14 @@
 ---
 name: playful-pastel-sock
 description: This prompt instructs an AI image generator to produce a centered 3D render of a cute, rounded toy-like object inspired by a specified emoji, styled as soft plasticine/clay with fine groove textures, pastel colors, and diffused studio lighting, placed against a smooth minimal pastel-blue background. The result is a clean, Pixar-like cartoon aesthetic depiction of the object only—no face or anthropomorphic features—designed to feel playful and adorable.
-skillVersionId: 0197a5bb-f5a7-7c6b-9ed5-0038b30003ea
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a centered 3D render of a cute, rounded toy-like object inspired by a specified emoji, styled as soft plasticine/clay with fine groove textures, pastel colors, and diffused studio lighting, placed against a smooth minimal pastel-blue background. The result is a clean, Pixar-like cartoon aesthetic depiction of the object only—no face or anthropomorphic features—designed to feel playful and adorable.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197a5bb-f5a7-7c6b-9ed5-0038b30003ea`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `playful-pastel-sock`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197a5bb-f5a7-7c6b-9ed5-0038b30003ea \
+betterprompt generate playful-pastel-sock \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197a5bb-f5a7-7c6b-9ed5-0038b30003ea \
+betterprompt generate playful-pastel-sock \
   --input This_emoji=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
