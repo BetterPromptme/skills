@@ -1,14 +1,14 @@
 ---
 name: strategic-gift-and-packaging-generator-for-business-occasions
 description: This prompt instructs the AI to act as a senior brand gifting strategist and, using details about an occasion, a company objective, and a target audience (with optional industry context), produce a cohesive, strategic gift experience. The outcome is a tailored recommendation that includes a creative gift idea, a branded gift box and unboxing concept, and a clear rationale linking the experience to the brand’s values and the desired emotional impact on recipients.
-skillVersionId: 0197edf3-cf0b-73c9-a7f9-dfe15209b05b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a senior brand gifting strategist and, using details about an occasion, a company objective, and a target audience (with optional industry context), produce a cohesive, strategic gift experience. The outcome is a tailored recommendation that includes a creative gift idea, a branded gift box and unboxing concept, and a clear rationale linking the experience to the brand’s values and the desired emotional impact on recipients.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -67,12 +67,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197edf3-cf0b-73c9-a7f9-dfe15209b05b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `strategic-gift-and-packaging-generator-for-business-occasions`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197edf3-cf0b-73c9-a7f9-dfe15209b05b \
+betterprompt generate strategic-gift-and-packaging-generator-for-business-occasions \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -89,7 +89,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197edf3-cf0b-73c9-a7f9-dfe15209b05b \
+betterprompt generate strategic-gift-and-packaging-generator-for-business-occasions \
   --input 'Industry=tech, skincare, wellness, F&B' \
   --input 'Brand_Message=build emotional connection' \
   --input Target_audience=<value> \
