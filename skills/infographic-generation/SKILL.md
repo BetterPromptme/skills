@@ -1,14 +1,14 @@
 ---
 name: infographic-generation
 description: This prompt instructs the AI to act as a visual communication designer and infographic specialist, using provided content and placeholders to plan an infographic for a defined audience and aspect ratio. It requires a clear, modern, visually balanced layout with consistent typography, color, spacing, and hierarchy, emphasizing essential information and readability for digital use. The expected result is a production-ready infographic blueprint describing the overall structure, section breakdown, recommended visual types per section, and specific color/icon and styling guidance to support accurate final graphic creation.
-skillVersionId: 019ab8ef-f8a1-76be-a4ff-fabb3308644c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a visual communication designer and infographic specialist, using provided content and placeholders to plan an infographic for a defined audience and aspect ratio. It requires a clear, modern, visually balanced layout with consistent typography, color, spacing, and hierarchy, emphasizing essential information and readability for digital use. The expected result is a production-ready infographic blueprint describing the overall structure, section breakdown, recommended visual types per section, and specific color/icon and styling guidance to support accurate final graphic creation.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -67,12 +67,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ab8ef-f8a1-76be-a4ff-fabb3308644c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `infographic-generation`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ab8ef-f8a1-76be-a4ff-fabb3308644c \
+betterprompt generate infographic-generation \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -89,7 +89,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ab8ef-f8a1-76be-a4ff-fabb3308644c \
+betterprompt generate infographic-generation \
   --input Audience=<value> \
   --input Information=<value> \
   --input Aspect_ratio=9:16 \
