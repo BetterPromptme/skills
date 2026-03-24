@@ -1,14 +1,14 @@
 ---
 name: universal-jewelry
 description: This prompt instructs the AI to produce a 3–8 second, ultra-photorealistic 4K macro marketing video of a specified jewelry piece, using an uploaded reference image plus material, key design details, and a complementary background color to preserve accurate form and finish. The result is a luxury-style cinematic shot featuring shallow depth of field, physically realistic reflections and gemstone sparkle, and only subtle camera/object motion (e.g., slow pan or gentle rotation). It explicitly restricts the scene to the jewelry and its presentation surface—no humans, body parts, logos, text, or stylized/CGI-looking rendering—so the output resembles a professional high-end jewelry brand reel.
-skillVersionId: 0199e1a7-7c49-7332-9527-e3bf3a7c38dd
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to produce a 3–8 second, ultra-photorealistic 4K macro marketing video of a specified jewelry piece, using an uploaded reference image plus material, key design details, and a complementary background color to preserve accurate form and finish. The result is a luxury-style cinematic shot featuring shallow depth of field, physically realistic reflections and gemstone sparkle, and only subtle camera/object motion (e.g., slow pan or gentle rotation). It explicitly restricts the scene to the jewelry and its presentation surface—no humans, body parts, logos, text, or stylized/CGI-looking rendering—so the output resembles a professional high-end jewelry brand reel.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199e1a7-7c49-7332-9527-e3bf3a7c38dd`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `universal-jewelry`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199e1a7-7c49-7332-9527-e3bf3a7c38dd \
+betterprompt generate universal-jewelry \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -100,7 +100,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199e1a7-7c49-7332-9527-e3bf3a7c38dd \
+betterprompt generate universal-jewelry \
   --input 'material=18k white gold' \
   --input 'key_details=2-carat round brilliant diamond with pavé band' \
   --input 'background_color=Deep emerald green' \
