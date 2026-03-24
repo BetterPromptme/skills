@@ -1,14 +1,14 @@
 ---
 name: stadium-light-editorial
 description: This prompt directs an image-generation model to create a cinematic, low-angle long shot of a young woman on vivid green stadium seating in natural sunlight, styled in minimalist white sportswear against a clean blue sky. The intended outcome is a high-end editorial fashion photograph with 35mm film characteristics—vintage color tone, visible grain, gentle highlight roll-off, and strong contrast—producing a nostalgic, magazine-quality aesthetic.
-skillVersionId: 019c0db0-a34b-74e4-94a5-b3b799bd20bd
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation model to create a cinematic, low-angle long shot of a young woman on vivid green stadium seating in natural sunlight, styled in minimalist white sportswear against a clean blue sky. The intended outcome is a high-end editorial fashion photograph with 35mm film characteristics—vintage color tone, visible grain, gentle highlight roll-off, and strong contrast—producing a nostalgic, magazine-quality aesthetic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c0db0-a34b-74e4-94a5-b3b799bd20bd`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `stadium-light-editorial`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c0db0-a34b-74e4-94a5-b3b799bd20bd \
+betterprompt generate stadium-light-editorial \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c0db0-a34b-74e4-94a5-b3b799bd20bd \
+betterprompt generate stadium-light-editorial \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
