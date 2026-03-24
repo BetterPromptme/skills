@@ -1,14 +1,14 @@
 ---
 name: casual-daytime-car-selfie
 description: This prompt directs an image generator to produce a candid, phone-style, chest-up selfie of a casually styled person sitting in the driver’s seat of a modern car with the sunroof open in bright natural daylight, sipping a clear matcha latte through a straw while looking at the camera. It specifies wardrobe, grooming, accessories, framing, lighting, and background details (palm trees, blue sky, soft urban greenery blur) to ensure a realistic, unposed lifestyle moment, and it explicitly avoids studio polish, heavy retouching, full-body framing, or artificial-looking elements.
-skillVersionId: 019b3563-3059-7268-ab42-24c9987b6aea
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image generator to produce a candid, phone-style, chest-up selfie of a casually styled person sitting in the driver’s seat of a modern car with the sunroof open in bright natural daylight, sipping a clear matcha latte through a straw while looking at the camera. It specifies wardrobe, grooming, accessories, framing, lighting, and background details (palm trees, blue sky, soft urban greenery blur) to ensure a realistic, unposed lifestyle moment, and it explicitly avoids studio polish, heavy retouching, full-body framing, or artificial-looking elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b3563-3059-7268-ab42-24c9987b6aea`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `casual-daytime-car-selfie`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b3563-3059-7268-ab42-24c9987b6aea \
+betterprompt generate casual-daytime-car-selfie \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b3563-3059-7268-ab42-24c9987b6aea \
+betterprompt generate casual-daytime-car-selfie \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
