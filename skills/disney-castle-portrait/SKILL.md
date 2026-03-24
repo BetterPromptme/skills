@@ -1,14 +1,14 @@
 ---
 name: disney-castle-portrait
 description: This prompt instructs the AI to use a provided photo of the user as a likeness reference and generate a high-resolution, photorealistic, Disney-inspired travel portrait of them seated confidently on a stone ledge in front of a Cinderella-like fairytale castle. It specifies configurable details such as outfit and hand gesture, along with default composition, lighting, mood, accessories, and framing requirements. The expected outcome is a bright, cinematic, social-media-ready vacation-style image that preserves the subject’s recognizable features while placing them in the themed landmark setting.
-skillVersionId: 019a3372-4d7c-7c35-954d-e25f3912261f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to use a provided photo of the user as a likeness reference and generate a high-resolution, photorealistic, Disney-inspired travel portrait of them seated confidently on a stone ledge in front of a Cinderella-like fairytale castle. It specifies configurable details such as outfit and hand gesture, along with default composition, lighting, mood, accessories, and framing requirements. The expected outcome is a bright, cinematic, social-media-ready vacation-style image that preserves the subject’s recognizable features while placing them in the themed landmark setting.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a3372-4d7c-7c35-954d-e25f3912261f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `disney-castle-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a3372-4d7c-7c35-954d-e25f3912261f \
+betterprompt generate disney-castle-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a3372-4d7c-7c35-954d-e25f3912261f \
+betterprompt generate disney-castle-portrait \
   --input 'outfit=ight blue and lavender color-block hoodie with Stitch print, paired with a denim mini skirt' \
   --input 'pose_gesture=holding up a peace sign with the left hand' \
   --image-input-url https://example.com/image1.png \
