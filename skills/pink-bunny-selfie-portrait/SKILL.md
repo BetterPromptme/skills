@@ -1,14 +1,14 @@
 ---
 name: pink-bunny-selfie-portrait
 description: This prompt instructs the AI to generate a hyper-realistic, close-up theme-park selfie portrait featuring a specific woman whose facial identity and natural features must be preserved exactly, while placing her in a vibrant park setting with warm golden-hour and decorative lighting, softly blurred character balloons in the background, and a precise pose, expression, outfit, and composition; the intended outcome is a high-detail, photorealistic portrait in a 3:4 or 4:5 ratio that matches the described cheerful atmosphere without stylization or facial alteration.
-skillVersionId: 019b0105-0540-7516-9b78-234b24d36a0a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a hyper-realistic, close-up theme-park selfie portrait featuring a specific woman whose facial identity and natural features must be preserved exactly, while placing her in a vibrant park setting with warm golden-hour and decorative lighting, softly blurred character balloons in the background, and a precise pose, expression, outfit, and composition; the intended outcome is a high-detail, photorealistic portrait in a 3:4 or 4:5 ratio that matches the described cheerful atmosphere without stylization or facial alteration.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b0105-0540-7516-9b78-234b24d36a0a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `pink-bunny-selfie-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b0105-0540-7516-9b78-234b24d36a0a \
+betterprompt generate pink-bunny-selfie-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b0105-0540-7516-9b78-234b24d36a0a \
+betterprompt generate pink-bunny-selfie-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
