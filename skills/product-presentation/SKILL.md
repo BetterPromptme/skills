@@ -1,14 +1,14 @@
 ---
 name: product-presentation
 description: This prompt defines a premium, filmic production blueprint for a short promotional video featuring the product from a provided reference image, specifying camera motion, lenses/filtration, lighting, grading, set design, talent/props, and sound. It culminates in an optimized 15-second, two-scene shot list that first delivers a high-end hero reveal and then a tactile in-use moment highlighting a key feature, yielding consistent visuals, controlled reflections, and a polished end frame with a clear logo and negative space for an end card.
-skillVersionId: 0199d290-3573-7cf8-a531-8936bff33c97
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt defines a premium, filmic production blueprint for a short promotional video featuring the product from a provided reference image, specifying camera motion, lenses/filtration, lighting, grading, set design, talent/props, and sound. It culminates in an optimized 15-second, two-scene shot list that first delivers a high-end hero reveal and then a tactile in-use moment highlighting a key feature, yielding consistent visuals, controlled reflections, and a polished end frame with a clear logo and negative space for an end card.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199d290-3573-7cf8-a531-8936bff33c97`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `product-presentation`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199d290-3573-7cf8-a531-8936bff33c97 \
+betterprompt generate product-presentation \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199d290-3573-7cf8-a531-8936bff33c97 \
+betterprompt generate product-presentation \
   --input feature=<value> \
   --input brand_color=<value> \
   --image-input-url https://example.com/image1.png \
