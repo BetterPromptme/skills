@@ -1,14 +1,14 @@
 ---
 name: birthday-studio-portrait
 description: This prompt instructs an image model to generate a square, high-resolution, realistic 3D scene featuring a large bold number based on a provided age value, with the digits filled with themed items like books, tech devices, sneakers, medals, and trophies. It also requires incorporating a person from an uploaded reference photo with matching facial likeness, hairstyle, outfit, and expression, posed leaning on and pointing to the numbers, set against a clean minimalist background with soft shadows for a modern look.
-skillVersionId: 01992c6b-f037-7c32-a601-9fbae2aea8cd
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a square, high-resolution, realistic 3D scene featuring a large bold number based on a provided age value, with the digits filled with themed items like books, tech devices, sneakers, medals, and trophies. It also requires incorporating a person from an uploaded reference photo with matching facial likeness, hairstyle, outfit, and expression, posed leaning on and pointing to the numbers, set against a clean minimalist background with soft shadows for a modern look.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01992c6b-f037-7c32-a601-9fbae2aea8cd`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `birthday-studio-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 01992c6b-f037-7c32-a601-9fbae2aea8cd \
+betterprompt generate birthday-studio-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01992c6b-f037-7c32-a601-9fbae2aea8cd \
+betterprompt generate birthday-studio-portrait \
   --input age=29 \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
