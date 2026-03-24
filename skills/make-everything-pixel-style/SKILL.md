@@ -1,14 +1,14 @@
 ---
 name: make-everything-pixel-style
 description: This prompt instructs an AI image generator to use the uploaded image as a reference and recreate its main subject as a stylized 16-bit-era pixel-art sprite, simplifying shapes into clear pixel blocks with bold outlines, vibrant high-contrast colors, and a cute retro-futuristic arcade aesthetic. The intended result is a playful, surreal, non-photoreal pixel illustration placed on a pure black background in a 1:1 format, optimized for a 90s-style retro-sci-fi look.
-skillVersionId: 0196f194-d5bc-784e-bb26-e50cf778dc0b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to use the uploaded image as a reference and recreate its main subject as a stylized 16-bit-era pixel-art sprite, simplifying shapes into clear pixel blocks with bold outlines, vibrant high-contrast colors, and a cute retro-futuristic arcade aesthetic. The intended result is a playful, surreal, non-photoreal pixel illustration placed on a pure black background in a 1:1 format, optimized for a 90s-style retro-sci-fi look.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f194-d5bc-784e-bb26-e50cf778dc0b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `make-everything-pixel-style`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f194-d5bc-784e-bb26-e50cf778dc0b \
+betterprompt generate make-everything-pixel-style \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f194-d5bc-784e-bb26-e50cf778dc0b \
+betterprompt generate make-everything-pixel-style \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"size":0,"quality":0},"quality":"low"}'
