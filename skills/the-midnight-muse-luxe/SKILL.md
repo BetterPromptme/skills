@@ -1,14 +1,14 @@
 ---
 name: the-midnight-muse-luxe
 description: This prompt instructs an image-generation or photo-editing system to produce a high-resolution, photorealistic vertical rooftop night dining portrait of a young woman at an upscale poolside restaurant, specifying precise composition, pose, wardrobe, props, environment, and warm ambient lighting to achieve a romantic luxury editorial look. It also includes strict identity-preservation rules to keep the subject’s facial structure, hair, and natural skin texture unchanged and to avoid beautification filters, resulting in a realistic, intimate evening scene with softly blurred city lights and candlelit atmosphere.
-skillVersionId: 019c51b5-8002-7099-a91a-eba230349478
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation or photo-editing system to produce a high-resolution, photorealistic vertical rooftop night dining portrait of a young woman at an upscale poolside restaurant, specifying precise composition, pose, wardrobe, props, environment, and warm ambient lighting to achieve a romantic luxury editorial look. It also includes strict identity-preservation rules to keep the subject’s facial structure, hair, and natural skin texture unchanged and to avoid beautification filters, resulting in a realistic, intimate evening scene with softly blurred city lights and candlelit atmosphere.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c51b5-8002-7099-a91a-eba230349478`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-midnight-muse-luxe`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c51b5-8002-7099-a91a-eba230349478 \
+betterprompt generate the-midnight-muse-luxe \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c51b5-8002-7099-a91a-eba230349478 \
+betterprompt generate the-midnight-muse-luxe \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
