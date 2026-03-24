@@ -1,14 +1,14 @@
 ---
 name: victorias-secret-backstage-angel
 description: This prompt instructs an image-generation/editing system to produce a photorealistic, high-fashion backstage portrait just before a runway show, using a waist-up diagonal composition with a makeup artist’s hands applying lipstick, crystal-embroidered lingerie styling, and feathered wings in a dim backstage environment. It specifies flash-driven editorial lighting, color/texture fidelity, and a sensual, cinematic mood while requiring the subject’s face, hair, and expression to remain identical to the provided input image. The intended outcome is an 8K, 4:5 portrait that convincingly matches a luxury backstage fashion aesthetic with sharp facial detail, sparkling materials, and realistic depth-of-field.
-skillVersionId: 019aa5d7-6a62-70cf-a856-851df252756c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation/editing system to produce a photorealistic, high-fashion backstage portrait just before a runway show, using a waist-up diagonal composition with a makeup artist’s hands applying lipstick, crystal-embroidered lingerie styling, and feathered wings in a dim backstage environment. It specifies flash-driven editorial lighting, color/texture fidelity, and a sensual, cinematic mood while requiring the subject’s face, hair, and expression to remain identical to the provided input image. The intended outcome is an 8K, 4:5 portrait that convincingly matches a luxury backstage fashion aesthetic with sharp facial detail, sparkling materials, and realistic depth-of-field.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019aa5d7-6a62-70cf-a856-851df252756c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `victorias-secret-backstage-angel`).
 
 Command form:
 
 ```bash
-betterprompt generate 019aa5d7-6a62-70cf-a856-851df252756c \
+betterprompt generate victorias-secret-backstage-angel \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019aa5d7-6a62-70cf-a856-851df252756c \
+betterprompt generate victorias-secret-backstage-angel \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"9:16","resolution":"2K"}'
