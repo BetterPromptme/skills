@@ -1,14 +1,14 @@
 ---
 name: soft-jelly-3d-icon-style-prompt
 description: This prompt directs an image-generation system to create a consistent set of modern 1:1 jelly-like 3D icons for UI use, specifying materials, layered composition with floating internal elements, a cohesive pastel color palette, soft studio lighting, and a neutral background to ensure clean depth, contrast, and uniform style across the icon pack at high resolution.
-skillVersionId: 01983f45-50fd-7371-a91f-c14dd2e274f9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation system to create a consistent set of modern 1:1 jelly-like 3D icons for UI use, specifying materials, layered composition with floating internal elements, a cohesive pastel color palette, soft studio lighting, and a neutral background to ensure clean depth, contrast, and uniform style across the icon pack at high resolution.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01983f45-50fd-7371-a91f-c14dd2e274f9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `soft-jelly-3d-icon-style-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 01983f45-50fd-7371-a91f-c14dd2e274f9 \
+betterprompt generate soft-jelly-3d-icon-style-prompt \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01983f45-50fd-7371-a91f-c14dd2e274f9 \
+betterprompt generate soft-jelly-3d-icon-style-prompt \
   --input YOUR_ICON_NAME_HERE=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
