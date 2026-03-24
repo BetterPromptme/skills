@@ -1,14 +1,14 @@
 ---
 name: mini-wax-figure-collectible-from-reference-image
 description: This prompt instructs the AI to act as a professional 3D product designer and generate a CAD- and manufacturing-oriented design specification for a hyper-realistic mini wax-figure collectible based on a provided reference image, including the figure’s pose, outfit, clear display stand, background scene, and a matching branded packaging box with a specified title and logo. The expected outcome is a prototype-ready, manufacturable 3D product concept with defined geometry deliverables, materials, tolerances, assembly/manufacturing constraints, and rationale/tradeoffs, alongside guidance for producing high-resolution product-photography style renders; if required dimensions or manufacturing targets are missing, the AI must request exact specifications or defer to engineering/testing.
-skillVersionId: 0199183e-595a-75aa-b6cf-739861be2ebc
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a professional 3D product designer and generate a CAD- and manufacturing-oriented design specification for a hyper-realistic mini wax-figure collectible based on a provided reference image, including the figure’s pose, outfit, clear display stand, background scene, and a matching branded packaging box with a specified title and logo. The expected outcome is a prototype-ready, manufacturable 3D product concept with defined geometry deliverables, materials, tolerances, assembly/manufacturing constraints, and rationale/tradeoffs, alongside guidance for producing high-resolution product-photography style renders; if required dimensions or manufacturing targets are missing, the AI must request exact specifications or defer to engineering/testing.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -80,12 +80,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199183e-595a-75aa-b6cf-739861be2ebc`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `mini-wax-figure-collectible-from-reference-image`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199183e-595a-75aa-b6cf-739861be2ebc \
+betterprompt generate mini-wax-figure-collectible-from-reference-image \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -106,7 +106,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199183e-595a-75aa-b6cf-739861be2ebc \
+betterprompt generate mini-wax-figure-collectible-from-reference-image \
   --input POSE=<value> \
   --input OUTFIT=<value> \
   --input BOX_TITLE=<value> \
