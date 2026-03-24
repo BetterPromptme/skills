@@ -1,14 +1,14 @@
 ---
 name: fantasy-wildflower-portrait
 description: This prompt instructs an image-generation workflow to produce a vertical, ultra-detailed cinematic fashion editorial portrait that keeps the subject’s facial identity exactly matching a provided reference while transforming everything else into a romantic haute couture fantasy scene. The result is a low-angle medium shot in a vibrant wildflower field at golden hour, featuring wind-blown hair with subtle petals, a pale cream layered tulle-and-feather gown with blended floral accents, shallow depth of field with blurred foreground flowers, and a dreamy Vogue-style composition—without any added characters, text, or stylistic deviations such as sci-fi, horror, or illustration.
-skillVersionId: 019a9a7a-939c-7778-8900-2ef9e8b782b6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation workflow to produce a vertical, ultra-detailed cinematic fashion editorial portrait that keeps the subject’s facial identity exactly matching a provided reference while transforming everything else into a romantic haute couture fantasy scene. The result is a low-angle medium shot in a vibrant wildflower field at golden hour, featuring wind-blown hair with subtle petals, a pale cream layered tulle-and-feather gown with blended floral accents, shallow depth of field with blurred foreground flowers, and a dreamy Vogue-style composition—without any added characters, text, or stylistic deviations such as sci-fi, horror, or illustration.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a9a7a-939c-7778-8900-2ef9e8b782b6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `fantasy-wildflower-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a9a7a-939c-7778-8900-2ef9e8b782b6 \
+betterprompt generate fantasy-wildflower-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a9a7a-939c-7778-8900-2ef9e8b782b6 \
+betterprompt generate fantasy-wildflower-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
