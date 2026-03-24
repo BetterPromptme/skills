@@ -1,14 +1,14 @@
 ---
 name: product-mockup-for-marketing
 description: This prompt instructs the AI to create a professional, on-brand studio-style product mockup image by inserting the specified product, brand logo, and packaging type into a controlled scene with defined background, lighting, and subtle visual effects, optimized for clarity and commercial shelf impact. The expected outcome is a sharp, natural-textured, high-resolution, color-accurate visual suitable for the stated marketing use case (e.g., e-commerce or ads), while also calling for manufacturable packaging considerations and requesting missing brand or print specifications when needed.
-skillVersionId: 01990ef8-942a-72bd-86cf-62584ffdf54a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a professional, on-brand studio-style product mockup image by inserting the specified product, brand logo, and packaging type into a controlled scene with defined background, lighting, and subtle visual effects, optimized for clarity and commercial shelf impact. The expected outcome is a sharp, natural-textured, high-resolution, color-accurate visual suitable for the stated marketing use case (e.g., e-commerce or ads), while also calling for manufacturable packaging considerations and requesting missing brand or print specifications when needed.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01990ef8-942a-72bd-86cf-62584ffdf54a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `product-mockup-for-marketing`).
 
 Command form:
 
 ```bash
-betterprompt generate 01990ef8-942a-72bd-86cf-62584ffdf54a \
+betterprompt generate product-mockup-for-marketing \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -94,7 +94,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01990ef8-942a-72bd-86cf-62584ffdf54a \
+betterprompt generate product-mockup-for-marketing \
   --input USE_CASE=<value> \
   --input BRAND_LOGO=<value> \
   --input PRODUCT_ITEM=<value> \
