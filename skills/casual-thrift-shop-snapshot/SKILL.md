@@ -1,14 +1,14 @@
 ---
 name: casual-thrift-shop-snapshot
 description: This prompt instructs an image-generation model to produce a candid, mid-thigh-up fashion photo taken inside an industrial, thrift-style clothing store, with warm in-store lighting, visible racks and accessories, and a natural chest-level, straight-on framing that feels like a real moment captured by someone nearby. It specifies an unposed pose and distracted expression, and details two wardrobe variants (female or male) featuring an oversized off-shoulder graphic sweatshirt, neutral streetwear styling, a low-worn beige cap, and a small accent-color bag. The expected outcome is an authentic, urban retail lifestyle image that avoids studio polish, dramatic posing, artificial lighting, heavy retouching, or full-body composition.
-skillVersionId: 019b35d4-cb4d-74d0-99b9-0e911231cf11
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to produce a candid, mid-thigh-up fashion photo taken inside an industrial, thrift-style clothing store, with warm in-store lighting, visible racks and accessories, and a natural chest-level, straight-on framing that feels like a real moment captured by someone nearby. It specifies an unposed pose and distracted expression, and details two wardrobe variants (female or male) featuring an oversized off-shoulder graphic sweatshirt, neutral streetwear styling, a low-worn beige cap, and a small accent-color bag. The expected outcome is an authentic, urban retail lifestyle image that avoids studio polish, dramatic posing, artificial lighting, heavy retouching, or full-body composition.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b35d4-cb4d-74d0-99b9-0e911231cf11`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `casual-thrift-shop-snapshot`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b35d4-cb4d-74d0-99b9-0e911231cf11 \
+betterprompt generate casual-thrift-shop-snapshot \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b35d4-cb4d-74d0-99b9-0e911231cf11 \
+betterprompt generate casual-thrift-shop-snapshot \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
