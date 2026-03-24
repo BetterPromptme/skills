@@ -1,14 +1,14 @@
 ---
 name: product-spec-generator
 description: This prompt instructs the AI to produce a structured feature specification document for a proposed product feature, using provided inputs such as target users, key functionalities, technical considerations, and estimated development effort. The resulting output is a clear, implementation-ready spec organized into standard product and engineering sections—overview, goals with success metrics, user stories, acceptance criteria mapped to those stories, a high-level technical design, and future considerations—so developers can begin building with aligned requirements and scope.
-skillVersionId: 0197a540-5aed-774f-bb6a-fc868cae4405
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to produce a structured feature specification document for a proposed product feature, using provided inputs such as target users, key functionalities, technical considerations, and estimated development effort. The resulting output is a clear, implementation-ready spec organized into standard product and engineering sections—overview, goals with success metrics, user stories, acceptance criteria mapped to those stories, a high-level technical design, and future considerations—so developers can begin building with aligned requirements and scope.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197a540-5aed-774f-bb6a-fc868cae4405`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `product-spec-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197a540-5aed-774f-bb6a-fc868cae4405 \
+betterprompt generate product-spec-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197a540-5aed-774f-bb6a-fc868cae4405 \
+betterprompt generate product-spec-generator \
   --input 'feature_idea=Shared Notes' \
   --input 'target_users=Remote workers' \
   --input development_effort=30 \
