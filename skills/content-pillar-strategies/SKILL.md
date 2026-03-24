@@ -1,14 +1,14 @@
 ---
 name: content-pillar-strategies
 description: This prompt instructs the AI to act as a content marketing strategist and build a scalable content pillar strategy for a specified product or service using five pillar frameworks (brand objectives, customer journey, expertise level, target audience segments, and content themes). The outcome is a structured set of 15 broad pillar topics (three per framework), each with short descriptions, multiple reusable content angles, example content assets, and a summarized table, plus a brief implementation guide recommending channel mix, content allocation, and metrics—making clear assumptions if key inputs are missing.
-skillVersionId: 0198bbf8-2e71-716d-9007-dcd7814b4c5b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a content marketing strategist and build a scalable content pillar strategy for a specified product or service using five pillar frameworks (brand objectives, customer journey, expertise level, target audience segments, and content themes). The outcome is a structured set of 15 broad pillar topics (three per framework), each with short descriptions, multiple reusable content angles, example content assets, and a summarized table, plus a brief implementation guide recommending channel mix, content allocation, and metrics—making clear assumptions if key inputs are missing.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -76,12 +76,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198bbf8-2e71-716d-9007-dcd7814b4c5b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `content-pillar-strategies`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198bbf8-2e71-716d-9007-dcd7814b4c5b \
+betterprompt generate content-pillar-strategies \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198bbf8-2e71-716d-9007-dcd7814b4c5b \
+betterprompt generate content-pillar-strategies \
   --input 'Product=AI Prompt Marketplace' \
   --input 'Competitors=PromptBase; PromptHero; FlowGPT; AIPRM; Promptist' \
   --input 'Key_Message=Key Message = Prompt is not just a command, it’s an asset. BetterPrompt helps you unlock its value.  Emotion = Trust + Empowerment + Growth.' \
