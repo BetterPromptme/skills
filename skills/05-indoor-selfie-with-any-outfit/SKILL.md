@@ -1,14 +1,14 @@
 ---
 name: 05-indoor-selfie-with-any-outfit
 description: This prompt instructs an AI image generator to produce a photorealistic 4:5 indoor portrait that looks like a casual handheld selfie taken with an iPhone 17 Pro’s 0.5x ultra-wide back camera from a slightly overhead, downward-tilted angle. It uses a provided reference image to match the subject’s facial likeness, skin tone, and proportions, applies a user-specified outfit, and stages the scene with specific cozy room props, warm low-light realism, and subtle grain while avoiding fisheye distortion or stylized effects. The intended outcome is an authentic-looking wide-angle back-camera selfie that includes the subject’s extended arm and phone, upper body and partial legs, and the detailed background elements for a playful yet slightly mysterious everyday atmosphere.
-skillVersionId: 019a29a3-da58-7d3b-8252-5fd58b83a802
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a photorealistic 4:5 indoor portrait that looks like a casual handheld selfie taken with an iPhone 17 Pro’s 0.5x ultra-wide back camera from a slightly overhead, downward-tilted angle. It uses a provided reference image to match the subject’s facial likeness, skin tone, and proportions, applies a user-specified outfit, and stages the scene with specific cozy room props, warm low-light realism, and subtle grain while avoiding fisheye distortion or stylized effects. The intended outcome is an authentic-looking wide-angle back-camera selfie that includes the subject’s extended arm and phone, upper body and partial legs, and the detailed background elements for a playful yet slightly mysterious everyday atmosphere.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a29a3-da58-7d3b-8252-5fd58b83a802`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `05-indoor-selfie-with-any-outfit`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a29a3-da58-7d3b-8252-5fd58b83a802 \
+betterprompt generate 05-indoor-selfie-with-any-outfit \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a29a3-da58-7d3b-8252-5fd58b83a802 \
+betterprompt generate 05-indoor-selfie-with-any-outfit \
   --input 'outfit=Warm knit top with plaid skirt and soft textures' \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
