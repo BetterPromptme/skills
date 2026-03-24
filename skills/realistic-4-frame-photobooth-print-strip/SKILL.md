@@ -1,14 +1,14 @@
 ---
 name: realistic-4-frame-photobooth-print-strip
 description: This prompt instructs the AI to act as a professional photobooth-strip photographer and produce a realistic, print-style vertical strip featuring a specified person or character in four evenly spaced frames, each with a distinct playful pose or expression, all shot with consistent lighting, composition, background, and photo style. It also directs the AI to apply client-chosen border colors and frame elements, add authentic photobooth print cues (clean margins, glossy texture, and natural shadows), and maintain a client-facing workflow mindset—preserving skin tones, respecting consent and copyrights, and prompting for missing event specs or approvals to ensure a cohesive, shareable, print/web-ready final strip.
-skillVersionId: 01991419-e69d-7166-9798-50c35e5bc5a6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a professional photobooth-strip photographer and produce a realistic, print-style vertical strip featuring a specified person or character in four evenly spaced frames, each with a distinct playful pose or expression, all shot with consistent lighting, composition, background, and photo style. It also directs the AI to apply client-chosen border colors and frame elements, add authentic photobooth print cues (clean margins, glossy texture, and natural shadows), and maintain a client-facing workflow mindset—preserving skin tones, respecting consent and copyrights, and prompting for missing event specs or approvals to ensure a cohesive, shareable, print/web-ready final strip.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -82,12 +82,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01991419-e69d-7166-9798-50c35e5bc5a6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `realistic-4-frame-photobooth-print-strip`).
 
 Command form:
 
 ```bash
-betterprompt generate 01991419-e69d-7166-9798-50c35e5bc5a6 \
+betterprompt generate realistic-4-frame-photobooth-print-strip \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -108,7 +108,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01991419-e69d-7166-9798-50c35e5bc5a6 \
+betterprompt generate realistic-4-frame-photobooth-print-strip \
   --input frame_color=<value> \
   --input photo_style=<value> \
   --input frame_elements=<value> \
