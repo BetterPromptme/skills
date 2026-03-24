@@ -1,14 +1,14 @@
 ---
 name: blooming-reverie-bathtub
 description: This prompt instructs the AI to generate an 8K photorealistic, fine-art, fairy-tale portrait of a real person reclining diagonally in a glossy white bathtub overflowing with lush pastel flowers, lit by softly diffused sunlight through window blinds in a green, botanical interior. It specifies precise composition, pose options, wardrobe, lighting temperature, color palette, lens look, and atmosphere to achieve a serene cinematic softness. The intended outcome is a tranquil, ethereal yet physically plausible image where the subject’s identity is preserved exactly as in the reference photo, with no changes to facial structure, expression, proportions, or skin tone.
-skillVersionId: 019a32f5-a788-7ec6-9b53-7fd2bac4459d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate an 8K photorealistic, fine-art, fairy-tale portrait of a real person reclining diagonally in a glossy white bathtub overflowing with lush pastel flowers, lit by softly diffused sunlight through window blinds in a green, botanical interior. It specifies precise composition, pose options, wardrobe, lighting temperature, color palette, lens look, and atmosphere to achieve a serene cinematic softness. The intended outcome is a tranquil, ethereal yet physically plausible image where the subject’s identity is preserved exactly as in the reference photo, with no changes to facial structure, expression, proportions, or skin tone.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a32f5-a788-7ec6-9b53-7fd2bac4459d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `blooming-reverie-bathtub`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a32f5-a788-7ec6-9b53-7fd2bac4459d \
+betterprompt generate blooming-reverie-bathtub \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a32f5-a788-7ec6-9b53-7fd2bac4459d \
+betterprompt generate blooming-reverie-bathtub \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
