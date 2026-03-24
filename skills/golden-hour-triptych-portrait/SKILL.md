@@ -1,14 +1,14 @@
 ---
 name: golden-hour-triptych-portrait
 description: This prompt instructs an image model to generate an 8K, photorealistic three-panel vertical triptych in a cinematic fashion-editorial style, depicting the same person from a provided reference standing in a golden-hour rapeseed field. It specifies consistent identity preservation (unchanged face and hair), wardrobe options by gender, precise framing and poses for each stacked frame (detail close-up, mid shot in the field, and flower-framed close-up), and unified natural backlit lighting with film-grain, warm Kodak-like color to produce a serene, nostalgic visual story across three frames.
-skillVersionId: 019a538b-fb91-76da-830c-2b49ffa39020
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate an 8K, photorealistic three-panel vertical triptych in a cinematic fashion-editorial style, depicting the same person from a provided reference standing in a golden-hour rapeseed field. It specifies consistent identity preservation (unchanged face and hair), wardrobe options by gender, precise framing and poses for each stacked frame (detail close-up, mid shot in the field, and flower-framed close-up), and unified natural backlit lighting with film-grain, warm Kodak-like color to produce a serene, nostalgic visual story across three frames.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a538b-fb91-76da-830c-2b49ffa39020`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `golden-hour-triptych-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a538b-fb91-76da-830c-2b49ffa39020 \
+betterprompt generate golden-hour-triptych-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a538b-fb91-76da-830c-2b49ffa39020 \
+betterprompt generate golden-hour-triptych-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
