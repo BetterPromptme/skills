@@ -1,14 +1,14 @@
 ---
 name: character-blueprint-generator
 description: This prompt instructs the AI to act as a character development specialist and create a richly layered fictional character based on a provided description. The result is a comprehensive character profile that explores psychology (motivations, fears, strengths, flaws), includes a detailed backstory and physical traits, and maps an emotional arc that supports the story’s broader narrative, aiming to produce a believable, resonant character who deepens the plot and engages readers.
-skillVersionId: 0197e337-1c48-74b2-8488-9f651ca3178a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a character development specialist and create a richly layered fictional character based on a provided description. The result is a comprehensive character profile that explores psychology (motivations, fears, strengths, flaws), includes a detailed backstory and physical traits, and maps an emotional arc that supports the story’s broader narrative, aiming to produce a believable, resonant character who deepens the plot and engages readers.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197e337-1c48-74b2-8488-9f651ca3178a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `character-blueprint-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197e337-1c48-74b2-8488-9f651ca3178a \
+betterprompt generate character-blueprint-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197e337-1c48-74b2-8488-9f651ca3178a \
+betterprompt generate character-blueprint-generator \
   --input character_description=<value> \
   --model gpt-4.1-mini \
   --options '{}'
