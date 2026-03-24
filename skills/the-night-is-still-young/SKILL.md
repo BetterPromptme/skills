@@ -1,14 +1,14 @@
 ---
 name: the-night-is-still-young
 description: This prompt instructs an image generator to create a vertical two-panel (top/bottom) cinematic nighttime portrait of a specific reference woman, preserving her exact facial identity, uniform, hair color/length, and overall styling, while varying only her gaze and emotional expression between panels. The intended outcome is a warm, dreamy, atmospheric close-up with consistent setting and composition across both frames, featuring soft backlighting with glowing bokeh, subtle floating particles, gentle hair movement, and filmic post-processing that maintains natural skin texture and avoids any added props, wardrobe changes, or harsh lighting artifacts.
-skillVersionId: 019a8134-38c0-7003-a38d-8217bc80d912
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a vertical two-panel (top/bottom) cinematic nighttime portrait of a specific reference woman, preserving her exact facial identity, uniform, hair color/length, and overall styling, while varying only her gaze and emotional expression between panels. The intended outcome is a warm, dreamy, atmospheric close-up with consistent setting and composition across both frames, featuring soft backlighting with glowing bokeh, subtle floating particles, gentle hair movement, and filmic post-processing that maintains natural skin texture and avoids any added props, wardrobe changes, or harsh lighting artifacts.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a8134-38c0-7003-a38d-8217bc80d912`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-night-is-still-young`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a8134-38c0-7003-a38d-8217bc80d912 \
+betterprompt generate the-night-is-still-young \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a8134-38c0-7003-a38d-8217bc80d912 \
+betterprompt generate the-night-is-still-young \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
