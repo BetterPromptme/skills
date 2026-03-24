@@ -1,14 +1,14 @@
 ---
 name: starry-mosaic-transform
 description: This prompt instructs the AI to transform the provided image into a vibrant mosaic-style reinterpretation reminiscent of an expressive night-sky painting, preserving the original scene’s composition while replacing its look with swirling motion, bold contours, glowing stars, and richly textured strokes. The result is a dreamy, magical artwork featuring a star-filled sky, dynamic lighting, and colorful abstract tile-like details with a stained-glass or pointillist feel.
-skillVersionId: 0197f845-2671-7fb9-9e3f-94e2fd758933
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to transform the provided image into a vibrant mosaic-style reinterpretation reminiscent of an expressive night-sky painting, preserving the original scene’s composition while replacing its look with swirling motion, bold contours, glowing stars, and richly textured strokes. The result is a dreamy, magical artwork featuring a star-filled sky, dynamic lighting, and colorful abstract tile-like details with a stained-glass or pointillist feel.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197f845-2671-7fb9-9e3f-94e2fd758933`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `starry-mosaic-transform`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197f845-2671-7fb9-9e3f-94e2fd758933 \
+betterprompt generate starry-mosaic-transform \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197f845-2671-7fb9-9e3f-94e2fd758933 \
+betterprompt generate starry-mosaic-transform \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
