@@ -1,14 +1,14 @@
 ---
 name: custom-collectible-plush-doll
 description: This prompt instructs an image-generation system to produce a realistic product-style photograph of a collectible plush doll modeled after a real person, matching the person’s hair, outfit, and expression, and presented inside bright retro packaging. The result is a warmly lit, high-quality boxed-toy photo featuring a specific box color with a clear window, a teal “Plush Doll” badge, repeated bold orange name text with icons, additional decorative icons, and visible soft fabric and embroidered details on the doll against a minimalist neutral background.
-skillVersionId: 0198500f-d3c8-7cd1-9ab5-e35a57e98a0f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce a realistic product-style photograph of a collectible plush doll modeled after a real person, matching the person’s hair, outfit, and expression, and presented inside bright retro packaging. The result is a warmly lit, high-quality boxed-toy photo featuring a specific box color with a clear window, a teal “Plush Doll” badge, repeated bold orange name text with icons, additional decorative icons, and visible soft fabric and embroidered details on the doll against a minimalist neutral background.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -75,12 +75,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198500f-d3c8-7cd1-9ab5-e35a57e98a0f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `custom-collectible-plush-doll`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198500f-d3c8-7cd1-9ab5-e35a57e98a0f \
+betterprompt generate custom-collectible-plush-doll \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -101,7 +101,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198500f-d3c8-7cd1-9ab5-e35a57e98a0f \
+betterprompt generate custom-collectible-plush-doll \
   --input Name=<value> \
   --input icon_to_decor=<value> \
   --input the_color_of_the_box=<value> \
