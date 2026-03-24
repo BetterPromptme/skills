@@ -1,14 +1,14 @@
 ---
 name: modern-muse-in-classical-halls
 description: This prompt instructs an image generation/editing model to produce a photorealistic, high-fashion editorial portrait using an uploaded face reference without altering the subject’s identity, placing her in a grand neoclassical interior on an upper-level balcony with a glass railing, styled in modern luxury tailoring (black leather trench, white shirt, tie, tailored shorts, sunglasses, minimal jewelry), and captured in a vertically framed, slightly low-angle composition with soft natural daylight, strong architectural symmetry, and shallow depth of field that keeps the subject sharp while the background figures remain subtly out of focus.
-skillVersionId: 019b921a-c9d0-721b-a4b1-707e901c12ec
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generation/editing model to produce a photorealistic, high-fashion editorial portrait using an uploaded face reference without altering the subject’s identity, placing her in a grand neoclassical interior on an upper-level balcony with a glass railing, styled in modern luxury tailoring (black leather trench, white shirt, tie, tailored shorts, sunglasses, minimal jewelry), and captured in a vertically framed, slightly low-angle composition with soft natural daylight, strong architectural symmetry, and shallow depth of field that keeps the subject sharp while the background figures remain subtly out of focus.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b921a-c9d0-721b-a4b1-707e901c12ec`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `modern-muse-in-classical-halls`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b921a-c9d0-721b-a4b1-707e901c12ec \
+betterprompt generate modern-muse-in-classical-halls \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b921a-c9d0-721b-a4b1-707e901c12ec \
+betterprompt generate modern-muse-in-classical-halls \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
