@@ -1,14 +1,14 @@
 ---
 name: my-snowman-and-me
 description: This prompt instructs the AI to create a photorealistic, softly cinematic winter triptych portrait: three vertically stacked panels depicting the same person consistently (including an unaltered face, hair, and proportions) in a snow-covered park with warm morning light and a nostalgic film-like color grade. Each panel is precisely defined with distinct framing, pose, and emotion—resting on the snow in a calm gaze, standing among rows of snowmen in quiet contentment, and sharing an intimate close moment beside a smaller snowman—resulting in one cohesive visual story with consistent styling, lighting, and output specifications for a high-resolution 9:16 composition.
-skillVersionId: 019a4e46-676f-734f-b28c-f3261c6577fe
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a photorealistic, softly cinematic winter triptych portrait: three vertically stacked panels depicting the same person consistently (including an unaltered face, hair, and proportions) in a snow-covered park with warm morning light and a nostalgic film-like color grade. Each panel is precisely defined with distinct framing, pose, and emotion—resting on the snow in a calm gaze, standing among rows of snowmen in quiet contentment, and sharing an intimate close moment beside a smaller snowman—resulting in one cohesive visual story with consistent styling, lighting, and output specifications for a high-resolution 9:16 composition.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a4e46-676f-734f-b28c-f3261c6577fe`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `my-snowman-and-me`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a4e46-676f-734f-b28c-f3261c6577fe \
+betterprompt generate my-snowman-and-me \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a4e46-676f-734f-b28c-f3261c6577fe \
+betterprompt generate my-snowman-and-me \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
