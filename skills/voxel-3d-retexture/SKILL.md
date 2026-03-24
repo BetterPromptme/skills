@@ -1,14 +1,14 @@
 ---
 name: voxel-3d-retexture
 description: This prompt instructs the AI to take the attached image and retexture it into a high-contrast voxel-style 3D render, applying hard semi-matte plastic materials with subtle gridline texture, simplified chunky block geometry, and studio lightbox lighting with short sharp shadows and mild edge highlights, then present the single centered object on a plain light-gray background at high resolution with a slightly angled 3D view using the specified color palette and accents.
-skillVersionId: 01979fef-8b2a-775c-a2e3-fee0e1d6949e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take the attached image and retexture it into a high-contrast voxel-style 3D render, applying hard semi-matte plastic materials with subtle gridline texture, simplified chunky block geometry, and studio lightbox lighting with short sharp shadows and mild edge highlights, then present the single centered object on a plain light-gray background at high resolution with a slightly angled 3D view using the specified color palette and accents.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01979fef-8b2a-775c-a2e3-fee0e1d6949e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `voxel-3d-retexture`).
 
 Command form:
 
 ```bash
-betterprompt generate 01979fef-8b2a-775c-a2e3-fee0e1d6949e \
+betterprompt generate voxel-3d-retexture \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01979fef-8b2a-775c-a2e3-fee0e1d6949e \
+betterprompt generate voxel-3d-retexture \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
