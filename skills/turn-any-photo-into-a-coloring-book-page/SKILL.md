@@ -1,14 +1,14 @@
 ---
 name: turn-any-photo-into-a-coloring-book-page
 description: El prompt pide transformar la imagen proporcionada en una ilustración tipo libro para colorear, manteniendo exactamente los elementos originales y convirtiéndolos en contornos negros finos, limpios y bien definidos sobre fondo blanco, con un estilo sencillo y amigable, sin sombras ni colores, dejando áreas claras y amplias para facilitar el coloreado.
-skillVersionId: 0197678a-a474-772b-8076-82dd31de588e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 El prompt pide transformar la imagen proporcionada en una ilustración tipo libro para colorear, manteniendo exactamente los elementos originales y convirtiéndolos en contornos negros finos, limpios y bien definidos sobre fondo blanco, con un estilo sencillo y amigable, sin sombras ni colores, dejando áreas claras y amplias para facilitar el coloreado.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197678a-a474-772b-8076-82dd31de588e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `turn-any-photo-into-a-coloring-book-page`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197678a-a474-772b-8076-82dd31de588e \
+betterprompt generate turn-any-photo-into-a-coloring-book-page \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197678a-a474-772b-8076-82dd31de588e \
+betterprompt generate turn-any-photo-into-a-coloring-book-page \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
