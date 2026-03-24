@@ -1,14 +1,14 @@
 ---
 name: prismatic-bioluminescent-fusion-series
 description: This prompt instructs an image-generation model to depict a prismatic, bioluminescent interpretation of a specified subject, combining organic, flowing translucent forms with holographic light effects. The result is a visually dynamic scene where undulating structures glow with rhythmic accents in two chosen colors, creating a futuristic, luminous fusion aesthetic.
-skillVersionId: 01984f44-19ab-77da-bdf6-e7d1a3598217
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to depict a prismatic, bioluminescent interpretation of a specified subject, combining organic, flowing translucent forms with holographic light effects. The result is a visually dynamic scene where undulating structures glow with rhythmic accents in two chosen colors, creating a futuristic, luminous fusion aesthetic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01984f44-19ab-77da-bdf6-e7d1a3598217`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `prismatic-bioluminescent-fusion-series`).
 
 Command form:
 
 ```bash
-betterprompt generate 01984f44-19ab-77da-bdf6-e7d1a3598217 \
+betterprompt generate prismatic-bioluminescent-fusion-series \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01984f44-19ab-77da-bdf6-e7d1a3598217 \
+betterprompt generate prismatic-bioluminescent-fusion-series \
   --input color1=<value> \
   --input color2=<value> \
   --input SUBJECT=<value> \
