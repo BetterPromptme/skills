@@ -8,7 +8,7 @@ compatibility: Requires betterprompt >= 0.1.0
 
 {{{whatItDoes}}}
 
-> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
