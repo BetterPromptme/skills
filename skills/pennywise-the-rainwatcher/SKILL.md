@@ -1,14 +1,14 @@
 ---
 name: pennywise-the-rainwatcher
 description: This prompt instructs an image model to generate a hyper-realistic, cinematic horror photograph in a rain-soaked park: a solitary person in a yellow raincoat sits on a wet bench lit by cold streetlight and phone glow, with a vivid red balloon hovering nearby and a blurred, ominous clown-like figure in the distant background. It specifies composition, lighting, color palette, depth of field, and mood to create quiet dread, while demanding strict identity fidelity to a provided reference face and keeping the background threat indistinct to maintain suspense.
-skillVersionId: 019a2ed3-2c08-7fc0-9622-20cfcae8ae7a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a hyper-realistic, cinematic horror photograph in a rain-soaked park: a solitary person in a yellow raincoat sits on a wet bench lit by cold streetlight and phone glow, with a vivid red balloon hovering nearby and a blurred, ominous clown-like figure in the distant background. It specifies composition, lighting, color palette, depth of field, and mood to create quiet dread, while demanding strict identity fidelity to a provided reference face and keeping the background threat indistinct to maintain suspense.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a2ed3-2c08-7fc0-9622-20cfcae8ae7a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `pennywise-the-rainwatcher`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a2ed3-2c08-7fc0-9622-20cfcae8ae7a \
+betterprompt generate pennywise-the-rainwatcher \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a2ed3-2c08-7fc0-9622-20cfcae8ae7a \
+betterprompt generate pennywise-the-rainwatcher \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
