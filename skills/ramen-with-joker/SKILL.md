@@ -1,14 +1,14 @@
 ---
 name: ramen-with-joker
 description: This prompt instructs an image model to generate an ultra-realistic, analog-flash, early-2000s bedroom snapshot in a 3:2 landscape frame, featuring the provided reference person seated cross-legged and teasing a comic-inspired Joker with a forkful of instant ramen, surrounded by period-accurate clutter and Y2K decor. It specifies camera/lens/film stock aesthetics, lighting mix, wardrobe, poses, props, and mood to achieve a gritty-yet-playful candid sleepover feel, while requiring the subject’s identity to remain exactly matched to the reference and the final output to read like a high-resolution Kodak Gold film scan with grain, flash artifacts, shallow depth of field, and an optional timestamp.
-skillVersionId: 019a2f58-c873-7634-92c3-98a650f69f85
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate an ultra-realistic, analog-flash, early-2000s bedroom snapshot in a 3:2 landscape frame, featuring the provided reference person seated cross-legged and teasing a comic-inspired Joker with a forkful of instant ramen, surrounded by period-accurate clutter and Y2K decor. It specifies camera/lens/film stock aesthetics, lighting mix, wardrobe, poses, props, and mood to achieve a gritty-yet-playful candid sleepover feel, while requiring the subject’s identity to remain exactly matched to the reference and the final output to read like a high-resolution Kodak Gold film scan with grain, flash artifacts, shallow depth of field, and an optional timestamp.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a2f58-c873-7634-92c3-98a650f69f85`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ramen-with-joker`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a2f58-c873-7634-92c3-98a650f69f85 \
+betterprompt generate ramen-with-joker \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a2f58-c873-7634-92c3-98a650f69f85 \
+betterprompt generate ramen-with-joker \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
