@@ -1,14 +1,14 @@
 ---
 name: zootopia-plush-store-portrait
 description: This prompt instructs an AI to generate a realistic, close-up upper-body photo of a real human child (girl or boy) in a brightly lit, cozy plush-toy store, with the person’s identity and core traits preserved. It requires choosing one of two themed setups—either Nick Wilde or Judy Hopps—where the child wears a large character plush hat, holds the matching plush, and stands before densely stocked shelves of both characters’ plush toys. The result is a vibrant, warm retail scene with a specific cute pose (finger to cheek), gentle expression, natural skin tones, and detailed fabric textures, while strictly avoiding identity changes, animation styles, character distortion, extra people, or surreal effects.
-skillVersionId: 019ac40c-8a95-7746-b2bb-aa5b8a54067d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate a realistic, close-up upper-body photo of a real human child (girl or boy) in a brightly lit, cozy plush-toy store, with the person’s identity and core traits preserved. It requires choosing one of two themed setups—either Nick Wilde or Judy Hopps—where the child wears a large character plush hat, holds the matching plush, and stands before densely stocked shelves of both characters’ plush toys. The result is a vibrant, warm retail scene with a specific cute pose (finger to cheek), gentle expression, natural skin tones, and detailed fabric textures, while strictly avoiding identity changes, animation styles, character distortion, extra people, or surreal effects.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ac40c-8a95-7746-b2bb-aa5b8a54067d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `zootopia-plush-store-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ac40c-8a95-7746-b2bb-aa5b8a54067d \
+betterprompt generate zootopia-plush-store-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ac40c-8a95-7746-b2bb-aa5b8a54067d \
+betterprompt generate zootopia-plush-store-portrait \
   --input Character_theme=<value> \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
