@@ -1,14 +1,14 @@
 ---
 name: diversify-like-a-pro
 description: This prompt instructs the AI to act as an experienced portfolio strategist and produce a structured, educational diversification blueprint for an experienced investor transitioning from a concentrated, single-industry portfolio to a multi-asset, multi-sector approach. Using the investor’s stated goals, risk tolerance, time horizon, sector interests, portfolio size range, and liquidity needs, the AI synthesizes the profile, explains concentration risks and the rationale for diversification, proposes example asset classes with risk/return context, provides sample target allocation ranges that sum to 100%, and outlines a generic, tax-aware implementation and monitoring plan, all preceded by a clear disclaimer that it is illustrative and not personalized financial advice.
-skillVersionId: 0197ee5f-f544-771c-9f63-7a98dd5c54b0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an experienced portfolio strategist and produce a structured, educational diversification blueprint for an experienced investor transitioning from a concentrated, single-industry portfolio to a multi-asset, multi-sector approach. Using the investor’s stated goals, risk tolerance, time horizon, sector interests, portfolio size range, and liquidity needs, the AI synthesizes the profile, explains concentration risks and the rationale for diversification, proposes example asset classes with risk/return context, provides sample target allocation ranges that sum to 100%, and outlines a generic, tax-aware implementation and monitoring plan, all preceded by a clear disclaimer that it is illustrative and not personalized financial advice.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197ee5f-f544-771c-9f63-7a98dd5c54b0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `diversify-like-a-pro`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197ee5f-f544-771c-9f63-7a98dd5c54b0 \
+betterprompt generate diversify-like-a-pro \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -94,7 +94,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197ee5f-f544-771c-9f63-7a98dd5c54b0 \
+betterprompt generate diversify-like-a-pro \
   --input Risk_Tolerance=<value> \
   --input Financial_Goals=<value> \
   --input Liquidity_Needs=<value> \
