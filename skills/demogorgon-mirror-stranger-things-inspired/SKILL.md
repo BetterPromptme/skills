@@ -1,14 +1,14 @@
 ---
 name: demogorgon-mirror-stranger-things-inspired
 description: This prompt instructs an image model to generate two photorealistic horror bathroom scenes—one with a woman in a white lace dress and one with a man in a white garment—each using an exact, undistorted reference face, posed front-facing at a sink with a fearful expression. In both versions, the mirror behind them shows a Demogorgon-like creature only in the reflection, aligned correctly with the subject and rendered in a cold, desaturated, cinematic style with grime/fog for tension. The intended result is a consistent, Stranger Things–inspired composition where the human remains clearly visible in the foreground while the monster dominates the mirror, with strict negatives preventing pose changes, face obstruction, stylization, or creature substitution.
-skillVersionId: 019ac429-e055-769f-8588-bb34946c9243
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate two photorealistic horror bathroom scenes—one with a woman in a white lace dress and one with a man in a white garment—each using an exact, undistorted reference face, posed front-facing at a sink with a fearful expression. In both versions, the mirror behind them shows a Demogorgon-like creature only in the reflection, aligned correctly with the subject and rendered in a cold, desaturated, cinematic style with grime/fog for tension. The intended result is a consistent, Stranger Things–inspired composition where the human remains clearly visible in the foreground while the monster dominates the mirror, with strict negatives preventing pose changes, face obstruction, stylization, or creature substitution.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ac429-e055-769f-8588-bb34946c9243`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `demogorgon-mirror-stranger-things-inspired`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ac429-e055-769f-8588-bb34946c9243 \
+betterprompt generate demogorgon-mirror-stranger-things-inspired \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ac429-e055-769f-8588-bb34946c9243 \
+betterprompt generate demogorgon-mirror-stranger-things-inspired \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
