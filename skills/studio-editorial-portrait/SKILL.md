@@ -1,14 +1,14 @@
 ---
 name: studio-editorial-portrait
 description: This prompt instructs an AI image generator to produce an 8K, 4:5 minimalist editorial studio beauty portrait that matches the provided reference subject exactly, preserving identical facial features, proportions, and expression. It specifies a tight head-and-shoulders composition against a mid-gray seamless background, a serene hand-to-cheek pose, and refined styling with a black minimalist outfit. It also defines soft, professional studio lighting, neutral grayscale color treatment, realistic skin texture, and restrained retouching so the final result reads as a high-end fashion magazine beauty photograph of the same person.
-skillVersionId: 019a33d8-aab6-7da6-b19f-4a48a170af81
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce an 8K, 4:5 minimalist editorial studio beauty portrait that matches the provided reference subject exactly, preserving identical facial features, proportions, and expression. It specifies a tight head-and-shoulders composition against a mid-gray seamless background, a serene hand-to-cheek pose, and refined styling with a black minimalist outfit. It also defines soft, professional studio lighting, neutral grayscale color treatment, realistic skin texture, and restrained retouching so the final result reads as a high-end fashion magazine beauty photograph of the same person.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a33d8-aab6-7da6-b19f-4a48a170af81`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `studio-editorial-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a33d8-aab6-7da6-b19f-4a48a170af81 \
+betterprompt generate studio-editorial-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a33d8-aab6-7da6-b19f-4a48a170af81 \
+betterprompt generate studio-editorial-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
