@@ -1,14 +1,14 @@
 ---
 name: startup-market-research-strategy-generator
 description: This prompt instructs the AI to act as a market research analyst and produce a structured, end-to-end market analysis for a startup using the provided industry, region, customer segment, offering, stage, and research goal as inputs. The expected outcome is a report covering market size and growth, trends and drivers, customer needs and barriers, competitive dynamics, opportunity areas, risks and regulatory hurdles, region-specific adoption factors, and a 3–5 year outlook, concluding with a clear judgment on whether the market represents a strong opportunity for the startup given its stage and objectives.
-skillVersionId: 0198c1a1-e2be-7de9-81f5-957e86f417c4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a market research analyst and produce a structured, end-to-end market analysis for a startup using the provided industry, region, customer segment, offering, stage, and research goal as inputs. The expected outcome is a report covering market size and growth, trends and drivers, customer needs and barriers, competitive dynamics, opportunity areas, risks and regulatory hurdles, region-specific adoption factors, and a 3–5 year outlook, concluding with a clear judgment on whether the market represents a strong opportunity for the startup given its stage and objectives.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198c1a1-e2be-7de9-81f5-957e86f417c4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `startup-market-research-strategy-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198c1a1-e2be-7de9-81f5-957e86f417c4 \
+betterprompt generate startup-market-research-strategy-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -92,7 +92,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198c1a1-e2be-7de9-81f5-957e86f417c4 \
+betterprompt generate startup-market-research-strategy-generator \
   --input stage=<value> \
   --input region=<value> \
   --input industry=<value> \
