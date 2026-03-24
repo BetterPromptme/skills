@@ -1,14 +1,14 @@
 ---
 name: create-a-visually-striking-product-poster-based-on-the-image-provided-by-the-user
 description: This prompt instructs an AI design system to turn a user-supplied product photo into a polished, market-ready advertising poster by making the product the visual centerpiece and enhancing it with theme-driven backgrounds, dramatic yet clear lighting, depth-building shadows/gradients, and brand-aligned storytelling. It also supports optional user parameters (style elements, mood, color palette, and audience/voice) to tailor the composition for high-impact use across both digital and print media.
-skillVersionId: 0196eb8f-ae18-7804-9c7d-4386046f2ffb
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI design system to turn a user-supplied product photo into a polished, market-ready advertising poster by making the product the visual centerpiece and enhancing it with theme-driven backgrounds, dramatic yet clear lighting, depth-building shadows/gradients, and brand-aligned storytelling. It also supports optional user parameters (style elements, mood, color palette, and audience/voice) to tailor the composition for high-impact use across both digital and print media.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -79,12 +79,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196eb8f-ae18-7804-9c7d-4386046f2ffb`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `create-a-visually-striking-product-poster-based-on-the-image-provided-by-the-user`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196eb8f-ae18-7804-9c7d-4386046f2ffb \
+betterprompt generate create-a-visually-striking-product-poster-based-on-the-image-provided-by-the-user \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -105,7 +105,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196eb8f-ae18-7804-9c7d-4386046f2ffb \
+betterprompt generate create-a-visually-striking-product-poster-based-on-the-image-provided-by-the-user \
   --input Color_theme=<value> \
   --input theme_or_elements=<value> \
   --input Mood_and_Atmosphere=<value> \
