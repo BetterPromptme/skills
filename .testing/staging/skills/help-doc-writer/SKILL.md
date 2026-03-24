@@ -1,14 +1,14 @@
 ---
 name: help-doc-writer
 description: This prompt instructs the AI to produce a concise, skimmable help center article outline in Markdown for a provided topic, using only details explicitly included in the accompanying context and otherwise using neutral, generic guidance with clarifying notes. The output emphasizes second-person, step-based procedures with bold UI labels, brief sections, result-verification lines after each flow, and includes pragmatic Troubleshooting and FAQ entries without inventing product specifics, plan limits, or screenshots.
-skillVersionId: 019a4f2e-f796-755e-8d3c-0bb6efef7f81
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to produce a concise, skimmable help center article outline in Markdown for a provided topic, using only details explicitly included in the accompanying context and otherwise using neutral, generic guidance with clarifying notes. The output emphasizes second-person, step-based procedures with bold UI labels, brief sections, result-verification lines after each flow, and includes pragmatic Troubleshooting and FAQ entries without inventing product specifics, plan limits, or screenshots.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a4f2e-f796-755e-8d3c-0bb6efef7f81`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `help-doc-writer`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a4f2e-f796-755e-8d3c-0bb6efef7f81 \
+betterprompt generate help-doc-writer \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a4f2e-f796-755e-8d3c-0bb6efef7f81 \
+betterprompt generate help-doc-writer \
   --input topic=<value> \
   --input additional_context=<value> \
   --model grok-4-fast \
