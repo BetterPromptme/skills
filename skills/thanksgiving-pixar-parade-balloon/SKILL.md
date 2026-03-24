@@ -1,14 +1,14 @@
 ---
 name: thanksgiving-pixar-parade-balloon
 description: This prompt instructs the AI to generate a polished, Pixar-style 3D cinematic parade illustration set in bright daylight, featuring a giant floating balloon shaped like a specified animal and held by a specified group of joyful, expressive animal characters below. It defines the desired look (high-end rendering, realistic materials, soft global illumination, depth of field, vibrant colors, confetti, and lively city atmosphere) while enforcing constraints like avoiding humans, brands, and copyrighted characters, resulting in a family-safe, whimsical, story-ready scene suitable for animation concepts or social content.
-skillVersionId: 019ac894-acd6-72e9-b456-605104713b81
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a polished, Pixar-style 3D cinematic parade illustration set in bright daylight, featuring a giant floating balloon shaped like a specified animal and held by a specified group of joyful, expressive animal characters below. It defines the desired look (high-end rendering, realistic materials, soft global illumination, depth of field, vibrant colors, confetti, and lively city atmosphere) while enforcing constraints like avoiding humans, brands, and copyrighted characters, resulting in a family-safe, whimsical, story-ready scene suitable for animation concepts or social content.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ac894-acd6-72e9-b456-605104713b81`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `thanksgiving-pixar-parade-balloon`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ac894-acd6-72e9-b456-605104713b81 \
+betterprompt generate thanksgiving-pixar-parade-balloon \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ac894-acd6-72e9-b456-605104713b81 \
+betterprompt generate thanksgiving-pixar-parade-balloon \
   --input 'Balloon_animal=Poodle dog' \
   --input 'Balloon_holders=Dog, cat, bunny, snake, bird,...' \
   --model gemini-3-pro-image-preview \
