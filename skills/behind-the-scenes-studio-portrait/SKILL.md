@@ -1,14 +1,14 @@
 ---
 name: behind-the-scenes-studio-portrait
 description: This prompt instructs an image generator to create a realistic behind-the-scenes photograph of a professional studio during a tethered portrait session, emphasizing the technical workflow and equipment. It specifies a foreground monitor and laptop that both display the same high-resolution, softly lit portrait of the subject (with the subject’s face and hair preserved exactly from a provided reference image), along with believable studio lights, reflectors, cables, and a subtle background assistant. The intended result is a clean, professional, documentary-style scene that contrasts the polished portrait on-screen with the practical working environment, without stylization, clutter, or any alteration of the subject’s identity.
-skillVersionId: 019b6953-9d2e-72da-8d70-cc5e94f14c19
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a realistic behind-the-scenes photograph of a professional studio during a tethered portrait session, emphasizing the technical workflow and equipment. It specifies a foreground monitor and laptop that both display the same high-resolution, softly lit portrait of the subject (with the subject’s face and hair preserved exactly from a provided reference image), along with believable studio lights, reflectors, cables, and a subtle background assistant. The intended result is a clean, professional, documentary-style scene that contrasts the polished portrait on-screen with the practical working environment, without stylization, clutter, or any alteration of the subject’s identity.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b6953-9d2e-72da-8d70-cc5e94f14c19`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `behind-the-scenes-studio-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b6953-9d2e-72da-8d70-cc5e94f14c19 \
+betterprompt generate behind-the-scenes-studio-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b6953-9d2e-72da-8d70-cc5e94f14c19 \
+betterprompt generate behind-the-scenes-studio-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
