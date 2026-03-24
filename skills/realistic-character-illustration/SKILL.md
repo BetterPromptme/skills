@@ -1,14 +1,14 @@
 ---
 name: realistic-character-illustration
 description: This prompt instructs the AI to generate a full-body, semi-realistic 2D digital character illustration that closely replicates the person shown in the uploaded image, including accurate proportions, facial features, skin tone, hairstyle, clothing, colors, textures, accessories, and the same pose and expression. The expected result is a polished, realistic-looking character artwork with soft shading and clean lines, delivered as a transparent-background PNG containing only the person and no additional elements.
-skillVersionId: 01985004-0b05-7e43-96c0-3e3686ae3297
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a full-body, semi-realistic 2D digital character illustration that closely replicates the person shown in the uploaded image, including accurate proportions, facial features, skin tone, hairstyle, clothing, colors, textures, accessories, and the same pose and expression. The expected result is a polished, realistic-looking character artwork with soft shading and clean lines, delivered as a transparent-background PNG containing only the person and no additional elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01985004-0b05-7e43-96c0-3e3686ae3297`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `realistic-character-illustration`).
 
 Command form:
 
 ```bash
-betterprompt generate 01985004-0b05-7e43-96c0-3e3686ae3297 \
+betterprompt generate realistic-character-illustration \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01985004-0b05-7e43-96c0-3e3686ae3297 \
+betterprompt generate realistic-character-illustration \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
