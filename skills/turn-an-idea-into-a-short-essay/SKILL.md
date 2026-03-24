@@ -1,14 +1,14 @@
 ---
 name: turn-an-idea-into-a-short-essay
 description: This prompt instructs the AI to take a provided idea and develop it into a clear, flowing paragraph suitable for a first draft, adding context, examples, and broader relevance in a conversational but coherent voice. The expected outcome is a thoughtful expansion that explores the idea’s meaning rather than polishing it to perfection, and it ends with an open-ended transition that naturally sets up the next paragraph.
-skillVersionId: 019a3f99-0322-75c0-996d-a038a98bf77c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take a provided idea and develop it into a clear, flowing paragraph suitable for a first draft, adding context, examples, and broader relevance in a conversational but coherent voice. The expected outcome is a thoughtful expansion that explores the idea’s meaning rather than polishing it to perfection, and it ends with an open-ended transition that naturally sets up the next paragraph.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a3f99-0322-75c0-996d-a038a98bf77c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `turn-an-idea-into-a-short-essay`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a3f99-0322-75c0-996d-a038a98bf77c \
+betterprompt generate turn-an-idea-into-a-short-essay \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a3f99-0322-75c0-996d-a038a98bf77c \
+betterprompt generate turn-an-idea-into-a-short-essay \
   --input idea=<value> \
   --model grok-4-fast \
   --options '{"reasoningEffort":"low"}'
