@@ -1,14 +1,14 @@
 ---
 name: untitled-prompt-local-culture-and-food-explorer-the-ultimate-travel-and-conversation-guide
 description: This prompt instructs the AI to act as a culturally savvy, food-focused travel guide and, using the user’s trip details (destination, traveler type, duration, interests, dietary needs, and meal budget), produce a structured guide that covers local etiquette and laws, essential greetings and travel phrases with script and pronunciation, curated street foods and recommended markets/eateries with practical visit details and dietary-friendly options, plus actionable tips on when and how to eat like a local while avoiding common food or hygiene pitfalls.
-skillVersionId: 0198acd9-bdb0-7084-b498-6083e3654bcc
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a culturally savvy, food-focused travel guide and, using the user’s trip details (destination, traveler type, duration, interests, dietary needs, and meal budget), produce a structured guide that covers local etiquette and laws, essential greetings and travel phrases with script and pronunciation, curated street foods and recommended markets/eateries with practical visit details and dietary-friendly options, plus actionable tips on when and how to eat like a local while avoiding common food or hygiene pitfalls.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198acd9-bdb0-7084-b498-6083e3654bcc`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `untitled-prompt-local-culture-and-food-explorer-the-ultimate-travel-and-conversation-guide`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198acd9-bdb0-7084-b498-6083e3654bcc \
+betterprompt generate untitled-prompt-local-culture-and-food-explorer-the-ultimate-travel-and-conversation-guide \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -92,7 +92,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198acd9-bdb0-7084-b498-6083e3654bcc \
+betterprompt generate untitled-prompt-local-culture-and-food-explorer-the-ultimate-travel-and-conversation-guide \
   --input Destination=<value> \
   --input Trip_Duration=<value> \
   --input Focus_and_Interests=<value> \
