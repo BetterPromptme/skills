@@ -1,14 +1,14 @@
 ---
 name: golden-hour-selfie-retro-garden-glow
 description: This prompt instructs an image-generation system to produce an ultra-realistic, cinematic 8K vertical close-up selfie portrait of a confident young woman, photographed from a very low, wide/fisheye perspective in a vibrant summer garden. It specifies strict identity preservation for the subject’s face while detailing her styling (hair, sunglasses, earrings, makeup, and embroidered off-shoulder blouse), the warm natural daylight look, and the surrounding environment of succulents, pastel cosmos flowers, and a deep blue sky with clouds. The expected outcome is a high-contrast, sun-kissed fashion-editorial image with shallow depth of field and a dynamic, empowering low-angle composition.
-skillVersionId: 019a6cdd-fd9a-72a8-9e3e-1437261d09cb
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce an ultra-realistic, cinematic 8K vertical close-up selfie portrait of a confident young woman, photographed from a very low, wide/fisheye perspective in a vibrant summer garden. It specifies strict identity preservation for the subject’s face while detailing her styling (hair, sunglasses, earrings, makeup, and embroidered off-shoulder blouse), the warm natural daylight look, and the surrounding environment of succulents, pastel cosmos flowers, and a deep blue sky with clouds. The expected outcome is a high-contrast, sun-kissed fashion-editorial image with shallow depth of field and a dynamic, empowering low-angle composition.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a6cdd-fd9a-72a8-9e3e-1437261d09cb`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `golden-hour-selfie-retro-garden-glow`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a6cdd-fd9a-72a8-9e3e-1437261d09cb \
+betterprompt generate golden-hour-selfie-retro-garden-glow \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a6cdd-fd9a-72a8-9e3e-1437261d09cb \
+betterprompt generate golden-hour-selfie-retro-garden-glow \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
