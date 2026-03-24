@@ -1,14 +1,14 @@
 ---
 name: leica-monochrome-duality
 description: This prompt instructs an AI image generator to produce an ultra-realistic, 8K high-fashion editorial portrait in stark black and white, using a minimalist studio setup with sculptural single-source lighting and a clean light background. It specifies tight framing, Leica-style optics and depth of field, matte monochrome tonality with fine grain, and gender-specific wardrobe/grooming options, while requiring the subject’s identity to match the provided reference exactly without facial reshaping or heavy retouching. The result is a timeless, high-contrast monochrome portrait with razor-sharp eyes, authentic skin and fabric texture, and an introspective, confident mood.
-skillVersionId: 019aa5eb-c981-776e-85c7-afc83ff2521f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce an ultra-realistic, 8K high-fashion editorial portrait in stark black and white, using a minimalist studio setup with sculptural single-source lighting and a clean light background. It specifies tight framing, Leica-style optics and depth of field, matte monochrome tonality with fine grain, and gender-specific wardrobe/grooming options, while requiring the subject’s identity to match the provided reference exactly without facial reshaping or heavy retouching. The result is a timeless, high-contrast monochrome portrait with razor-sharp eyes, authentic skin and fabric texture, and an introspective, confident mood.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019aa5eb-c981-776e-85c7-afc83ff2521f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `leica-monochrome-duality`).
 
 Command form:
 
 ```bash
-betterprompt generate 019aa5eb-c981-776e-85c7-afc83ff2521f \
+betterprompt generate leica-monochrome-duality \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019aa5eb-c981-776e-85c7-afc83ff2521f \
+betterprompt generate leica-monochrome-duality \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{"aspectRatio":"1:1"}'
