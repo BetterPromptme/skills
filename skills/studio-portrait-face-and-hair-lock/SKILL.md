@@ -1,14 +1,14 @@
 ---
 name: studio-portrait-face-and-hair-lock
 description: This prompt configures an image-generation workflow to produce a high-resolution black-and-white studio portrait with cinematic lighting and minimal styling while strictly preserving the subject’s original identity, gender presentation, and exact hairstyle from a provided reference (including required face/hair mattes and guides), applying only controlled monochrome tonal grading; if required reference materials are missing or any identity/gender/hair drift is detected against specified similarity metrics, the process aborts rather than outputting an altered result.
-skillVersionId: 019950af-51b2-7aa9-b745-b0facda89313
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt configures an image-generation workflow to produce a high-resolution black-and-white studio portrait with cinematic lighting and minimal styling while strictly preserving the subject’s original identity, gender presentation, and exact hairstyle from a provided reference (including required face/hair mattes and guides), applying only controlled monochrome tonal grading; if required reference materials are missing or any identity/gender/hair drift is detected against specified similarity metrics, the process aborts rather than outputting an altered result.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019950af-51b2-7aa9-b745-b0facda89313`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `studio-portrait-face-and-hair-lock`).
 
 Command form:
 
 ```bash
-betterprompt generate 019950af-51b2-7aa9-b745-b0facda89313 \
+betterprompt generate studio-portrait-face-and-hair-lock \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019950af-51b2-7aa9-b745-b0facda89313 \
+betterprompt generate studio-portrait-face-and-hair-lock \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
