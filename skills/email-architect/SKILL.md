@@ -1,14 +1,14 @@
 ---
 name: email-architect
 description: This prompt instructs the AI to act as an experienced business communication specialist and generate a ready-to-send professional email template based on user-supplied details such as email type, recipient, purpose, key points, tone, and context. The result is a clearly structured, concise, and persuasive email—including a short subject line, appropriate greeting, organized body (with bullets when helpful), a specific call-to-action, and a professional closing—formatted for immediate use with customizable placeholders and checked against clarity, tone consistency, and completeness standards.
-skillVersionId: 019a7644-1d2f-7797-9b96-d06426249498
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an experienced business communication specialist and generate a ready-to-send professional email template based on user-supplied details such as email type, recipient, purpose, key points, tone, and context. The result is a clearly structured, concise, and persuasive email—including a short subject line, appropriate greeting, organized body (with bullets when helpful), a specific call-to-action, and a professional closing—formatted for immediate use with customizable placeholders and checked against clarity, tone consistency, and completeness standards.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a7644-1d2f-7797-9b96-d06426249498`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `email-architect`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a7644-1d2f-7797-9b96-d06426249498 \
+betterprompt generate email-architect \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -93,7 +93,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a7644-1d2f-7797-9b96-d06426249498 \
+betterprompt generate email-architect \
   --input 'tone=Professional, Friendly, Formal, Urgent, Persuasive, etc.' \
   --input purpose=<value> \
   --input 'recipient=Client, Colleague, Manager, Partner, Customer' \
