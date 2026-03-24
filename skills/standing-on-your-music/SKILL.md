@@ -1,14 +1,14 @@
 ---
 name: standing-on-your-music
 description: This prompt instructs an AI image editor to take a user-provided portrait and composite it into a photorealistic, studio-style scene where the same person—without any facial alteration—stands naturally on the glass surface of a modern smartphone angled like a premium product mockup, with a readable Spotify screen showing a playlist and track list associated with the user’s chosen singer; the result is a clean, minimal, commercial-quality image with realistic scale, perspective, and shadows, and without extra subjects, distracting elements, or non-Spotify branding.
-skillVersionId: 019b698a-f32f-76f6-b7c4-8b502b190dd2
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image editor to take a user-provided portrait and composite it into a photorealistic, studio-style scene where the same person—without any facial alteration—stands naturally on the glass surface of a modern smartphone angled like a premium product mockup, with a readable Spotify screen showing a playlist and track list associated with the user’s chosen singer; the result is a clean, minimal, commercial-quality image with realistic scale, perspective, and shadows, and without extra subjects, distracting elements, or non-Spotify branding.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b698a-f32f-76f6-b7c4-8b502b190dd2`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `standing-on-your-music`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b698a-f32f-76f6-b7c4-8b502b190dd2 \
+betterprompt generate standing-on-your-music \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b698a-f32f-76f6-b7c4-8b502b190dd2 \
+betterprompt generate standing-on-your-music \
   --input Singer_name=<value> \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
