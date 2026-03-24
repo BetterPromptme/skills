@@ -1,14 +1,14 @@
 ---
 name: classic-photobooth-black-and-white
 description: This prompt instructs the AI to convert an input photo into a single, high-resolution, photorealistic black-and-white studio/photobooth-style portrait, emphasizing strong monochrome contrast, subtle film grain, clean white seamless background, tight centered waist-up cropping, and soft flash-like lighting. It requires strict, exact preservation of every subject’s face and original clothing/accessories with no beautification or identity changes, while adjusting the pose to match a specified friends-versus-couple hugging arrangement. The intended result is a frameless, borderless, sharply focused, real-photography-looking image that meets detailed validation checks for facial fidelity, pose logic, and overall photobooth aesthetic.
-skillVersionId: 019bbb95-9fdc-70fa-af83-928f8e2258bc
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to convert an input photo into a single, high-resolution, photorealistic black-and-white studio/photobooth-style portrait, emphasizing strong monochrome contrast, subtle film grain, clean white seamless background, tight centered waist-up cropping, and soft flash-like lighting. It requires strict, exact preservation of every subject’s face and original clothing/accessories with no beautification or identity changes, while adjusting the pose to match a specified friends-versus-couple hugging arrangement. The intended result is a frameless, borderless, sharply focused, real-photography-looking image that meets detailed validation checks for facial fidelity, pose logic, and overall photobooth aesthetic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019bbb95-9fdc-70fa-af83-928f8e2258bc`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `classic-photobooth-black-and-white`).
 
 Command form:
 
 ```bash
-betterprompt generate 019bbb95-9fdc-70fa-af83-928f8e2258bc \
+betterprompt generate classic-photobooth-black-and-white \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019bbb95-9fdc-70fa-af83-928f8e2258bc \
+betterprompt generate classic-photobooth-black-and-white \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-3-pro-image-preview \
