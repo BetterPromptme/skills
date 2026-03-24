@@ -1,14 +1,14 @@
 ---
 name: marionette-dark-cinematic-ballet-portrait
 description: This prompt instructs an image-generation workflow to create a photorealistic, high-resolution vertical cinematic portrait of a ballet dancer posed en pointe and visually “suspended” by puppet strings on a dark stage, lit by a hard theatrical spotlight with high-contrast blacks and subtle haze. It specifies detailed composition elements (centered full-body framing, realistic strings anchored above, shattered porcelain mask at the feet, and a faint ominous silhouette in the background), strict wardrobe and texture requirements, and a monochrome-forward palette with restrained warm accents. The intended outcome is a haunting, editorial fine-art image that conveys control and fragility while preserving the subject’s exact facial identity, bone structure, and makeup tone from the provided input image without alteration.
-skillVersionId: 019a23d0-1309-7d35-873c-60864c8c8ca8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation workflow to create a photorealistic, high-resolution vertical cinematic portrait of a ballet dancer posed en pointe and visually “suspended” by puppet strings on a dark stage, lit by a hard theatrical spotlight with high-contrast blacks and subtle haze. It specifies detailed composition elements (centered full-body framing, realistic strings anchored above, shattered porcelain mask at the feet, and a faint ominous silhouette in the background), strict wardrobe and texture requirements, and a monochrome-forward palette with restrained warm accents. The intended outcome is a haunting, editorial fine-art image that conveys control and fragility while preserving the subject’s exact facial identity, bone structure, and makeup tone from the provided input image without alteration.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a23d0-1309-7d35-873c-60864c8c8ca8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `marionette-dark-cinematic-ballet-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a23d0-1309-7d35-873c-60864c8c8ca8 \
+betterprompt generate marionette-dark-cinematic-ballet-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a23d0-1309-7d35-873c-60864c8c8ca8 \
+betterprompt generate marionette-dark-cinematic-ballet-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
