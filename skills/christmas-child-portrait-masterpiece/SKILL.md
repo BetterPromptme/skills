@@ -1,14 +1,14 @@
 ---
 name: christmas-child-portrait-masterpiece
 description: This prompt instructs an AI image generator to create an ultra-realistic, high-end 8K Christmas portrait by using a user-supplied child photo as a strict identity reference, reproducing the child’s face and expression faithfully while placing them in a specified rustic cabin scene sitting on Santa’s lap. It defines exact wardrobe, environment elements, cinematic lighting, camera-style settings, and quality constraints to ensure a natural commercial-photography look, while forbidding stylization, facial changes, artifacts, text/watermarks, or unsafe content, resulting in a polished, family-friendly holiday portrait that matches the child’s real likeness.
-skillVersionId: 019a8158-5abe-70c3-8e29-4b9885d4bb6d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create an ultra-realistic, high-end 8K Christmas portrait by using a user-supplied child photo as a strict identity reference, reproducing the child’s face and expression faithfully while placing them in a specified rustic cabin scene sitting on Santa’s lap. It defines exact wardrobe, environment elements, cinematic lighting, camera-style settings, and quality constraints to ensure a natural commercial-photography look, while forbidding stylization, facial changes, artifacts, text/watermarks, or unsafe content, resulting in a polished, family-friendly holiday portrait that matches the child’s real likeness.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a8158-5abe-70c3-8e29-4b9885d4bb6d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `christmas-child-portrait-masterpiece`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a8158-5abe-70c3-8e29-4b9885d4bb6d \
+betterprompt generate christmas-child-portrait-masterpiece \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a8158-5abe-70c3-8e29-4b9885d4bb6d \
+betterprompt generate christmas-child-portrait-masterpiece \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
