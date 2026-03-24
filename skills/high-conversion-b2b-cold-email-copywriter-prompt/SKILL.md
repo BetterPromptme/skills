@@ -1,14 +1,14 @@
 ---
 name: high-conversion-b2b-cold-email-copywriter-prompt
 description: This prompt instructs the AI to act as an expert B2B cold email copywriter and, using your provided business inputs (target persona, core problem/value hook, product details, tone preferences, and optional relevance triggers), produce three high-open-rate subject line options plus a concise 100–150 word personalized cold email. The resulting email is designed to feel natural and non-fluffy, lead with an ICP-relevant hook, include a standout insight or stat, connect the offering directly to the recipient’s pain point, spark curiosity rather than oversell, and finish with a clear low-friction call to action, optionally capped with a brief P.S. for personality or urgency.
-skillVersionId: 0198e5bb-f80f-7150-ae1c-49c5612153c6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an expert B2B cold email copywriter and, using your provided business inputs (target persona, core problem/value hook, product details, tone preferences, and optional relevance triggers), produce three high-open-rate subject line options plus a concise 100–150 word personalized cold email. The resulting email is designed to feel natural and non-fluffy, lead with an ICP-relevant hook, include a standout insight or stat, connect the offering directly to the recipient’s pain point, spark curiosity rather than oversell, and finish with a clear low-friction call to action, optionally capped with a brief P.S. for personality or urgency.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198e5bb-f80f-7150-ae1c-49c5612153c6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `high-conversion-b2b-cold-email-copywriter-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198e5bb-f80f-7150-ae1c-49c5612153c6 \
+betterprompt generate high-conversion-b2b-cold-email-copywriter-prompt \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -92,7 +92,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198e5bb-f80f-7150-ae1c-49c5612153c6 \
+betterprompt generate high-conversion-b2b-cold-email-copywriter-prompt \
   --input Action=<value> \
   --input Product=<value> \
   --input Preference=<value> \
