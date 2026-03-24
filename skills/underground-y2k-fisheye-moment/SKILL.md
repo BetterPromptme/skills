@@ -1,14 +1,14 @@
 ---
 name: underground-y2k-fisheye-moment
 description: This prompt instructs an AI image generator to produce an ultra-realistic, high-resolution fisheye street-fashion portrait of the same young woman from a provided reference, keeping her facial identity unchanged, and placing her in a dim underground parking garage. It specifies a high-angle, wide distorted lens look, Y2K-inspired styling, accessories, pose, expression, lighting, and color accents so the final result is a dynamic, playful, urban portrait with strong fisheye curvature and vivid retro streetwear energy.
-skillVersionId: 019a4882-bf0f-7772-8381-e2c07cc5e04d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce an ultra-realistic, high-resolution fisheye street-fashion portrait of the same young woman from a provided reference, keeping her facial identity unchanged, and placing her in a dim underground parking garage. It specifies a high-angle, wide distorted lens look, Y2K-inspired styling, accessories, pose, expression, lighting, and color accents so the final result is a dynamic, playful, urban portrait with strong fisheye curvature and vivid retro streetwear energy.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a4882-bf0f-7772-8381-e2c07cc5e04d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `underground-y2k-fisheye-moment`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a4882-bf0f-7772-8381-e2c07cc5e04d \
+betterprompt generate underground-y2k-fisheye-moment \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a4882-bf0f-7772-8381-e2c07cc5e04d \
+betterprompt generate underground-y2k-fisheye-moment \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
