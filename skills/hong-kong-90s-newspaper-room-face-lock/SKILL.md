@@ -1,14 +1,14 @@
 ---
 name: hong-kong-90s-newspaper-room-face-lock
 description: This prompt directs an image generator to produce a high‑resolution, photorealistic half‑body portrait set in a cramped 1990s Hong Kong interior lined with aged Cantonese newspapers, while using an uploaded face reference with extremely strict identity locking and consistency checks. It specifies period-accurate film color, lighting, lens and grain, offers gender-based wardrobe and styling variants for a youthful street mood, and enforces safety and privacy constraints (e.g., no minors, no sexualized content, no weapons, no readable or identifying text). The intended outcome is a repeatable, one-click set of authentic nineties Hong Kong–styled portraits that retain the subject’s exact facial identity and avoid disallowed content, or a request for a clearer reference if the face can’t be reliably matched.
-skillVersionId: 01996133-91b3-7e5b-a27a-27365c1c9762
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image generator to produce a high‑resolution, photorealistic half‑body portrait set in a cramped 1990s Hong Kong interior lined with aged Cantonese newspapers, while using an uploaded face reference with extremely strict identity locking and consistency checks. It specifies period-accurate film color, lighting, lens and grain, offers gender-based wardrobe and styling variants for a youthful street mood, and enforces safety and privacy constraints (e.g., no minors, no sexualized content, no weapons, no readable or identifying text). The intended outcome is a repeatable, one-click set of authentic nineties Hong Kong–styled portraits that retain the subject’s exact facial identity and avoid disallowed content, or a request for a clearer reference if the face can’t be reliably matched.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01996133-91b3-7e5b-a27a-27365c1c9762`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `hong-kong-90s-newspaper-room-face-lock`).
 
 Command form:
 
 ```bash
-betterprompt generate 01996133-91b3-7e5b-a27a-27365c1c9762 \
+betterprompt generate hong-kong-90s-newspaper-room-face-lock \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01996133-91b3-7e5b-a27a-27365c1c9762 \
+betterprompt generate hong-kong-90s-newspaper-room-face-lock \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
