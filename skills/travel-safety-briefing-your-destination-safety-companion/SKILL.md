@@ -1,14 +1,14 @@
 ---
 name: travel-safety-briefing-your-destination-safety-companion
 description: This prompt instructs the AI to act as a travel safety advisor and, using the traveler’s destination, trip length, travel style, planned activities, and any special considerations, produce a friendly but realistic, sectioned safety briefing. The resulting output summarizes the destination’s current safety situation (including crime, scams, and stability), highlights any areas to avoid with reasons, provides five destination-specific safety tips, notes key local laws and cultural norms, lists relevant emergency contacts, and recommends useful safety gear or apps in clear bullet-pointed sections.
-skillVersionId: 0198acb4-1b2e-7ba8-8ec4-0ec77a2a421e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a travel safety advisor and, using the traveler’s destination, trip length, travel style, planned activities, and any special considerations, produce a friendly but realistic, sectioned safety briefing. The resulting output summarizes the destination’s current safety situation (including crime, scams, and stability), highlights any areas to avoid with reasons, provides five destination-specific safety tips, notes key local laws and cultural norms, lists relevant emergency contacts, and recommends useful safety gear or apps in clear bullet-pointed sections.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198acb4-1b2e-7ba8-8ec4-0ec77a2a421e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `travel-safety-briefing-your-destination-safety-companion`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198acb4-1b2e-7ba8-8ec4-0ec77a2a421e \
+betterprompt generate travel-safety-briefing-your-destination-safety-companion \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198acb4-1b2e-7ba8-8ec4-0ec77a2a421e \
+betterprompt generate travel-safety-briefing-your-destination-safety-companion \
   --input Destination=<value> \
   --input Travel_Style=<value> \
   --input Trip_Duration=<value> \
