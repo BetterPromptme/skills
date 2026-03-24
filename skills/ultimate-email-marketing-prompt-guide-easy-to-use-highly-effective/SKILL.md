@@ -1,14 +1,14 @@
 ---
 name: ultimate-email-marketing-prompt-guide-easy-to-use-highly-effective
 description: This prompt instructs the AI to generate a polished, warmly written email marketing campaign aimed at loyal customers for a customizable business, using gratitude, floral-themed emotional language, and a limited-time discount to drive urgent purchases. The result is a complete email package—including subject line, preview text, and a cleanly structured body with a clear call-to-action—featuring tasteful floral emojis, elegant design guidance, and multiple personalization placeholders (customer name, business name, discount/promotion details, and offer end date) so the message feels tailored and on-brand.
-skillVersionId: 0196e7ed-a644-7005-a1e3-bccbeff2c47f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a polished, warmly written email marketing campaign aimed at loyal customers for a customizable business, using gratitude, floral-themed emotional language, and a limited-time discount to drive urgent purchases. The result is a complete email package—including subject line, preview text, and a cleanly structured body with a clear call-to-action—featuring tasteful floral emojis, elegant design guidance, and multiple personalization placeholders (customer name, business name, discount/promotion details, and offer end date) so the message feels tailored and on-brand.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196e7ed-a644-7005-a1e3-bccbeff2c47f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ultimate-email-marketing-prompt-guide-easy-to-use-highly-effective`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196e7ed-a644-7005-a1e3-bccbeff2c47f \
+betterprompt generate ultimate-email-marketing-prompt-guide-easy-to-use-highly-effective \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196e7ed-a644-7005-a1e3-bccbeff2c47f \
+betterprompt generate ultimate-email-marketing-prompt-guide-easy-to-use-highly-effective \
   --input promotion=<value> \
   --input Business_name=<value> \
   --input Business_field=<value> \
