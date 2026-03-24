@@ -1,14 +1,14 @@
 ---
 name: custom-song-lyric-generator
 description: This prompt instructs the AI to generate original song lyrics tailored to user-provided theme, genre, and vibe, following a specified song structure with set counts of verses and choruses and an optional bridge. The expected result is a creative, engaging set of lyrics arranged into labeled sections (verses, choruses, and possibly a bridge) with attention to rhythm and rhyme for memorability and impact.
-skillVersionId: 0197d39b-d936-7f1a-8e48-aae249fc2396
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate original song lyrics tailored to user-provided theme, genre, and vibe, following a specified song structure with set counts of verses and choruses and an optional bridge. The expected result is a creative, engaging set of lyrics arranged into labeled sections (verses, choruses, and possibly a bridge) with attention to rhythm and rhyme for memorability and impact.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197d39b-d936-7f1a-8e48-aae249fc2396`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `custom-song-lyric-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197d39b-d936-7f1a-8e48-aae249fc2396 \
+betterprompt generate custom-song-lyric-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -92,7 +92,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197d39b-d936-7f1a-8e48-aae249fc2396 \
+betterprompt generate custom-song-lyric-generator \
   --input vibe=<value> \
   --input genre=<value> \
   --input song_theme=<value> \
