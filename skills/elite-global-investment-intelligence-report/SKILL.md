@@ -1,14 +1,14 @@
 ---
 name: elite-global-investment-intelligence-report
 description: This prompt instructs the AI to act as a senior global market analyst and generate a structured, 12-section investment intelligence report on a specified publicly traded company over two time horizons, combining conventional fundamentals with alternative signals (e.g., order backlog, off-exchange trading activity, leadership quality, and cyber/geopolitical exposure). The expected outcome is a neutral, evidence-based synthesis that postpones any call to action until the final section, where it delivers quantified short- and long-term price outlooks and a summarized Buy/Hold/Sell recommendation accompanied by a conviction score and confidence level, with key financial metrics presented in clear tables.
-skillVersionId: 019a5801-a527-77cd-b547-1310f2fe7fb4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a senior global market analyst and generate a structured, 12-section investment intelligence report on a specified publicly traded company over two time horizons, combining conventional fundamentals with alternative signals (e.g., order backlog, off-exchange trading activity, leadership quality, and cyber/geopolitical exposure). The expected outcome is a neutral, evidence-based synthesis that postpones any call to action until the final section, where it delivers quantified short- and long-term price outlooks and a summarized Buy/Hold/Sell recommendation accompanied by a conviction score and confidence level, with key financial metrics presented in clear tables.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -67,12 +67,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a5801-a527-77cd-b547-1310f2fe7fb4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `elite-global-investment-intelligence-report`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a5801-a527-77cd-b547-1310f2fe7fb4 \
+betterprompt generate elite-global-investment-intelligence-report \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -89,7 +89,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a5801-a527-77cd-b547-1310f2fe7fb4 \
+betterprompt generate elite-global-investment-intelligence-report \
   --input 'ISIN=US0378331005 (Apple Inc.)' \
   --input 'Horizon_1=6 months' \
   --input 'Horizon_2=24 months' \
