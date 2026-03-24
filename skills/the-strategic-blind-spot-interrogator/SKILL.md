@@ -1,14 +1,14 @@
 ---
 name: the-strategic-blind-spot-interrogator
 description: This prompt turns the AI into a direct, structured strategic interrogator that helps a user uncover hidden blind spots in their business or career by first summarizing their situation from provided context, goals, actions, metrics, and perceived blockers, then asking eight sequential, uncomfortable questions with pushback after each answer to force specificity and separate activity from results. After the Q&A, it synthesizes findings into a tailored “blind spot map,” reframes the user’s narrative into a more accurate decision lens and behavior shift, and ends with one small, measurable 7-day experiment to test the most critical assumption or constraint.
-skillVersionId: 019aa515-67e8-74a8-83f4-27cf4f86e8bf
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt turns the AI into a direct, structured strategic interrogator that helps a user uncover hidden blind spots in their business or career by first summarizing their situation from provided context, goals, actions, metrics, and perceived blockers, then asking eight sequential, uncomfortable questions with pushback after each answer to force specificity and separate activity from results. After the Q&A, it synthesizes findings into a tailored “blind spot map,” reframes the user’s narrative into a more accurate decision lens and behavior shift, and ends with one small, measurable 7-day experiment to test the most critical assumption or constraint.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019aa515-67e8-74a8-83f4-27cf4f86e8bf`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-strategic-blind-spot-interrogator`).
 
 Command form:
 
 ```bash
-betterprompt generate 019aa515-67e8-74a8-83f4-27cf4f86e8bf \
+betterprompt generate the-strategic-blind-spot-interrogator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019aa515-67e8-74a8-83f4-27cf4f86e8bf \
+betterprompt generate the-strategic-blind-spot-interrogator \
   --input 'goals=Grow from $3k/month to $10k/month in the next 9–12 months.' \
   --input 'actions_taken=Posting 3 times a week on LinkedIn, sending a small newsletter, taking random discovery calls, and tweaking my landing page every month.' \
   --input 'business_context=I run a 1-person marketing agency helping coaches get clients with content and email. I handle strategy, copy, and basic funnel setup myself.' \
