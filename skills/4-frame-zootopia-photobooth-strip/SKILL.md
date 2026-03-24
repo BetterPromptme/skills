@@ -1,14 +1,14 @@
 ---
 name: 4-frame-zootopia-photobooth-strip
 description: This prompt instructs an image generator to create a vertical four-frame photobooth strip on a plain gray background with warm lighting, featuring the same fixed left-to-right lineup in every frame: Nick Wilde hugging Human 1 (wearing a fox-ears headband), Human 2 (wearing gray bunny-ears headband), and Judy Hopps hugging Human 2. It specifies that the two humans must remain fully realistic and identity-locked while Nick and Judy retain their original 3D film designs, and it defines distinct poses and expressions for each of the four frames while forbidding any reordering, extra characters, props, busy backgrounds, or any animal/cartoon alterations to the humans.
-skillVersionId: 019ae239-a48a-75af-9f90-6c19f6e01e02
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a vertical four-frame photobooth strip on a plain gray background with warm lighting, featuring the same fixed left-to-right lineup in every frame: Nick Wilde hugging Human 1 (wearing a fox-ears headband), Human 2 (wearing gray bunny-ears headband), and Judy Hopps hugging Human 2. It specifies that the two humans must remain fully realistic and identity-locked while Nick and Judy retain their original 3D film designs, and it defines distinct poses and expressions for each of the four frames while forbidding any reordering, extra characters, props, busy backgrounds, or any animal/cartoon alterations to the humans.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ae239-a48a-75af-9f90-6c19f6e01e02`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `4-frame-zootopia-photobooth-strip`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ae239-a48a-75af-9f90-6c19f6e01e02 \
+betterprompt generate 4-frame-zootopia-photobooth-strip \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ae239-a48a-75af-9f90-6c19f6e01e02 \
+betterprompt generate 4-frame-zootopia-photobooth-strip \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-3-pro-image-preview \
