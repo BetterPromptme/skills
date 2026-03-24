@@ -1,14 +1,14 @@
 ---
 name: retro-lo-fi-portrait-generator
 description: This prompt instructs an image model to take a supplied reference photo and restyle it into a cinematic retro lo‑fi portrait by specifying a location, an unusual camera angle, and optional background props. It guides the look toward warm vintage color grading, soft film grain, muted tones, dreamy lighting, and off‑center composition to evoke a nostalgic, surreal film-photo feel. The outcome is a set of consistent, authentic-looking vintage portraits that can be rapidly varied by swapping simple placeholder values for place and added elements.
-skillVersionId: 01991931-dbbd-77ec-ad3c-43a2774cfaf9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to take a supplied reference photo and restyle it into a cinematic retro lo‑fi portrait by specifying a location, an unusual camera angle, and optional background props. It guides the look toward warm vintage color grading, soft film grain, muted tones, dreamy lighting, and off‑center composition to evoke a nostalgic, surreal film-photo feel. The outcome is a set of consistent, authentic-looking vintage portraits that can be rapidly varied by swapping simple placeholder values for place and added elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -75,12 +75,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01991931-dbbd-77ec-ad3c-43a2774cfaf9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `retro-lo-fi-portrait-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 01991931-dbbd-77ec-ad3c-43a2774cfaf9 \
+betterprompt generate retro-lo-fi-portrait-generator \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -101,7 +101,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01991931-dbbd-77ec-ad3c-43a2774cfaf9 \
+betterprompt generate retro-lo-fi-portrait-generator \
   --input place=<value> \
   --input weird_camera_angle=<value> \
   --input additional_elements=<value> \
