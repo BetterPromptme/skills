@@ -1,14 +1,14 @@
 ---
 name: burgundy-editorial-absolute-face-lock
 description: This prompt instructs an AI portrait generator to produce a hyper-realistic, luxury editorial, cinematic half-to-three-quarter portrait in a vertical 9:16 frame, featuring the subject leaning on an elegant chair against a deep burgundy seamless backdrop with a single golden spotlight and shallow depth of field. It prioritizes absolute preservation of the subject’s facial identity from a clear reference image (including facial proportions and features) while applying specified hair, wardrobe (with gender-aware tailoring), minimal gold accents, high-contrast cinematic grading, and natural skin texture, and it requires the process to halt and request a clearer reference if the face is not fully visible and well-lit.
-skillVersionId: 019970a7-54b8-7efb-af68-f69ff7f1e606
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI portrait generator to produce a hyper-realistic, luxury editorial, cinematic half-to-three-quarter portrait in a vertical 9:16 frame, featuring the subject leaning on an elegant chair against a deep burgundy seamless backdrop with a single golden spotlight and shallow depth of field. It prioritizes absolute preservation of the subject’s facial identity from a clear reference image (including facial proportions and features) while applying specified hair, wardrobe (with gender-aware tailoring), minimal gold accents, high-contrast cinematic grading, and natural skin texture, and it requires the process to halt and request a clearer reference if the face is not fully visible and well-lit.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019970a7-54b8-7efb-af68-f69ff7f1e606`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `burgundy-editorial-absolute-face-lock`).
 
 Command form:
 
 ```bash
-betterprompt generate 019970a7-54b8-7efb-af68-f69ff7f1e606 \
+betterprompt generate burgundy-editorial-absolute-face-lock \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019970a7-54b8-7efb-af68-f69ff7f1e606 \
+betterprompt generate burgundy-editorial-absolute-face-lock \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
