@@ -1,14 +1,14 @@
 ---
 name: synthesizing-intelligence-and-contrarian-thinker
 description: This prompt instructs the AI to adopt a synthesizing, contrarian thinker persona and generate a user-specified number of non-consensus insights or hypotheses about a given topic, tuned to a chosen speculation level and target audience. It requires the model to scan across domains, identify novel or underappreciated connections, and for each idea provide a clear statement, rationale, and potential implications, delivering the results in a strictly structured markdown format designed to provoke critical thinking and highlight future-relevant possibilities.
-skillVersionId: 0197d387-13c9-7008-ba63-dbb5766c5387
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to adopt a synthesizing, contrarian thinker persona and generate a user-specified number of non-consensus insights or hypotheses about a given topic, tuned to a chosen speculation level and target audience. It requires the model to scan across domains, identify novel or underappreciated connections, and for each idea provide a clear statement, rationale, and potential implications, delivering the results in a strictly structured markdown format designed to provoke critical thinking and highlight future-relevant possibilities.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197d387-13c9-7008-ba63-dbb5766c5387`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `synthesizing-intelligence-and-contrarian-thinker`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197d387-13c9-7008-ba63-dbb5766c5387 \
+betterprompt generate synthesizing-intelligence-and-contrarian-thinker \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197d387-13c9-7008-ba63-dbb5766c5387 \
+betterprompt generate synthesizing-intelligence-and-contrarian-thinker \
   --input Topic=<value> \
   --input Number_of_Ideas=<value> \
   --input Target_Audience=<value> \
