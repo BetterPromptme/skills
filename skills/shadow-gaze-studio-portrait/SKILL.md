@@ -1,14 +1,14 @@
 ---
 name: shadow-gaze-studio-portrait
 description: This prompt instructs an AI to generate an ultra-realistic, fine-art studio close-up portrait in a 3:4 vertical format, matching the exact identity of a provided reference face while staging a minimalist, cinematic composition. It specifies pose (sweater collar raised to conceal the lower face), intense direct eye contact, messy dark hair, warm diffused directional lighting, shallow depth of field, and a dark gradient backdrop to produce an intimate, mysterious, emotionally strong 8K-quality image with sharp eyes, authentic skin texture, and subtle fabric detail, with slight variant adjustments for male vs. female rendering.
-skillVersionId: 019a56fe-c2a7-723d-a2cf-e995ff46ac4a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate an ultra-realistic, fine-art studio close-up portrait in a 3:4 vertical format, matching the exact identity of a provided reference face while staging a minimalist, cinematic composition. It specifies pose (sweater collar raised to conceal the lower face), intense direct eye contact, messy dark hair, warm diffused directional lighting, shallow depth of field, and a dark gradient backdrop to produce an intimate, mysterious, emotionally strong 8K-quality image with sharp eyes, authentic skin texture, and subtle fabric detail, with slight variant adjustments for male vs. female rendering.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a56fe-c2a7-723d-a2cf-e995ff46ac4a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `shadow-gaze-studio-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a56fe-c2a7-723d-a2cf-e995ff46ac4a \
+betterprompt generate shadow-gaze-studio-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a56fe-c2a7-723d-a2cf-e995ff46ac4a \
+betterprompt generate shadow-gaze-studio-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
