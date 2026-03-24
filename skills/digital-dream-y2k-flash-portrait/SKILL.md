@@ -1,14 +1,14 @@
 ---
 name: digital-dream-y2k-flash-portrait
 description: This prompt directs an image-generation system to produce a photorealistic, early-2000s digicam-style fashion portrait of a young woman in a retro toy/model shop, specifying the setting, pose, Y2K outfit and accessories, flash-heavy lighting, warm nostalgic color grading, and intentional low-res camera artifacts. It also requires strict preservation of the subject’s facial identity from a provided reference image, resulting in a candid-looking, fashion-forward snapshot with a softly blurred collectible-filled background and strong on-camera flash realism.
-skillVersionId: 019a5835-ca92-76b8-9347-803459c10523
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation system to produce a photorealistic, early-2000s digicam-style fashion portrait of a young woman in a retro toy/model shop, specifying the setting, pose, Y2K outfit and accessories, flash-heavy lighting, warm nostalgic color grading, and intentional low-res camera artifacts. It also requires strict preservation of the subject’s facial identity from a provided reference image, resulting in a candid-looking, fashion-forward snapshot with a softly blurred collectible-filled background and strong on-camera flash realism.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a5835-ca92-76b8-9347-803459c10523`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `digital-dream-y2k-flash-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a5835-ca92-76b8-9347-803459c10523 \
+betterprompt generate digital-dream-y2k-flash-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a5835-ca92-76b8-9347-803459c10523 \
+betterprompt generate digital-dream-y2k-flash-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
