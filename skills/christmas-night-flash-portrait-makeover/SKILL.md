@@ -1,14 +1,14 @@
 ---
 name: christmas-night-flash-portrait-makeover
 description: This prompt instructs an image editor to take a single-person portrait photo and realistically restyle it into a chest-up, phone-flash nighttime winter street scene with falling snow and subtle Christmas ambience, while strictly preserving the subject’s exact identity, age/gender, and natural skin texture. The result should look like an authentic smartphone photo: the face sharply lit by flash, a darker softly blurred city background featuring warm holiday lights and a decorated tree, the subject posed looking down with hands near the mouth as if warming breath, dressed in a light puffer jacket with a plaid scarf and winter gloves, and free of common artifacts like distorted hands, extra fingers, text, logos, or artificial/CGI aesthetics.
-skillVersionId: 019b4efb-cf85-740b-be08-5ee457024c1b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image editor to take a single-person portrait photo and realistically restyle it into a chest-up, phone-flash nighttime winter street scene with falling snow and subtle Christmas ambience, while strictly preserving the subject’s exact identity, age/gender, and natural skin texture. The result should look like an authentic smartphone photo: the face sharply lit by flash, a darker softly blurred city background featuring warm holiday lights and a decorated tree, the subject posed looking down with hands near the mouth as if warming breath, dressed in a light puffer jacket with a plaid scarf and winter gloves, and free of common artifacts like distorted hands, extra fingers, text, logos, or artificial/CGI aesthetics.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b4efb-cf85-740b-be08-5ee457024c1b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `christmas-night-flash-portrait-makeover`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b4efb-cf85-740b-be08-5ee457024c1b \
+betterprompt generate christmas-night-flash-portrait-makeover \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b4efb-cf85-740b-be08-5ee457024c1b \
+betterprompt generate christmas-night-flash-portrait-makeover \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{"aspectRatio":"3:4"}'
