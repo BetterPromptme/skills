@@ -1,14 +1,14 @@
 ---
 name: the-playful-minimalist-mirror-selfie
 description: This prompt instructs an image-generation/editing model to produce a high-resolution, photorealistic vertical mirror selfie of a young woman in a bright, minimalist indoor setting, using an uploaded reference image as the only source for an unchanged, identical face. It specifies exact framing, pose, playful expression, outfit and accessories, lighting, color palette, and realism constraints so the final result looks like a natural smartphone mirror selfie with accurate reflections, clean composition, and no beautification or stylistic distortion.
-skillVersionId: 019bda9f-1f74-71e9-8950-a5015769676c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation/editing model to produce a high-resolution, photorealistic vertical mirror selfie of a young woman in a bright, minimalist indoor setting, using an uploaded reference image as the only source for an unchanged, identical face. It specifies exact framing, pose, playful expression, outfit and accessories, lighting, color palette, and realism constraints so the final result looks like a natural smartphone mirror selfie with accurate reflections, clean composition, and no beautification or stylistic distortion.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019bda9f-1f74-71e9-8950-a5015769676c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-playful-minimalist-mirror-selfie`).
 
 Command form:
 
 ```bash
-betterprompt generate 019bda9f-1f74-71e9-8950-a5015769676c \
+betterprompt generate the-playful-minimalist-mirror-selfie \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019bda9f-1f74-71e9-8950-a5015769676c \
+betterprompt generate the-playful-minimalist-mirror-selfie \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{"aspectRatio":"3:4"}'
