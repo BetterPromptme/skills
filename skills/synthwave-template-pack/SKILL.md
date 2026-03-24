@@ -1,14 +1,14 @@
 ---
 name: synthwave-template-pack
 description: This prompt instructs an AI image generator to create a retro synthwave scene featuring the specified subject as a sunset silhouette against a gradient sky and a low‑poly grid landscape, using two provided colors in a cohesive retro‑futuristic palette. The result is a high-contrast composition that clearly separates the dark foreground figure from the vibrant background for a classic 1980s-inspired aesthetic.
-skillVersionId: 01984f49-7f59-7d69-b79f-12960ea34376
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a retro synthwave scene featuring the specified subject as a sunset silhouette against a gradient sky and a low‑poly grid landscape, using two provided colors in a cohesive retro‑futuristic palette. The result is a high-contrast composition that clearly separates the dark foreground figure from the vibrant background for a classic 1980s-inspired aesthetic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01984f49-7f59-7d69-b79f-12960ea34376`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `synthwave-template-pack`).
 
 Command form:
 
 ```bash
-betterprompt generate 01984f49-7f59-7d69-b79f-12960ea34376 \
+betterprompt generate synthwave-template-pack \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01984f49-7f59-7d69-b79f-12960ea34376 \
+betterprompt generate synthwave-template-pack \
   --input color1=<value> \
   --input color2=<value> \
   --input SUBJECT=<value> \
