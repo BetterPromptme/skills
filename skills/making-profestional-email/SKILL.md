@@ -1,14 +1,14 @@
 ---
 name: making-profestional-email
 description: This prompt instructs the AI to create a single professional marketing email tailored to a specified audience and offering, producing a complete message with a sub-50-character subject line, a personalized opening, a concise 3–5 sentence benefits-focused body that sparks curiosity, and a clear call-to-action, all written in an engaging, professional tone that avoids common spam signals.
-skillVersionId: 0198c154-1985-78d1-8612-14a60f786f65
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a single professional marketing email tailored to a specified audience and offering, producing a complete message with a sub-50-character subject line, a personalized opening, a concise 3–5 sentence benefits-focused body that sparks curiosity, and a clear call-to-action, all written in an engaging, professional tone that avoids common spam signals.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198c154-1985-78d1-8612-14a60f786f65`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `making-profestional-email`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198c154-1985-78d1-8612-14a60f786f65 \
+betterprompt generate making-profestional-email \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198c154-1985-78d1-8612-14a60f786f65 \
+betterprompt generate making-profestional-email \
   --input products_or_services=<value> \
   --input industry_profestionals=<value> \
   --model gpt-4.1-mini \
