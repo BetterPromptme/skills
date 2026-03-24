@@ -1,14 +1,14 @@
 ---
 name: turn-your-logo-or-icon-into-a-hug-pillow-with-this-prompt
 description: Il prompt richiede di realizzare un rendering 3D ad alta risoluzione del logo trasformato in un oggetto gonfiabile, con forme morbide e arrotondate, texture liscia opaca e dettagli come pieghe e cuciture, inquadrato a 45° per mettere in risalto la profondità e inserito in una scena di soggiorno dove il logo è appoggiato su un divano e l’arredamento riprende i suoi colori, ottenendo un’immagine finale realistica e coerente con l’estetica “inflatable”.
-skillVersionId: 01970b73-5358-73c3-902d-bc29cc0dc47c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 Il prompt richiede di realizzare un rendering 3D ad alta risoluzione del logo trasformato in un oggetto gonfiabile, con forme morbide e arrotondate, texture liscia opaca e dettagli come pieghe e cuciture, inquadrato a 45° per mettere in risalto la profondità e inserito in una scena di soggiorno dove il logo è appoggiato su un divano e l’arredamento riprende i suoi colori, ottenendo un’immagine finale realistica e coerente con l’estetica “inflatable”.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01970b73-5358-73c3-902d-bc29cc0dc47c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `turn-your-logo-or-icon-into-a-hug-pillow-with-this-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 01970b73-5358-73c3-902d-bc29cc0dc47c \
+betterprompt generate turn-your-logo-or-icon-into-a-hug-pillow-with-this-prompt \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01970b73-5358-73c3-902d-bc29cc0dc47c \
+betterprompt generate turn-your-logo-or-icon-into-a-hug-pillow-with-this-prompt \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"size":0,"quality":0},"quality":"low"}'
