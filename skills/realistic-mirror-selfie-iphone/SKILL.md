@@ -1,14 +1,14 @@
 ---
 name: realistic-mirror-selfie-iphone
 description: Prompt này cấu hình một quy trình tạo ảnh mirror selfie chân thực từ ảnh tham chiếu, trong đó khuôn mặt người và chiếc iPhone (đặc biệt là màu cam và cụm camera) được “khóa” theo ảnh mẫu với mức sai khác cực thấp, áp dụng denoise theo vùng để giữ chi tiết quan trọng, thiết lập bố cục/ánh sáng tự nhiên như chụp bằng smartphone, thêm các ràng buộc và tiêu chí kiểm định để tự động loại kết quả lệch mặt hoặc sai thiết kế điện thoại; nếu thiếu ảnh tham chiếu bắt buộc thì dừng và yêu cầu người dùng tải ảnh.
-skillVersionId: 0199e094-b19c-7944-ac65-14f2ab454122
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 Prompt này cấu hình một quy trình tạo ảnh mirror selfie chân thực từ ảnh tham chiếu, trong đó khuôn mặt người và chiếc iPhone (đặc biệt là màu cam và cụm camera) được “khóa” theo ảnh mẫu với mức sai khác cực thấp, áp dụng denoise theo vùng để giữ chi tiết quan trọng, thiết lập bố cục/ánh sáng tự nhiên như chụp bằng smartphone, thêm các ràng buộc và tiêu chí kiểm định để tự động loại kết quả lệch mặt hoặc sai thiết kế điện thoại; nếu thiếu ảnh tham chiếu bắt buộc thì dừng và yêu cầu người dùng tải ảnh.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199e094-b19c-7944-ac65-14f2ab454122`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `realistic-mirror-selfie-iphone`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199e094-b19c-7944-ac65-14f2ab454122 \
+betterprompt generate realistic-mirror-selfie-iphone \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199e094-b19c-7944-ac65-14f2ab454122 \
+betterprompt generate realistic-mirror-selfie-iphone \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
