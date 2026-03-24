@@ -1,14 +1,14 @@
 ---
 name: corkboard-story-layout
 description: This prompt instructs an image model to generate a 1080×1080 square corkboard “case board” that summarizes a user-specified movie as a clear, readable visual timeline: the movie title appears pinned at the top, 5–6 stylized Polaroid-like scene recreations with short handwritten captions are arranged in loose chronological order, and colored strings plus realistic corkboard ephemera (tacks, clips, torn notes, scribbles, arrows, coffee rings) connect plot points and characters under warm nostalgic lighting, while avoiding direct copyrighted stills or recognizable actor likenesses and maintaining balanced composition with minimal clutter.
-skillVersionId: 019aed4b-ac7d-705a-8a3a-a689a7c4a40b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a 1080×1080 square corkboard “case board” that summarizes a user-specified movie as a clear, readable visual timeline: the movie title appears pinned at the top, 5–6 stylized Polaroid-like scene recreations with short handwritten captions are arranged in loose chronological order, and colored strings plus realistic corkboard ephemera (tacks, clips, torn notes, scribbles, arrows, coffee rings) connect plot points and characters under warm nostalgic lighting, while avoiding direct copyrighted stills or recognizable actor likenesses and maintaining balanced composition with minimal clutter.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019aed4b-ac7d-705a-8a3a-a689a7c4a40b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `corkboard-story-layout`).
 
 Command form:
 
 ```bash
-betterprompt generate 019aed4b-ac7d-705a-8a3a-a689a7c4a40b \
+betterprompt generate corkboard-story-layout \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019aed4b-ac7d-705a-8a3a-a689a7c4a40b \
+betterprompt generate corkboard-story-layout \
   --input Movie=<value> \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
