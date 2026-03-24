@@ -1,14 +1,14 @@
 ---
 name: ribbon-dream-birthday-portrait
 description: This prompt instructs an image generator to produce an ultra-photorealistic, high-key studio portrait of a young woman in a tender, dreamy pose—leaning forward with her head resting on crossed arms—styled with ribbon accents in a specified color, delicate makeup details, and a minimal white backdrop, while adding a softly blurred celebratory cake-and-candle foreground element. The expected outcome is a crisp, identity-faithful, mid-torso-up portrait with shallow depth of field, realistic textures (skin, hair, lace), and an intimate, whimsical mood suitable for editorial-style visual storytelling.
-skillVersionId: 019a0a0c-f502-7069-b783-4fee6238c9b9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to produce an ultra-photorealistic, high-key studio portrait of a young woman in a tender, dreamy pose—leaning forward with her head resting on crossed arms—styled with ribbon accents in a specified color, delicate makeup details, and a minimal white backdrop, while adding a softly blurred celebratory cake-and-candle foreground element. The expected outcome is a crisp, identity-faithful, mid-torso-up portrait with shallow depth of field, realistic textures (skin, hair, lace), and an intimate, whimsical mood suitable for editorial-style visual storytelling.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a0a0c-f502-7069-b783-4fee6238c9b9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ribbon-dream-birthday-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a0a0c-f502-7069-b783-4fee6238c9b9 \
+betterprompt generate ribbon-dream-birthday-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a0a0c-f502-7069-b783-4fee6238c9b9 \
+betterprompt generate ribbon-dream-birthday-portrait \
   --input Color_of_ribbons=<value> \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
