@@ -1,14 +1,14 @@
 ---
 name: glam-pink-universe
 description: This prompt defines a photorealistic “Glam Pink Glitter” visual style template to generate a square-format image of a specified subject, applying extreme high-shine pink glitter textures, sharp reflective sparkles, luxe studio lighting, and coordinated colors across the object, background, and key details (like logos and buttons) to produce a bold, hyperreal, glamorous final render.
-skillVersionId: 0197a5f7-fedc-7b56-8aaf-6f7aea4a246f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt defines a photorealistic “Glam Pink Glitter” visual style template to generate a square-format image of a specified subject, applying extreme high-shine pink glitter textures, sharp reflective sparkles, luxe studio lighting, and coordinated colors across the object, background, and key details (like logos and buttons) to produce a bold, hyperreal, glamorous final render.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -58,12 +58,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197a5f7-fedc-7b56-8aaf-6f7aea4a246f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `glam-pink-universe`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197a5f7-fedc-7b56-8aaf-6f7aea4a246f \
+betterprompt generate glam-pink-universe \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -80,7 +80,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197a5f7-fedc-7b56-8aaf-6f7aea4a246f \
+betterprompt generate glam-pink-universe \
   --input SUBJECT=SUBJECT \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
