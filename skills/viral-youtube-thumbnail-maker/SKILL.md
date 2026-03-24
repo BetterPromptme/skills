@@ -1,14 +1,14 @@
 ---
 name: viral-youtube-thumbnail-maker
 description: This prompt instructs the AI to take a user-provided photo and redesign it into a high-CTR YouTube thumbnail with a cinematic, saturated, high-contrast look: it must cleanly cut out and enhance the user as the main subject, place the exact provided topic title in huge readable text, add one clear secondary visual element tied to the topic, and build a dramatic glowing background with depth while preserving the user’s identity and maintaining a simple, uncluttered composition.
-skillVersionId: 019ad907-741d-773a-9834-17145c2df6d5
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take a user-provided photo and redesign it into a high-CTR YouTube thumbnail with a cinematic, saturated, high-contrast look: it must cleanly cut out and enhance the user as the main subject, place the exact provided topic title in huge readable text, add one clear secondary visual element tied to the topic, and build a dramatic glowing background with depth while preserving the user’s identity and maintaining a simple, uncluttered composition.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ad907-741d-773a-9834-17145c2df6d5`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `viral-youtube-thumbnail-maker`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ad907-741d-773a-9834-17145c2df6d5 \
+betterprompt generate viral-youtube-thumbnail-maker \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ad907-741d-773a-9834-17145c2df6d5 \
+betterprompt generate viral-youtube-thumbnail-maker \
   --input 'topic_text=My 5-Step Productivity System' \
   --input 'secondary_elements=focus target icon, small clock, checklist' \
   --image-input-url https://example.com/image1.png \
