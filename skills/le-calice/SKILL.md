@@ -1,14 +1,14 @@
 ---
 name: le-calice
 description: Ce prompt demande de générer une image ultra‑réaliste en 4K (16:9) d’un homme dont le visage doit rester parfaitement identique à celui de l’image fournie, intégré dans une scène de temple au trésor façon aventurier‑archéologue. Il précise sa tenue complète, sa pose (remplacer un calice doré par une pierre), l’environnement (portes monumentales, trésors poussiéreux, plantes, racines, stalactites et petits animaux), ainsi que le cadrage, la mise au point, la palette, l’éclairage en clair‑obscur et des contraintes négatives. Le résultat attendu est un plan moyen cinématographique, fortement texturé et contrasté, centré sur son visage concentré et le calice éclairé par un rayon de lumière, sans altérer le visage ni ajouter de nouvelles personnes.
-skillVersionId: 019a54bd-9d11-763c-a50e-7eefba9cf37d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 Ce prompt demande de générer une image ultra‑réaliste en 4K (16:9) d’un homme dont le visage doit rester parfaitement identique à celui de l’image fournie, intégré dans une scène de temple au trésor façon aventurier‑archéologue. Il précise sa tenue complète, sa pose (remplacer un calice doré par une pierre), l’environnement (portes monumentales, trésors poussiéreux, plantes, racines, stalactites et petits animaux), ainsi que le cadrage, la mise au point, la palette, l’éclairage en clair‑obscur et des contraintes négatives. Le résultat attendu est un plan moyen cinématographique, fortement texturé et contrasté, centré sur son visage concentré et le calice éclairé par un rayon de lumière, sans altérer le visage ni ajouter de nouvelles personnes.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a54bd-9d11-763c-a50e-7eefba9cf37d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `le-calice`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a54bd-9d11-763c-a50e-7eefba9cf37d \
+betterprompt generate le-calice \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a54bd-9d11-763c-a50e-7eefba9cf37d \
+betterprompt generate le-calice \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
 ```
