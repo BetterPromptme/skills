@@ -1,14 +1,14 @@
 ---
 name: ysl-midnight-jaguar
 description: This prompt instructs an image-generation/editing model to convert a provided photo into an ultra-realistic luxury fashion editorial scene inspired by high-end designer campaign aesthetics: the same recognizable person is preserved while being placed in the driver’s seat of a vintage convertible in a narrow city alley, styled in elegant fashion, and photographed from a specific passenger-side angle with soft daylight. The intended result is a magazine-quality, cinematic image where a clearly identifiable YSL shoulder bag—with its recognizable monogram hardware facing the camera—becomes the central fashion focus amid detailed textures, natural lighting, and shallow depth of field.
-skillVersionId: 019ce5c1-b07e-778f-bec6-1aa0d8a3da38
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation/editing model to convert a provided photo into an ultra-realistic luxury fashion editorial scene inspired by high-end designer campaign aesthetics: the same recognizable person is preserved while being placed in the driver’s seat of a vintage convertible in a narrow city alley, styled in elegant fashion, and photographed from a specific passenger-side angle with soft daylight. The intended result is a magazine-quality, cinematic image where a clearly identifiable YSL shoulder bag—with its recognizable monogram hardware facing the camera—becomes the central fashion focus amid detailed textures, natural lighting, and shallow depth of field.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ce5c1-b07e-778f-bec6-1aa0d8a3da38`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ysl-midnight-jaguar`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ce5c1-b07e-778f-bec6-1aa0d8a3da38 \
+betterprompt generate ysl-midnight-jaguar \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ce5c1-b07e-778f-bec6-1aa0d8a3da38 \
+betterprompt generate ysl-midnight-jaguar \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
