@@ -1,14 +1,14 @@
 ---
 name: modern-glamour-mirror-selfie-chic-reflection
 description: This prompt instructs an image generator to produce a hyper-realistic, waist-up indoor mirror selfie with a warm wooden backdrop, soft flattering lighting, and a minimalist luxury fashion editorial mood. It specifies the subject’s styling (white spaghetti-strap top, slim black rectangular sunglasses, subtle gold jewelry), pose and composition (phone visible without obscuring the face, clean mirror, centered vertical framing), and photorealistic surface details (natural skin sheen, reflections, jewelry glint) while constraining the result to remain tasteful, unbranded, and free of heavy filters or stylization.
-skillVersionId: 019a0afe-d424-7448-a9dc-bd6df5d712e0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to produce a hyper-realistic, waist-up indoor mirror selfie with a warm wooden backdrop, soft flattering lighting, and a minimalist luxury fashion editorial mood. It specifies the subject’s styling (white spaghetti-strap top, slim black rectangular sunglasses, subtle gold jewelry), pose and composition (phone visible without obscuring the face, clean mirror, centered vertical framing), and photorealistic surface details (natural skin sheen, reflections, jewelry glint) while constraining the result to remain tasteful, unbranded, and free of heavy filters or stylization.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a0afe-d424-7448-a9dc-bd6df5d712e0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `modern-glamour-mirror-selfie-chic-reflection`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a0afe-d424-7448-a9dc-bd6df5d712e0 \
+betterprompt generate modern-glamour-mirror-selfie-chic-reflection \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a0afe-d424-7448-a9dc-bd6df5d712e0 \
+betterprompt generate modern-glamour-mirror-selfie-chic-reflection \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
