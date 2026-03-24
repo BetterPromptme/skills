@@ -1,14 +1,14 @@
 ---
 name: the-sunlit-suburban-bubble-tea-selfie
 description: This prompt instructs an AI image generator to produce a photorealistic, smartphone-style vertical selfie portrait of a young woman in a bright, upscale palm-lined suburban neighborhood, holding a pink bubble tea in strong midday sunlight. It tightly specifies framing, subject appearance, outfit, prop details, background elements, lighting, color palette, and overall summer California lifestyle mood, while enforcing guardrails to preserve the subject’s exact facial identity, natural skin texture, and unchanged hair without beauty filters. The intended outcome is a high-resolution, natural-looking daylight selfie with sharp focus on the face and drink and a slightly softened yet detailed background.
-skillVersionId: 019c51bf-2fd7-7266-959f-a6fead5de389
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a photorealistic, smartphone-style vertical selfie portrait of a young woman in a bright, upscale palm-lined suburban neighborhood, holding a pink bubble tea in strong midday sunlight. It tightly specifies framing, subject appearance, outfit, prop details, background elements, lighting, color palette, and overall summer California lifestyle mood, while enforcing guardrails to preserve the subject’s exact facial identity, natural skin texture, and unchanged hair without beauty filters. The intended outcome is a high-resolution, natural-looking daylight selfie with sharp focus on the face and drink and a slightly softened yet detailed background.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c51bf-2fd7-7266-959f-a6fead5de389`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-sunlit-suburban-bubble-tea-selfie`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c51bf-2fd7-7266-959f-a6fead5de389 \
+betterprompt generate the-sunlit-suburban-bubble-tea-selfie \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c51bf-2fd7-7266-959f-a6fead5de389 \
+betterprompt generate the-sunlit-suburban-bubble-tea-selfie \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
