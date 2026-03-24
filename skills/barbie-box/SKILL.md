@@ -1,14 +1,14 @@
 ---
 name: barbie-box
 description: This prompt instructs an image generator to design a premium, collector-style Barbie box on a store shelf containing a doll inspired by an uploaded person’s look, while explicitly avoiding a direct copy of the real face by rendering a classic Barbie (or Ken-style, if male) plastic doll visage. It specifies a horizontal deluxe packaging layout with signature branding elements (logo, clear window, vibrant color theme), and directs the model to match the outfit, hair, makeup vibe, interior background, and included accessories from provided parameters to produce a polished retail-ready collector’s edition set.
-skillVersionId: 01984f21-acb0-7a1d-8f68-15fa10608663
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to design a premium, collector-style Barbie box on a store shelf containing a doll inspired by an uploaded person’s look, while explicitly avoiding a direct copy of the real face by rendering a classic Barbie (or Ken-style, if male) plastic doll visage. It specifies a horizontal deluxe packaging layout with signature branding elements (logo, clear window, vibrant color theme), and directs the model to match the outfit, hair, makeup vibe, interior background, and included accessories from provided parameters to produce a polished retail-ready collector’s edition set.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -79,12 +79,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01984f21-acb0-7a1d-8f68-15fa10608663`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `barbie-box`).
 
 Command form:
 
 ```bash
-betterprompt generate 01984f21-acb0-7a1d-8f68-15fa10608663 \
+betterprompt generate barbie-box \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -105,7 +105,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01984f21-acb0-7a1d-8f68-15fa10608663 \
+betterprompt generate barbie-box \
   --input BOX_COLOR=<value> \
   --input LIST_ITEMS=<value> \
   --input Gender_of_the_doll=<value> \
