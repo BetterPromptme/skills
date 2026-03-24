@@ -1,14 +1,14 @@
 ---
 name: hand-drawn-outdoor-chalkboard-menu-european-cafe-style
 description: This prompt instructs an image generator to create a high-resolution, hand-drawn chalkboard menu on a wooden A-frame sidewalk sign in an outdoor café setting, featuring user-provided menu items and a specified handwriting style, enhanced with small chalk illustrations and optional quote text. The result is a realistic chalkboard-art scene with soft natural lighting, shallow depth of field, and a subtle vignette, composed in either a 4:5 or 1:1 format.
-skillVersionId: 01980d4b-ab89-76ce-be8e-c0c38a12c2d9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a high-resolution, hand-drawn chalkboard menu on a wooden A-frame sidewalk sign in an outdoor café setting, featuring user-provided menu items and a specified handwriting style, enhanced with small chalk illustrations and optional quote text. The result is a realistic chalkboard-art scene with soft natural lighting, shallow depth of field, and a subtle vignette, composed in either a 4:5 or 1:1 format.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01980d4b-ab89-76ce-be8e-c0c38a12c2d9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `hand-drawn-outdoor-chalkboard-menu-european-cafe-style`).
 
 Command form:
 
 ```bash
-betterprompt generate 01980d4b-ab89-76ce-be8e-c0c38a12c2d9 \
+betterprompt generate hand-drawn-outdoor-chalkboard-menu-european-cafe-style \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01980d4b-ab89-76ce-be8e-c0c38a12c2d9 \
+betterprompt generate hand-drawn-outdoor-chalkboard-menu-european-cafe-style \
   --input menu_items=<value> \
   --input quote_text=<value> \
   --input visual_style=<value> \
