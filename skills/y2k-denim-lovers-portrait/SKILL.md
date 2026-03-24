@@ -1,14 +1,14 @@
 ---
 name: y2k-denim-lovers-portrait
 description: This prompt instructs an image-generation or photo-editing model to produce an ultra-realistic, early-2000s digital-flash couple portrait based on a provided reference image, keeping both subjects’ faces exactly the same while changing the surrounding scene, styling, pose, and camera aesthetics. It specifies an intimate indoor setting with distressed posters, wooden floor clutter, coordinated denim-and-dark outfits, precise body positioning and hand placement, and a harsh compact-camera flash look with warm, slightly washed color and Y2K grain. The intended outcome is a candid-feeling, emotionally grounded, cinematic snapshot-style close-up that preserves identity while delivering a nostalgic editorial result in a horizontal 3:2 frame at very high resolution.
-skillVersionId: 019a7b15-29e2-710c-b535-285298dc294b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation or photo-editing model to produce an ultra-realistic, early-2000s digital-flash couple portrait based on a provided reference image, keeping both subjects’ faces exactly the same while changing the surrounding scene, styling, pose, and camera aesthetics. It specifies an intimate indoor setting with distressed posters, wooden floor clutter, coordinated denim-and-dark outfits, precise body positioning and hand placement, and a harsh compact-camera flash look with warm, slightly washed color and Y2K grain. The intended outcome is a candid-feeling, emotionally grounded, cinematic snapshot-style close-up that preserves identity while delivering a nostalgic editorial result in a horizontal 3:2 frame at very high resolution.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a7b15-29e2-710c-b535-285298dc294b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `y2k-denim-lovers-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a7b15-29e2-710c-b535-285298dc294b \
+betterprompt generate y2k-denim-lovers-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a7b15-29e2-710c-b535-285298dc294b \
+betterprompt generate y2k-denim-lovers-portrait \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-2.5-flash-image-preview \
