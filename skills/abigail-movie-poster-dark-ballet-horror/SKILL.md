@@ -1,14 +1,14 @@
 ---
 name: abigail-movie-poster-dark-ballet-horror
 description: This prompt instructs the AI to produce a photorealistic, minimalist horror movie poster in a vertical print-ready format, shot from a perfectly top-down perspective with strict symmetry and high-contrast lighting. The result is a centered composition of a ballerina in a wide circular white tutu against a pure black void, with the subject’s real face and hair preserved exactly as provided, a subtle red stain on the dress for psychological tension, and clean red title typography (“ABIGAIL”) anchored at the bottom to complete a calm yet unsettling cinematic poster design.
-skillVersionId: 019a23a8-239a-7d2f-b9d2-760ba76c9bf6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to produce a photorealistic, minimalist horror movie poster in a vertical print-ready format, shot from a perfectly top-down perspective with strict symmetry and high-contrast lighting. The result is a centered composition of a ballerina in a wide circular white tutu against a pure black void, with the subject’s real face and hair preserved exactly as provided, a subtle red stain on the dress for psychological tension, and clean red title typography (“ABIGAIL”) anchored at the bottom to complete a calm yet unsettling cinematic poster design.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a23a8-239a-7d2f-b9d2-760ba76c9bf6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `abigail-movie-poster-dark-ballet-horror`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a23a8-239a-7d2f-b9d2-760ba76c9bf6 \
+betterprompt generate abigail-movie-poster-dark-ballet-horror \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a23a8-239a-7d2f-b9d2-760ba76c9bf6 \
+betterprompt generate abigail-movie-poster-dark-ballet-horror \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
