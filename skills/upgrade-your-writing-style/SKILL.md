@@ -1,14 +1,14 @@
 ---
 name: upgrade-your-writing-style
 description: This prompt instructs the AI to revise a provided piece of writing to improve clarity, coherence, and reader engagement while preserving the original meaning. The result is a polished rewrite that opens with a compelling hook, uses a natural and conversational (or appropriately formal academic) tone, features smoother transitions and logical flow, and avoids em dashes, producing an authentic, professional final version.
-skillVersionId: 019a9f50-6c6f-767a-98c0-f59b4171221c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to revise a provided piece of writing to improve clarity, coherence, and reader engagement while preserving the original meaning. The result is a polished rewrite that opens with a compelling hook, uses a natural and conversational (or appropriately formal academic) tone, features smoother transitions and logical flow, and avoids em dashes, producing an authentic, professional final version.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a9f50-6c6f-767a-98c0-f59b4171221c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `upgrade-your-writing-style`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a9f50-6c6f-767a-98c0-f59b4171221c \
+betterprompt generate upgrade-your-writing-style \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a9f50-6c6f-767a-98c0-f59b4171221c \
+betterprompt generate upgrade-your-writing-style \
   --input Your_text_or_essay=<value> \
   --model grok-4-fast \
   --options '{"reasoningEffort":"low"}'
