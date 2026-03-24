@@ -1,14 +1,14 @@
 ---
 name: 1989-album-cover-summerlight-nostalgic-portrait
 description: This prompt instructs an AI to generate a square, high-resolution, cinematic album-cover portrait set outdoors on a sunlit coast, keeping the subject’s face and proportions intact while applying warm golden-hour lighting, a clear blue-sky backdrop with distant seagulls, and a light beige Polaroid-style border with subtle film grain. It also specifies the exact typography layout—a large handwritten white “1989” title at the top with a smaller serif subtitle using the provided name—resulting in a dreamy, nostalgic, editorial-realistic cover suitable for either a male or female pop artist.
-skillVersionId: 019a1580-5018-7e8e-aae1-b96a90510a06
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate a square, high-resolution, cinematic album-cover portrait set outdoors on a sunlit coast, keeping the subject’s face and proportions intact while applying warm golden-hour lighting, a clear blue-sky backdrop with distant seagulls, and a light beige Polaroid-style border with subtle film grain. It also specifies the exact typography layout—a large handwritten white “1989” title at the top with a smaller serif subtitle using the provided name—resulting in a dreamy, nostalgic, editorial-realistic cover suitable for either a male or female pop artist.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a1580-5018-7e8e-aae1-b96a90510a06`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `1989-album-cover-summerlight-nostalgic-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a1580-5018-7e8e-aae1-b96a90510a06 \
+betterprompt generate 1989-album-cover-summerlight-nostalgic-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a1580-5018-7e8e-aae1-b96a90510a06 \
+betterprompt generate 1989-album-cover-summerlight-nostalgic-portrait \
   --input Your_name=<value> \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
