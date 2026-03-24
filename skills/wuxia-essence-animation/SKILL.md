@@ -1,14 +1,14 @@
 ---
 name: wuxia-essence-animation
 description: This prompt instructs an image or animation generator to create a cinematic wuxia-style martial arts scene emphasizing luminous chi effects, fluid motion, and richly detailed Chinese anime aesthetics. The expected result is an ultra-detailed, spiritually charged composition featuring dynamic energy particles, swirling elemental light, misty volumetrics, and a color palette dominated by golden highlights and vibrant jade tones, balancing serene atmosphere with bursts of explosive power.
-skillVersionId: 0199ce50-176c-747e-9078-5392b361e687
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image or animation generator to create a cinematic wuxia-style martial arts scene emphasizing luminous chi effects, fluid motion, and richly detailed Chinese anime aesthetics. The expected result is an ultra-detailed, spiritually charged composition featuring dynamic energy particles, swirling elemental light, misty volumetrics, and a color palette dominated by golden highlights and vibrant jade tones, balancing serene atmosphere with bursts of explosive power.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199ce50-176c-747e-9078-5392b361e687`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `wuxia-essence-animation`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199ce50-176c-747e-9078-5392b361e687 \
+betterprompt generate wuxia-essence-animation \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199ce50-176c-747e-9078-5392b361e687 \
+betterprompt generate wuxia-essence-animation \
   --model sora-2 \
   --options '{"seconds":"4","size":"720x1280"}'
 ```
