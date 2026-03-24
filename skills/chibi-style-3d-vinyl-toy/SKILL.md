@@ -1,14 +1,14 @@
 ---
 name: chibi-style-3d-vinyl-toy
 description: This prompt instructs the AI to take an input image and recreate its subject as a high-quality 3D chibi toy figurine, preserving key visual details like clothing, hair, and pose while transforming it into an adorable, compact form with an oversized head and tiny body. The intended result is a front-facing, Cinema 4D–style render featuring a glossy, smooth toy finish, a sturdy base, soft lighting with gentle shadows, and a clean white background in a minimalist composition.
-skillVersionId: 019768a7-46b2-7a69-ab16-eb9944ea8111
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take an input image and recreate its subject as a high-quality 3D chibi toy figurine, preserving key visual details like clothing, hair, and pose while transforming it into an adorable, compact form with an oversized head and tiny body. The intended result is a front-facing, Cinema 4D–style render featuring a glossy, smooth toy finish, a sturdy base, soft lighting with gentle shadows, and a clean white background in a minimalist composition.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019768a7-46b2-7a69-ab16-eb9944ea8111`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `chibi-style-3d-vinyl-toy`).
 
 Command form:
 
 ```bash
-betterprompt generate 019768a7-46b2-7a69-ab16-eb9944ea8111 \
+betterprompt generate chibi-style-3d-vinyl-toy \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019768a7-46b2-7a69-ab16-eb9944ea8111 \
+betterprompt generate chibi-style-3d-vinyl-toy \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
