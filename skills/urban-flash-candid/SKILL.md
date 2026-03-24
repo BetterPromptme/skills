@@ -1,14 +1,14 @@
 ---
 name: urban-flash-candid
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical waist-up nighttime street portrait of a specific young woman in a lively neon-lit downtown setting, captured with a strong on-camera flash and shallow depth of field. It tightly defines the subject’s unchanged facial identity, pose, expression, outfit, accessories, and a bright blue iced drink prop, while specifying background elements like blurred pedestrians, storefronts, traffic lights, and warm streetlighting with neon accents. The intended outcome is a sharp, candid-feeling urban nightlife photograph with realistic skin texture and lighting, energetic atmosphere, and controlled motion blur confined to the background.
-skillVersionId: 019ca98f-4d6e-717c-afe9-79c90f4d4867
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical waist-up nighttime street portrait of a specific young woman in a lively neon-lit downtown setting, captured with a strong on-camera flash and shallow depth of field. It tightly defines the subject’s unchanged facial identity, pose, expression, outfit, accessories, and a bright blue iced drink prop, while specifying background elements like blurred pedestrians, storefronts, traffic lights, and warm streetlighting with neon accents. The intended outcome is a sharp, candid-feeling urban nightlife photograph with realistic skin texture and lighting, energetic atmosphere, and controlled motion blur confined to the background.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ca98f-4d6e-717c-afe9-79c90f4d4867`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `urban-flash-candid`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ca98f-4d6e-717c-afe9-79c90f4d4867 \
+betterprompt generate urban-flash-candid \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ca98f-4d6e-717c-afe9-79c90f4d4867 \
+betterprompt generate urban-flash-candid \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
