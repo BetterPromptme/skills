@@ -1,14 +1,14 @@
 ---
 name: christmas-flash-film-portrait
 description: This prompt instructs an AI image editor to take a single uploaded portrait photo and transform it into a realistic, vintage-style Christmas dinner film photograph shot indoors at night with direct on-camera flash. It specifies a warm, nostalgic 35mm aesthetic with visible grain, subtle imperfections, and cozy holiday decor while keeping the subject’s identity, facial features, age, skin tone, and gender presentation unchanged. The expected outcome is an editorial yet candid-looking festive portrait—tasteful and commercially appropriate—without adding text, logos, fantasy elements, or non-photographic styles.
-skillVersionId: 019b2011-8948-70aa-9c66-05d6ddb5de7b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image editor to take a single uploaded portrait photo and transform it into a realistic, vintage-style Christmas dinner film photograph shot indoors at night with direct on-camera flash. It specifies a warm, nostalgic 35mm aesthetic with visible grain, subtle imperfections, and cozy holiday decor while keeping the subject’s identity, facial features, age, skin tone, and gender presentation unchanged. The expected outcome is an editorial yet candid-looking festive portrait—tasteful and commercially appropriate—without adding text, logos, fantasy elements, or non-photographic styles.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b2011-8948-70aa-9c66-05d6ddb5de7b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `christmas-flash-film-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b2011-8948-70aa-9c66-05d6ddb5de7b \
+betterprompt generate christmas-flash-film-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b2011-8948-70aa-9c66-05d6ddb5de7b \
+betterprompt generate christmas-flash-film-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
