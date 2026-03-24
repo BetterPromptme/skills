@@ -1,14 +1,14 @@
 ---
 name: ultra-deep-thinking-mode-prompt
 description: This prompt instructs an AI to tackle a user-specified task with an unusually rigorous, structured process: first decomposing the problem into subtasks, then exploring multiple angles for each, actively challenging assumptions, and repeatedly validating conclusions through independent cross-checks and alternative methods. The intended outcome is a thoroughly scrutinized, well-documented solution that highlights uncertainties, potential pitfalls, and verification steps, culminating in a final end-to-end re-evaluation before presenting the result.
-skillVersionId: 01970ba3-c0ef-7f0a-bb4c-515f44ae0d54
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to tackle a user-specified task with an unusually rigorous, structured process: first decomposing the problem into subtasks, then exploring multiple angles for each, actively challenging assumptions, and repeatedly validating conclusions through independent cross-checks and alternative methods. The intended outcome is a thoroughly scrutinized, well-documented solution that highlights uncertainties, potential pitfalls, and verification steps, culminating in a final end-to-end re-evaluation before presenting the result.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01970ba3-c0ef-7f0a-bb4c-515f44ae0d54`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ultra-deep-thinking-mode-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 01970ba3-c0ef-7f0a-bb4c-515f44ae0d54 \
+betterprompt generate ultra-deep-thinking-mode-prompt \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01970ba3-c0ef-7f0a-bb4c-515f44ae0d54 \
+betterprompt generate ultra-deep-thinking-mode-prompt \
   --input TASK=<value> \
   --model gpt-4o \
   --options '{}'
