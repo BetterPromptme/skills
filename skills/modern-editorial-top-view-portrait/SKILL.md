@@ -1,14 +1,14 @@
 ---
 name: modern-editorial-top-view-portrait
 description: This prompt instructs an image model to generate a hyper-realistic, magazine-style 8K editorial portrait from a top-down, slightly diagonal viewpoint, preserving the subject’s identity and natural features while placing them seated cross-legged on a bright red floor in oversized black streetwear with a left-ear earring. It specifies cinematic, dramatic overhead lighting that casts long shadows, arranges several best-selling novels neatly around the subject, and adds a small, subtle transparent text element in a bottom corner, resulting in a modern, high-detail fashion-editorial composition without logos, watermarks, or stylistic drift into non-photorealistic genres.
-skillVersionId: 01999f12-7b50-7741-81b7-4ca7e1c186e8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a hyper-realistic, magazine-style 8K editorial portrait from a top-down, slightly diagonal viewpoint, preserving the subject’s identity and natural features while placing them seated cross-legged on a bright red floor in oversized black streetwear with a left-ear earring. It specifies cinematic, dramatic overhead lighting that casts long shadows, arranges several best-selling novels neatly around the subject, and adds a small, subtle transparent text element in a bottom corner, resulting in a modern, high-detail fashion-editorial composition without logos, watermarks, or stylistic drift into non-photorealistic genres.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -76,12 +76,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01999f12-7b50-7741-81b7-4ca7e1c186e8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `modern-editorial-top-view-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 01999f12-7b50-7741-81b7-4ca7e1c186e8 \
+betterprompt generate modern-editorial-top-view-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -102,7 +102,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01999f12-7b50-7741-81b7-4ca7e1c186e8 \
+betterprompt generate modern-editorial-top-view-portrait \
   --input 'accessory=silver earring, subtle ring, minimal necklace' \
   --input 'outfit_style=black T-shirt, loose black pants, sneakers' \
   --input 'prop_details=best-selling novels, magazines, notebooks, art books' \
