@@ -1,14 +1,14 @@
 ---
 name: write-a-professional-email
 description: This prompt instructs the AI to draft a concise, polished business email addressed to a specified recipient about a given topic, following strict formatting, length, and style constraints. The result is a ready-to-send email with an appropriate subject line, a brief body in a limited number of sentences, a clear next step when relevant, and a professional closing, while avoiding invented details, excessive questions, jargon, and any extra commentary.
-skillVersionId: 01999951-6c41-7f96-86d6-f09b49cda805
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to draft a concise, polished business email addressed to a specified recipient about a given topic, following strict formatting, length, and style constraints. The result is a ready-to-send email with an appropriate subject line, a brief body in a limited number of sentences, a clear next step when relevant, and a professional closing, while avoiding invented details, excessive questions, jargon, and any extra commentary.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01999951-6c41-7f96-86d6-f09b49cda805`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `write-a-professional-email`).
 
 Command form:
 
 ```bash
-betterprompt generate 01999951-6c41-7f96-86d6-f09b49cda805 \
+betterprompt generate write-a-professional-email \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01999951-6c41-7f96-86d6-f09b49cda805 \
+betterprompt generate write-a-professional-email \
   --input 'topic=meeting request' \
   --input recipient=individual \
   --model gpt-5 \
