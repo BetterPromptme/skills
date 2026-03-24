@@ -1,14 +1,14 @@
 ---
 name: universal-motion-prompt
 description: This prompt instructs the model to take a provided still image and enhance it with realistic, cinematic motion cues—such as subtle motion blur, wind-driven movement, light shifts, or gentle camera-like panning—while preserving the original composition, lighting, atmosphere, and mood. The outcome is an image that feels like a mid-action frame, energized and alive, without warping or altering the core subject or scene tone.
-skillVersionId: 019c9e11-7b81-76ec-be1d-e844927be6f0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the model to take a provided still image and enhance it with realistic, cinematic motion cues—such as subtle motion blur, wind-driven movement, light shifts, or gentle camera-like panning—while preserving the original composition, lighting, atmosphere, and mood. The outcome is an image that feels like a mid-action frame, energized and alive, without warping or altering the core subject or scene tone.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c9e11-7b81-76ec-be1d-e844927be6f0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `universal-motion-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c9e11-7b81-76ec-be1d-e844927be6f0 \
+betterprompt generate universal-motion-prompt \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c9e11-7b81-76ec-be1d-e844927be6f0 \
+betterprompt generate universal-motion-prompt \
   --input Action=<value> \
   --image-input-url https://example.com/image1.png \
   --model sora-2 \
