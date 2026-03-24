@@ -1,14 +1,14 @@
 ---
 name: pov-glass-drink-shot
 description: This prompt instructs an image-generation/editing workflow to recreate a cinematic POV photograph that matches a given reference image exactly in composition, camera placement, glass/straw/liquid optics, lighting, color grade, depth of field, and overall realism, while preserving the subject’s face identity precisely from the uploaded image as the sole exception. The intended outcome is a high-resolution, photo-real editorial image with zero creative deviation from the reference scene logic and visual parameters, apart from any face changes that occur naturally through the same glass distortion present in the reference.
-skillVersionId: 019b6975-020c-747e-aed5-558b19105d2d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation/editing workflow to recreate a cinematic POV photograph that matches a given reference image exactly in composition, camera placement, glass/straw/liquid optics, lighting, color grade, depth of field, and overall realism, while preserving the subject’s face identity precisely from the uploaded image as the sole exception. The intended outcome is a high-resolution, photo-real editorial image with zero creative deviation from the reference scene logic and visual parameters, apart from any face changes that occur naturally through the same glass distortion present in the reference.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b6975-020c-747e-aed5-558b19105d2d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `pov-glass-drink-shot`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b6975-020c-747e-aed5-558b19105d2d \
+betterprompt generate pov-glass-drink-shot \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b6975-020c-747e-aed5-558b19105d2d \
+betterprompt generate pov-glass-drink-shot \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
