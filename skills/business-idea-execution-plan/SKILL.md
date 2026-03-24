@@ -1,14 +1,14 @@
 ---
 name: business-idea-execution-plan
 description: This prompt instructs the AI to act as a lean startup strategist for a solo founder and produce an execution-ready, budget-conscious plan to validate and launch a specified business idea from zero to early product–market fit, delivering structured outputs that cover positioning, assumptions and risk testing, customer discovery, MVP definition, build and integration choices, 30/60/90-day milestones, experiment and go-to-market backlogs, budget/tooling options, analytics and PMF signals, and essential legal/ops checklists—optimized for fast, instrumented experiments using no-code, automation, and low-cost tools.
-skillVersionId: 0198a808-611b-7038-9e99-99323eeaed3a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a lean startup strategist for a solo founder and produce an execution-ready, budget-conscious plan to validate and launch a specified business idea from zero to early product–market fit, delivering structured outputs that cover positioning, assumptions and risk testing, customer discovery, MVP definition, build and integration choices, 30/60/90-day milestones, experiment and go-to-market backlogs, budget/tooling options, analytics and PMF signals, and essential legal/ops checklists—optimized for fast, instrumented experiments using no-code, automation, and low-cost tools.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -58,12 +58,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198a808-611b-7038-9e99-99323eeaed3a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `business-idea-execution-plan`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198a808-611b-7038-9e99-99323eeaed3a \
+betterprompt generate business-idea-execution-plan \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -80,7 +80,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198a808-611b-7038-9e99-99323eeaed3a \
+betterprompt generate business-idea-execution-plan \
   --input 'idea=bike rental business in ho chi minh for tourists' \
   --model gpt-4.1-mini \
   --options '{}'
