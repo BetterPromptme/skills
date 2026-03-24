@@ -1,14 +1,14 @@
 ---
 name: elevator-angel-high-fashion-cinematic-portrait
 description: This prompt instructs an image-generation system to create a hyperrealistic, high-fashion cinematic portrait that preserves the identity from a provided reference photo while placing the subject in a modern stainless-steel elevator. It specifies the subject’s pose, expression, couture all-white styling, ethereal tulle-like wings, and a cool, fluorescent-lit lighting setup, along with a centered 4:5 composition and sharp, detailed focus. The intended outcome is a polished, surreal editorial image that contrasts angelic elegance against a confined metallic environment, conveying quiet melancholy and isolation without added text, logos, or distortions.
-skillVersionId: 019a2e26-8136-75e7-afdc-a95e861b0174
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to create a hyperrealistic, high-fashion cinematic portrait that preserves the identity from a provided reference photo while placing the subject in a modern stainless-steel elevator. It specifies the subject’s pose, expression, couture all-white styling, ethereal tulle-like wings, and a cool, fluorescent-lit lighting setup, along with a centered 4:5 composition and sharp, detailed focus. The intended outcome is a polished, surreal editorial image that contrasts angelic elegance against a confined metallic environment, conveying quiet melancholy and isolation without added text, logos, or distortions.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -83,12 +83,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a2e26-8136-75e7-afdc-a95e861b0174`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `elevator-angel-high-fashion-cinematic-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a2e26-8136-75e7-afdc-a95e861b0174 \
+betterprompt generate elevator-angel-high-fashion-cinematic-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -109,7 +109,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a2e26-8136-75e7-afdc-a95e861b0174 \
+betterprompt generate elevator-angel-high-fashion-cinematic-portrait \
   --input image=<value> \
   --input gender=<value> \
   --input footwear=<value> \
