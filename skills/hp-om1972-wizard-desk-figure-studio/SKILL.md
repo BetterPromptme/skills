@@ -1,14 +1,14 @@
 ---
 name: hp-om1972-wizard-desk-figure-studio
 description: This prompt instructs the AI to create a realistic commercial-style 1/7 scale figure concept based on the user’s uploaded photo, preserving the person’s exact facial likeness, and to stage the figure on a computer desk on a clear circular acrylic base labeled “HP OM1972.” The scene includes the figure in a Hogwarts robe holding a wand with glowing magical energy, an iMac displaying the Blender modeling process of the figure, and a nearby Harry Potter–inspired toy packaging box with original artwork featuring a Hogwarts crest, resulting in a cohesive product-render-like composition.
-skillVersionId: 01992738-f0da-79d3-a076-75fafe50dd52
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a realistic commercial-style 1/7 scale figure concept based on the user’s uploaded photo, preserving the person’s exact facial likeness, and to stage the figure on a computer desk on a clear circular acrylic base labeled “HP OM1972.” The scene includes the figure in a Hogwarts robe holding a wand with glowing magical energy, an iMac displaying the Blender modeling process of the figure, and a nearby Harry Potter–inspired toy packaging box with original artwork featuring a Hogwarts crest, resulting in a cohesive product-render-like composition.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01992738-f0da-79d3-a076-75fafe50dd52`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `hp-om1972-wizard-desk-figure-studio`).
 
 Command form:
 
 ```bash
-betterprompt generate 01992738-f0da-79d3-a076-75fafe50dd52 \
+betterprompt generate hp-om1972-wizard-desk-figure-studio \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01992738-f0da-79d3-a076-75fafe50dd52 \
+betterprompt generate hp-om1972-wizard-desk-figure-studio \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
