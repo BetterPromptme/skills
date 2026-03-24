@@ -1,14 +1,14 @@
 ---
 name: funkome-in-squid-game-mode-can-choose-the-number
 description: This prompt instructs an AI image generator to create a polished, highly detailed 3D product-style render of a 1:1 vinyl collectible figure inspired by the provided reference image, featuring a neutral symmetrical pose on a clean white background, dressed in a green tracksuit with specified stripes and chest number, and rendered with large glossy eyes, matte skin texture, cream sneakers, and soft balanced lighting with natural shadows.
-skillVersionId: 0197e2be-3476-7c0b-9317-021d3dc013c0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a polished, highly detailed 3D product-style render of a 1:1 vinyl collectible figure inspired by the provided reference image, featuring a neutral symmetrical pose on a clean white background, dressed in a green tracksuit with specified stripes and chest number, and rendered with large glossy eyes, matte skin texture, cream sneakers, and soft balanced lighting with natural shadows.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197e2be-3476-7c0b-9317-021d3dc013c0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `funkome-in-squid-game-mode-can-choose-the-number`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197e2be-3476-7c0b-9317-021d3dc013c0 \
+betterprompt generate funkome-in-squid-game-mode-can-choose-the-number \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197e2be-3476-7c0b-9317-021d3dc013c0 \
+betterprompt generate funkome-in-squid-game-mode-can-choose-the-number \
   --input the_number=<value> \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
