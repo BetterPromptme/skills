@@ -1,14 +1,14 @@
 ---
 name: fuji-dream-retro-cafe-portrait
 description: This prompt instructs an image model to generate a hyperrealistic, vertical, film-photography-style portrait of a young person seated at a cozy bread café table, with specific wardrobe, props, composition, lighting, and FujiFilm Pro 400H-inspired color/grain characteristics. The key requirement is to preserve the subject’s facial identity exactly as provided by a reference image while applying a nostalgic Y2K café mood, shallow depth of field, and vintage lens bloom. The expected outcome is a cinematic, dreamy café portrait that looks like an authentic analog film photo, with the subject in focus and the warm café environment softly blurred behind them.
-skillVersionId: 019a3425-9474-7688-8890-8e6bfd7a402f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a hyperrealistic, vertical, film-photography-style portrait of a young person seated at a cozy bread café table, with specific wardrobe, props, composition, lighting, and FujiFilm Pro 400H-inspired color/grain characteristics. The key requirement is to preserve the subject’s facial identity exactly as provided by a reference image while applying a nostalgic Y2K café mood, shallow depth of field, and vintage lens bloom. The expected outcome is a cinematic, dreamy café portrait that looks like an authentic analog film photo, with the subject in focus and the warm café environment softly blurred behind them.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -87,12 +87,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a3425-9474-7688-8890-8e6bfd7a402f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `fuji-dream-retro-cafe-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a3425-9474-7688-8890-8e6bfd7a402f \
+betterprompt generate fuji-dream-retro-cafe-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -113,7 +113,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a3425-9474-7688-8890-8e6bfd7a402f \
+betterprompt generate fuji-dream-retro-cafe-portrait \
   --input props=<value> \
   --input gender=<value> \
   --input outfit=<value> \
