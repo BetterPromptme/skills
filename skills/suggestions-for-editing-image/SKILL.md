@@ -1,14 +1,14 @@
 ---
 name: suggestions-for-editing-image
 description: This prompt instructs the AI to act as an experienced advertising and brand design professional who reviews a provided image against a stated user goal, summarizes the visual components to show understanding, evaluates what works and what doesn’t in terms of aesthetics and communication, recommends several concrete design refinements to improve professionalism and goal fit, and finishes by proposing a suitable caption.
-skillVersionId: 0196fb4a-3ac1-7ae7-b27d-8f0baf741509
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an experienced advertising and brand design professional who reviews a provided image against a stated user goal, summarizes the visual components to show understanding, evaluates what works and what doesn’t in terms of aesthetics and communication, recommends several concrete design refinements to improve professionalism and goal fit, and finishes by proposing a suitable caption.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196fb4a-3ac1-7ae7-b27d-8f0baf741509`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `suggestions-for-editing-image`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196fb4a-3ac1-7ae7-b27d-8f0baf741509 \
+betterprompt generate suggestions-for-editing-image \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196fb4a-3ac1-7ae7-b27d-8f0baf741509 \
+betterprompt generate suggestions-for-editing-image \
   --input Goal=<value> \
   --image-input-url https://example.com/image1.png \
   --model gpt-4o \
