@@ -1,14 +1,14 @@
 ---
 name: feature-requirement
 description: This prompt instructs the AI to act as a professional Business Analyst and produce a comprehensive Feature Requirement document based on a provided business description, using a specified template structure with English section headings while writing the body content in a chosen language, resulting in a detailed, ready-to-use requirements specification for the requested feature.
-skillVersionId: 01975e8b-e078-7998-b515-20ba8a0a149b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a professional Business Analyst and produce a comprehensive Feature Requirement document based on a provided business description, using a specified template structure with English section headings while writing the body content in a chosen language, resulting in a detailed, ready-to-use requirements specification for the requested feature.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01975e8b-e078-7998-b515-20ba8a0a149b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `feature-requirement`).
 
 Command form:
 
 ```bash
-betterprompt generate 01975e8b-e078-7998-b515-20ba8a0a149b \
+betterprompt generate feature-requirement \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01975e8b-e078-7998-b515-20ba8a0a149b \
+betterprompt generate feature-requirement \
   --input Content_language=<value> \
   --input Detail_description=<value> \
   --model gpt-4.1-mini \
