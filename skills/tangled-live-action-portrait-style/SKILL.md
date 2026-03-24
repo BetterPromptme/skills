@@ -1,14 +1,14 @@
 ---
 name: tangled-live-action-portrait-style
 description: This prompt instructs the model to edit a provided girl’s portrait into a live-action, photorealistic fantasy princess-style photograph by preserving her exact facial identity while changing her hair to long, flowing blonde hair that matches a supplied reference and adding a single small green animal companion in the same placement, pose, and expression as the reference. It tightly specifies cinematic lighting, depth of field, realistic skin and material textures, and composition to ensure the result reads as an authentic camera-captured image. The intended outcome is an ultra-high-resolution fantasy portrait that adheres to the reference for styling and mood without copying the reference face, while explicitly avoiding any animated, illustrated, or 3D-rendered look and minimizing common AI artifacts.
-skillVersionId: 019ba227-fbbd-769e-8e9f-6961d35f9d5e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the model to edit a provided girl’s portrait into a live-action, photorealistic fantasy princess-style photograph by preserving her exact facial identity while changing her hair to long, flowing blonde hair that matches a supplied reference and adding a single small green animal companion in the same placement, pose, and expression as the reference. It tightly specifies cinematic lighting, depth of field, realistic skin and material textures, and composition to ensure the result reads as an authentic camera-captured image. The intended outcome is an ultra-high-resolution fantasy portrait that adheres to the reference for styling and mood without copying the reference face, while explicitly avoiding any animated, illustrated, or 3D-rendered look and minimizing common AI artifacts.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ba227-fbbd-769e-8e9f-6961d35f9d5e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `tangled-live-action-portrait-style`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ba227-fbbd-769e-8e9f-6961d35f9d5e \
+betterprompt generate tangled-live-action-portrait-style \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ba227-fbbd-769e-8e9f-6961d35f9d5e \
+betterprompt generate tangled-live-action-portrait-style \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
