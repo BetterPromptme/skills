@@ -1,14 +1,14 @@
 ---
 name: human-checking-mirror-grid-portrait
 description: This prompt instructs an image-editing model to take a real person’s photo and convert it into a photorealistic mirror-selfie scene framed as a modern “human verification” interface. The result is a natural-looking indoor reflection with the subject’s identity preserved exactly, a uniform CAPTCHA-style square grid overlay across the mirror, subtle glass imperfections, and minimal UI elements (instruction banner and a SKIP button) presented in a clean, realistic system frame without stylization, face alteration, or exaggerated graphics.
-skillVersionId: 019b738a-682c-77c4-8e64-f2de7b1cb776
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-editing model to take a real person’s photo and convert it into a photorealistic mirror-selfie scene framed as a modern “human verification” interface. The result is a natural-looking indoor reflection with the subject’s identity preserved exactly, a uniform CAPTCHA-style square grid overlay across the mirror, subtle glass imperfections, and minimal UI elements (instruction banner and a SKIP button) presented in a clean, realistic system frame without stylization, face alteration, or exaggerated graphics.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b738a-682c-77c4-8e64-f2de7b1cb776`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `human-checking-mirror-grid-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b738a-682c-77c4-8e64-f2de7b1cb776 \
+betterprompt generate human-checking-mirror-grid-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b738a-682c-77c4-8e64-f2de7b1cb776 \
+betterprompt generate human-checking-mirror-grid-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
