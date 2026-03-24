@@ -1,14 +1,14 @@
 ---
 name: whispering-light-photography
 description: This prompt instructs the AI to transform an uploaded person’s photo into an ultra-realistic yet semi-surreal editorial portrait, placing the centered subject against a minimal gradient blue studio backdrop while applying transparent vertical glass-like refraction, sliced band distortions, and directional motion blur that fragment and shift facial and body features. The result is a futuristic, high-concept image with soft studio lighting, gentle glowing edge highlights, and an abstract avatar aesthetic, composed as a half-length or full-body view in a 4:5 (or square) aspect ratio.
-skillVersionId: 01987808-5397-77fa-8396-e79ca08a96a3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to transform an uploaded person’s photo into an ultra-realistic yet semi-surreal editorial portrait, placing the centered subject against a minimal gradient blue studio backdrop while applying transparent vertical glass-like refraction, sliced band distortions, and directional motion blur that fragment and shift facial and body features. The result is a futuristic, high-concept image with soft studio lighting, gentle glowing edge highlights, and an abstract avatar aesthetic, composed as a half-length or full-body view in a 4:5 (or square) aspect ratio.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01987808-5397-77fa-8396-e79ca08a96a3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `whispering-light-photography`).
 
 Command form:
 
 ```bash
-betterprompt generate 01987808-5397-77fa-8396-e79ca08a96a3 \
+betterprompt generate whispering-light-photography \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01987808-5397-77fa-8396-e79ca08a96a3 \
+betterprompt generate whispering-light-photography \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
