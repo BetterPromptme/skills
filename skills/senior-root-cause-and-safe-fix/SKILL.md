@@ -1,14 +1,14 @@
 ---
 name: senior-root-cause-and-safe-fix
 description: This prompt instructs the AI to act as a staff-level Node.js debugging engineer who, given a Node.js stack trace and the relevant source code (plus optional context), produces a production-ready incident-style report: it determines the root cause and precise failure location, proposes the smallest safe code change to fix the bug without altering intended behavior, and supplies a Jest/Vitest regression test that would have failed before the fix and passed after, with clear structure and explicit assumptions when details are ambiguous.
-skillVersionId: 019aa4a1-6efc-7018-bd2b-f03b9f7ce65f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a staff-level Node.js debugging engineer who, given a Node.js stack trace and the relevant source code (plus optional context), produces a production-ready incident-style report: it determines the root cause and precise failure location, proposes the smallest safe code change to fix the bug without altering intended behavior, and supplies a Jest/Vitest regression test that would have failed before the fix and passed after, with clear structure and explicit assumptions when details are ambiguous.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019aa4a1-6efc-7018-bd2b-f03b9f7ce65f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `senior-root-cause-and-safe-fix`).
 
 Command form:
 
 ```bash
-betterprompt generate 019aa4a1-6efc-7018-bd2b-f03b9f7ce65f \
+betterprompt generate senior-root-cause-and-safe-fix \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019aa4a1-6efc-7018-bd2b-f03b9f7ce65f \
+betterprompt generate senior-root-cause-and-safe-fix \
   --input 'CONTEXT=- Environment: Production - Recent change: Migrated from custom auth middleware to JWT-based middleware. - Reports: Errors only appear for some routes, not all authenticated endpoints.' \
   --input 'STACK_TRACE=TypeError: Cannot read properties of undefined (reading 'id')     at getUserProfile (/src/user/service.js:42:22)     at processRequest (/src/api/handler.js:18:11)     at Layer.handle [as handle_request] (/node_modules/express/lib/router/layer.js:95:5)     at next (/node_modules/express/lib/router/route.js:144:13)     at Route.dispatch (/node_modules/express/lib/router/route.js:114:3)     at Layer.handle [as handle_request] (/node_modules/express/lib/router/layer.js:95:5)     at /node_modules/express/lib/router/index.js:284:15' \
   --input 'CODE_SNIPPET=// /src/user/service.js async function getUserProfile(req) {   const userId = req.user.id; // line 42   const user = await db.users.findById(userId);   return user.profile; }  module.exports = { getUserProfile };' \
