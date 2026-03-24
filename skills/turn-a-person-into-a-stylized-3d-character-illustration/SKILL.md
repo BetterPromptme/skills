@@ -1,14 +1,14 @@
 ---
 name: turn-a-person-into-a-stylized-3d-character-illustration
 description: This prompt instructs the AI to transform an input photo into a polished 3D cartoon-style portrait that preserves the subject’s recognizable likeness while enhancing it with stylized proportions, expressive features, glossy materials, and clean semi-realistic hair and accessories. It specifies a playful, collectible-figure/avatar aesthetic with soft lighting, rim highlights, and a bold flat or gradient background, resulting in a vibrant, professionally rendered character image.
-skillVersionId: 01971588-8ec2-72d9-8a99-932da3ebaf2e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to transform an input photo into a polished 3D cartoon-style portrait that preserves the subject’s recognizable likeness while enhancing it with stylized proportions, expressive features, glossy materials, and clean semi-realistic hair and accessories. It specifies a playful, collectible-figure/avatar aesthetic with soft lighting, rim highlights, and a bold flat or gradient background, resulting in a vibrant, professionally rendered character image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01971588-8ec2-72d9-8a99-932da3ebaf2e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `turn-a-person-into-a-stylized-3d-character-illustration`).
 
 Command form:
 
 ```bash
-betterprompt generate 01971588-8ec2-72d9-8a99-932da3ebaf2e \
+betterprompt generate turn-a-person-into-a-stylized-3d-character-illustration \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01971588-8ec2-72d9-8a99-932da3ebaf2e \
+betterprompt generate turn-a-person-into-a-stylized-3d-character-illustration \
   --input Style_of_character_you_want=<value> \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
