@@ -1,14 +1,14 @@
 ---
 name: transform-any-emoji-into-a-floating-plush-toy-icon-soft-and-dreamy
 description: This prompt instructs an image-generation model to create a hyper-realistic 3D render of an emoji-inspired floating animal head designed like an ultra-soft plush toy, featuring long fur, playful childlike cuteness, vibrant yet soothing colors, soft diffused straight-on lighting, and a pure white background, resulting in a highly detailed, whimsical, warm, modern product-style visual.
-skillVersionId: 019806a6-7fac-74ee-b75d-9f7ade752bb3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to create a hyper-realistic 3D render of an emoji-inspired floating animal head designed like an ultra-soft plush toy, featuring long fur, playful childlike cuteness, vibrant yet soothing colors, soft diffused straight-on lighting, and a pure white background, resulting in a highly detailed, whimsical, warm, modern product-style visual.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019806a6-7fac-74ee-b75d-9f7ade752bb3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `transform-any-emoji-into-a-floating-plush-toy-icon-soft-and-dreamy`).
 
 Command form:
 
 ```bash
-betterprompt generate 019806a6-7fac-74ee-b75d-9f7ade752bb3 \
+betterprompt generate transform-any-emoji-into-a-floating-plush-toy-icon-soft-and-dreamy \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019806a6-7fac-74ee-b75d-9f7ade752bb3 \
+betterprompt generate transform-any-emoji-into-a-floating-plush-toy-icon-soft-and-dreamy \
   --input emoji=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
