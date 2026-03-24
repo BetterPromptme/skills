@@ -1,14 +1,14 @@
 ---
 name: humanize-ai
 description: You give this prompt an input, and you get one short paragraph explaining what the prompt aims to do and what output you will receive. You get a plain description of the task and the expected result. You get no quotes from the prompt and no extra commentary.
-skillVersionId: 019d044d-d325-74fd-9692-b910e2a55cca
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 You give this prompt an input, and you get one short paragraph explaining what the prompt aims to do and what output you will receive. You get a plain description of the task and the expected result. You get no quotes from the prompt and no extra commentary.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019d044d-d325-74fd-9692-b910e2a55cca`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `humanize-ai`).
 
 Command form:
 
 ```bash
-betterprompt generate 019d044d-d325-74fd-9692-b910e2a55cca \
+betterprompt generate humanize-ai \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019d044d-d325-74fd-9692-b910e2a55cca \
+betterprompt generate humanize-ai \
   --input input=<value> \
   --model gemini-3.1-pro-preview \
   --options '{"reasoningEffort":"medium"}'
