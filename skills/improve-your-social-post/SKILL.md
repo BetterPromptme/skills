@@ -1,14 +1,14 @@
 ---
 name: improve-your-social-post
 description: This prompt instructs an AI to rewrite a provided social media post into a more engaging, high-performing version that preserves the original message while upgrading the hook, pacing, clarity, emotional impact, and platform-native rhythm. It sets specific tone and style requirements, defines the intended audience, and adds guardrails to avoid unsafe or misleading content. The expected outcome is an original, scroll-stopping post that reads like creator-level copy and ends with a strong, natural call-to-action.
-skillVersionId: 019afecc-1bb2-71fd-aa4c-b259afa1173b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to rewrite a provided social media post into a more engaging, high-performing version that preserves the original message while upgrading the hook, pacing, clarity, emotional impact, and platform-native rhythm. It sets specific tone and style requirements, defines the intended audience, and adds guardrails to avoid unsafe or misleading content. The expected outcome is an original, scroll-stopping post that reads like creator-level copy and ends with a strong, natural call-to-action.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019afecc-1bb2-71fd-aa4c-b259afa1173b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `improve-your-social-post`).
 
 Command form:
 
 ```bash
-betterprompt generate 019afecc-1bb2-71fd-aa4c-b259afa1173b \
+betterprompt generate improve-your-social-post \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019afecc-1bb2-71fd-aa4c-b259afa1173b \
+betterprompt generate improve-your-social-post \
   --input Tone=<value> \
   --input Your_initial_post=<value> \
   --model grok-4-fast \
