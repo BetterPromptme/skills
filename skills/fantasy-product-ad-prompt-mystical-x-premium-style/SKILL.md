@@ -1,14 +1,14 @@
 ---
 name: fantasy-product-ad-prompt-mystical-x-premium-style
 description: This prompt instructs an image generator to produce an ultra-detailed, photorealistic fantasy product photo in a square or 4:5 format, placing a user-specified product on an intricately carved ancient stone pedestal in a misty tropical jungle with cinematic golden-hour lighting. It specifies luxurious “ancient-meets-modern” styling via treasure-like props (coins, gems, small pyramids, moss), shallow depth of field that keeps the product and pedestal crisp while softly blurring the background, and realistic shadows/reflections. The final result also includes the brand name at the top in clean, elegant typography to complete a polished, mystical marketing-ready composition.
-skillVersionId: 0196f8f4-b32c-7434-82f2-928cdeaa3a05
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to produce an ultra-detailed, photorealistic fantasy product photo in a square or 4:5 format, placing a user-specified product on an intricately carved ancient stone pedestal in a misty tropical jungle with cinematic golden-hour lighting. It specifies luxurious “ancient-meets-modern” styling via treasure-like props (coins, gems, small pyramids, moss), shallow depth of field that keeps the product and pedestal crisp while softly blurring the background, and realistic shadows/reflections. The final result also includes the brand name at the top in clean, elegant typography to complete a polished, mystical marketing-ready composition.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f8f4-b32c-7434-82f2-928cdeaa3a05`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `fantasy-product-ad-prompt-mystical-x-premium-style`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f8f4-b32c-7434-82f2-928cdeaa3a05 \
+betterprompt generate fantasy-product-ad-prompt-mystical-x-premium-style \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f8f4-b32c-7434-82f2-928cdeaa3a05 \
+betterprompt generate fantasy-product-ad-prompt-mystical-x-premium-style \
   --input Your_Brand=<value> \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
