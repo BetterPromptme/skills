@@ -1,14 +1,14 @@
 ---
 name: analyze-any-research-paper
 description: This prompt instructs the AI to produce a structured analysis of a provided research paper, summarizing its main findings and conclusions, detailing the study’s methodologies (including sample sizes, data collection methods, and statistical tests), and calling out significant quantitative results. It also requires a critical review that surfaces limitations, inconsistencies, and potential biases, with page-referenced citations for each major point. The outcome is a clearly formatted report consisting of an executive summary, page-numbered key findings, a methodology overview, a critical analysis section, and proposed directions for future research based on identified gaps.
-skillVersionId: 019a90ff-c6bf-7049-b898-112ddef247b8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to produce a structured analysis of a provided research paper, summarizing its main findings and conclusions, detailing the study’s methodologies (including sample sizes, data collection methods, and statistical tests), and calling out significant quantitative results. It also requires a critical review that surfaces limitations, inconsistencies, and potential biases, with page-referenced citations for each major point. The outcome is a clearly formatted report consisting of an executive summary, page-numbered key findings, a methodology overview, a critical analysis section, and proposed directions for future research based on identified gaps.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a90ff-c6bf-7049-b898-112ddef247b8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `analyze-any-research-paper`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a90ff-c6bf-7049-b898-112ddef247b8 \
+betterprompt generate analyze-any-research-paper \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a90ff-c6bf-7049-b898-112ddef247b8 \
+betterprompt generate analyze-any-research-paper \
   --input Paper_content=<value> \
   --model grok-4-fast \
   --options '{"reasoningEffort":"low"}'
