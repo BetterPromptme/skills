@@ -1,14 +1,14 @@
 ---
 name: neoncraft-render-kit
 description: This prompt instructs an image-generation model to produce a high-resolution, square-format 3D icon of a user-specified object, rendered in a vibrant neon gradient palette (purples, pinks, blues) with rounded forms, semi-glossy shading, subtle reflections, and soft glow lighting for depth. The expected result is a clean, playful, digitally styled icon on a black background, with exaggerated proportions as needed and no outlines or surface textures.
-skillVersionId: 01979ae1-a013-7d2a-9335-97c163b01f58
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to produce a high-resolution, square-format 3D icon of a user-specified object, rendered in a vibrant neon gradient palette (purples, pinks, blues) with rounded forms, semi-glossy shading, subtle reflections, and soft glow lighting for depth. The expected result is a clean, playful, digitally styled icon on a black background, with exaggerated proportions as needed and no outlines or surface textures.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01979ae1-a013-7d2a-9335-97c163b01f58`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `neoncraft-render-kit`).
 
 Command form:
 
 ```bash
-betterprompt generate 01979ae1-a013-7d2a-9335-97c163b01f58 \
+betterprompt generate neoncraft-render-kit \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01979ae1-a013-7d2a-9335-97c163b01f58 \
+betterprompt generate neoncraft-render-kit \
   --input Your_Object=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
