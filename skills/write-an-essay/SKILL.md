@@ -1,14 +1,14 @@
 ---
 name: write-an-essay
 description: This prompt instructs the AI to write a polished, academically styled essay of a specified length on a user-chosen topic. It requires a clear thesis-led structure with an engaging introduction, evidence-based body paragraphs, and a concise conclusion that synthesizes the main arguments. The outcome is a coherent, grammatically accurate, critically informed essay that incorporates appropriate citations in the requested format where needed.
-skillVersionId: 0196f712-491c-7974-971c-4648b18559a9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to write a polished, academically styled essay of a specified length on a user-chosen topic. It requires a clear thesis-led structure with an engaging introduction, evidence-based body paragraphs, and a concise conclusion that synthesizes the main arguments. The outcome is a coherent, grammatically accurate, critically informed essay that incorporates appropriate citations in the requested format where needed.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f712-491c-7974-971c-4648b18559a9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `write-an-essay`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f712-491c-7974-971c-4648b18559a9 \
+betterprompt generate write-an-essay \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f712-491c-7974-971c-4648b18559a9 \
+betterprompt generate write-an-essay \
   --input topic=<value> \
   --input number_of_word=<value> \
   --model gpt-4.1-mini \
