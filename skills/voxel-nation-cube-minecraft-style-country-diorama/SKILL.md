@@ -1,14 +1,14 @@
 ---
 name: voxel-nation-cube-minecraft-style-country-diorama
 description: This prompt instructs an image model to generate a square, cinematic voxel/Minecraft-inspired scene featuring a floating layered terrain cube themed to a specified country, topped with a miniature blocky diorama showcasing that country’s most recognizable landmarks, nature, and cultural elements. It also requires a prominent hovering wooden sign with the country name and flag emoji, set against a bright, soft daytime voxel sky so the country cube remains the clear focal point with gentle shadows and atmospheric haze.
-skillVersionId: 019854f7-7d38-71a0-a69b-7ddbf3989ed4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a square, cinematic voxel/Minecraft-inspired scene featuring a floating layered terrain cube themed to a specified country, topped with a miniature blocky diorama showcasing that country’s most recognizable landmarks, nature, and cultural elements. It also requires a prominent hovering wooden sign with the country name and flag emoji, set against a bright, soft daytime voxel sky so the country cube remains the clear focal point with gentle shadows and atmospheric haze.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019854f7-7d38-71a0-a69b-7ddbf3989ed4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `voxel-nation-cube-minecraft-style-country-diorama`).
 
 Command form:
 
 ```bash
-betterprompt generate 019854f7-7d38-71a0-a69b-7ddbf3989ed4 \
+betterprompt generate voxel-nation-cube-minecraft-style-country-diorama \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019854f7-7d38-71a0-a69b-7ddbf3989ed4 \
+betterprompt generate voxel-nation-cube-minecraft-style-country-diorama \
   --input COUNTRY=<value> \
   --input COUNTRY_FLAG_EMOJI=<value> \
   --model gpt-image-1 \
