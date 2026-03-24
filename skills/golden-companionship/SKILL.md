@@ -1,14 +1,14 @@
 ---
 name: golden-companionship
 description: This prompt instructs an image model to generate a photorealistic, cinematic two-panel vertical portrait story of a young person tenderly interacting with their cat inside a cozy vintage wooden interior during golden hour. It specifies the environment, poses, wardrobe variations by gender, cat color, lighting, film-like texture, lens and aperture choices, and a warm nostalgic mood, while enforcing strict realism and consistency across panels—especially preserving the subject’s exact face, hair, skin tone, and natural expression from a reference image—with the intended outcome being an intimate, softly sunlit narrative moment rendered in high resolution without text or artificial effects.
-skillVersionId: 019a5d8b-b5c7-734d-84e2-103680d97633
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a photorealistic, cinematic two-panel vertical portrait story of a young person tenderly interacting with their cat inside a cozy vintage wooden interior during golden hour. It specifies the environment, poses, wardrobe variations by gender, cat color, lighting, film-like texture, lens and aperture choices, and a warm nostalgic mood, while enforcing strict realism and consistency across panels—especially preserving the subject’s exact face, hair, skin tone, and natural expression from a reference image—with the intended outcome being an intimate, softly sunlit narrative moment rendered in high resolution without text or artificial effects.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a5d8b-b5c7-734d-84e2-103680d97633`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `golden-companionship`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a5d8b-b5c7-734d-84e2-103680d97633 \
+betterprompt generate golden-companionship \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a5d8b-b5c7-734d-84e2-103680d97633 \
+betterprompt generate golden-companionship \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
