@@ -1,14 +1,14 @@
 ---
 name: develop-pricing-strategy
 description: This prompt instructs the AI to act as a senior pricing strategist for a DTC brand and produce a data-driven, value-based pricing plan using provided product, cost, audience, and competitor price inputs. The expected outcome is a structured strategy that benchmarks competitors, recommends an optimal price tied to perceived value and unit economics, designs discount and promotion mechanics (including psychological tactics and urgency/scarcity triggers), proposes A/B tests for price sensitivity, and outlines an ongoing optimization process with metrics, tools, and review cadence to balance competitiveness and profitability.
-skillVersionId: 0197c963-8a13-7227-9c92-3ed34dc4a71f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a senior pricing strategist for a DTC brand and produce a data-driven, value-based pricing plan using provided product, cost, audience, and competitor price inputs. The expected outcome is a structured strategy that benchmarks competitors, recommends an optimal price tied to perceived value and unit economics, designs discount and promotion mechanics (including psychological tactics and urgency/scarcity triggers), proposes A/B tests for price sensitivity, and outlines an ongoing optimization process with metrics, tools, and review cadence to balance competitiveness and profitability.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c963-8a13-7227-9c92-3ed34dc4a71f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `develop-pricing-strategy`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c963-8a13-7227-9c92-3ed34dc4a71f \
+betterprompt generate develop-pricing-strategy \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c963-8a13-7227-9c92-3ed34dc4a71f \
+betterprompt generate develop-pricing-strategy \
   --input Target market=<value> \
   --input Product Description=<value> \
   --input Production cost per unit=<value> \
