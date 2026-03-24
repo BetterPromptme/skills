@@ -1,14 +1,14 @@
 ---
 name: whats-in-my-bag-editorial-dslr-top-view-photo
 description: This prompt directs an image-generation system to produce a photorealistic, luxury editorial-style DSLR macro photograph from a top-down viewpoint, depicting a realistically scaled miniature woman seated inside an open leather handbag of a specified color, surrounded by neatly arranged personal items. It tightly defines camera settings, composition, pose, lighting, texture fidelity, and color consistency while enforcing strict realism and anatomy constraints, with the intended outcome being an 8K, cinematic yet natural-looking fashion image that preserves authentic facial features and tactile material detail without stylization, artifacts, or non-photographic rendering.
-skillVersionId: 019a23b7-526b-7580-b163-c8c7f5080587
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation system to produce a photorealistic, luxury editorial-style DSLR macro photograph from a top-down viewpoint, depicting a realistically scaled miniature woman seated inside an open leather handbag of a specified color, surrounded by neatly arranged personal items. It tightly defines camera settings, composition, pose, lighting, texture fidelity, and color consistency while enforcing strict realism and anatomy constraints, with the intended outcome being an 8K, cinematic yet natural-looking fashion image that preserves authentic facial features and tactile material detail without stylization, artifacts, or non-photographic rendering.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a23b7-526b-7580-b163-c8c7f5080587`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `whats-in-my-bag-editorial-dslr-top-view-photo`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a23b7-526b-7580-b163-c8c7f5080587 \
+betterprompt generate whats-in-my-bag-editorial-dslr-top-view-photo \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a23b7-526b-7580-b163-c8c7f5080587 \
+betterprompt generate whats-in-my-bag-editorial-dslr-top-view-photo \
   --input Color_of_bag=<value> \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
