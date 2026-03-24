@@ -1,14 +1,14 @@
 ---
 name: high-rise-powerpuff-portrait
 description: This prompt instructs an image-generation system to produce a photorealistic, vertical, eye-level nighttime bedroom portrait in a modern high-rise: a young woman with specified hair, makeup, outfit, jewelry, and a relaxed seated pose on white satin bedding, hugging a Blossom plush while other plush toys and styled props are arranged around her. It tightly defines composition, lighting (warm ambient plus pink LED accents), color palette, background city-skyline visibility through floor-to-ceiling windows, and a crisp influencer-style aesthetic, while explicitly requiring the subject’s identity and natural skin texture to remain unchanged. The intended outcome is a high-resolution, cozy-yet-glam image with clear prop placement, balanced interior-versus-city lighting, and realistic textures and depth of field.
-skillVersionId: 019c9afc-58b9-77ad-bce4-aae53e37b754
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce a photorealistic, vertical, eye-level nighttime bedroom portrait in a modern high-rise: a young woman with specified hair, makeup, outfit, jewelry, and a relaxed seated pose on white satin bedding, hugging a Blossom plush while other plush toys and styled props are arranged around her. It tightly defines composition, lighting (warm ambient plus pink LED accents), color palette, background city-skyline visibility through floor-to-ceiling windows, and a crisp influencer-style aesthetic, while explicitly requiring the subject’s identity and natural skin texture to remain unchanged. The intended outcome is a high-resolution, cozy-yet-glam image with clear prop placement, balanced interior-versus-city lighting, and realistic textures and depth of field.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c9afc-58b9-77ad-bce4-aae53e37b754`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `high-rise-powerpuff-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c9afc-58b9-77ad-bce4-aae53e37b754 \
+betterprompt generate high-rise-powerpuff-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c9afc-58b9-77ad-bce4-aae53e37b754 \
+betterprompt generate high-rise-powerpuff-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
