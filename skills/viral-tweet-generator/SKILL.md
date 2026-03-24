@@ -1,14 +1,14 @@
 ---
 name: viral-tweet-generator
 description: This prompt instructs the AI to act as a viral tweet strategist and produce 10 distinct, high-performing tweet drafts tailored to a specified topic, audience, goal, tone, optional call-to-action, and length. It enforces strict platform-native constraints (character limit, no hashtags/emojis/fluff, no fabricated stats, no unsafe content) and requires variety across multiple hook styles. The outcome is a clean, numbered list of tweet-ready options, each labeled with its hook type and presented without any extra commentary.
-skillVersionId: 019b43fd-d7f0-7605-be10-9a7b3cf6e261
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a viral tweet strategist and produce 10 distinct, high-performing tweet drafts tailored to a specified topic, audience, goal, tone, optional call-to-action, and length. It enforces strict platform-native constraints (character limit, no hashtags/emojis/fluff, no fabricated stats, no unsafe content) and requires variety across multiple hook styles. The outcome is a clean, numbered list of tweet-ready options, each labeled with its hook type and presented without any extra commentary.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b43fd-d7f0-7605-be10-9a7b3cf6e261`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `viral-tweet-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b43fd-d7f0-7605-be10-9a7b3cf6e261 \
+betterprompt generate viral-tweet-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -92,7 +92,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b43fd-d7f0-7605-be10-9a7b3cf6e261 \
+betterprompt generate viral-tweet-generator \
   --input CTA=<value> \
   --input GOAL=<value> \
   --input TONE=<value> \
