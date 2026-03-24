@@ -1,14 +1,14 @@
 ---
 name: suggested-learning-resources-suitable-for-major-and-school-year
 description: This prompt asks the AI to act as a personalized learning advisor by using the student’s year, major, and target subject to suggest high-quality resources—such as books, courses, websites, and YouTube channels—suited to their current proficiency and long-term objectives. The outcome is a curated, level-appropriate study roadmap with recommended materials that align with the learner’s academic background and goals.
-skillVersionId: 0197aa94-7124-7845-a1e9-9629be2051f9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to act as a personalized learning advisor by using the student’s year, major, and target subject to suggest high-quality resources—such as books, courses, websites, and YouTube channels—suited to their current proficiency and long-term objectives. The outcome is a curated, level-appropriate study roadmap with recommended materials that align with the learner’s academic background and goals.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197aa94-7124-7845-a1e9-9629be2051f9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `suggested-learning-resources-suitable-for-major-and-school-year`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197aa94-7124-7845-a1e9-9629be2051f9 \
+betterprompt generate suggested-learning-resources-suitable-for-major-and-school-year \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197aa94-7124-7845-a1e9-9629be2051f9 \
+betterprompt generate suggested-learning-resources-suitable-for-major-and-school-year \
   --input YEAR=<value> \
   --input MAJOR=<value> \
   --input SUBJECT=<value> \
