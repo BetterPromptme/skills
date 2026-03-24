@@ -1,14 +1,14 @@
 ---
 name: ultrarealistic-artistic-portrait
 description: This prompt instructs an image-generation system to create a hyperreal, cinematic close-up portrait based on an uploaded reference photo, strictly preserving the subject’s identity and natural skin texture. It specifies a black sweatshirt, a slight-profile pose with a thoughtful expression and averted gaze, dramatic dual lighting with a golden rim/backlight on the hair and cool green illumination across the face and chest, and a pure black distraction-free background, while explicitly forbidding beautifying, stylization, text/logos, or visual artifacts.
-skillVersionId: 01999f48-03f9-741a-8a51-775532d3ee8b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to create a hyperreal, cinematic close-up portrait based on an uploaded reference photo, strictly preserving the subject’s identity and natural skin texture. It specifies a black sweatshirt, a slight-profile pose with a thoughtful expression and averted gaze, dramatic dual lighting with a golden rim/backlight on the hair and cool green illumination across the face and chest, and a pure black distraction-free background, while explicitly forbidding beautifying, stylization, text/logos, or visual artifacts.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01999f48-03f9-741a-8a51-775532d3ee8b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ultrarealistic-artistic-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 01999f48-03f9-741a-8a51-775532d3ee8b \
+betterprompt generate ultrarealistic-artistic-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01999f48-03f9-741a-8a51-775532d3ee8b \
+betterprompt generate ultrarealistic-artistic-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
