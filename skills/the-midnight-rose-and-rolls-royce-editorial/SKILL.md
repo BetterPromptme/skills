@@ -1,14 +1,14 @@
 ---
 name: the-midnight-rose-and-rolls-royce-editorial
 description: This prompt instructs an image model to generate a high-resolution, photorealistic vertical nighttime fashion portrait in a luxury urban setting: a young woman with specific hair, makeup, outfit, jewelry, and pose sits on the hood of a black Rolls‑Royce while holding deep red roses, lit with strong frontal flash against a cinematic city street background. It tightly constrains composition (three-quarter/full-body framing, subject placement, visible grille and hood ornament, street perspective), lighting and color palette, and realism requirements (no facial reshaping, natural skin texture, accurate reflections and vehicle proportions), resulting in a polished editorial-style automotive glamour image with an upscale romantic nightlife mood.
-skillVersionId: 019ca989-8cd8-77fa-81e8-653dd5db7fb3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a high-resolution, photorealistic vertical nighttime fashion portrait in a luxury urban setting: a young woman with specific hair, makeup, outfit, jewelry, and pose sits on the hood of a black Rolls‑Royce while holding deep red roses, lit with strong frontal flash against a cinematic city street background. It tightly constrains composition (three-quarter/full-body framing, subject placement, visible grille and hood ornament, street perspective), lighting and color palette, and realism requirements (no facial reshaping, natural skin texture, accurate reflections and vehicle proportions), resulting in a polished editorial-style automotive glamour image with an upscale romantic nightlife mood.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ca989-8cd8-77fa-81e8-653dd5db7fb3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-midnight-rose-and-rolls-royce-editorial`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ca989-8cd8-77fa-81e8-653dd5db7fb3 \
+betterprompt generate the-midnight-rose-and-rolls-royce-editorial \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ca989-8cd8-77fa-81e8-653dd5db7fb3 \
+betterprompt generate the-midnight-rose-and-rolls-royce-editorial \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
