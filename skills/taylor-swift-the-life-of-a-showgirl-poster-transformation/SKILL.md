@@ -1,14 +1,14 @@
 ---
 name: taylor-swift-the-life-of-a-showgirl-poster-transformation
 description: This prompt instructs the AI to create a photorealistic, cinematic luxury album-style poster that closely matches a specific “The Life of a Showgirl” reference in composition, pose, water-bath environment, lighting, color grade, jeweled styling, and glittery serif typography layout, while replacing the original subject with the user by preserving the user’s facial identity and expression and adapting the outfit concept appropriately for gender; the result is a high-end editorial poster featuring the user in the same framed, underwater-glow aesthetic with identical text placement and overall mood.
-skillVersionId: 019a4874-b216-7324-a171-d67f002206dd
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a photorealistic, cinematic luxury album-style poster that closely matches a specific “The Life of a Showgirl” reference in composition, pose, water-bath environment, lighting, color grade, jeweled styling, and glittery serif typography layout, while replacing the original subject with the user by preserving the user’s facial identity and expression and adapting the outfit concept appropriately for gender; the result is a high-end editorial poster featuring the user in the same framed, underwater-glow aesthetic with identical text placement and overall mood.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a4874-b216-7324-a171-d67f002206dd`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `taylor-swift-the-life-of-a-showgirl-poster-transformation`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a4874-b216-7324-a171-d67f002206dd \
+betterprompt generate taylor-swift-the-life-of-a-showgirl-poster-transformation \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a4874-b216-7324-a171-d67f002206dd \
+betterprompt generate taylor-swift-the-life-of-a-showgirl-poster-transformation \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
