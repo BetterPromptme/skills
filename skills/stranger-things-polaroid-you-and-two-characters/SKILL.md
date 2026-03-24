@@ -1,14 +1,14 @@
 ---
 name: stranger-things-polaroid-you-and-two-characters
 description: This prompt instructs an image model to use the user’s provided face photo without altering their identity and generate a photorealistic, polaroid-framed “Stranger Things” cast-style portrait of three people standing shoulder-to-shoulder: a specified character on the left, the user centered with a relaxed smile, and a specified character on the right, with both characters’ arms casually placed behind the user, set against a simple retro white-curtain backdrop with warm 1980s film lighting and strict constraints to avoid stylization, extra subjects, or background changes.
-skillVersionId: 019ade4f-84ad-72cb-8e3e-5b9da50a9eb3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to use the user’s provided face photo without altering their identity and generate a photorealistic, polaroid-framed “Stranger Things” cast-style portrait of three people standing shoulder-to-shoulder: a specified character on the left, the user centered with a relaxed smile, and a specified character on the right, with both characters’ arms casually placed behind the user, set against a simple retro white-curtain backdrop with warm 1980s film lighting and strict constraints to avoid stylization, extra subjects, or background changes.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ade4f-84ad-72cb-8e3e-5b9da50a9eb3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `stranger-things-polaroid-you-and-two-characters`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ade4f-84ad-72cb-8e3e-5b9da50a9eb3 \
+betterprompt generate stranger-things-polaroid-you-and-two-characters \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ade4f-84ad-72cb-8e3e-5b9da50a9eb3 \
+betterprompt generate stranger-things-polaroid-you-and-two-characters \
   --input character_A=<value> \
   --input character_B=<value> \
   --image-input-url https://example.com/image1.png \
