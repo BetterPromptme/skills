@@ -1,14 +1,14 @@
 ---
 name: professional-nail-salon-promotion-photo
 description: This prompt instructs the AI to transform an uploaded nail photo into a high-end, realistic salon advertising image by keeping the original nail design exactly the same while generating a premium studio composition: two hands posed elegantly with one resting over the other, dramatic directional lighting from the upper left to emphasize glossy highlights, and a clean solid-black background. The intended outcome is an ultra‑high‑resolution, tightly framed promotional photograph that looks commercially shot and retouched, with natural skin texture preserved and no added elements like jewelry, text, or environmental scenery.
-skillVersionId: 019b2694-301d-70b0-af5c-04eeff0be061
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to transform an uploaded nail photo into a high-end, realistic salon advertising image by keeping the original nail design exactly the same while generating a premium studio composition: two hands posed elegantly with one resting over the other, dramatic directional lighting from the upper left to emphasize glossy highlights, and a clean solid-black background. The intended outcome is an ultra‑high‑resolution, tightly framed promotional photograph that looks commercially shot and retouched, with natural skin texture preserved and no added elements like jewelry, text, or environmental scenery.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b2694-301d-70b0-af5c-04eeff0be061`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `professional-nail-salon-promotion-photo`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b2694-301d-70b0-af5c-04eeff0be061 \
+betterprompt generate professional-nail-salon-promotion-photo \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b2694-301d-70b0-af5c-04eeff0be061 \
+betterprompt generate professional-nail-salon-promotion-photo \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
