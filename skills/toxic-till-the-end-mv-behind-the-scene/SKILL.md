@@ -1,14 +1,14 @@
 ---
 name: toxic-till-the-end-mv-behind-the-scene
 description: This prompt instructs an image-generation system to create an 8K, photorealistic, cinematic golden-hour outdoor portrait in a sunlit park, with the subject posed by a stone balustrade and the background softly blurred. It requires strict identity preservation from a reference image (face, hairstyle, proportions, and skin tone unchanged) and provides two wardrobe/pose variants (female or male) featuring a white polo with black trim, a peace-sign gesture, confident expression, warm directional lighting, shallow depth of field, and a vertical portrait composition for an editorial-style result.
-skillVersionId: 019a6c09-eb2a-7068-a2be-8b85988594ff
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to create an 8K, photorealistic, cinematic golden-hour outdoor portrait in a sunlit park, with the subject posed by a stone balustrade and the background softly blurred. It requires strict identity preservation from a reference image (face, hairstyle, proportions, and skin tone unchanged) and provides two wardrobe/pose variants (female or male) featuring a white polo with black trim, a peace-sign gesture, confident expression, warm directional lighting, shallow depth of field, and a vertical portrait composition for an editorial-style result.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a6c09-eb2a-7068-a2be-8b85988594ff`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `toxic-till-the-end-mv-behind-the-scene`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a6c09-eb2a-7068-a2be-8b85988594ff \
+betterprompt generate toxic-till-the-end-mv-behind-the-scene \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a6c09-eb2a-7068-a2be-8b85988594ff \
+betterprompt generate toxic-till-the-end-mv-behind-the-scene \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
