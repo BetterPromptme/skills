@@ -1,14 +1,14 @@
 ---
 name: giant-figure-museum-surreal-fashion-editorial
 description: This prompt instructs an AI image generator to create a photorealistic, cinematic fashion-editorial scene in a minimalist modern art museum where a reference subject’s face, skin tone, and hairstyle are preserved exactly while the subject is depicted as a giant seated on a circular pedestal, surrounded by tiny museum visitors. It specifies architectural composition, camera angle, lighting physics, color palette, wardrobe continuity from the reference, and subtle accessory additions (notably a black designer handbag and gold details) to produce a serene, balanced, print-quality surreal tableau that feels believable despite the scale illusion.
-skillVersionId: 019a23c7-b6c5-7229-95f4-9afa3b2c830c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a photorealistic, cinematic fashion-editorial scene in a minimalist modern art museum where a reference subject’s face, skin tone, and hairstyle are preserved exactly while the subject is depicted as a giant seated on a circular pedestal, surrounded by tiny museum visitors. It specifies architectural composition, camera angle, lighting physics, color palette, wardrobe continuity from the reference, and subtle accessory additions (notably a black designer handbag and gold details) to produce a serene, balanced, print-quality surreal tableau that feels believable despite the scale illusion.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a23c7-b6c5-7229-95f4-9afa3b2c830c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `giant-figure-museum-surreal-fashion-editorial`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a23c7-b6c5-7229-95f4-9afa3b2c830c \
+betterprompt generate giant-figure-museum-surreal-fashion-editorial \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a23c7-b6c5-7229-95f4-9afa3b2c830c \
+betterprompt generate giant-figure-museum-surreal-fashion-editorial \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
