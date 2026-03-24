@@ -1,14 +1,14 @@
 ---
 name: pink-arcade-ominous-retro-portrait
 description: This prompt instructs the AI to generate a photorealistic, cinematic fashion-horror portrait set in a neon-soaked retro arcade, featuring the provided subject posed inside a Ghostface-themed claw machine while holding a red 90s phone (and blowing a gum bubble or smirking), with legible pink neon “GAME OVER” and a Ghostface figure behind the glass holding a heart-shaped “CALL ME” sign. It defines precise composition, lighting, color grading, wardrobe, props, and mood to deliver a high-resolution album-cover style image that feels ominous yet playful, while strictly preserving the subject’s original facial features, hair, and skin tone from the input image.
-skillVersionId: 019a2399-6719-79d8-a345-682779839827
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a photorealistic, cinematic fashion-horror portrait set in a neon-soaked retro arcade, featuring the provided subject posed inside a Ghostface-themed claw machine while holding a red 90s phone (and blowing a gum bubble or smirking), with legible pink neon “GAME OVER” and a Ghostface figure behind the glass holding a heart-shaped “CALL ME” sign. It defines precise composition, lighting, color grading, wardrobe, props, and mood to deliver a high-resolution album-cover style image that feels ominous yet playful, while strictly preserving the subject’s original facial features, hair, and skin tone from the input image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a2399-6719-79d8-a345-682779839827`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `pink-arcade-ominous-retro-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a2399-6719-79d8-a345-682779839827 \
+betterprompt generate pink-arcade-ominous-retro-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a2399-6719-79d8-a345-682779839827 \
+betterprompt generate pink-arcade-ominous-retro-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
