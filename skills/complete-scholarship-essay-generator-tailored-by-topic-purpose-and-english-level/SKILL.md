@@ -1,14 +1,14 @@
 ---
 name: complete-scholarship-essay-generator-tailored-by-topic-purpose-and-english-level
 description: This prompt instructs the AI to produce a full, polished scholarship application essay tailored to a specific topic, university, purpose, language proficiency level, and word count. It incorporates optional personal anecdotes, achievements, goals, and the university’s mission to craft a sincere first-person narrative with a clear introduction, body, and conclusion. The outcome is a compelling, well-structured essay that demonstrates motivation, fit with the institution’s values, and the impact of the scholarship on the applicant’s future, while staying close to the requested length and appropriate to the stated English level.
-skillVersionId: 01983016-b0e7-7399-ba5f-3940066fa750
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to produce a full, polished scholarship application essay tailored to a specific topic, university, purpose, language proficiency level, and word count. It incorporates optional personal anecdotes, achievements, goals, and the university’s mission to craft a sincere first-person narrative with a clear introduction, body, and conclusion. The outcome is a compelling, well-structured essay that demonstrates motivation, fit with the institution’s values, and the impact of the scholarship on the applicant’s future, while staying close to the requested length and appropriate to the stated English level.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -76,12 +76,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01983016-b0e7-7399-ba5f-3940066fa750`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `complete-scholarship-essay-generator-tailored-by-topic-purpose-and-english-level`).
 
 Command form:
 
 ```bash
-betterprompt generate 01983016-b0e7-7399-ba5f-3940066fa750 \
+betterprompt generate complete-scholarship-essay-generator-tailored-by-topic-purpose-and-english-level \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01983016-b0e7-7399-ba5f-3940066fa750 \
+betterprompt generate complete-scholarship-essay-generator-tailored-by-topic-purpose-and-english-level \
   --input CEFR_Level=<value> \
   --input Word_Count=<value> \
   --input Essay_Topic=<value> \
