@@ -1,14 +1,14 @@
 ---
 name: prompt-evaluation-system
 description: This prompt instructs an AI to act as a structured prompt-quality inspector that evaluates a provided user prompt against ten specified prompt-engineering components, marking each as Full/Partial/Missing with a 0–10 score and a brief justification, then computing an overall average score and qualitative rating while following neutrality, formatting, and safety-stop rules (refusing to proceed if the prompt requests harmful content).
-skillVersionId: 019b075c-35a9-739c-9f67-1cac92c11108
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to act as a structured prompt-quality inspector that evaluates a provided user prompt against ten specified prompt-engineering components, marking each as Full/Partial/Missing with a 0–10 score and a brief justification, then computing an overall average score and qualitative rating while following neutrality, formatting, and safety-stop rules (refusing to proceed if the prompt requests harmful content).
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b075c-35a9-739c-9f67-1cac92c11108`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `prompt-evaluation-system`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b075c-35a9-739c-9f67-1cac92c11108 \
+betterprompt generate prompt-evaluation-system \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b075c-35a9-739c-9f67-1cac92c11108 \
+betterprompt generate prompt-evaluation-system \
   --input Your_initial_prompt=<value> \
   --model gpt-5 \
   --options '{"reasoningEffort":"low"}'
