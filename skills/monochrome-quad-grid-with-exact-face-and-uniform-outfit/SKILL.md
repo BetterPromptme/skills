@@ -1,14 +1,14 @@
 ---
 name: monochrome-quad-grid-with-exact-face-and-uniform-outfit
 description: This prompt directs an image generation workflow to take a single uploaded portrait and produce a high‑resolution 2×2 black‑and‑white grid of portraits where the subject’s face and expression remain exactly identical to the reference and the outfit stays unchanged across all panels. It specifies controlled, subtle variation only through upper‑body posing and cropping, enforces consistent lighting, grain, and a soft gradient background, and includes strict validation rules to reject any outputs that introduce identity drift, wardrobe changes, color, text, extra people, or other deviations, resulting in a production‑ready collage plus matching individual panel exports.
-skillVersionId: 01995af2-c375-72cc-b22d-98ea10e62a05
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image generation workflow to take a single uploaded portrait and produce a high‑resolution 2×2 black‑and‑white grid of portraits where the subject’s face and expression remain exactly identical to the reference and the outfit stays unchanged across all panels. It specifies controlled, subtle variation only through upper‑body posing and cropping, enforces consistent lighting, grain, and a soft gradient background, and includes strict validation rules to reject any outputs that introduce identity drift, wardrobe changes, color, text, extra people, or other deviations, resulting in a production‑ready collage plus matching individual panel exports.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01995af2-c375-72cc-b22d-98ea10e62a05`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `monochrome-quad-grid-with-exact-face-and-uniform-outfit`).
 
 Command form:
 
 ```bash
-betterprompt generate 01995af2-c375-72cc-b22d-98ea10e62a05 \
+betterprompt generate monochrome-quad-grid-with-exact-face-and-uniform-outfit \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01995af2-c375-72cc-b22d-98ea10e62a05 \
+betterprompt generate monochrome-quad-grid-with-exact-face-and-uniform-outfit \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
