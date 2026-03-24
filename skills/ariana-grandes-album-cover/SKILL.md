@@ -1,14 +1,14 @@
 ---
 name: ariana-grandes-album-cover
 description: This prompt instructs an AI image system to edit a user-provided portrait into a photorealistic, square-format album-cover style image with a specific intimate floor-lying pose, dreamy pastel lavender/blue environment, and a diagonal mint-tinted spotlight across the face, using a separate reference only for color/lighting mood while strictly preserving the subject’s identity. The intended outcome is an Ultra-HD, cinematic editorial cover that matches the requested soft-focus, shallow depth-of-field look and overall vibe without adding text, logos, clutter, or copying any other person’s features.
-skillVersionId: 0199936e-a161-7e98-ae6a-07b7eeb255ec
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image system to edit a user-provided portrait into a photorealistic, square-format album-cover style image with a specific intimate floor-lying pose, dreamy pastel lavender/blue environment, and a diagonal mint-tinted spotlight across the face, using a separate reference only for color/lighting mood while strictly preserving the subject’s identity. The intended outcome is an Ultra-HD, cinematic editorial cover that matches the requested soft-focus, shallow depth-of-field look and overall vibe without adding text, logos, clutter, or copying any other person’s features.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199936e-a161-7e98-ae6a-07b7eeb255ec`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ariana-grandes-album-cover`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199936e-a161-7e98-ae6a-07b7eeb255ec \
+betterprompt generate ariana-grandes-album-cover \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199936e-a161-7e98-ae6a-07b7eeb255ec \
+betterprompt generate ariana-grandes-album-cover \
   --input 'outfit=Light neutral top with soft textures' \
   --input 'hairstyle=Sleek high ponytail' \
   --image-input-url https://example.com/image1.png \
