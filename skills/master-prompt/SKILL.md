@@ -1,14 +1,14 @@
 ---
 name: master-prompt
 description: This prompt directs an AI tool to generate a manga-style comic using the “Nano Banana Pro” theme, typically featuring banana-inspired characters or motifs, and to output a cohesive set of illustrated panels (or a single comic image) with consistent character design, expressive line art, and readable dialogue or captions that match the intended tone and story beat.
-skillVersionId: 019c27a1-43d1-757f-acb0-48268b0ec4f4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an AI tool to generate a manga-style comic using the “Nano Banana Pro” theme, typically featuring banana-inspired characters or motifs, and to output a cohesive set of illustrated panels (or a single comic image) with consistent character design, expressive line art, and readable dialogue or captions that match the intended tone and story beat.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c27a1-43d1-757f-acb0-48268b0ec4f4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `master-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c27a1-43d1-757f-acb0-48268b0ec4f4 \
+betterprompt generate master-prompt \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c27a1-43d1-757f-acb0-48268b0ec4f4 \
+betterprompt generate master-prompt \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"1:1","resolution":"1K"}'
 ```
