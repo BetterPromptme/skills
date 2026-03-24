@@ -1,14 +1,14 @@
 ---
 name: improve-one-daily-habit
 description: This prompt asks the AI to help you replace an unhelpful habit with a healthier one by analyzing your specific habit, its negative impact, and the trigger situation, then redesigning the trigger → action → reward loop into a simple, realistic alternative. The outcome is a concise plan that includes a clear replacement behavior and one practical environmental tweak or mindset anchor to make the new habit easier to follow in the moments you typically slip into the old one.
-skillVersionId: 019777e1-d871-792a-aa2b-1decf386264d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to help you replace an unhelpful habit with a healthier one by analyzing your specific habit, its negative impact, and the trigger situation, then redesigning the trigger → action → reward loop into a simple, realistic alternative. The outcome is a concise plan that includes a clear replacement behavior and one practical environmental tweak or mindset anchor to make the new habit easier to follow in the moments you typically slip into the old one.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019777e1-d871-792a-aa2b-1decf386264d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `improve-one-daily-habit`).
 
 Command form:
 
 ```bash
-betterprompt generate 019777e1-d871-792a-aa2b-1decf386264d \
+betterprompt generate improve-one-daily-habit \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019777e1-d871-792a-aa2b-1decf386264d \
+betterprompt generate improve-one-daily-habit \
   --input New_habit=<value> \
   --input Describe_habit=<value> \
   --input Negative_impact=<value> \
