@@ -1,14 +1,14 @@
 ---
 name: birthday-flash-portrait-absolute-face-lock-female-version
 description: This prompt instructs an image-generation system to produce a photorealistic, cinematic birthday portrait using a provided reference face with near-perfect identity locking, depicting the subject in strict side profile leaning toward a white cake with lit numeric candles showing the specified age. It tightly defines composition (neutral wall with a round spotlight and crisp shadow), wardrobe (white ball gown), camera/flash lighting settings, and rendering constraints to prevent any facial alteration, extra props, or incorrect candle digits, with explicit quality checks and a fail-fast request for a clearer reference image if identity verification cannot be reliably maintained.
-skillVersionId: 01996015-99ba-7fdd-8d26-6eda8f1e5a7f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce a photorealistic, cinematic birthday portrait using a provided reference face with near-perfect identity locking, depicting the subject in strict side profile leaning toward a white cake with lit numeric candles showing the specified age. It tightly defines composition (neutral wall with a round spotlight and crisp shadow), wardrobe (white ball gown), camera/flash lighting settings, and rendering constraints to prevent any facial alteration, extra props, or incorrect candle digits, with explicit quality checks and a fail-fast request for a clearer reference image if identity verification cannot be reliably maintained.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01996015-99ba-7fdd-8d26-6eda8f1e5a7f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `birthday-flash-portrait-absolute-face-lock-female-version`).
 
 Command form:
 
 ```bash
-betterprompt generate 01996015-99ba-7fdd-8d26-6eda8f1e5a7f \
+betterprompt generate birthday-flash-portrait-absolute-face-lock-female-version \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01996015-99ba-7fdd-8d26-6eda8f1e5a7f \
+betterprompt generate birthday-flash-portrait-absolute-face-lock-female-version \
   --input age=03 \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
