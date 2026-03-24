@@ -1,14 +1,14 @@
 ---
 name: create-theme-ideas-for-your-shoots
 description: This prompt instructs the AI to take on the role of an experienced photographer and develop a set of original photoshoot themes and concepts around a specified topic, shaping them with clear mood, tone, and aesthetic direction. The outcome is a collection of distinctive, story-driven ideas that emphasize emotional impact and visual coherence, informed by professional considerations like composition, lighting choices, and narrative visual storytelling to help the shoot feel memorable and stand out.
-skillVersionId: 0196f8cd-e67e-737f-b25d-f817fa27e655
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take on the role of an experienced photographer and develop a set of original photoshoot themes and concepts around a specified topic, shaping them with clear mood, tone, and aesthetic direction. The outcome is a collection of distinctive, story-driven ideas that emphasize emotional impact and visual coherence, informed by professional considerations like composition, lighting choices, and narrative visual storytelling to help the shoot feel memorable and stand out.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f8cd-e67e-737f-b25d-f817fa27e655`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `create-theme-ideas-for-your-shoots`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f8cd-e67e-737f-b25d-f817fa27e655 \
+betterprompt generate create-theme-ideas-for-your-shoots \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f8cd-e67e-737f-b25d-f817fa27e655 \
+betterprompt generate create-theme-ideas-for-your-shoots \
   --input topic=<value> \
   --model gpt-4o \
   --options '{}'
