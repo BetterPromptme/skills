@@ -1,14 +1,14 @@
 ---
 name: zootopia-polaroid-judy-and-nick
 description: This prompt instructs an image-generation system to create a bright, studio-lit polaroid-style group portrait featuring three shoulder-to-shoulder subjects: Judy Hopps on the left making a peace sign, a fully realistic human girl in the center smiling naturally, and Nick Wilde on the right with a smug expression and crossed arms, with both animated characters’ arms positioned casually behind the girl. It specifies a clean white curtain backdrop, soft even lighting with a subtle top-left lens flare, a white polaroid frame, and a mixed visual style that keeps the girl photorealistic while rendering Judy and Nick in faithful 3D Disney-like form, while explicitly preventing design changes, additional characters, or any busy background elements.
-skillVersionId: 019ac408-5cd4-75a6-9f02-41bad0d70163
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to create a bright, studio-lit polaroid-style group portrait featuring three shoulder-to-shoulder subjects: Judy Hopps on the left making a peace sign, a fully realistic human girl in the center smiling naturally, and Nick Wilde on the right with a smug expression and crossed arms, with both animated characters’ arms positioned casually behind the girl. It specifies a clean white curtain backdrop, soft even lighting with a subtle top-left lens flare, a white polaroid frame, and a mixed visual style that keeps the girl photorealistic while rendering Judy and Nick in faithful 3D Disney-like form, while explicitly preventing design changes, additional characters, or any busy background elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ac408-5cd4-75a6-9f02-41bad0d70163`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `zootopia-polaroid-judy-and-nick`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ac408-5cd4-75a6-9f02-41bad0d70163 \
+betterprompt generate zootopia-polaroid-judy-and-nick \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ac408-5cd4-75a6-9f02-41bad0d70163 \
+betterprompt generate zootopia-polaroid-judy-and-nick \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
