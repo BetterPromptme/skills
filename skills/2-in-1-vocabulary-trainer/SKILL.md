@@ -1,14 +1,14 @@
 ---
 name: 2-in-1-vocabulary-trainer
 description: This prompt instructs the AI to create a set of 80 topic-specific vocabulary items in a specified target language, organized evenly across defined subtopics, and present them in a single six-column Markdown table containing the word, consistent beginner-friendly phonetics, a pronunciation guide, the translation, and a short bilingual example sentence that includes the target word, with strict formatting and length constraints and no extra text outside the table.
-skillVersionId: 0198c12a-e878-78e2-9742-342ad4cf7760
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a set of 80 topic-specific vocabulary items in a specified target language, organized evenly across defined subtopics, and present them in a single six-column Markdown table containing the word, consistent beginner-friendly phonetics, a pronunciation guide, the translation, and a short bilingual example sentence that includes the target word, with strict formatting and length constraints and no extra text outside the table.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198c12a-e878-78e2-9742-342ad4cf7760`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `2-in-1-vocabulary-trainer`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198c12a-e878-78e2-9742-342ad4cf7760 \
+betterprompt generate 2-in-1-vocabulary-trainer \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198c12a-e878-78e2-9742-342ad4cf7760 \
+betterprompt generate 2-in-1-vocabulary-trainer \
   --input Topic=<value> \
   --input Target_Language=<value> \
   --input Translation_Language=<value> \
