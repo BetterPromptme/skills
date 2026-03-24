@@ -1,14 +1,14 @@
 ---
 name: biomorphic-futuristic-core-sculpture
 description: This prompt instructs an image-generation model to create a futuristic, hyperrealistic 3D digital sculpture of a specified object, featuring a translucent colored internal core enclosed by a smooth white shell with organic perforations and flowing biomorphic forms. The result is a high-contrast, octane-style render of the object floating against a minimal soft gray background, emphasizing modern materials, depth, and sculptural detail.
-skillVersionId: 0198069c-cd37-7115-a8cc-e5468bf82e67
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to create a futuristic, hyperrealistic 3D digital sculpture of a specified object, featuring a translucent colored internal core enclosed by a smooth white shell with organic perforations and flowing biomorphic forms. The result is a high-contrast, octane-style render of the object floating against a minimal soft gray background, emphasizing modern materials, depth, and sculptural detail.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198069c-cd37-7115-a8cc-e5468bf82e67`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `biomorphic-futuristic-core-sculpture`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198069c-cd37-7115-a8cc-e5468bf82e67 \
+betterprompt generate biomorphic-futuristic-core-sculpture \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198069c-cd37-7115-a8cc-e5468bf82e67 \
+betterprompt generate biomorphic-futuristic-core-sculpture \
   --input OBJECT=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
