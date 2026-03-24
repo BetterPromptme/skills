@@ -1,14 +1,14 @@
 ---
 name: object-eraser
 description: This prompt instructs an AI photo-editing assistant to remove a user-specified unwanted object from an uploaded image and convincingly inpaint the missing area so the background continues naturally. It emphasizes preserving everything else in the photo—especially the main subject—while matching lighting, shadows, texture, and perspective to avoid visible artifacts. The outcome is a clean, realistic image where the removed item leaves no trace and the scene looks unchanged apart from that deletion.
-skillVersionId: 01996f53-d58d-76dc-81aa-8f36e89d2521
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI photo-editing assistant to remove a user-specified unwanted object from an uploaded image and convincingly inpaint the missing area so the background continues naturally. It emphasizes preserving everything else in the photo—especially the main subject—while matching lighting, shadows, texture, and perspective to avoid visible artifacts. The outcome is a clean, realistic image where the removed item leaves no trace and the scene looks unchanged apart from that deletion.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01996f53-d58d-76dc-81aa-8f36e89d2521`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `object-eraser`).
 
 Command form:
 
 ```bash
-betterprompt generate 01996f53-d58d-76dc-81aa-8f36e89d2521 \
+betterprompt generate object-eraser \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01996f53-d58d-76dc-81aa-8f36e89d2521 \
+betterprompt generate object-eraser \
   --input 'background_type=auto → AI automatically continues the background.' \
   --input 'object_to_remove=the person in a red shirt in the background' \
   --image-input-url https://example.com/image1.png \
