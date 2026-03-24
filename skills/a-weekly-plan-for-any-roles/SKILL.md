@@ -1,14 +1,14 @@
 ---
 name: a-weekly-plan-for-any-roles
 description: This prompt instructs the AI to create a realistic, professional weekly work plan for a specified role using a provided task list, distributing work across the week with clear daily time blocks that include deadlines, meetings, focused work sessions, and short breaks. The result is an easy-to-read schedule that balances workload within normal working hours, identifies key objectives and deliverables for each block, and highlights the week’s top priorities to ensure effective execution and productivity.
-skillVersionId: 019a2e25-f7ad-7550-a03f-8c1461349213
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a realistic, professional weekly work plan for a specified role using a provided task list, distributing work across the week with clear daily time blocks that include deadlines, meetings, focused work sessions, and short breaks. The result is an easy-to-read schedule that balances workload within normal working hours, identifies key objectives and deliverables for each block, and highlights the week’s top priorities to ensure effective execution and productivity.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a2e25-f7ad-7550-a03f-8c1461349213`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `a-weekly-plan-for-any-roles`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a2e25-f7ad-7550-a03f-8c1461349213 \
+betterprompt generate a-weekly-plan-for-any-roles \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a2e25-f7ad-7550-a03f-8c1461349213 \
+betterprompt generate a-weekly-plan-for-any-roles \
   --input your_role=<value> \
   --input Tasks_need_to_be_done=<value> \
   --model gpt-5 \
