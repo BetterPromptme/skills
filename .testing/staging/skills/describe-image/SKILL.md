@@ -1,14 +1,14 @@
 ---
 name: describe-image
 description: This prompt asks the AI to look at a provided image and produce a clear, user-friendly description of what’s visible. The result is a concise summary of the main subjects, setting, and notable details in the image, tailored to the user’s request.
-skillVersionId: 019ac98f-5117-75ec-98e9-f44361a6ef7f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to look at a provided image and produce a clear, user-friendly description of what’s visible. The result is a concise summary of the main subjects, setting, and notable details in the image, tailored to the user’s request.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ac98f-5117-75ec-98e9-f44361a6ef7f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `describe-image`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ac98f-5117-75ec-98e9-f44361a6ef7f \
+betterprompt generate describe-image \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ac98f-5117-75ec-98e9-f44361a6ef7f \
+betterprompt generate describe-image \
   --image-input-url https://example.com/image1.png \
   --model claude-opus-4.5 \
   --options '{"reasoningEffort":"low"}'
