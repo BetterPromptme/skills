@@ -1,14 +1,14 @@
 ---
 name: comprehensive-business-plan-development
 description: This prompt instructs the AI to act as an expert business strategist and produce a comprehensive, clearly structured business plan for a new venture using the user’s provided business details. The resulting output includes an executive summary, market analysis (customers, competitors, trends), marketing and sales strategies, financial projections (income statement, cash flow, break-even), and an implementation action plan with milestones and timelines, all organized under distinct headings with bullet points for key information.
-skillVersionId: 01975abb-86d4-7ceb-9249-12646dca97e0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an expert business strategist and produce a comprehensive, clearly structured business plan for a new venture using the user’s provided business details. The resulting output includes an executive summary, market analysis (customers, competitors, trends), marketing and sales strategies, financial projections (income statement, cash flow, break-even), and an implementation action plan with milestones and timelines, all organized under distinct headings with bullet points for key information.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01975abb-86d4-7ceb-9249-12646dca97e0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `comprehensive-business-plan-development`).
 
 Command form:
 
 ```bash
-betterprompt generate 01975abb-86d4-7ceb-9249-12646dca97e0 \
+betterprompt generate comprehensive-business-plan-development \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01975abb-86d4-7ceb-9249-12646dca97e0 \
+betterprompt generate comprehensive-business-plan-development \
   --input Target_market=<value> \
   --input Type_of_business=<value> \
   --input Projected_timeline=<value> \
