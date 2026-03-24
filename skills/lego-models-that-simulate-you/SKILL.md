@@ -1,14 +1,14 @@
 ---
 name: lego-models-that-simulate-you
 description: This prompt instructs the AI to use the user’s uploaded photo as visual reference to generate a portrait-oriented image styled as a classic LEGO minifigure diorama, pairing the figure with an original animal whose colors and vibe match the user. It specifies a premium collector-display look: a minimal scene inside a transparent glass cube on a matte black base with sleek silver accents, an engraved serif label naming the animal, subtle museum-style biological classification etchings, balanced composition, reverent lighting, and a dark-to-light gradient background keyed to the main color palette.
-skillVersionId: 0196f721-ddf4-763d-be5b-bb29a2ac31bb
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to use the user’s uploaded photo as visual reference to generate a portrait-oriented image styled as a classic LEGO minifigure diorama, pairing the figure with an original animal whose colors and vibe match the user. It specifies a premium collector-display look: a minimal scene inside a transparent glass cube on a matte black base with sleek silver accents, an engraved serif label naming the animal, subtle museum-style biological classification etchings, balanced composition, reverent lighting, and a dark-to-light gradient background keyed to the main color palette.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f721-ddf4-763d-be5b-bb29a2ac31bb`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `lego-models-that-simulate-you`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f721-ddf4-763d-be5b-bb29a2ac31bb \
+betterprompt generate lego-models-that-simulate-you \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f721-ddf4-763d-be5b-bb29a2ac31bb \
+betterprompt generate lego-models-that-simulate-you \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"size":0,"quality":0},"quality":"low"}'
