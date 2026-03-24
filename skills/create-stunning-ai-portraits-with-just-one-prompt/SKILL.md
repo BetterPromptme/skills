@@ -1,14 +1,14 @@
 ---
 name: create-stunning-ai-portraits-with-just-one-prompt
 description: This prompt directs an AI image generator to create a high-end, ultra-realistic editorial portrait matching a provided reference subject, styled in a luxury fashion magazine aesthetic. The result is a symmetrical 4K composition featuring the person in a black turtleneck with arms crossed and a visible blue-dial wristwatch on a brown leather strap, set against a dramatic red gradient with cinematic lighting and a minimal background.
-skillVersionId: 01974319-d061-79cd-a37d-4e612b3ae290
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an AI image generator to create a high-end, ultra-realistic editorial portrait matching a provided reference subject, styled in a luxury fashion magazine aesthetic. The result is a symmetrical 4K composition featuring the person in a black turtleneck with arms crossed and a visible blue-dial wristwatch on a brown leather strap, set against a dramatic red gradient with cinematic lighting and a minimal background.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01974319-d061-79cd-a37d-4e612b3ae290`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `create-stunning-ai-portraits-with-just-one-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 01974319-d061-79cd-a37d-4e612b3ae290 \
+betterprompt generate create-stunning-ai-portraits-with-just-one-prompt \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01974319-d061-79cd-a37d-4e612b3ae290 \
+betterprompt generate create-stunning-ai-portraits-with-just-one-prompt \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"size":"1024x1536","image":{"n":0,"size":2,"quality":1},"quality":"medium"}'
