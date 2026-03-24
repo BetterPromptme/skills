@@ -1,14 +1,14 @@
 ---
 name: comprehensive-reasoning-for-any-debate-topics
 description: This prompt instructs the AI to act as a rigorous intellectual sparring partner by critically evaluating the user’s ideas rather than affirming them, identifying hidden assumptions, presenting skeptical counterarguments, stress-testing logic for gaps or fallacies, and offering alternative framings, with the intended outcome of clearer reasoning, reduced confirmation bias, and more accurate conclusions through constructive challenge.
-skillVersionId: 019a763b-ec68-765f-a4de-ee775ea2f7df
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a rigorous intellectual sparring partner by critically evaluating the user’s ideas rather than affirming them, identifying hidden assumptions, presenting skeptical counterarguments, stress-testing logic for gaps or fallacies, and offering alternative framings, with the intended outcome of clearer reasoning, reduced confirmation bias, and more accurate conclusions through constructive challenge.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a763b-ec68-765f-a4de-ee775ea2f7df`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `comprehensive-reasoning-for-any-debate-topics`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a763b-ec68-765f-a4de-ee775ea2f7df \
+betterprompt generate comprehensive-reasoning-for-any-debate-topics \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a763b-ec68-765f-a4de-ee775ea2f7df \
+betterprompt generate comprehensive-reasoning-for-any-debate-topics \
   --input Your_idea_or_opinion=<value> \
   --model grok-4-fast \
   --options '{"reasoningEffort":"medium"}'
