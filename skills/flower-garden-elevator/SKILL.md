@@ -1,14 +1,14 @@
 ---
 name: flower-garden-elevator
 description: This prompt instructs an image-generation system to produce an 8K, photorealistic high-fashion editorial portrait of a young woman posed full-body in a sleek metallic elevator that has been overtaken by lush flowers and vines, blending industrial reflections with an enchanted indoor-garden atmosphere. It specifies precise composition, wardrobe, pose, lighting, color palette, and environmental details to achieve a dreamy, cinematic, melancholic mood, while requiring the subject’s face to match a provided reference with exact identity fidelity and no stylization. The intended outcome is a magazine-quality surreal fashion image in a 4:5 portrait format where the woman in a voluminous pink dress holds white tulips amid floral overgrowth and softly glowing metallic surfaces.
-skillVersionId: 019a47fa-f230-7542-b2ae-37da4dee8f0c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce an 8K, photorealistic high-fashion editorial portrait of a young woman posed full-body in a sleek metallic elevator that has been overtaken by lush flowers and vines, blending industrial reflections with an enchanted indoor-garden atmosphere. It specifies precise composition, wardrobe, pose, lighting, color palette, and environmental details to achieve a dreamy, cinematic, melancholic mood, while requiring the subject’s face to match a provided reference with exact identity fidelity and no stylization. The intended outcome is a magazine-quality surreal fashion image in a 4:5 portrait format where the woman in a voluminous pink dress holds white tulips amid floral overgrowth and softly glowing metallic surfaces.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a47fa-f230-7542-b2ae-37da4dee8f0c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `flower-garden-elevator`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a47fa-f230-7542-b2ae-37da4dee8f0c \
+betterprompt generate flower-garden-elevator \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a47fa-f230-7542-b2ae-37da4dee8f0c \
+betterprompt generate flower-garden-elevator \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
