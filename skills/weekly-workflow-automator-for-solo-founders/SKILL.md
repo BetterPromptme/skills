@@ -1,14 +1,14 @@
 ---
 name: weekly-workflow-automator-for-solo-founders
 description: This prompt instructs the AI to act as an automation architect who reviews provided details about a user’s business type, weekly activities, current tools, and biggest time-wasters, then identifies five likely repetitive weekly tasks and outlines practical ways to fully or partially automate each using ChatGPT and free/no-code tools (e.g., Notion, Zapier/Make, Google Workspace), including specific tool recommendations, step-by-step workflow ideas, time-saving tactics, and a few creative “bonus” automations the user may not have considered.
-skillVersionId: 0197cf11-101d-7d4f-b3e6-9033ad31d5fe
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an automation architect who reviews provided details about a user’s business type, weekly activities, current tools, and biggest time-wasters, then identifies five likely repetitive weekly tasks and outlines practical ways to fully or partially automate each using ChatGPT and free/no-code tools (e.g., Notion, Zapier/Make, Google Workspace), including specific tool recommendations, step-by-step workflow ideas, time-saving tactics, and a few creative “bonus” automations the user may not have considered.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197cf11-101d-7d4f-b3e6-9033ad31d5fe`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `weekly-workflow-automator-for-solo-founders`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197cf11-101d-7d4f-b3e6-9033ad31d5fe \
+betterprompt generate weekly-workflow-automator-for-solo-founders \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197cf11-101d-7d4f-b3e6-9033ad31d5fe \
+betterprompt generate weekly-workflow-automator-for-solo-founders \
   --input Type_of_business=<value> \
   --input Weekly_activities=<value> \
   --input Tools_I_currently_use=<value> \
