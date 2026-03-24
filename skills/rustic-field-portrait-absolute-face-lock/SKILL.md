@@ -1,14 +1,14 @@
 ---
 name: rustic-field-portrait-absolute-face-lock
 description: This prompt instructs an image generator to produce a hyper‑realistic, full‑body outdoor cinematic portrait that strictly preserves the subject’s identity from a provided reference image, including exact facial geometry and the original gender. It defines a specific autumn/winter countryside setting, wardrobe, pose, camera/lens parameters, lighting, composition, and a muted brown film-grade look, while forbidding added marks, accessories, or logos and requiring a clearer reference if key facial details aren’t visible. The intended outcome is a single high-resolution PNG portrait with the subject placed far in a vast landscape, sharply focused against a softly rendered background, using identity-locking guidance to prevent any face changes.
-skillVersionId: 019975eb-2c2f-79ca-983c-83d760cb7718
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to produce a hyper‑realistic, full‑body outdoor cinematic portrait that strictly preserves the subject’s identity from a provided reference image, including exact facial geometry and the original gender. It defines a specific autumn/winter countryside setting, wardrobe, pose, camera/lens parameters, lighting, composition, and a muted brown film-grade look, while forbidding added marks, accessories, or logos and requiring a clearer reference if key facial details aren’t visible. The intended outcome is a single high-resolution PNG portrait with the subject placed far in a vast landscape, sharply focused against a softly rendered background, using identity-locking guidance to prevent any face changes.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019975eb-2c2f-79ca-983c-83d760cb7718`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `rustic-field-portrait-absolute-face-lock`).
 
 Command form:
 
 ```bash
-betterprompt generate 019975eb-2c2f-79ca-983c-83d760cb7718 \
+betterprompt generate rustic-field-portrait-absolute-face-lock \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019975eb-2c2f-79ca-983c-83d760cb7718 \
+betterprompt generate rustic-field-portrait-absolute-face-lock \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
