@@ -1,14 +1,14 @@
 ---
 name: golden-winter
 description: This prompt directs an image-generation workflow to produce an 8K, photorealistic, high-fashion winter editorial portrait of a young woman in a sunlit, snow-covered mountain setting, specifying composition, lighting, mood, wardrobe, color palette, camera characteristics, and post-processing style to achieve a cinematic balance of icy environment and warm luxury. The intended result is a single-frame portrait where the subject retains the exact identity and hairstyle from a provided reference while realistically rendering textures (fur, fabric, metal) and controlled highlights in snow, yielding a polished magazine-style image with natural daylight warmth and subtle filmic grading.
-skillVersionId: 019a5826-29e3-77cb-b1a1-1f2988214092
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation workflow to produce an 8K, photorealistic, high-fashion winter editorial portrait of a young woman in a sunlit, snow-covered mountain setting, specifying composition, lighting, mood, wardrobe, color palette, camera characteristics, and post-processing style to achieve a cinematic balance of icy environment and warm luxury. The intended result is a single-frame portrait where the subject retains the exact identity and hairstyle from a provided reference while realistically rendering textures (fur, fabric, metal) and controlled highlights in snow, yielding a polished magazine-style image with natural daylight warmth and subtle filmic grading.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a5826-29e3-77cb-b1a1-1f2988214092`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `golden-winter`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a5826-29e3-77cb-b1a1-1f2988214092 \
+betterprompt generate golden-winter \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a5826-29e3-77cb-b1a1-1f2988214092 \
+betterprompt generate golden-winter \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
