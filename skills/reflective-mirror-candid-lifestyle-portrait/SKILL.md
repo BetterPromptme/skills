@@ -1,14 +1,14 @@
 ---
 name: reflective-mirror-candid-lifestyle-portrait
 description: This prompt instructs an AI to generate a realistic candid lifestyle photograph set in a warm, artsy Indonesian coffee shop, featuring a casually dressed young person seen from behind while their wavy-mirror reflection faces the camera with a calm, expressive gaze and an iced coffee in hand. It specifies wardrobe, accessories, posture, lighting, lens/framing, and detailed café decor (including doodle-covered walls and specific handwritten quotes) to ensure an authentic streetwear-and-café vibe. The intended outcome is a high-resolution, natural-looking image with sharp focus on the reflection, gentle background blur, and an intimate, unposed moment that highlights individuality and creative youth culture.
-skillVersionId: 019a0f34-6d01-77a1-9114-4b16ee910ed3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate a realistic candid lifestyle photograph set in a warm, artsy Indonesian coffee shop, featuring a casually dressed young person seen from behind while their wavy-mirror reflection faces the camera with a calm, expressive gaze and an iced coffee in hand. It specifies wardrobe, accessories, posture, lighting, lens/framing, and detailed café decor (including doodle-covered walls and specific handwritten quotes) to ensure an authentic streetwear-and-café vibe. The intended outcome is a high-resolution, natural-looking image with sharp focus on the reflection, gentle background blur, and an intimate, unposed moment that highlights individuality and creative youth culture.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a0f34-6d01-77a1-9114-4b16ee910ed3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `reflective-mirror-candid-lifestyle-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a0f34-6d01-77a1-9114-4b16ee910ed3 \
+betterprompt generate reflective-mirror-candid-lifestyle-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a0f34-6d01-77a1-9114-4b16ee910ed3 \
+betterprompt generate reflective-mirror-candid-lifestyle-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
