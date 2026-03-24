@@ -1,14 +1,14 @@
 ---
 name: figure-pose-sketch-generator
 description: This prompt instructs the AI to act as a figure-drawing instructor and produce a monochrome, construction-style line sketch of a human figure in a specified pose, camera angle, and body type, optionally including simplified props that support the action. The result is a clean, manual-like base drawing built from simple geometric forms and visible guidelines that clearly communicate gesture, proportion, anatomical landmarks, and balance, suitable for artists to use as a practice template for pose and character studies.
-skillVersionId: 01992e05-954e-7a15-a646-400f3c822d66
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a figure-drawing instructor and produce a monochrome, construction-style line sketch of a human figure in a specified pose, camera angle, and body type, optionally including simplified props that support the action. The result is a clean, manual-like base drawing built from simple geometric forms and visible guidelines that clearly communicate gesture, proportion, anatomical landmarks, and balance, suitable for artists to use as a practice template for pose and character studies.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01992e05-954e-7a15-a646-400f3c822d66`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `figure-pose-sketch-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 01992e05-954e-7a15-a646-400f3c822d66 \
+betterprompt generate figure-pose-sketch-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01992e05-954e-7a15-a646-400f3c822d66 \
+betterprompt generate figure-pose-sketch-generator \
   --input 'body_type=Slim female' \
   --input 'pose_type=Running forward with arms swinging' \
   --input 'camera_angle=Top-down view (looking down from above)' \
