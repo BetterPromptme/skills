@@ -1,14 +1,14 @@
 ---
 name: balloon-face
 description: Generates a highly detailed, surreal ultra-realistic 3D render of a collectible art-toy style balloon head: a glossy, inflated cartoon face with sculpted skin pores, chubby cheeks, oversized lips, and a whimsical expression, complete with a neck balloon knot and dangling string, isolated from any body and set against a smooth neutral beige studio backdrop with soft lighting and cinematic depth of field for Pixar-level stylization and poster-grade photographic clarity.
-skillVersionId: 01990efd-1389-714b-88ba-04f7cd26235b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 Generates a highly detailed, surreal ultra-realistic 3D render of a collectible art-toy style balloon head: a glossy, inflated cartoon face with sculpted skin pores, chubby cheeks, oversized lips, and a whimsical expression, complete with a neck balloon knot and dangling string, isolated from any body and set against a smooth neutral beige studio backdrop with soft lighting and cinematic depth of field for Pixar-level stylization and poster-grade photographic clarity.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01990efd-1389-714b-88ba-04f7cd26235b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `balloon-face`).
 
 Command form:
 
 ```bash
-betterprompt generate 01990efd-1389-714b-88ba-04f7cd26235b \
+betterprompt generate balloon-face \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01990efd-1389-714b-88ba-04f7cd26235b \
+betterprompt generate balloon-face \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
