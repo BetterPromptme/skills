@@ -1,14 +1,14 @@
 ---
 name: webinar-landing-page-copy
 description: This prompt instructs the AI to act as a conversion-focused copywriter and produce plain-text landing page copy designed to maximize free webinar registrations, using provided details like the webinar name, audience, duration, and language. The output is a structured set of sections (headline, optional subheadline, benefit-driven bullets, optional learning points and host bio, required logistics, and a repeated primary call-to-action) written in clear, concrete, grade-level language with character limits and compliance constraints to avoid hype or unsupported claims.
-skillVersionId: 0198cae5-3191-7c0b-b4d3-fd7cd8d4d1e5
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a conversion-focused copywriter and produce plain-text landing page copy designed to maximize free webinar registrations, using provided details like the webinar name, audience, duration, and language. The output is a structured set of sections (headline, optional subheadline, benefit-driven bullets, optional learning points and host bio, required logistics, and a repeated primary call-to-action) written in clear, concrete, grade-level language with character limits and compliance constraints to avoid hype or unsupported claims.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198cae5-3191-7c0b-b4d3-fd7cd8d4d1e5`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `webinar-landing-page-copy`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198cae5-3191-7c0b-b4d3-fd7cd8d4d1e5 \
+betterprompt generate webinar-landing-page-copy \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198cae5-3191-7c0b-b4d3-fd7cd8d4d1e5 \
+betterprompt generate webinar-landing-page-copy \
   --input Language=<value> \
   --input Webinar_Name=<value> \
   --input Target_Audience=<value> \
