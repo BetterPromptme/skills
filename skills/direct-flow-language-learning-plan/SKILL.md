@@ -1,14 +1,14 @@
 ---
 name: direct-flow-language-learning-plan
 description: This prompt instructs the AI to create a personalized, practical language-learning plan using the learner’s target language, current level, goals, available daily time, learning style, and timeframe. The AI outputs a structured daily and weekly schedule allocating time across vocabulary, listening, speaking, reading, and writing, plus level-appropriate video recommendations with progressive difficulty and specific video-based exercises (shadowing, dictation, oral/written summaries). It also includes periodic checkpoints with video-based progress measures (e.g., reducing subtitles, real-time summarizing) and finishes with motivation strategies to help the learner stay consistent.
-skillVersionId: 01984f2f-9d43-790e-9f65-cd9f9f71810e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a personalized, practical language-learning plan using the learner’s target language, current level, goals, available daily time, learning style, and timeframe. The AI outputs a structured daily and weekly schedule allocating time across vocabulary, listening, speaking, reading, and writing, plus level-appropriate video recommendations with progressive difficulty and specific video-based exercises (shadowing, dictation, oral/written summaries). It also includes periodic checkpoints with video-based progress measures (e.g., reducing subtitles, real-time summarizing) and finishes with motivation strategies to help the learner stay consistent.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01984f2f-9d43-790e-9f65-cd9f9f71810e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `direct-flow-language-learning-plan`).
 
 Command form:
 
 ```bash
-betterprompt generate 01984f2f-9d43-790e-9f65-cd9f9f71810e \
+betterprompt generate direct-flow-language-learning-plan \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -93,7 +93,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01984f2f-9d43-790e-9f65-cd9f9f71810e \
+betterprompt generate direct-flow-language-learning-plan \
   --input Timeframe=<value> \
   --input Current_Level=Beginner \
   --input 'Learning_Goal=Conversational fluency ' \
