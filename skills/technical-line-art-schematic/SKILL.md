@@ -1,14 +1,14 @@
 ---
 name: technical-line-art-schematic
 description: Generates a professional blueprint-style technical illustration of a specified object, rendered as precise white line art on a solid blue background in an isometric view. The output includes clean CAD-like drafting details such as technical annotations, measurement markings, and high-precision schematic styling with minimal shading.
-skillVersionId: 01983006-f20f-776b-88b4-5e37ef73259b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 Generates a professional blueprint-style technical illustration of a specified object, rendered as precise white line art on a solid blue background in an isometric view. The output includes clean CAD-like drafting details such as technical annotations, measurement markings, and high-precision schematic styling with minimal shading.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01983006-f20f-776b-88b4-5e37ef73259b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `technical-line-art-schematic`).
 
 Command form:
 
 ```bash
-betterprompt generate 01983006-f20f-776b-88b4-5e37ef73259b \
+betterprompt generate technical-line-art-schematic \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01983006-f20f-776b-88b4-5e37ef73259b \
+betterprompt generate technical-line-art-schematic \
   --input OBJECT=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
