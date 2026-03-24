@@ -1,14 +1,14 @@
 ---
 name: museum-gaze-35mm-portrait-mirror-ultra-lock
 description: This prompt instructs an image-generation/inpainting system to recreate a specific museum gallery composition—painting on the left and a viewer on the right, photographed from a rear three‑quarter 35mm angle—while enforcing ultra-strict preservation of both the viewer’s identity/wardrobe and the painted portrait’s face to match the provided reference images. It specifies lighting, lens, framing, depth of field, color grade, and negative constraints, and includes verification thresholds and recovery steps so the final output is a single, warm low-key “museum” photograph where the portrait’s face remains exactly the same as the input and the viewer’s outfit, pose, and gaze stay consistent and directed to the painting’s center.
-skillVersionId: 01996f2e-0e84-7049-9714-fe1d864332d0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation/inpainting system to recreate a specific museum gallery composition—painting on the left and a viewer on the right, photographed from a rear three‑quarter 35mm angle—while enforcing ultra-strict preservation of both the viewer’s identity/wardrobe and the painted portrait’s face to match the provided reference images. It specifies lighting, lens, framing, depth of field, color grade, and negative constraints, and includes verification thresholds and recovery steps so the final output is a single, warm low-key “museum” photograph where the portrait’s face remains exactly the same as the input and the viewer’s outfit, pose, and gaze stay consistent and directed to the painting’s center.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01996f2e-0e84-7049-9714-fe1d864332d0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `museum-gaze-35mm-portrait-mirror-ultra-lock`).
 
 Command form:
 
 ```bash
-betterprompt generate 01996f2e-0e84-7049-9714-fe1d864332d0 \
+betterprompt generate museum-gaze-35mm-portrait-mirror-ultra-lock \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01996f2e-0e84-7049-9714-fe1d864332d0 \
+betterprompt generate museum-gaze-35mm-portrait-mirror-ultra-lock \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
