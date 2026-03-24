@@ -1,14 +1,14 @@
 ---
 name: summarize-investor-trends
 description: This prompt instructs the AI to act as a senior equity analyst and produce a concise executive brief for a specified industry using credible data from the past 12 months. The output summarizes funding and market trends with specific metrics on deal volume, stage-level valuation benchmarks, major rounds and investors, risk sentiment indicators, and notable exits, alongside brief macro context affecting the sector. It requires clear section headers in a fixed order, numerical ranges with stated currencies, disclosure of any data discrepancies, and a short bibliography of recent sources with titles, publishers, URLs, and dates, while avoiding fabricated or vague claims.
-skillVersionId: 019a0615-acfb-7054-affe-5e2d3e0fa26d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a senior equity analyst and produce a concise executive brief for a specified industry using credible data from the past 12 months. The output summarizes funding and market trends with specific metrics on deal volume, stage-level valuation benchmarks, major rounds and investors, risk sentiment indicators, and notable exits, alongside brief macro context affecting the sector. It requires clear section headers in a fixed order, numerical ranges with stated currencies, disclosure of any data discrepancies, and a short bibliography of recent sources with titles, publishers, URLs, and dates, while avoiding fabricated or vague claims.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a0615-acfb-7054-affe-5e2d3e0fa26d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `summarize-investor-trends`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a0615-acfb-7054-affe-5e2d3e0fa26d \
+betterprompt generate summarize-investor-trends \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a0615-acfb-7054-affe-5e2d3e0fa26d \
+betterprompt generate summarize-investor-trends \
   --input Industry=<value> \
   --model gpt-4o \
   --options '{}'
