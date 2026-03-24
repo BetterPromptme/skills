@@ -1,14 +1,14 @@
 ---
 name: ultimate-prompt-booster
 description: This prompt instructs the AI to act as an expert prompt engineer who analyzes a user-supplied basic prompt to identify its intent, domain, audience, and goals, then designs three distinct enhancement strategies and produces exactly three substantially improved, highly structured “super-prompts” that include clear roles, guidelines, criteria, user-fillable placeholders, and explicit output formatting, delivered in a specified markdown structure.
-skillVersionId: 0197c4ce-2bed-7a71-a941-e67df88175b3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an expert prompt engineer who analyzes a user-supplied basic prompt to identify its intent, domain, audience, and goals, then designs three distinct enhancement strategies and produces exactly three substantially improved, highly structured “super-prompts” that include clear roles, guidelines, criteria, user-fillable placeholders, and explicit output formatting, delivered in a specified markdown structure.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c4ce-2bed-7a71-a941-e67df88175b3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ultimate-prompt-booster`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c4ce-2bed-7a71-a941-e67df88175b3 \
+betterprompt generate ultimate-prompt-booster \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c4ce-2bed-7a71-a941-e67df88175b3 \
+betterprompt generate ultimate-prompt-booster \
   --input Basic_Prompt=<value> \
   --model gpt-4.1-mini \
   --options '{}'
