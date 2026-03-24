@@ -1,14 +1,14 @@
 ---
 name: draw-flowers-based-on-real-pictures
 description: This prompt instructs the AI to take a provided flower image and restyle it into a dreamy, glowing digital illustration. It specifies a soft vector look with pastel gradients, subtle inner and edge lighting, smooth shaded petals, and a simple pastel gradient background, keeping the composition centered and free of text. The intended result is a serene, emotionally soothing, mental-wellness-inspired floral artwork with harmonious colors, gentle shadows, and an ethereal, calming mood.
-skillVersionId: 019714dd-046e-7885-96bc-eb4ec0c61aff
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take a provided flower image and restyle it into a dreamy, glowing digital illustration. It specifies a soft vector look with pastel gradients, subtle inner and edge lighting, smooth shaded petals, and a simple pastel gradient background, keeping the composition centered and free of text. The intended result is a serene, emotionally soothing, mental-wellness-inspired floral artwork with harmonious colors, gentle shadows, and an ethereal, calming mood.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019714dd-046e-7885-96bc-eb4ec0c61aff`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `draw-flowers-based-on-real-pictures`).
 
 Command form:
 
 ```bash
-betterprompt generate 019714dd-046e-7885-96bc-eb4ec0c61aff \
+betterprompt generate draw-flowers-based-on-real-pictures \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019714dd-046e-7885-96bc-eb4ec0c61aff \
+betterprompt generate draw-flowers-based-on-real-pictures \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"size":0,"quality":0},"quality":"low"}'
