@@ -1,14 +1,14 @@
 ---
 name: anime-character-generator-1
 description: This prompt instructs an AI image generator to produce a polished, high-quality anime character illustration by filling in the character description, art style, pose, and mood variables, then applying specific visual constraints such as clean line work, expressive facial detail, appropriate proportions, cohesive composition, subtle complementary background, and mood-matched lighting and color, resulting in a vibrant, ready-to-use character artwork without any text or watermarks.
-skillVersionId: 019ce157-59ea-74be-8742-a727efed7ae0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a polished, high-quality anime character illustration by filling in the character description, art style, pose, and mood variables, then applying specific visual constraints such as clean line work, expressive facial detail, appropriate proportions, cohesive composition, subtle complementary background, and mood-matched lighting and color, resulting in a vibrant, ready-to-use character artwork without any text or watermarks.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -67,12 +67,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ce157-59ea-74be-8742-a727efed7ae0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `anime-character-generator-1`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ce157-59ea-74be-8742-a727efed7ae0 \
+betterprompt generate anime-character-generator-1 \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -89,7 +89,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ce157-59ea-74be-8742-a727efed7ae0 \
+betterprompt generate anime-character-generator-1 \
   --input mood=fierce \
   --input pose=action \
   --input style=chibi \
