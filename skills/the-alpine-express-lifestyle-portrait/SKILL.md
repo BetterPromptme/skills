@@ -1,14 +1,14 @@
 ---
 name: the-alpine-express-lifestyle-portrait
 description: This prompt instructs an image generator to produce a photorealistic, cozy winter travel portrait in a vertical, medium close-up composition of a young person leaning out of a red alpine panoramic train window, holding a hot drink, with snowy pines, distant mountains, and a clear blue sky behind them, captured in natural daylight with crisp, realistic textures, shallow depth of field, and a cinematic-but-natural lifestyle mood while strictly preserving the subject’s exact facial identity, hair, and proportions from a provided reference.
-skillVersionId: 019b2f8d-1e14-7305-91a4-c457e8f0c931
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to produce a photorealistic, cozy winter travel portrait in a vertical, medium close-up composition of a young person leaning out of a red alpine panoramic train window, holding a hot drink, with snowy pines, distant mountains, and a clear blue sky behind them, captured in natural daylight with crisp, realistic textures, shallow depth of field, and a cinematic-but-natural lifestyle mood while strictly preserving the subject’s exact facial identity, hair, and proportions from a provided reference.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b2f8d-1e14-7305-91a4-c457e8f0c931`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-alpine-express-lifestyle-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b2f8d-1e14-7305-91a4-c457e8f0c931 \
+betterprompt generate the-alpine-express-lifestyle-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b2f8d-1e14-7305-91a4-c457e8f0c931 \
+betterprompt generate the-alpine-express-lifestyle-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{"aspectRatio":"3:4"}'
