@@ -1,14 +1,14 @@
 ---
 name: autumns-edge
 description: This prompt directs an image-generation workflow to produce an 8K, photorealistic, cinematic fashion editorial portrait of a specific woman—matching her identity exactly from a reference—posed mid-thigh up at an autumn mountain overlook with turquoise river, golden forests, and snow-dusted peaks. It specifies precise composition, natural front-left daylight, wardrobe (pastel-pink embroidered corset dress), mood, lens/DOF, color palette, and finishing (warm grade, soft film grain) so the resulting image balances high-fashion elegance with vast alpine landscape realism.
-skillVersionId: 019a57e2-62ee-702a-8e57-c3be87395e50
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation workflow to produce an 8K, photorealistic, cinematic fashion editorial portrait of a specific woman—matching her identity exactly from a reference—posed mid-thigh up at an autumn mountain overlook with turquoise river, golden forests, and snow-dusted peaks. It specifies precise composition, natural front-left daylight, wardrobe (pastel-pink embroidered corset dress), mood, lens/DOF, color palette, and finishing (warm grade, soft film grain) so the resulting image balances high-fashion elegance with vast alpine landscape realism.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a57e2-62ee-702a-8e57-c3be87395e50`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `autumns-edge`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a57e2-62ee-702a-8e57-c3be87395e50 \
+betterprompt generate autumns-edge \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a57e2-62ee-702a-8e57-c3be87395e50 \
+betterprompt generate autumns-edge \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
