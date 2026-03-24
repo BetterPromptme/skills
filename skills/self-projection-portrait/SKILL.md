@@ -1,14 +1,14 @@
 ---
 name: self-projection-portrait
 description: This prompt instructs an image model to generate a modern, gallery-installation style portrait in which a person stands calmly at eye level in front of a large, sharp projection of their own face, creating a layered, introspective self-reflection scene. It specifies framing, pose, expression, gender-inclusive hair and wardrobe variants, and projection-driven lighting so the result is a minimal, cinematic image where the real subject is subtly lit in the foreground while the oversized projected close-up dominates the background, emphasizing identity, scale, and quiet surrealism.
-skillVersionId: 019b4f7b-aa1f-75ab-a7c5-01f3f7f35cd1
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a modern, gallery-installation style portrait in which a person stands calmly at eye level in front of a large, sharp projection of their own face, creating a layered, introspective self-reflection scene. It specifies framing, pose, expression, gender-inclusive hair and wardrobe variants, and projection-driven lighting so the result is a minimal, cinematic image where the real subject is subtly lit in the foreground while the oversized projected close-up dominates the background, emphasizing identity, scale, and quiet surrealism.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b4f7b-aa1f-75ab-a7c5-01f3f7f35cd1`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `self-projection-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b4f7b-aa1f-75ab-a7c5-01f3f7f35cd1 \
+betterprompt generate self-projection-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b4f7b-aa1f-75ab-a7c5-01f3f7f35cd1 \
+betterprompt generate self-projection-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
