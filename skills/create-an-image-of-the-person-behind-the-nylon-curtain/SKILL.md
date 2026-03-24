@@ -1,14 +1,14 @@
 ---
 name: create-an-image-of-the-person-behind-the-nylon-curtain
 description: This prompt directs an image-generation/editing task that uses the uploaded portrait as the primary subject reference and transforms it into a high-resolution, hyperrealistic, cinematic fashion-editorial composition. The result places the subject partially obscured behind a jagged tear in a semi-transparent frosted plastic sheet, with cool bluish diffused lighting, minimal atmospheric background, subtle vignetting, and tense stretched plastic to create an isolated, mysterious, dreamlike, emotionally charged mood in a 3:4 frame.
-skillVersionId: 0196f1d4-3e2f-746c-8181-c9e3d9261486
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation/editing task that uses the uploaded portrait as the primary subject reference and transforms it into a high-resolution, hyperrealistic, cinematic fashion-editorial composition. The result places the subject partially obscured behind a jagged tear in a semi-transparent frosted plastic sheet, with cool bluish diffused lighting, minimal atmospheric background, subtle vignetting, and tense stretched plastic to create an isolated, mysterious, dreamlike, emotionally charged mood in a 3:4 frame.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f1d4-3e2f-746c-8181-c9e3d9261486`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `create-an-image-of-the-person-behind-the-nylon-curtain`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f1d4-3e2f-746c-8181-c9e3d9261486 \
+betterprompt generate create-an-image-of-the-person-behind-the-nylon-curtain \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f1d4-3e2f-746c-8181-c9e3d9261486 \
+betterprompt generate create-an-image-of-the-person-behind-the-nylon-curtain \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"size":0,"quality":0},"quality":"low"}'
