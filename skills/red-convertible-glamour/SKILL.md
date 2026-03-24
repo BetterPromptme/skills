@@ -1,14 +1,14 @@
 ---
 name: red-convertible-glamour
 description: This prompt instructs an image-generation or editing system to produce a high-resolution, photorealistic vertical luxury lifestyle portrait of a young woman with specified hair, makeup, outfit, accessories, and pose, leaning against the open driver-side door of a glossy red convertible on a sunny palm-lined upscale residential street. It defines strict identity-preservation rules for the subject’s face, precise composition and vehicle/environment details, and bright natural California-style lighting with bold color contrast. The expected outcome is a clean, editorial-quality daytime image with realistic skin texture, accurate car proportions and reflections, and a confident, polished mood set against white luxury homes, blue sky, and crisp shadows.
-skillVersionId: 019ca995-4520-7128-88c8-417058f353a9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation or editing system to produce a high-resolution, photorealistic vertical luxury lifestyle portrait of a young woman with specified hair, makeup, outfit, accessories, and pose, leaning against the open driver-side door of a glossy red convertible on a sunny palm-lined upscale residential street. It defines strict identity-preservation rules for the subject’s face, precise composition and vehicle/environment details, and bright natural California-style lighting with bold color contrast. The expected outcome is a clean, editorial-quality daytime image with realistic skin texture, accurate car proportions and reflections, and a confident, polished mood set against white luxury homes, blue sky, and crisp shadows.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ca995-4520-7128-88c8-417058f353a9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `red-convertible-glamour`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ca995-4520-7128-88c8-417058f353a9 \
+betterprompt generate red-convertible-glamour \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ca995-4520-7128-88c8-417058f353a9 \
+betterprompt generate red-convertible-glamour \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
