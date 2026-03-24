@@ -1,14 +1,14 @@
 ---
 name: ugc-fashion-photo-generator
 description: This prompt instructs an image generator to create a photorealistic, high-end UGC fashion photo featuring the same woman from a provided reference face image, captured mid–upper body as she steps out of a luxury car in a dark underground parking garage with harsh on-camera flash lighting. It specifies exact identity preservation, a precise street-chic outfit and pose, and mandates swapping in a second reference image of a designer bag with accurate texture, hardware, branding, and physically correct lighting/perspective. The intended result is an ultra-sharp, paparazzi-style editorial flash photograph with strong highlights/shadows, faithful face and bag integration, and no added props or stylized rendering.
-skillVersionId: 019b10ec-d3e6-7099-86ab-9a301c5efdf9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a photorealistic, high-end UGC fashion photo featuring the same woman from a provided reference face image, captured mid–upper body as she steps out of a luxury car in a dark underground parking garage with harsh on-camera flash lighting. It specifies exact identity preservation, a precise street-chic outfit and pose, and mandates swapping in a second reference image of a designer bag with accurate texture, hardware, branding, and physically correct lighting/perspective. The intended result is an ultra-sharp, paparazzi-style editorial flash photograph with strong highlights/shadows, faithful face and bag integration, and no added props or stylized rendering.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b10ec-d3e6-7099-86ab-9a301c5efdf9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ugc-fashion-photo-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b10ec-d3e6-7099-86ab-9a301c5efdf9 \
+betterprompt generate ugc-fashion-photo-generator \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b10ec-d3e6-7099-86ab-9a301c5efdf9 \
+betterprompt generate ugc-fashion-photo-generator \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-3-pro-image-preview \
