@@ -1,14 +1,14 @@
 ---
 name: mindfulness-integration-strategist
 description: This prompt directs the assistant to create a practical, step-by-step plan for embedding mindfulness and meditation into a specified work routine, emphasizing brief transition-based techniques, attention-sharpening (not purely relaxing) meditations, and metacognitive exercises that maintain clarity during demanding or repetitive tasks. The resulting output should cover multiple real-world work scenarios (complex problem-solving, frustration/pressure, routine maintenance, post-distraction recovery) and present a progressive training system that delivers immediate performance benefits while building capacity over time, including both structured formal sessions and efficient informal practices woven seamlessly into the workday.
-skillVersionId: 019a47cb-22e4-746c-aa00-98a283e62af6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs the assistant to create a practical, step-by-step plan for embedding mindfulness and meditation into a specified work routine, emphasizing brief transition-based techniques, attention-sharpening (not purely relaxing) meditations, and metacognitive exercises that maintain clarity during demanding or repetitive tasks. The resulting output should cover multiple real-world work scenarios (complex problem-solving, frustration/pressure, routine maintenance, post-distraction recovery) and present a progressive training system that delivers immediate performance benefits while building capacity over time, including both structured formal sessions and efficient informal practices woven seamlessly into the workday.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -58,12 +58,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a47cb-22e4-746c-aa00-98a283e62af6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `mindfulness-integration-strategist`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a47cb-22e4-746c-aa00-98a283e62af6 \
+betterprompt generate mindfulness-integration-strategist \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -80,7 +80,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a47cb-22e4-746c-aa00-98a283e62af6 \
+betterprompt generate mindfulness-integration-strategist \
   --input 'your_specific_work_routine=I’m a UX designer who spends long hours brainstorming, creating wireframes, and reviewing feedback with the team. My day alternates between deep solo work and collaborative meetings.”' \
   --model gpt-5 \
   --options '{"reasoningEffort":"low"}'
