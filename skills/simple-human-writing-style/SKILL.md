@@ -1,14 +1,14 @@
 ---
 name: simple-human-writing-style
 description: This prompt sets the assistant up as a plain-language writing helper that rewrites or creates text for casual online readers. It tells the assistant to keep sentences short, sound natural and grounded, avoid marketing or “AI-ish” wording, and not add any new claims or facts. The result is clear, straightforward writing that reads like a real person, not a polished promo.
-skillVersionId: 019a9a6a-b409-762d-ba97-381e7bbe0f4b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt sets the assistant up as a plain-language writing helper that rewrites or creates text for casual online readers. It tells the assistant to keep sentences short, sound natural and grounded, avoid marketing or “AI-ish” wording, and not add any new claims or facts. The result is clear, straightforward writing that reads like a real person, not a polished promo.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a9a6a-b409-762d-ba97-381e7bbe0f4b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `simple-human-writing-style`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a9a6a-b409-762d-ba97-381e7bbe0f4b \
+betterprompt generate simple-human-writing-style \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a9a6a-b409-762d-ba97-381e7bbe0f4b \
+betterprompt generate simple-human-writing-style \
   --input 'Content=I need help organizing my workflow' \
   --input 'purpose=write a simple Reddit comment  ' \
   --input 'extra_notes=keep it friendly but direct' \
