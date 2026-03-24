@@ -1,14 +1,14 @@
 ---
 name: vintage-animation-characterizer
 description: This prompt instructs an image-to-image transformation that restyles the provided picture into a mid‑century slapstick cartoon frame, with bold clean linework, exaggerated anatomy and expressions, vibrant flat high‑contrast colors, a simplified painted background, and added animation effects like motion lines and impact bursts, resulting in a dynamic freeze‑frame that resembles a 1940s theatrical cartoon still focused on energetic visual humor.
-skillVersionId: 0197bfca-65f1-7f10-9509-d80aa7096507
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-to-image transformation that restyles the provided picture into a mid‑century slapstick cartoon frame, with bold clean linework, exaggerated anatomy and expressions, vibrant flat high‑contrast colors, a simplified painted background, and added animation effects like motion lines and impact bursts, resulting in a dynamic freeze‑frame that resembles a 1940s theatrical cartoon still focused on energetic visual humor.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197bfca-65f1-7f10-9509-d80aa7096507`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `vintage-animation-characterizer`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197bfca-65f1-7f10-9509-d80aa7096507 \
+betterprompt generate vintage-animation-characterizer \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197bfca-65f1-7f10-9509-d80aa7096507 \
+betterprompt generate vintage-animation-characterizer \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
