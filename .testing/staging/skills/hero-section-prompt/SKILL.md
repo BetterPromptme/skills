@@ -1,14 +1,14 @@
 ---
 name: hero-section-prompt
 description: This prompt instructs the AI to produce a structured feature specification document for a provided product feature concept, tailored to a defined audience, functionality set, and development timeline. The output is a clear, implementation-ready spec organized into overview, goals with success metrics, user stories, acceptance criteria mapped to those stories, a high-level technical design, and future enhancements to guide both planning and development.
-skillVersionId: 01991973-e811-70db-a8db-f1af90f2d4e4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to produce a structured feature specification document for a provided product feature concept, tailored to a defined audience, functionality set, and development timeline. The output is a clear, implementation-ready spec organized into overview, goals with success metrics, user stories, acceptance criteria mapped to those stories, a high-level technical design, and future enhancements to guide both planning and development.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -67,12 +67,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01991973-e811-70db-a8db-f1af90f2d4e4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `hero-section-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 01991973-e811-70db-a8db-f1af90f2d4e4 \
+betterprompt generate hero-section-prompt \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -89,7 +89,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01991973-e811-70db-a8db-f1af90f2d4e4 \
+betterprompt generate hero-section-prompt \
   --input 'feature_idea=Task Board' \
   --input 'target_users=Team members' \
   --input development_effort=30 \
