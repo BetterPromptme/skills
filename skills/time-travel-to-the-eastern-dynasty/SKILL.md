@@ -1,14 +1,14 @@
 ---
 name: time-travel-to-the-eastern-dynasty
 description: This prompt defines a single-turn cinematic portrait generation task that uses a provided reference face as a strictly locked identity source, requiring an ultra-realistic 8K 9:16 close-up of the subject on a white horse in a historical East Asian courtyard while preserving the reference facial features, gender expression, skin texture, and color tone exactly. It specifies period-accurate long-hair styling that extends behind the unchanged hairline without covering any facial landmarks, detailed royal wardrobe and props, camera and lighting settings, and strict rejection criteria that halt the process if the reference image is insufficiently clear or if any identity drift, facial alteration, modern anachronism, or over-smoothing occurs.
-skillVersionId: 01997b2e-cbd8-7c9a-a19a-9cdabcdb6a44
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt defines a single-turn cinematic portrait generation task that uses a provided reference face as a strictly locked identity source, requiring an ultra-realistic 8K 9:16 close-up of the subject on a white horse in a historical East Asian courtyard while preserving the reference facial features, gender expression, skin texture, and color tone exactly. It specifies period-accurate long-hair styling that extends behind the unchanged hairline without covering any facial landmarks, detailed royal wardrobe and props, camera and lighting settings, and strict rejection criteria that halt the process if the reference image is insufficiently clear or if any identity drift, facial alteration, modern anachronism, or over-smoothing occurs.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01997b2e-cbd8-7c9a-a19a-9cdabcdb6a44`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `time-travel-to-the-eastern-dynasty`).
 
 Command form:
 
 ```bash
-betterprompt generate 01997b2e-cbd8-7c9a-a19a-9cdabcdb6a44 \
+betterprompt generate time-travel-to-the-eastern-dynasty \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01997b2e-cbd8-7c9a-a19a-9cdabcdb6a44 \
+betterprompt generate time-travel-to-the-eastern-dynasty \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
