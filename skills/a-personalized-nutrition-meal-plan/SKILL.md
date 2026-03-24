@@ -1,14 +1,14 @@
 ---
 name: a-personalized-nutrition-meal-plan
 description: This prompt instructs the AI to generate a personalized, medically appropriate daily or weekly nutrition meal plan for a person with a specified health condition, using provided demographics and lifestyle factors (age, gender, weight, height, activity level) and any allergies or dietary restrictions. The resulting output is a clear, non-technical plan that includes at least three main meals plus one to two healthy snacks per day, with meal names, suggested times, estimated portion sizes, avoidance of condition-harmful foods, and an approximate daily calorie total with macronutrient breakdown, along with suitable substitutions for restricted foods.
-skillVersionId: 0196e6ce-7d49-71d3-b923-a2a2ea89c602
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a personalized, medically appropriate daily or weekly nutrition meal plan for a person with a specified health condition, using provided demographics and lifestyle factors (age, gender, weight, height, activity level) and any allergies or dietary restrictions. The resulting output is a clear, non-technical plan that includes at least three main meals plus one to two healthy snacks per day, with meal names, suggested times, estimated portion sizes, avoidance of condition-harmful foods, and an approximate daily calorie total with macronutrient breakdown, along with suitable substitutions for restricted foods.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196e6ce-7d49-71d3-b923-a2a2ea89c602`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `a-personalized-nutrition-meal-plan`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196e6ce-7d49-71d3-b923-a2a2ea89c602 \
+betterprompt generate a-personalized-nutrition-meal-plan \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -94,7 +94,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196e6ce-7d49-71d3-b923-a2a2ea89c602 \
+betterprompt generate a-personalized-nutrition-meal-plan \
   --input age=<value> \
   --input gender=<value> \
   --input height=<value> \
