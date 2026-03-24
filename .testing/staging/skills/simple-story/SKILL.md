@@ -1,14 +1,14 @@
 ---
 name: simple-story
 description: This prompt instructs the AI to generate a 100-word, mysterious short story centered on a specified main character, placing them in an evocative setting that reinforces the mood. The narrative must include a brief conflict or emotional beat that reveals character traits and conclude with a subtle twist or reflective ending, resulting in a compact, atmospheric vignette tailored to the provided character placeholder.
-skillVersionId: 019a4dab-0726-7263-b56d-37c4a6f49170
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a 100-word, mysterious short story centered on a specified main character, placing them in an evocative setting that reinforces the mood. The narrative must include a brief conflict or emotional beat that reveals character traits and conclude with a subtle twist or reflective ending, resulting in a compact, atmospheric vignette tailored to the provided character placeholder.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a4dab-0726-7263-b56d-37c4a6f49170`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `simple-story`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a4dab-0726-7263-b56d-37c4a6f49170 \
+betterprompt generate simple-story \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a4dab-0726-7263-b56d-37c4a6f49170 \
+betterprompt generate simple-story \
   --input char_two=<value> \
   --input character_one=<value> \
   --image-input-url https://example.com/image1.png \
