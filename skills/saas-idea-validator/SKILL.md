@@ -1,14 +1,14 @@
 ---
 name: saas-idea-validator
 description: This prompt instructs the AI to act as an experienced SaaS analyst and produce a structured validation report for a given SaaS concept, using the provided idea details, target audience, pricing model, and stage. It evaluates the opportunity across market, competition, product-market fit, technical feasibility, monetization, and execution risk, assigns scores, summarizes key risks, and outputs clear next steps, success metrics, and estimated resources to guide a founder’s go/no-go decision.
-skillVersionId: 019ce19a-eca5-7028-aefe-b6f5f5497b82
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an experienced SaaS analyst and produce a structured validation report for a given SaaS concept, using the provided idea details, target audience, pricing model, and stage. It evaluates the opportunity across market, competition, product-market fit, technical feasibility, monetization, and execution risk, assigns scores, summarizes key risks, and outputs clear next steps, success metrics, and estimated resources to guide a founder’s go/no-go decision.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -67,12 +67,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ce19a-eca5-7028-aefe-b6f5f5497b82`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `saas-idea-validator`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ce19a-eca5-7028-aefe-b6f5f5497b82 \
+betterprompt generate saas-idea-validator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -89,7 +89,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ce19a-eca5-7028-aefe-b6f5f5497b82 \
+betterprompt generate saas-idea-validator \
   --input 'idea=An AI-powered tool that automatically generates changelogs from git commits' \
   --input stage=mvp \
   --input pricingModel=usage \
