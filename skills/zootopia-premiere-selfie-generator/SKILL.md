@@ -1,14 +1,14 @@
 ---
 name: zootopia-premiere-selfie-generator
 description: This prompt instructs the AI to generate a high-angle, wide-angle selfie-style portrait set inside a crowded cinema during a Zootopia 2 premiere, featuring the uploaded person’s face preserved exactly while they stand between fully 3D, movie-quality Judy Hopps and Nick Wilde, with a giant theater screen displaying the Zootopia 2 poster, vivid cinematic lighting from the screen, and an energetic fan-event atmosphere rendered in ultra-realistic high resolution.
-skillVersionId: 019ac3f8-7bca-77fd-9df8-18e84c7199c9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a high-angle, wide-angle selfie-style portrait set inside a crowded cinema during a Zootopia 2 premiere, featuring the uploaded person’s face preserved exactly while they stand between fully 3D, movie-quality Judy Hopps and Nick Wilde, with a giant theater screen displaying the Zootopia 2 poster, vivid cinematic lighting from the screen, and an energetic fan-event atmosphere rendered in ultra-realistic high resolution.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ac3f8-7bca-77fd-9df8-18e84c7199c9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `zootopia-premiere-selfie-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ac3f8-7bca-77fd-9df8-18e84c7199c9 \
+betterprompt generate zootopia-premiere-selfie-generator \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ac3f8-7bca-77fd-9df8-18e84c7199c9 \
+betterprompt generate zootopia-premiere-selfie-generator \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"2K"}'
