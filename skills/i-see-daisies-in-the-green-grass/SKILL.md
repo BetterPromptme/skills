@@ -1,14 +1,14 @@
 ---
 name: i-see-daisies-in-the-green-grass
 description: This prompt instructs the AI to generate a cohesive, photorealistic three-panel vertical film-style triptych featuring the same reference-identical subject in a sunlit natural setting, with daisies as a recurring motif. It specifies composition, poses, wardrobe, lens and film emulation, lighting, color palette, and texture for each panel (tree portrait, close-up with flower, reclining on grass), while enforcing strict identity preservation and realistic proportions. The outcome is an 8K cinematic series with warm, slightly overexposed daylight, soft grain, and a consistent nostalgic mood that visually progresses from gentle stillness to serene intimacy.
-skillVersionId: 019a573c-5803-7310-91af-7467a8f13155
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a cohesive, photorealistic three-panel vertical film-style triptych featuring the same reference-identical subject in a sunlit natural setting, with daisies as a recurring motif. It specifies composition, poses, wardrobe, lens and film emulation, lighting, color palette, and texture for each panel (tree portrait, close-up with flower, reclining on grass), while enforcing strict identity preservation and realistic proportions. The outcome is an 8K cinematic series with warm, slightly overexposed daylight, soft grain, and a consistent nostalgic mood that visually progresses from gentle stillness to serene intimacy.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a573c-5803-7310-91af-7467a8f13155`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `i-see-daisies-in-the-green-grass`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a573c-5803-7310-91af-7467a8f13155 \
+betterprompt generate i-see-daisies-in-the-green-grass \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a573c-5803-7310-91af-7467a8f13155 \
+betterprompt generate i-see-daisies-in-the-green-grass \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
