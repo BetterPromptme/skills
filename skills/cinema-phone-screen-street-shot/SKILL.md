@@ -1,14 +1,14 @@
 ---
 name: cinema-phone-screen-street-shot
 description: This prompt instructs the AI to transform an input portrait into a realistic smartphone-style street photo set in an underground parking garage, while strictly preserving the person’s identity. The resulting image is composed as a phone-held-in-frame “on-camera roll” shot where the phone screen (showing the person with specified streetwear styling and a subtle camera UI) is the sharp focal point, and the real person plus garage background are slightly blurred with gritty, cold fluorescent lighting, mild motion blur, and authentic grain, delivered in a high-resolution 3:4 output without logos, watermarks, or anatomy/geometry distortions.
-skillVersionId: 019c4189-ae09-7354-9aef-feb4d3ee39f6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to transform an input portrait into a realistic smartphone-style street photo set in an underground parking garage, while strictly preserving the person’s identity. The resulting image is composed as a phone-held-in-frame “on-camera roll” shot where the phone screen (showing the person with specified streetwear styling and a subtle camera UI) is the sharp focal point, and the real person plus garage background are slightly blurred with gritty, cold fluorescent lighting, mild motion blur, and authentic grain, delivered in a high-resolution 3:4 output without logos, watermarks, or anatomy/geometry distortions.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c4189-ae09-7354-9aef-feb4d3ee39f6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cinema-phone-screen-street-shot`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c4189-ae09-7354-9aef-feb4d3ee39f6 \
+betterprompt generate cinema-phone-screen-street-shot \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c4189-ae09-7354-9aef-feb4d3ee39f6 \
+betterprompt generate cinema-phone-screen-street-shot \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
