@@ -1,14 +1,14 @@
 ---
 name: stranger-things-final-season-poster
 description: This prompt instructs an image-generation system to take a user-supplied portrait and convert it into an ultra-realistic, Netflix-style character poster that matches the look and layout of a Stranger Things Season 5 promo, preserving the person’s identity while adding cinematic red-and-black lighting, a single clearly readable neon “5” in the background, specified wardrobe styling based on gender presentation, and fixed branding text/logos placed in exact positions for a print-ready, high-resolution poster result.
-skillVersionId: 019ad80e-b6d6-7089-ac4d-a56ee5fed2db
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to take a user-supplied portrait and convert it into an ultra-realistic, Netflix-style character poster that matches the look and layout of a Stranger Things Season 5 promo, preserving the person’s identity while adding cinematic red-and-black lighting, a single clearly readable neon “5” in the background, specified wardrobe styling based on gender presentation, and fixed branding text/logos placed in exact positions for a print-ready, high-resolution poster result.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ad80e-b6d6-7089-ac4d-a56ee5fed2db`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `stranger-things-final-season-poster`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ad80e-b6d6-7089-ac4d-a56ee5fed2db \
+betterprompt generate stranger-things-final-season-poster \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ad80e-b6d6-7089-ac4d-a56ee5fed2db \
+betterprompt generate stranger-things-final-season-poster \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"2:3","resolution":"1K"}'
