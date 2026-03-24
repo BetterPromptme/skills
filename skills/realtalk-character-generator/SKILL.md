@@ -1,14 +1,14 @@
 ---
 name: realtalk-character-generator
 description: This prompt instructs an AI to direct and generate a 6–10 second, cinematic, hyper-realistic talking-head video based on a user-provided portrait, with the subject delivering a short supplied script in a specified emotional tone and setting. It defines realism requirements (accurate lip-sync, natural micro-expressions and gestures, subtle camera movement, warm lighting, clear audio with ambient sound, and shallow depth of field) while preserving the person’s identity and avoiding robotic motion. The outcome is a polished, authentic-looking announcement-style clip suitable for social media or updates, constrained by safety rules that limit misuse and require consent and non-misleading content.
-skillVersionId: 0199eb37-35c4-7845-b990-4e1edb92e107
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to direct and generate a 6–10 second, cinematic, hyper-realistic talking-head video based on a user-provided portrait, with the subject delivering a short supplied script in a specified emotional tone and setting. It defines realism requirements (accurate lip-sync, natural micro-expressions and gestures, subtle camera movement, warm lighting, clear audio with ambient sound, and shallow depth of field) while preserving the person’s identity and avoiding robotic motion. The outcome is a polished, authentic-looking announcement-style clip suitable for social media or updates, constrained by safety rules that limit misuse and require consent and non-misleading content.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -67,12 +67,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199eb37-35c4-7845-b990-4e1edb92e107`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `realtalk-character-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199eb37-35c4-7845-b990-4e1edb92e107 \
+betterprompt generate realtalk-character-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -89,7 +89,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199eb37-35c4-7845-b990-4e1edb92e107 \
+betterprompt generate realtalk-character-generator \
   --input script=<value> \
   --input 'setting=casual indoor room, bright studio, modern office,....' \
   --input 'emotion_tone=enthusiastic, friendly, confident, calm,...' \
