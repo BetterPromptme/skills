@@ -1,14 +1,14 @@
 ---
 name: modern-kitchen-lifestyle-portrait
 description: This prompt instructs an AI image generator to produce a photorealistic, fashion-editorial indoor portrait in a modern minimalist kitchen, using the provided reference image as the sole, unchanged source of the subject’s facial identity. It specifies a vertical, counter-height medium composition with a confident leaning pose, glam hair and makeup, pink Y2K-inspired lounge outfit, and minimal foreground props (shot glasses and a clear bottle), along with controlled overhead lighting and a late-night upscale mood, resulting in a realistic, high-contrast lifestyle photograph that preserves the subject’s exact face and expression.
-skillVersionId: 019be952-8c5f-74a9-a1c9-cd0d557633de
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a photorealistic, fashion-editorial indoor portrait in a modern minimalist kitchen, using the provided reference image as the sole, unchanged source of the subject’s facial identity. It specifies a vertical, counter-height medium composition with a confident leaning pose, glam hair and makeup, pink Y2K-inspired lounge outfit, and minimal foreground props (shot glasses and a clear bottle), along with controlled overhead lighting and a late-night upscale mood, resulting in a realistic, high-contrast lifestyle photograph that preserves the subject’s exact face and expression.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019be952-8c5f-74a9-a1c9-cd0d557633de`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `modern-kitchen-lifestyle-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019be952-8c5f-74a9-a1c9-cd0d557633de \
+betterprompt generate modern-kitchen-lifestyle-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019be952-8c5f-74a9-a1c9-cd0d557633de \
+betterprompt generate modern-kitchen-lifestyle-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
