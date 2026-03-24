@@ -1,14 +1,14 @@
 ---
 name: deep-customers-insight-understanding
 description: Prompt này yêu cầu AI đóng vai trò chuyên gia chiến lược marketing và nghiên cứu hành vi khách hàng để phân tích insight của tệp khách hàng mục tiêu cho một sản phẩm/dịch vụ cụ thể theo hai khung: tháp nhu cầu Maslow và 6 khía cạnh cuộc sống, từ đó xác định ưu tiên nhu cầu/yếu tố, làm rõ động lực tâm lý và pain point, diễn giải hành vi–niềm tin–rào cản–kỳ vọng, rồi đề xuất các góc độ nội dung cùng định dạng nội dung và kênh triển khai (Facebook, TikTok, Email, SEO website, PR), trình bày kết quả dưới dạng bảng theo ngôn ngữ được chỉ định.
-skillVersionId: 0198c184-789c-7191-82bf-6fd057192cbe
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 Prompt này yêu cầu AI đóng vai trò chuyên gia chiến lược marketing và nghiên cứu hành vi khách hàng để phân tích insight của tệp khách hàng mục tiêu cho một sản phẩm/dịch vụ cụ thể theo hai khung: tháp nhu cầu Maslow và 6 khía cạnh cuộc sống, từ đó xác định ưu tiên nhu cầu/yếu tố, làm rõ động lực tâm lý và pain point, diễn giải hành vi–niềm tin–rào cản–kỳ vọng, rồi đề xuất các góc độ nội dung cùng định dạng nội dung và kênh triển khai (Facebook, TikTok, Email, SEO website, PR), trình bày kết quả dưới dạng bảng theo ngôn ngữ được chỉ định.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198c184-789c-7191-82bf-6fd057192cbe`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `deep-customers-insight-understanding`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198c184-789c-7191-82bf-6fd057192cbe \
+betterprompt generate deep-customers-insight-understanding \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198c184-789c-7191-82bf-6fd057192cbe \
+betterprompt generate deep-customers-insight-understanding \
   --input Language=English \
   --input Brand_Name=Upcontent \
   --input 'Descriptions=Providing graphic design and content marketing solutions for SME businesses including profile design, catalog, menu, advertising images, website banners, fan care and website content' \
