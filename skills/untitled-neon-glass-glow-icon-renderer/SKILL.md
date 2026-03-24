@@ -1,14 +1,14 @@
 ---
 name: untitled-neon-glass-glow-icon-renderer
 description: This prompt instructs the AI to generate a centered, isolated futuristic holographic 3D icon of a specified subject, preserving its original silhouette while applying sharp stylized outlines and geometry-aware detailing. It specifies neon glass-like materials, a high-contrast fluorescent color palette, and intense backlit lighting to produce refractive surfaces, glowing edge auras, rim bloom, and soft luminous shadows. The intended outcome is a crisp, high-gloss “Neon Glass Glow Icons” style render on a pure black background with a subtle halo glow.
-skillVersionId: 01985e5c-3b42-7365-ba39-12b0fae264a4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a centered, isolated futuristic holographic 3D icon of a specified subject, preserving its original silhouette while applying sharp stylized outlines and geometry-aware detailing. It specifies neon glass-like materials, a high-contrast fluorescent color palette, and intense backlit lighting to produce refractive surfaces, glowing edge auras, rim bloom, and soft luminous shadows. The intended outcome is a crisp, high-gloss “Neon Glass Glow Icons” style render on a pure black background with a subtle halo glow.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01985e5c-3b42-7365-ba39-12b0fae264a4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `untitled-neon-glass-glow-icon-renderer`).
 
 Command form:
 
 ```bash
-betterprompt generate 01985e5c-3b42-7365-ba39-12b0fae264a4 \
+betterprompt generate untitled-neon-glass-glow-icon-renderer \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01985e5c-3b42-7365-ba39-12b0fae264a4 \
+betterprompt generate untitled-neon-glass-glow-icon-renderer \
   --input SUBJECT=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
