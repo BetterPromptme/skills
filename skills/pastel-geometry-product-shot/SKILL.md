@@ -1,14 +1,14 @@
 ---
 name: pastel-geometry-product-shot
 description: This prompt instructs an image model to generate a square, high-end editorial product photograph featuring a minimalist product staged on pastel geometric pedestals against a soft gradient background, with complementary natural ingredients/textures arranged on their own coordinated stands. It specifies a modern premium composition with 3D realism, subtle surface detail, and professional studio lighting—diffused from the right—with diagonal leaf-shadow patterns to mimic filtered sunlight, resulting in a clean, balanced, high-resolution hero image suitable for luxury branding.
-skillVersionId: 0197ce78-29e4-70eb-9b2f-f8f00c79bcc9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a square, high-end editorial product photograph featuring a minimalist product staged on pastel geometric pedestals against a soft gradient background, with complementary natural ingredients/textures arranged on their own coordinated stands. It specifies a modern premium composition with 3D realism, subtle surface detail, and professional studio lighting—diffused from the right—with diagonal leaf-shadow patterns to mimic filtered sunlight, resulting in a clean, balanced, high-resolution hero image suitable for luxury branding.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197ce78-29e4-70eb-9b2f-f8f00c79bcc9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `pastel-geometry-product-shot`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197ce78-29e4-70eb-9b2f-f8f00c79bcc9 \
+betterprompt generate pastel-geometry-product-shot \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197ce78-29e4-70eb-9b2f-f8f00c79bcc9 \
+betterprompt generate pastel-geometry-product-shot \
   --input PRODUCT=<value> \
   --input BACKGROUND_COLOR=<value> \
   --input NATURAL_INGREDIENTS_OR_TEXTURES=<value> \
