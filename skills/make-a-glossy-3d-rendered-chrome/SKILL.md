@@ -1,14 +1,14 @@
 ---
 name: make-a-glossy-3d-rendered-chrome
 description: This prompt instructs an image generator to create a high-quality Blender-style 3D render of an abstract object shaped like a specified icon or text, using a chosen metallic color and glossy reflective material with soft shadows and subtle reflections, isolated in a minimalistic composition on a specified background color.
-skillVersionId: 0196fc6f-cdbc-72d5-81cd-7e193a9e1b0b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a high-quality Blender-style 3D render of an abstract object shaped like a specified icon or text, using a chosen metallic color and glossy reflective material with soft shadows and subtle reflections, isolated in a minimalistic composition on a specified background color.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196fc6f-cdbc-72d5-81cd-7e193a9e1b0b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `make-a-glossy-3d-rendered-chrome`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196fc6f-cdbc-72d5-81cd-7e193a9e1b0b \
+betterprompt generate make-a-glossy-3d-rendered-chrome \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196fc6f-cdbc-72d5-81cd-7e193a9e1b0b \
+betterprompt generate make-a-glossy-3d-rendered-chrome \
   --input color_of_background=<value> \
   --input color_of_main_element=<value> \
   --input Icons_or_text_anything_you_want_to_change_the_shape=<value> \
