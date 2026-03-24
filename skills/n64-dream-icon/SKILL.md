@@ -1,14 +1,14 @@
 ---
 name: n64-dream-icon
 description: This prompt instructs an image model to generate a high-resolution, square 3D render of a chosen object as a floating icon styled like retro N64-era plastic hardware, using rounded semi-matte forms, bold saturated colors, subtle seams, and gentle reflections, centered on a clean white background with no text, shadows, or controller-shaped elements.
-skillVersionId: 01980bea-78da-7949-889c-54a91b88de91
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a high-resolution, square 3D render of a chosen object as a floating icon styled like retro N64-era plastic hardware, using rounded semi-matte forms, bold saturated colors, subtle seams, and gentle reflections, centered on a clean white background with no text, shadows, or controller-shaped elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01980bea-78da-7949-889c-54a91b88de91`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `n64-dream-icon`).
 
 Command form:
 
 ```bash
-betterprompt generate 01980bea-78da-7949-889c-54a91b88de91 \
+betterprompt generate n64-dream-icon \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01980bea-78da-7949-889c-54a91b88de91 \
+betterprompt generate n64-dream-icon \
   --input OBJECT=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
