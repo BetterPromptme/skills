@@ -1,14 +1,14 @@
 ---
 name: pet-peek-portrait
 description: This prompt instructs the AI to take a user-provided, front-facing pet portrait and generate a photorealistic editorial-style image where the pet appears to peek through a central torn-paper opening with curled edges, showing its face and one paw. The result is a clean, minimal composition with a customizable solid-color background, specified emotional expression, and chosen lighting mood, while strictly preserving the pet’s true identity and realism and avoiding any stylization, distortions, text, logos, or added accessories.
-skillVersionId: 019994f4-d34b-753f-a8b1-fe23dfe20404
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take a user-provided, front-facing pet portrait and generate a photorealistic editorial-style image where the pet appears to peek through a central torn-paper opening with curled edges, showing its face and one paw. The result is a clean, minimal composition with a customizable solid-color background, specified emotional expression, and chosen lighting mood, while strictly preserving the pet’s true identity and realism and avoiding any stylization, distortions, text, logos, or added accessories.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019994f4-d34b-753f-a8b1-fe23dfe20404`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `pet-peek-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019994f4-d34b-753f-a8b1-fe23dfe20404 \
+betterprompt generate pet-peek-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -100,7 +100,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019994f4-d34b-753f-a8b1-fe23dfe20404 \
+betterprompt generate pet-peek-portrait \
   --input 'pet_emotion=Happy with a gentle smile' \
   --input 'lighting_effect=Soft warm light' \
   --input 'background_color=Lavender purple' \
