@@ -1,14 +1,14 @@
 ---
 name: trainyard-scene
 description: This prompt specifies a cinematic, photochemically inspired video scene on an urban commuter platform at dawn, detailing camera behavior, lens and filtration choices, color grade, lighting, atmosphere, sound design, and a two-part shot progression, with placeholders for subject, extras, and props. The outcome is a tightly art-directed, realistic-feeling sequence featuring an arriving train in misty morning light, culminating in an intimate character moment and a defined “poster frame” for finishing and delivery.
-skillVersionId: 0199d275-126d-7de6-a25d-91d394822f29
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt specifies a cinematic, photochemically inspired video scene on an urban commuter platform at dawn, detailing camera behavior, lens and filtration choices, color grade, lighting, atmosphere, sound design, and a two-part shot progression, with placeholders for subject, extras, and props. The outcome is a tightly art-directed, realistic-feeling sequence featuring an arriving train in misty morning light, culminating in an intimate character moment and a defined “poster frame” for finishing and delivery.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199d275-126d-7de6-a25d-91d394822f29`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `trainyard-scene`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199d275-126d-7de6-a25d-91d394822f29 \
+betterprompt generate trainyard-scene \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199d275-126d-7de6-a25d-91d394822f29 \
+betterprompt generate trainyard-scene \
   --input 'props=paper coffee cup, rolling luggage, LED departure board (generic destinations)' \
   --input 'extras=commuters in muted tones; one cyclist pushing bike' \
   --input 'main_subject=mid-30s traveler, navy coat, backpack slung on one shoulder, holding phone loosely at side' \
