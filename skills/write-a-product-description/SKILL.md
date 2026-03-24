@@ -1,14 +1,14 @@
 ---
 name: write-a-product-description
 description: This prompt instructs the AI to examine a provided product image and generate a visually vivid, emotionally compelling, marketing-focused description suitable for a product ad or launch. It directs the model to accurately translate observable design details—such as materials, form, colors, and key features—into clear benefits and lifestyle appeal, while maintaining a specified brand tone and output format. The outcome is a high-converting product description, optionally including a tagline, that stays grounded in what’s visible and avoids claiming unverified functionality.
-skillVersionId: 0196e7a3-1916-7f0b-8b74-a89e2fc42edb
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to examine a provided product image and generate a visually vivid, emotionally compelling, marketing-focused description suitable for a product ad or launch. It directs the model to accurately translate observable design details—such as materials, form, colors, and key features—into clear benefits and lifestyle appeal, while maintaining a specified brand tone and output format. The outcome is a high-converting product description, optionally including a tagline, that stays grounded in what’s visible and avoids claiming unverified functionality.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196e7a3-1916-7f0b-8b74-a89e2fc42edb`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `write-a-product-description`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196e7a3-1916-7f0b-8b74-a89e2fc42edb \
+betterprompt generate write-a-product-description \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196e7a3-1916-7f0b-8b74-a89e2fc42edb \
+betterprompt generate write-a-product-description \
   --input tone=<value> \
   --input Format=<value> \
   --image-input-url https://example.com/image1.png \
