@@ -1,14 +1,14 @@
 ---
 name: hyper-realistic-beauiful-girl
 description: This prompt instructs an image-generation model to create a hyperrealistic, cinematic 8K portrait of a beautiful young girl with expressive eyes and a radiant smile, wearing an elegant flowing dress in a vivid randomly chosen color, posed in a dynamic, natural environment such as a golden-hour enchanted forest clearing or an artistic city street with soft bokeh, with meticulously detailed hair and lighting that together produce an intricate, dreamlike, photorealistic final image.
-skillVersionId: 019a4dec-f1db-74ac-a387-89ec723bc4de
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to create a hyperrealistic, cinematic 8K portrait of a beautiful young girl with expressive eyes and a radiant smile, wearing an elegant flowing dress in a vivid randomly chosen color, posed in a dynamic, natural environment such as a golden-hour enchanted forest clearing or an artistic city street with soft bokeh, with meticulously detailed hair and lighting that together produce an intricate, dreamlike, photorealistic final image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a4dec-f1db-74ac-a387-89ec723bc4de`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `hyper-realistic-beauiful-girl`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a4dec-f1db-74ac-a387-89ec723bc4de \
+betterprompt generate hyper-realistic-beauiful-girl \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a4dec-f1db-74ac-a387-89ec723bc4de \
+betterprompt generate hyper-realistic-beauiful-girl \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
 ```
