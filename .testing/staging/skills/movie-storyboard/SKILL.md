@@ -1,14 +1,14 @@
 ---
 name: movie-storyboard
 description: This prompt instructs the AI to create a cohesive four-image storyboard in cinematic color neo-noir style, following a lone detective’s escalating search for a missing treasure across distinct story beats with rising tension, emotional shifts, and a final twist that resolves the mystery. The outcome is a sequence of exactly four text-free, high-contrast, smoky urban frames that preserve strict continuity—especially the detective’s unchanged face, consistent wardrobe and props, and a unified atmosphere—while avoiding gore, explicit content, and out-of-place elements.
-skillVersionId: 01999ed9-2c81-7d1e-b98d-7b6da814d9c1
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a cohesive four-image storyboard in cinematic color neo-noir style, following a lone detective’s escalating search for a missing treasure across distinct story beats with rising tension, emotional shifts, and a final twist that resolves the mystery. The outcome is a sequence of exactly four text-free, high-contrast, smoky urban frames that preserve strict continuity—especially the detective’s unchanged face, consistent wardrobe and props, and a unified atmosphere—while avoiding gore, explicit content, and out-of-place elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01999ed9-2c81-7d1e-b98d-7b6da814d9c1`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `movie-storyboard`).
 
 Command form:
 
 ```bash
-betterprompt generate 01999ed9-2c81-7d1e-b98d-7b6da814d9c1 \
+betterprompt generate movie-storyboard \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -100,7 +100,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01999ed9-2c81-7d1e-b98d-7b6da814d9c1 \
+betterprompt generate movie-storyboard \
   --input story_theme=funny \
   --input character_role=<value> \
   --image-input-url https://example.com/image1.png \
