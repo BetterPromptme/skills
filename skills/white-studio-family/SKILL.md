@@ -1,14 +1,14 @@
 ---
 name: white-studio-family
 description: This prompt directs an image editor to turn an existing family photo into a clean, minimal white-background studio portrait while strictly preserving each person’s exact facial identity and keeping the same family member count. It specifies a precise stacked, side-lying pose with a mandatory top-to-bottom size order, close physical connection, and warm natural smiles, then standardizes everyone’s wardrobe into plain long-sleeve shirts in a single user-provided color. The intended outcome is a modern, softly lit, evenly exposed studio-style family portrait with all faces clearly visible, no props or background elements, and only subtle professional retouching.
-skillVersionId: 019b2506-ad0f-704f-a8cc-bfc3bf01e361
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image editor to turn an existing family photo into a clean, minimal white-background studio portrait while strictly preserving each person’s exact facial identity and keeping the same family member count. It specifies a precise stacked, side-lying pose with a mandatory top-to-bottom size order, close physical connection, and warm natural smiles, then standardizes everyone’s wardrobe into plain long-sleeve shirts in a single user-provided color. The intended outcome is a modern, softly lit, evenly exposed studio-style family portrait with all faces clearly visible, no props or background elements, and only subtle professional retouching.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b2506-ad0f-704f-a8cc-bfc3bf01e361`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `white-studio-family`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b2506-ad0f-704f-a8cc-bfc3bf01e361 \
+betterprompt generate white-studio-family \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b2506-ad0f-704f-a8cc-bfc3bf01e361 \
+betterprompt generate white-studio-family \
   --input Outfit_color=<value> \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
