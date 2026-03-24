@@ -1,14 +1,14 @@
 ---
 name: studio-grace
 description: This prompt instructs the AI to generate an ultra-high-resolution, minimalist cinematic studio birthday portrait of a woman, precisely matching the subject’s facial features from a reference image, posed crouching in a white studio while blowing out a single candle on a small white cake, styled in an oversized black blazer with sheer tights and bow-accent heels, and composed with sharp dual-spotlight shadows plus celebratory props (red roses and metallic number balloons) to produce a clean, elegant, editorial final photograph.
-skillVersionId: 019a76f8-a3fb-7299-ade8-9e6c645d0793
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate an ultra-high-resolution, minimalist cinematic studio birthday portrait of a woman, precisely matching the subject’s facial features from a reference image, posed crouching in a white studio while blowing out a single candle on a small white cake, styled in an oversized black blazer with sheer tights and bow-accent heels, and composed with sharp dual-spotlight shadows plus celebratory props (red roses and metallic number balloons) to produce a clean, elegant, editorial final photograph.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a76f8-a3fb-7299-ade8-9e6c645d0793`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `studio-grace`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a76f8-a3fb-7299-ade8-9e6c645d0793 \
+betterprompt generate studio-grace \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a76f8-a3fb-7299-ade8-9e6c645d0793 \
+betterprompt generate studio-grace \
   --input age_number=<value> \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
