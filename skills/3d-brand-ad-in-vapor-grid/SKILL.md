@@ -1,14 +1,14 @@
 ---
 name: 3d-brand-ad-in-vapor-grid
 description: This prompt instructs an image generator to produce a square (1:1) advertising visual for a specified brand, set in a 3D Y2K-inspired product-photography scene featuring distorted grid planes, retro-futuristic materials (chrome, reflective metals, translucent plastics), controlled glow and reflections, and a brand-led synthetic color palette with select neon accents. It directs the composition to use minimal modular brand elements instead of excessive bubbles, add holographic/UI/vaporwave-style overlays aligned to the brand aesthetic, and finish with a small brand logo and micro-slogan at the bottom styled as a pixel-like signature or digital watermark.
-skillVersionId: 019787a1-22dc-7051-a6ae-0842905481cd
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to produce a square (1:1) advertising visual for a specified brand, set in a 3D Y2K-inspired product-photography scene featuring distorted grid planes, retro-futuristic materials (chrome, reflective metals, translucent plastics), controlled glow and reflections, and a brand-led synthetic color palette with select neon accents. It directs the composition to use minimal modular brand elements instead of excessive bubbles, add holographic/UI/vaporwave-style overlays aligned to the brand aesthetic, and finish with a small brand logo and micro-slogan at the bottom styled as a pixel-like signature or digital watermark.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019787a1-22dc-7051-a6ae-0842905481cd`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `3d-brand-ad-in-vapor-grid`).
 
 Command form:
 
 ```bash
-betterprompt generate 019787a1-22dc-7051-a6ae-0842905481cd \
+betterprompt generate 3d-brand-ad-in-vapor-grid \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019787a1-22dc-7051-a6ae-0842905481cd \
+betterprompt generate 3d-brand-ad-in-vapor-grid \
   --input Brand=<value> \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
