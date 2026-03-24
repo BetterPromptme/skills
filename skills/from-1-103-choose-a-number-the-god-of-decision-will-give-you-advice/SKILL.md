@@ -1,14 +1,14 @@
 ---
 name: from-1-103-choose-a-number-the-god-of-decision-will-give-you-advice
 description: This prompt sets up an AI role that behaves like a fixed lookup book of 103 pages, where each page number maps to exactly one predefined message. The task is to accept a user-provided number from 1 to 103 and respond in a strict, simple format that repeats the corresponding stored message verbatim. The outcome is a consistent, non-creative retrieval of the exact message for the requested page, with no new text generated beyond the required structure.
-skillVersionId: 01971b07-1b80-74a5-8799-fd3c55bd0aca
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt sets up an AI role that behaves like a fixed lookup book of 103 pages, where each page number maps to exactly one predefined message. The task is to accept a user-provided number from 1 to 103 and respond in a strict, simple format that repeats the corresponding stored message verbatim. The outcome is a consistent, non-creative retrieval of the exact message for the requested page, with no new text generated beyond the required structure.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01971b07-1b80-74a5-8799-fd3c55bd0aca`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `from-1-103-choose-a-number-the-god-of-decision-will-give-you-advice`).
 
 Command form:
 
 ```bash
-betterprompt generate 01971b07-1b80-74a5-8799-fd3c55bd0aca \
+betterprompt generate from-1-103-choose-a-number-the-god-of-decision-will-give-you-advice \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01971b07-1b80-74a5-8799-fd3c55bd0aca \
+betterprompt generate from-1-103-choose-a-number-the-god-of-decision-will-give-you-advice \
   --input number_of_pages_you_select=<value> \
   --model gpt-4.1-mini \
   --options '{}'
