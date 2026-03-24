@@ -1,14 +1,14 @@
 ---
 name: winter-echo-dual-close-up-portrait
 description: This prompt instructs an AI image generator to produce an 8K, photorealistic two-frame vertical winter portrait featuring the same young woman as in a provided reference, preserving her exact facial identity and realism. It specifies a snow-filled outdoor setting, tight close-up compositions with slight angle changes between the upper and lower frames, detailed wardrobe elements (white over-ear headphones, black scarf, black gloves), subtle expression shifts, and soft overcast daylight for a cool cinematic look. The intended outcome is a cohesive dual-portrait set with visible snowfall textures and natural skin tone, delivering intimate, emotionally quiet winter imagery without altering or beautifying the subject’s face.
-skillVersionId: 019a4ca4-86f9-754c-b7a1-e115e9a33679
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce an 8K, photorealistic two-frame vertical winter portrait featuring the same young woman as in a provided reference, preserving her exact facial identity and realism. It specifies a snow-filled outdoor setting, tight close-up compositions with slight angle changes between the upper and lower frames, detailed wardrobe elements (white over-ear headphones, black scarf, black gloves), subtle expression shifts, and soft overcast daylight for a cool cinematic look. The intended outcome is a cohesive dual-portrait set with visible snowfall textures and natural skin tone, delivering intimate, emotionally quiet winter imagery without altering or beautifying the subject’s face.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a4ca4-86f9-754c-b7a1-e115e9a33679`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `winter-echo-dual-close-up-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a4ca4-86f9-754c-b7a1-e115e9a33679 \
+betterprompt generate winter-echo-dual-close-up-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a4ca4-86f9-754c-b7a1-e115e9a33679 \
+betterprompt generate winter-echo-dual-close-up-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
