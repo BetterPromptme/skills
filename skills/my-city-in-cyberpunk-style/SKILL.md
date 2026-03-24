@@ -1,14 +1,14 @@
 ---
 name: my-city-in-cyberpunk-style
 description: This prompt instructs the AI to transform a user-supplied photograph of a specific city into a film-quality cyberpunk future while preserving the city’s recognizable architecture and composition, then amplifying a named focal element as the central subject using neon glow, holographic overlays, and a defined color palette within a chosen atmospheric mood (e.g., rain, mist, neon haze). The intended outcome is a striking, narratively coherent, technically reproducible concept-art image with cinematic lighting, reflective surfaces, and hyper-detailed Blade Runner/Cyberpunk-style ambience, along with production-ready guidance and a request for additional references if required details are missing.
-skillVersionId: 01993187-82b9-7b7a-bc8b-5d9c56379921
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to transform a user-supplied photograph of a specific city into a film-quality cyberpunk future while preserving the city’s recognizable architecture and composition, then amplifying a named focal element as the central subject using neon glow, holographic overlays, and a defined color palette within a chosen atmospheric mood (e.g., rain, mist, neon haze). The intended outcome is a striking, narratively coherent, technically reproducible concept-art image with cinematic lighting, reflective surfaces, and hyper-detailed Blade Runner/Cyberpunk-style ambience, along with production-ready guidance and a request for additional references if required details are missing.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01993187-82b9-7b7a-bc8b-5d9c56379921`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `my-city-in-cyberpunk-style`).
 
 Command form:
 
 ```bash
-betterprompt generate 01993187-82b9-7b7a-bc8b-5d9c56379921 \
+betterprompt generate my-city-in-cyberpunk-style \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01993187-82b9-7b7a-bc8b-5d9c56379921 \
+betterprompt generate my-city-in-cyberpunk-style \
   --input mood=<value> \
   --input city_name=<value> \
   --input main_element=<value> \
