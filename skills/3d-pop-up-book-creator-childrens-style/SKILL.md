@@ -1,14 +1,14 @@
 ---
 name: 3d-pop-up-book-creator-childrens-style
 description: This prompt instructs an AI image generator to create an isometric illustration of an open pop-up children’s book where a vivid main scene is brought to life with specified animals or objects and extra small details, all constructed as layered paper cutouts with hinges and tabs that rise from the pages. The result is a richly colored, hand-crafted storybook-style 3D diorama with soft shadows, dramatic lighting, and a chosen aesthetic tag that enhances depth and magical energy.
-skillVersionId: 01987e23-7bea-71b2-8392-a33ec81c860b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create an isometric illustration of an open pop-up children’s book where a vivid main scene is brought to life with specified animals or objects and extra small details, all constructed as layered paper cutouts with hinges and tabs that rise from the pages. The result is a richly colored, hand-crafted storybook-style 3D diorama with soft shadows, dramatic lighting, and a chosen aesthetic tag that enhances depth and magical energy.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01987e23-7bea-71b2-8392-a33ec81c860b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `3d-pop-up-book-creator-childrens-style`).
 
 Command form:
 
 ```bash
-betterprompt generate 01987e23-7bea-71b2-8392-a33ec81c860b \
+betterprompt generate 3d-pop-up-book-creator-childrens-style \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01987e23-7bea-71b2-8392-a33ec81c860b \
+betterprompt generate 3d-pop-up-book-creator-childrens-style \
   --input STYLE_TAG=<value> \
   --input MAIN_SCENE=<value> \
   --input SMALL_DETAILS=<value> \
