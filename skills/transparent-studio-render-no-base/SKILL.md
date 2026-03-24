@@ -1,14 +1,14 @@
 ---
 name: transparent-studio-render-no-base
 description: This prompt defines a consistent visual style guide for generating a clean, studio-quality product render of an object on a fully transparent background. It instructs the model to preserve the object’s original shape while using smooth, outline-free geometry, semi-matte plastic-like materials, subtle specular highlights, and high-contrast decal-style branding, with slightly boosted color for clarity. The expected result is a centered, sharp, professional-looking cutout render with only a soft drop shadow for depth and no visible base, floor, or background elements.
-skillVersionId: 01979ad1-2a79-7462-acbb-393e55589dd0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt defines a consistent visual style guide for generating a clean, studio-quality product render of an object on a fully transparent background. It instructs the model to preserve the object’s original shape while using smooth, outline-free geometry, semi-matte plastic-like materials, subtle specular highlights, and high-contrast decal-style branding, with slightly boosted color for clarity. The expected result is a centered, sharp, professional-looking cutout render with only a soft drop shadow for depth and no visible base, floor, or background elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01979ad1-2a79-7462-acbb-393e55589dd0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `transparent-studio-render-no-base`).
 
 Command form:
 
 ```bash
-betterprompt generate 01979ad1-2a79-7462-acbb-393e55589dd0 \
+betterprompt generate transparent-studio-render-no-base \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01979ad1-2a79-7462-acbb-393e55589dd0 \
+betterprompt generate transparent-studio-render-no-base \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
