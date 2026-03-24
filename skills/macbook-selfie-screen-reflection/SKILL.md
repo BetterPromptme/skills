@@ -1,14 +1,14 @@
 ---
 name: macbook-selfie-screen-reflection
 description: This prompt instructs an image-generation system to produce a photorealistic portrait seen only as a soft, natural reflection on a MacBook’s glossy screen, depicting a young person in a dim room taking a playful iPhone selfie (winking with tongue out) while the laptop UI remains subtly visible. It specifies realistic lighting from the phone and screen, accurate reflections and anatomy, neutral color balance, minimal stylization, and respectful presentation, with conditional appearance details (e.g., glasses and specific outfit if female). The expected outcome is an ultra-realistic, modern, screen-reflection selfie composition in a horizontal aspect ratio with clean, believable digital and glass-surface rendering.
-skillVersionId: 019a0b52-3718-70d6-b9bf-dacbcabba7d6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce a photorealistic portrait seen only as a soft, natural reflection on a MacBook’s glossy screen, depicting a young person in a dim room taking a playful iPhone selfie (winking with tongue out) while the laptop UI remains subtly visible. It specifies realistic lighting from the phone and screen, accurate reflections and anatomy, neutral color balance, minimal stylization, and respectful presentation, with conditional appearance details (e.g., glasses and specific outfit if female). The expected outcome is an ultra-realistic, modern, screen-reflection selfie composition in a horizontal aspect ratio with clean, believable digital and glass-surface rendering.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a0b52-3718-70d6-b9bf-dacbcabba7d6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `macbook-selfie-screen-reflection`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a0b52-3718-70d6-b9bf-dacbcabba7d6 \
+betterprompt generate macbook-selfie-screen-reflection \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a0b52-3718-70d6-b9bf-dacbcabba7d6 \
+betterprompt generate macbook-selfie-screen-reflection \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
