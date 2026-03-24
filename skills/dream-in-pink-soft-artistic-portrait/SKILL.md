@@ -1,14 +1,14 @@
 ---
 name: dream-in-pink-soft-artistic-portrait
 description: This prompt instructs the AI to generate a hyper-realistic, vertically framed (3:4) close-up portrait of a woman lying on her side with her cheek resting on a clean white surface, surrounded by large pink hibiscus flowers. It specifies a minimal, serene composition with natural features (subtle blush, glossy lips, softly tousled brown hair), pure white background, and soft diffused daylight-style lighting for a calm, intimate mood. The intended outcome is a high-quality, phone-like fine-art image that feels dreamy and soothing while remaining realistic, minimally styled, and free of distracting props or heavy effects.
-skillVersionId: 019a0fe2-5aaa-7712-8f9d-dd0ea0a37a5f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a hyper-realistic, vertically framed (3:4) close-up portrait of a woman lying on her side with her cheek resting on a clean white surface, surrounded by large pink hibiscus flowers. It specifies a minimal, serene composition with natural features (subtle blush, glossy lips, softly tousled brown hair), pure white background, and soft diffused daylight-style lighting for a calm, intimate mood. The intended outcome is a high-quality, phone-like fine-art image that feels dreamy and soothing while remaining realistic, minimally styled, and free of distracting props or heavy effects.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a0fe2-5aaa-7712-8f9d-dd0ea0a37a5f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `dream-in-pink-soft-artistic-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a0fe2-5aaa-7712-8f9d-dd0ea0a37a5f \
+betterprompt generate dream-in-pink-soft-artistic-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a0fe2-5aaa-7712-8f9d-dd0ea0a37a5f \
+betterprompt generate dream-in-pink-soft-artistic-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
