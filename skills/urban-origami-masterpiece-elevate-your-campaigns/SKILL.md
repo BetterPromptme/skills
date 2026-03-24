@@ -1,14 +1,14 @@
 ---
 name: urban-origami-masterpiece-elevate-your-campaigns
 description: This prompt instructs an AI image generator to create a square, realistic-looking digital photograph of a handcrafted paper-origami scene: a detailed origami model depicting a specified monument centered in frame, with the specified city name above it formed from bold origami-style letters in the country’s national colors arranged in an arch. It specifies a soft minimal pastel/neutral background with subtle paper textures, and diffused lighting that casts natural shadows to emphasize fold depth, material texture, geometric precision, and a clean, harmonious composition.
-skillVersionId: 0197aa21-9d3d-790d-8d11-9f0bfca7a708
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a square, realistic-looking digital photograph of a handcrafted paper-origami scene: a detailed origami model depicting a specified monument centered in frame, with the specified city name above it formed from bold origami-style letters in the country’s national colors arranged in an arch. It specifies a soft minimal pastel/neutral background with subtle paper textures, and diffused lighting that casts natural shadows to emphasize fold depth, material texture, geometric precision, and a clean, harmonious composition.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197aa21-9d3d-790d-8d11-9f0bfca7a708`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `urban-origami-masterpiece-elevate-your-campaigns`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197aa21-9d3d-790d-8d11-9f0bfca7a708 \
+betterprompt generate urban-origami-masterpiece-elevate-your-campaigns \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197aa21-9d3d-790d-8d11-9f0bfca7a708 \
+betterprompt generate urban-origami-masterpiece-elevate-your-campaigns \
   --input CITY_NAME=<value> \
   --input MONUMENT_NAME=<value> \
   --model gpt-image-1 \
