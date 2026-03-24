@@ -1,14 +1,14 @@
 ---
 name: dramatic-cinematic-portrait-of-a-rugged-young-man
 description: This prompt directs the AI to generate an ultra-realistic, movie-poster style cinematic portrait of a rugged young man in a smoky, ember-filled environment, using dramatic low-key lighting with warm firelight and cool shadows, shallow depth of field, volumetric haze, and high-detail facial texture. The result is a high-resolution, high-contrast image with sharp subject focus, floating particles, and a dark atmospheric background that conveys a serious, introspective mood.
-skillVersionId: 019c27b8-5dbe-7159-a136-658ebcb25665
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs the AI to generate an ultra-realistic, movie-poster style cinematic portrait of a rugged young man in a smoky, ember-filled environment, using dramatic low-key lighting with warm firelight and cool shadows, shallow depth of field, volumetric haze, and high-detail facial texture. The result is a high-resolution, high-contrast image with sharp subject focus, floating particles, and a dark atmospheric background that conveys a serious, introspective mood.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c27b8-5dbe-7159-a136-658ebcb25665`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `dramatic-cinematic-portrait-of-a-rugged-young-man`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c27b8-5dbe-7159-a136-658ebcb25665 \
+betterprompt generate dramatic-cinematic-portrait-of-a-rugged-young-man \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c27b8-5dbe-7159-a136-658ebcb25665 \
+betterprompt generate dramatic-cinematic-portrait-of-a-rugged-young-man \
   --model gemini-2.5-flash-image-preview \
   --options '{"aspectRatio":"1:1"}'
 ```
