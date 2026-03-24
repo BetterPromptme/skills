@@ -1,14 +1,14 @@
 ---
 name: ethereal-lily-mirror-portrait
 description: This prompt instructs an image-generation assistant to produce a single, ultra-realistic, high-resolution studio portrait of the provided subject lying beside fresh white lilies on a glossy black surface that creates a clean, undistorted mirror reflection, using soft cinematic lighting and tight half-body framing. It requires automatic respect of the subject’s gender from the reference and strict, absolute preservation of the uploaded face and defining features with no alterations, while enforcing quality constraints, disallowed elements, and a fail-fast request for a clearer reference if the face is not sufficiently visible or sharp.
-skillVersionId: 0199708a-ce2e-7006-97c9-ce2834ae82de
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation assistant to produce a single, ultra-realistic, high-resolution studio portrait of the provided subject lying beside fresh white lilies on a glossy black surface that creates a clean, undistorted mirror reflection, using soft cinematic lighting and tight half-body framing. It requires automatic respect of the subject’s gender from the reference and strict, absolute preservation of the uploaded face and defining features with no alterations, while enforcing quality constraints, disallowed elements, and a fail-fast request for a clearer reference if the face is not sufficiently visible or sharp.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199708a-ce2e-7006-97c9-ce2834ae82de`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ethereal-lily-mirror-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199708a-ce2e-7006-97c9-ce2834ae82de \
+betterprompt generate ethereal-lily-mirror-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199708a-ce2e-7006-97c9-ce2834ae82de \
+betterprompt generate ethereal-lily-mirror-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
