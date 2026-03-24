@@ -1,14 +1,14 @@
 ---
 name: upsell-idea-generator
 description: This prompt instructs the AI to act as an e-commerce upselling marketing consultant and produce a specified number of upsell ideas for a given core product, using provided product details and target audience information. The output delivers clearly structured recommendations that include both complementary related products and themed bundles, each with a name and a concise rationale explaining how it enhances the customer experience and can increase average order value.
-skillVersionId: 0197c426-f6df-7a1e-b98c-f1586f0715c7
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an e-commerce upselling marketing consultant and produce a specified number of upsell ideas for a given core product, using provided product details and target audience information. The output delivers clearly structured recommendations that include both complementary related products and themed bundles, each with a name and a concise rationale explaining how it enhances the customer experience and can increase average order value.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c426-f6df-7a1e-b98c-f1586f0715c7`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `upsell-idea-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c426-f6df-7a1e-b98c-f1586f0715c7 \
+betterprompt generate upsell-idea-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c426-f6df-7a1e-b98c-f1586f0715c7 \
+betterprompt generate upsell-idea-generator \
   --input Upsell_type=<value> \
   --input Target_Audience=<value> \
   --input Core_Product_Name=<value> \
