@@ -1,14 +1,14 @@
 ---
 name: isometric-pixel-art-scene-generator
 description: This prompt is used to generate a highly detailed isometric, top-down pixel art scene for a retro-style 2D video game environment. By filling in the placeholders for setting, color palette, key scene elements, lighting, and a visual style reference, it produces a cohesive environment image that matches the specified aesthetic and game inspiration.
-skillVersionId: 0197c3f3-154d-7bfc-b2ef-772cee71fa0a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt is used to generate a highly detailed isometric, top-down pixel art scene for a retro-style 2D video game environment. By filling in the placeholders for setting, color palette, key scene elements, lighting, and a visual style reference, it produces a cohesive environment image that matches the specified aesthetic and game inspiration.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c3f3-154d-7bfc-b2ef-772cee71fa0a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `isometric-pixel-art-scene-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c3f3-154d-7bfc-b2ef-772cee71fa0a \
+betterprompt generate isometric-pixel-art-scene-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c3f3-154d-7bfc-b2ef-772cee71fa0a \
+betterprompt generate isometric-pixel-art-scene-generator \
   --input color_palette=<value> \
   --input scene_setting=<value> \
   --input lighting_style=<value> \
