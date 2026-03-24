@@ -1,14 +1,14 @@
 ---
 name: western-editorial-bridal-portrait
 description: This prompt instructs an image generator to create a high-end, cinematic indoor bridal editorial portrait that preserves the subject’s exact identity from a reference photo while styling her in a voluminous white satin couture gown, wide-brim hat with veil, and layered pearls, seated on a vintage chair amid abundant roses, greenery, and soft overhead drapery. It specifies a joyful, candid pose with a hand partly covering her smile, a bouquet in rich red and blush tones, centered full-body composition, and warm candlelit, shallow-depth lighting with creamy highlights and rich shadows, yielding a romantic, luxurious vintage room scene without altering facial features or introducing off-theme elements.
-skillVersionId: 019aa05b-249e-7194-9e1b-b5de35882490
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a high-end, cinematic indoor bridal editorial portrait that preserves the subject’s exact identity from a reference photo while styling her in a voluminous white satin couture gown, wide-brim hat with veil, and layered pearls, seated on a vintage chair amid abundant roses, greenery, and soft overhead drapery. It specifies a joyful, candid pose with a hand partly covering her smile, a bouquet in rich red and blush tones, centered full-body composition, and warm candlelit, shallow-depth lighting with creamy highlights and rich shadows, yielding a romantic, luxurious vintage room scene without altering facial features or introducing off-theme elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019aa05b-249e-7194-9e1b-b5de35882490`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `western-editorial-bridal-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019aa05b-249e-7194-9e1b-b5de35882490 \
+betterprompt generate western-editorial-bridal-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019aa05b-249e-7194-9e1b-b5de35882490 \
+betterprompt generate western-editorial-bridal-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
