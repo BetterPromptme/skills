@@ -1,14 +1,14 @@
 ---
 name: bullet-to-polished
 description: This prompt instructs an expert editor to convert supplied bullet notes or fragmented ideas into polished, coherent prose that reads naturally while preserving the original meaning, intent, and logic exactly. The result is one or more clear, professional paragraphs that improve flow, grammar, transitions, and readability without adding, omitting, or reinterpreting any core information, and it outputs only the refined text with no commentary or extra formatting.
-skillVersionId: 019b54bb-cc5e-75a8-8f49-d0171924911e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an expert editor to convert supplied bullet notes or fragmented ideas into polished, coherent prose that reads naturally while preserving the original meaning, intent, and logic exactly. The result is one or more clear, professional paragraphs that improve flow, grammar, transitions, and readability without adding, omitting, or reinterpreting any core information, and it outputs only the refined text with no commentary or extra formatting.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b54bb-cc5e-75a8-8f49-d0171924911e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `bullet-to-polished`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b54bb-cc5e-75a8-8f49-d0171924911e \
+betterprompt generate bullet-to-polished \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b54bb-cc5e-75a8-8f49-d0171924911e \
+betterprompt generate bullet-to-polished \
   --input BULLET_NOTES=<value> \
   --model gpt-5.2 \
   --options '{"reasoningEffort":"none"}'
