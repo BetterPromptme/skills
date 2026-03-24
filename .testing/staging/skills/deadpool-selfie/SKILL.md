@@ -1,14 +1,14 @@
 ---
 name: deadpool-selfie
 description: This prompt instructs the AI to edit a provided selfie by seamlessly adding Deadpool beside the pictured person, posing with playful “bunny ears” behind the man’s head and a mischievous look toward the camera, while replacing the background with the Avengers Tower rooftop overlooking New York City. The expected result is a natural-looking composite that preserves the original selfie framing and lighting so both characters appear convincingly present in the same shot.
-skillVersionId: 019ac918-79f2-7082-8414-796fefb9d3d4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to edit a provided selfie by seamlessly adding Deadpool beside the pictured person, posing with playful “bunny ears” behind the man’s head and a mischievous look toward the camera, while replacing the background with the Avengers Tower rooftop overlooking New York City. The expected result is a natural-looking composite that preserves the original selfie framing and lighting so both characters appear convincingly present in the same shot.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ac918-79f2-7082-8414-796fefb9d3d4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `deadpool-selfie`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ac918-79f2-7082-8414-796fefb9d3d4 \
+betterprompt generate deadpool-selfie \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ac918-79f2-7082-8414-796fefb9d3d4 \
+betterprompt generate deadpool-selfie \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{"aspectRatio":"3:2"}'
