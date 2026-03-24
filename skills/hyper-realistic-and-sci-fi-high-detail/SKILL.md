@@ -1,14 +1,14 @@
 ---
 name: hyper-realistic-and-sci-fi-high-detail
 description: This prompt instructs the AI to generate an ultra-high-resolution, studio-lit, microscopic-style photograph of an impossibly tiny “Nano Banana” presented as a Google-engineered object, featuring a chrome metallic peel with subtle, glowing blue circuitry visible beneath the surface, rendered with extreme depth of field and crisp detail to create a convincing nano-scale sci‑fi product shot.
-skillVersionId: 019a4de8-2f59-714a-95f8-65d6bfe4c78e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate an ultra-high-resolution, studio-lit, microscopic-style photograph of an impossibly tiny “Nano Banana” presented as a Google-engineered object, featuring a chrome metallic peel with subtle, glowing blue circuitry visible beneath the surface, rendered with extreme depth of field and crisp detail to create a convincing nano-scale sci‑fi product shot.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a4de8-2f59-714a-95f8-65d6bfe4c78e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `hyper-realistic-and-sci-fi-high-detail`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a4de8-2f59-714a-95f8-65d6bfe4c78e \
+betterprompt generate hyper-realistic-and-sci-fi-high-detail \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a4de8-2f59-714a-95f8-65d6bfe4c78e \
+betterprompt generate hyper-realistic-and-sci-fi-high-detail \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
 ```
