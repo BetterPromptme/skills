@@ -1,14 +1,14 @@
 ---
 name: email-composer-with-mustache-variables
 description: This prompt instructs the assistant to draft a polished, professional email addressed to the specified recipients using the provided content, improving clarity, grammar, and tone while adding an appropriate greeting and closing. The result is a ready-to-send email containing only the finalized message text without any placeholders or additional commentary.
-skillVersionId: 019999d8-4aea-7531-acbd-d3d80e8492b6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the assistant to draft a polished, professional email addressed to the specified recipients using the provided content, improving clarity, grammar, and tone while adding an appropriate greeting and closing. The result is a ready-to-send email containing only the finalized message text without any placeholders or additional commentary.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019999d8-4aea-7531-acbd-d3d80e8492b6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `email-composer-with-mustache-variables`).
 
 Command form:
 
 ```bash
-betterprompt generate 019999d8-4aea-7531-acbd-d3d80e8492b6 \
+betterprompt generate email-composer-with-mustache-variables \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019999d8-4aea-7531-acbd-d3d80e8492b6 \
+betterprompt generate email-composer-with-mustache-variables \
   --input content=<value> \
   --input recipients=<value> \
   --model grok-4-fast \
