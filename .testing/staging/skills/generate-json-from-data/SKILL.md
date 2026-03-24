@@ -1,14 +1,14 @@
 ---
 name: generate-json-from-data
 description: This prompt instructs the AI to take provided text or an image as input, extract the relevant information, and convert it into a structured JSON representation. The outcome is a JSON output formatted inside a Markdown code block, suitable for easy copying, parsing, or downstream processing.
-skillVersionId: 0199a7e6-48af-7a65-9381-8d378f3052f0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take provided text or an image as input, extract the relevant information, and convert it into a structured JSON representation. The outcome is a JSON output formatted inside a Markdown code block, suitable for easy copying, parsing, or downstream processing.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199a7e6-48af-7a65-9381-8d378f3052f0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `generate-json-from-data`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199a7e6-48af-7a65-9381-8d378f3052f0 \
+betterprompt generate generate-json-from-data \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199a7e6-48af-7a65-9381-8d378f3052f0 \
+betterprompt generate generate-json-from-data \
   --input DATA=<value> \
   --image-input-url https://example.com/image1.png \
   --model gpt-5-mini \
