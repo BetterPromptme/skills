@@ -1,14 +1,14 @@
 ---
 name: ugc-beauty-product-visualizer
 description: This prompt instructs an AI to turn a user’s standard portrait into a clean, studio-style UGC beauty image where the same person is shown in a shoulders-up, commercially appropriate framing while naturally holding the exact product from a separate uploaded product photo. The result is a premium, minimal campaign-like visual with soft diffused lighting, a pastel background matched to the product’s main color, preserved identity and realistic skin texture, and strict brand-accurate product rendering (logo, label, colors, packaging) without redesigns, distortions, or sexualized styling.
-skillVersionId: 019b07c8-aab0-74ef-8e56-ae445e55ae29
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to turn a user’s standard portrait into a clean, studio-style UGC beauty image where the same person is shown in a shoulders-up, commercially appropriate framing while naturally holding the exact product from a separate uploaded product photo. The result is a premium, minimal campaign-like visual with soft diffused lighting, a pastel background matched to the product’s main color, preserved identity and realistic skin texture, and strict brand-accurate product rendering (logo, label, colors, packaging) without redesigns, distortions, or sexualized styling.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b07c8-aab0-74ef-8e56-ae445e55ae29`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ugc-beauty-product-visualizer`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b07c8-aab0-74ef-8e56-ae445e55ae29 \
+betterprompt generate ugc-beauty-product-visualizer \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b07c8-aab0-74ef-8e56-ae445e55ae29 \
+betterprompt generate ugc-beauty-product-visualizer \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-3-pro-image-preview \
