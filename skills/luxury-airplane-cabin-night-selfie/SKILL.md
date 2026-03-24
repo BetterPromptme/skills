@@ -1,14 +1,14 @@
 ---
 name: luxury-airplane-cabin-night-selfie
 description: This prompt instructs an image model to edit a single-person reference photo into a photorealistic, candid-looking wide-lens smartphone selfie set in a high-end airplane cabin at night, while strictly preserving the subject’s exact facial identity, natural skin texture, proportions, hairstyle, and outfit. It specifies a low-angle handheld framing, realistic dim mixed lighting (cool blue cabin LEDs with warm accents), shallow depth of field, subtle noise, and visible cabin cues like windows with night lights outside, aiming for an authentic, cozy late-night travel moment. The expected result is a believable social-media-style selfie that clearly reads as taken in a luxury aircraft interior, without visible phone, anatomy distortions, or overly retouched/studio-like effects.
-skillVersionId: 019cd62d-a18d-70fa-942e-3e4663d60d8b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to edit a single-person reference photo into a photorealistic, candid-looking wide-lens smartphone selfie set in a high-end airplane cabin at night, while strictly preserving the subject’s exact facial identity, natural skin texture, proportions, hairstyle, and outfit. It specifies a low-angle handheld framing, realistic dim mixed lighting (cool blue cabin LEDs with warm accents), shallow depth of field, subtle noise, and visible cabin cues like windows with night lights outside, aiming for an authentic, cozy late-night travel moment. The expected result is a believable social-media-style selfie that clearly reads as taken in a luxury aircraft interior, without visible phone, anatomy distortions, or overly retouched/studio-like effects.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019cd62d-a18d-70fa-942e-3e4663d60d8b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `luxury-airplane-cabin-night-selfie`).
 
 Command form:
 
 ```bash
-betterprompt generate 019cd62d-a18d-70fa-942e-3e4663d60d8b \
+betterprompt generate luxury-airplane-cabin-night-selfie \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019cd62d-a18d-70fa-942e-3e4663d60d8b \
+betterprompt generate luxury-airplane-cabin-night-selfie \
   --image-input-url https://example.com/image1.png \
   --model gemini-3.1-flash-image-preview \
   --options '{"reasoningEffort":"minimal","aspectRatio":"3:4","resolution":"0.5K"}'
