@@ -1,14 +1,14 @@
 ---
 name: divine-marble-overlay-transform-any-object-into-a-celestial-sculpture
 description: This prompt instructs an image-editing system to retexture the attached image in a stylized 3D celestial marble aesthetic while preserving the original object’s silhouette and geometry. It specifies high-fidelity detail retention for sculptural folds and depth, applies polished cosmic stone materials with sparkles, iridescent edge glints, and chiseled grooves, and sets high-intensity studio spotlight lighting with soft shadows and glowing reflective highlights. The output is a clean, solid white–background image where the subject appears as luminous divine marble with subtle gold and cool-tinted accents, enhanced by glow, specular bloom, and depth boosting.
-skillVersionId: 0198300b-c419-7a7e-b076-27db9506bc54
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-editing system to retexture the attached image in a stylized 3D celestial marble aesthetic while preserving the original object’s silhouette and geometry. It specifies high-fidelity detail retention for sculptural folds and depth, applies polished cosmic stone materials with sparkles, iridescent edge glints, and chiseled grooves, and sets high-intensity studio spotlight lighting with soft shadows and glowing reflective highlights. The output is a clean, solid white–background image where the subject appears as luminous divine marble with subtle gold and cool-tinted accents, enhanced by glow, specular bloom, and depth boosting.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198300b-c419-7a7e-b076-27db9506bc54`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `divine-marble-overlay-transform-any-object-into-a-celestial-sculpture`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198300b-c419-7a7e-b076-27db9506bc54 \
+betterprompt generate divine-marble-overlay-transform-any-object-into-a-celestial-sculpture \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198300b-c419-7a7e-b076-27db9506bc54 \
+betterprompt generate divine-marble-overlay-transform-any-object-into-a-celestial-sculpture \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
