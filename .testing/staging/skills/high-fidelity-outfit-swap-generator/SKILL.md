@@ -1,14 +1,14 @@
 ---
 name: high-fidelity-outfit-swap-generator
 description: This prompt instructs the AI to create a hyper-realistic virtual try-on composite by keeping the person from the first image fully consistent while extracting and fitting the garment from the second image onto them. It directs the model to realistically drape and tension the fabric to match the wearer’s pose and body shape, preserve all garment textures and details, match lighting and add accurate contact shadows, and avoid altering any non-target clothing. The intended outcome is a seamless, high-end e-commerce catalog style image rendered at very high resolution with studio-quality, lifelike fabric and clean presentation.
-skillVersionId: 019cdb0e-da49-7422-9407-cb64620d9b2a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a hyper-realistic virtual try-on composite by keeping the person from the first image fully consistent while extracting and fitting the garment from the second image onto them. It directs the model to realistically drape and tension the fabric to match the wearer’s pose and body shape, preserve all garment textures and details, match lighting and add accurate contact shadows, and avoid altering any non-target clothing. The intended outcome is a seamless, high-end e-commerce catalog style image rendered at very high resolution with studio-quality, lifelike fabric and clean presentation.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019cdb0e-da49-7422-9407-cb64620d9b2a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `high-fidelity-outfit-swap-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 019cdb0e-da49-7422-9407-cb64620d9b2a \
+betterprompt generate high-fidelity-outfit-swap-generator \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019cdb0e-da49-7422-9407-cb64620d9b2a \
+betterprompt generate high-fidelity-outfit-swap-generator \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-3.1-flash-image-preview \
