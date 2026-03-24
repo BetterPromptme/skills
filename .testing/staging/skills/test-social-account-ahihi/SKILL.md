@@ -1,14 +1,14 @@
 ---
 name: test-social-account-ahihi
 description: This prompt instructs the AI to generate a simple greeting addressed to a specific person by inserting the provided name into a “hello” message, resulting in a personalized salutation output for that named recipient.
-skillVersionId: 01979c31-0177-7e81-a515-979238824e6a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a simple greeting addressed to a specific person by inserting the provided name into a “hello” message, resulting in a personalized salutation output for that named recipient.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01979c31-0177-7e81-a515-979238824e6a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `test-social-account-ahihi`).
 
 Command form:
 
 ```bash
-betterprompt generate 01979c31-0177-7e81-a515-979238824e6a \
+betterprompt generate test-social-account-ahihi \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01979c31-0177-7e81-a515-979238824e6a \
+betterprompt generate test-social-account-ahihi \
   --input name=<value> \
   --model deepseek-r1 \
   --options '{}'
