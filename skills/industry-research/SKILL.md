@@ -1,14 +1,14 @@
 ---
 name: industry-research
 description: This prompt instructs the AI to act as a senior content strategist and market researcher, gathering and organizing comprehensive business and industry inputs—covering industry overview, marketing objectives and KPIs, competitor insights, channel performance, brand voice, available assets, current content challenges, and timeline/budget—so a content team or agency can be briefed effectively. The expected outcome is a structured, markdown-table summary tailored to a specified industry and written in the requested language, ready to serve as the foundation for a complete content strategy plan.
-skillVersionId: 0198c151-708a-719a-b4ea-7dc964e624b5
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a senior content strategist and market researcher, gathering and organizing comprehensive business and industry inputs—covering industry overview, marketing objectives and KPIs, competitor insights, channel performance, brand voice, available assets, current content challenges, and timeline/budget—so a content team or agency can be briefed effectively. The expected outcome is a structured, markdown-table summary tailored to a specified industry and written in the requested language, ready to serve as the foundation for a complete content strategy plan.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198c151-708a-719a-b4ea-7dc964e624b5`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `industry-research`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198c151-708a-719a-b4ea-7dc964e624b5 \
+betterprompt generate industry-research \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198c151-708a-719a-b4ea-7dc964e624b5 \
+betterprompt generate industry-research \
   --input Industry=Comestic \
   --input Language=Vietnamese \
   --model gpt-5 \
