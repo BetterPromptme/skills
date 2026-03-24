@@ -1,14 +1,14 @@
 ---
 name: esthetically-3d-icon-generator
 description: This prompt defines a cohesive visual style guide for generating an isometric, slightly top-down miniature product diorama rendered as a hyper-detailed, photorealistic 3D scene. It specifies the desired materials, textures, lighting direction and behavior, color palette, background cleanliness, and micro-surface realism to ensure handcrafted, premium object fidelity. The outcome is a clean studio-style image of the provided subject description that looks tactile, material-rich, and color-accurate without distracting shadows or noise.
-skillVersionId: 0199a843-a5ee-79c2-891c-6a94a3c2b947
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt defines a cohesive visual style guide for generating an isometric, slightly top-down miniature product diorama rendered as a hyper-detailed, photorealistic 3D scene. It specifies the desired materials, textures, lighting direction and behavior, color palette, background cleanliness, and micro-surface realism to ensure handcrafted, premium object fidelity. The outcome is a clean studio-style image of the provided subject description that looks tactile, material-rich, and color-accurate without distracting shadows or noise.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199a843-a5ee-79c2-891c-6a94a3c2b947`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `esthetically-3d-icon-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199a843-a5ee-79c2-891c-6a94a3c2b947 \
+betterprompt generate esthetically-3d-icon-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199a843-a5ee-79c2-891c-6a94a3c2b947 \
+betterprompt generate esthetically-3d-icon-generator \
   --input item_description=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
