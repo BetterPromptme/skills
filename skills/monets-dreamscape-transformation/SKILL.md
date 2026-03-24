@@ -1,14 +1,14 @@
 ---
 name: monets-dreamscape-transformation
 description: This prompt instructs an AI image model to take the provided photo and recreate it as a high‑resolution digital painting in the late‑19th‑century impressionist style associated with Claude Monet, preserving the original composition while replacing photographic detail with soft, pastel color blending, visible brushwork, diffused light, and a dreamlike, textured canvas finish that emphasizes atmosphere, movement, and the interplay of light and shadow.
-skillVersionId: 0197e91a-45af-7cc8-acd9-0f8fa129e9bd
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image model to take the provided photo and recreate it as a high‑resolution digital painting in the late‑19th‑century impressionist style associated with Claude Monet, preserving the original composition while replacing photographic detail with soft, pastel color blending, visible brushwork, diffused light, and a dreamlike, textured canvas finish that emphasizes atmosphere, movement, and the interplay of light and shadow.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197e91a-45af-7cc8-acd9-0f8fa129e9bd`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `monets-dreamscape-transformation`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197e91a-45af-7cc8-acd9-0f8fa129e9bd \
+betterprompt generate monets-dreamscape-transformation \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197e91a-45af-7cc8-acd9-0f8fa129e9bd \
+betterprompt generate monets-dreamscape-transformation \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","quality":"low"}'
