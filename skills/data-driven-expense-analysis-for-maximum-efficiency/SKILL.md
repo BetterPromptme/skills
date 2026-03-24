@@ -1,14 +1,14 @@
 ---
 name: data-driven-expense-analysis-for-maximum-efficiency
 description: This prompt instructs the AI to act as a finance and budgeting expert who reviews an entity’s fixed and variable expense lists, classifies and analyzes spending to spot inefficiencies or overspending, and then produces a tailored cost-reduction report. The expected outcome is an actionable set of recommendations with practical implementation strategies, estimated savings, and a projected impact analysis that reduces costs while maintaining operational quality and employee well-being for the specified entity.
-skillVersionId: 0197c9f8-9563-7ba1-9622-8df68fe6e818
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a finance and budgeting expert who reviews an entity’s fixed and variable expense lists, classifies and analyzes spending to spot inefficiencies or overspending, and then produces a tailored cost-reduction report. The expected outcome is an actionable set of recommendations with practical implementation strategies, estimated savings, and a projected impact analysis that reduces costs while maintaining operational quality and employee well-being for the specified entity.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c9f8-9563-7ba1-9622-8df68fe6e818`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `data-driven-expense-analysis-for-maximum-efficiency`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c9f8-9563-7ba1-9622-8df68fe6e818 \
+betterprompt generate data-driven-expense-analysis-for-maximum-efficiency \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c9f8-9563-7ba1-9622-8df68fe6e818 \
+betterprompt generate data-driven-expense-analysis-for-maximum-efficiency \
   --input Entity=<value> \
   --input Fixed_costs=<value> \
   --input Variable_costs=<value> \
