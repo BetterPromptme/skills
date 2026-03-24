@@ -1,14 +1,14 @@
 ---
 name: shadow-glimpse-elegant-portrait-behind-the-blinds
 description: This prompt instructs an image-generation workflow to produce an ultra-realistic, magazine-quality vertical portrait that faithfully preserves the uploaded subject’s identity while placing them in a cinematic noir setup behind horizontal black window blinds. It specifies a medium close-up composition, precise hand interactions with two adjacent blind slats to create a single clean viewing gap, direct eye contact, and soft directional low-key studio lighting that casts crisp horizontal shadows across the face. The intended outcome is a dark, minimalist, editorial-style photograph with shallow depth of field and cool/neutral tones, focusing attention on the subject’s eyes through the blinds at 1080×1350 resolution.
-skillVersionId: 019a0573-8c1e-72af-a67d-e6119f8b22da
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation workflow to produce an ultra-realistic, magazine-quality vertical portrait that faithfully preserves the uploaded subject’s identity while placing them in a cinematic noir setup behind horizontal black window blinds. It specifies a medium close-up composition, precise hand interactions with two adjacent blind slats to create a single clean viewing gap, direct eye contact, and soft directional low-key studio lighting that casts crisp horizontal shadows across the face. The intended outcome is a dark, minimalist, editorial-style photograph with shallow depth of field and cool/neutral tones, focusing attention on the subject’s eyes through the blinds at 1080×1350 resolution.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a0573-8c1e-72af-a67d-e6119f8b22da`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `shadow-glimpse-elegant-portrait-behind-the-blinds`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a0573-8c1e-72af-a67d-e6119f8b22da \
+betterprompt generate shadow-glimpse-elegant-portrait-behind-the-blinds \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a0573-8c1e-72af-a67d-e6119f8b22da \
+betterprompt generate shadow-glimpse-elegant-portrait-behind-the-blinds \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
