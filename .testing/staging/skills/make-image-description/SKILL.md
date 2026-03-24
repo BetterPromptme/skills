@@ -1,14 +1,14 @@
 ---
 name: make-image-description
 description: This prompt instructs the AI to look at the provided image and produce a concise, user-friendly description of what is visible in it, summarizing the main subjects, setting, and any notable details so the user understands the image’s content without needing to see it.
-skillVersionId: 019b11c3-e545-71ea-a3c7-1096e901c1f4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to look at the provided image and produce a concise, user-friendly description of what is visible in it, summarizing the main subjects, setting, and any notable details so the user understands the image’s content without needing to see it.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b11c3-e545-71ea-a3c7-1096e901c1f4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `make-image-description`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b11c3-e545-71ea-a3c7-1096e901c1f4 \
+betterprompt generate make-image-description \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b11c3-e545-71ea-a3c7-1096e901c1f4 \
+betterprompt generate make-image-description \
   --image-input-url https://example.com/image1.png \
   --model gpt-5.2 \
   --options '{"reasoningEffort":"xhigh"}'
