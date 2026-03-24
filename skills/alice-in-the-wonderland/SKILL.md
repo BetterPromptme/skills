@@ -1,14 +1,14 @@
 ---
 name: alice-in-the-wonderland
 description: This prompt instructs an AI image generator to produce an 8K, photorealistic, wide-angle high-fashion editorial portrait of a young woman in a cinematic, surreal indoor-outdoor garden set, with meticulously specified styling, color palette, props, animals, and lighting. It emphasizes luxury realism and editorial precision while strictly preserving the subject’s exact facial identity, hair, and natural makeup from a reference image. The expected result is a richly detailed, warm, dreamlike fashion photograph that blends nature and vintage technology in a cohesive, vibrant composition.
-skillVersionId: 019a6c70-cffe-75b9-92c4-cae79019acf5
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce an 8K, photorealistic, wide-angle high-fashion editorial portrait of a young woman in a cinematic, surreal indoor-outdoor garden set, with meticulously specified styling, color palette, props, animals, and lighting. It emphasizes luxury realism and editorial precision while strictly preserving the subject’s exact facial identity, hair, and natural makeup from a reference image. The expected result is a richly detailed, warm, dreamlike fashion photograph that blends nature and vintage technology in a cohesive, vibrant composition.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a6c70-cffe-75b9-92c4-cae79019acf5`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `alice-in-the-wonderland`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a6c70-cffe-75b9-92c4-cae79019acf5 \
+betterprompt generate alice-in-the-wonderland \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a6c70-cffe-75b9-92c4-cae79019acf5 \
+betterprompt generate alice-in-the-wonderland \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
