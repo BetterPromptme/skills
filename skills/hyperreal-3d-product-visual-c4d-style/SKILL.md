@@ -1,14 +1,14 @@
 ---
 name: hyperreal-3d-product-visual-c4d-style
 description: This prompt defines a hyper-realistic Cinema 4D-style 3D product render for a specified object, detailing its geometry, materials, mechanical styling, decals, and color palette, then prescribing studio/HDRI lighting, camera angle, and a centered floating composition on a clean white background to produce an ultra-high-definition render with glossy reflections and subtle contact shadow.
-skillVersionId: 01988783-bec4-7332-8a85-a552945388a3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt defines a hyper-realistic Cinema 4D-style 3D product render for a specified object, detailing its geometry, materials, mechanical styling, decals, and color palette, then prescribing studio/HDRI lighting, camera angle, and a centered floating composition on a clean white background to produce an ultra-high-definition render with glossy reflections and subtle contact shadow.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01988783-bec4-7332-8a85-a552945388a3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `hyperreal-3d-product-visual-c4d-style`).
 
 Command form:
 
 ```bash
-betterprompt generate 01988783-bec4-7332-8a85-a552945388a3 \
+betterprompt generate hyperreal-3d-product-visual-c4d-style \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01988783-bec4-7332-8a85-a552945388a3 \
+betterprompt generate hyperreal-3d-product-visual-c4d-style \
   --input OBJECT=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
