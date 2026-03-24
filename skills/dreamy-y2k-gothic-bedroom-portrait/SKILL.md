@@ -1,14 +1,14 @@
 ---
 name: dreamy-y2k-gothic-bedroom-portrait
 description: This prompt instructs an image-generation system to create a photorealistic, grainy, dimly lit Y2K/90s-inspired bedroom portrait that preserves the real subject’s identity while adapting styling into gothic glamour. The resulting image places the subject lounging on shiny dark red satin bedding with loose curls, dark makeup, gothic jewelry, and a 90s corded phone, surrounded by nostalgic props like popcorn, magazines, and posters. It also adds a faint, ominous Ghostface silhouette in a doorway to evoke cinematic suspense without graphic violence, while avoiding modern artifacts, logos, or beauty-smoothing effects.
-skillVersionId: 01999f03-d5cd-7537-af73-f6ff31f76ea4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to create a photorealistic, grainy, dimly lit Y2K/90s-inspired bedroom portrait that preserves the real subject’s identity while adapting styling into gothic glamour. The resulting image places the subject lounging on shiny dark red satin bedding with loose curls, dark makeup, gothic jewelry, and a 90s corded phone, surrounded by nostalgic props like popcorn, magazines, and posters. It also adds a faint, ominous Ghostface silhouette in a doorway to evoke cinematic suspense without graphic violence, while avoiding modern artifacts, logos, or beauty-smoothing effects.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01999f03-d5cd-7537-af73-f6ff31f76ea4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `dreamy-y2k-gothic-bedroom-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 01999f03-d5cd-7537-af73-f6ff31f76ea4 \
+betterprompt generate dreamy-y2k-gothic-bedroom-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01999f03-d5cd-7537-af73-f6ff31f76ea4 \
+betterprompt generate dreamy-y2k-gothic-bedroom-portrait \
   --input 'outfit_style=Casual oversized knit sweater' \
   --input 'background_details=90s band posters and scattered fashion magazines' \
   --image-input-url https://example.com/image1.png \
