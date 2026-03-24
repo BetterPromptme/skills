@@ -1,14 +1,14 @@
 ---
 name: moody-lantern-veil
 description: This prompt directs an image-generation workflow to produce a high-resolution, cinematic fine-art portrait in which a young subject stands in a pure black void, holding a softly glowing vintage lantern close to their chest as the only light source. It specifies composition, pose, wardrobe (veil and lace or an embroidered robe), and a warm chiaroscuro lighting style that reveals delicate fabric textures while preserving the subject’s exact identity—face, hair, and skin tone—unchanged from the provided reference. The intended result is an intimate, timeless image with shallow depth of field, matte film grain, and a quiet, melancholy atmosphere shaped entirely by the lantern’s golden illumination.
-skillVersionId: 019a2503-fbb5-7e95-8912-6e6c1d7a1596
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation workflow to produce a high-resolution, cinematic fine-art portrait in which a young subject stands in a pure black void, holding a softly glowing vintage lantern close to their chest as the only light source. It specifies composition, pose, wardrobe (veil and lace or an embroidered robe), and a warm chiaroscuro lighting style that reveals delicate fabric textures while preserving the subject’s exact identity—face, hair, and skin tone—unchanged from the provided reference. The intended result is an intimate, timeless image with shallow depth of field, matte film grain, and a quiet, melancholy atmosphere shaped entirely by the lantern’s golden illumination.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a2503-fbb5-7e95-8912-6e6c1d7a1596`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `moody-lantern-veil`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a2503-fbb5-7e95-8912-6e6c1d7a1596 \
+betterprompt generate moody-lantern-veil \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a2503-fbb5-7e95-8912-6e6c1d7a1596 \
+betterprompt generate moody-lantern-veil \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
