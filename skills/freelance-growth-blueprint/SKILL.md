@@ -1,14 +1,14 @@
 ---
 name: freelance-growth-blueprint
 description: This prompt instructs the AI to act as a seasoned freelance business strategist and produce a practical, inspiring 90-day growth blueprint tailored to the user’s role, current and target income, platforms, strengths, challenges, weekly availability, and non-negotiables. The outcome is a structured plan with a motivating goal-alignment statement, a three-phase timeline (foundation, outreach/marketing, scaling), clear platform and outreach recommendations, portfolio and branding upgrades, concrete client-acquisition tactics (including sample messaging), pricing and offer packaging guidance with rate-increase timing, workflow automation systems, and a closing encouragement to sustain consistent action across the full 90 days.
-skillVersionId: 019864cd-8e25-7495-8fef-2cd8dcfd04af
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a seasoned freelance business strategist and produce a practical, inspiring 90-day growth blueprint tailored to the user’s role, current and target income, platforms, strengths, challenges, weekly availability, and non-negotiables. The outcome is a structured plan with a motivating goal-alignment statement, a three-phase timeline (foundation, outreach/marketing, scaling), clear platform and outreach recommendations, portfolio and branding upgrades, concrete client-acquisition tactics (including sample messaging), pricing and offer packaging guidance with rate-increase timing, workflow automation systems, and a closing encouragement to sustain consistent action across the full 90 days.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019864cd-8e25-7495-8fef-2cd8dcfd04af`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `freelance-growth-blueprint`).
 
 Command form:
 
 ```bash
-betterprompt generate 019864cd-8e25-7495-8fef-2cd8dcfd04af \
+betterprompt generate freelance-growth-blueprint \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019864cd-8e25-7495-8fef-2cd8dcfd04af \
+betterprompt generate freelance-growth-blueprint \
   --input Current_income=<value> \
   --input Freelance_role=<value> \
   --input Non-negotiables=<value> \
