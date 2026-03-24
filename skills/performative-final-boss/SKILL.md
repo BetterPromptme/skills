@@ -1,14 +1,14 @@
 ---
 name: performative-final-boss
 description: Prompt này dùng để tạo một ảnh chân dung lifestyle theo thẩm mỹ “performative street” từ đúng một ảnh tham chiếu, trong đó khuôn mặt được khóa tuyệt đối (không đổi tuổi/giới/tỉ lệ/tông da hay đặc điểm nhận dạng) và chỉ thay đổi phần tóc–phụ kiện–trang phục–đạo cụ–bối cảnh theo các preset đã định. Kết quả mong muốn là một ảnh 3:4 độ phân giải cao với ánh sáng tự nhiên, bokeh nhẹ, bố cục sạch không logo/chữ thương hiệu, nhân vật cầm matcha và sách kèm tai nghe và tote đúng vị trí, đồng thời có cơ chế kiểm định/loại bỏ nếu ảnh tham chiếu không đủ rõ hoặc nếu độ khớp khuôn mặt không đạt ngưỡng.
-skillVersionId: 019975b5-af43-79fb-ae59-7e2c02dfdef8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 Prompt này dùng để tạo một ảnh chân dung lifestyle theo thẩm mỹ “performative street” từ đúng một ảnh tham chiếu, trong đó khuôn mặt được khóa tuyệt đối (không đổi tuổi/giới/tỉ lệ/tông da hay đặc điểm nhận dạng) và chỉ thay đổi phần tóc–phụ kiện–trang phục–đạo cụ–bối cảnh theo các preset đã định. Kết quả mong muốn là một ảnh 3:4 độ phân giải cao với ánh sáng tự nhiên, bokeh nhẹ, bố cục sạch không logo/chữ thương hiệu, nhân vật cầm matcha và sách kèm tai nghe và tote đúng vị trí, đồng thời có cơ chế kiểm định/loại bỏ nếu ảnh tham chiếu không đủ rõ hoặc nếu độ khớp khuôn mặt không đạt ngưỡng.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019975b5-af43-79fb-ae59-7e2c02dfdef8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `performative-final-boss`).
 
 Command form:
 
 ```bash
-betterprompt generate 019975b5-af43-79fb-ae59-7e2c02dfdef8 \
+betterprompt generate performative-final-boss \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019975b5-af43-79fb-ae59-7e2c02dfdef8 \
+betterprompt generate performative-final-boss \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
