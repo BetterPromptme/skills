@@ -1,14 +1,14 @@
 ---
 name: full-scale-event-masterplan-architect
 description: This prompt instructs the AI to create a comprehensive, blueprint-style masterplan for an event using the user’s provided parameters (event type, theme, budget, timing, guest count, venue context, goals, and non-negotiables). The resulting output delivers a clear vision statement, a phased timeline from initial planning through post-event wrap-up (including an hour-by-hour event-day run of show), bold creative experience concepts, a percentage-based budget allocation with cost-saving options, contingency and risk-management plans, a guest-journey experience map, and a final motivational note to support confident execution.
-skillVersionId: 01985ec5-ffb8-7d78-b19f-e29db62bcac5
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a comprehensive, blueprint-style masterplan for an event using the user’s provided parameters (event type, theme, budget, timing, guest count, venue context, goals, and non-negotiables). The resulting output delivers a clear vision statement, a phased timeline from initial planning through post-event wrap-up (including an hour-by-hour event-day run of show), bold creative experience concepts, a percentage-based budget allocation with cost-saving options, contingency and risk-management plans, a guest-journey experience map, and a final motivational note to support confident execution.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01985ec5-ffb8-7d78-b19f-e29db62bcac5`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `full-scale-event-masterplan-architect`).
 
 Command form:
 
 ```bash
-betterprompt generate 01985ec5-ffb8-7d78-b19f-e29db62bcac5 \
+betterprompt generate full-scale-event-masterplan-architect \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01985ec5-ffb8-7d78-b19f-e29db62bcac5 \
+betterprompt generate full-scale-event-masterplan-architect \
   --input Guest_count=<value> \
   --input Budget_range=<value> \
   --input Type_of_event=<value> \
