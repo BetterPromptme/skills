@@ -1,14 +1,14 @@
 ---
 name: urban-glow-mural-neon-graffiti-night-series
 description: This prompt generates an image of a neon graffiti-style mural depicting a specified subject on a concrete alley wall, using two chosen paint colors. The resulting scene features glowing accents, layered tags and stencils, dripping spray textures, and gritty urban grime, set at night with an orange streetlamp flare to enhance the atmosphere.
-skillVersionId: 01982ab1-02b4-7c88-a6e1-45fe34bcdfb1
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt generates an image of a neon graffiti-style mural depicting a specified subject on a concrete alley wall, using two chosen paint colors. The resulting scene features glowing accents, layered tags and stencils, dripping spray textures, and gritty urban grime, set at night with an orange streetlamp flare to enhance the atmosphere.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01982ab1-02b4-7c88-a6e1-45fe34bcdfb1`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `urban-glow-mural-neon-graffiti-night-series`).
 
 Command form:
 
 ```bash
-betterprompt generate 01982ab1-02b4-7c88-a6e1-45fe34bcdfb1 \
+betterprompt generate urban-glow-mural-neon-graffiti-night-series \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01982ab1-02b4-7c88-a6e1-45fe34bcdfb1 \
+betterprompt generate urban-glow-mural-neon-graffiti-night-series \
   --input color1=<value> \
   --input color2=<value> \
   --input SUBJECT=<value> \
