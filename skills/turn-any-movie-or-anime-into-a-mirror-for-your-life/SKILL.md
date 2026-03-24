@@ -1,14 +1,14 @@
 ---
 name: turn-any-movie-or-anime-into-a-mirror-for-your-life
 description: This prompt asks the AI to use the user’s stated life challenge, chosen movie/show, goal, timeline, and the story’s complexity to produce a tailored reflection: it summarizes the plot, draws parallels between the narrative and the user’s situation, extracts practical lessons as an analogy, and turns those insights into a concrete step-by-step action plan aimed at achieving the goal within the specified period, concluding with an interpretation of how the story symbolically mirrors the user’s own life.
-skillVersionId: 019912d2-5334-71bb-8f6f-fbcc560e8a2f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to use the user’s stated life challenge, chosen movie/show, goal, timeline, and the story’s complexity to produce a tailored reflection: it summarizes the plot, draws parallels between the narrative and the user’s situation, extracts practical lessons as an analogy, and turns those insights into a concrete step-by-step action plan aimed at achieving the goal within the specified period, concluding with an interpretation of how the story symbolically mirrors the user’s own life.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019912d2-5334-71bb-8f6f-fbcc560e8a2f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `turn-any-movie-or-anime-into-a-mirror-for-your-life`).
 
 Command form:
 
 ```bash
-betterprompt generate 019912d2-5334-71bb-8f6f-fbcc560e8a2f \
+betterprompt generate turn-any-movie-or-anime-into-a-mirror-for-your-life \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019912d2-5334-71bb-8f6f-fbcc560e8a2f \
+betterprompt generate turn-any-movie-or-anime-into-a-mirror-for-your-life \
   --input 'goal=Setlle all my debts' \
   --input 'movie=Harry Potter: Goblet Of Fire' \
   --input level_of_plot=Easy/Medium/Hard \
