@@ -1,14 +1,14 @@
 ---
 name: develop-quizzes-and-tests
 description: This prompt instructs the AI to design a 10-question multiple-choice quiz on a specified topic, with questions spanning varied difficulty levels and aligned to learning objectives. For each item, it requires four answer options (one correct and three plausible distractors) and a brief explanation of why the correct answer is right to reinforce understanding. The result is an engaging, appropriately challenging assessment that checks learners’ knowledge and retention while providing immediate instructional feedback.
-skillVersionId: 0197c9d1-82b6-7e2b-a8a9-18ff034db0d8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to design a 10-question multiple-choice quiz on a specified topic, with questions spanning varied difficulty levels and aligned to learning objectives. For each item, it requires four answer options (one correct and three plausible distractors) and a brief explanation of why the correct answer is right to reinforce understanding. The result is an engaging, appropriately challenging assessment that checks learners’ knowledge and retention while providing immediate instructional feedback.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c9d1-82b6-7e2b-a8a9-18ff034db0d8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `develop-quizzes-and-tests`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c9d1-82b6-7e2b-a8a9-18ff034db0d8 \
+betterprompt generate develop-quizzes-and-tests \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c9d1-82b6-7e2b-a8a9-18ff034db0d8 \
+betterprompt generate develop-quizzes-and-tests \
   --input Topic=<value> \
   --model gpt-4.1-mini \
   --options '{}'
