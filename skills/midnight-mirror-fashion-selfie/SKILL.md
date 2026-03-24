@@ -1,14 +1,14 @@
 ---
 name: midnight-mirror-fashion-selfie
 description: This prompt instructs an AI image generator to produce an ultra-realistic, warm-toned nighttime mirror selfie portrait indoors, depicting a woman in a brown corset top and oversized jeans with a natural handheld phone aesthetic. It specifies composition (chest-to-thigh framing in a large mirror), styling (modern outfit and subtle jewelry), and environment details (dim cozy bedroom lighting, curtains, bed, chair, realistic mirror smudges, slight grain) to achieve authentic phone-camera realism at very high resolution. The intended outcome is a lifelike, intimate fashion-focused selfie that preserves the subject’s identity exactly as in the provided reference image while maintaining natural textures, lighting, and proportions.
-skillVersionId: 019a537f-5f55-76b4-993e-30a869860f37
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce an ultra-realistic, warm-toned nighttime mirror selfie portrait indoors, depicting a woman in a brown corset top and oversized jeans with a natural handheld phone aesthetic. It specifies composition (chest-to-thigh framing in a large mirror), styling (modern outfit and subtle jewelry), and environment details (dim cozy bedroom lighting, curtains, bed, chair, realistic mirror smudges, slight grain) to achieve authentic phone-camera realism at very high resolution. The intended outcome is a lifelike, intimate fashion-focused selfie that preserves the subject’s identity exactly as in the provided reference image while maintaining natural textures, lighting, and proportions.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a537f-5f55-76b4-993e-30a869860f37`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `midnight-mirror-fashion-selfie`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a537f-5f55-76b4-993e-30a869860f37 \
+betterprompt generate midnight-mirror-fashion-selfie \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a537f-5f55-76b4-993e-30a869860f37 \
+betterprompt generate midnight-mirror-fashion-selfie \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
