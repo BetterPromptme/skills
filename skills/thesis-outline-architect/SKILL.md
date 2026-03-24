@@ -1,14 +1,14 @@
 ---
 name: thesis-outline-architect
 description: This prompt instructs the AI to act as an academic thesis advisor in a specified field, using the user’s provided topic and unstructured notes to extract core themes, generate several precise and debatable thesis statements, select one to build a coherent thesis-level outline, critically evaluate that outline for weaknesses and missing scholarship or counterarguments, and then refine research questions while recommending and justifying appropriate qualitative, quantitative, or mixed methodologies suited to committee-level expectations.
-skillVersionId: 019ad83f-dca4-7398-b423-03a99273d608
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an academic thesis advisor in a specified field, using the user’s provided topic and unstructured notes to extract core themes, generate several precise and debatable thesis statements, select one to build a coherent thesis-level outline, critically evaluate that outline for weaknesses and missing scholarship or counterarguments, and then refine research questions while recommending and justifying appropriate qualitative, quantitative, or mixed methodologies suited to committee-level expectations.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -65,12 +65,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ad83f-dca4-7398-b423-03a99273d608`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `thesis-outline-architect`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ad83f-dca4-7398-b423-03a99273d608 \
+betterprompt generate thesis-outline-architect \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -87,7 +87,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ad83f-dca4-7398-b423-03a99273d608 \
+betterprompt generate thesis-outline-architect \
   --input 'Your_field=Environment Science, Modern History,...' \
   --input Your_broad_topic=<value> \
   --input Your_unstructured_notes=<value> \
