@@ -1,14 +1,14 @@
 ---
 name: urban-frame-identity-lock
 description: This prompt instructs an image-generation workflow to create a vertical, photoreal 35mm film–style fashion editorial portrait set on a modern urban street, using a provided reference face and enforcing strict identity preservation. It defines wardrobe, pose, expression, framing, lighting, color palette, and film grain characteristics while prohibiting any changes to facial attributes, gender expression, hair, skin texture, or added makeup/logos/text. The intended outcome is a refined, natural-looking city editorial portrait with clear fine grain and balanced daylight contrast, and it halts to request a clearer reference image if the face is not adequately visible.
-skillVersionId: 019984f6-9be5-7976-afd9-0f631ad908f8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation workflow to create a vertical, photoreal 35mm film–style fashion editorial portrait set on a modern urban street, using a provided reference face and enforcing strict identity preservation. It defines wardrobe, pose, expression, framing, lighting, color palette, and film grain characteristics while prohibiting any changes to facial attributes, gender expression, hair, skin texture, or added makeup/logos/text. The intended outcome is a refined, natural-looking city editorial portrait with clear fine grain and balanced daylight contrast, and it halts to request a clearer reference image if the face is not adequately visible.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019984f6-9be5-7976-afd9-0f631ad908f8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `urban-frame-identity-lock`).
 
 Command form:
 
 ```bash
-betterprompt generate 019984f6-9be5-7976-afd9-0f631ad908f8 \
+betterprompt generate urban-frame-identity-lock \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019984f6-9be5-7976-afd9-0f631ad908f8 \
+betterprompt generate urban-frame-identity-lock \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
