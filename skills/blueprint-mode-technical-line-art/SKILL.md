@@ -1,14 +1,14 @@
 ---
 name: blueprint-mode-technical-line-art
 description: This prompt instructs the AI to examine a provided reference image and recreate its subject as a precise blueprint-style technical schematic, preserving key visual details such as form, structure, design elements, colors, and background. The output is a clean, engineering-oriented line drawing rendered in multiple specified pen colors on a specified paper type, enhanced with technical annotations, dimension lines, and other drafting conventions to produce a professional, highly detailed technical blueprint aesthetic.
-skillVersionId: 019c22f5-5e69-757f-8a13-2c4f49235351
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to examine a provided reference image and recreate its subject as a precise blueprint-style technical schematic, preserving key visual details such as form, structure, design elements, colors, and background. The output is a clean, engineering-oriented line drawing rendered in multiple specified pen colors on a specified paper type, enhanced with technical annotations, dimension lines, and other drafting conventions to produce a professional, highly detailed technical blueprint aesthetic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c22f5-5e69-757f-8a13-2c4f49235351`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `blueprint-mode-technical-line-art`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c22f5-5e69-757f-8a13-2c4f49235351 \
+betterprompt generate blueprint-mode-technical-line-art \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c22f5-5e69-757f-8a13-2c4f49235351 \
+betterprompt generate blueprint-mode-technical-line-art \
   --input pen_colors=green \
   --input papper_type=beige \
   --model gemini-3-pro-image-preview \
