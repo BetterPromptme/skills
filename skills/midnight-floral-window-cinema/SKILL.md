@@ -1,14 +1,14 @@
 ---
 name: midnight-floral-window-cinema
 description: This prompt directs an image model to generate an editorial, vintage-cinematic photograph of a person in the back seat of an old car, framed from outside through an open window, with a bouquet of pastel flowers spilling toward the viewer. It specifies the subject’s pose and subdued expression, detailed environment cues (worn vintage interior, deep muted tones), and a film-inspired visual treatment (soft natural light with subtle flash, Portra-like color, 35mm perspective, gentle grain). The intended outcome is a realistic, intimate fashion-style image that matches the original input subject’s identity and appearance while adding the described composition, lighting, and mood.
-skillVersionId: 019cfc45-18b7-708a-a38c-e4b9f5a823ab
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image model to generate an editorial, vintage-cinematic photograph of a person in the back seat of an old car, framed from outside through an open window, with a bouquet of pastel flowers spilling toward the viewer. It specifies the subject’s pose and subdued expression, detailed environment cues (worn vintage interior, deep muted tones), and a film-inspired visual treatment (soft natural light with subtle flash, Portra-like color, 35mm perspective, gentle grain). The intended outcome is a realistic, intimate fashion-style image that matches the original input subject’s identity and appearance while adding the described composition, lighting, and mood.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019cfc45-18b7-708a-a38c-e4b9f5a823ab`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `midnight-floral-window-cinema`).
 
 Command form:
 
 ```bash
-betterprompt generate 019cfc45-18b7-708a-a38c-e4b9f5a823ab \
+betterprompt generate midnight-floral-window-cinema \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019cfc45-18b7-708a-a38c-e4b9f5a823ab \
+betterprompt generate midnight-floral-window-cinema \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
