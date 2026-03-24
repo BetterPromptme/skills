@@ -1,14 +1,14 @@
 ---
 name: gingham-cloud-garden
 description: This prompt instructs an AI image generator to produce an ultra-realistic, high-fashion editorial portrait in a romantic surrealist style: a centered woman, shown mid-thigh up, standing knee-deep in an endless field of pale roses while wearing a sculptural pink gingham ruffled couture mini-dress, photographed with soft natural light, shallow depth of field, and a matte pastel finish. The intended outcome is a dreamy, cinematic fashion-magazine-quality image that preserves the subject’s exact facial identity and expression from the provided reference while emphasizing ethereal floral atmosphere, dramatic garment volume, and refined editorial color and texture.
-skillVersionId: 019a813a-091d-72e9-a54e-3a98f884c5f3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce an ultra-realistic, high-fashion editorial portrait in a romantic surrealist style: a centered woman, shown mid-thigh up, standing knee-deep in an endless field of pale roses while wearing a sculptural pink gingham ruffled couture mini-dress, photographed with soft natural light, shallow depth of field, and a matte pastel finish. The intended outcome is a dreamy, cinematic fashion-magazine-quality image that preserves the subject’s exact facial identity and expression from the provided reference while emphasizing ethereal floral atmosphere, dramatic garment volume, and refined editorial color and texture.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a813a-091d-72e9-a54e-3a98f884c5f3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `gingham-cloud-garden`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a813a-091d-72e9-a54e-3a98f884c5f3 \
+betterprompt generate gingham-cloud-garden \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a813a-091d-72e9-a54e-3a98f884c5f3 \
+betterprompt generate gingham-cloud-garden \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
