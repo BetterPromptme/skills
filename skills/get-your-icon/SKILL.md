@@ -1,14 +1,14 @@
 ---
 name: get-your-icon
 description: This prompt instructs an AI image generator to create an icon representing a specified concept, following a detailed, consistent visual system. It defines an isometric 3D composition with a small set of clearly arranged elements, soft ambient lighting, gentle shadows, semi-matte textures, crisp high-resolution rendering, a harmonious muted color palette, and a pure white background. The outcome is a clean, premium, scalable icon that matches a cohesive icon set and remains readable across sizes and use cases.
-skillVersionId: 0196f22c-fe09-72c6-b9e2-a52fda217421
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create an icon representing a specified concept, following a detailed, consistent visual system. It defines an isometric 3D composition with a small set of clearly arranged elements, soft ambient lighting, gentle shadows, semi-matte textures, crisp high-resolution rendering, a harmonious muted color palette, and a pure white background. The outcome is a clean, premium, scalable icon that matches a cohesive icon set and remains readable across sizes and use cases.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f22c-fe09-72c6-b9e2-a52fda217421`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `get-your-icon`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f22c-fe09-72c6-b9e2-a52fda217421 \
+betterprompt generate get-your-icon \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f22c-fe09-72c6-b9e2-a52fda217421 \
+betterprompt generate get-your-icon \
   --input concept=<value> \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"size":0,"quality":0},"quality":"low"}'
