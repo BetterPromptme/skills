@@ -1,14 +1,14 @@
 ---
 name: studio-sadness
 description: This prompt instructs an image-generation system to produce a high-definition, photorealistic, high-angle cinematic portrait of a young musician inside a realistically cluttered recording studio, using a single flash-lit, gritty analog aesthetic. It specifies wardrobe options by gender, detailed placement of instruments and gear, and a dark, moody color palette while requiring strict identity preservation from a provided reference photo. The expected result is an intimate, emotionally charged studio scene with strong flash contrast, realistic textures, and accurate environmental details without altering the subject’s face, body, or skin tone.
-skillVersionId: 019a6d01-0f8c-73d6-8862-dfc9b4c8de1a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce a high-definition, photorealistic, high-angle cinematic portrait of a young musician inside a realistically cluttered recording studio, using a single flash-lit, gritty analog aesthetic. It specifies wardrobe options by gender, detailed placement of instruments and gear, and a dark, moody color palette while requiring strict identity preservation from a provided reference photo. The expected result is an intimate, emotionally charged studio scene with strong flash contrast, realistic textures, and accurate environmental details without altering the subject’s face, body, or skin tone.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a6d01-0f8c-73d6-8862-dfc9b4c8de1a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `studio-sadness`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a6d01-0f8c-73d6-8862-dfc9b4c8de1a \
+betterprompt generate studio-sadness \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a6d01-0f8c-73d6-8862-dfc9b4c8de1a \
+betterprompt generate studio-sadness \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
