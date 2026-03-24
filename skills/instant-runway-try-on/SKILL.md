@@ -1,14 +1,14 @@
 ---
 name: instant-runway-try-on
 description: This prompt instructs an AI to generate a single, photorealistic 4‑second vertical runway video featuring a lifelike model built from provided identity attributes and wearing an uploaded outfit exactly as referenced, while maintaining a fixed cinematic runway environment, continuous forward-tracking camera move, realistic walk cycle with cloth physics, and embedded runway ambience audio, enforcing strict consistency and prohibiting any overlays, text, branding, cuts, or display of the reference image.
-skillVersionId: 0199f08b-f018-77b7-930c-a2e80ed627d1
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate a single, photorealistic 4‑second vertical runway video featuring a lifelike model built from provided identity attributes and wearing an uploaded outfit exactly as referenced, while maintaining a fixed cinematic runway environment, continuous forward-tracking camera move, realistic walk cycle with cloth physics, and embedded runway ambience audio, enforcing strict consistency and prohibiting any overlays, text, branding, cuts, or display of the reference image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -80,12 +80,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199f08b-f018-77b7-930c-a2e80ed627d1`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `instant-runway-try-on`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199f08b-f018-77b7-930c-a2e80ed627d1 \
+betterprompt generate instant-runway-try-on \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -106,7 +106,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199f08b-f018-77b7-930c-a2e80ed627d1 \
+betterprompt generate instant-runway-try-on \
   --input gender=male/female/other \
   --input 'age_range=early 20s' \
   --input 'skin_tone=fair porcelain' \
