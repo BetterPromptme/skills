@@ -1,14 +1,14 @@
 ---
 name: image-to-action-figure
 description: This prompt instructs an AI to transform a provided character photo into a realistic, daylight-lit indoor 3D product render depicting a premium collectible figurine display, including the figurine on a round plastic base, a branded box behind it featuring the character’s image, and a nearby computer monitor showing the Blender modeling workflow, resulting in a high-quality scene suitable for showcasing an expensive toy-like product.
-skillVersionId: 019912df-dd51-76dc-b724-463fad7ac500
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to transform a provided character photo into a realistic, daylight-lit indoor 3D product render depicting a premium collectible figurine display, including the figurine on a round plastic base, a branded box behind it featuring the character’s image, and a nearby computer monitor showing the Blender modeling workflow, resulting in a high-quality scene suitable for showcasing an expensive toy-like product.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019912df-dd51-76dc-b724-463fad7ac500`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `image-to-action-figure`).
 
 Command form:
 
 ```bash
-betterprompt generate 019912df-dd51-76dc-b724-463fad7ac500 \
+betterprompt generate image-to-action-figure \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019912df-dd51-76dc-b724-463fad7ac500 \
+betterprompt generate image-to-action-figure \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
