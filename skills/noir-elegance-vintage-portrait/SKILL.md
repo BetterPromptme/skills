@@ -1,14 +1,14 @@
 ---
 name: noir-elegance-vintage-portrait
 description: This prompt instructs an image generator to produce a photorealistic, black-and-white, shoulders-up vintage studio portrait in a 1940s film-noir aesthetic, using provided variables (gender, ethnicity, hair, accessories, expression) to shape the subject’s appearance and mood. It specifies close-up framing, soft diffused key lighting with strong light–shadow interplay, analog softness with film grain and vignette, and a natural finger-to-lips gesture, while forbidding color, modern retouching, props, explicitness, or identity imitation. The intended outcome is a dignified, cinematic monochrome headshot that looks like an authentic mid-century silver-print photograph and maintains consistent stylistic realism for reference or dataset use.
-skillVersionId: 019a09af-fe9e-70af-9aad-6fe8b874e0ac
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to produce a photorealistic, black-and-white, shoulders-up vintage studio portrait in a 1940s film-noir aesthetic, using provided variables (gender, ethnicity, hair, accessories, expression) to shape the subject’s appearance and mood. It specifies close-up framing, soft diffused key lighting with strong light–shadow interplay, analog softness with film grain and vignette, and a natural finger-to-lips gesture, while forbidding color, modern retouching, props, explicitness, or identity imitation. The intended outcome is a dignified, cinematic monochrome headshot that looks like an authentic mid-century silver-print photograph and maintains consistent stylistic realism for reference or dataset use.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -80,12 +80,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a09af-fe9e-70af-9aad-6fe8b874e0ac`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `noir-elegance-vintage-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a09af-fe9e-70af-9aad-6fe8b874e0ac \
+betterprompt generate noir-elegance-vintage-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -106,7 +106,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a09af-fe9e-70af-9aad-6fe8b874e0ac \
+betterprompt generate noir-elegance-vintage-portrait \
   --input Gender=<value> \
   --input Ethnicity=<value> \
   --input 'Expression=The character is alluring, contemplative, or rebellious,...' \
