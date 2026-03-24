@@ -1,14 +1,14 @@
 ---
 name: mirror-message-cinematic-bathroom-thriller
 description: This prompt instructs an image generator to create a photorealistic, tense cinematic bathroom scene using an uploaded portrait as the main subject, dressed in a simple school-uniform outfit, framed through a dirty mirror under harsh fluorescent lighting. The resulting image is a medium, shallow–depth-of-field photograph where the subject’s reflection and the red lipstick message on the mirror are sharp, while a menacing Joker figure appears behind them in the mirror slightly out of focus, with strict constraints to preserve realism, coherent reflections/lighting, and exclude extra text, logos, or stylized rendering.
-skillVersionId: 019a0a98-9642-77cf-8774-07c2797b33bd
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to create a photorealistic, tense cinematic bathroom scene using an uploaded portrait as the main subject, dressed in a simple school-uniform outfit, framed through a dirty mirror under harsh fluorescent lighting. The resulting image is a medium, shallow–depth-of-field photograph where the subject’s reflection and the red lipstick message on the mirror are sharp, while a menacing Joker figure appears behind them in the mirror slightly out of focus, with strict constraints to preserve realism, coherent reflections/lighting, and exclude extra text, logos, or stylized rendering.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a0a98-9642-77cf-8774-07c2797b33bd`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `mirror-message-cinematic-bathroom-thriller`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a0a98-9642-77cf-8774-07c2797b33bd \
+betterprompt generate mirror-message-cinematic-bathroom-thriller \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a0a98-9642-77cf-8774-07c2797b33bd \
+betterprompt generate mirror-message-cinematic-bathroom-thriller \
   --input 'outfit=white button-down shirt, rolled sleeves, dark red striped tie, grey pleated skirt” or “white shirt with rolled sleeves, dark red striped tie, charcoal trousers,...' \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
