@@ -1,14 +1,14 @@
 ---
 name: friendship-of-gray-tabby-cat-and-otter
 description: This prompt instructs an AI image generator to create a beach scene featuring a gray tabby cat hugging an otter that is wearing an orange scarf, resulting in a single cohesive illustration that places the characters clearly in a seaside background with the specified details.
-skillVersionId: 019cadc5-5d78-7069-925f-f93a4478c7cd
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a beach scene featuring a gray tabby cat hugging an otter that is wearing an orange scarf, resulting in a single cohesive illustration that places the characters clearly in a seaside background with the specified details.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019cadc5-5d78-7069-925f-f93a4478c7cd`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `friendship-of-gray-tabby-cat-and-otter`).
 
 Command form:
 
 ```bash
-betterprompt generate 019cadc5-5d78-7069-925f-f93a4478c7cd \
+betterprompt generate friendship-of-gray-tabby-cat-and-otter \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019cadc5-5d78-7069-925f-f93a4478c7cd \
+betterprompt generate friendship-of-gray-tabby-cat-and-otter \
   --model gemini-2.5-flash-image-preview \
   --options '{"aspectRatio":"1:1"}'
 ```
