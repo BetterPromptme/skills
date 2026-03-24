@@ -1,14 +1,14 @@
 ---
 name: identity-preserved-neon-cyber-portrait-prompt
 description: This prompt instructs the model to generate a highly realistic, identity-preserving vertical cinematic portrait of the provided subject, keeping facial proportions, age, skin tone, ethnicity, and any hair or head covering exactly unchanged while avoiding beautification or retouching. It places the subject in a neon-lit, rainy cyber street scene inspired by a specified city, with abstract non-readable signage, wet reflections, fog, and shallow depth of field, using clean front fill light and subtle cyan–magenta rim lighting to maintain natural, accurate skin color. The result is a 1080×1920 Instagram-ready cyber aesthetic portrait where the environment and lighting are stylized but the subject’s identity remains strictly consistent with the reference image.
-skillVersionId: 019b4933-ab3d-73ed-b611-ee9d2b3c66f6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the model to generate a highly realistic, identity-preserving vertical cinematic portrait of the provided subject, keeping facial proportions, age, skin tone, ethnicity, and any hair or head covering exactly unchanged while avoiding beautification or retouching. It places the subject in a neon-lit, rainy cyber street scene inspired by a specified city, with abstract non-readable signage, wet reflections, fog, and shallow depth of field, using clean front fill light and subtle cyan–magenta rim lighting to maintain natural, accurate skin color. The result is a 1080×1920 Instagram-ready cyber aesthetic portrait where the environment and lighting are stylized but the subject’s identity remains strictly consistent with the reference image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b4933-ab3d-73ed-b611-ee9d2b3c66f6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `identity-preserved-neon-cyber-portrait-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b4933-ab3d-73ed-b611-ee9d2b3c66f6 \
+betterprompt generate identity-preserved-neon-cyber-portrait-prompt \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b4933-ab3d-73ed-b611-ee9d2b3c66f6 \
+betterprompt generate identity-preserved-neon-cyber-portrait-prompt \
   --input CITY=<value> \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
