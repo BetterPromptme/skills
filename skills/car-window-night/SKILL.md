@@ -1,14 +1,14 @@
 ---
 name: car-window-night
 description: This prompt instructs an image-generation AI to produce a photorealistic, cinematic portrait of a person leaning back out of a moving car window at night, emphasizing wind, subtle motion blur, shallow depth of field, and nostalgic mood. Using variable inputs for subject type, age, clothing, hair, and ambient lighting, it guides composition, color palette, texture, and camera settings to yield a dark, dreamy scene with softly blurred city or road lights and an emotional tone of quiet freedom mixed with solitude.
-skillVersionId: 019a06bc-68f9-7ca5-8dcc-40a8406f26f2
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation AI to produce a photorealistic, cinematic portrait of a person leaning back out of a moving car window at night, emphasizing wind, subtle motion blur, shallow depth of field, and nostalgic mood. Using variable inputs for subject type, age, clothing, hair, and ambient lighting, it guides composition, color palette, texture, and camera settings to yield a dark, dreamy scene with softly blurred city or road lights and an emotional tone of quiet freedom mixed with solitude.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -80,12 +80,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a06bc-68f9-7ca5-8dcc-40a8406f26f2`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `car-window-night`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a06bc-68f9-7ca5-8dcc-40a8406f26f2 \
+betterprompt generate car-window-night \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -106,7 +106,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a06bc-68f9-7ca5-8dcc-40a8406f26f2 \
+betterprompt generate car-window-night \
   --input Gender=<value> \
   --input 'Clothing=off-shoulder white knitted top, long sleeve turtleneck knitted top,' \
   --input Age_range=<value> \
