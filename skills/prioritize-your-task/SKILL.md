@@ -1,14 +1,14 @@
 ---
 name: prioritize-your-task
 description: This prompt instructs the AI to act as a personal assistant that evaluates a provided task for its expected business impact and then outputs a single-word priority rating—either "high" or "low"—indicating how urgently the task should be addressed.
-skillVersionId: 019955cd-50ca-758c-8efd-bb5d60b50334
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a personal assistant that evaluates a provided task for its expected business impact and then outputs a single-word priority rating—either "high" or "low"—indicating how urgently the task should be addressed.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019955cd-50ca-758c-8efd-bb5d60b50334`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `prioritize-your-task`).
 
 Command form:
 
 ```bash
-betterprompt generate 019955cd-50ca-758c-8efd-bb5d60b50334 \
+betterprompt generate prioritize-your-task \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019955cd-50ca-758c-8efd-bb5d60b50334 \
+betterprompt generate prioritize-your-task \
   --input task=<value> \
   --model gpt-5-mini \
   --options '{}'
