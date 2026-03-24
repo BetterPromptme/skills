@@ -1,14 +1,14 @@
 ---
 name: viral-content-growth-hacker
 description: This prompt instructs the AI to act as a growth-focused content strategist and produce 10 platform-native, viral-oriented content ideas to promote a specified product or service on a chosen social platform. For each idea, it requires a concise hook title, an emotionally driven caption, a clear format/style, the target emotion, the virality mechanism behind it, and a simple call-to-action—resulting in a ready-to-execute list of low-cost, repeatable concepts optimized for high reach.
-skillVersionId: 0198c571-235c-7b90-88f4-febb5578b47c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a growth-focused content strategist and produce 10 platform-native, viral-oriented content ideas to promote a specified product or service on a chosen social platform. For each idea, it requires a concise hook title, an emotionally driven caption, a clear format/style, the target emotion, the virality mechanism behind it, and a simple call-to-action—resulting in a ready-to-execute list of low-cost, repeatable concepts optimized for high reach.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198c571-235c-7b90-88f4-febb5578b47c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `viral-content-growth-hacker`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198c571-235c-7b90-88f4-febb5578b47c \
+betterprompt generate viral-content-growth-hacker \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198c571-235c-7b90-88f4-febb5578b47c \
+betterprompt generate viral-content-growth-hacker \
   --input Platform=<value> \
   --input Product_or_Service=<value> \
   --model gpt-4.1-mini \
