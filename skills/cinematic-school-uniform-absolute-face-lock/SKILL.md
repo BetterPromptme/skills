@@ -1,14 +1,14 @@
 ---
 name: cinematic-school-uniform-absolute-face-lock
 description: This prompt instructs an AI image generator to produce a photoreal, cinematic head-and-upper-body portrait that matches a provided reference face with strict identity preservation, using a modern school-uniform styling that automatically adapts wardrobe details to the subject’s gender. It specifies controlled lighting, camera framing, a textured blue shallow‑focus background, and added accessories (headphones at the neck and a subtle lollipop stick), with an optional ultra-light freckle overlay that must not alter facial geometry or obscure key landmarks. The expected outcome is a high-resolution 3:4 editorial-style portrait with natural skin detail, muted color grading, fine film grain, no readable text or logos, and a fail-safe that requests a clearer reference image if the face is not fully visible.
-skillVersionId: 01997af0-5d45-7012-95ae-edc42542b384
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a photoreal, cinematic head-and-upper-body portrait that matches a provided reference face with strict identity preservation, using a modern school-uniform styling that automatically adapts wardrobe details to the subject’s gender. It specifies controlled lighting, camera framing, a textured blue shallow‑focus background, and added accessories (headphones at the neck and a subtle lollipop stick), with an optional ultra-light freckle overlay that must not alter facial geometry or obscure key landmarks. The expected outcome is a high-resolution 3:4 editorial-style portrait with natural skin detail, muted color grading, fine film grain, no readable text or logos, and a fail-safe that requests a clearer reference image if the face is not fully visible.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01997af0-5d45-7012-95ae-edc42542b384`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cinematic-school-uniform-absolute-face-lock`).
 
 Command form:
 
 ```bash
-betterprompt generate 01997af0-5d45-7012-95ae-edc42542b384 \
+betterprompt generate cinematic-school-uniform-absolute-face-lock \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01997af0-5d45-7012-95ae-edc42542b384 \
+betterprompt generate cinematic-school-uniform-absolute-face-lock \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
