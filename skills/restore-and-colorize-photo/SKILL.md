@@ -1,14 +1,14 @@
 ---
 name: restore-and-colorize-photo
 description: This prompt instructs an AI to act as a photo conservator and digital colorist to restore an old or damaged photograph by repairing defects like scratches, fading, and softness, then colorize it with realistic, historically accurate tones guided by optional reference inputs. It emphasizes preserving the subject’s identity and period authenticity, avoiding over-retouching or artificial saturation, and producing a high-resolution result suitable for printing and archival use without adding or altering scene elements beyond faithful color reconstruction.
-skillVersionId: 019955eb-aa9e-7a06-a63e-b250d0c335ef
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to act as a photo conservator and digital colorist to restore an old or damaged photograph by repairing defects like scratches, fading, and softness, then colorize it with realistic, historically accurate tones guided by optional reference inputs. It emphasizes preserving the subject’s identity and period authenticity, avoiding over-retouching or artificial saturation, and producing a high-resolution result suitable for printing and archival use without adding or altering scene elements beyond faithful color reconstruction.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019955eb-aa9e-7a06-a63e-b250d0c335ef`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `restore-and-colorize-photo`).
 
 Command form:
 
 ```bash
-betterprompt generate 019955eb-aa9e-7a06-a63e-b250d0c335ef \
+betterprompt generate restore-and-colorize-photo \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -100,7 +100,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019955eb-aa9e-7a06-a63e-b250d0c335ef \
+betterprompt generate restore-and-colorize-photo \
   --input 'seed=42 → results can be reproduced' \
   --input 'detail_level="soft" for smoother look, "natural" for balanced detail, "sharp" for maximum clarity.' \
   --input 'color_reference=“warm natural tones”, “sepia look”, “pastel colors”' \
