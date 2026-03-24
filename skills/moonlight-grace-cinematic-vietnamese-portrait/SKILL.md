@@ -1,14 +1,14 @@
 ---
 name: moonlight-grace-cinematic-vietnamese-portrait
 description: This prompt instructs an AI image generator to create a full-body, ultra-realistic fine-art editorial portrait by using an uploaded reference photo to preserve the subject’s exact facial identity and expression while transforming the scene into a modern Vietnamese mid-autumn, moonlit fashion concept. The result is a cinematic, professionally lit composition featuring a red-and-gold embroidered dress with chiffon movement, a black backdrop dominated by a glowing full moon, and culturally respectful symbolic elements like drifting red petals and a red paper umbrella, all composed with clean negative space and natural proportions.
-skillVersionId: 0199b7d2-32c1-7269-8196-7bfb48e6060e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a full-body, ultra-realistic fine-art editorial portrait by using an uploaded reference photo to preserve the subject’s exact facial identity and expression while transforming the scene into a modern Vietnamese mid-autumn, moonlit fashion concept. The result is a cinematic, professionally lit composition featuring a red-and-gold embroidered dress with chiffon movement, a black backdrop dominated by a glowing full moon, and culturally respectful symbolic elements like drifting red petals and a red paper umbrella, all composed with clean negative space and natural proportions.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199b7d2-32c1-7269-8196-7bfb48e6060e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `moonlight-grace-cinematic-vietnamese-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199b7d2-32c1-7269-8196-7bfb48e6060e \
+betterprompt generate moonlight-grace-cinematic-vietnamese-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199b7d2-32c1-7269-8196-7bfb48e6060e \
+betterprompt generate moonlight-grace-cinematic-vietnamese-portrait \
   --input 'lighting_tone=cinematic moonlight' \
   --input 'petal_intensity=few petals' \
   --image-input-url https://example.com/image1.png \
