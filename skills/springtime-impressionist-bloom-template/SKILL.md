@@ -1,14 +1,14 @@
 ---
 name: springtime-impressionist-bloom-template
 description: This prompt instructs the AI to generate an Impressionist-style springtime artwork featuring the specified subject, rendered with soft, dappled brushstrokes that suggest a vibrant garden coming to life. It also constrains the composition’s color palette to two chosen dominant colors to convey the fresh, delicate tones of blossoms and new foliage, resulting in a cohesive, seasonally evocative image.
-skillVersionId: 01989c78-6131-79d1-93dc-92864cedbff4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate an Impressionist-style springtime artwork featuring the specified subject, rendered with soft, dappled brushstrokes that suggest a vibrant garden coming to life. It also constrains the composition’s color palette to two chosen dominant colors to convey the fresh, delicate tones of blossoms and new foliage, resulting in a cohesive, seasonally evocative image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01989c78-6131-79d1-93dc-92864cedbff4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `springtime-impressionist-bloom-template`).
 
 Command form:
 
 ```bash
-betterprompt generate 01989c78-6131-79d1-93dc-92864cedbff4 \
+betterprompt generate springtime-impressionist-bloom-template \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01989c78-6131-79d1-93dc-92864cedbff4 \
+betterprompt generate springtime-impressionist-bloom-template \
   --input color1=<value> \
   --input color2=<value> \
   --input SUBJECT=<value> \
