@@ -1,14 +1,14 @@
 ---
 name: quiet-goodbye-rooftop-face-lock
 description: This prompt instructs an image generator to produce a photorealistic, cinematic full-body portrait on a rainy school rooftop at blue hour, with specific camera, lighting, environment, and mood details, while enforcing strict identity preservation by keeping the subject’s face and gender exactly matched to a provided adult reference image. It also sets safety and realism constraints (modest wardrobe, no sexualization, no logos or extra text beyond a single chalk phrase, no anatomy distortions, no added identity-altering features) and defines output framing and file specs, resulting in a clean 4:5, high-resolution PNG that looks like a film still with subtle grain.
-skillVersionId: 01997b43-3f5e-7cf3-a11e-c825fe25a94e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to produce a photorealistic, cinematic full-body portrait on a rainy school rooftop at blue hour, with specific camera, lighting, environment, and mood details, while enforcing strict identity preservation by keeping the subject’s face and gender exactly matched to a provided adult reference image. It also sets safety and realism constraints (modest wardrobe, no sexualization, no logos or extra text beyond a single chalk phrase, no anatomy distortions, no added identity-altering features) and defines output framing and file specs, resulting in a clean 4:5, high-resolution PNG that looks like a film still with subtle grain.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01997b43-3f5e-7cf3-a11e-c825fe25a94e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `quiet-goodbye-rooftop-face-lock`).
 
 Command form:
 
 ```bash
-betterprompt generate 01997b43-3f5e-7cf3-a11e-c825fe25a94e \
+betterprompt generate quiet-goodbye-rooftop-face-lock \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01997b43-3f5e-7cf3-a11e-c825fe25a94e \
+betterprompt generate quiet-goodbye-rooftop-face-lock \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
