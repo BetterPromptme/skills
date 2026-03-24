@@ -1,14 +1,14 @@
 ---
 name: editorial-power-pose
 description: This prompt directs the AI to transform a user’s portrait into a high-end, photorealistic fashion editorial beauty campaign image by preserving the person’s exact facial identity while recreating a specified outfit and a strict, reference-matched pose featuring a clearly visible lipstick held near the lips, an upward gaze, elegant raised hands, and a dynamic, elongated stance. The result is a sharp, studio-lit, white-background full or near full-body photograph with intentional high-angle editorial perspective, clean makeup, and a bold, confident attitude, while avoiding any pose drift, extra props, logos, or non-photographic stylization.
-skillVersionId: 019c093e-d068-741a-b039-860936029c9b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs the AI to transform a user’s portrait into a high-end, photorealistic fashion editorial beauty campaign image by preserving the person’s exact facial identity while recreating a specified outfit and a strict, reference-matched pose featuring a clearly visible lipstick held near the lips, an upward gaze, elegant raised hands, and a dynamic, elongated stance. The result is a sharp, studio-lit, white-background full or near full-body photograph with intentional high-angle editorial perspective, clean makeup, and a bold, confident attitude, while avoiding any pose drift, extra props, logos, or non-photographic stylization.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c093e-d068-741a-b039-860936029c9b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `editorial-power-pose`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c093e-d068-741a-b039-860936029c9b \
+betterprompt generate editorial-power-pose \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c093e-d068-741a-b039-860936029c9b \
+betterprompt generate editorial-power-pose \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-3-pro-image-preview \
