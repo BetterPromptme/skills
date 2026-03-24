@@ -1,14 +1,14 @@
 ---
 name: dynamic-product-ad-design
 description: This prompt instructs the AI to take a provided beverage can product photo and replace its background with a modern, advertisement-ready scene themed around a specified concept, featuring realistic flying milk streams and floating themed fragments. The can itself must remain intact and accurately scaled, while the new background is composed dynamically with vibrant lighting and textures that highlight the product and create an eye-catching, lively promotional image.
-skillVersionId: 0196ebe3-767e-7334-bd16-c0b28a552265
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take a provided beverage can product photo and replace its background with a modern, advertisement-ready scene themed around a specified concept, featuring realistic flying milk streams and floating themed fragments. The can itself must remain intact and accurately scaled, while the new background is composed dynamically with vibrant lighting and textures that highlight the product and create an eye-catching, lively promotional image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196ebe3-767e-7334-bd16-c0b28a552265`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `dynamic-product-ad-design`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196ebe3-767e-7334-bd16-c0b28a552265 \
+betterprompt generate dynamic-product-ad-design \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196ebe3-767e-7334-bd16-c0b28a552265 \
+betterprompt generate dynamic-product-ad-design \
   --input theme=<value> \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
