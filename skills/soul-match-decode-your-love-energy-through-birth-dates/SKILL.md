@@ -1,14 +1,14 @@
 ---
 name: soul-match-decode-your-love-energy-through-birth-dates
 description: This prompt instructs the AI to act as a spiritually oriented love compatibility analyst, using numerology-style calculations and an “energy matrix” approach to evaluate the romantic connection between two people from their birth dates. The result is a structured, empathetic compatibility reading that covers emotional alignment, karmic themes, harmony vs. friction points, guidance for nurturing the relationship, a concluding intuitive message, and a final percentage-based compatibility score categorized into defined relationship types.
-skillVersionId: 019883cb-2cdf-7fad-9a36-575fe7600411
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a spiritually oriented love compatibility analyst, using numerology-style calculations and an “energy matrix” approach to evaluate the romantic connection between two people from their birth dates. The result is a structured, empathetic compatibility reading that covers emotional alignment, karmic themes, harmony vs. friction points, guidance for nurturing the relationship, a concluding intuitive message, and a final percentage-based compatibility score categorized into defined relationship types.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019883cb-2cdf-7fad-9a36-575fe7600411`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `soul-match-decode-your-love-energy-through-birth-dates`).
 
 Command form:
 
 ```bash
-betterprompt generate 019883cb-2cdf-7fad-9a36-575fe7600411 \
+betterprompt generate soul-match-decode-your-love-energy-through-birth-dates \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019883cb-2cdf-7fad-9a36-575fe7600411 \
+betterprompt generate soul-match-decode-your-love-energy-through-birth-dates \
   --input Birth_date_of_Person_A=<value> \
   --input Birth_date_of_Person_B=<value> \
   --model gpt-4o \
