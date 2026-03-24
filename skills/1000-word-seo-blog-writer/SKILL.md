@@ -1,14 +1,14 @@
 ---
 name: 1000-word-seo-blog-writer
 description: This prompt instructs the AI to act as an experienced SEO content strategist and copywriter to produce a ~1,000-word, search-optimized blog post on a provided topic and supporting details, formatted in professional Markdown with specific required sections (including meta fields, multiple H2s, a checklist, FAQ, internal/external link suggestions, a conclusion, and a brief SEO rationale). If essential inputs are missing—such as audience, region, tone, or data requirements—the AI must pause and ask up to three clarifying questions before writing, ensuring the final article is both reader-focused and structured for strong on-page SEO outcomes.
-skillVersionId: 019a29b6-4d7a-7251-a990-068ed29cb1ad
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an experienced SEO content strategist and copywriter to produce a ~1,000-word, search-optimized blog post on a provided topic and supporting details, formatted in professional Markdown with specific required sections (including meta fields, multiple H2s, a checklist, FAQ, internal/external link suggestions, a conclusion, and a brief SEO rationale). If essential inputs are missing—such as audience, region, tone, or data requirements—the AI must pause and ask up to three clarifying questions before writing, ensuring the final article is both reader-focused and structured for strong on-page SEO outcomes.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a29b6-4d7a-7251-a990-068ed29cb1ad`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `1000-word-seo-blog-writer`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a29b6-4d7a-7251-a990-068ed29cb1ad \
+betterprompt generate 1000-word-seo-blog-writer \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a29b6-4d7a-7251-a990-068ed29cb1ad \
+betterprompt generate 1000-word-seo-blog-writer \
   --input 'topic=Sustainable packaging for e-commerce brands' \
   --input 'details=Target audience: small business owners in the US; tone: professional yet conversational; include recent 2025 trends.' \
   --model gpt-5 \
