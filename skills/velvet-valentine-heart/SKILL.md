@@ -1,14 +1,14 @@
 ---
 name: velvet-valentine-heart
 description: This prompt instructs an AI image editor to turn a provided portrait into a premium, Valentine-themed fashion campaign image by keeping the subject’s facial identity intact while re-staging them in a clean studio set built from oversized plush red heart cushions, directing a relaxed romantic pose, casual-luxury styling, and soft diffused lighting to achieve a refined, high-resolution editorial finish with realistic textures, natural skin tones, and sharp focus.
-skillVersionId: 019c5fc8-6df6-71b2-8607-ba0867649184
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image editor to turn a provided portrait into a premium, Valentine-themed fashion campaign image by keeping the subject’s facial identity intact while re-staging them in a clean studio set built from oversized plush red heart cushions, directing a relaxed romantic pose, casual-luxury styling, and soft diffused lighting to achieve a refined, high-resolution editorial finish with realistic textures, natural skin tones, and sharp focus.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c5fc8-6df6-71b2-8607-ba0867649184`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `velvet-valentine-heart`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c5fc8-6df6-71b2-8607-ba0867649184 \
+betterprompt generate velvet-valentine-heart \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c5fc8-6df6-71b2-8607-ba0867649184 \
+betterprompt generate velvet-valentine-heart \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
