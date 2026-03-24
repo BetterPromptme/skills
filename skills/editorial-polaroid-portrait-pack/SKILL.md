@@ -1,14 +1,14 @@
 ---
 name: editorial-polaroid-portrait-pack
 description: This prompt instructs an image-generation system to produce a photorealistic, top-down fashion/editorial flat-lay still life featuring a casual collage of six overlapping white-bordered instant photos on a cream textured fabric backdrop, accented with lipstick kiss marks. It specifies strict identity consistency so the same woman appears naturally and unchanged across all Polaroids, while detailing her hair, makeup, outfit, jewelry, and a distinct set of playful expressions and poses for each photo. The expected outcome is a high-resolution, evenly lit, clean, unbranded composition with sharp tactile fabric and film-border detail, cohesive neutral color styling, and an intimate, youthful editorial mood.
-skillVersionId: 019b9257-8a59-711d-8642-92c21aca6fca
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce a photorealistic, top-down fashion/editorial flat-lay still life featuring a casual collage of six overlapping white-bordered instant photos on a cream textured fabric backdrop, accented with lipstick kiss marks. It specifies strict identity consistency so the same woman appears naturally and unchanged across all Polaroids, while detailing her hair, makeup, outfit, jewelry, and a distinct set of playful expressions and poses for each photo. The expected outcome is a high-resolution, evenly lit, clean, unbranded composition with sharp tactile fabric and film-border detail, cohesive neutral color styling, and an intimate, youthful editorial mood.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b9257-8a59-711d-8642-92c21aca6fca`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `editorial-polaroid-portrait-pack`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b9257-8a59-711d-8642-92c21aca6fca \
+betterprompt generate editorial-polaroid-portrait-pack \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b9257-8a59-711d-8642-92c21aca6fca \
+betterprompt generate editorial-polaroid-portrait-pack \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
