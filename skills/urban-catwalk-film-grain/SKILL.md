@@ -1,14 +1,14 @@
 ---
 name: urban-catwalk-film-grain
 description: This prompt instructs an image-generation system to produce a vertical, photoreal high-fashion editorial portrait set in a nighttime urban underpass with a cool green fluorescent 35mm film aesthetic, while enforcing strict identity preservation from a provided reference face. It specifies wardrobe, pose, setting, lighting, framing, and grain/contrast requirements, bans smoothing and any new readable text or logos, and requires the model to stop and request a clearer reference image if the face is not fully visible and sharp.
-skillVersionId: 01998500-9359-7b77-90de-5a42012d5674
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce a vertical, photoreal high-fashion editorial portrait set in a nighttime urban underpass with a cool green fluorescent 35mm film aesthetic, while enforcing strict identity preservation from a provided reference face. It specifies wardrobe, pose, setting, lighting, framing, and grain/contrast requirements, bans smoothing and any new readable text or logos, and requires the model to stop and request a clearer reference image if the face is not fully visible and sharp.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01998500-9359-7b77-90de-5a42012d5674`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `urban-catwalk-film-grain`).
 
 Command form:
 
 ```bash
-betterprompt generate 01998500-9359-7b77-90de-5a42012d5674 \
+betterprompt generate urban-catwalk-film-grain \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01998500-9359-7b77-90de-5a42012d5674 \
+betterprompt generate urban-catwalk-film-grain \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
