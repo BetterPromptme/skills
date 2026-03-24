@@ -1,14 +1,14 @@
 ---
 name: get-concept-suggestions-for-your-event
 description: This prompt instructs the AI to generate three clearly differentiated event concept proposals for a specified event, each tailored to the provided name, message, purpose, and desired style. For every concept, it requires structured details covering the core thematic idea, color palette, modern “magical” lighting approach, music direction, attendee experiences that reinforce the event purpose and brand recognition, and a clear plan for how the stated message is embedded throughout. The outcome is a set of creative yet purpose-driven concepts that remain grounded strictly in the supplied inputs, avoiding unsupported assumptions.
-skillVersionId: 0196e6e0-24c9-706b-bd30-10a8204bd765
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate three clearly differentiated event concept proposals for a specified event, each tailored to the provided name, message, purpose, and desired style. For every concept, it requires structured details covering the core thematic idea, color palette, modern “magical” lighting approach, music direction, attendee experiences that reinforce the event purpose and brand recognition, and a clear plan for how the stated message is embedded throughout. The outcome is a set of creative yet purpose-driven concepts that remain grounded strictly in the supplied inputs, avoiding unsupported assumptions.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196e6e0-24c9-706b-bd30-10a8204bd765`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `get-concept-suggestions-for-your-event`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196e6e0-24c9-706b-bd30-10a8204bd765 \
+betterprompt generate get-concept-suggestions-for-your-event \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196e6e0-24c9-706b-bd30-10a8204bd765 \
+betterprompt generate get-concept-suggestions-for-your-event \
   --input Event_Name=<value> \
   --input Desired_Style=<value> \
   --input Event_Message=<value> \
