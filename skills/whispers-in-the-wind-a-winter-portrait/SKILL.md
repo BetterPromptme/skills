@@ -1,14 +1,14 @@
 ---
 name: whispers-in-the-wind-a-winter-portrait
 description: This prompt instructs the AI to generate an 8K ultra-realistic, cinematic winter portrait in a tight close-up or medium close-up, depicting a woman turning back toward the camera amid wind and falling snow, with precise control over composition, lighting, color palette, wardrobe, texture detail, and emotional tone. It emphasizes razor-sharp focus on the eyes with shallow depth of field, a moody cold atmosphere, and photorealistic rendering of hair motion and snow particles, while requiring the subject’s identity to remain exactly consistent with the provided reference face. The result is an intimate, dramatic fine-art image that feels like a frozen film still—raw, vulnerable, and authentic.
-skillVersionId: 019a6cb3-bbc3-700d-9b3c-1abb9d2eeb62
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate an 8K ultra-realistic, cinematic winter portrait in a tight close-up or medium close-up, depicting a woman turning back toward the camera amid wind and falling snow, with precise control over composition, lighting, color palette, wardrobe, texture detail, and emotional tone. It emphasizes razor-sharp focus on the eyes with shallow depth of field, a moody cold atmosphere, and photorealistic rendering of hair motion and snow particles, while requiring the subject’s identity to remain exactly consistent with the provided reference face. The result is an intimate, dramatic fine-art image that feels like a frozen film still—raw, vulnerable, and authentic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a6cb3-bbc3-700d-9b3c-1abb9d2eeb62`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `whispers-in-the-wind-a-winter-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a6cb3-bbc3-700d-9b3c-1abb9d2eeb62 \
+betterprompt generate whispers-in-the-wind-a-winter-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a6cb3-bbc3-700d-9b3c-1abb9d2eeb62 \
+betterprompt generate whispers-in-the-wind-a-winter-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
