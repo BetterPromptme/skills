@@ -1,14 +1,14 @@
 ---
 name: low-poly-game-avatar-generator
 description: This prompt instructs the AI to look at the provided reference image, identify its primary subject (such as a person, animal, vehicle, or object), and recreate that same subject as a stylized 3D low‑poly/voxel-like avatar. The result is a clean, angular, game-ready digital model that preserves the subject’s visible shape, proportions, colors, and pose while simplifying details into blocky forms, then places it in a modern, softly lit scene with realistic depth-of-field blur—without adding or changing any elements not present in the original image.
-skillVersionId: 01978109-decf-73b1-aa84-9d11a08101aa
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to look at the provided reference image, identify its primary subject (such as a person, animal, vehicle, or object), and recreate that same subject as a stylized 3D low‑poly/voxel-like avatar. The result is a clean, angular, game-ready digital model that preserves the subject’s visible shape, proportions, colors, and pose while simplifying details into blocky forms, then places it in a modern, softly lit scene with realistic depth-of-field blur—without adding or changing any elements not present in the original image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01978109-decf-73b1-aa84-9d11a08101aa`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `low-poly-game-avatar-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 01978109-decf-73b1-aa84-9d11a08101aa \
+betterprompt generate low-poly-game-avatar-generator \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01978109-decf-73b1-aa84-9d11a08101aa \
+betterprompt generate low-poly-game-avatar-generator \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
