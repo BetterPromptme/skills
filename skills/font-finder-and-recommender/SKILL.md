@@ -1,14 +1,14 @@
 ---
 name: font-finder-and-recommender
 description: This prompt instructs the AI to act as a typography expert who examines an uploaded image of text, assesses key visual characteristics (such as serif/sans style, weight, contrast, spacing, and letter shapes), and returns a professional, user-friendly shortlist of at least five likely matching fonts in a numbered list, each with a brief justification and practical substitute options when an exact identification isn’t possible.
-skillVersionId: 01996048-9541-7229-b3df-640822b4c5bc
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a typography expert who examines an uploaded image of text, assesses key visual characteristics (such as serif/sans style, weight, contrast, spacing, and letter shapes), and returns a professional, user-friendly shortlist of at least five likely matching fonts in a numbered list, each with a brief justification and practical substitute options when an exact identification isn’t possible.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01996048-9541-7229-b3df-640822b4c5bc`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `font-finder-and-recommender`).
 
 Command form:
 
 ```bash
-betterprompt generate 01996048-9541-7229-b3df-640822b4c5bc \
+betterprompt generate font-finder-and-recommender \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01996048-9541-7229-b3df-640822b4c5bc \
+betterprompt generate font-finder-and-recommender \
   --image-input-url https://example.com/image1.png \
   --model gpt-5 \
   --options '{}'
