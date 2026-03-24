@@ -1,14 +1,14 @@
 ---
 name: past-and-present-portrait-merge
 description: This prompt directs an image model to generate a photorealistic, vertically framed (9:16) cinematic portrait that places the same person’s present-day self and younger child self together in one nostalgic golden-hour alleyway scene, with strict identity preservation from an input portrait. It specifies exact staging—adult leaning against a wall looking down reflectively, child standing slightly forward looking up curiously—while enforcing a warm, vintage film-still mood with subtle haze and lens flare. The outcome is a timeless, emotionally resonant side-by-side generational image that maintains consistent facial traits, skin texture, and unique features, and adapts clothing style (casual/formal/neutral) without adding modern artifacts, logos, extra characters, or altering the setting.
-skillVersionId: 01999ee5-92bd-7c72-9c69-9fff06f239a6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image model to generate a photorealistic, vertically framed (9:16) cinematic portrait that places the same person’s present-day self and younger child self together in one nostalgic golden-hour alleyway scene, with strict identity preservation from an input portrait. It specifies exact staging—adult leaning against a wall looking down reflectively, child standing slightly forward looking up curiously—while enforcing a warm, vintage film-still mood with subtle haze and lens flare. The outcome is a timeless, emotionally resonant side-by-side generational image that maintains consistent facial traits, skin texture, and unique features, and adapts clothing style (casual/formal/neutral) without adding modern artifacts, logos, extra characters, or altering the setting.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01999ee5-92bd-7c72-9c69-9fff06f239a6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `past-and-present-portrait-merge`).
 
 Command form:
 
 ```bash
-betterprompt generate 01999ee5-92bd-7c72-9c69-9fff06f239a6 \
+betterprompt generate past-and-present-portrait-merge \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01999ee5-92bd-7c72-9c69-9fff06f239a6 \
+betterprompt generate past-and-present-portrait-merge \
   --input 'clothing_style=casual: white T-shirt and jeans, light sweater  ' \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
