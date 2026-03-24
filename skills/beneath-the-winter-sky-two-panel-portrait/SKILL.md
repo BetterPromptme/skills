@@ -1,14 +1,14 @@
 ---
 name: beneath-the-winter-sky-two-panel-portrait
 description: This prompt directs an image model to generate a photorealistic, cinematic 4K vertical diptych set in a serene blue-hour winter landscape, depicting the same unaltered subject consistently across two stacked panels: a wide full-body scene emphasizing scale and solitude, and a tight emotional close-up highlighting cold-weather details like breath vapor, snowflakes, and flushed skin. It specifies environment, wardrobe, props, lighting, lenses, color palette, mood, and composition to ensure tonal continuity, realistic texture, and a cohesive two-image narrative that balances expansive scenery with intimate human emotion.
-skillVersionId: 019a4cb1-20bf-762b-8bad-4849a2104206
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image model to generate a photorealistic, cinematic 4K vertical diptych set in a serene blue-hour winter landscape, depicting the same unaltered subject consistently across two stacked panels: a wide full-body scene emphasizing scale and solitude, and a tight emotional close-up highlighting cold-weather details like breath vapor, snowflakes, and flushed skin. It specifies environment, wardrobe, props, lighting, lenses, color palette, mood, and composition to ensure tonal continuity, realistic texture, and a cohesive two-image narrative that balances expansive scenery with intimate human emotion.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a4cb1-20bf-762b-8bad-4849a2104206`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `beneath-the-winter-sky-two-panel-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a4cb1-20bf-762b-8bad-4849a2104206 \
+betterprompt generate beneath-the-winter-sky-two-panel-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a4cb1-20bf-762b-8bad-4849a2104206 \
+betterprompt generate beneath-the-winter-sky-two-panel-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
