@@ -1,14 +1,14 @@
 ---
 name: golden-diagonal-quiet-classroom
 description: This prompt directs an image model to generate a campaign-ready, cinematic portrait set in a vintage classroom while strictly preserving the subject’s exact facial identity from a supplied, clear front-facing reference photo. It enforces a locked warm “Classic Chrome” film look with specific lighting (a diagonal golden window key), fixed composition and props, uniform sharpness with analog grain, and a tightly constrained color palette, producing either a male or female wardrobe variant; if the reference image is insufficient for reliable face locking, it halts and requests a clearer photo.
-skillVersionId: 01995b31-f6e2-75e6-af29-1276643ffc0a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image model to generate a campaign-ready, cinematic portrait set in a vintage classroom while strictly preserving the subject’s exact facial identity from a supplied, clear front-facing reference photo. It enforces a locked warm “Classic Chrome” film look with specific lighting (a diagonal golden window key), fixed composition and props, uniform sharpness with analog grain, and a tightly constrained color palette, producing either a male or female wardrobe variant; if the reference image is insufficient for reliable face locking, it halts and requests a clearer photo.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01995b31-f6e2-75e6-af29-1276643ffc0a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `golden-diagonal-quiet-classroom`).
 
 Command form:
 
 ```bash
-betterprompt generate 01995b31-f6e2-75e6-af29-1276643ffc0a \
+betterprompt generate golden-diagonal-quiet-classroom \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01995b31-f6e2-75e6-af29-1276643ffc0a \
+betterprompt generate golden-diagonal-quiet-classroom \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
