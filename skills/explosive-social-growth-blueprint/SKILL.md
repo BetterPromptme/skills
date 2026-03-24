@@ -1,14 +1,14 @@
 ---
 name: explosive-social-growth-blueprint
 description: This prompt instructs the AI to act as a high-level viral content strategist and build a repeatable, daily content engine tailored to a specified niche, platform, audience, and style. The outcome is a practical growth blueprint that outlines proven viral content patterns, the optimal posting cadence and format mix, the key psychological and visual triggers to drive attention and shares, and concrete tactics to increase authentic reach and engagement over time.
-skillVersionId: 0197c909-02a3-7e55-ac05-2455504fca38
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a high-level viral content strategist and build a repeatable, daily content engine tailored to a specified niche, platform, audience, and style. The outcome is a practical growth blueprint that outlines proven viral content patterns, the optimal posting cadence and format mix, the key psychological and visual triggers to drive attention and shares, and concrete tactics to increase authentic reach and engagement over time.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c909-02a3-7e55-ac05-2455504fca38`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `explosive-social-growth-blueprint`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c909-02a3-7e55-ac05-2455504fca38 \
+betterprompt generate explosive-social-growth-blueprint \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c909-02a3-7e55-ac05-2455504fca38 \
+betterprompt generate explosive-social-growth-blueprint \
   --input Style=<value> \
   --input The_platform=<value> \
   --input Target_audience=<value> \
