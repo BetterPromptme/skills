@@ -1,14 +1,14 @@
 ---
 name: courtside-cart-editorial
 description: This prompt instructs an image-generation model to produce a high-end fashion editorial portrait shot from a low angle, featuring a person reclining in an empty shopping cart filled with tennis balls on a blue clay tennis court. It specifies the subject’s minimalist sportswear, the autumnal court details and chain-link fence backdrop, and an overcast natural-light mood to achieve a soft, cinematic, magazine-style photograph in high resolution with natural textures and balanced contrast, while ensuring no visible text, logos, or graphic elements.
-skillVersionId: 019c0df8-e47f-72e9-9643-18c1d8329969
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to produce a high-end fashion editorial portrait shot from a low angle, featuring a person reclining in an empty shopping cart filled with tennis balls on a blue clay tennis court. It specifies the subject’s minimalist sportswear, the autumnal court details and chain-link fence backdrop, and an overcast natural-light mood to achieve a soft, cinematic, magazine-style photograph in high resolution with natural textures and balanced contrast, while ensuring no visible text, logos, or graphic elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c0df8-e47f-72e9-9643-18c1d8329969`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `courtside-cart-editorial`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c0df8-e47f-72e9-9643-18c1d8329969 \
+betterprompt generate courtside-cart-editorial \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c0df8-e47f-72e9-9643-18c1d8329969 \
+betterprompt generate courtside-cart-editorial \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{"aspectRatio":"3:4"}'
