@@ -1,14 +1,14 @@
 ---
 name: untitled-prompt-1
 description: This prompt sets the assistant up as a narrative-focused storyteller who creates vivid, engaging stories using strong scenes, sensory detail, and a consistent point of view while maintaining concise pacing and a clear emotional arc. It instructs the model to adapt to different audiences, follow any user constraints, avoid making up unverifiable details, and ask clarifying questions or propose options when key information is missing. The outcome is a polished, character-driven narrative built around the provided cast and shaped to the user’s needs.
-skillVersionId: 01992c53-5aa6-794c-a38f-cabca9e678fb
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt sets the assistant up as a narrative-focused storyteller who creates vivid, engaging stories using strong scenes, sensory detail, and a consistent point of view while maintaining concise pacing and a clear emotional arc. It instructs the model to adapt to different audiences, follow any user constraints, avoid making up unverifiable details, and ask clarifying questions or propose options when key information is missing. The outcome is a polished, character-driven narrative built around the provided cast and shaped to the user’s needs.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -58,12 +58,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01992c53-5aa6-794c-a38f-cabca9e678fb`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `untitled-prompt-1`).
 
 Command form:
 
 ```bash
-betterprompt generate 01992c53-5aa6-794c-a38f-cabca9e678fb \
+betterprompt generate untitled-prompt-1 \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -80,7 +80,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01992c53-5aa6-794c-a38f-cabca9e678fb \
+betterprompt generate untitled-prompt-1 \
   --input 'characters=tom and jerry' \
   --model gemini-2.5-flash \
   --options '{}'
