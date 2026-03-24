@@ -1,14 +1,14 @@
 ---
 name: the-midnight-gala-dossier
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic luxury editorial interior portrait of a young woman in a refined hallway setting, with strict requirements to preserve her exact facial identity while specifying precise composition, pose, wardrobe (including an open-back black evening dress and branded clutch), environment details (console table, mirror reflection, lamp, exit sign), and warm ambient lighting to achieve an elegant, calm, fashion-forward evening mood.
-skillVersionId: 019c3759-b250-7614-bb86-678523ca6911
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a high-resolution, photorealistic luxury editorial interior portrait of a young woman in a refined hallway setting, with strict requirements to preserve her exact facial identity while specifying precise composition, pose, wardrobe (including an open-back black evening dress and branded clutch), environment details (console table, mirror reflection, lamp, exit sign), and warm ambient lighting to achieve an elegant, calm, fashion-forward evening mood.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c3759-b250-7614-bb86-678523ca6911`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-midnight-gala-dossier`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c3759-b250-7614-bb86-678523ca6911 \
+betterprompt generate the-midnight-gala-dossier \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c3759-b250-7614-bb86-678523ca6911 \
+betterprompt generate the-midnight-gala-dossier \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
