@@ -1,14 +1,14 @@
 ---
 name: playful-vintage-tomato-glam-studio-portrait
 description: This prompt instructs an AI image editor to take an uploaded selfie or portrait and restyle it into a high-end, vintage-inspired studio beauty editorial with a clean white backdrop, soft flattering lighting, and polished-yet-natural retouching. The subject is dressed with a delicate lace headscarf and soft glam makeup, posed in an upper-body frame holding two fresh red tomatoes symmetrically near the face with a playful expression (wink or flirty gaze). The intended outcome is a bright, feminine, modern Asian–influenced editorial portrait that stays realistic and high-resolution while avoiding distortions, extra limbs, heavy smoothing, text, logos, or any explicit content.
-skillVersionId: 019c2d3a-009e-755d-83dd-9a0f1968ccd7
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image editor to take an uploaded selfie or portrait and restyle it into a high-end, vintage-inspired studio beauty editorial with a clean white backdrop, soft flattering lighting, and polished-yet-natural retouching. The subject is dressed with a delicate lace headscarf and soft glam makeup, posed in an upper-body frame holding two fresh red tomatoes symmetrically near the face with a playful expression (wink or flirty gaze). The intended outcome is a bright, feminine, modern Asian–influenced editorial portrait that stays realistic and high-resolution while avoiding distortions, extra limbs, heavy smoothing, text, logos, or any explicit content.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c2d3a-009e-755d-83dd-9a0f1968ccd7`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `playful-vintage-tomato-glam-studio-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c2d3a-009e-755d-83dd-9a0f1968ccd7 \
+betterprompt generate playful-vintage-tomato-glam-studio-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c2d3a-009e-755d-83dd-9a0f1968ccd7 \
+betterprompt generate playful-vintage-tomato-glam-studio-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
