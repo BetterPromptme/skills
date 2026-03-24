@@ -1,14 +1,14 @@
 ---
 name: personal-wealth-map-a-12-month-ai-budget-and-finance-planner
 description: This prompt has the AI use your stated salary (and any provided income/expense, debt, and goal details) to pinpoint overspending, build a 50/30/20 budget, specify exact monthly amounts to save/invest/spend, set a 3‑month emergency fund target with a fast timeline, suggest starter investing options under $100/month, create a debt-payoff strategy that balances high-interest repayment with continued saving, and output a clear 12‑month financial roadmap with actionable numbers and steps.
-skillVersionId: 019840b2-ab36-76de-a6ab-8a5757bfbed1
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt has the AI use your stated salary (and any provided income/expense, debt, and goal details) to pinpoint overspending, build a 50/30/20 budget, specify exact monthly amounts to save/invest/spend, set a 3‑month emergency fund target with a fast timeline, suggest starter investing options under $100/month, create a debt-payoff strategy that balances high-interest repayment with continued saving, and output a clear 12‑month financial roadmap with actionable numbers and steps.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019840b2-ab36-76de-a6ab-8a5757bfbed1`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `personal-wealth-map-a-12-month-ai-budget-and-finance-planner`).
 
 Command form:
 
 ```bash
-betterprompt generate 019840b2-ab36-76de-a6ab-8a5757bfbed1 \
+betterprompt generate personal-wealth-map-a-12-month-ai-budget-and-finance-planner \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019840b2-ab36-76de-a6ab-8a5757bfbed1 \
+betterprompt generate personal-wealth-map-a-12-month-ai-budget-and-finance-planner \
   --input Your_salary=<value> \
   --model gpt-4.1-mini \
   --options '{}'
