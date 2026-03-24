@@ -1,14 +1,14 @@
 ---
 name: 5-email-webinar-sales-sequence
 description: This prompt instructs the AI to act as an experienced email marketing strategist and produce a five-part webinar promotion sequence (announcement, reminder, value tip, last call, and day-of reminder) tailored to the event timeline, delivering for each email a subject line, preview text, and a complete body designed to maximize engagement, clicks, and registrations, outputting only the finished email scripts.
-skillVersionId: 0198a22c-c08d-77dd-bc6a-63e646965d5a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an experienced email marketing strategist and produce a five-part webinar promotion sequence (announcement, reminder, value tip, last call, and day-of reminder) tailored to the event timeline, delivering for each email a subject line, preview text, and a complete body designed to maximize engagement, clicks, and registrations, outputting only the finished email scripts.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198a22c-c08d-77dd-bc6a-63e646965d5a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `5-email-webinar-sales-sequence`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198a22c-c08d-77dd-bc6a-63e646965d5a \
+betterprompt generate 5-email-webinar-sales-sequence \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198a22c-c08d-77dd-bc6a-63e646965d5a \
+betterprompt generate 5-email-webinar-sales-sequence \
   --input days_until_event=<value> \
   --input Your_Webinar_Title=<value> \
   --model gpt-5 \
