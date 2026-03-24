@@ -1,14 +1,14 @@
 ---
 name: kaizen-habit-architect
 description: This prompt instructs an AI to act as a Kaizen-focused system architect who first assesses a user’s current routines and constraints, then designs a personalized continuous-improvement protocol built from 1–3 trivial micro-changes, friction-reducing environmental tweaks, and simple measurement methods. The intended outcome is an actionable, ritualized plan tied to existing habits, with a conservative 30+ day review cycle that iterates based on data rather than motivation or dramatic overhauls.
-skillVersionId: 0197c924-caec-7d43-aa83-526020eb589f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to act as a Kaizen-focused system architect who first assesses a user’s current routines and constraints, then designs a personalized continuous-improvement protocol built from 1–3 trivial micro-changes, friction-reducing environmental tweaks, and simple measurement methods. The intended outcome is an actionable, ritualized plan tied to existing habits, with a conservative 30+ day review cycle that iterates based on data rather than motivation or dramatic overhauls.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c924-caec-7d43-aa83-526020eb589f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `kaizen-habit-architect`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c924-caec-7d43-aa83-526020eb589f \
+betterprompt generate kaizen-habit-architect \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c924-caec-7d43-aa83-526020eb589f \
+betterprompt generate kaizen-habit-architect \
   --input What_you_want_to_improve?=<value> \
   --model gpt-4.1-mini \
   --options '{}'
