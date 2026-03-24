@@ -1,14 +1,14 @@
 ---
 name: cinematic-nighttime-fashion-portrait
 description: This prompt instructs an image model to generate a high-end, cinematic nighttime fashion editorial portrait on an urban sidewalk, featuring either a woman in a refined white strapless evening dress or a man in a tailored white suit, with hair color matching a provided reference. The subject is captured mid-turn in tight upper-body framing, with a calm, confident expression, warm directional lighting, and a controlled ghosted motion-blur effect while keeping the face sharp. The result is an intimate, off-center, realistic fashion photograph with bokeh city lights, subtle greenery and architecture for depth, and strict avoidance of daytime, studio looks, full-body views, heavy retouching, or non-photoreal styles.
-skillVersionId: 019b25ef-e981-75de-9e8a-ed1e05a53519
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a high-end, cinematic nighttime fashion editorial portrait on an urban sidewalk, featuring either a woman in a refined white strapless evening dress or a man in a tailored white suit, with hair color matching a provided reference. The subject is captured mid-turn in tight upper-body framing, with a calm, confident expression, warm directional lighting, and a controlled ghosted motion-blur effect while keeping the face sharp. The result is an intimate, off-center, realistic fashion photograph with bokeh city lights, subtle greenery and architecture for depth, and strict avoidance of daytime, studio looks, full-body views, heavy retouching, or non-photoreal styles.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b25ef-e981-75de-9e8a-ed1e05a53519`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cinematic-nighttime-fashion-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b25ef-e981-75de-9e8a-ed1e05a53519 \
+betterprompt generate cinematic-nighttime-fashion-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b25ef-e981-75de-9e8a-ed1e05a53519 \
+betterprompt generate cinematic-nighttime-fashion-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
