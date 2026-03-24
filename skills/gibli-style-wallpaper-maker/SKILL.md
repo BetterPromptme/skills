@@ -1,14 +1,14 @@
 ---
 name: gibli-style-wallpaper-maker
 description: This prompt directs the AI to generate an original, high‑resolution wallpaper with a soft, painterly, magical animation-inspired look, using a user-specified scene description and either a phone-tall or 4K desktop-wide composition. It emphasizes warm, nostalgic atmosphere, lush natural colors, clear foreground/midground/background depth, and subtle signs of life like wind or small creatures while avoiding text and any copyrighted characters or recognizable locations. The expected outcome is a clean, balanced, wallpaper-ready illustration tailored precisely to the chosen format.
-skillVersionId: 019afd79-595f-740e-acc7-151851f71ffe
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs the AI to generate an original, high‑resolution wallpaper with a soft, painterly, magical animation-inspired look, using a user-specified scene description and either a phone-tall or 4K desktop-wide composition. It emphasizes warm, nostalgic atmosphere, lush natural colors, clear foreground/midground/background depth, and subtle signs of life like wind or small creatures while avoiding text and any copyrighted characters or recognizable locations. The expected outcome is a clean, balanced, wallpaper-ready illustration tailored precisely to the chosen format.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -63,12 +63,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019afd79-595f-740e-acc7-151851f71ffe`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `gibli-style-wallpaper-maker`).
 
 Command form:
 
 ```bash
-betterprompt generate 019afd79-595f-740e-acc7-151851f71ffe \
+betterprompt generate gibli-style-wallpaper-maker \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -85,7 +85,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019afd79-595f-740e-acc7-151851f71ffe \
+betterprompt generate gibli-style-wallpaper-maker \
   --input format=Phone \
   --input scene_description=<value> \
   --model gemini-3-pro-image-preview \
