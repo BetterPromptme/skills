@@ -1,14 +1,14 @@
 ---
 name: virtual-hair-test-fit
 description: This prompt instructs an AI image editor to take a user-provided portrait and seamlessly replace only the subject’s hair with a user-specified hairstyle, producing a high-fidelity, photorealistic result. It emphasizes preserving the person’s identity and all non-hair elements (face, skin, expression, background, clothing, lighting setup) while integrating the new hair with accurate hairline placement, natural texture, and consistent lighting and shadows. The intended outcome is an image that looks like an untouched real photograph of the same person, differing only in hairstyle and avoiding artifacts, stylization, or unintended enhancements.
-skillVersionId: 019b0733-f0f9-735d-9028-5dadb47c459e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image editor to take a user-provided portrait and seamlessly replace only the subject’s hair with a user-specified hairstyle, producing a high-fidelity, photorealistic result. It emphasizes preserving the person’s identity and all non-hair elements (face, skin, expression, background, clothing, lighting setup) while integrating the new hair with accurate hairline placement, natural texture, and consistent lighting and shadows. The intended outcome is an image that looks like an untouched real photograph of the same person, differing only in hairstyle and avoiding artifacts, stylization, or unintended enhancements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b0733-f0f9-735d-9028-5dadb47c459e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `virtual-hair-test-fit`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b0733-f0f9-735d-9028-5dadb47c459e \
+betterprompt generate virtual-hair-test-fit \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b0733-f0f9-735d-9028-5dadb47c459e \
+betterprompt generate virtual-hair-test-fit \
   --input Hairstyle_request=<value> \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
