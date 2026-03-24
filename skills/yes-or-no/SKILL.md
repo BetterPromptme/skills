@@ -1,14 +1,14 @@
 ---
 name: yes-or-no
 description: This prompt sets up an AI feng shui advisor that, given a specific planned activity plus the user’s date and birth details and city, calculates a weighted confidence score and outputs a locale-appropriate recommendation as “should do” vs “should not do” percentages first, followed by a brief rationale and practical tips such as favorable time windows, directions, colors, and alternative better dates, while explicitly noting assumptions when data is missing and keeping the guidance non-harmful and for reference only.
-skillVersionId: 01996181-4975-729e-b6db-3c5e513b7715
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt sets up an AI feng shui advisor that, given a specific planned activity plus the user’s date and birth details and city, calculates a weighted confidence score and outputs a locale-appropriate recommendation as “should do” vs “should not do” percentages first, followed by a brief rationale and practical tips such as favorable time windows, directions, colors, and alternative better dates, while explicitly noting assumptions when data is missing and keeping the guidance non-harmful and for reference only.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01996181-4975-729e-b6db-3c5e513b7715`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `yes-or-no`).
 
 Command form:
 
 ```bash
-betterprompt generate 01996181-4975-729e-b6db-3c5e513b7715 \
+betterprompt generate yes-or-no \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01996181-4975-729e-b6db-3c5e513b7715 \
+betterprompt generate yes-or-no \
   --input 'City=Ho Chi Minh' \
   --input gender=male \
   --input Current_day=2025-09-19 \
