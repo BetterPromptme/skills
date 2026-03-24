@@ -1,14 +1,14 @@
 ---
 name: change-the-camera-angle
 description: This prompt instructs the AI to edit an existing image by changing the camera angle to a high-angle selfie viewpoint looking down at the woman, while keeping her face, expression, and outfit unchanged. It also requires the living room setting to remain consistent—preserving the sofa, natural lighting, and the original photo’s composition and style—so the final result looks like the same scene captured from a new perspective.
-skillVersionId: 019917fa-aaaf-725a-b79c-e2420b8c5e1f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to edit an existing image by changing the camera angle to a high-angle selfie viewpoint looking down at the woman, while keeping her face, expression, and outfit unchanged. It also requires the living room setting to remain consistent—preserving the sofa, natural lighting, and the original photo’s composition and style—so the final result looks like the same scene captured from a new perspective.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019917fa-aaaf-725a-b79c-e2420b8c5e1f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `change-the-camera-angle`).
 
 Command form:
 
 ```bash
-betterprompt generate 019917fa-aaaf-725a-b79c-e2420b8c5e1f \
+betterprompt generate change-the-camera-angle \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019917fa-aaaf-725a-b79c-e2420b8c5e1f \
+betterprompt generate change-the-camera-angle \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
