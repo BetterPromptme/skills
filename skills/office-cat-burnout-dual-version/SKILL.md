@@ -1,14 +1,14 @@
 ---
 name: office-cat-burnout-dual-version
 description: This prompt instructs an AI image generator to produce an ultra-realistic, cinematic-comedy office portrait in very high resolution: a close, wide-angle selfie-style shot where a grumpy orange tabby cat dominates the frame, extending a paw as if taking a selfie while sipping iced black coffee, with harsh fluorescent lighting and detailed textures. It also specifies an old, cluttered cubicle environment and a bored, overworked coworker in the background (male or female), posed with exhausted body language and business-casual styling, resulting in a believable yet meme-worthy scene that contrasts human office burnout with a cat acting like a stressed employee.
-skillVersionId: 019a70db-0c0f-7740-9e51-a31ca3c395a9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce an ultra-realistic, cinematic-comedy office portrait in very high resolution: a close, wide-angle selfie-style shot where a grumpy orange tabby cat dominates the frame, extending a paw as if taking a selfie while sipping iced black coffee, with harsh fluorescent lighting and detailed textures. It also specifies an old, cluttered cubicle environment and a bored, overworked coworker in the background (male or female), posed with exhausted body language and business-casual styling, resulting in a believable yet meme-worthy scene that contrasts human office burnout with a cat acting like a stressed employee.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a70db-0c0f-7740-9e51-a31ca3c395a9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `office-cat-burnout-dual-version`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a70db-0c0f-7740-9e51-a31ca3c395a9 \
+betterprompt generate office-cat-burnout-dual-version \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a70db-0c0f-7740-9e51-a31ca3c395a9 \
+betterprompt generate office-cat-burnout-dual-version \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
