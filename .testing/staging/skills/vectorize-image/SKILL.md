@@ -1,14 +1,14 @@
 ---
 name: vectorize-image
 description: This prompt instructs the AI to take a provided portrait photo and transform it into a high-contrast black-and-white ink line illustration with a clean, vector-like comic book aesthetic. The result should feature bold outlines, minimal shading, a realistic-yet-stylized look, and a plain white background, with the assistant requesting any missing details needed to match the desired style.
-skillVersionId: 0199a843-a5ee-7167-a8a4-8e7f8e91dd3d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take a provided portrait photo and transform it into a high-contrast black-and-white ink line illustration with a clean, vector-like comic book aesthetic. The result should feature bold outlines, minimal shading, a realistic-yet-stylized look, and a plain white background, with the assistant requesting any missing details needed to match the desired style.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199a843-a5ee-7167-a8a4-8e7f8e91dd3d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `vectorize-image`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199a843-a5ee-7167-a8a4-8e7f8e91dd3d \
+betterprompt generate vectorize-image \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199a843-a5ee-7167-a8a4-8e7f8e91dd3d \
+betterprompt generate vectorize-image \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":0},"quality":"low"}'
