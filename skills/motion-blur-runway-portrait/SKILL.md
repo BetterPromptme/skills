@@ -1,14 +1,14 @@
 ---
 name: motion-blur-runway-portrait
 description: This prompt instructs an AI image editor to convert a simple portrait into a high-resolution, vertical editorial fashion scene where the same subject appears as a full-body, side-profile figure walking mid-stride, with dramatic long-exposure motion-blur trails on the body and clothing while keeping the face sharp and identity-accurate. It specifies a clean, minimal studio-like background, cinematic cool-toned grading, and strict constraints (no facial/skin/hair changes, no clutter, no logos), culminating in an exact 1080×1920 output that reads like a runway-style magazine photograph.
-skillVersionId: 01997b11-d91d-7e49-8f20-49d70a471a95
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image editor to convert a simple portrait into a high-resolution, vertical editorial fashion scene where the same subject appears as a full-body, side-profile figure walking mid-stride, with dramatic long-exposure motion-blur trails on the body and clothing while keeping the face sharp and identity-accurate. It specifies a clean, minimal studio-like background, cinematic cool-toned grading, and strict constraints (no facial/skin/hair changes, no clutter, no logos), culminating in an exact 1080×1920 output that reads like a runway-style magazine photograph.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01997b11-d91d-7e49-8f20-49d70a471a95`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `motion-blur-runway-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 01997b11-d91d-7e49-8f20-49d70a471a95 \
+betterprompt generate motion-blur-runway-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01997b11-d91d-7e49-8f20-49d70a471a95 \
+betterprompt generate motion-blur-runway-portrait \
   --input 'outfit=black turtleneck with slim trousers, minimal design.' \
   --input 'background=smooth grey-to-black gradient studio wall.' \
   --image-input-url https://example.com/image1.png \
