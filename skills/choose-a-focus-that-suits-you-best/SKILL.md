@@ -1,14 +1,14 @@
 ---
 name: choose-a-focus-that-suits-you-best
 description: This prompt asks the AI to use the user’s year in school, major, and chosen subject to recommend advanced, research-oriented topics aligned with current trends in that field. The result is a tailored shortlist of specialized areas to explore—typically highlighting emerging subfields, key methods or technologies, and promising research directions suited to the user’s background and goals.
-skillVersionId: 019780e6-f9b0-7bbc-8e46-6f32fa9dd592
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to use the user’s year in school, major, and chosen subject to recommend advanced, research-oriented topics aligned with current trends in that field. The result is a tailored shortlist of specialized areas to explore—typically highlighting emerging subfields, key methods or technologies, and promising research directions suited to the user’s background and goals.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019780e6-f9b0-7bbc-8e46-6f32fa9dd592`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `choose-a-focus-that-suits-you-best`).
 
 Command form:
 
 ```bash
-betterprompt generate 019780e6-f9b0-7bbc-8e46-6f32fa9dd592 \
+betterprompt generate choose-a-focus-that-suits-you-best \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019780e6-f9b0-7bbc-8e46-6f32fa9dd592 \
+betterprompt generate choose-a-focus-that-suits-you-best \
   --input YEAR=<value> \
   --input MAJOR=<value> \
   --input SUBJECT=<value> \
