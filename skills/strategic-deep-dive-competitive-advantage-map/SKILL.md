@@ -1,14 +1,14 @@
 ---
 name: strategic-deep-dive-competitive-advantage-map
 description: This prompt instructs the AI to act as a strategy consultant and produce a structured competitive-and-growth assessment for a specified company, using the provided business context to identify key direct competitors and adjacent disruptors, summarize their positioning/pricing/recent moves, and then surface at least five untapped growth or profitability levers for the company. It then requires the AI to score each lever on impact and feasibility, recommend the top three actions by combined score, and return the results in a strict XML format along with a list of supporting sources, explicitly noting when required information cannot be found.
-skillVersionId: 0197c92d-765a-70d6-8040-a664d7b07141
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a strategy consultant and produce a structured competitive-and-growth assessment for a specified company, using the provided business context to identify key direct competitors and adjacent disruptors, summarize their positioning/pricing/recent moves, and then surface at least five untapped growth or profitability levers for the company. It then requires the AI to score each lever on impact and feasibility, recommend the top three actions by combined score, and return the results in a strict XML format along with a list of supporting sources, explicitly noting when required information cannot be found.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c92d-765a-70d6-8040-a664d7b07141`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `strategic-deep-dive-competitive-advantage-map`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c92d-765a-70d6-8040-a664d7b07141 \
+betterprompt generate strategic-deep-dive-competitive-advantage-map \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c92d-765a-70d6-8040-a664d7b07141 \
+betterprompt generate strategic-deep-dive-competitive-advantage-map \
   --input INDUSTRY=<value> \
   --input COMPANY_NAME=<value> \
   --input current_focus=<value> \
