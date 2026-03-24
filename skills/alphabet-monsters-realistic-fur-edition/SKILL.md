@@ -1,14 +1,14 @@
 ---
 name: alphabet-monsters-realistic-fur-edition
 description: This prompt instructs an image model to generate a highly realistic 3D studio render of a single chosen capital letter transformed into a fluffy monster, where the letter itself is the full body and facial features are integrated into its shape. It specifies the monster’s emotion, realistic dense fur material, bold solid-color palette, clean pastel backdrop, and minimal character-focused composition without extra props, resulting in a polished, playful letter-creature design.
-skillVersionId: 0197c3fb-e01c-7bca-b91f-a35a358e77ff
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a highly realistic 3D studio render of a single chosen capital letter transformed into a fluffy monster, where the letter itself is the full body and facial features are integrated into its shape. It specifies the monster’s emotion, realistic dense fur material, bold solid-color palette, clean pastel backdrop, and minimal character-focused composition without extra props, resulting in a polished, playful letter-creature design.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c3fb-e01c-7bca-b91f-a35a358e77ff`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `alphabet-monsters-realistic-fur-edition`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c3fb-e01c-7bca-b91f-a35a358e77ff \
+betterprompt generate alphabet-monsters-realistic-fur-edition \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c3fb-e01c-7bca-b91f-a35a358e77ff \
+betterprompt generate alphabet-monsters-realistic-fur-edition \
   --input the letter [A-Z]=<value> \
   --input Expresses of The monster=<value> \
   --model gpt-image-1 \
