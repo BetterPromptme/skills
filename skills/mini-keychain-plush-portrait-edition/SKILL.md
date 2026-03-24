@@ -1,14 +1,14 @@
 ---
 name: mini-keychain-plush-portrait-edition
 description: This prompt instructs the AI to generate a square, studio-style close-up image of a cute handcrafted plush keychain resembling the referenced character, held between two fingers, with soft felt-like texture, embroidered facial details, a shiny silver keyring, and a neutral beige background using shallow depth of field and soft natural lighting to produce a highly detailed, cozy product-photography result.
-skillVersionId: 019785e8-0c59-7772-a9af-46a4407726fa
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a square, studio-style close-up image of a cute handcrafted plush keychain resembling the referenced character, held between two fingers, with soft felt-like texture, embroidered facial details, a shiny silver keyring, and a neutral beige background using shallow depth of field and soft natural lighting to produce a highly detailed, cozy product-photography result.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019785e8-0c59-7772-a9af-46a4407726fa`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `mini-keychain-plush-portrait-edition`).
 
 Command form:
 
 ```bash
-betterprompt generate 019785e8-0c59-7772-a9af-46a4407726fa \
+betterprompt generate mini-keychain-plush-portrait-edition \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019785e8-0c59-7772-a9af-46a4407726fa \
+betterprompt generate mini-keychain-plush-portrait-edition \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
