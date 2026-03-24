@@ -1,14 +1,14 @@
 ---
 name: lego-bouquets-by-betterprompt
 description: This prompt directs an image generation task to create a vertical, cinematic product-photography scene of a hyper-realistic LEGO bouquet featuring a specified flower type and color, complete with translucent petals, realistic stems, elegant pastel wrapping, a glowing brick base, and a minifigure holding a matching flower, set against a dark minimal background with ambient glow and a branded packaging box displaying the same flower label.
-skillVersionId: 01987edc-4af6-7cd9-a04b-ee4ccc436755
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image generation task to create a vertical, cinematic product-photography scene of a hyper-realistic LEGO bouquet featuring a specified flower type and color, complete with translucent petals, realistic stems, elegant pastel wrapping, a glowing brick base, and a minifigure holding a matching flower, set against a dark minimal background with ambient glow and a branded packaging box displaying the same flower label.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01987edc-4af6-7cd9-a04b-ee4ccc436755`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `lego-bouquets-by-betterprompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 01987edc-4af6-7cd9-a04b-ee4ccc436755 \
+betterprompt generate lego-bouquets-by-betterprompt \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01987edc-4af6-7cd9-a04b-ee4ccc436755 \
+betterprompt generate lego-bouquets-by-betterprompt \
   --input Flowers_and_color=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
