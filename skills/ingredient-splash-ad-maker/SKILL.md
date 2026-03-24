@@ -1,14 +1,14 @@
 ---
 name: ingredient-splash-ad-maker
 description: This prompt instructs an AI to turn an uploaded product photo into a luxury skincare-style advertising image by keeping the product clean, centered, and hero-lit while adding premium 3D ingredient elements and dynamic liquid splash effects that match specified ingredients, background color mood, and material, resulting in an ultra‑high‑definition, studio-lit visual with a smooth gradient backdrop, glossy highlights, soft shadows, and cinematic depth of field suitable for commercial campaign use.
-skillVersionId: 019aeda3-0b32-739d-bc5b-31847ec15e4f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to turn an uploaded product photo into a luxury skincare-style advertising image by keeping the product clean, centered, and hero-lit while adding premium 3D ingredient elements and dynamic liquid splash effects that match specified ingredients, background color mood, and material, resulting in an ultra‑high‑definition, studio-lit visual with a smooth gradient backdrop, glossy highlights, soft shadows, and cinematic depth of field suitable for commercial campaign use.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -75,12 +75,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019aeda3-0b32-739d-bc5b-31847ec15e4f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ingredient-splash-ad-maker`).
 
 Command form:
 
 ```bash
-betterprompt generate 019aeda3-0b32-739d-bc5b-31847ec15e4f \
+betterprompt generate ingredient-splash-ad-maker \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -101,7 +101,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019aeda3-0b32-739d-bc5b-31847ec15e4f \
+betterprompt generate ingredient-splash-ad-maker \
   --input Material=<value> \
   --input Background_color=<value> \
   --input Main_Ingredients=<value> \
