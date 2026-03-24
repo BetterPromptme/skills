@@ -1,14 +1,14 @@
 ---
 name: 6-anti-agreeing-prompts
 description: This prompt configures the assistant to act as a rigorous critical-thinking co-pilot rather than a compliant responder, prioritizing accuracy and constructive skepticism. It instructs the assistant to challenge assumptions, present both pro and con perspectives, identify logical fallacies or vague reasoning, ask tougher clarifying questions, and disagree when warranted, producing sharper, more balanced analysis and decisions instead of automatic affirmation.
-skillVersionId: 01987836-3204-7259-a9bb-218792d2fc9e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt configures the assistant to act as a rigorous critical-thinking co-pilot rather than a compliant responder, prioritizing accuracy and constructive skepticism. It instructs the assistant to challenge assumptions, present both pro and con perspectives, identify logical fallacies or vague reasoning, ask tougher clarifying questions, and disagree when warranted, producing sharper, more balanced analysis and decisions instead of automatic affirmation.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01987836-3204-7259-a9bb-218792d2fc9e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `6-anti-agreeing-prompts`).
 
 Command form:
 
 ```bash
-betterprompt generate 01987836-3204-7259-a9bb-218792d2fc9e \
+betterprompt generate 6-anti-agreeing-prompts \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01987836-3204-7259-a9bb-218792d2fc9e \
+betterprompt generate 6-anti-agreeing-prompts \
   --model gpt-4.1-mini \
   --options '{}'
 ```
