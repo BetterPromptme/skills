@@ -1,14 +1,14 @@
 ---
 name: amigurumi-in-hands-cozy-close-up
 description: This prompt instructs an AI to generate a close-up, professional-style photograph of a handmade crocheted chibi yarn doll being gently held in both hands, emphasizing realistic skin texture, soft natural lighting, shallow depth of field, and a warm indoor setting. The intended result is a cozy, heartwarming image that highlights craftsmanship through vivid color, fine detail, and tender human interaction.
-skillVersionId: 01991812-3185-7acc-a191-25aa05a8615a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate a close-up, professional-style photograph of a handmade crocheted chibi yarn doll being gently held in both hands, emphasizing realistic skin texture, soft natural lighting, shallow depth of field, and a warm indoor setting. The intended result is a cozy, heartwarming image that highlights craftsmanship through vivid color, fine detail, and tender human interaction.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01991812-3185-7acc-a191-25aa05a8615a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `amigurumi-in-hands-cozy-close-up`).
 
 Command form:
 
 ```bash
-betterprompt generate 01991812-3185-7acc-a191-25aa05a8615a \
+betterprompt generate amigurumi-in-hands-cozy-close-up \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01991812-3185-7acc-a191-25aa05a8615a \
+betterprompt generate amigurumi-in-hands-cozy-close-up \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
