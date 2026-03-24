@@ -1,14 +1,14 @@
 ---
 name: 3d-cartoon-render
 description: This prompt directs an image-generation model to create a high-quality 3D cartoon portrait of a thoughtful young boy in a pondering pose, specifying key facial features, hairstyle, clothing textures, lighting, background, and a polished cinematic “Pixar-like” aesthetic, along with rendering and aspect-ratio settings to produce a detailed vertical render.
-skillVersionId: 0197d02c-7701-7563-ac66-b9aebeff4fa4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation model to create a high-quality 3D cartoon portrait of a thoughtful young boy in a pondering pose, specifying key facial features, hairstyle, clothing textures, lighting, background, and a polished cinematic “Pixar-like” aesthetic, along with rendering and aspect-ratio settings to produce a detailed vertical render.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -47,12 +47,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197d02c-7701-7563-ac66-b9aebeff4fa4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `3d-cartoon-render`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197d02c-7701-7563-ac66-b9aebeff4fa4 \
+betterprompt generate 3d-cartoon-render \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -67,7 +67,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197d02c-7701-7563-ac66-b9aebeff4fa4 \
+betterprompt generate 3d-cartoon-render \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
 ```
