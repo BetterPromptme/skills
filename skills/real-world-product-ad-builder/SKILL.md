@@ -1,14 +1,14 @@
 ---
 name: real-world-product-ad-builder
 description: This prompt instructs the AI to use the provided product image as a visual reference to generate a high-definition, cinematic-realistic commercial scene that fits the brand’s environment and aesthetic, accurately matching the product’s design, color scheme, logo placement, and integrating the brand name visibly. It also requires adding a floating three-word slogan near the product and rendering the scene with clean, high-Kelvin lighting, saturated color harmony, and storytelling composition.
-skillVersionId: 01984ef1-4f15-70ab-b742-f632da8a52a2
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to use the provided product image as a visual reference to generate a high-definition, cinematic-realistic commercial scene that fits the brand’s environment and aesthetic, accurately matching the product’s design, color scheme, logo placement, and integrating the brand name visibly. It also requires adding a floating three-word slogan near the product and rendering the scene with clean, high-Kelvin lighting, saturated color harmony, and storytelling composition.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01984ef1-4f15-70ab-b742-f632da8a52a2`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `real-world-product-ad-builder`).
 
 Command form:
 
 ```bash
-betterprompt generate 01984ef1-4f15-70ab-b742-f632da8a52a2 \
+betterprompt generate real-world-product-ad-builder \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01984ef1-4f15-70ab-b742-f632da8a52a2 \
+betterprompt generate real-world-product-ad-builder \
   --input slogan=<value> \
   --input Brand_name=<value> \
   --image-input-url https://example.com/image1.png \
