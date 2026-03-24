@@ -1,14 +1,14 @@
 ---
 name: blog-post-generator
 description: This prompt instructs the AI to generate a well-structured blog post on a specified topic, targeting an approximate word count and a defined writing tone while optionally integrating a given SEO keyword. It requires the content to be original, informative, and easy to read through the use of headings, subheadings, and bullet points where appropriate. The expected outcome is a polished, engaging article that delivers clear value to readers and ends with a compelling call-to-action.
-skillVersionId: 0197c565-5da6-72a8-8717-63e85485134a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a well-structured blog post on a specified topic, targeting an approximate word count and a defined writing tone while optionally integrating a given SEO keyword. It requires the content to be original, informative, and easy to read through the use of headings, subheadings, and bullet points where appropriate. The expected outcome is a polished, engaging article that delivers clear value to readers and ends with a compelling call-to-action.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c565-5da6-72a8-8717-63e85485134a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `blog-post-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c565-5da6-72a8-8717-63e85485134a \
+betterprompt generate blog-post-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c565-5da6-72a8-8717-63e85485134a \
+betterprompt generate blog-post-generator \
   --input Blog_topic=<value> \
   --input Word_count=<value> \
   --input Seo_keyword=<value> \
