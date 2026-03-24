@@ -1,14 +1,14 @@
 ---
 name: three-panel-christmas-torn-paper
 description: This prompt directs an image model to generate a vertical three-panel, shoulder-up portrait of the same person in each panel, presented as a handmade torn-paper collage over a subtly patterned, vintage Christmas wallpaper in a user-selected festive background color. It specifies consistent flash-style snapshot lighting, layered paper textures with curled torn edges, light white doodle accents, and gender-inclusive wardrobe options, while defining distinct facial expressions and hand poses for the top, middle, and bottom panels. The intended outcome is a cohesive, cozy, nostalgic holiday collage that keeps the festive pattern visible yet secondary, preserves natural facial detail, and avoids full-body framing or overly polished studio aesthetics.
-skillVersionId: 019b2605-9ed6-703d-9db1-0bc15edf1898
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image model to generate a vertical three-panel, shoulder-up portrait of the same person in each panel, presented as a handmade torn-paper collage over a subtly patterned, vintage Christmas wallpaper in a user-selected festive background color. It specifies consistent flash-style snapshot lighting, layered paper textures with curled torn edges, light white doodle accents, and gender-inclusive wardrobe options, while defining distinct facial expressions and hand poses for the top, middle, and bottom panels. The intended outcome is a cohesive, cozy, nostalgic holiday collage that keeps the festive pattern visible yet secondary, preserves natural facial detail, and avoids full-body framing or overly polished studio aesthetics.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b2605-9ed6-703d-9db1-0bc15edf1898`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `three-panel-christmas-torn-paper`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b2605-9ed6-703d-9db1-0bc15edf1898 \
+betterprompt generate three-panel-christmas-torn-paper \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b2605-9ed6-703d-9db1-0bc15edf1898 \
+betterprompt generate three-panel-christmas-torn-paper \
   --input Background_color=<value> \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
