@@ -1,14 +1,14 @@
 ---
 name: famous-landmarks-as-furniture
 description: This prompt directs the AI to generate a photorealistic image of a chosen landmark redesigned as a fully functional, normally scaled piece of living-room furniture, emphasizing realistic materials, craftsmanship, and integration into a typical interior. If a main color is provided, the output will prioritize that color in the furniture’s design while keeping the scene detailed and believable.
-skillVersionId: 0197cf47-49dd-71e2-87b1-aa69d319da19
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs the AI to generate a photorealistic image of a chosen landmark redesigned as a fully functional, normally scaled piece of living-room furniture, emphasizing realistic materials, craftsmanship, and integration into a typical interior. If a main color is provided, the output will prioritize that color in the furniture’s design while keeping the scene detailed and believable.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197cf47-49dd-71e2-87b1-aa69d319da19`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `famous-landmarks-as-furniture`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197cf47-49dd-71e2-87b1-aa69d319da19 \
+betterprompt generate famous-landmarks-as-furniture \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197cf47-49dd-71e2-87b1-aa69d319da19 \
+betterprompt generate famous-landmarks-as-furniture \
   --input 'landmark=Statue of Liberty' \
   --input mainColor=red \
   --input furniturePiece=lamp \
