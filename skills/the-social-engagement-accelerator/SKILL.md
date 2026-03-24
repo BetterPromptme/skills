@@ -1,14 +1,14 @@
 ---
 name: the-social-engagement-accelerator
 description: This prompt instructs the AI to act as a social media content strategist and produce a numbered list of 10 scroll-stopping post ideas tailored to a specified platform and topic/product. Each idea is constrained to under 20 words and must include a hook, an emotional angle, and a call-to-action suggestion, all written in the requested brand tone.
-skillVersionId: 0198e460-1899-731e-888c-335930d668f3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a social media content strategist and produce a numbered list of 10 scroll-stopping post ideas tailored to a specified platform and topic/product. Each idea is constrained to under 20 words and must include a hook, an emotional angle, and a call-to-action suggestion, all written in the requested brand tone.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198e460-1899-731e-888c-335930d668f3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-social-engagement-accelerator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198e460-1899-731e-888c-335930d668f3 \
+betterprompt generate the-social-engagement-accelerator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198e460-1899-731e-888c-335930d668f3 \
+betterprompt generate the-social-engagement-accelerator \
   --input platform=<value> \
   --input brand_tone=<value> \
   --input topic_or_product=<value> \
