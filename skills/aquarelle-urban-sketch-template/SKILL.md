@@ -1,14 +1,14 @@
 ---
 name: aquarelle-urban-sketch-template
 description: This prompt instructs the AI to generate an aquarelle-style urban sketch featuring a specified subject, rendered with loose, expressive watercolor strokes that evoke lively city atmosphere. It directs the use of two chosen colors blended together to produce a vibrant, dynamic cityscape, resulting in an image that feels spontaneous, energetic, and rooted in everyday urban life.
-skillVersionId: 01984f52-f8a9-70d9-8d50-1e75b49ac9d8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate an aquarelle-style urban sketch featuring a specified subject, rendered with loose, expressive watercolor strokes that evoke lively city atmosphere. It directs the use of two chosen colors blended together to produce a vibrant, dynamic cityscape, resulting in an image that feels spontaneous, energetic, and rooted in everyday urban life.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01984f52-f8a9-70d9-8d50-1e75b49ac9d8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `aquarelle-urban-sketch-template`).
 
 Command form:
 
 ```bash
-betterprompt generate 01984f52-f8a9-70d9-8d50-1e75b49ac9d8 \
+betterprompt generate aquarelle-urban-sketch-template \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01984f52-f8a9-70d9-8d50-1e75b49ac9d8 \
+betterprompt generate aquarelle-urban-sketch-template \
   --input color1=<value> \
   --input color2=<value> \
   --input SUBJECT=<value> \
