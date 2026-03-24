@@ -1,14 +1,14 @@
 ---
 name: create-a-cotton-carpet-with-the-logo-you-want
 description: This prompt directs an image model to generate a square, photorealistic studio scene featuring a premium custom tufted rug shaped exactly to a supplied logo’s contours, with realistic yarn texture and subtle raised details for depth. It specifies a clean minimal floor surface, a top-down or slightly angled camera view, and natural window light that casts soft blind shadows, while adding a white fluffy chair in the upper-left and a plant on the opposite edge as understated contextual props. The intended outcome is a high-end mockup that showcases the rug as a luxury design object without distracting background elements.
-skillVersionId: 0196f110-2824-7295-b0cd-b00e1a8023b0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image model to generate a square, photorealistic studio scene featuring a premium custom tufted rug shaped exactly to a supplied logo’s contours, with realistic yarn texture and subtle raised details for depth. It specifies a clean minimal floor surface, a top-down or slightly angled camera view, and natural window light that casts soft blind shadows, while adding a white fluffy chair in the upper-left and a plant on the opposite edge as understated contextual props. The intended outcome is a high-end mockup that showcases the rug as a luxury design object without distracting background elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f110-2824-7295-b0cd-b00e1a8023b0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `create-a-cotton-carpet-with-the-logo-you-want`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f110-2824-7295-b0cd-b00e1a8023b0 \
+betterprompt generate create-a-cotton-carpet-with-the-logo-you-want \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f110-2824-7295-b0cd-b00e1a8023b0 \
+betterprompt generate create-a-cotton-carpet-with-the-logo-you-want \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"size":0,"quality":0},"quality":"low"}'
