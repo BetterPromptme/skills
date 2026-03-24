@@ -1,14 +1,14 @@
 ---
 name: barbie-and-ken-magazine-cover
 description: This prompt instructs an AI image generator to create two matching, ultra‑high‑definition fashion magazine cover compositions—one Barbie-inspired female version and one Ken-inspired male version—using the same framing, editorial typography, and retro early‑2000s pastel aesthetic while preserving the reference subject’s exact facial identity and proportions. It specifies photorealistic styling, lighting, wardrobe, accessories, makeup, expressions, background text elements, props, and a vintage magazine layout so the result is a pair of cohesive, modern‑realism covers that blend nostalgic pop glamour with professional editorial polish.
-skillVersionId: 019a70dd-0051-762f-b0c6-b4e82c07a0db
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create two matching, ultra‑high‑definition fashion magazine cover compositions—one Barbie-inspired female version and one Ken-inspired male version—using the same framing, editorial typography, and retro early‑2000s pastel aesthetic while preserving the reference subject’s exact facial identity and proportions. It specifies photorealistic styling, lighting, wardrobe, accessories, makeup, expressions, background text elements, props, and a vintage magazine layout so the result is a pair of cohesive, modern‑realism covers that blend nostalgic pop glamour with professional editorial polish.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a70dd-0051-762f-b0c6-b4e82c07a0db`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `barbie-and-ken-magazine-cover`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a70dd-0051-762f-b0c6-b4e82c07a0db \
+betterprompt generate barbie-and-ken-magazine-cover \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a70dd-0051-762f-b0c6-b4e82c07a0db \
+betterprompt generate barbie-and-ken-magazine-cover \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
