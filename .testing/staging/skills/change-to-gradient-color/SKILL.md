@@ -1,14 +1,14 @@
 ---
 name: change-to-gradient-color
 description: This prompt instructs the AI to apply a horizontal gradient overlay to a supplied image, using the specified left and right colors as endpoints. The result is an edited version of the original image with a smooth color transition from the left side to the right side matching the provided color values.
-skillVersionId: 0196f6d5-a621-7083-af29-82da68c366c8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to apply a horizontal gradient overlay to a supplied image, using the specified left and right colors as endpoints. The result is an edited version of the original image with a smooth color transition from the left side to the right side matching the provided color values.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f6d5-a621-7083-af29-82da68c366c8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `change-to-gradient-color`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f6d5-a621-7083-af29-82da68c366c8 \
+betterprompt generate change-to-gradient-color \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f6d5-a621-7083-af29-82da68c366c8 \
+betterprompt generate change-to-gradient-color \
   --input left_color=<value> \
   --input right_color=<value> \
   --image-input-url https://example.com/image1.png \
