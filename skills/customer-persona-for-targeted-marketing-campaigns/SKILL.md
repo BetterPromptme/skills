@@ -1,14 +1,14 @@
 ---
 name: customer-persona-for-targeted-marketing-campaigns
 description: This prompt takes a set of persona attributes (demographics, lifestyle, motivations, behaviors, influences, and pain points) and uses them to construct a coherent marketing customer profile that can guide campaign targeting and messaging, with the intended outcome of producing a visual illustration that depicts only the persona as an image without any accompanying text.
-skillVersionId: 0198d0d2-355f-7448-8311-f34e49e280fb
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt takes a set of persona attributes (demographics, lifestyle, motivations, behaviors, influences, and pain points) and uses them to construct a coherent marketing customer profile that can guide campaign targeting and messaging, with the intended outcome of producing a visual illustration that depicts only the persona as an image without any accompanying text.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -84,12 +84,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198d0d2-355f-7448-8311-f34e49e280fb`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `customer-persona-for-targeted-marketing-campaigns`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198d0d2-355f-7448-8311-f34e49e280fb \
+betterprompt generate customer-persona-for-targeted-marketing-campaigns \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -106,7 +106,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198d0d2-355f-7448-8311-f34e49e280fb \
+betterprompt generate customer-persona-for-targeted-marketing-campaigns \
   --input age=<value> \
   --input name=<value> \
   --input gender=<value> \
