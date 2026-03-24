@@ -1,14 +1,14 @@
 ---
 name: metro-editorial-subway-portrait
 description: This prompt directs an image generation or editing model to create a high-end fashion editorial photo set inside a modern stainless-steel subway car with open doors and a visible platform, using symmetrical full-body vertical composition and soft cinematic transit lighting. It instructs the model to keep the subject’s identity and outfit exactly as provided while placing them in a relaxed, confident pose centered in the doorway, producing a clean, magazine-style image with shallow depth of field, subtle film grain, and no text, logos, or overlays.
-skillVersionId: 019ce13e-1ee0-70cf-aed4-9e99a6947349
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image generation or editing model to create a high-end fashion editorial photo set inside a modern stainless-steel subway car with open doors and a visible platform, using symmetrical full-body vertical composition and soft cinematic transit lighting. It instructs the model to keep the subject’s identity and outfit exactly as provided while placing them in a relaxed, confident pose centered in the doorway, producing a clean, magazine-style image with shallow depth of field, subtle film grain, and no text, logos, or overlays.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ce13e-1ee0-70cf-aed4-9e99a6947349`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `metro-editorial-subway-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ce13e-1ee0-70cf-aed4-9e99a6947349 \
+betterprompt generate metro-editorial-subway-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ce13e-1ee0-70cf-aed4-9e99a6947349 \
+betterprompt generate metro-editorial-subway-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
