@@ -1,14 +1,14 @@
 ---
 name: create-ai-models-with-your-products
 description: This prompt instructs an image-generation system to create a high-fashion editorial scene in which a user-uploaded product remains unchanged and becomes the central, sharpest, most brightly lit focal point. It specifies a stylish model whose gender and expression are variable, posing to elegantly frame the product without competing for attention, while coordinating wardrobe, textures, background color, and a cinematic spotlight-style lighting setup to match the product’s tone. The result is a dramatic, art-directed campaign-style image with no text or overlays that prioritizes showcasing the product’s form, texture, and color.
-skillVersionId: 019762d9-68a7-7ab4-9799-eea9ed460c39
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to create a high-fashion editorial scene in which a user-uploaded product remains unchanged and becomes the central, sharpest, most brightly lit focal point. It specifies a stylish model whose gender and expression are variable, posing to elegantly frame the product without competing for attention, while coordinating wardrobe, textures, background color, and a cinematic spotlight-style lighting setup to match the product’s tone. The result is a dramatic, art-directed campaign-style image with no text or overlays that prioritizes showcasing the product’s form, texture, and color.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -77,12 +77,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019762d9-68a7-7ab4-9799-eea9ed460c39`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `create-ai-models-with-your-products`).
 
 Command form:
 
 ```bash
-betterprompt generate 019762d9-68a7-7ab4-9799-eea9ed460c39 \
+betterprompt generate create-ai-models-with-your-products \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -103,7 +103,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019762d9-68a7-7ab4-9799-eea9ed460c39 \
+betterprompt generate create-ai-models-with-your-products \
   --input gender_of_model=<value> \
   --input background_color=<value> \
   --input fashion_textures=<value> \
