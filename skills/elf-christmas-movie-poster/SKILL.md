@@ -1,14 +1,14 @@
 ---
 name: elf-christmas-movie-poster
 description: This prompt instructs an image-generation system to produce a cinematic, portrait-format holiday comedy movie poster featuring a Christmas elf character making a snow angel in bright daylight, with realistic snow detail, festive colors, and optional sparkling typography for the title and tagline. It specifies an overhead, centered composition, wardrobe and lighting requirements, and a warm, humorous, nostalgic tone aligned with classic Christmas film posters, resulting in a high-resolution, polished poster-ready image with clear branding and text placement.
-skillVersionId: 019a5226-5d2e-739e-8650-b11c10ef22bb
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce a cinematic, portrait-format holiday comedy movie poster featuring a Christmas elf character making a snow angel in bright daylight, with realistic snow detail, festive colors, and optional sparkling typography for the title and tagline. It specifies an overhead, centered composition, wardrobe and lighting requirements, and a warm, humorous, nostalgic tone aligned with classic Christmas film posters, resulting in a high-resolution, polished poster-ready image with clear branding and text placement.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a5226-5d2e-739e-8650-b11c10ef22bb`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `elf-christmas-movie-poster`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a5226-5d2e-739e-8650-b11c10ef22bb \
+betterprompt generate elf-christmas-movie-poster \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a5226-5d2e-739e-8650-b11c10ef22bb \
+betterprompt generate elf-christmas-movie-poster \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
