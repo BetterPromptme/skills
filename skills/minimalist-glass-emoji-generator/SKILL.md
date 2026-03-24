@@ -1,14 +1,14 @@
 ---
 name: minimalist-glass-emoji-generator
 description: This prompt instructs an AI image generator to produce a square, 1024×1024 high-resolution 3D render of a specified icon as a minimalist, Apple-inspired frosted-glass object, featuring rounded edges, matte semi-transparency with an icy blue–to–lavender/pink gradient, subtle refraction and internal glow, centered on a pure white background with an orthographic camera and a soft top-left-lit drop shadow for gentle elevation.
-skillVersionId: 0197c3e4-e2bd-7ddd-b96e-805d4db6cfb2
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a square, 1024×1024 high-resolution 3D render of a specified icon as a minimalist, Apple-inspired frosted-glass object, featuring rounded edges, matte semi-transparency with an icy blue–to–lavender/pink gradient, subtle refraction and internal glow, centered on a pure white background with an orthographic camera and a soft top-left-lit drop shadow for gentle elevation.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -58,12 +58,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c3e4-e2bd-7ddd-b96e-805d4db6cfb2`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `minimalist-glass-emoji-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c3e4-e2bd-7ddd-b96e-805d4db6cfb2 \
+betterprompt generate minimalist-glass-emoji-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -80,7 +80,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c3e4-e2bd-7ddd-b96e-805d4db6cfb2 \
+betterprompt generate minimalist-glass-emoji-generator \
   --input An_icon=icon \
   --model gpt-image-1 \
   --options '{"image":{"quality":0},"quality":"low"}'
