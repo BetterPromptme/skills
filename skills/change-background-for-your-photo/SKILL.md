@@ -1,14 +1,14 @@
 ---
 name: change-background-for-your-photo
 description: This prompt instructs the AI to perform a precise photo edit where the subject from the first image is kept exactly unchanged (pixel-for-pixel) while the background is replaced with the background from a second image. The intended outcome is a realistic, professional-looking composite that matches perspective, lighting, and color grading, with no alteration, regeneration, distortion, or enhancement of the subject’s face, body, clothing, or foreground elements.
-skillVersionId: 0197432e-1392-7c6b-b2cd-d8379e2534ad
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to perform a precise photo edit where the subject from the first image is kept exactly unchanged (pixel-for-pixel) while the background is replaced with the background from a second image. The intended outcome is a realistic, professional-looking composite that matches perspective, lighting, and color grading, with no alteration, regeneration, distortion, or enhancement of the subject’s face, body, clothing, or foreground elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197432e-1392-7c6b-b2cd-d8379e2534ad`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `change-background-for-your-photo`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197432e-1392-7c6b-b2cd-d8379e2534ad \
+betterprompt generate change-background-for-your-photo \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197432e-1392-7c6b-b2cd-d8379e2534ad \
+betterprompt generate change-background-for-your-photo \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gpt-image-1 \
