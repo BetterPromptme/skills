@@ -1,14 +1,14 @@
 ---
 name: market-size-estimator
 description: This prompt instructs the AI to act as a business analyst and produce a reasoned estimate of the Total Addressable Market, Serviceable Addressable Market, and Serviceable Obtainable Market for a specified product, industry, geography, and customer type. The expected outcome is a structured analysis that defines market boundaries, documents assumptions, walks through the calculation logic step by step, cites credible public data sources where possible, and summarizes key drivers and uncertainties in both a table and a brief narrative.
-skillVersionId: 019ce19a-75a7-74b9-b97c-e54f16fa317d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a business analyst and produce a reasoned estimate of the Total Addressable Market, Serviceable Addressable Market, and Serviceable Obtainable Market for a specified product, industry, geography, and customer type. The expected outcome is a structured analysis that defines market boundaries, documents assumptions, walks through the calculation logic step by step, cites credible public data sources where possible, and summarizes key drivers and uncertainties in both a table and a brief narrative.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -67,12 +67,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ce19a-75a7-74b9-b97c-e54f16fa317d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `market-size-estimator`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ce19a-75a7-74b9-b97c-e54f16fa317d \
+betterprompt generate market-size-estimator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -89,7 +89,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ce19a-75a7-74b9-b97c-e54f16fa317d \
+betterprompt generate market-size-estimator \
   --input 'product=AI-powered resume screening tool for recruiters' \
   --input 'industry=HR Tech' \
   --input geography=europe \
