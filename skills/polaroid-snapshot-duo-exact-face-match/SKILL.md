@@ -1,14 +1,14 @@
 ---
 name: polaroid-snapshot-duo-exact-face-match
 description: This prompt instructs an image-editing workflow to transform a provided photo into a square, photoreal instant-film style portrait with a Polaroid-like frame, replacing the background with a softly wrinkled white fabric curtain and adjusting the subjects’ bodies into a very tight hug while keeping both faces exactly the same as the supplied face references. It applies a dim-room direct-flash look with slight motion blur, soft contrast, light vignette, and moderate grain, then reinforces and verifies facial identity with multiple identity-lock modules and automatic retries, and if identity similarity still falls short it composites the original faces back in as a failsafe, producing a clean output with no added text, logos, watermarks, or new props.
-skillVersionId: 01993bf2-8e0f-7336-afd6-4a16455a5519
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-editing workflow to transform a provided photo into a square, photoreal instant-film style portrait with a Polaroid-like frame, replacing the background with a softly wrinkled white fabric curtain and adjusting the subjects’ bodies into a very tight hug while keeping both faces exactly the same as the supplied face references. It applies a dim-room direct-flash look with slight motion blur, soft contrast, light vignette, and moderate grain, then reinforces and verifies facial identity with multiple identity-lock modules and automatic retries, and if identity similarity still falls short it composites the original faces back in as a failsafe, producing a clean output with no added text, logos, watermarks, or new props.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01993bf2-8e0f-7336-afd6-4a16455a5519`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `polaroid-snapshot-duo-exact-face-match`).
 
 Command form:
 
 ```bash
-betterprompt generate 01993bf2-8e0f-7336-afd6-4a16455a5519 \
+betterprompt generate polaroid-snapshot-duo-exact-face-match \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01993bf2-8e0f-7336-afd6-4a16455a5519 \
+betterprompt generate polaroid-snapshot-duo-exact-face-match \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-2.5-flash-image-preview \
