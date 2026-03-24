@@ -1,14 +1,14 @@
 ---
 name: remake-your-image-based-on-dark-comic-style
 description: This prompt instructs an AI image generator to create a modern comic-book style digital illustration of a person with a retro 80s/90s pop-art-meets-noir mood, using bold inks, halftone texture, cold desaturated colors, and dramatic lighting. It specifies key character details (goth-leaning locker-room aesthetic, stylized hair, sunglasses reflections, edgy jewelry), a cool-toned locker-room/classroom setting, and a camera composition that preserves the original photo’s pose with a slight dramatic tilt. The result is a cinematic, introspective portrait that feels confident and rebellious, with clean shading and strong emotional framing.
-skillVersionId: 01973493-dc80-76b3-827d-98daa77b4156
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a modern comic-book style digital illustration of a person with a retro 80s/90s pop-art-meets-noir mood, using bold inks, halftone texture, cold desaturated colors, and dramatic lighting. It specifies key character details (goth-leaning locker-room aesthetic, stylized hair, sunglasses reflections, edgy jewelry), a cool-toned locker-room/classroom setting, and a camera composition that preserves the original photo’s pose with a slight dramatic tilt. The result is a cinematic, introspective portrait that feels confident and rebellious, with clean shading and strong emotional framing.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01973493-dc80-76b3-827d-98daa77b4156`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `remake-your-image-based-on-dark-comic-style`).
 
 Command form:
 
 ```bash
-betterprompt generate 01973493-dc80-76b3-827d-98daa77b4156 \
+betterprompt generate remake-your-image-based-on-dark-comic-style \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01973493-dc80-76b3-827d-98daa77b4156 \
+betterprompt generate remake-your-image-based-on-dark-comic-style \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"n":0,"size":0,"quality":1},"quality":"medium"}'
