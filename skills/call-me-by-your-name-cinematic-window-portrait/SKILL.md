@@ -1,14 +1,14 @@
 ---
 name: call-me-by-your-name-cinematic-window-portrait
 description: This prompt instructs an image editor/generator to composite the person from an input photo into a fixed, cinematic window portrait scene while keeping the original environment, framing, props, and lighting unchanged, matching a nostalgic European film look. It specifies the subject’s pose on a stack of books, the warm natural daylight and subtle film-grain style, and requires adding handwritten yellow title text at the top, producing a high-resolution, ultra-realistic vertical portrait where only the person is replaced and everything else remains identical to the reference scene.
-skillVersionId: 019cbcb2-9489-748f-aa8f-69ed11a872f8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image editor/generator to composite the person from an input photo into a fixed, cinematic window portrait scene while keeping the original environment, framing, props, and lighting unchanged, matching a nostalgic European film look. It specifies the subject’s pose on a stack of books, the warm natural daylight and subtle film-grain style, and requires adding handwritten yellow title text at the top, producing a high-resolution, ultra-realistic vertical portrait where only the person is replaced and everything else remains identical to the reference scene.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019cbcb2-9489-748f-aa8f-69ed11a872f8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `call-me-by-your-name-cinematic-window-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019cbcb2-9489-748f-aa8f-69ed11a872f8 \
+betterprompt generate call-me-by-your-name-cinematic-window-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019cbcb2-9489-748f-aa8f-69ed11a872f8 \
+betterprompt generate call-me-by-your-name-cinematic-window-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
