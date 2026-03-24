@@ -1,14 +1,14 @@
 ---
 name: market-research-competitor-analysis
 description: This prompt instructs the AI to act as a seasoned market researcher and produce a comprehensive competitor analysis for a specified business concept in a specified location. The expected outcome is a detailed, current report that maps the competitive landscape, identifies key players, evaluates each competitor’s strengths and weaknesses (plus broader opportunities and threats), summarizes relevant market trends, and provides actionable strategic recommendations for positioning—grounded in a mix of primary-style inputs (e.g., surveys/interviews) and secondary data analysis.
-skillVersionId: 0196f733-616c-7d7c-8562-4a602c5d8c91
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a seasoned market researcher and produce a comprehensive competitor analysis for a specified business concept in a specified location. The expected outcome is a detailed, current report that maps the competitive landscape, identifies key players, evaluates each competitor’s strengths and weaknesses (plus broader opportunities and threats), summarizes relevant market trends, and provides actionable strategic recommendations for positioning—grounded in a mix of primary-style inputs (e.g., surveys/interviews) and secondary data analysis.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f733-616c-7d7c-8562-4a602c5d8c91`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `market-research-competitor-analysis`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f733-616c-7d7c-8562-4a602c5d8c91 \
+betterprompt generate market-research-competitor-analysis \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f733-616c-7d7c-8562-4a602c5d8c91 \
+betterprompt generate market-research-competitor-analysis \
   --input business_location=<value> \
   --input business_description=<value> \
   --model gpt-4.1-mini \
