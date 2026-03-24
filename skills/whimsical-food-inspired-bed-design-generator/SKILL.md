@@ -1,14 +1,14 @@
 ---
 name: whimsical-food-inspired-bed-design-generator
 description: This prompt directs an image-generation model to create a highly detailed, vertical illustration of a cozy, whimsical bedroom scene featuring a bed stylized as an oversized food item, rendered with soft plush materials, realistic fabric folds, and fluffy pillows. The resulting image should feel dreamy and inviting, lit by warm morning sunlight filtering through sheer curtains, and set against a wooden floor for a natural, homey atmosphere.
-skillVersionId: 01983031-b9cc-724a-9c32-2ddacce482fe
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation model to create a highly detailed, vertical illustration of a cozy, whimsical bedroom scene featuring a bed stylized as an oversized food item, rendered with soft plush materials, realistic fabric folds, and fluffy pillows. The resulting image should feel dreamy and inviting, lit by warm morning sunlight filtering through sheer curtains, and set against a wooden floor for a natural, homey atmosphere.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01983031-b9cc-724a-9c32-2ddacce482fe`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `whimsical-food-inspired-bed-design-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 01983031-b9cc-724a-9c32-2ddacce482fe \
+betterprompt generate whimsical-food-inspired-bed-design-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01983031-b9cc-724a-9c32-2ddacce482fe \
+betterprompt generate whimsical-food-inspired-bed-design-generator \
   --input INSERT_FOOD_ITEM=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
