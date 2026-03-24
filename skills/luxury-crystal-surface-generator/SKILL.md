@@ -1,14 +1,14 @@
 ---
 name: luxury-crystal-surface-generator
 description: This prompt takes a specified object (such as a logo, icon, or everyday item) and renders it in a hyper-realistic, fully diamond-encrusted glamour style, covering the entire surface with ultra-fine faceted gemstones that produce intense specular highlights and prismatic sparkle. It sets a hard directional lighting setup with flare-like glints, soft low-opacity shadows, and a minimalist solid-color backdrop to maximize contrast, using a slight top-down macro viewpoint with shallow depth of field. The outcome is a luxurious, surreal, high-detail image where the subject appears completely crystal-coated and brilliantly reflective against a clean, unobtrusive background.
-skillVersionId: 0198074d-9e80-7e1a-8074-f6372c187128
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt takes a specified object (such as a logo, icon, or everyday item) and renders it in a hyper-realistic, fully diamond-encrusted glamour style, covering the entire surface with ultra-fine faceted gemstones that produce intense specular highlights and prismatic sparkle. It sets a hard directional lighting setup with flare-like glints, soft low-opacity shadows, and a minimalist solid-color backdrop to maximize contrast, using a slight top-down macro viewpoint with shallow depth of field. The outcome is a luxurious, surreal, high-detail image where the subject appears completely crystal-coated and brilliantly reflective against a clean, unobtrusive background.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198074d-9e80-7e1a-8074-f6372c187128`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `luxury-crystal-surface-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198074d-9e80-7e1a-8074-f6372c187128 \
+betterprompt generate luxury-crystal-surface-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198074d-9e80-7e1a-8074-f6372c187128 \
+betterprompt generate luxury-crystal-surface-generator \
   --input OBJECT=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
