@@ -1,14 +1,14 @@
 ---
 name: 10-slogan-ideas-for-your-business
 description: This prompt instructs the AI to act as a poetic branding marketer and, using the provided brand details (name, industry, tone, target audience, and slogan objective), produce 10 original, elegant, emotionally resonant slogans tailored to the brand’s voice and audience, each followed by a concise one-sentence explanation of its intended meaning or emotional appeal.
-skillVersionId: 0197cf5f-0189-7e1c-85e5-d3803584da48
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a poetic branding marketer and, using the provided brand details (name, industry, tone, target audience, and slogan objective), produce 10 original, elegant, emotionally resonant slogans tailored to the brand’s voice and audience, each followed by a concise one-sentence explanation of its intended meaning or emotional appeal.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197cf5f-0189-7e1c-85e5-d3803584da48`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `10-slogan-ideas-for-your-business`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197cf5f-0189-7e1c-85e5-d3803584da48 \
+betterprompt generate 10-slogan-ideas-for-your-business \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197cf5f-0189-7e1c-85e5-d3803584da48 \
+betterprompt generate 10-slogan-ideas-for-your-business \
   --input Brand_name=<value> \
   --input Brand_tone=<value> \
   --input Slogan_goal=<value> \
