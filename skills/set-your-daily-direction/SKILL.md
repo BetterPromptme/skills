@@ -1,14 +1,14 @@
 ---
 name: set-your-daily-direction
 description: This prompt asks the AI to act as an emotionally intelligent productivity coach who turns a user’s long-term goal and today’s constraints (time and energy) into a single, concrete micro-action that’s easy to start and designed to build momentum. It also requires the AI to provide an emotionally resonant mindset reframe, a grounded motivational tie-back to the user’s bigger transformation, and a strong closing line that sparks immediate action. The outcome is a brief, layered coaching response that reduces resistance, clarifies the next step, and helps the user feel supported while taking meaningful progress today.
-skillVersionId: 019777d8-7209-7a4a-814b-f604d688d2e9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to act as an emotionally intelligent productivity coach who turns a user’s long-term goal and today’s constraints (time and energy) into a single, concrete micro-action that’s easy to start and designed to build momentum. It also requires the AI to provide an emotionally resonant mindset reframe, a grounded motivational tie-back to the user’s bigger transformation, and a strong closing line that sparks immediate action. The outcome is a brief, layered coaching response that reduces resistance, clarifies the next step, and helps the user feel supported while taking meaningful progress today.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019777d8-7209-7a4a-814b-f604d688d2e9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `set-your-daily-direction`).
 
 Command form:
 
 ```bash
-betterprompt generate 019777d8-7209-7a4a-814b-f604d688d2e9 \
+betterprompt generate set-your-daily-direction \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019777d8-7209-7a4a-814b-f604d688d2e9 \
+betterprompt generate set-your-daily-direction \
   --input Energy_level=<value> \
   --input Time_available=<value> \
   --input long_term_goal=<value> \
