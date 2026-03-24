@@ -1,14 +1,14 @@
 ---
 name: customizable-elegant-wax-seal-realistic-and-refined
 description: This prompt instructs the AI to generate a photorealistic wax seal image that looks like a real stamped seal, featuring subtly imperfect edges, a gentle sheen, and natural lighting on a plain or neutral background. It reserves a central area for user-supplied custom content (such as a letter, logo, or icon), applies a user-selected wax color, and surrounds the center with classic ornamental flourishes to create a timeless, elegant result that reads as a real photograph rather than a digital render.
-skillVersionId: 01971a26-f9b4-701b-bcbb-325525bb7a26
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a photorealistic wax seal image that looks like a real stamped seal, featuring subtly imperfect edges, a gentle sheen, and natural lighting on a plain or neutral background. It reserves a central area for user-supplied custom content (such as a letter, logo, or icon), applies a user-selected wax color, and surrounds the center with classic ornamental flourishes to create a timeless, elegant result that reads as a real photograph rather than a digital render.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01971a26-f9b4-701b-bcbb-325525bb7a26`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `customizable-elegant-wax-seal-realistic-and-refined`).
 
 Command form:
 
 ```bash
-betterprompt generate 01971a26-f9b4-701b-bcbb-325525bb7a26 \
+betterprompt generate customizable-elegant-wax-seal-realistic-and-refined \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01971a26-f9b4-701b-bcbb-325525bb7a26 \
+betterprompt generate customizable-elegant-wax-seal-realistic-and-refined \
   --input Wax_Color=<value> \
   --input Your_Content=<value> \
   --model gpt-image-1 \
