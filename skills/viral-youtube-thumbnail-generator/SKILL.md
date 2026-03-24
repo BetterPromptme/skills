@@ -1,14 +1,14 @@
 ---
 name: viral-youtube-thumbnail-generator
 description: This prompt instructs an image-generation system to design a viral-style YouTube thumbnail in a 16:9 format using provided video-specific inputs (title, concept, character details, text, font, background, and lighting). The task is to create a scroll-stopping composition with the main character centered and highly expressive, bold readable text that doesn’t cover the face, dramatic high-contrast color and lighting, and a simplified background with optional cinematic effects. The outcome is a clickable, mobile-legible thumbnail optimized for strong emotional storytelling and clear visual hierarchy.
-skillVersionId: 01987d81-8eed-716c-80c6-dee0f5b31713
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to design a viral-style YouTube thumbnail in a 16:9 format using provided video-specific inputs (title, concept, character details, text, font, background, and lighting). The task is to create a scroll-stopping composition with the main character centered and highly expressive, bold readable text that doesn’t cover the face, dramatic high-contrast color and lighting, and a simplified background with optional cinematic effects. The outcome is a clickable, mobile-legible thumbnail optimized for strong emotional storytelling and clear visual hierarchy.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -76,12 +76,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01987d81-8eed-716c-80c6-dee0f5b31713`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `viral-youtube-thumbnail-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 01987d81-8eed-716c-80c6-dee0f5b31713 \
+betterprompt generate viral-youtube-thumbnail-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -98,7 +98,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01987d81-8eed-716c-80c6-dee0f5b31713 \
+betterprompt generate viral-youtube-thumbnail-generator \
   --input Gender=<value> \
   --input Font_Style=<value> \
   --input Video_Title=<value> \
