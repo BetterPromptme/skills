@@ -1,14 +1,14 @@
 ---
 name: valorant-agent-transformation
 description: This prompt instructs the AI to act as a production-ready game concept artist and turn a person from a provided photo into a cinematic, photo-real “Valorant-style” agent image while preserving the subject’s facial likeness and traits, applying a specific chosen agent’s exact outfit and gear, and optionally staging them in a defined scene context; it also sets constraints for distinct, gameplay-readable design communication and requires refusing direct IP copying or requesting missing brief details when necessary, with the intended outcome being a realistic, professional-looking character depiction suitable for art direction and development review.
-skillVersionId: 019931af-7fb0-707f-823e-e1e7149f20df
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a production-ready game concept artist and turn a person from a provided photo into a cinematic, photo-real “Valorant-style” agent image while preserving the subject’s facial likeness and traits, applying a specific chosen agent’s exact outfit and gear, and optionally staging them in a defined scene context; it also sets constraints for distinct, gameplay-readable design communication and requires refusing direct IP copying or requesting missing brief details when necessary, with the intended outcome being a realistic, professional-looking character depiction suitable for art direction and development review.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019931af-7fb0-707f-823e-e1e7149f20df`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `valorant-agent-transformation`).
 
 Command form:
 
 ```bash
-betterprompt generate 019931af-7fb0-707f-823e-e1e7149f20df \
+betterprompt generate valorant-agent-transformation \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019931af-7fb0-707f-823e-e1e7149f20df \
+betterprompt generate valorant-agent-transformation \
   --input chosen_agent=<value> \
   --input scene_context=<value> \
   --image-input-url https://example.com/image1.png \
