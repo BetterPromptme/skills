@@ -1,14 +1,14 @@
 ---
 name: luxe-handshot-studio
 description: This prompt instructs an image-generation workflow to produce a hyper-realistic, ultra-high-resolution studio photograph of a single luxury product held in a woman’s hand, using controlled professional lighting and a clean, specified background color. It guides composition, camera/look fidelity, and texture-rendering priorities while enforcing constraints such as minimal props, realistic proportions, non-branded presentation, and tasteful, non-suggestive imagery. The outcome is a polished, advertising-ready product shot tailored to designers and marketers, with adjustable product type, lighting intensity, and backdrop tone.
-skillVersionId: 0199e6eb-21b9-7264-84ba-cc8ef28bd17c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation workflow to produce a hyper-realistic, ultra-high-resolution studio photograph of a single luxury product held in a woman’s hand, using controlled professional lighting and a clean, specified background color. It guides composition, camera/look fidelity, and texture-rendering priorities while enforcing constraints such as minimal props, realistic proportions, non-branded presentation, and tasteful, non-suggestive imagery. The outcome is a polished, advertising-ready product shot tailored to designers and marketers, with adjustable product type, lighting intensity, and backdrop tone.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199e6eb-21b9-7264-84ba-cc8ef28bd17c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `luxe-handshot-studio`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199e6eb-21b9-7264-84ba-cc8ef28bd17c \
+betterprompt generate luxe-handshot-studio \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -100,7 +100,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199e6eb-21b9-7264-84ba-cc8ef28bd17c \
+betterprompt generate luxe-handshot-studio \
   --input 'product=perfume bottle, watch, lipstick' \
   --input 'lighting_style=soft natural glow, medium studio light, crisp high-contrast lighting, side lighting,...' \
   --input 'background_color=white, beige, charcoal,...' \
