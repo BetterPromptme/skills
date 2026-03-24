@@ -1,14 +1,14 @@
 ---
 name: the-red-tulip-frame
 description: This prompt instructs an AI image generator to produce a photorealistic, cinematic Paris street-fashion portrait: a full-body, vertically framed shot of a specific young woman whose facial identity, hair, and natural texture must be preserved, posed confidently on a rain-wet cobblestone avenue with symmetrical Parisian architecture leading to the Eiffel Tower in the distance. It specifies wardrobe, accessories, pose, composition, lighting, color palette, and environmental details to achieve a romantic luxury mood while preventing beautification, proportion changes, or stylized filtering, resulting in a high-resolution, realistically textured fashion photograph with balanced overcast daylight and authentic Paris atmosphere.
-skillVersionId: 019c5170-a3b6-76c9-92e7-915d14057d39
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a photorealistic, cinematic Paris street-fashion portrait: a full-body, vertically framed shot of a specific young woman whose facial identity, hair, and natural texture must be preserved, posed confidently on a rain-wet cobblestone avenue with symmetrical Parisian architecture leading to the Eiffel Tower in the distance. It specifies wardrobe, accessories, pose, composition, lighting, color palette, and environmental details to achieve a romantic luxury mood while preventing beautification, proportion changes, or stylized filtering, resulting in a high-resolution, realistically textured fashion photograph with balanced overcast daylight and authentic Paris atmosphere.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c5170-a3b6-76c9-92e7-915d14057d39`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-red-tulip-frame`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c5170-a3b6-76c9-92e7-915d14057d39 \
+betterprompt generate the-red-tulip-frame \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c5170-a3b6-76c9-92e7-915d14057d39 \
+betterprompt generate the-red-tulip-frame \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
