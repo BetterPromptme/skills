@@ -1,14 +1,14 @@
 ---
 name: first-snow-close-up-portrait
 description: This prompt instructs an image model to generate an ultra-realistic, low-angle close-up winter portrait of the person in a provided reference photo, preserving their exact identity and hair color while applying gender-appropriate styling and a white fur coat. It specifies an outdoor snowy environment with falling snow, subtle dry leaves, shallow depth of field, and soft bokeh, lit with natural dramatic chiaroscuro sunlight filtering through trees to balance cool winter tones with warm, lifelike skin. The intended outcome is a high-end, photoreal cinematic portrait with crisp texture, restrained retouching, and a calm, slightly melancholic expression focused sharply on the eyes.
-skillVersionId: 019a8fdc-5848-72c5-9cf1-ca63b4b78da7
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate an ultra-realistic, low-angle close-up winter portrait of the person in a provided reference photo, preserving their exact identity and hair color while applying gender-appropriate styling and a white fur coat. It specifies an outdoor snowy environment with falling snow, subtle dry leaves, shallow depth of field, and soft bokeh, lit with natural dramatic chiaroscuro sunlight filtering through trees to balance cool winter tones with warm, lifelike skin. The intended outcome is a high-end, photoreal cinematic portrait with crisp texture, restrained retouching, and a calm, slightly melancholic expression focused sharply on the eyes.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a8fdc-5848-72c5-9cf1-ca63b4b78da7`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `first-snow-close-up-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a8fdc-5848-72c5-9cf1-ca63b4b78da7 \
+betterprompt generate first-snow-close-up-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a8fdc-5848-72c5-9cf1-ca63b4b78da7 \
+betterprompt generate first-snow-close-up-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
