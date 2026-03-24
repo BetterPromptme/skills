@@ -1,14 +1,14 @@
 ---
 name: phone-screen-miniature-human-effect
 description: This prompt instructs an AI image generator to composite a hyper-realistic forced-perspective photograph in which a real, full-body person appears miniaturized and physically standing on top of an iPhone’s glass screen while the phone is naturally held in a hand and a believable camera app interface remains visible beneath them. It specifies strict realism requirements—matching perspective, lighting, contact shadows, slight screen reflections, and partial UI occlusion by the person’s feet—while prohibiting any interpretation where the person is inside the screen, part of the display content, framed by the UI, floating, or rendered as a toy/CGI effect. The intended outcome is a single vertical street-photography-style image that instantly reads as a practical, physical illusion with consistent scale and photographic imperfections.
-skillVersionId: 019b6d12-33f3-774b-8931-0e63286a7cc9
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to composite a hyper-realistic forced-perspective photograph in which a real, full-body person appears miniaturized and physically standing on top of an iPhone’s glass screen while the phone is naturally held in a hand and a believable camera app interface remains visible beneath them. It specifies strict realism requirements—matching perspective, lighting, contact shadows, slight screen reflections, and partial UI occlusion by the person’s feet—while prohibiting any interpretation where the person is inside the screen, part of the display content, framed by the UI, floating, or rendered as a toy/CGI effect. The intended outcome is a single vertical street-photography-style image that instantly reads as a practical, physical illusion with consistent scale and photographic imperfections.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b6d12-33f3-774b-8931-0e63286a7cc9`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `phone-screen-miniature-human-effect`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b6d12-33f3-774b-8931-0e63286a7cc9 \
+betterprompt generate phone-screen-miniature-human-effect \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b6d12-33f3-774b-8931-0e63286a7cc9 \
+betterprompt generate phone-screen-miniature-human-effect \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-3-pro-image-preview \
