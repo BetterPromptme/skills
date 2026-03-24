@@ -5,13 +5,13 @@ description: Discover, install, and run reusable AI prompt skills from the Bette
 
 # BetterPrompt Skill
 
-This skill uses the open-source BetterPrompt CLI ([github.com/BetterPromptme/betterprompt](https://github.com/BetterPromptme/betterprompt)) to:
+This skill uses the [BetterPrompt CLI](https://github.com/BetterPromptme/betterprompt) (open-source by [BetterPrompt.me](https://betterprompt.me)) to:
 
 - Generate AI output (text, images, video)
 - Install and manage BetterPrompt skills
 - Search and discover BetterPrompt skills
 
-Both binary names (`betterprompt` / `bp`) work interchangeably; prefer `betterprompt` over `bp`. Supports OpenClaw and Claude Code agents.
+Supports OpenClaw and popular agents.
 
 ## Installation
 
