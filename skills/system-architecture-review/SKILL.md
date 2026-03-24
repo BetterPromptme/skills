@@ -1,14 +1,14 @@
 ---
 name: system-architecture-review
 description: This prompt instructs the AI to act as an experienced software architect and deliver a structured, comprehensive review of a proposed system design, evaluating it across scalability, reliability, security, and cost while considering growth, edge cases, and failure scenarios. It uses provided business context, scale, tech stack, constraints, and requirements to produce an evidence-based assessment with quantitative ratings, pattern analysis, identified bottlenecks and risks, and a phased, actionable roadmap of improvements aligned to industry best practices.
-skillVersionId: 01970fd0-46dc-7031-ab02-b50fe372a540
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an experienced software architect and deliver a structured, comprehensive review of a proposed system design, evaluating it across scalability, reliability, security, and cost while considering growth, edge cases, and failure scenarios. It uses provided business context, scale, tech stack, constraints, and requirements to produce an evidence-based assessment with quantitative ratings, pattern analysis, identified bottlenecks and risks, and a phased, actionable roadmap of improvements aligned to industry best practices.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01970fd0-46dc-7031-ab02-b50fe372a540`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `system-architecture-review`).
 
 Command form:
 
 ```bash
-betterprompt generate 01970fd0-46dc-7031-ab02-b50fe372a540 \
+betterprompt generate system-architecture-review \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -94,7 +94,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01970fd0-46dc-7031-ab02-b50fe372a540 \
+betterprompt generate system-architecture-review \
   --input tech_stack=<value> \
   --input user_scale=<value> \
   --input constraints=<value> \
