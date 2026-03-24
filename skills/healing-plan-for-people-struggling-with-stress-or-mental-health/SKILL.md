@@ -1,14 +1,14 @@
 ---
 name: healing-plan-for-people-struggling-with-stress-or-mental-health
 description: This prompt instructs the AI to generate a gentle, day-by-day (7-day) emotional healing plan tailored to the user’s current feelings and basic demographics, aimed at helping them reconnect with themselves, find calm, and build emotional resilience through accessible self-care. The outcome is a warmly written schedule from Day 1 to Day 7 that includes a brief daily meditation/mindfulness recommendation, one soothing mental-health or personal-growth podcast episode, a calming music suggestion, and a simple healing activity such as journaling, breathing, gratitude, or a nature walk.
-skillVersionId: 0196e748-01e8-78c9-8a1c-906254c6297a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a gentle, day-by-day (7-day) emotional healing plan tailored to the user’s current feelings and basic demographics, aimed at helping them reconnect with themselves, find calm, and build emotional resilience through accessible self-care. The outcome is a warmly written schedule from Day 1 to Day 7 that includes a brief daily meditation/mindfulness recommendation, one soothing mental-health or personal-growth podcast episode, a calming music suggestion, and a simple healing activity such as journaling, breathing, gratitude, or a nature walk.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196e748-01e8-78c9-8a1c-906254c6297a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `healing-plan-for-people-struggling-with-stress-or-mental-health`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196e748-01e8-78c9-8a1c-906254c6297a \
+betterprompt generate healing-plan-for-people-struggling-with-stress-or-mental-health \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196e748-01e8-78c9-8a1c-906254c6297a \
+betterprompt generate healing-plan-for-people-struggling-with-stress-or-mental-health \
   --input age=<value> \
   --input gender=<value> \
   --input How_are_you_feeling_now=<value> \
