@@ -1,14 +1,14 @@
 ---
 name: parisian-street-fashion-editorial
 description: This prompt instructs an AI image generator to produce a full-body, cinematic street-style fashion editorial photo of a specific woman, preserving her exact facial identity and original hair color while precisely replicating a one-leg balance pose with windswept hair and a defined luxury outfit. It specifies an upscale Parisian crosswalk setting in front of a black-and-gold café with visible warm interior details and a motion-blurred pedestrian, under crisp daylight with soft shadows and a film-plus-digital editorial finish. The intended outcome is a realistic, high-fashion image with no deviations in pose, styling, proportions, or accessories and no beautification or additional props.
-skillVersionId: 019ab4d3-dfe2-746e-a61b-8e94d0a281f2
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a full-body, cinematic street-style fashion editorial photo of a specific woman, preserving her exact facial identity and original hair color while precisely replicating a one-leg balance pose with windswept hair and a defined luxury outfit. It specifies an upscale Parisian crosswalk setting in front of a black-and-gold café with visible warm interior details and a motion-blurred pedestrian, under crisp daylight with soft shadows and a film-plus-digital editorial finish. The intended outcome is a realistic, high-fashion image with no deviations in pose, styling, proportions, or accessories and no beautification or additional props.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ab4d3-dfe2-746e-a61b-8e94d0a281f2`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `parisian-street-fashion-editorial`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ab4d3-dfe2-746e-a61b-8e94d0a281f2 \
+betterprompt generate parisian-street-fashion-editorial \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ab4d3-dfe2-746e-a61b-8e94d0a281f2 \
+betterprompt generate parisian-street-fashion-editorial \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
