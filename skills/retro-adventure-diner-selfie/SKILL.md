@@ -1,14 +1,14 @@
 ---
 name: retro-adventure-diner-selfie
 description: This prompt instructs an AI image generator to produce an ultra-realistic, analog-film 1980s-style fisheye group selfie set in a classic 1960s American diner, placing the user (with facial features matched exactly to a provided reference photo) among six wholly original, fictional 80s teen/young-adult characters who all react with surprised expressions. It specifies detailed environment props, lighting, lens/film characteristics, composition, mood, and allowed on-scene text, while also enforcing strict constraints against altering the user’s face, adding extra people, using non-photoreal styles for the user, or resembling any real or copyrighted characters, resulting in a cohesive cinematic retro “adventure team” portrait.
-skillVersionId: 019ad8c8-ad62-76b6-9c94-a28cd78f406c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce an ultra-realistic, analog-film 1980s-style fisheye group selfie set in a classic 1960s American diner, placing the user (with facial features matched exactly to a provided reference photo) among six wholly original, fictional 80s teen/young-adult characters who all react with surprised expressions. It specifies detailed environment props, lighting, lens/film characteristics, composition, mood, and allowed on-scene text, while also enforcing strict constraints against altering the user’s face, adding extra people, using non-photoreal styles for the user, or resembling any real or copyrighted characters, resulting in a cohesive cinematic retro “adventure team” portrait.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019ad8c8-ad62-76b6-9c94-a28cd78f406c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `retro-adventure-diner-selfie`).
 
 Command form:
 
 ```bash
-betterprompt generate 019ad8c8-ad62-76b6-9c94-a28cd78f406c \
+betterprompt generate retro-adventure-diner-selfie \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019ad8c8-ad62-76b6-9c94-a28cd78f406c \
+betterprompt generate retro-adventure-diner-selfie \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{"aspectRatio":"1:1"}'
