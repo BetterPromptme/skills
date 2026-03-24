@@ -1,14 +1,14 @@
 ---
 name: metallic-reskins
 description: This prompt directs an image generation task to create a futuristic minimalist subject rendered as ultra-smooth, high-gloss liquid chrome with crisp studio hard lighting and subtle fill, emphasizing strong specular highlights and deep shadows. It specifies a mirror-silver and white palette on a seamless pure white background with high-contrast, sharply detailed output, while avoiding effects like bloom, glow, grain, refraction, or chromatic aberration. The result is a clean, reflective chrome visual that preserves the original aspect ratio.
-skillVersionId: 0197053f-7773-79c1-925c-aa485dbc373f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image generation task to create a futuristic minimalist subject rendered as ultra-smooth, high-gloss liquid chrome with crisp studio hard lighting and subtle fill, emphasizing strong specular highlights and deep shadows. It specifies a mirror-silver and white palette on a seamless pure white background with high-contrast, sharply detailed output, while avoiding effects like bloom, glow, grain, refraction, or chromatic aberration. The result is a clean, reflective chrome visual that preserves the original aspect ratio.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197053f-7773-79c1-925c-aa485dbc373f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `metallic-reskins`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197053f-7773-79c1-925c-aa485dbc373f \
+betterprompt generate metallic-reskins \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197053f-7773-79c1-925c-aa485dbc373f \
+betterprompt generate metallic-reskins \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","image":{"size":0,"quality":1},"quality":"medium"}'
