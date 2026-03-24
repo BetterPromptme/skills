@@ -1,14 +1,14 @@
 ---
 name: validate-before-you-build
 description: It produces a step-by-step, low-cost customer validation plan for an untested startup idea, customized to the specified industry and business type. The result is a practical sequence of actions—such as defining assumptions, identifying target users, conducting interviews, running simple landing-page or prototype tests, and measuring demand signals—so the founder can confirm or reject the idea before investing time or money in building it.
-skillVersionId: 0197771a-7ead-7981-80d2-7a2e440e95fb
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 It produces a step-by-step, low-cost customer validation plan for an untested startup idea, customized to the specified industry and business type. The result is a practical sequence of actions—such as defining assumptions, identifying target users, conducting interviews, running simple landing-page or prototype tests, and measuring demand signals—so the founder can confirm or reject the idea before investing time or money in building it.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197771a-7ead-7981-80d2-7a2e440e95fb`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `validate-before-you-build`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197771a-7ead-7981-80d2-7a2e440e95fb \
+betterprompt generate validate-before-you-build \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197771a-7ead-7981-80d2-7a2e440e95fb \
+betterprompt generate validate-before-you-build \
   --input INDUSTRY=<value> \
   --input TYPE_OF_BUSINESS=<value> \
   --model gpt-4.1-mini \
