@@ -1,14 +1,14 @@
 ---
 name: rail-breeze-bouquet-absolute-face-lock
 description: This prompt instructs an image-editing AI to transform a user-provided face photo into a repeatable, warm, dim, vintage film–styled cinematic half-body portrait set trackside with a blurred moving train in the background and a visible red-orange flower bouquet, while enforcing strict identity preservation so the subject’s face remains unchanged; it also defines composition, lighting, wardrobe variants by detected gender, quality checks, and a fail-fast rule to request a clearer reference image if the face cannot be reliably used.
-skillVersionId: 01996143-63fb-7785-be41-0d5dc95b6d95
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-editing AI to transform a user-provided face photo into a repeatable, warm, dim, vintage film–styled cinematic half-body portrait set trackside with a blurred moving train in the background and a visible red-orange flower bouquet, while enforcing strict identity preservation so the subject’s face remains unchanged; it also defines composition, lighting, wardrobe variants by detected gender, quality checks, and a fail-fast rule to request a clearer reference image if the face cannot be reliably used.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01996143-63fb-7785-be41-0d5dc95b6d95`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `rail-breeze-bouquet-absolute-face-lock`).
 
 Command form:
 
 ```bash
-betterprompt generate 01996143-63fb-7785-be41-0d5dc95b6d95 \
+betterprompt generate rail-breeze-bouquet-absolute-face-lock \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01996143-63fb-7785-be41-0d5dc95b6d95 \
+betterprompt generate rail-breeze-bouquet-absolute-face-lock \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
