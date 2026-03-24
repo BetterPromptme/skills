@@ -1,14 +1,14 @@
 ---
 name: personalized-high-achiever-study-plan
 description: This prompt asks the AI to act as an academic coach that tailors proven high-achiever study habits to the user’s specific goal, challenges, available time, and learning style, producing a structured plan that includes a timed daily schedule, specific evidence-based techniques, mindset reframes matched to the user’s obstacles, recommended resources, and a clear 7-day day-by-day action plan the user can follow immediately.
-skillVersionId: 0198df12-c7d9-7a82-b8dc-999249c5aa5c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to act as an academic coach that tailors proven high-achiever study habits to the user’s specific goal, challenges, available time, and learning style, producing a structured plan that includes a timed daily schedule, specific evidence-based techniques, mindset reframes matched to the user’s obstacles, recommended resources, and a clear 7-day day-by-day action plan the user can follow immediately.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -67,12 +67,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198df12-c7d9-7a82-b8dc-999249c5aa5c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `personalized-high-achiever-study-plan`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198df12-c7d9-7a82-b8dc-999249c5aa5c \
+betterprompt generate personalized-high-achiever-study-plan \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -89,7 +89,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198df12-c7d9-7a82-b8dc-999249c5aa5c \
+betterprompt generate personalized-high-achiever-study-plan \
   --input insert_your_style=<value> \
   --input 'insert_your_goal_here=master calculus' \
   --input 'insert_challenges_here=no system' \
