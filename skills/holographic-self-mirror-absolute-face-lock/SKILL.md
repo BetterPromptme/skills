@@ -1,14 +1,14 @@
 ---
 name: holographic-self-mirror-absolute-face-lock
 description: This prompt directs an image-generation system to create an ultra-realistic indoor scene where the subject views an electric-blue holographic projection of themselves above a small tabletop projector, while enforcing strict identity preservation by locking the entire face from the reference image and rejecting outputs if the reference is unclear or if any facial features, hairline, makeup, or facial hair change beyond tight similarity thresholds. The outcome is a high-resolution 3:4 PNG showing a half-body subject and the full hologram in frame with soft warm room lighting, a subtle blue rim light, shallow depth of field, and automated quality checks that ensure the face matches the reference with near-pixel accuracy.
-skillVersionId: 0199709b-fb4a-7efe-8651-125ab21bd52c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation system to create an ultra-realistic indoor scene where the subject views an electric-blue holographic projection of themselves above a small tabletop projector, while enforcing strict identity preservation by locking the entire face from the reference image and rejecting outputs if the reference is unclear or if any facial features, hairline, makeup, or facial hair change beyond tight similarity thresholds. The outcome is a high-resolution 3:4 PNG showing a half-body subject and the full hologram in frame with soft warm room lighting, a subtle blue rim light, shallow depth of field, and automated quality checks that ensure the face matches the reference with near-pixel accuracy.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199709b-fb4a-7efe-8651-125ab21bd52c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `holographic-self-mirror-absolute-face-lock`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199709b-fb4a-7efe-8651-125ab21bd52c \
+betterprompt generate holographic-self-mirror-absolute-face-lock \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199709b-fb4a-7efe-8651-125ab21bd52c \
+betterprompt generate holographic-self-mirror-absolute-face-lock \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
