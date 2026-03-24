@@ -1,14 +1,14 @@
 ---
 name: iron-om1972-desk-figure-studio
 description: This prompt instructs the AI to create a realistic product-style scene featuring a 1/7 scale figure based on the user’s uploaded photo, depicting the user’s exact face on an Ironman suit without a helmet, posed on a clear circular acrylic base labeled “IRON OM1972” atop a computer desk. It also specifies environment details including an iMac screen showing the Blender modeling workflow of the same figure and a MARVEL-inspired toy packaging box with original artwork placed beside the monitor, resulting in a cohesive commercialized collectible display concept.
-skillVersionId: 01992727-39bb-7b28-8bbd-3383fccaf346
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to create a realistic product-style scene featuring a 1/7 scale figure based on the user’s uploaded photo, depicting the user’s exact face on an Ironman suit without a helmet, posed on a clear circular acrylic base labeled “IRON OM1972” atop a computer desk. It also specifies environment details including an iMac screen showing the Blender modeling workflow of the same figure and a MARVEL-inspired toy packaging box with original artwork placed beside the monitor, resulting in a cohesive commercialized collectible display concept.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01992727-39bb-7b28-8bbd-3383fccaf346`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `iron-om1972-desk-figure-studio`).
 
 Command form:
 
 ```bash
-betterprompt generate 01992727-39bb-7b28-8bbd-3383fccaf346 \
+betterprompt generate iron-om1972-desk-figure-studio \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01992727-39bb-7b28-8bbd-3383fccaf346 \
+betterprompt generate iron-om1972-desk-figure-studio \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
