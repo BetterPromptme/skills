@@ -1,14 +1,14 @@
 ---
 name: miniature-display-earbud-case
 description: This prompt generates a high-end studio product photograph of a realistic, transparent wireless earbud charging case with a compact rectangular form, featuring functional hinge and clasp details, subtle modern branding, and soft even lighting. The key outcome is a minimalistic, premium-looking case designed as a miniature display, with the interior filled with the user-specified theme rendered in clear resin-like detail to create depth and a collectible showcase effect.
-skillVersionId: 0197ce29-a2e8-71d0-a8f5-65ce9bbde4b6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt generates a high-end studio product photograph of a realistic, transparent wireless earbud charging case with a compact rectangular form, featuring functional hinge and clasp details, subtle modern branding, and soft even lighting. The key outcome is a minimalistic, premium-looking case designed as a miniature display, with the interior filled with the user-specified theme rendered in clear resin-like detail to create depth and a collectible showcase effect.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197ce29-a2e8-71d0-a8f5-65ce9bbde4b6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `miniature-display-earbud-case`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197ce29-a2e8-71d0-a8f5-65ce9bbde4b6 \
+betterprompt generate miniature-display-earbud-case \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197ce29-a2e8-71d0-a8f5-65ce9bbde4b6 \
+betterprompt generate miniature-display-earbud-case \
   --input INSERT_THEME_HERE=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
