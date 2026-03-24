@@ -1,14 +1,14 @@
 ---
 name: transfer-the-facial-expression
 description: 该提示用于图像编辑：以图一的人物作为参考，保留其外观特征与整体风格，同时将其面部表情替换为图二人物的表情；最终输出是一张人物身份仍来自图一但表情与图二一致的合成结果图。
-skillVersionId: 01993808-25da-7648-9372-bfb396e8d81d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 该提示用于图像编辑：以图一的人物作为参考，保留其外观特征与整体风格，同时将其面部表情替换为图二人物的表情；最终输出是一张人物身份仍来自图一但表情与图二一致的合成结果图。
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01993808-25da-7648-9372-bfb396e8d81d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `transfer-the-facial-expression`).
 
 Command form:
 
 ```bash
-betterprompt generate 01993808-25da-7648-9372-bfb396e8d81d \
+betterprompt generate transfer-the-facial-expression \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01993808-25da-7648-9372-bfb396e8d81d \
+betterprompt generate transfer-the-facial-expression \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
