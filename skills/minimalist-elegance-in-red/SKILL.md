@@ -1,14 +1,14 @@
 ---
 name: minimalist-elegance-in-red
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical mirror-selfie portrait of a young woman in a modern minimalist bedroom, specifying her pose, styling, outfit, accessories, phone/flash details, and the room’s furnishings, lighting, and color palette. It also imposes strict identity-preservation and realism constraints (no facial reshaping, natural skin texture, accurate reflections, balanced exposure). The intended outcome is a polished luxury lifestyle fashion selfie with warm ambient and LED accent lighting, a visible full-length black-framed mirror, and a cohesive red-and-neutral aesthetic.
-skillVersionId: 019cf19e-271c-739e-9689-3d890374683b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical mirror-selfie portrait of a young woman in a modern minimalist bedroom, specifying her pose, styling, outfit, accessories, phone/flash details, and the room’s furnishings, lighting, and color palette. It also imposes strict identity-preservation and realism constraints (no facial reshaping, natural skin texture, accurate reflections, balanced exposure). The intended outcome is a polished luxury lifestyle fashion selfie with warm ambient and LED accent lighting, a visible full-length black-framed mirror, and a cohesive red-and-neutral aesthetic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019cf19e-271c-739e-9689-3d890374683b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `minimalist-elegance-in-red`).
 
 Command form:
 
 ```bash
-betterprompt generate 019cf19e-271c-739e-9689-3d890374683b \
+betterprompt generate minimalist-elegance-in-red \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019cf19e-271c-739e-9689-3d890374683b \
+betterprompt generate minimalist-elegance-in-red \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
