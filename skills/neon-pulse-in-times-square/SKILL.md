@@ -1,14 +1,14 @@
 ---
 name: neon-pulse-in-times-square
 description: This prompt instructs an AI image generator to produce a photorealistic, high-resolution cinematic night portrait of a woman in Times Square, framed in a medium shot on public steps while leaning on a railing, with a confident, calm expression and natural hair movement. It specifies that the subject’s facial identity must be preserved exactly, while directing the scene’s environment, pose, wardrobe, and composition, and emphasizing natural neon billboard lighting dominated by red/pink glow with cooler contrasting highlights, plus crowd energy, motion blur, and balanced HDR contrast for a vibrant urban atmosphere.
-skillVersionId: 019b2133-ec39-748a-a782-fbb577467ef4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a photorealistic, high-resolution cinematic night portrait of a woman in Times Square, framed in a medium shot on public steps while leaning on a railing, with a confident, calm expression and natural hair movement. It specifies that the subject’s facial identity must be preserved exactly, while directing the scene’s environment, pose, wardrobe, and composition, and emphasizing natural neon billboard lighting dominated by red/pink glow with cooler contrasting highlights, plus crowd energy, motion blur, and balanced HDR contrast for a vibrant urban atmosphere.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b2133-ec39-748a-a782-fbb577467ef4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `neon-pulse-in-times-square`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b2133-ec39-748a-a782-fbb577467ef4 \
+betterprompt generate neon-pulse-in-times-square \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b2133-ec39-748a-a782-fbb577467ef4 \
+betterprompt generate neon-pulse-in-times-square \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
