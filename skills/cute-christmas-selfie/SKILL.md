@@ -1,14 +1,14 @@
 ---
 name: cute-christmas-selfie
 description: This prompt directs an image model to generate a cozy, intimate Christmas-themed selfie featuring a female subject in a two-frame vertical layout: a shoulder-up flash portrait on top and a tighter face-and-eyes close-up below. It specifies a playful spoon-to-lips gesture, gentle pouty expressions, natural hair and minimal makeup, a Santa hat, simple indoor background, and strong on-camera flash with warm ambient light. The intended result is a candid, sweet, festive two-shot composition that keeps attention on the subject’s face and expression without dramatic posing, heavy retouching, or busy scenery.
-skillVersionId: 019b53c1-2157-740c-bfb6-66358890f518
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image model to generate a cozy, intimate Christmas-themed selfie featuring a female subject in a two-frame vertical layout: a shoulder-up flash portrait on top and a tighter face-and-eyes close-up below. It specifies a playful spoon-to-lips gesture, gentle pouty expressions, natural hair and minimal makeup, a Santa hat, simple indoor background, and strong on-camera flash with warm ambient light. The intended result is a candid, sweet, festive two-shot composition that keeps attention on the subject’s face and expression without dramatic posing, heavy retouching, or busy scenery.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b53c1-2157-740c-bfb6-66358890f518`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cute-christmas-selfie`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b53c1-2157-740c-bfb6-66358890f518 \
+betterprompt generate cute-christmas-selfie \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b53c1-2157-740c-bfb6-66358890f518 \
+betterprompt generate cute-christmas-selfie \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
