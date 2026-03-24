@@ -1,14 +1,14 @@
 ---
 name: winter-road-trip-diptych-portrait
 description: This prompt instructs an image model to generate a photorealistic, cinematic two-panel vertical diptych of the same young traveler inside a car on a winter road trip, preserving the person’s exact identity from a reference image while keeping styling, lighting, and realism consistent. It specifies two complementary moments—one calm and contemplative while looking out at snowy mountains, and one joyful while smiling and holding a compact camera—captured with natural window light, a cozy film-like color palette, and matched composition for an emotionally cohesive travel photo story.
-skillVersionId: 019a4931-1259-753d-9acd-c9b93027b8e1
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a photorealistic, cinematic two-panel vertical diptych of the same young traveler inside a car on a winter road trip, preserving the person’s exact identity from a reference image while keeping styling, lighting, and realism consistent. It specifies two complementary moments—one calm and contemplative while looking out at snowy mountains, and one joyful while smiling and holding a compact camera—captured with natural window light, a cozy film-like color palette, and matched composition for an emotionally cohesive travel photo story.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a4931-1259-753d-9acd-c9b93027b8e1`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `winter-road-trip-diptych-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a4931-1259-753d-9acd-c9b93027b8e1 \
+betterprompt generate winter-road-trip-diptych-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a4931-1259-753d-9acd-c9b93027b8e1 \
+betterprompt generate winter-road-trip-diptych-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
