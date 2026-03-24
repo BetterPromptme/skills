@@ -1,14 +1,14 @@
 ---
 name: neon-pup-velocity-cinematic-street-skateboarding-scene
 description: This prompt instructs an AI to act as a cinematic video director and generate a 5–10 second photorealistic, documentary-style sequence of a real copper Maltipoo skateboarding at speed through a specific New York City location, using specified camera and lighting choices. It defines realism-focused constraints—authentic dog anatomy and fur, natural motion blur and depth of field, handheld/gimbal-like camera behavior, and true-to-life lighting with reflections—while outlining a clear action beat (tricks, passing pedestrians with coffee, close camera moment, then a jump) and safety requirements to ensure the outcome resembles professionally captured real-world footage without stylization or overlays.
-skillVersionId: 0199de7e-3cb0-72e0-94f7-b885abad6bb8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to act as a cinematic video director and generate a 5–10 second photorealistic, documentary-style sequence of a real copper Maltipoo skateboarding at speed through a specific New York City location, using specified camera and lighting choices. It defines realism-focused constraints—authentic dog anatomy and fur, natural motion blur and depth of field, handheld/gimbal-like camera behavior, and true-to-life lighting with reflections—while outlining a clear action beat (tricks, passing pedestrians with coffee, close camera moment, then a jump) and safety requirements to ensure the outcome resembles professionally captured real-world footage without stylization or overlays.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199de7e-3cb0-72e0-94f7-b885abad6bb8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `neon-pup-velocity-cinematic-street-skateboarding-scene`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199de7e-3cb0-72e0-94f7-b885abad6bb8 \
+betterprompt generate neon-pup-velocity-cinematic-street-skateboarding-scene \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199de7e-3cb0-72e0-94f7-b885abad6bb8 \
+betterprompt generate neon-pup-velocity-cinematic-street-skateboarding-scene \
   --input 'lighting=golden hour sunlight with soft reflections on glass' \
   --input 'location=busy New York City street lined with glass buildings' \
   --input 'camera_type=wide-angle lens, low cinematic perspective' \
