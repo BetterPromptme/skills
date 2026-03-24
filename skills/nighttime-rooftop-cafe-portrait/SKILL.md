@@ -1,14 +1,14 @@
 ---
 name: nighttime-rooftop-cafe-portrait
 description: This prompt instructs an image-generation/editing system to produce a photorealistic, vertical, waist-up night portrait in a rooftop or balcony café setting, preserving a separately provided woman’s face exactly while depicting her in a calm, introspective moment using a phone and holding an iced drink at a wooden table. It specifies wardrobe, accessories, pose, framing, shallow depth of field, and a layered city-night background with string lights, blurred guests, skyline glow, and traffic light streaks, resulting in a cinematic yet natural-looking urban lifestyle photograph with balanced warm and cool lighting and minimal processing.
-skillVersionId: 019bb13e-0a28-735e-a158-cb21021b0077
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation/editing system to produce a photorealistic, vertical, waist-up night portrait in a rooftop or balcony café setting, preserving a separately provided woman’s face exactly while depicting her in a calm, introspective moment using a phone and holding an iced drink at a wooden table. It specifies wardrobe, accessories, pose, framing, shallow depth of field, and a layered city-night background with string lights, blurred guests, skyline glow, and traffic light streaks, resulting in a cinematic yet natural-looking urban lifestyle photograph with balanced warm and cool lighting and minimal processing.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019bb13e-0a28-735e-a158-cb21021b0077`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `nighttime-rooftop-cafe-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019bb13e-0a28-735e-a158-cb21021b0077 \
+betterprompt generate nighttime-rooftop-cafe-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019bb13e-0a28-735e-a158-cb21021b0077 \
+betterprompt generate nighttime-rooftop-cafe-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
