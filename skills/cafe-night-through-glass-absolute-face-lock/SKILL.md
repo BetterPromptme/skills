@@ -1,14 +1,14 @@
 ---
 name: cafe-night-through-glass-absolute-face-lock
 description: This prompt instructs an image-generation workflow to produce a single high‑resolution, cinematic night portrait of the subject seated by a cafe window, rendered with a CineStill 800T tungsten-film look, shallow depth of field, warm interior practicals, cool exterior hints, and subtle in-glass reflections that create a dreamy, poetic mood. Its core outcome is strict identity preservation: the uploaded face must remain exactly the same and the subject’s gender must not change, with defined validation and stop conditions that require a clearer reference if the face cannot be reliably matched or gender confidence is low.
-skillVersionId: 019960cd-739b-7905-b859-4009477c9e51
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation workflow to produce a single high‑resolution, cinematic night portrait of the subject seated by a cafe window, rendered with a CineStill 800T tungsten-film look, shallow depth of field, warm interior practicals, cool exterior hints, and subtle in-glass reflections that create a dreamy, poetic mood. Its core outcome is strict identity preservation: the uploaded face must remain exactly the same and the subject’s gender must not change, with defined validation and stop conditions that require a clearer reference if the face cannot be reliably matched or gender confidence is low.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019960cd-739b-7905-b859-4009477c9e51`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cafe-night-through-glass-absolute-face-lock`).
 
 Command form:
 
 ```bash
-betterprompt generate 019960cd-739b-7905-b859-4009477c9e51 \
+betterprompt generate cafe-night-through-glass-absolute-face-lock \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019960cd-739b-7905-b859-4009477c9e51 \
+betterprompt generate cafe-night-through-glass-absolute-face-lock \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
