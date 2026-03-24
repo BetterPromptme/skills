@@ -1,14 +1,14 @@
 ---
 name: geometric-dream-core
 description: This prompt instructs the AI to generate a clean, minimalist geometric illustration featuring a specified subject centered on a lightly textured background, rendered as an elegant, futuristic crystal formed by fine intersecting lines with blue-violet gradients and a soft neon glow. The resulting image includes subtle dots and sparkles for a dreamy cosmic atmosphere, uses smooth pastel lighting with a grainy finish for depth, maintains symmetrical, uncluttered composition, and contains no text or typography.
-skillVersionId: 0199d66a-25a6-79b9-9973-6f2fe428d20d
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a clean, minimalist geometric illustration featuring a specified subject centered on a lightly textured background, rendered as an elegant, futuristic crystal formed by fine intersecting lines with blue-violet gradients and a soft neon glow. The resulting image includes subtle dots and sparkles for a dreamy cosmic atmosphere, uses smooth pastel lighting with a grainy finish for depth, maintains symmetrical, uncluttered composition, and contains no text or typography.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -58,12 +58,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0199d66a-25a6-79b9-9973-6f2fe428d20d`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `geometric-dream-core`).
 
 Command form:
 
 ```bash
-betterprompt generate 0199d66a-25a6-79b9-9973-6f2fe428d20d \
+betterprompt generate geometric-dream-core \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -80,7 +80,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0199d66a-25a6-79b9-9973-6f2fe428d20d \
+betterprompt generate geometric-dream-core \
   --input 'subject=a floating pyramid' \
   --model gpt-image-1 \
   --options '{"size":"1024x1024","quality":"low"}'
