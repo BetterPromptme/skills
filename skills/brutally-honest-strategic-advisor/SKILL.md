@@ -1,14 +1,14 @@
 ---
 name: brutally-honest-strategic-advisor
 description: This prompt instructs the AI to act as a brutally direct strategic advisor who diagnoses a founder/creator/leader’s stated problem, calls out avoidance, naive assumptions, overconfidence, and wasted effort, then delivers a concrete, prioritized action plan to correct course and accelerate results—without comfort, vague encouragement, or therapy-style coaching.
-skillVersionId: 019a6bf4-b6c1-70af-ab1a-e8eadcb34b20
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a brutally direct strategic advisor who diagnoses a founder/creator/leader’s stated problem, calls out avoidance, naive assumptions, overconfidence, and wasted effort, then delivers a concrete, prioritized action plan to correct course and accelerate results—without comfort, vague encouragement, or therapy-style coaching.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -58,12 +58,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a6bf4-b6c1-70af-ab1a-e8eadcb34b20`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `brutally-honest-strategic-advisor`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a6bf4-b6c1-70af-ab1a-e8eadcb34b20 \
+betterprompt generate brutally-honest-strategic-advisor \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -80,7 +80,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a6bf4-b6c1-70af-ab1a-e8eadcb34b20 \
+betterprompt generate brutally-honest-strategic-advisor \
   --input 'The_problem=I’ve been working on my startup for 8 months but can’t get real traction. What’s missing?' \
   --model grok-4-fast \
   --options '{"reasoningEffort":"low"}'
