@@ -1,14 +1,14 @@
 ---
 name: very-simple-prompt
 description: This prompt provides a brief greeting that acknowledges the user’s message, uses the supplied name placeholder as the person’s name, and responds politely to the introduction, resulting in a friendly, personalized reply.
-skillVersionId: 0198f415-05a8-73ac-9b60-79247c817ae2
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt provides a brief greeting that acknowledges the user’s message, uses the supplied name placeholder as the person’s name, and responds politely to the introduction, resulting in a friendly, personalized reply.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198f415-05a8-73ac-9b60-79247c817ae2`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `very-simple-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198f415-05a8-73ac-9b60-79247c817ae2 \
+betterprompt generate very-simple-prompt \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198f415-05a8-73ac-9b60-79247c817ae2 \
+betterprompt generate very-simple-prompt \
   --input name=<value> \
   --model grok-4 \
   --options '{}'
