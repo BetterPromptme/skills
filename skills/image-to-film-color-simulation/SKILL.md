@@ -1,14 +1,14 @@
 ---
 name: image-to-film-color-simulation
 description: This prompt directs an AI to take a standard digital photograph and apply an authentic, stock-specific film emulation—replicating the chosen film’s color palette, contrast curve, grain structure, and characteristic effects (e.g., halation or vignette) while keeping the image’s original size, composition, and subject detail intact. The outcome is a high-resolution, editorial-grade film-styled image that looks like it was shot on the selected analog stock, optionally with a film border, without resorting to generic retro filtering or altering identity-critical features.
-skillVersionId: 01997b3c-eb0b-7a73-99e2-59a1ae23de2b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an AI to take a standard digital photograph and apply an authentic, stock-specific film emulation—replicating the chosen film’s color palette, contrast curve, grain structure, and characteristic effects (e.g., halation or vignette) while keeping the image’s original size, composition, and subject detail intact. The outcome is a high-resolution, editorial-grade film-styled image that looks like it was shot on the selected analog stock, optionally with a film border, without resorting to generic retro filtering or altering identity-critical features.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01997b3c-eb0b-7a73-99e2-59a1ae23de2b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `image-to-film-color-simulation`).
 
 Command form:
 
 ```bash
-betterprompt generate 01997b3c-eb0b-7a73-99e2-59a1ae23de2b \
+betterprompt generate image-to-film-color-simulation \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -100,7 +100,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01997b3c-eb0b-7a73-99e2-59a1ae23de2b \
+betterprompt generate image-to-film-color-simulation \
   --input Border=<value> \
   --input 'Film_Type=Kodak Gold 200' \
   --image-input-url https://example.com/image1.png \
