@@ -1,14 +1,14 @@
 ---
 name: the-dollhouse-illusion
 description: This prompt instructs an AI image generator to produce a hyperreal, cinematic fashion editorial portrait in which a person—matching a provided reference identity—appears oversized and physically confined within a detailed miniature dollhouse room, dressed in a pastel green couture look, posed with calm tension, and photographed with specified camera settings and soft neutral studio lighting to emphasize realistic textures, miniature props, and a refined surreal mood without distortion or cartoon styling.
-skillVersionId: 019a330a-d94a-7433-becc-6be68f027663
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a hyperreal, cinematic fashion editorial portrait in which a person—matching a provided reference identity—appears oversized and physically confined within a detailed miniature dollhouse room, dressed in a pastel green couture look, posed with calm tension, and photographed with specified camera settings and soft neutral studio lighting to emphasize realistic textures, miniature props, and a refined surreal mood without distortion or cartoon styling.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -83,12 +83,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a330a-d94a-7433-becc-6be68f027663`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-dollhouse-illusion`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a330a-d94a-7433-becc-6be68f027663 \
+betterprompt generate the-dollhouse-illusion \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -109,7 +109,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a330a-d94a-7433-becc-6be68f027663 \
+betterprompt generate the-dollhouse-illusion \
   --input image=<value> \
   --input props=<value> \
   --input gender=<value> \
