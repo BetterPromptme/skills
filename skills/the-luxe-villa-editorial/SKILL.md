@@ -1,14 +1,14 @@
 ---
 name: the-luxe-villa-editorial
 description: This prompt instructs an image model to generate a photorealistic, natural-light luxury resort portrait of a specific young woman seated under a wooden pergola, with precise requirements for identity preservation, pose, wardrobe, accessories, architectural setting, lighting, color palette, and camera feel. The intended outcome is a high-resolution vertical editorial-style villa photograph that keeps realistic skin texture and proportions while delivering a calm, refined lifestyle aesthetic with clean modern background elements and soft depth of field.
-skillVersionId: 019c51d6-adba-725c-8e5a-6cf367a00767
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a photorealistic, natural-light luxury resort portrait of a specific young woman seated under a wooden pergola, with precise requirements for identity preservation, pose, wardrobe, accessories, architectural setting, lighting, color palette, and camera feel. The intended outcome is a high-resolution vertical editorial-style villa photograph that keeps realistic skin texture and proportions while delivering a calm, refined lifestyle aesthetic with clean modern background elements and soft depth of field.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c51d6-adba-725c-8e5a-6cf367a00767`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-luxe-villa-editorial`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c51d6-adba-725c-8e5a-6cf367a00767 \
+betterprompt generate the-luxe-villa-editorial \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c51d6-adba-725c-8e5a-6cf367a00767 \
+betterprompt generate the-luxe-villa-editorial \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
