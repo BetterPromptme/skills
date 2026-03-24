@@ -1,14 +1,14 @@
 ---
 name: comic-style-hero-shot
 description: This prompt directs an image model to generate a dynamic comic-book style illustration with a centered main subject, bold inked outlines, vibrant saturated colors, halftone and cel-shaded rendering, and a simple action-themed background framed like a comic panel. The result is a high-contrast, dramatic, print-textured image that looks like a polished pop-art comic page or cover, with added post-processing effects such as grain, ink outlines, and halftone dots.
-skillVersionId: 0197779e-86df-7283-92c0-485076d08ac5
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image model to generate a dynamic comic-book style illustration with a centered main subject, bold inked outlines, vibrant saturated colors, halftone and cel-shaded rendering, and a simple action-themed background framed like a comic panel. The result is a high-contrast, dramatic, print-textured image that looks like a polished pop-art comic page or cover, with added post-processing effects such as grain, ink outlines, and halftone dots.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197779e-86df-7283-92c0-485076d08ac5`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `comic-style-hero-shot`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197779e-86df-7283-92c0-485076d08ac5 \
+betterprompt generate comic-style-hero-shot \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197779e-86df-7283-92c0-485076d08ac5 \
+betterprompt generate comic-style-hero-shot \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
