@@ -201,14 +201,14 @@ describe("buildOptionalTextInputsList", () => {
 describe("buildExampleCommand", () => {
   it("produces valid CLI command with placeholders and defaults", () => {
     const cmd = buildExampleCommand(
-      "sv_abc123",
+      "test-skill",
       textOnlyMeta.variables,
       textOnlyMeta.images,
       "gpt-5-mini",
       { temperature: 0.7 }
     );
 
-    expect(cmd).toContain("betterprompt generate sv_abc123");
+    expect(cmd).toContain("betterprompt generate test-skill");
     // character_role has no defaults → uses <value> placeholder
     expect(cmd).toContain("--input character_role=<value>");
     // story_theme has default → uses the default value
@@ -221,7 +221,7 @@ describe("buildExampleCommand", () => {
 
   it("includes image flags when images are present", () => {
     const cmd = buildExampleCommand(
-      "sv_abc123",
+      "test-skill",
       withImagesMeta.variables,
       withImagesMeta.images,
       "gpt-5-mini",
@@ -235,7 +235,7 @@ describe("buildExampleCommand", () => {
 
   it("quotes values that contain spaces", () => {
     const cmd = buildExampleCommand(
-      "sv_abc123",
+      "test-skill",
       spacesInDefaultMeta.variables,
       [],
       "gpt-5-mini",
@@ -399,8 +399,7 @@ describe("buildSkillmd", () => {
     const result = buildSkillmd(makeParams());
 
     expect(result).toContain("name: Test Skill");
-    expect(result).toContain("description: A test skill");
-    expect(result).toContain("skillVersionId: sv_abc123");
+    expect(result).toContain("description: This skill generates a short story.");
   });
 
   it("text-only output structure has no imageInputs heading", () => {
