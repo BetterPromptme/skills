@@ -1,14 +1,14 @@
 ---
 name: the-neon-arcade-lifestyle-portrait
 description: This prompt instructs an image-generation system to create a photorealistic, neon-saturated indoor arcade lifestyle portrait featuring one or two young subjects playing shooting-game cabinets, using the exact faces from provided reference images without altering identity. It specifies framing, poses, wardrobe, environment details, lighting, color palette, and camera feel to produce a candid, stylish youth-culture scene with clearly visible arcade guns, screens, and glowing cabinets in a dim, industrial arcade setting.
-skillVersionId: 019c2368-6b14-769d-8a94-34b5d0dd087c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to create a photorealistic, neon-saturated indoor arcade lifestyle portrait featuring one or two young subjects playing shooting-game cabinets, using the exact faces from provided reference images without altering identity. It specifies framing, poses, wardrobe, environment details, lighting, color palette, and camera feel to produce a candid, stylish youth-culture scene with clearly visible arcade guns, screens, and glowing cabinets in a dim, industrial arcade setting.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c2368-6b14-769d-8a94-34b5d0dd087c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-neon-arcade-lifestyle-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c2368-6b14-769d-8a94-34b5d0dd087c \
+betterprompt generate the-neon-arcade-lifestyle-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c2368-6b14-769d-8a94-34b5d0dd087c \
+betterprompt generate the-neon-arcade-lifestyle-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
