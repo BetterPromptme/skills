@@ -1,14 +1,14 @@
 ---
 name: dark-carnival-clown-cinematic-full-body-portrait
 description: This prompt instructs an AI image generator to create a cinematic, hyperrealistic full-body portrait of a person reimagined as a dark carnival clown, using a provided reference photo to preserve the subject’s identity while applying specified hairstyle, outfit, makeup, pose, and atmosphere. It defines a centered seated composition on a metal stool with a single red balloon, a gritty carnival-like backdrop with chaotic red markings and haze, and detailed camera/lighting parameters for shallow depth of field and mixed warm–cool cinematic contrast. The intended outcome is an editorial-quality, unsettling-yet-elegant image with sharp focus on the face and balloon, realistic textures, and no added text or branding.
-skillVersionId: 019a2a39-0c1f-7289-8673-cadec0b79e32
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a cinematic, hyperrealistic full-body portrait of a person reimagined as a dark carnival clown, using a provided reference photo to preserve the subject’s identity while applying specified hairstyle, outfit, makeup, pose, and atmosphere. It defines a centered seated composition on a metal stool with a single red balloon, a gritty carnival-like backdrop with chaotic red markings and haze, and detailed camera/lighting parameters for shallow depth of field and mixed warm–cool cinematic contrast. The intended outcome is an editorial-quality, unsettling-yet-elegant image with sharp focus on the face and balloon, realistic textures, and no added text or branding.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -83,12 +83,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a2a39-0c1f-7289-8673-cadec0b79e32`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `dark-carnival-clown-cinematic-full-body-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a2a39-0c1f-7289-8673-cadec0b79e32 \
+betterprompt generate dark-carnival-clown-cinematic-full-body-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -109,7 +109,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a2a39-0c1f-7289-8673-cadec0b79e32 \
+betterprompt generate dark-carnival-clown-cinematic-full-body-portrait \
   --input image=<value> \
   --input gender=<value> \
   --input hairstyle=<value> \
