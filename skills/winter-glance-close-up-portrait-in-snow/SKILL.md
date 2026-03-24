@@ -1,14 +1,14 @@
 ---
 name: winter-glance-close-up-portrait-in-snow
 description: This prompt instructs an image-generation model to produce a high-definition, photorealistic, tight close-up winter portrait of a young person in a softly blurred snowy forest, with natural overcast lighting and cinematic, introspective mood. It specifies composition, wardrobe (black scarf and gloves), texture details (snowflakes on hair and scarf, visible skin and fabric texture), and color/lighting parameters to ensure realistic, film-grain finish. The intended outcome is a 4:5 vertical 4K/8K portrait where the subject’s facial proportions, hairstyle, and hair color match a provided reference exactly, preserving authentic expression without beautification or stylization.
-skillVersionId: 019a4ca6-7d63-7203-9ae5-09ddc84307b2
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to produce a high-definition, photorealistic, tight close-up winter portrait of a young person in a softly blurred snowy forest, with natural overcast lighting and cinematic, introspective mood. It specifies composition, wardrobe (black scarf and gloves), texture details (snowflakes on hair and scarf, visible skin and fabric texture), and color/lighting parameters to ensure realistic, film-grain finish. The intended outcome is a 4:5 vertical 4K/8K portrait where the subject’s facial proportions, hairstyle, and hair color match a provided reference exactly, preserving authentic expression without beautification or stylization.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a4ca6-7d63-7203-9ae5-09ddc84307b2`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `winter-glance-close-up-portrait-in-snow`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a4ca6-7d63-7203-9ae5-09ddc84307b2 \
+betterprompt generate winter-glance-close-up-portrait-in-snow \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a4ca6-7d63-7203-9ae5-09ddc84307b2 \
+betterprompt generate winter-glance-close-up-portrait-in-snow \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
