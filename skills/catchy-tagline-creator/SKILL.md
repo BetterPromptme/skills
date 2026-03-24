@@ -1,14 +1,14 @@
 ---
 name: catchy-tagline-creator
 description: This prompt instructs the AI to act as a creative marketing copywriter for a specified type of service business and generate five distinct, memorable slogans or taglines that emphasize the company’s core values, professionalism, and customer benefits, tailored to attract people seeking a trusted, high-quality provider, with the output consisting only of the final slogans and no additional commentary.
-skillVersionId: 01982fe0-c5fb-7ee3-bb30-8cd29880abf1
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a creative marketing copywriter for a specified type of service business and generate five distinct, memorable slogans or taglines that emphasize the company’s core values, professionalism, and customer benefits, tailored to attract people seeking a trusted, high-quality provider, with the output consisting only of the final slogans and no additional commentary.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01982fe0-c5fb-7ee3-bb30-8cd29880abf1`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `catchy-tagline-creator`).
 
 Command form:
 
 ```bash
-betterprompt generate 01982fe0-c5fb-7ee3-bb30-8cd29880abf1 \
+betterprompt generate catchy-tagline-creator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01982fe0-c5fb-7ee3-bb30-8cd29880abf1 \
+betterprompt generate catchy-tagline-creator \
   --input service=<value> \
   --input business_type=<value> \
   --model gpt-4.1-mini \
