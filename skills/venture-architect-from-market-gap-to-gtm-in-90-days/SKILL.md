@@ -1,14 +1,14 @@
 ---
 name: venture-architect-from-market-gap-to-gtm-in-90-days
 description: This prompt instructs the AI to research a specified industry, identify fast-growing market segments and evidence-backed underserved customer pain points, then choose the best opportunity using a weighted scorecard. It then has the AI turn that opportunity into a venture plan that can be executed within 12 months, including a clear business thesis, MVP product scope and user journey, go-to-market strategy with CAC/LTV logic, defensibility, a year-one financial model with break-even timing, key risks with mitigations, and a detailed 90-day execution roadmap—producing an executive-ready structured output.
-skillVersionId: 0197c935-09f3-7d66-84e7-14d5c0b279e8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to research a specified industry, identify fast-growing market segments and evidence-backed underserved customer pain points, then choose the best opportunity using a weighted scorecard. It then has the AI turn that opportunity into a venture plan that can be executed within 12 months, including a clear business thesis, MVP product scope and user journey, go-to-market strategy with CAC/LTV logic, defensibility, a year-one financial model with break-even timing, key risks with mitigations, and a detailed 90-day execution roadmap—producing an executive-ready structured output.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c935-09f3-7d66-84e7-14d5c0b279e8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `venture-architect-from-market-gap-to-gtm-in-90-days`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c935-09f3-7d66-84e7-14d5c0b279e8 \
+betterprompt generate venture-architect-from-market-gap-to-gtm-in-90-days \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c935-09f3-7d66-84e7-14d5c0b279e8 \
+betterprompt generate venture-architect-from-market-gap-to-gtm-in-90-days \
   --input Industry=<value> \
   --model gpt-4.1-mini \
   --options '{}'
