@@ -1,14 +1,14 @@
 ---
 name: simplify-complex-topics
 description: This prompt instructs the AI to act as an expert educator who explains a provided topic in simple, step-by-step language that a general audience (even a 12-year-old) can understand. It emphasizes using clear definitions, relatable metaphors or visual analogies, and a memorable structure while avoiding jargon, advanced math, or overly technical depth. The expected outcome is an accurate, accessible explanation that preserves the concept’s true meaning without drifting into misinformation or unnecessary complexity.
-skillVersionId: 019a29ac-12b0-7fd3-8953-e518a60a1b26
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an expert educator who explains a provided topic in simple, step-by-step language that a general audience (even a 12-year-old) can understand. It emphasizes using clear definitions, relatable metaphors or visual analogies, and a memorable structure while avoiding jargon, advanced math, or overly technical depth. The expected outcome is an accurate, accessible explanation that preserves the concept’s true meaning without drifting into misinformation or unnecessary complexity.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -58,12 +58,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a29ac-12b0-7fd3-8953-e518a60a1b26`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `simplify-complex-topics`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a29ac-12b0-7fd3-8953-e518a60a1b26 \
+betterprompt generate simplify-complex-topics \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -80,7 +80,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a29ac-12b0-7fd3-8953-e518a60a1b26 \
+betterprompt generate simplify-complex-topics \
   --input 'topic=Artificial Intelligence and how it learns' \
   --model gpt-5 \
   --options '{"reasoningEffort":"low"}'
