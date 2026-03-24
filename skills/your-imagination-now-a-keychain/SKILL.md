@@ -1,14 +1,14 @@
 ---
 name: your-imagination-now-a-keychain
 description: This prompt instructs the AI to turn the person in the provided photo into a cute 3D cartoon keychain character, simplifying facial features and pose into a smooth, toy-like figure with a silicone-style texture and pastel colors. It specifies adding a keychain component and an attached name tag displaying “{{ Name }}” in a playful rounded font, while keeping the output as a clean product-style render with no background and minimal shadows.
-skillVersionId: 0196f231-6f1c-79b7-99f4-9a71a975271a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to turn the person in the provided photo into a cute 3D cartoon keychain character, simplifying facial features and pose into a smooth, toy-like figure with a silicone-style texture and pastel colors. It specifies adding a keychain component and an attached name tag displaying “{{ Name }}” in a playful rounded font, while keeping the output as a clean product-style render with no background and minimal shadows.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -71,12 +71,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f231-6f1c-79b7-99f4-9a71a975271a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `your-imagination-now-a-keychain`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f231-6f1c-79b7-99f4-9a71a975271a \
+betterprompt generate your-imagination-now-a-keychain \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -97,7 +97,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f231-6f1c-79b7-99f4-9a71a975271a \
+betterprompt generate your-imagination-now-a-keychain \
   --input Name=<value> \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
