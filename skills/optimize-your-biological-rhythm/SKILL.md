@@ -1,14 +1,14 @@
 ---
 name: optimize-your-biological-rhythm
 description: This prompt instructs the AI to act as a chronobiology-informed performance strategist who first asks the user for details about their current routine and daily energy/creativity/tiredness patterns, then uses that information to infer a likely chronotype, model 24-hour hormonal and cognitive fluctuations, identify routine-to-biology mismatches, and produce a customized time-blocked daily framework with flexible adaptive rituals, an implementation plan, and tracking metrics—while avoiding generic productivity advice and noting any missing data needed for better personalization.
-skillVersionId: 01970bd9-83d3-7d4c-a080-304b0a1abd06
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a chronobiology-informed performance strategist who first asks the user for details about their current routine and daily energy/creativity/tiredness patterns, then uses that information to infer a likely chronotype, model 24-hour hormonal and cognitive fluctuations, identify routine-to-biology mismatches, and produce a customized time-blocked daily framework with flexible adaptive rituals, an implementation plan, and tracking metrics—while avoiding generic productivity advice and noting any missing data needed for better personalization.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01970bd9-83d3-7d4c-a080-304b0a1abd06`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `optimize-your-biological-rhythm`).
 
 Command form:
 
 ```bash
-betterprompt generate 01970bd9-83d3-7d4c-a080-304b0a1abd06 \
+betterprompt generate optimize-your-biological-rhythm \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01970bd9-83d3-7d4c-a080-304b0a1abd06 \
+betterprompt generate optimize-your-biological-rhythm \
   --input Context=<value> \
   --model gemini-2.5-pro-preview \
   --options '{}'
