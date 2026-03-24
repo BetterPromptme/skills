@@ -1,14 +1,14 @@
 ---
 name: mirror-selfie-with-rhode-phone-case
 description: This prompt instructs an image model to generate a close-up bathroom mirror selfie of a female subject while strictly preserving the person’s exact facial identity, proportions, skin tone, and hair color from the first reference image, and accurately featuring the Rhode phone case from the second reference image. It specifies the camera angle, framing, pose, expression, hair styling, makeup, outfit, jewelry, nails, lighting, and upscale bathroom setting to achieve a polished, beauty-influencer aesthetic with realistic texture and reflections, while explicitly avoiding male subjects, heavy retouching, background clutter, extra props, or any changes to the phone case design.
-skillVersionId: 019b49f6-64ab-73d1-9498-18b1a65b4a52
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a close-up bathroom mirror selfie of a female subject while strictly preserving the person’s exact facial identity, proportions, skin tone, and hair color from the first reference image, and accurately featuring the Rhode phone case from the second reference image. It specifies the camera angle, framing, pose, expression, hair styling, makeup, outfit, jewelry, nails, lighting, and upscale bathroom setting to achieve a polished, beauty-influencer aesthetic with realistic texture and reflections, while explicitly avoiding male subjects, heavy retouching, background clutter, extra props, or any changes to the phone case design.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b49f6-64ab-73d1-9498-18b1a65b4a52`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `mirror-selfie-with-rhode-phone-case`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b49f6-64ab-73d1-9498-18b1a65b4a52 \
+betterprompt generate mirror-selfie-with-rhode-phone-case \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b49f6-64ab-73d1-9498-18b1a65b4a52 \
+betterprompt generate mirror-selfie-with-rhode-phone-case \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --model gemini-3-pro-image-preview \
