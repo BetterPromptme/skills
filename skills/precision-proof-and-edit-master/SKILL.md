@@ -1,14 +1,14 @@
 ---
 name: precision-proof-and-edit-master
 description: This prompt instructs the AI to act as a meticulous English proofreader and editor who takes a provided draft, considers its audience, purpose, style preferences, and constraints, and then produces a polished, publication-ready revision. The result includes a brief summary of the draft and editing focus, a list of key issues with illustrative before/after examples, the fully revised draft, and concise notes explaining the rationale behind major edits while preserving the author’s original meaning and voice without adding unsupported content.
-skillVersionId: 019a7621-a45e-730f-9c97-9846796c96d1
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a meticulous English proofreader and editor who takes a provided draft, considers its audience, purpose, style preferences, and constraints, and then produces a polished, publication-ready revision. The result includes a brief summary of the draft and editing focus, a list of key issues with illustrative before/after examples, the fully revised draft, and concise notes explaining the rationale behind major edits while preserving the author’s original meaning and voice without adding unsupported content.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -69,12 +69,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a7621-a45e-730f-9c97-9846796c96d1`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `precision-proof-and-edit-master`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a7621-a45e-730f-9c97-9846796c96d1 \
+betterprompt generate precision-proof-and-edit-master \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -91,7 +91,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a7621-a45e-730f-9c97-9846796c96d1 \
+betterprompt generate precision-proof-and-edit-master \
   --input purpose=<value> \
   --input draft_text=<value> \
   --input constraints=<value> \
