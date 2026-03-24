@@ -1,14 +1,14 @@
 ---
 name: cinematic-night-drive-portrait
 description: This prompt instructs an AI image model to take a user-provided portrait and restyle it into a safe-for-work, nostalgic late-night cinematic scene where the same person leans out of a moving car window, with wind-swept hair, ambient city glow, motion-blurred streetlights and traffic streaks, and a subtle film-grain finish. It emphasizes single-pass execution, strong identity preservation (no changes to age, facial structure, skin tone, or defining traits), natural adaptation of clothing and styling based on the subject, and prohibits unsafe content, watermarks, and overly smoothing retouching, resulting in a dreamy, film-like night-drive portrait.
-skillVersionId: 01999e86-1045-751f-a433-e4cbfacc650c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image model to take a user-provided portrait and restyle it into a safe-for-work, nostalgic late-night cinematic scene where the same person leans out of a moving car window, with wind-swept hair, ambient city glow, motion-blurred streetlights and traffic streaks, and a subtle film-grain finish. It emphasizes single-pass execution, strong identity preservation (no changes to age, facial structure, skin tone, or defining traits), natural adaptation of clothing and styling based on the subject, and prohibits unsafe content, watermarks, and overly smoothing retouching, resulting in a dreamy, film-like night-drive portrait.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -76,12 +76,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01999e86-1045-751f-a433-e4cbfacc650c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cinematic-night-drive-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 01999e86-1045-751f-a433-e4cbfacc650c \
+betterprompt generate cinematic-night-drive-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -102,7 +102,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01999e86-1045-751f-a433-e4cbfacc650c \
+betterprompt generate cinematic-night-drive-portrait \
   --input 'mood=nostalgic, cinematic, late-night drive ' \
   --input 'grain=subtle film grain overlay  ' \
   --input 'Clothing_style=casual, white knit sweater  ' \
