@@ -1,14 +1,14 @@
 ---
 name: ghostface-reflection-cinematic-halloween-mirror-scene
 description: This prompt instructs an image-generation system to create a hyperrealistic, cinematic Halloween bathroom scene based on a provided reference photo of a woman, preserving her exact facial features and proportions while styling her wardrobe, accessories, and makeup as specified. It defines a mirror-focused composition where she calmly applies glossy red lipstick, and a masked killer figure appears only in the mirror behind her, with detailed guidance for environment, props, camera angle, lens, depth of field, lighting temperature, mood, and quality constraints. The outcome is a polished vertical-format horror portrait that balances elegant realism with suspense, emphasizing reflection, controlled focus, and cool cinematic lighting without added text or artifacts.
-skillVersionId: 019a29db-3100-7ba2-b714-20ddbbc219e6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to create a hyperrealistic, cinematic Halloween bathroom scene based on a provided reference photo of a woman, preserving her exact facial features and proportions while styling her wardrobe, accessories, and makeup as specified. It defines a mirror-focused composition where she calmly applies glossy red lipstick, and a masked killer figure appears only in the mirror behind her, with detailed guidance for environment, props, camera angle, lens, depth of field, lighting temperature, mood, and quality constraints. The outcome is a polished vertical-format horror portrait that balances elegant realism with suspense, emphasizing reflection, controlled focus, and cool cinematic lighting without added text or artifacts.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -79,12 +79,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a29db-3100-7ba2-b714-20ddbbc219e6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ghostface-reflection-cinematic-halloween-mirror-scene`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a29db-3100-7ba2-b714-20ddbbc219e6 \
+betterprompt generate ghostface-reflection-cinematic-halloween-mirror-scene \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -105,7 +105,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a29db-3100-7ba2-b714-20ddbbc219e6 \
+betterprompt generate ghostface-reflection-cinematic-halloween-mirror-scene \
   --input image=<value> \
   --input accessories=<value> \
   --input outfit_style=<value> \
