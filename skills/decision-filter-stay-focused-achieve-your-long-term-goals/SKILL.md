@@ -1,14 +1,14 @@
 ---
 name: decision-filter-stay-focused-achieve-your-long-term-goals
 description: This prompt asks the AI to help you design a simple, repeatable decision filter for evaluating new options or opportunities against your long-term goals so you can stay focused. It guides you to clarify your priorities, define objective criteria (e.g., goal alignment, impact, time cost, opportunity cost, and timing), and produce a checklist or scoring rubric you can apply quickly whenever a distraction appears. The outcome is a practical framework—often including rules for when to say yes/no, a short set of questions to ask, and a process for parking ideas—that reduces impulsive pivots and keeps your time and energy aligned with what matters most.
-skillVersionId: 01972e74-a229-7bb1-8d84-770788e992f1
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to help you design a simple, repeatable decision filter for evaluating new options or opportunities against your long-term goals so you can stay focused. It guides you to clarify your priorities, define objective criteria (e.g., goal alignment, impact, time cost, opportunity cost, and timing), and produce a checklist or scoring rubric you can apply quickly whenever a distraction appears. The outcome is a practical framework—often including rules for when to say yes/no, a short set of questions to ask, and a process for parking ideas—that reduces impulsive pivots and keeps your time and energy aligned with what matters most.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01972e74-a229-7bb1-8d84-770788e992f1`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `decision-filter-stay-focused-achieve-your-long-term-goals`).
 
 Command form:
 
 ```bash
-betterprompt generate 01972e74-a229-7bb1-8d84-770788e992f1 \
+betterprompt generate decision-filter-stay-focused-achieve-your-long-term-goals \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01972e74-a229-7bb1-8d84-770788e992f1 \
+betterprompt generate decision-filter-stay-focused-achieve-your-long-term-goals \
   --input options_or_opportunities=<value> \
   --model gemini-2.5-pro-preview \
   --options '{}'
