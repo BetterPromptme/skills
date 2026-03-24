@@ -1,14 +1,14 @@
 ---
 name: ultra-realistic-cinematic-portrait
 description: This prompt directs the AI to generate an ultra-realistic, cinematic portrait based on the uploaded person, depicting them at night in an urban environment with windswept messy hair and a distressed black leather jacket. It specifies dynamic lighting from bright white train light streaks passing behind the subject, selectively illuminating the face and jacket while keeping the background in motion blur. The result is a dramatic, high-tension scene with strong contrast, realistic textures, and a film-like atmosphere.
-skillVersionId: 019cfb29-f242-7315-b0a7-ae82bc519894
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs the AI to generate an ultra-realistic, cinematic portrait based on the uploaded person, depicting them at night in an urban environment with windswept messy hair and a distressed black leather jacket. It specifies dynamic lighting from bright white train light streaks passing behind the subject, selectively illuminating the face and jacket while keeping the background in motion blur. The result is a dramatic, high-tension scene with strong contrast, realistic textures, and a film-like atmosphere.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019cfb29-f242-7315-b0a7-ae82bc519894`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ultra-realistic-cinematic-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019cfb29-f242-7315-b0a7-ae82bc519894 \
+betterprompt generate ultra-realistic-cinematic-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019cfb29-f242-7315-b0a7-ae82bc519894 \
+betterprompt generate ultra-realistic-cinematic-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3.1-flash-image-preview \
   --options '{"reasoningEffort":"minimal","aspectRatio":"1:1","resolution":"1K"}'
