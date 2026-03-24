@@ -1,14 +1,14 @@
 ---
 name: make-paper-or-wood-cut-art-just-add-a-subject
 description: Generates a clean, flat paper-cutout style design of the specified subject themed after a chosen character or style, formatted as a multilayer SVG optimized for plywood laser cutting. The result is a bold, simplified silhouette composition on a white background, organized into three base structural layers plus four additional color layers to support easy assembly and use in craft projects.
-skillVersionId: 01987eae-2647-72bc-8eeb-810d26e2160b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 Generates a clean, flat paper-cutout style design of the specified subject themed after a chosen character or style, formatted as a multilayer SVG optimized for plywood laser cutting. The result is a bold, simplified silhouette composition on a white background, organized into three base structural layers plus four additional color layers to support easy assembly and use in craft projects.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01987eae-2647-72bc-8eeb-810d26e2160b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `make-paper-or-wood-cut-art-just-add-a-subject`).
 
 Command form:
 
 ```bash
-betterprompt generate 01987eae-2647-72bc-8eeb-810d26e2160b \
+betterprompt generate make-paper-or-wood-cut-art-just-add-a-subject \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01987eae-2647-72bc-8eeb-810d26e2160b \
+betterprompt generate make-paper-or-wood-cut-art-just-add-a-subject \
   --input subject=<value> \
   --input theme_or_character=<value> \
   --model gpt-image-1 \
