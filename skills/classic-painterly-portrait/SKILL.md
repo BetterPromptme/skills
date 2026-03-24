@@ -1,14 +1,14 @@
 ---
 name: classic-painterly-portrait
 description: This prompt instructs the AI to take the provided photo and render it as a realistic oil-on-canvas portrait, preserving the subject’s key identity traits (facial features, expression, and hairstyle) while applying soft brushwork, visible impasto texture, and smooth color blending. It specifies a warm pastel palette and a gently abstract background in peach, blue, and cream, with natural, slightly diffused studio-like lighting to create a calm, timeless, museum-quality mood in the final painted image.
-skillVersionId: 01987953-71e2-7499-845c-4f037b525f7a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take the provided photo and render it as a realistic oil-on-canvas portrait, preserving the subject’s key identity traits (facial features, expression, and hairstyle) while applying soft brushwork, visible impasto texture, and smooth color blending. It specifies a warm pastel palette and a gently abstract background in peach, blue, and cream, with natural, slightly diffused studio-like lighting to create a calm, timeless, museum-quality mood in the final painted image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01987953-71e2-7499-845c-4f037b525f7a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `classic-painterly-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 01987953-71e2-7499-845c-4f037b525f7a \
+betterprompt generate classic-painterly-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01987953-71e2-7499-845c-4f037b525f7a \
+betterprompt generate classic-painterly-portrait \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":2},"quality":"high"}'
