@@ -1,14 +1,14 @@
 ---
 name: summarize-your-long-text
 description: This prompt instructs the AI to act as a professional summarizer and produce a single-paragraph summary of a user-provided text that captures the main ideas and essential details in a clear, concise, and in-depth way, removing unnecessary wording and avoiding any information not found in the source.
-skillVersionId: 019a6b75-71cf-712a-b127-2cfc860e8ea0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a professional summarizer and produce a single-paragraph summary of a user-provided text that captures the main ideas and essential details in a clear, concise, and in-depth way, removing unnecessary wording and avoiding any information not found in the source.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a6b75-71cf-712a-b127-2cfc860e8ea0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `summarize-your-long-text`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a6b75-71cf-712a-b127-2cfc860e8ea0 \
+betterprompt generate summarize-your-long-text \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a6b75-71cf-712a-b127-2cfc860e8ea0 \
+betterprompt generate summarize-your-long-text \
   --input Your_text=<value> \
   --model gpt-5 \
   --options '{"reasoningEffort":"low"}'
