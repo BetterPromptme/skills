@@ -1,14 +1,14 @@
 ---
 name: snowy-husky-selfie-portrait
 description: This prompt instructs the AI to edit an existing, clearly lit human portrait into a photorealistic, phone-style winter selfie taken in a snowy pine forest, keeping the person’s face and expression exactly unchanged while adding a white puffer jacket, heavy falling snow, and natural snow accumulation on hair and lashes. It also requires integrating a large, realistic grey-and-white husky very close to the subject, matching scale, lighting, depth of field, and environment so the final image reads as an authentic candid outdoor selfie with cool, muted winter tones and soft background blur.
-skillVersionId: 019b26b2-99b8-74d2-be8c-b54122bfcfb6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to edit an existing, clearly lit human portrait into a photorealistic, phone-style winter selfie taken in a snowy pine forest, keeping the person’s face and expression exactly unchanged while adding a white puffer jacket, heavy falling snow, and natural snow accumulation on hair and lashes. It also requires integrating a large, realistic grey-and-white husky very close to the subject, matching scale, lighting, depth of field, and environment so the final image reads as an authentic candid outdoor selfie with cool, muted winter tones and soft background blur.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b26b2-99b8-74d2-be8c-b54122bfcfb6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `snowy-husky-selfie-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b26b2-99b8-74d2-be8c-b54122bfcfb6 \
+betterprompt generate snowy-husky-selfie-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b26b2-99b8-74d2-be8c-b54122bfcfb6 \
+betterprompt generate snowy-husky-selfie-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{"aspectRatio":"3:4"}'
