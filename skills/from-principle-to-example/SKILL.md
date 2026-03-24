@@ -1,14 +1,14 @@
 ---
 name: from-principle-to-example
 description: This prompt instructs the AI to act as a practical educator who takes an abstract theory provided by the user and turns it into clear, real-world examples that demonstrate how the idea plays out in everyday situations. The result is one or more concise, focused scenarios (without jargon, added assumptions, or unrelated concepts) that preserve the theory’s original meaning while making it easier to understand and apply.
-skillVersionId: 019b54c7-94ee-77cc-9817-9636cde25cc0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a practical educator who takes an abstract theory provided by the user and turns it into clear, real-world examples that demonstrate how the idea plays out in everyday situations. The result is one or more concise, focused scenarios (without jargon, added assumptions, or unrelated concepts) that preserve the theory’s original meaning while making it easier to understand and apply.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b54c7-94ee-77cc-9817-9636cde25cc0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `from-principle-to-example`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b54c7-94ee-77cc-9817-9636cde25cc0 \
+betterprompt generate from-principle-to-example \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b54c7-94ee-77cc-9817-9636cde25cc0 \
+betterprompt generate from-principle-to-example \
   --input Theory_or_concept=<value> \
   --model deepseek-r1 \
   --options '{}'
