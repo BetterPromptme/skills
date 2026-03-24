@@ -1,14 +1,14 @@
 ---
 name: ocean-edge-album-cover-absolute-face-lock
 description: This prompt instructs an image generator to produce a photorealistic, square-format album cover depicting a person seated at the very end of a white spring diving board extending over a vast, horizonless ocean in a cool blue-hour film aesthetic, with specific wardrobe, camera, lighting, composition, and post-processing constraints. Its intended outcome is a high-resolution cover image with crisp subject detail and textured waves, no visible text or logos, and—most critically—strict, unaltered preservation of the provided reference face (with a requirement to halt and request a clearer reference if facial visibility is insufficient).
-skillVersionId: 01997aff-9bc1-772c-a4ce-d80be62210b5
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image generator to produce a photorealistic, square-format album cover depicting a person seated at the very end of a white spring diving board extending over a vast, horizonless ocean in a cool blue-hour film aesthetic, with specific wardrobe, camera, lighting, composition, and post-processing constraints. Its intended outcome is a high-resolution cover image with crisp subject detail and textured waves, no visible text or logos, and—most critically—strict, unaltered preservation of the provided reference face (with a requirement to halt and request a clearer reference if facial visibility is insufficient).
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01997aff-9bc1-772c-a4ce-d80be62210b5`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ocean-edge-album-cover-absolute-face-lock`).
 
 Command form:
 
 ```bash
-betterprompt generate 01997aff-9bc1-772c-a4ce-d80be62210b5 \
+betterprompt generate ocean-edge-album-cover-absolute-face-lock \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01997aff-9bc1-772c-a4ce-d80be62210b5 \
+betterprompt generate ocean-edge-album-cover-absolute-face-lock \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
