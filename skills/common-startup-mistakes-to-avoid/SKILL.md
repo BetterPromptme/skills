@@ -1,14 +1,14 @@
 ---
 name: common-startup-mistakes-to-avoid
 description: This prompt instructs the AI to generate a tailored list of seven frequent early-stage founder mistakes specific to a chosen business industry and limited-capital startup context, paired with practical avoidance strategies. The result is an actionable, industry-relevant checklist (optionally illustrated with real-world examples) that helps a new founder anticipate common pitfalls and make better early decisions.
-skillVersionId: 01977705-d32e-7de4-89b6-de2c41c593e3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a tailored list of seven frequent early-stage founder mistakes specific to a chosen business industry and limited-capital startup context, paired with practical avoidance strategies. The result is an actionable, industry-relevant checklist (optionally illustrated with real-world examples) that helps a new founder anticipate common pitfalls and make better early decisions.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01977705-d32e-7de4-89b6-de2c41c593e3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `common-startup-mistakes-to-avoid`).
 
 Command form:
 
 ```bash
-betterprompt generate 01977705-d32e-7de4-89b6-de2c41c593e3 \
+betterprompt generate common-startup-mistakes-to-avoid \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01977705-d32e-7de4-89b6-de2c41c593e3 \
+betterprompt generate common-startup-mistakes-to-avoid \
   --input TYPE_OF_BUSINESS=<value> \
   --model gpt-4.1-mini \
   --options '{}'
