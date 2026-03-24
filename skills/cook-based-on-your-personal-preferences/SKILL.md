@@ -1,14 +1,14 @@
 ---
 name: cook-based-on-your-personal-preferences
 description: This prompt instructs the AI to act as a professional chef and nutritionist to produce a customized recipe for a specified dish and serving size, tailored to the user’s flavor preferences, dietary restrictions, required main ingredients, excluded ingredients (with alternatives), available cooking equipment, and preferred cuisine/presentation style. The result is a structured, step-by-step recipe including an introduction, precise ingredient measurements, timed preparation instructions, plating guidance, and a notes section with substitutions, side-dish pairings, flavor-boosting tips, estimated calories per serving with lighter-adjustment options, and a summary of nutritional benefits aligned to the stated needs.
-skillVersionId: 019733e9-81e6-7c50-8a73-a52de1817c81
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a professional chef and nutritionist to produce a customized recipe for a specified dish and serving size, tailored to the user’s flavor preferences, dietary restrictions, required main ingredients, excluded ingredients (with alternatives), available cooking equipment, and preferred cuisine/presentation style. The result is a structured, step-by-step recipe including an introduction, precise ingredient measurements, timed preparation instructions, plating guidance, and a notes section with substitutions, side-dish pairings, flavor-boosting tips, estimated calories per serving with lighter-adjustment options, and a summary of nutritional benefits aligned to the stated needs.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -74,12 +74,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019733e9-81e6-7c50-8a73-a52de1817c81`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cook-based-on-your-personal-preferences`).
 
 Command form:
 
 ```bash
-betterprompt generate 019733e9-81e6-7c50-8a73-a52de1817c81 \
+betterprompt generate cook-based-on-your-personal-preferences \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019733e9-81e6-7c50-8a73-a52de1817c81 \
+betterprompt generate cook-based-on-your-personal-preferences \
   --input Dish_name=<value> \
   --input Personal_taste=<value> \
   --input Preferred_style=<value> \
