@@ -1,14 +1,14 @@
 ---
 name: architectural-cross-section-realism
 description: This prompt instructs an image model to generate a hyper-realistic poster in a specified aspect ratio showing a highly detailed 3D square isometric diorama of a chosen city as a miniature, including its iconic landmarks, placed on a terrain block with a visible geological cross-section (soil, water, rock) beneath a grassy surface. It specifies cinematic lighting, subtle depth of field, and vibrant but natural color grading to make the scene look like a meticulously crafted physical display, all presented on a clean white background for a striking, immersive result.
-skillVersionId: 0197a60f-1acf-72a8-9c4a-64b4ceb5bcfd
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a hyper-realistic poster in a specified aspect ratio showing a highly detailed 3D square isometric diorama of a chosen city as a miniature, including its iconic landmarks, placed on a terrain block with a visible geological cross-section (soil, water, rock) beneath a grassy surface. It specifies cinematic lighting, subtle depth of field, and vibrant but natural color grading to make the scene look like a meticulously crafted physical display, all presented on a clean white background for a striking, immersive result.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197a60f-1acf-72a8-9c4a-64b4ceb5bcfd`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `architectural-cross-section-realism`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197a60f-1acf-72a8-9c4a-64b4ceb5bcfd \
+betterprompt generate architectural-cross-section-realism \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197a60f-1acf-72a8-9c4a-64b4ceb5bcfd \
+betterprompt generate architectural-cross-section-realism \
   --input CITY=<value> \
   --input aspect_ratio=<value> \
   --model gpt-image-1 \
