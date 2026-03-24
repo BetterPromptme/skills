@@ -1,14 +1,14 @@
 ---
 name: personalized-health-advice-prompt
 description: This prompt instructs the assistant to act as an experienced health expert and generate personalized, medically sound wellness guidance using the user’s name, age, gender, weight, and current health condition. The response must follow a fixed structure—greeting, gentle exercise recommendations tailored to the condition, a list of things to avoid, additional practical wellness advice (e.g., nutrition, hydration, rest), and a supportive closing with a reminder to care for one’s health and a thank-you. The outcome is an empathetic, easy-to-follow set of individualized recommendations designed to support recovery and prevent worsening symptoms.
-skillVersionId: 0196ec91-787e-7271-8e7a-96fafd64f0b8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the assistant to act as an experienced health expert and generate personalized, medically sound wellness guidance using the user’s name, age, gender, weight, and current health condition. The response must follow a fixed structure—greeting, gentle exercise recommendations tailored to the condition, a list of things to avoid, additional practical wellness advice (e.g., nutrition, hydration, rest), and a supportive closing with a reminder to care for one’s health and a thank-you. The outcome is an empathetic, easy-to-follow set of individualized recommendations designed to support recovery and prevent worsening symptoms.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196ec91-787e-7271-8e7a-96fafd64f0b8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `personalized-health-advice-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196ec91-787e-7271-8e7a-96fafd64f0b8 \
+betterprompt generate personalized-health-advice-prompt \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196ec91-787e-7271-8e7a-96fafd64f0b8 \
+betterprompt generate personalized-health-advice-prompt \
   --input Enter_Age=<value> \
   --input Enter_Name=<value> \
   --input Enter_Gender=<value> \
