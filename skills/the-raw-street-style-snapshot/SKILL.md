@@ -1,14 +1,14 @@
 ---
 name: the-raw-street-style-snapshot
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical nighttime selfie portrait of a young woman beside an open car door on a busy, holiday-lit downtown street, specifying precise framing, pose, outfit, lighting, color palette, and background street activity to create an energetic festive nightlife mood while enforcing strict constraints to preserve the subject’s natural facial identity, proportions, skin texture, and realistic exposure.
-skillVersionId: 019cdcb2-421f-7789-a544-23dd658f6756
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical nighttime selfie portrait of a young woman beside an open car door on a busy, holiday-lit downtown street, specifying precise framing, pose, outfit, lighting, color palette, and background street activity to create an energetic festive nightlife mood while enforcing strict constraints to preserve the subject’s natural facial identity, proportions, skin texture, and realistic exposure.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019cdcb2-421f-7789-a544-23dd658f6756`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-raw-street-style-snapshot`).
 
 Command form:
 
 ```bash
-betterprompt generate 019cdcb2-421f-7789-a544-23dd658f6756 \
+betterprompt generate the-raw-street-style-snapshot \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019cdcb2-421f-7789-a544-23dd658f6756 \
+betterprompt generate the-raw-street-style-snapshot \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
