@@ -1,14 +1,14 @@
 ---
 name: story-based-puzzle-generator
 description: This prompt instructs the AI to generate a themed puzzle of a specified type and difficulty, tailored to a stated objective and optional mechanics and audience constraints. The response must include the complete puzzle text, a full solution, and a defined number of progressively helpful hints, all presented in a fixed sectioned format.
-skillVersionId: 0197d426-6d98-7371-a5e3-4e19a476aa76
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a themed puzzle of a specified type and difficulty, tailored to a stated objective and optional mechanics and audience constraints. The response must include the complete puzzle text, a full solution, and a defined number of progressively helpful hints, all presented in a fixed sectioned format.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197d426-6d98-7371-a5e3-4e19a476aa76`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `story-based-puzzle-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197d426-6d98-7371-a5e3-4e19a476aa76 \
+betterprompt generate story-based-puzzle-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -94,7 +94,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197d426-6d98-7371-a5e3-4e19a476aa76 \
+betterprompt generate story-based-puzzle-generator \
   --input goal=<value> \
   --input theme=<value> \
   --input audience=<value> \
