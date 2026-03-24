@@ -1,14 +1,14 @@
 ---
 name: horror-movie-night-1990s-edition
 description: This prompt instructs the AI to use the provided person’s reference photo to create a grainy, analog-looking 1990s horror-cinema portrait set in a dim movie theater, with the subject seated beside Ghostface while clearly sharing a popcorn bucket and reacting wide-eyed to the screen. It specifies wardrobe and makeup inputs, arranges multiple rows of iconic horror characters in the background for depth, and enforces constraints such as preserving the subject’s facial features, maintaining realistic screen-lit lighting and proportions, and avoiding modern additions, gore, or disturbing violence—resulting in a nostalgic, playful, cinematic still with authentic retro film texture.
-skillVersionId: 019a28bd-8dd6-725e-9b1b-adfaf73d2fc6
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to use the provided person’s reference photo to create a grainy, analog-looking 1990s horror-cinema portrait set in a dim movie theater, with the subject seated beside Ghostface while clearly sharing a popcorn bucket and reacting wide-eyed to the screen. It specifies wardrobe and makeup inputs, arranges multiple rows of iconic horror characters in the background for depth, and enforces constraints such as preserving the subject’s facial features, maintaining realistic screen-lit lighting and proportions, and avoiding modern additions, gore, or disturbing violence—resulting in a nostalgic, playful, cinematic still with authentic retro film texture.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -76,12 +76,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a28bd-8dd6-725e-9b1b-adfaf73d2fc6`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `horror-movie-night-1990s-edition`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a28bd-8dd6-725e-9b1b-adfaf73d2fc6 \
+betterprompt generate horror-movie-night-1990s-edition \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -102,7 +102,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a28bd-8dd6-725e-9b1b-adfaf73d2fc6 \
+betterprompt generate horror-movie-night-1990s-edition \
   --input 'makeup=Soft glam makeup with pink lip gloss and pink lip liner, glowing lightly in the movie’s screen light.' \
   --input 'outfit=A black tank top with baggy jeans for a casual, nostalgic look.' \
   --input 'background_characters_row1=Valak the Nun, Michael Myers, Freddy Krueger, and Chucky seated right behind you, watching the movie.' \
