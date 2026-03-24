@@ -1,14 +1,14 @@
 ---
 name: plushstyle-studio-doll
 description: This prompt instructs the AI to take a provided human photo and generate a stylized image of the person as a modern collectible plush doll, keeping the original outfit’s style and colors while converting all elements into smooth, matte fabric materials with visible plush construction details. The result is a studio-lit, confidently posed character with an oversized head and short limbs, minimal facial features, and hair and clothing re-created as high-quality felt and soft textile components rather than crochet or yarn-knit aesthetics.
-skillVersionId: 0197c96b-9cee-7ebd-b8df-ba4bf2654c2b
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take a provided human photo and generate a stylized image of the person as a modern collectible plush doll, keeping the original outfit’s style and colors while converting all elements into smooth, matte fabric materials with visible plush construction details. The result is a studio-lit, confidently posed character with an oversized head and short limbs, minimal facial features, and hair and clothing re-created as high-quality felt and soft textile components rather than crochet or yarn-knit aesthetics.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197c96b-9cee-7ebd-b8df-ba4bf2654c2b`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `plushstyle-studio-doll`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197c96b-9cee-7ebd-b8df-ba4bf2654c2b \
+betterprompt generate plushstyle-studio-doll \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197c96b-9cee-7ebd-b8df-ba4bf2654c2b \
+betterprompt generate plushstyle-studio-doll \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
