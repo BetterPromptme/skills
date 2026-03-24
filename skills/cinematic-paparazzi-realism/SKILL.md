@@ -1,14 +1,14 @@
 ---
 name: cinematic-paparazzi-realism
 description: This prompt instructs an image model to use an uploaded portrait as a strict facial-identity reference and generate a photorealistic Paris Fashion Week paparazzi-style photograph, keeping the subject’s face and upper body sharply in focus while adding handheld camera energy through motion-blurred crowds, shallow depth of field, grain, harsh flash lighting, and a dynamic low-angle cinematic composition, with the wardrobe defined by a user-provided outfit description.
-skillVersionId: 019a7100-dc11-737a-8611-b28e4d8ad11e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to use an uploaded portrait as a strict facial-identity reference and generate a photorealistic Paris Fashion Week paparazzi-style photograph, keeping the subject’s face and upper body sharply in focus while adding handheld camera energy through motion-blurred crowds, shallow depth of field, grain, harsh flash lighting, and a dynamic low-angle cinematic composition, with the wardrobe defined by a user-provided outfit description.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a7100-dc11-737a-8611-b28e4d8ad11e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cinematic-paparazzi-realism`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a7100-dc11-737a-8611-b28e4d8ad11e \
+betterprompt generate cinematic-paparazzi-realism \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a7100-dc11-737a-8611-b28e4d8ad11e \
+betterprompt generate cinematic-paparazzi-realism \
   --input 'outfit_description=grey wool coat with turtleneck' \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
