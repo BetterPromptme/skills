@@ -1,14 +1,14 @@
 ---
 name: 3d-papercraft-creation-prompt
 description: This prompt directs an image model to generate a realistic, handcrafted 3D papercraft scene featuring a specified subject, built from layered paper cutouts on a cardboard base. It emphasizes depth through two highlight colors, detailed paper textures and edges, and a softly lit crafts-room setting with shallow depth of field, optionally incorporating extra user-defined elements for customization.
-skillVersionId: 0198acd3-433e-7f39-8d91-29b317f36023
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image model to generate a realistic, handcrafted 3D papercraft scene featuring a specified subject, built from layered paper cutouts on a cardboard base. It emphasizes depth through two highlight colors, detailed paper textures and edges, and a softly lit crafts-room setting with shallow depth of field, optionally incorporating extra user-defined elements for customization.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -66,12 +66,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198acd3-433e-7f39-8d91-29b317f36023`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `3d-papercraft-creation-prompt`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198acd3-433e-7f39-8d91-29b317f36023 \
+betterprompt generate 3d-papercraft-creation-prompt \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -88,7 +88,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198acd3-433e-7f39-8d91-29b317f36023 \
+betterprompt generate 3d-papercraft-creation-prompt \
   --input subject=<value> \
   --input optional=<value> \
   --input main_color=<value> \
