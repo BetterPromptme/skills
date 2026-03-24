@@ -1,14 +1,14 @@
 ---
 name: glam-tech-fantasy-aesthetic
 description: This prompt defines a template for generating a high-resolution studio render of a chosen subject as a glossy, highly transparent magenta glass object with subtle emissive glow, crisp shadows, and a thin pastel outline, lit by key/fill/rim lights against a solid black background with anti-aliasing, supersampling, and mild depth of field to produce a sharp, neon-like final image.
-skillVersionId: 0197a5fd-f38c-7163-a9fc-334332fa3f08
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt defines a template for generating a high-resolution studio render of a chosen subject as a glossy, highly transparent magenta glass object with subtle emissive glow, crisp shadows, and a thin pastel outline, lit by key/fill/rim lights against a solid black background with anti-aliasing, supersampling, and mild depth of field to produce a sharp, neon-like final image.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197a5fd-f38c-7163-a9fc-334332fa3f08`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `glam-tech-fantasy-aesthetic`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197a5fd-f38c-7163-a9fc-334332fa3f08 \
+betterprompt generate glam-tech-fantasy-aesthetic \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197a5fd-f38c-7163-a9fc-334332fa3f08 \
+betterprompt generate glam-tech-fantasy-aesthetic \
   --input SUBJECT=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
