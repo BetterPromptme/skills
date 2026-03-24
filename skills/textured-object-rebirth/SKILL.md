@@ -1,14 +1,14 @@
 ---
 name: textured-object-rebirth
 description: This prompt instructs the model to retexture the provided image while locking the original shape and preserving key geometric details like contours and depth, then render it as a photorealistic yet surreal studio object. The result is the same silhouette mapped with a desaturated, matte, skin/peel-like material featuring subtle fiber irregularities, lit by diffused softbox lighting with gentle shadows and slight edge highlights, and placed against a clean beige-to-light-gray gradient backdrop with shallow depth of field at ultra-high resolution.
-skillVersionId: 0197d35d-3271-7663-8caf-b8dad84b0ded
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the model to retexture the provided image while locking the original shape and preserving key geometric details like contours and depth, then render it as a photorealistic yet surreal studio object. The result is the same silhouette mapped with a desaturated, matte, skin/peel-like material featuring subtle fiber irregularities, lit by diffused softbox lighting with gentle shadows and slight edge highlights, and placed against a clean beige-to-light-gray gradient backdrop with shallow depth of field at ultra-high resolution.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197d35d-3271-7663-8caf-b8dad84b0ded`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `textured-object-rebirth`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197d35d-3271-7663-8caf-b8dad84b0ded \
+betterprompt generate textured-object-rebirth \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197d35d-3271-7663-8caf-b8dad84b0ded \
+betterprompt generate textured-object-rebirth \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
