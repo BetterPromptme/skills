@@ -1,14 +1,14 @@
 ---
 name: 2040-style-product-introduction-poster
 description: This prompt directs an image-generation model to produce a high-detail, square-format 3D advertisement set in a surreal, minimalist vision of 2040 for a specified brand and tagline. It calls for a single centered branded object in a clean, dreamy scene with soft ambient lighting, elegant negative space, and subtle physics-bending or dreamlike distortions that act as visual metaphors for the brand identity. The intended result is a cinematic, poetic, ethereal render with soft shadows, ambient glow, and futuristic textures.
-skillVersionId: 0196f12e-7232-7135-8d20-29f19195b4a4
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation model to produce a high-detail, square-format 3D advertisement set in a surreal, minimalist vision of 2040 for a specified brand and tagline. It calls for a single centered branded object in a clean, dreamy scene with soft ambient lighting, elegant negative space, and subtle physics-bending or dreamlike distortions that act as visual metaphors for the brand identity. The intended result is a cinematic, poetic, ethereal render with soft shadows, ambient glow, and futuristic textures.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0196f12e-7232-7135-8d20-29f19195b4a4`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `2040-style-product-introduction-poster`).
 
 Command form:
 
 ```bash
-betterprompt generate 0196f12e-7232-7135-8d20-29f19195b4a4 \
+betterprompt generate 2040-style-product-introduction-poster \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0196f12e-7232-7135-8d20-29f19195b4a4 \
+betterprompt generate 2040-style-product-introduction-poster \
   --input brand_name=<value> \
   --input product_tagline=<value> \
   --image-input-url https://example.com/image1.png \
