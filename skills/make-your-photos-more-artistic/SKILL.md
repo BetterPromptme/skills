@@ -1,14 +1,14 @@
 ---
 name: make-your-photos-more-artistic
 description: This prompt instructs an image model to generate a high-resolution, cinematic, 3D-style full-body portrait based on an uploaded reference photo, keeping the subject’s facial identity, body proportions, and hands anatomically accurate while placing them in a specified outfit and pose with modern wireless headphones. It also directs the scene design by adding a chosen animal floating or swimming around the subject with realistic lighting and shadows, setting a defined background, and using dramatic directional light to create a vertically composed, clean, balanced final image without stylization or distortion.
-skillVersionId: 01973404-a7ea-752c-a2d9-d8bf1bf9fe70
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a high-resolution, cinematic, 3D-style full-body portrait based on an uploaded reference photo, keeping the subject’s facial identity, body proportions, and hands anatomically accurate while placing them in a specified outfit and pose with modern wireless headphones. It also directs the scene design by adding a chosen animal floating or swimming around the subject with realistic lighting and shadows, setting a defined background, and using dramatic directional light to create a vertically composed, clean, balanced final image without stylization or distortion.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -79,12 +79,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01973404-a7ea-752c-a2d9-d8bf1bf9fe70`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `make-your-photos-more-artistic`).
 
 Command form:
 
 ```bash
-betterprompt generate 01973404-a7ea-752c-a2d9-d8bf1bf9fe70 \
+betterprompt generate make-your-photos-more-artistic \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -105,7 +105,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01973404-a7ea-752c-a2d9-d8bf1bf9fe70 \
+betterprompt generate make-your-photos-more-artistic \
   --input Pose=<value> \
   --input Animal=<value> \
   --input Outfit=<value> \
