@@ -1,14 +1,14 @@
 ---
 name: clearedit-professional-text-rewriter
 description: This prompt instructs an AI to act as a professional editor and rewrite a provided text into clear, concise business language while keeping the original meaning, facts, and any required structure intact. The result is a cleaned, easier-to-read version that preserves all names, dates, numbers, citations, URLs, quotations, and legal or regulatory wording, with improved grammar, consistency, and formatting—without adding new information or commentary.
-skillVersionId: 019a57f6-3eda-756b-94eb-aa26bc047f10
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to act as a professional editor and rewrite a provided text into clear, concise business language while keeping the original meaning, facts, and any required structure intact. The result is a cleaned, easier-to-read version that preserves all names, dates, numbers, citations, URLs, quotations, and legal or regulatory wording, with improved grammar, consistency, and formatting—without adding new information or commentary.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a57f6-3eda-756b-94eb-aa26bc047f10`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `clearedit-professional-text-rewriter`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a57f6-3eda-756b-94eb-aa26bc047f10 \
+betterprompt generate clearedit-professional-text-rewriter \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a57f6-3eda-756b-94eb-aa26bc047f10 \
+betterprompt generate clearedit-professional-text-rewriter \
   --input paste_text=<value> \
   --model grok-4-fast \
   --options '{"reasoningEffort":"low"}'
