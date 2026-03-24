@@ -1,14 +1,14 @@
 ---
 name: cinematic-newspaper-motion
 description: This prompt instructs an AI image model to take a user’s portrait and transform it into a high-fashion, cinematic editorial scene that matches a provided reference style—specifically replicating its warm studio lighting, atmospheric tone, wind-driven motion blur, and flying newspaper elements—while keeping the user’s face perfectly preserved and sharp. The outcome is a single realistic, motion-rich portrait with a minimal studio background, the user wearing their specified outfit, and no readable text or unwanted additions, ensuring identity accuracy and an elegant editorial finish.
-skillVersionId: 019a9a05-a086-767d-a0bb-5445fb274513
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image model to take a user’s portrait and transform it into a high-fashion, cinematic editorial scene that matches a provided reference style—specifically replicating its warm studio lighting, atmospheric tone, wind-driven motion blur, and flying newspaper elements—while keeping the user’s face perfectly preserved and sharp. The outcome is a single realistic, motion-rich portrait with a minimal studio background, the user wearing their specified outfit, and no readable text or unwanted additions, ensuring identity accuracy and an elegant editorial finish.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a9a05-a086-767d-a0bb-5445fb274513`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cinematic-newspaper-motion`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a9a05-a086-767d-a0bb-5445fb274513 \
+betterprompt generate cinematic-newspaper-motion \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a9a05-a086-767d-a0bb-5445fb274513 \
+betterprompt generate cinematic-newspaper-motion \
   --input 'desired_outfit=A dark olive blazer with a cream turtleneck and tailored trousers for a clean editorial look.' \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
