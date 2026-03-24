@@ -1,14 +1,14 @@
 ---
 name: whisper-in-warm-light-cinematic-intimate-portrait
 description: This prompt instructs an AI image generator to produce an ultra-high-resolution, photo-realistic 8K cinematic close-up portrait of a woman in a dark, minimal indoor setting, leaning over a polished wooden surface and holding a small white flower near her face while making soft eye contact with the camera. It specifies strict identity preservation to match a provided reference face exactly, and tightly defines pose, styling, makeup, lighting, color palette, lens/depth-of-field, framing, and finishing grade to achieve an intimate, warm, high-contrast fine-art result with crisp facial and texture detail against a deep, moody background.
-skillVersionId: 019a5d03-f6d6-76bd-94b1-81b8b48a4127
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce an ultra-high-resolution, photo-realistic 8K cinematic close-up portrait of a woman in a dark, minimal indoor setting, leaning over a polished wooden surface and holding a small white flower near her face while making soft eye contact with the camera. It specifies strict identity preservation to match a provided reference face exactly, and tightly defines pose, styling, makeup, lighting, color palette, lens/depth-of-field, framing, and finishing grade to achieve an intimate, warm, high-contrast fine-art result with crisp facial and texture detail against a deep, moody background.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a5d03-f6d6-76bd-94b1-81b8b48a4127`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `whisper-in-warm-light-cinematic-intimate-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a5d03-f6d6-76bd-94b1-81b8b48a4127 \
+betterprompt generate whisper-in-warm-light-cinematic-intimate-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a5d03-f6d6-76bd-94b1-81b8b48a4127 \
+betterprompt generate whisper-in-warm-light-cinematic-intimate-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
