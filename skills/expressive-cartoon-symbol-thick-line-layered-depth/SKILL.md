@@ -1,14 +1,14 @@
 ---
 name: expressive-cartoon-symbol-thick-line-layered-depth
 description: This prompt instructs an image model to generate a square, vector-friendly cartoon icon of a specified object using thick navy outlines, mostly white fills, and limited light-blue offset accents to create a faux 3D layered look. The result should be a crisp, clean, white-background icon with simple rounded shapes, subtle depth cues, and a lightly animated, lively feel, without gradients or textures.
-skillVersionId: 0197ce5b-6afb-7f75-8013-240e3928ca09
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to generate a square, vector-friendly cartoon icon of a specified object using thick navy outlines, mostly white fills, and limited light-blue offset accents to create a faux 3D layered look. The result should be a crisp, clean, white-background icon with simple rounded shapes, subtle depth cues, and a lightly animated, lively feel, without gradients or textures.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197ce5b-6afb-7f75-8013-240e3928ca09`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `expressive-cartoon-symbol-thick-line-layered-depth`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197ce5b-6afb-7f75-8013-240e3928ca09 \
+betterprompt generate expressive-cartoon-symbol-thick-line-layered-depth \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197ce5b-6afb-7f75-8013-240e3928ca09 \
+betterprompt generate expressive-cartoon-symbol-thick-line-layered-depth \
   --input OBJECT=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
