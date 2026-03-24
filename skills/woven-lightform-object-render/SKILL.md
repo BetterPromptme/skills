@@ -1,14 +1,14 @@
 ---
 name: woven-lightform-object-render
 description: This prompt instructs an image-generation model to create a highly realistic 3D studio-style product render of a specified object, where the entire form is constructed from intricately woven, translucent strands of light and shadow. The resulting image features layered filament detail, subtle gradient patterns, soft even lighting, and a clean background for a premium, modern abstract aesthetic.
-skillVersionId: 0197e84d-3a94-7177-bd9e-06bf34b1b18f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation model to create a highly realistic 3D studio-style product render of a specified object, where the entire form is constructed from intricately woven, translucent strands of light and shadow. The resulting image features layered filament detail, subtle gradient patterns, soft even lighting, and a clean background for a premium, modern abstract aesthetic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197e84d-3a94-7177-bd9e-06bf34b1b18f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `woven-lightform-object-render`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197e84d-3a94-7177-bd9e-06bf34b1b18f \
+betterprompt generate woven-lightform-object-render \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197e84d-3a94-7177-bd9e-06bf34b1b18f \
+betterprompt generate woven-lightform-object-render \
   --input OBJECT=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
