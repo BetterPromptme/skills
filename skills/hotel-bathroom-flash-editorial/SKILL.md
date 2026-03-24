@@ -1,14 +1,14 @@
 ---
 name: hotel-bathroom-flash-editorial
 description: This prompt instructs an image model to transform the provided photo into a high-resolution, vertical (9:16) cinematic fashion editorial set in a luxury hotel bathroom at night, capturing an extreme close-up, low-angle moment of the same person adjusting a black stocking near a vanity mirror. It tightly preserves the subject’s identity and realistic skin/anatomy while specifying styling (black draped blazer, sleek blonde hair, smoky eyes, glossy lips, black manicure), on-camera flash lighting with crisp shadows, and fashion-snapshot post-processing (film grain, slight warmth, optional vignette), while explicitly avoiding artifacts like altered facial features, over-smoothing, extra limbs, or text/watermarks.
-skillVersionId: 019c417d-9c18-700c-ab65-eecedddd0f9e
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image model to transform the provided photo into a high-resolution, vertical (9:16) cinematic fashion editorial set in a luxury hotel bathroom at night, capturing an extreme close-up, low-angle moment of the same person adjusting a black stocking near a vanity mirror. It tightly preserves the subject’s identity and realistic skin/anatomy while specifying styling (black draped blazer, sleek blonde hair, smoky eyes, glossy lips, black manicure), on-camera flash lighting with crisp shadows, and fashion-snapshot post-processing (film grain, slight warmth, optional vignette), while explicitly avoiding artifacts like altered facial features, over-smoothing, extra limbs, or text/watermarks.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c417d-9c18-700c-ab65-eecedddd0f9e`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `hotel-bathroom-flash-editorial`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c417d-9c18-700c-ab65-eecedddd0f9e \
+betterprompt generate hotel-bathroom-flash-editorial \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c417d-9c18-700c-ab65-eecedddd0f9e \
+betterprompt generate hotel-bathroom-flash-editorial \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
