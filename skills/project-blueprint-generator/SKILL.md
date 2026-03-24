@@ -1,14 +1,14 @@
 ---
 name: project-blueprint-generator
 description: This prompt instructs the AI to act as an experienced project manager and produce a comprehensive project blueprint derived from a provided project description, including requirements analysis, clearly defined objectives and scope, a detailed work breakdown structure, a milestone-based timeline, a costed budget, and a resource allocation plan aligned to skills. It also requires identifying risks with mitigation strategies, resulting in a structured roadmap that guides the team from initiation through completion while controlling scope and ensuring efficient delivery of project goals.
-skillVersionId: 0197e2c5-cfd1-7c38-9cb4-ac6d1531c8ad
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an experienced project manager and produce a comprehensive project blueprint derived from a provided project description, including requirements analysis, clearly defined objectives and scope, a detailed work breakdown structure, a milestone-based timeline, a costed budget, and a resource allocation plan aligned to skills. It also requires identifying risks with mitigation strategies, resulting in a structured roadmap that guides the team from initiation through completion while controlling scope and ensuring efficient delivery of project goals.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197e2c5-cfd1-7c38-9cb4-ac6d1531c8ad`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `project-blueprint-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197e2c5-cfd1-7c38-9cb4-ac6d1531c8ad \
+betterprompt generate project-blueprint-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197e2c5-cfd1-7c38-9cb4-ac6d1531c8ad \
+betterprompt generate project-blueprint-generator \
   --input project_description=<value> \
   --model gpt-4.1-mini \
   --options '{}'
