@@ -1,14 +1,14 @@
 ---
 name: academic-student-portrait-poster
 description: This prompt instructs an AI image editor to take an uploaded student portrait and recreate it as a classic, formal academic studio headshot while preserving the subject’s identity and natural features. It specifies a controlled yearbook-style setup—centered head-and-shoulders framing, neutral expression, soft even lighting, and a muted blue gradient backdrop—along with realistic formal attire (black suit, white shirt, black tie). The output is a single high-resolution, realistic “portrait poster” that includes a clean white margin beneath the photo with centered black serif typography displaying the student’s name in uppercase and a short quote below, with strict constraints against stylization, heavy retouching, casual elements, or distracting backgrounds.
-skillVersionId: 019b9208-7c0e-71c7-8964-8cfdf2bfddfa
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image editor to take an uploaded student portrait and recreate it as a classic, formal academic studio headshot while preserving the subject’s identity and natural features. It specifies a controlled yearbook-style setup—centered head-and-shoulders framing, neutral expression, soft even lighting, and a muted blue gradient backdrop—along with realistic formal attire (black suit, white shirt, black tie). The output is a single high-resolution, realistic “portrait poster” that includes a clean white margin beneath the photo with centered black serif typography displaying the student’s name in uppercase and a short quote below, with strict constraints against stylization, heavy retouching, casual elements, or distracting backgrounds.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019b9208-7c0e-71c7-8964-8cfdf2bfddfa`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `academic-student-portrait-poster`).
 
 Command form:
 
 ```bash
-betterprompt generate 019b9208-7c0e-71c7-8964-8cfdf2bfddfa \
+betterprompt generate academic-student-portrait-poster \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019b9208-7c0e-71c7-8964-8cfdf2bfddfa \
+betterprompt generate academic-student-portrait-poster \
   --input student_name=<value> \
   --input student_quote=<value> \
   --image-input-url https://example.com/image1.png \
