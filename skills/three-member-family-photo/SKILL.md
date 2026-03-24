@@ -1,14 +1,14 @@
 ---
 name: three-member-family-photo
 description: This prompt instructs an image-generation/editing system to take separate photos of a father, mother, and child and rebuild them into a single premium, studio-quality family portrait that exactly preserves each person’s facial identity while matching a provided style reference and a specific stacked, top-down pose reference. The expected outcome is a high-resolution, cinematic-looking portrait on a clean white background with simple white clothing, faithful pose alignment (father above mother above child), and no added elements, text, or identity-altering edits.
-skillVersionId: 019a81dd-2b9e-702c-9a9b-b28b591a7e8f
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation/editing system to take separate photos of a father, mother, and child and rebuild them into a single premium, studio-quality family portrait that exactly preserves each person’s facial identity while matching a provided style reference and a specific stacked, top-down pose reference. The expected outcome is a high-resolution, cinematic-looking portrait on a clean white background with simple white clothing, faithful pose alignment (father above mother above child), and no added elements, text, or identity-altering edits.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -61,12 +61,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a81dd-2b9e-702c-9a9b-b28b591a7e8f`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `three-member-family-photo`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a81dd-2b9e-702c-9a9b-b28b591a7e8f \
+betterprompt generate three-member-family-photo \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -85,7 +85,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a81dd-2b9e-702c-9a9b-b28b591a7e8f \
+betterprompt generate three-member-family-photo \
   --image-input-url https://example.com/image1.png \
   --image-input-path /path/to/image2.png \
   --image-input-url https://example.com/image3.png \
