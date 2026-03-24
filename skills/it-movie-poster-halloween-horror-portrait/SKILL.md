@@ -1,14 +1,14 @@
 ---
 name: it-movie-poster-halloween-horror-portrait
 description: This prompt instructs an AI image generator to create a vertical, photorealistic cinematic horror poster in which a real person’s face remains fully recognizable and unaltered while being partially obscured and framed by two close-up red balloons. It specifies precise composition, depth, foggy dark background, realistic low-key lighting with subtle red reflections and faint amber eye glow, and directs the inclusion of a bold red “IT” title (with optional tagline and credits) to deliver an eerie, claustrophobic, print-ready horror poster aesthetic.
-skillVersionId: 019a1429-4959-7462-8614-5619ee3846a3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to create a vertical, photorealistic cinematic horror poster in which a real person’s face remains fully recognizable and unaltered while being partially obscured and framed by two close-up red balloons. It specifies precise composition, depth, foggy dark background, realistic low-key lighting with subtle red reflections and faint amber eye glow, and directs the inclusion of a bold red “IT” title (with optional tagline and credits) to deliver an eerie, claustrophobic, print-ready horror poster aesthetic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a1429-4959-7462-8614-5619ee3846a3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `it-movie-poster-halloween-horror-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a1429-4959-7462-8614-5619ee3846a3 \
+betterprompt generate it-movie-poster-halloween-horror-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a1429-4959-7462-8614-5619ee3846a3 \
+betterprompt generate it-movie-poster-halloween-horror-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
