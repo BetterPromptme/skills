@@ -1,14 +1,14 @@
 ---
 name: mental-reset-toolkit-for-exam-season
 description: This prompt asks the AI to use the user’s stated stress level, triggers, and usual relaxation method to generate a structured 7-day mental wellness plan for exam season, written in a calm, high-achieving friend’s voice. The result is a day-by-day schedule that includes a consistent 3-minute mental reset habit, tailored motivational quotes or affirmations, grounding strategies to prevent burnout, and a brief daily reminder to support emotional balance, delivered succinctly without greetings or summaries.
-skillVersionId: 0198743b-189d-7d31-bd98-a7aebb2b127c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt asks the AI to use the user’s stated stress level, triggers, and usual relaxation method to generate a structured 7-day mental wellness plan for exam season, written in a calm, high-achieving friend’s voice. The result is a day-by-day schedule that includes a consistent 3-minute mental reset habit, tailored motivational quotes or affirmations, grounding strategies to prevent burnout, and a brief daily reminder to support emotional balance, delivered succinctly without greetings or summaries.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198743b-189d-7d31-bd98-a7aebb2b127c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `mental-reset-toolkit-for-exam-season`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198743b-189d-7d31-bd98-a7aebb2b127c \
+betterprompt generate mental-reset-toolkit-for-exam-season \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198743b-189d-7d31-bd98-a7aebb2b127c \
+betterprompt generate mental-reset-toolkit-for-exam-season \
   --input Stress_triggers=<value> \
   --input Current_stress_level=<value> \
   --input My_usual_way_to_relax=<value> \
