@@ -1,14 +1,14 @@
 ---
 name: project-risk-analysis-generator
 description: This prompt instructs the AI to act as a seasoned project manager and produce a comprehensive risk analysis for a specified business project using provided project details (name, goal, team size, timeline, budget, and target market). The expected outcome is a prioritized risk register spanning financial, operational, technological, and legal categories, with likelihood/impact assessments, mitigation and contingency actions, ownership, and a defined cadence and approach for ongoing risk monitoring and reporting throughout the project lifecycle.
-skillVersionId: 0197e2e5-4c95-7ce8-a533-3cd84ea67bd5
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a seasoned project manager and produce a comprehensive risk analysis for a specified business project using provided project details (name, goal, team size, timeline, budget, and target market). The expected outcome is a prioritized risk register spanning financial, operational, technological, and legal categories, with likelihood/impact assessments, mitigation and contingency actions, ownership, and a defined cadence and approach for ongoing risk monitoring and reporting throughout the project lifecycle.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197e2e5-4c95-7ce8-a533-3cd84ea67bd5`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `project-risk-analysis-generator`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197e2e5-4c95-7ce8-a533-3cd84ea67bd5 \
+betterprompt generate project-risk-analysis-generator \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -92,7 +92,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197e2e5-4c95-7ce8-a533-3cd84ea67bd5 \
+betterprompt generate project-risk-analysis-generator \
   --input Goal=<value> \
   --input Budget=<value> \
   --input Timeline=<value> \
