@@ -1,14 +1,14 @@
 ---
 name: dream-workspace
 description: This prompt instructs the AI to act as an interior designer and architectural visualizer to produce a feasible, photorealistic rendering concept for a “dream workspace,” tailored to a client-defined workspace type, design style, color palette, furniture/layout, lighting, decor, and environmental context. The expected outcome is a natural-looking, ultra-realistic, visually persuasive scene that supports decision-making while staying aligned with budget and constructability, clearly stating any assumptions and requesting missing measurements, plans, or specifications when needed.
-skillVersionId: 0198f53b-b5ae-7eb2-ae23-f72b02579d60
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an interior designer and architectural visualizer to produce a feasible, photorealistic rendering concept for a “dream workspace,” tailored to a client-defined workspace type, design style, color palette, furniture/layout, lighting, decor, and environmental context. The expected outcome is a natural-looking, ultra-realistic, visually persuasive scene that supports decision-making while staying aligned with budget and constructability, clearly stating any assumptions and requesting missing measurements, plans, or specifications when needed.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -72,12 +72,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198f53b-b5ae-7eb2-ae23-f72b02579d60`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `dream-workspace`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198f53b-b5ae-7eb2-ae23-f72b02579d60 \
+betterprompt generate dream-workspace \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -94,7 +94,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198f53b-b5ae-7eb2-ae23-f72b02579d60 \
+betterprompt generate dream-workspace \
   --input style=<value> \
   --input lighting=<value> \
   --input color_palette=<value> \
