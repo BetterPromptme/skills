@@ -1,14 +1,14 @@
 ---
 name: the-silence-of-winter
 description: This prompt instructs an image-generation system to produce a cohesive, photorealistic 9:16 vertical triptych that tells a quiet winter narrative across three cinematic frames: an intimate fur-hood close-up, a wide solitary figure on a frozen lake with a distant red cabin, and a reflective car-interior portrait through lightly fogged glass. It specifies consistent character identity (matching a reference face), natural overcast lighting, muted winter color grading with fine film grain, and lens choices per panel to achieve a realistic, emotionally warm-yet-still visual outcome without added text or stylized distortions.
-skillVersionId: 019a5d36-0a5f-76d2-808e-771146ef1650
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce a cohesive, photorealistic 9:16 vertical triptych that tells a quiet winter narrative across three cinematic frames: an intimate fur-hood close-up, a wide solitary figure on a frozen lake with a distant red cabin, and a reflective car-interior portrait through lightly fogged glass. It specifies consistent character identity (matching a reference face), natural overcast lighting, muted winter color grading with fine film grain, and lens choices per panel to achieve a realistic, emotionally warm-yet-still visual outcome without added text or stylized distortions.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a5d36-0a5f-76d2-808e-771146ef1650`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-silence-of-winter`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a5d36-0a5f-76d2-808e-771146ef1650 \
+betterprompt generate the-silence-of-winter \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a5d36-0a5f-76d2-808e-771146ef1650 \
+betterprompt generate the-silence-of-winter \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
