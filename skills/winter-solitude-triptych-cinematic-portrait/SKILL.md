@@ -1,14 +1,14 @@
 ---
 name: winter-solitude-triptych-cinematic-portrait
 description: This prompt instructs an image-generation system to produce a 2160×3840 vertical 4K photorealistic triptych made of three equal horizontal panels that tell a cold, cinematic story of melancholy in a snowy landscape. It specifies consistent lighting, color grading, camera/lens characteristics, wardrobe, snowfall, and a panel-by-panel composition (portrait with transparent umbrella, isolated full-body walk, and an emotional eye close-up), while requiring the subject’s identity to match an accompanying reference image exactly without any facial or anatomical changes. The expected outcome is a cohesive, film-grain–treated fine-art triptych that preserves true likeness and delivers an introspective narrative of loneliness and nostalgia across the three frames.
-skillVersionId: 019a4925-967a-7259-900a-05d94b35a9d8
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an image-generation system to produce a 2160×3840 vertical 4K photorealistic triptych made of three equal horizontal panels that tell a cold, cinematic story of melancholy in a snowy landscape. It specifies consistent lighting, color grading, camera/lens characteristics, wardrobe, snowfall, and a panel-by-panel composition (portrait with transparent umbrella, isolated full-body walk, and an emotional eye close-up), while requiring the subject’s identity to match an accompanying reference image exactly without any facial or anatomical changes. The expected outcome is a cohesive, film-grain–treated fine-art triptych that preserves true likeness and delivers an introspective narrative of loneliness and nostalgia across the three frames.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a4925-967a-7259-900a-05d94b35a9d8`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `winter-solitude-triptych-cinematic-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a4925-967a-7259-900a-05d94b35a9d8 \
+betterprompt generate winter-solitude-triptych-cinematic-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a4925-967a-7259-900a-05d94b35a9d8 \
+betterprompt generate winter-solitude-triptych-cinematic-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
