@@ -1,14 +1,14 @@
 ---
 name: figurine-showcase
 description: This prompt directs an AI image generator to produce a photorealistic scene featuring a commercial 1/7 scale figurine based on the characters shown in the provided image, displayed on a computer desk with a clear round acrylic base. It specifies environmental details and supporting props, including a computer monitor showing the figurine being modeled in 3D and a nearby premium-style collectible packaging box decorated with original 2D illustration artwork, resulting in a realistic product-style tabletop display.
-skillVersionId: 01990e3a-133f-7878-922f-7247f23cb5f2
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an AI image generator to produce a photorealistic scene featuring a commercial 1/7 scale figurine based on the characters shown in the provided image, displayed on a computer desk with a clear round acrylic base. It specifies environmental details and supporting props, including a computer monitor showing the figurine being modeled in 3D and a nearby premium-style collectible packaging box decorated with original 2D illustration artwork, resulting in a realistic product-style tabletop display.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01990e3a-133f-7878-922f-7247f23cb5f2`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `figurine-showcase`).
 
 Command form:
 
 ```bash
-betterprompt generate 01990e3a-133f-7878-922f-7247f23cb5f2 \
+betterprompt generate figurine-showcase \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01990e3a-133f-7878-922f-7247f23cb5f2 \
+betterprompt generate figurine-showcase \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
