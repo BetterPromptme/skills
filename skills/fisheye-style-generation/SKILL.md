@@ -1,14 +1,14 @@
 ---
 name: fisheye-style-generation
 description: This prompt instructs the AI to take an uploaded reference photo and re-render it as a realistic fisheye-lens image, using a specified distortion strength, scene context, color grading, and described background. The task focuses on producing a circular, ultra-wide camera look with smooth edge curvature while keeping people recognizable and maintaining the original lighting and overall tone, resulting in a fun, photobooth-style wide-angle photo rather than a collage-like edit.
-skillVersionId: 01997083-3c55-7fc2-81cb-61bc5b8922d5
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to take an uploaded reference photo and re-render it as a realistic fisheye-lens image, using a specified distortion strength, scene context, color grading, and described background. The task focuses on producing a circular, ultra-wide camera look with smooth edge curvature while keeping people recognizable and maintaining the original lighting and overall tone, resulting in a fun, photobooth-style wide-angle photo rather than a collage-like edit.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -76,12 +76,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01997083-3c55-7fc2-81cb-61bc5b8922d5`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `fisheye-style-generation`).
 
 Command form:
 
 ```bash
-betterprompt generate 01997083-3c55-7fc2-81cb-61bc5b8922d5 \
+betterprompt generate fisheye-style-generation \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -102,7 +102,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01997083-3c55-7fc2-81cb-61bc5b8922d5 \
+betterprompt generate fisheye-style-generation \
   --input 'backdrop=curtain backdrop like a photo booth' \
   --input 'color_tone=`natural` → realistic, true-to-life colors' \
   --input 'scene_type=`indoor` → bedroom, studio, party room' \
