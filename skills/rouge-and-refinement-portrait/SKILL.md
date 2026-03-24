@@ -1,14 +1,14 @@
 ---
 name: rouge-and-refinement-portrait
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic editorial portrait of a young woman applying lip gloss in a modern luxury marble bathroom, with precise requirements for composition, pose, wardrobe, accessories, props, lighting, color palette, and camera feel, while strictly preserving the subject’s natural facial identity, realistic skin texture, and accurate reflections. The intended outcome is a polished, intimate beauty-moment image that integrates the subject and her mirror reflection alongside key luxury elements (vanity, backlit mirror, designer compact, and a red quilted handbag) in a clean, high-end interior aesthetic.
-skillVersionId: 019d158f-cd64-73c8-bf31-cb90a4d3fe4a
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to produce a high-resolution, photorealistic editorial portrait of a young woman applying lip gloss in a modern luxury marble bathroom, with precise requirements for composition, pose, wardrobe, accessories, props, lighting, color palette, and camera feel, while strictly preserving the subject’s natural facial identity, realistic skin texture, and accurate reflections. The intended outcome is a polished, intimate beauty-moment image that integrates the subject and her mirror reflection alongside key luxury elements (vanity, backlit mirror, designer compact, and a red quilted handbag) in a clean, high-end interior aesthetic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019d158f-cd64-73c8-bf31-cb90a4d3fe4a`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `rouge-and-refinement-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019d158f-cd64-73c8-bf31-cb90a4d3fe4a \
+betterprompt generate rouge-and-refinement-portrait \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019d158f-cd64-73c8-bf31-cb90a4d3fe4a \
+betterprompt generate rouge-and-refinement-portrait \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
