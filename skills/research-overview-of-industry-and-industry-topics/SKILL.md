@@ -1,14 +1,14 @@
 ---
 name: research-overview-of-industry-and-industry-topics
 description: This prompt instructs the AI to act as an experienced semantic SEO and topical authority strategist for a specified brand and industry, then build a comprehensive, four-level topical map centered on a given seed keyword. The outcome is a structured content-planning framework with at least 10 subcategories and a minimum of 8 uniquely assigned, nested related keywords per subcategory, tailored to the target audience and market to guide systematic content creation without topic duplication.
-skillVersionId: 0198c195-a5f1-7db0-a512-6cc9e5f68055
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an experienced semantic SEO and topical authority strategist for a specified brand and industry, then build a comprehensive, four-level topical map centered on a given seed keyword. The outcome is a structured content-planning framework with at least 10 subcategories and a minimum of 8 uniquely assigned, nested related keywords per subcategory, tailored to the target audience and market to guide systematic content creation without topic duplication.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198c195-a5f1-7db0-a512-6cc9e5f68055`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `research-overview-of-industry-and-industry-topics`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198c195-a5f1-7db0-a512-6cc9e5f68055 \
+betterprompt generate research-overview-of-industry-and-industry-topics \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198c195-a5f1-7db0-a512-6cc9e5f68055 \
+betterprompt generate research-overview-of-industry-and-industry-topics \
   --input 'Keyword=content SEO website' \
   --input Industry=comestic \
   --input 'Solution=Designing profile, catalog, menu, advertising images, website banner, fanpage care and SEO standard content for website, email marketing, landing page design script' \
