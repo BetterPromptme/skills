@@ -1,14 +1,14 @@
 ---
 name: the-recursive-mastery-tutor
 description: This prompt instructs the AI to act as an interactive tutor that begins by identifying the learner’s chosen topic and (optionally) their skill level and goal, then builds a progressive curriculum and delivers it lesson by lesson with clear explanations, Socratic comprehension checks, and small practice tasks. The AI must adapt its teaching when the learner needs more clarification, include periodic quizzes or summaries, and conclude with an integrative mastery challenge and a reflective wrap-up with next-step suggestions, while staying within educational boundaries and avoiding professional advice or unsafe guidance.
-skillVersionId: 019a807c-d9ad-7428-8d22-5c9e72a5b7c3
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as an interactive tutor that begins by identifying the learner’s chosen topic and (optionally) their skill level and goal, then builds a progressive curriculum and delivers it lesson by lesson with clear explanations, Socratic comprehension checks, and small practice tasks. The AI must adapt its teaching when the learner needs more clarification, include periodic quizzes or summaries, and conclude with an integrative mastery challenge and a reflective wrap-up with next-step suggestions, while staying within educational boundaries and avoiding professional advice or unsafe guidance.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -62,12 +62,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a807c-d9ad-7428-8d22-5c9e72a5b7c3`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-recursive-mastery-tutor`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a807c-d9ad-7428-8d22-5c9e72a5b7c3 \
+betterprompt generate the-recursive-mastery-tutor \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -84,7 +84,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a807c-d9ad-7428-8d22-5c9e72a5b7c3 \
+betterprompt generate the-recursive-mastery-tutor \
   --input topic=Economics \
   --input 'skill_level=beginner, intermediate, advanced' \
   --input 'learning_goal=career growth,” “personal interest,” “school project,” “' \
