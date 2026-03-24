@@ -1,14 +1,14 @@
 ---
 name: ethereal-floral-beauty-editorial
 description: This prompt instructs an AI image editor to take a clear portrait photo and transform it into a luxury, hyperrealistic beauty editorial image with a soft floral, ethereal mood. It specifies high-end portrait composition, lens and depth-of-field behavior, diffused studio lighting, pastel-neutral color grading, natural-yet-refined makeup and hair styling with subtle floral accents, and meticulous realism that preserves the subject’s identity and skin texture. The expected outcome is a vertically framed, high-detail editorial portrait on a clean gradient backdrop, with sharp eyes, gentle highlight bloom, and an elegant, timeless finish suitable for a fashion beauty campaign.
-skillVersionId: 019c1db7-534b-761c-9f3d-95bc44e30b4c
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image editor to take a clear portrait photo and transform it into a luxury, hyperrealistic beauty editorial image with a soft floral, ethereal mood. It specifies high-end portrait composition, lens and depth-of-field behavior, diffused studio lighting, pastel-neutral color grading, natural-yet-refined makeup and hair styling with subtle floral accents, and meticulous realism that preserves the subject’s identity and skin texture. The expected outcome is a vertically framed, high-detail editorial portrait on a clean gradient backdrop, with sharp eyes, gentle highlight bloom, and an elegant, timeless finish suitable for a fashion beauty campaign.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019c1db7-534b-761c-9f3d-95bc44e30b4c`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `ethereal-floral-beauty-editorial`).
 
 Command form:
 
 ```bash
-betterprompt generate 019c1db7-534b-761c-9f3d-95bc44e30b4c \
+betterprompt generate ethereal-floral-beauty-editorial \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019c1db7-534b-761c-9f3d-95bc44e30b4c \
+betterprompt generate ethereal-floral-beauty-editorial \
   --image-input-url https://example.com/image1.png \
   --model gemini-3-pro-image-preview \
   --options '{"aspectRatio":"3:4","resolution":"1K"}'
