@@ -1,14 +1,14 @@
 ---
 name: neon-glass-glow-object-renderer
 description: This prompt instructs the model to recreate a referenced image by applying a specified “Neon Glass Glow” visual style, including glass-like material properties, neon magenta coloration with emissive bloom, outlined edges, studio lighting with key/fill/rim lights, and a solid black background. The result is an image matching the original composition while rendered with high-detail, glossy transparent glass, crisp shadows, anti-aliasing, mild depth of field, and a vivid neon glow aesthetic.
-skillVersionId: 0197f785-9918-7176-b0cc-5df34e76c020
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the model to recreate a referenced image by applying a specified “Neon Glass Glow” visual style, including glass-like material properties, neon magenta coloration with emissive bloom, outlined edges, studio lighting with key/fill/rim lights, and a solid black background. The result is an image matching the original composition while rendered with high-detail, glossy transparent glass, crisp shadows, anti-aliasing, mild depth of field, and a vivid neon glow aesthetic.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197f785-9918-7176-b0cc-5df34e76c020`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `neon-glass-glow-object-renderer`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197f785-9918-7176-b0cc-5df34e76c020 \
+betterprompt generate neon-glass-glow-object-renderer \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197f785-9918-7176-b0cc-5df34e76c020 \
+betterprompt generate neon-glass-glow-object-renderer \
   --image-input-url https://example.com/image1.png \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
