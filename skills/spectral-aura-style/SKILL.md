@@ -1,14 +1,14 @@
 ---
 name: spectral-aura-style
 description: This prompt directs an image generator to depict a chosen subject as a spectral diffraction-style portrait, emphasizing prismatic light separation and chromatic edge fringing in two specified colors. The intended result is an ethereal, crystal-like aura with visible rainbow banding and distorted edges that heighten the sense of refracted light.
-skillVersionId: 0197e83c-6244-7dbd-b5fe-60f957b78bb2
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image generator to depict a chosen subject as a spectral diffraction-style portrait, emphasizing prismatic light separation and chromatic edge fringing in two specified colors. The intended result is an ethereal, crystal-like aura with visible rainbow banding and distorted edges that heighten the sense of refracted light.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0197e83c-6244-7dbd-b5fe-60f957b78bb2`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `spectral-aura-style`).
 
 Command form:
 
 ```bash
-betterprompt generate 0197e83c-6244-7dbd-b5fe-60f957b78bb2 \
+betterprompt generate spectral-aura-style \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0197e83c-6244-7dbd-b5fe-60f957b78bb2 \
+betterprompt generate spectral-aura-style \
   --input color1=<value> \
   --input color2=<value> \
   --input SUBJECT=<value> \
