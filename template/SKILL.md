@@ -1,14 +1,14 @@
 ---
 name: {{{name}}}
 description: {{{description}}}
-skillVersionId: {{{skillVersionId}}}
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 {{{whatItDoes}}}
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://skills.sh/betterpromptme/betterprompt/betterprompt to check out this skill.
 
 ## Inputs
 
@@ -81,12 +81,12 @@ Then collect all inputs from the human:
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `{{{skillVersionId}}}`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `{{{name}}}`).
 
 Command form:
 
 ```bash
-betterprompt generate {{{skillVersionId}}} \
+betterprompt generate {{{name}}} \
 {{#if hasTextInputs}}
   [--input <key>=<value>] \
 {{/if}}
