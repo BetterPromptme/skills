@@ -1,14 +1,14 @@
 ---
 name: studio-grid-3x3-face-and-outfit-lock
 description: This prompt directs an image generation workflow to produce a single high‑resolution 1:1 studio composite containing exactly nine coordinated shots arranged in a 3×3 grid, using a cream‑beige seamless set and a predefined lighting/camera style. It enforces absolute facial identity matching to the provided reference (with a strict visibility/quality gate) and locks the outfit to only what is verifiably visible in the input, extending any hidden areas with neutral, matching continuations rather than inventing new garments or details. The result is one exportable PNG grid with consistent person, styling, and shot variety (closeups to full body, including one monochrome frame), no extra variants, no text/logos, and minimal approved props that do not obscure the preserved clothing.
-skillVersionId: 01996f61-a38d-7b69-aadd-f4e27870da28
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image generation workflow to produce a single high‑resolution 1:1 studio composite containing exactly nine coordinated shots arranged in a 3×3 grid, using a cream‑beige seamless set and a predefined lighting/camera style. It enforces absolute facial identity matching to the provided reference (with a strict visibility/quality gate) and locks the outfit to only what is verifiably visible in the input, extending any hidden areas with neutral, matching continuations rather than inventing new garments or details. The result is one exportable PNG grid with consistent person, styling, and shot variety (closeups to full body, including one monochrome frame), no extra variants, no text/logos, and minimal approved props that do not obscure the preserved clothing.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01996f61-a38d-7b69-aadd-f4e27870da28`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `studio-grid-3x3-face-and-outfit-lock`).
 
 Command form:
 
 ```bash
-betterprompt generate 01996f61-a38d-7b69-aadd-f4e27870da28 \
+betterprompt generate studio-grid-3x3-face-and-outfit-lock \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01996f61-a38d-7b69-aadd-f4e27870da28 \
+betterprompt generate studio-grid-3x3-face-and-outfit-lock \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
