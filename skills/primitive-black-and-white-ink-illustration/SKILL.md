@@ -1,14 +1,14 @@
 ---
 name: primitive-black-and-white-ink-illustration
 description: This prompt instructs an AI to generate a minimalist, high-contrast black-and-white ink illustration of a user-specified subject, mimicking the rough, handmade look of block printing or linocut. The result is a bold, primitive, symbolic image on a plain paper-like background, using thick imperfect lines, simple iconic shapes, and intentional negative space, with no color, shading, or modern digital effects.
-skillVersionId: 01987db7-3efc-7899-aa3b-082725283571
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate a minimalist, high-contrast black-and-white ink illustration of a user-specified subject, mimicking the rough, handmade look of block printing or linocut. The result is a bold, primitive, symbolic image on a plain paper-like background, using thick imperfect lines, simple iconic shapes, and intentional negative space, with no color, shading, or modern digital effects.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -60,12 +60,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01987db7-3efc-7899-aa3b-082725283571`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `primitive-black-and-white-ink-illustration`).
 
 Command form:
 
 ```bash
-betterprompt generate 01987db7-3efc-7899-aa3b-082725283571 \
+betterprompt generate primitive-black-and-white-ink-illustration \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -82,7 +82,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01987db7-3efc-7899-aa3b-082725283571 \
+betterprompt generate primitive-black-and-white-ink-illustration \
   --input SUBJECT=<value> \
   --model gpt-image-1 \
   --options '{"image":{"quality":1},"quality":"medium"}'
