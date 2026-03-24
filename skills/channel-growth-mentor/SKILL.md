@@ -1,14 +1,14 @@
 ---
 name: channel-growth-mentor
 description: This prompt instructs the AI to act as a channel growth and audience development expert and produce a comprehensive, platform-tailored growth plan for a new content channel, based on the user’s channel type, content theme, and primary goal. The result is a single, script-only deliverable that outlines clear positioning, a defined audience persona, ten actionable content ideas, a one-month posting calendar, engagement and community tactics, sustainable optimization steps, and recommendations for expanding into additional formats or platforms.
-skillVersionId: 0198c5b2-7f9f-781a-8879-86dcd43ef495
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to act as a channel growth and audience development expert and produce a comprehensive, platform-tailored growth plan for a new content channel, based on the user’s channel type, content theme, and primary goal. The result is a single, script-only deliverable that outlines clear positioning, a defined audience persona, ten actionable content ideas, a one-month posting calendar, engagement and community tactics, sustainable optimization steps, and recommendations for expanding into additional formats or platforms.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `0198c5b2-7f9f-781a-8879-86dcd43ef495`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `channel-growth-mentor`).
 
 Command form:
 
 ```bash
-betterprompt generate 0198c5b2-7f9f-781a-8879-86dcd43ef495 \
+betterprompt generate channel-growth-mentor \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 0198c5b2-7f9f-781a-8879-86dcd43ef495 \
+betterprompt generate channel-growth-mentor \
   --input Insert_Goal=<value> \
   --input Insert_Channel_Type=<value> \
   --input Insert_Content_Focus=<value> \
