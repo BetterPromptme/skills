@@ -1,14 +1,14 @@
 ---
 name: retro-pop-typographic-logo
 description: This prompt instructs the AI to generate a single, polished, vector-style retro typographic word logo in a strict 1970s pop-art bubble-letter aesthetic, where the provided main text is warped and integrated so the letters themselves form a recognizable specified silhouette, rendered in a flat solid chosen color with a very subtle rim glow, centered on a transparent background with no extra elements, textures, gradients, shadows, or 3D effects.
-skillVersionId: 019afbd9-866c-7462-8538-4e32936467ee
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to generate a single, polished, vector-style retro typographic word logo in a strict 1970s pop-art bubble-letter aesthetic, where the provided main text is warped and integrated so the letters themselves form a recognizable specified silhouette, rendered in a flat solid chosen color with a very subtle rim glow, centered on a transparent background with no extra elements, textures, gradients, shadows, or 3D effects.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -64,12 +64,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019afbd9-866c-7462-8538-4e32936467ee`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `retro-pop-typographic-logo`).
 
 Command form:
 
 ```bash
-betterprompt generate 019afbd9-866c-7462-8538-4e32936467ee \
+betterprompt generate retro-pop-typographic-logo \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -86,7 +86,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019afbd9-866c-7462-8538-4e32936467ee \
+betterprompt generate retro-pop-typographic-logo \
   --input Color=<value> \
   --input Shape=<value> \
   --input Main_text=<value> \
