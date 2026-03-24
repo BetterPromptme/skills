@@ -1,14 +1,14 @@
 ---
 name: cinematic-grocery-fridge-portrait
 description: This prompt instructs an AI image generator to take an uploaded portrait and realistically transform it into a cinematic, half-body smartphone-style photo set in a grocery aisle, with the subject posed in front of a glass-door soda fridge. It specifies the scene composition, pose, and framing, emphasizes cool fridge lighting mixed with warm store ambience, and requests film-like color grading with mild grain and low-light mobile texture. The intended outcome is an authentic, moody indie-film still that preserves the person’s facial identity and proportions while avoiding stylized, surreal, or inappropriate elements.
-skillVersionId: 019a392d-ba2d-717c-9daf-10bed8669eed
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to take an uploaded portrait and realistically transform it into a cinematic, half-body smartphone-style photo set in a grocery aisle, with the subject posed in front of a glass-door soda fridge. It specifies the scene composition, pose, and framing, emphasizes cool fridge lighting mixed with warm store ambience, and requests film-like color grading with mild grain and low-light mobile texture. The intended outcome is an authentic, moody indie-film still that preserves the person’s facial identity and proportions while avoiding stylized, surreal, or inappropriate elements.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -70,12 +70,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a392d-ba2d-717c-9daf-10bed8669eed`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `cinematic-grocery-fridge-portrait`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a392d-ba2d-717c-9daf-10bed8669eed \
+betterprompt generate cinematic-grocery-fridge-portrait \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -96,7 +96,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a392d-ba2d-717c-9daf-10bed8669eed \
+betterprompt generate cinematic-grocery-fridge-portrait \
   --input 'outfit_description=graphic t-shirt and loose brown pants' \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
