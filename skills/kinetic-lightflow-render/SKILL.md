@@ -1,14 +1,14 @@
 ---
 name: kinetic-lightflow-render
 description: This prompt instructs an AI image generator to depict a chosen subject enveloped in translucent, flowing energy currents that trace motion with luminous filaments, using two specified colors to heighten the glowing trails against a dark, minimal background. The resulting image emphasizes fluid movement and an ethereal digital look with soft transitions, avoiding harsh outlines in favor of smooth, radiant lines.
-skillVersionId: 01979af1-dc10-76ef-b447-ade20bdb21e0
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI image generator to depict a chosen subject enveloped in translucent, flowing energy currents that trace motion with luminous filaments, using two specified colors to heighten the glowing trails against a dark, minimal background. The resulting image emphasizes fluid movement and an ethereal digital look with soft transitions, avoiding harsh outlines in favor of smooth, radiant lines.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -73,12 +73,12 @@ If any required text input or the required images are missing, **ask the human f
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `01979af1-dc10-76ef-b447-ade20bdb21e0`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `kinetic-lightflow-render`).
 
 Command form:
 
 ```bash
-betterprompt generate 01979af1-dc10-76ef-b447-ade20bdb21e0 \
+betterprompt generate kinetic-lightflow-render \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
@@ -99,7 +99,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 01979af1-dc10-76ef-b447-ade20bdb21e0 \
+betterprompt generate kinetic-lightflow-render \
   --input COLOR_1=<value> \
   --input COLOR_2=<value> \
   --image-input-url https://example.com/image1.png \
