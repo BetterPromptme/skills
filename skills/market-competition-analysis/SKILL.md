@@ -1,14 +1,14 @@
 ---
 name: market-competition-analysis
 description: This prompt instructs the AI to conduct a structured competitor analysis for a specified industry niche, focusing on named primary competitors within a defined geography and time period, and evaluated against chosen key metrics. The outcome is a set of deliverables covering competitive positioning, competitor strengths and weaknesses, identified market opportunities, actionable strategic recommendations, and a phased implementation timeline tied to measurable KPIs.
-skillVersionId: 019a9107-4613-770a-b90d-4553004c7320
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs the AI to conduct a structured competitor analysis for a specified industry niche, focusing on named primary competitors within a defined geography and time period, and evaluated against chosen key metrics. The outcome is a set of deliverables covering competitive positioning, competitor strengths and weaknesses, identified market opportunities, actionable strategic recommendations, and a phased implementation timeline tied to measurable KPIs.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -68,12 +68,12 @@ If any required text input is missing, **ask the human for what's missing**. Do 
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a9107-4613-770a-b90d-4553004c7320`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `market-competition-analysis`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a9107-4613-770a-b90d-4553004c7320 \
+betterprompt generate market-competition-analysis \
   [--input <key>=<value>] \
   [--model <model>] \
   [--options <options JSON>] \
@@ -90,7 +90,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a9107-4613-770a-b90d-4553004c7320 \
+betterprompt generate market-competition-analysis \
   --input Key_metrics=<value> \
   --input Time_period=<value> \
   --input Industry_Niche=<value> \
