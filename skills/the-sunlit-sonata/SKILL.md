@@ -1,14 +1,14 @@
 ---
 name: the-sunlit-sonata
 description: This prompt directs an image-generation system to create an ultra-detailed, cinematic indoor portrait of the person from a reference photo posed intimately with a white grand piano, preserving the subject’s identity while shaping a warm, nostalgic, softly melancholic mood. It specifies precise constraints for facial and hair fidelity, diffused late-afternoon lighting, gentle color harmony, realistic piano reflections, and fine-art fashion styling, resulting in an 8K, painterly photoreal image with shallow depth of field, subtle film grain, and dreamlike atmospheric details.
-skillVersionId: 019a7731-4176-7289-bbe2-1db166382789
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt directs an image-generation system to create an ultra-detailed, cinematic indoor portrait of the person from a reference photo posed intimately with a white grand piano, preserving the subject’s identity while shaping a warm, nostalgic, softly melancholic mood. It specifies precise constraints for facial and hair fidelity, diffused late-afternoon lighting, gentle color harmony, realistic piano reflections, and fine-art fashion styling, resulting in an 8K, painterly photoreal image with shallow depth of field, subtle film grain, and dreamlike atmospheric details.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a7731-4176-7289-bbe2-1db166382789`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `the-sunlit-sonata`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a7731-4176-7289-bbe2-1db166382789 \
+betterprompt generate the-sunlit-sonata \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a7731-4176-7289-bbe2-1db166382789 \
+betterprompt generate the-sunlit-sonata \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
