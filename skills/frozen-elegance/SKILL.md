@@ -1,14 +1,14 @@
 ---
 name: frozen-elegance
 description: This prompt instructs an AI to generate a photorealistic, cinematic Arctic fashion editorial close-up featuring the same woman as in the provided selfie, preserving her identity exactly while depicting her cautiously walking over cracked glacier ice and looking into the camera. It specifies strict realism requirements—no beautification or stylization, accurate skin texture, hard cold daylight, detailed ice coloration, subtle wind motion, and a precise high-fashion outfit—so the resulting image reads like a luxury winter campaign photograph with sharp detail, natural facial accuracy, and authentic environmental lighting.
-skillVersionId: 019a6c23-5ded-751e-b8f9-cba8052c17f7
+compatibility: Requires betterprompt >= 0.1.0
 ---
 
 ## What it does
 
 This prompt instructs an AI to generate a photorealistic, cinematic Arctic fashion editorial close-up featuring the same woman as in the provided selfie, preserving her identity exactly while depicting her cautiously walking over cracked glacier ice and looking into the camera. It specifies strict realism requirements—no beautification or stylization, accurate skin texture, hard cold daylight, detailed ice coloration, subtle wind motion, and a precise high-fashion outfit—so the resulting image reads like a luxury winter campaign photograph with sharp detail, natural facial accuracy, and authentic environmental lighting.
 
-> Requires the **betterprompt** CLI to run. For installation and general CLI usage, refer to the `betterprompt` skill in your skill list or if not yet available in skill list, install via `npx skills add https://github.com/BetterPromptme/betterprompt/skills --skill betterprompt`
+> For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
 ## Inputs
 
@@ -59,12 +59,12 @@ If the required images are missing, **ask the human for what's missing**. Do not
 
 ### Step 2: Run via BetterPrompt CLI
 
-Use the frontmatter's `skillVersionId` as the positional argument (for this skill version, use `019a6c23-5ded-751e-b8f9-cba8052c17f7`).
+Use the frontmatter's `name` as the positional argument (for this skill, use `frozen-elegance`).
 
 Command form:
 
 ```bash
-betterprompt generate 019a6c23-5ded-751e-b8f9-cba8052c17f7 \
+betterprompt generate frozen-elegance \
   [--image-input-url <url>] \
   [--image-input-base64 <base64>] \
   [--image-input-path <absolute path to image>] \
@@ -83,7 +83,7 @@ Notes:
 Example (using defaults shown above):
 
 ```bash
-betterprompt generate 019a6c23-5ded-751e-b8f9-cba8052c17f7 \
+betterprompt generate frozen-elegance \
   --image-input-url https://example.com/image1.png \
   --model gemini-2.5-flash-image-preview \
   --options '{}'
