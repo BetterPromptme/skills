@@ -1,7 +1,24 @@
 ---
 name: improve-your-social-post
 description: This prompt instructs an AI to rewrite a provided social media post into a more engaging, high-performing version that preserves the original message while upgrading the hook, pacing, clarity, emotional impact, and platform-native rhythm. It sets specific tone and style requirements, defines the intended audience, and adds guardrails to avoid unsafe or misleading content. The expected outcome is an original, scroll-stopping post that reads like creator-level copy and ends with a strong, natural call-to-action.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
