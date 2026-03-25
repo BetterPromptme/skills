@@ -1,7 +1,24 @@
 ---
 name: render-me-pixar
 description: This prompt instructs an image-generation workflow to take an uploaded portrait and convert it into a Pixar-inspired 3D animated character by preserving the person’s defining facial traits (hair, skin tone, eye shape, and face structure) while enhancing them with stylized cartoon proportions. It specifies the desired look and rendering outcome—soft skin with subtle blush, slightly exaggerated ears and a rounded nose, natural soft lighting, a clean alpha-style background, an ultra-detailed Octane-like cinematic finish, and a vertical 2:3 upper-body composition with a vibrant, whimsical tone.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
