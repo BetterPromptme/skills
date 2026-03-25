@@ -1,7 +1,24 @@
 ---
 name: system-architecture-review
 description: This prompt instructs the AI to act as an experienced software architect and deliver a structured, comprehensive review of a proposed system design, evaluating it across scalability, reliability, security, and cost while considering growth, edge cases, and failure scenarios. It uses provided business context, scale, tech stack, constraints, and requirements to produce an evidence-based assessment with quantitative ratings, pattern analysis, identified bottlenecks and risks, and a phased, actionable roadmap of improvements aligned to industry best practices.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
