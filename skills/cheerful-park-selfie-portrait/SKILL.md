@@ -1,7 +1,24 @@
 ---
 name: cheerful-park-selfie-portrait
 description: This prompt instructs an image model to generate a 4K, ultra-realistic DSLR-style first-person outdoor selfie of a young woman in a sunny park, with strict identity preservation so her face matches a provided reference exactly. It specifies the selfie angle, pose, expression, outfit and accessories, hair movement, lighting, and background details while prohibiting any retouching, beautification, text, or stylistic alterations. The intended outcome is a cheerful, natural-looking portrait where the subject fills most of the frame and the park setting supports realism without distracting from her unchanged facial features.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
