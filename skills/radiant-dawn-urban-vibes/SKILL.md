@@ -1,7 +1,24 @@
 ---
 name: radiant-dawn-urban-vibes
 description: This prompt template instructs an AI to generate a vivid, time-specific scene centered on a chosen subject in a defined location, emphasizing how particular lighting creates a visible effect across the environment. It also guides the AI to apply a specified color palette to evoke a targeted emotional mood, resulting in a coherent, atmospheric visual description or image concept.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
