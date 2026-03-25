@@ -1,7 +1,24 @@
 ---
 name: ugc-clothing-item-photo-generator
 description: This prompt instructs an image generation/editing system to produce a realistic, high-end UGC fashion photoshoot image by keeping the woman’s face, identity, and hair exactly as shown in the first reference photo while swapping her outfit to match the specific clothing item from the second reference photo with accurate fit, material, and lighting. It also defines a luxurious studio scene with a giant cream gift box, burgundy velvet curtains, and directional editorial lighting, plus a precise pose and expression, and it constrains the output by forbidding any changes to the person’s identity, the garment design, or the established background and style so the result looks like an authentic photograph of the user wearing the chosen outfit.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
