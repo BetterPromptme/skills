@@ -1,7 +1,24 @@
 ---
 name: smartbudget-planner
 description: This prompt instructs the AI to act as a financial assistant that builds a realistic, personalized monthly budget using a user’s income, fixed and variable expenses, savings target, debt repayment needs, and chosen budgeting method. It calculates total spending and remaining funds, prioritizes savings, allocates an appropriate amount toward debt while preserving stability, and then formats the full budget according to the selected strategy (e.g., 50/30/20, zero-based, envelope, or custom). The result is a structured monthly breakdown with category allocations and tailored recommendations to reduce wasteful spending and improve savings progress.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
