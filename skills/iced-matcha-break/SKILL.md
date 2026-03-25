@@ -1,7 +1,24 @@
 ---
 name: iced-matcha-break
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical lifestyle portrait of a young woman seated waist-up in the front passenger seat of a modern beige-interior car, captured in a playful candid moment with her hand partly covering her smile and an iced matcha drink in the other hand. It specifies exact styling (mauve athleisure set, pink cap, headphones, gold bangles), environment details (clean metallic-accented cabin with an urban street visible outside), and natural daylight from a panoramic sunroof, while enforcing strict guardrails to preserve the subject’s facial identity, proportions, realistic skin texture, and lighting without beautification or text overlays.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
