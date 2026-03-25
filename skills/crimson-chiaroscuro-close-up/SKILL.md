@@ -1,7 +1,24 @@
 ---
 name: crimson-chiaroscuro-close-up
 description: This prompt instructs an image-generation/editing system to create a photorealistic, cinematic, high-contrast extreme close-up fashion portrait using the provided reference person while strictly preserving their identity. It specifies red glossy leather gloves partially covering the face, gold statement jewelry, slightly messy hair, an intense direct gaze with one eye emphasized, and a minimalist gray studio background with dramatic chiaroscuro lighting. The intended outcome is a high-resolution editorial-style image with sharp texture detail, shallow depth of field, and no added text, logos, or watermarks.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
