@@ -1,7 +1,24 @@
 ---
 name: midnight-in-sage-and-leather
 description: This prompt instructs an image model to generate a photorealistic, modern urban nighttime indoor portrait using the provided reference image as the sole, unaltered face identity, depicting a woman in a sage green strapless satin mini dress with a black leather jacket draped off one shoulder, posed calmly in front of a floor-to-ceiling window with a softly blurred, glowing city skyline and realistic reflections, lit by warm interior light for a sleek, confident fashion-lifestyle result.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
