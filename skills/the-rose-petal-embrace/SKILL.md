@@ -1,7 +1,24 @@
 ---
 name: the-rose-petal-embrace
 description: This prompt instructs an image-generation system to produce a high-resolution, photorealistic romantic bedroom portrait featuring a young woman posed kneeling on a neatly made white bed while hugging an oversized teddy bear, surrounded by roses, petals, balloons, and ribbons, all arranged in a polished, editorial lifestyle aesthetic. It specifies strict identity preservation for the subject’s face, detailed styling (hair, makeup, outfit, heels), precise composition (vertical, eye-level, centered framing with foreground and background elements), and soft, even indoor lighting to achieve an elegant, softly sensual, celebration-themed result without artificial beautification or stylized filtering.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
