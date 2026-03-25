@@ -1,7 +1,24 @@
 ---
 name: textured-object-rebirth
 description: This prompt instructs the model to retexture the provided image while locking the original shape and preserving key geometric details like contours and depth, then render it as a photorealistic yet surreal studio object. The result is the same silhouette mapped with a desaturated, matte, skin/peel-like material featuring subtle fiber irregularities, lit by diffused softbox lighting with gentle shadows and slight edge highlights, and placed against a clean beige-to-light-gray gradient backdrop with shallow depth of field at ultra-high resolution.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
