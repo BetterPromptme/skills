@@ -1,7 +1,24 @@
 ---
 name: blooming-reverie-bathtub
 description: This prompt instructs the AI to generate an 8K photorealistic, fine-art, fairy-tale portrait of a real person reclining diagonally in a glossy white bathtub overflowing with lush pastel flowers, lit by softly diffused sunlight through window blinds in a green, botanical interior. It specifies precise composition, pose options, wardrobe, lighting temperature, color palette, lens look, and atmosphere to achieve a serene cinematic softness. The intended outcome is a tranquil, ethereal yet physically plausible image where the subject’s identity is preserved exactly as in the reference photo, with no changes to facial structure, expression, proportions, or skin tone.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
