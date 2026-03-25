@@ -1,7 +1,24 @@
 ---
 name: the-red-tulip-frame
 description: This prompt instructs an AI image generator to produce a photorealistic, cinematic Paris street-fashion portrait: a full-body, vertically framed shot of a specific young woman whose facial identity, hair, and natural texture must be preserved, posed confidently on a rain-wet cobblestone avenue with symmetrical Parisian architecture leading to the Eiffel Tower in the distance. It specifies wardrobe, accessories, pose, composition, lighting, color palette, and environmental details to achieve a romantic luxury mood while preventing beautification, proportion changes, or stylized filtering, resulting in a high-resolution, realistically textured fashion photograph with balanced overcast daylight and authentic Paris atmosphere.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
