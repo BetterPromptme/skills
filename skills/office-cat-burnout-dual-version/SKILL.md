@@ -1,7 +1,24 @@
 ---
 name: office-cat-burnout-dual-version
 description: This prompt instructs an AI image generator to produce an ultra-realistic, cinematic-comedy office portrait in very high resolution: a close, wide-angle selfie-style shot where a grumpy orange tabby cat dominates the frame, extending a paw as if taking a selfie while sipping iced black coffee, with harsh fluorescent lighting and detailed textures. It also specifies an old, cluttered cubicle environment and a bored, overworked coworker in the background (male or female), posed with exhausted body language and business-casual styling, resulting in a believable yet meme-worthy scene that contrasts human office burnout with a cat acting like a stressed employee.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
