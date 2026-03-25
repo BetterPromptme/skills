@@ -1,7 +1,24 @@
 ---
 name: 3d-pop-up-book-creator-childrens-style
 description: This prompt instructs an AI image generator to create an isometric illustration of an open pop-up children’s book where a vivid main scene is brought to life with specified animals or objects and extra small details, all constructed as layered paper cutouts with hinges and tabs that rise from the pages. The result is a richly colored, hand-crafted storybook-style 3D diorama with soft shadows, dramatic lighting, and a chosen aesthetic tag that enhances depth and magical energy.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
