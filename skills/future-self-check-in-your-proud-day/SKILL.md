@@ -1,7 +1,24 @@
 ---
 name: future-self-check-in-your-proud-day
 description: This prompt asks the AI to role-play as a future version of the user who successfully completes the upcoming day, using the user’s current mood and intended goal as context. It produces a reflective, first-person account that includes three specific strategies for sustaining energy and motivation, a description of a challenging moment and how it was overcome, a guiding mantra used to stay focused, and a summary of the feelings experienced when looking back on the day’s progress.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
