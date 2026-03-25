@@ -1,7 +1,24 @@
 ---
 name: glossy-studio-portrait
 description: This prompt instructs an image-generation or editing model to produce a 2025-style glossy luxury fashion editorial studio portrait that preserves the subject’s identity exactly while applying specified camera settings, neutral studio background, refined lighting, and detailed beauty styling. The outcome is a crisp 4K horizontal portrait with cinematic, cool-toned glossy highlights, natural skin texture, and the exact wardrobe, accessories, pose, and composition described, while explicitly avoiding any face changes, hair color shifts, or distracting elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
