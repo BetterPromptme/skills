@@ -1,7 +1,24 @@
 ---
 name: 3d-kawaii-chibi-sticker-set-for-social-media
 description: This prompt instructs an image generator to create a 10:15 vertical 3D kawaii scene featuring nine chibi sticker characters inspired by the provided reference image, each with a white sticker border and a speech bubble containing short everyday phrases. The final result is a cohesive, fun, positive sticker-sheet style composition placed on a soft white-to-pastel blue gradient background, optimized for sharing on specified social media platforms.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
