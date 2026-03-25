@@ -1,7 +1,24 @@
 ---
 name: midnight-mirror-fashion-selfie
 description: This prompt instructs an AI image generator to produce an ultra-realistic, warm-toned nighttime mirror selfie portrait indoors, depicting a woman in a brown corset top and oversized jeans with a natural handheld phone aesthetic. It specifies composition (chest-to-thigh framing in a large mirror), styling (modern outfit and subtle jewelry), and environment details (dim cozy bedroom lighting, curtains, bed, chair, realistic mirror smudges, slight grain) to achieve authentic phone-camera realism at very high resolution. The intended outcome is a lifelike, intimate fashion-focused selfie that preserves the subject’s identity exactly as in the provided reference image while maintaining natural textures, lighting, and proportions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
