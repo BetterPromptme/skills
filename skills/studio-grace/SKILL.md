@@ -1,7 +1,24 @@
 ---
 name: studio-grace
 description: This prompt instructs the AI to generate an ultra-high-resolution, minimalist cinematic studio birthday portrait of a woman, precisely matching the subject’s facial features from a reference image, posed crouching in a white studio while blowing out a single candle on a small white cake, styled in an oversized black blazer with sheer tights and bow-accent heels, and composed with sharp dual-spotlight shadows plus celebratory props (red roses and metallic number balloons) to produce a clean, elegant, editorial final photograph.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
