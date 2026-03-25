@@ -1,7 +1,24 @@
 ---
 name: mid-autumn-ao-dai-single-color-control
 description: This prompt instructs an image-generation workflow to create a high-resolution, photoreal, cinematic 35mm-style editorial portrait set in a Vietnamese temple during the Mid-Autumn Festival, with a precisely defined pose, composition, lighting, and festival props. It enforces strict identity preservation so the subject’s face and hair remain exactly as in the provided reference, and it constrains the ao dai wardrobe to a single specified hex color while avoiding smoothing, artifacts, text, and extraneous elements. The result is a vertical 4:5 print-ready portrait with fine film grain, authentic textures, festive décor, and controlled color consistency centered on the ao dai.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
