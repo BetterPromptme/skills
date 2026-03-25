@@ -1,7 +1,24 @@
 ---
 name: denim-and-white-editorial-portrait
 description: This prompt instructs an image generator to produce an 8K, ultra-realistic high-fashion studio portrait of the same young woman as in a provided reference, preserving her exact identity while placing her in a minimal white editorial setup. It specifies wardrobe, hair, makeup, lighting, camera framing, color palette, and mood to achieve a clean, modern, Vogue-like look with soft diffused light and authentic skin texture. The expected outcome is a 4:5 vertical, waist-up fashion photograph with crisp facial focus, monochrome styling, and natural yet confident expressions, free of extra props or heavy retouching.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
