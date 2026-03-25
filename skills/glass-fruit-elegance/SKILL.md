@@ -1,7 +1,24 @@
 ---
 name: glass-fruit-elegance
 description: This prompt directs an image model to generate a hyper-realistic macro-style 3D render of a specified fruit depicted as translucent glass, emphasizing glossy reflections, crystal clarity, internal air bubbles, and soft shadows on a clean surface. The result is a photorealistic, minimal-background composition with sharp studio lighting and a smooth rounded form that reads as a glass sculpture of the chosen fruit.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
