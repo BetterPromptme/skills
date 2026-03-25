@@ -1,7 +1,24 @@
 ---
 name: natural-lace-garden-editorial
 description: This prompt instructs the AI to generate a high-resolution, photorealistic outdoor lifestyle editorial portrait using an uploaded face image as an exact, unaltered identity reference, depicting a young woman in a lush tropical garden. It specifies the framing, pose, off-camera gaze and subtly flirty expression, along with precise hair, minimal makeup, a fitted brown lace dress, and delicate gold accessories. It also defines soft natural daylight, a rich green-and-warm-brown color palette, realistic depth of field, and strict guardrails against stylization or facial changes, resulting in a natural, confident fashion image with crisp detail and authentic skin texture.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
