@@ -1,7 +1,24 @@
 ---
 name: suggested-learning-resources-suitable-for-major-and-school-year
 description: This prompt asks the AI to act as a personalized learning advisor by using the student’s year, major, and target subject to suggest high-quality resources—such as books, courses, websites, and YouTube channels—suited to their current proficiency and long-term objectives. The outcome is a curated, level-appropriate study roadmap with recommended materials that align with the learner’s academic background and goals.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
