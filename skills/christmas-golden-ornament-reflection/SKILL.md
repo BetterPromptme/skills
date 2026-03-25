@@ -1,7 +1,24 @@
 ---
 name: christmas-golden-ornament-reflection
 description: This prompt instructs an image transformation system to take a user-provided portrait and re-render it as a photorealistic, macro close-up scene of a reflective golden Christmas ornament hanging on a spruce branch, using a separate reference image only for overall style, lighting, color, and mood. The user’s face and identity must remain fully preserved and recognizable while appearing centered within the ornament’s fisheye reflection of a nostalgic late-Soviet/1990s New Year interior (holiday table, warm incandescent light, vintage TV, decorated tree), with the subject dressed per a specified outfit style and holding champagne. The intended result is a family-friendly, cinematic, warm-toned ornament image with shallow depth of field, soft film grain, and bokeh, without copying any identity from the reference or altering the subject’s core features.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
