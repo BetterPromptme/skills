@@ -1,7 +1,24 @@
 ---
 name: past-and-present-portrait-merge
 description: This prompt directs an image model to generate a photorealistic, vertically framed (9:16) cinematic portrait that places the same person’s present-day self and younger child self together in one nostalgic golden-hour alleyway scene, with strict identity preservation from an input portrait. It specifies exact staging—adult leaning against a wall looking down reflectively, child standing slightly forward looking up curiously—while enforcing a warm, vintage film-still mood with subtle haze and lens flare. The outcome is a timeless, emotionally resonant side-by-side generational image that maintains consistent facial traits, skin texture, and unique features, and adapts clothing style (casual/formal/neutral) without adding modern artifacts, logos, extra characters, or altering the setting.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
