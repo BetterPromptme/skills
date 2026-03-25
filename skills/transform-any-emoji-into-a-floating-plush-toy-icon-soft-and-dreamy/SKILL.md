@@ -1,7 +1,24 @@
 ---
 name: transform-any-emoji-into-a-floating-plush-toy-icon-soft-and-dreamy
 description: This prompt instructs an image-generation model to create a hyper-realistic 3D render of an emoji-inspired floating animal head designed like an ultra-soft plush toy, featuring long fur, playful childlike cuteness, vibrant yet soothing colors, soft diffused straight-on lighting, and a pure white background, resulting in a highly detailed, whimsical, warm, modern product-style visual.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
