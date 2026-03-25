@@ -1,7 +1,24 @@
 ---
 name: professional-translation-assistant
 description: This prompt instructs an AI to act as a professional translator and produce a fluent, culturally appropriate translation of a provided text into a specified target language while matching a chosen tone. It sets strict rules to preserve the original meaning, nuance, and emotional impact, avoid em dashes, and follow the linguistic conventions of the target language without sounding machine-generated. The expected outcome is a cleanly formatted translation only, with no extra commentary unless explicitly requested.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
