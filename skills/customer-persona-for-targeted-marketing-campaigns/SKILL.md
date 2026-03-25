@@ -1,7 +1,24 @@
 ---
 name: customer-persona-for-targeted-marketing-campaigns
 description: This prompt takes a set of persona attributes (demographics, lifestyle, motivations, behaviors, influences, and pain points) and uses them to construct a coherent marketing customer profile that can guide campaign targeting and messaging, with the intended outcome of producing a visual illustration that depicts only the persona as an image without any accompanying text.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
