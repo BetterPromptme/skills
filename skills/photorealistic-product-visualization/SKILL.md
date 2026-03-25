@@ -1,7 +1,24 @@
 ---
 name: photorealistic-product-visualization
 description: This prompt instructs the AI to retexture the attached image by converting the subject’s surface to a photorealistic glass material while keeping it centered against a plain white background. It specifies soft, diffused studio lighting, an eye-level straight-on camera angle, high resolution output in a 2:3 aspect ratio, and visual details such as realistic reflections and transparency with no shadows, resulting in a clean studio-style render of the original object in glass.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
