@@ -1,7 +1,24 @@
 ---
 name: fisheye-portrait-studio
 description: This prompt instructs an AI to take a user-provided portrait photo and generate a realistic, playful high-angle fisheye-style close-up that preserves the person’s true identity while applying an exaggerated big-head/small-body perspective. It uses two text inputs—outfit description and facial expression—to guide the subject’s styling and mood, and it requires the final image to match a specified reference look in camera angle, bright white background, soft even lighting, and sharp eye focus. The intended outcome is a single-person, professional-quality, modern fisheye portrait with consistent tone and no added elements, text, props, or stylizations outside the defined photographic style.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
