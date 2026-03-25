@@ -1,7 +1,24 @@
 ---
 name: any-hair-color-swap
 description: This prompt instructs an AI photo retouching assistant to recolor the hair in a provided portrait to a specified target shade while strictly preserving the person’s identity, facial details, hairstyle, pose, framing, and background. The expected outcome is a photorealistic image where only the hair color changes, maintaining natural strand texture and highlights without any spill onto skin, clothing, or surrounding elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
