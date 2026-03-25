@@ -1,7 +1,24 @@
 ---
 name: make-an-emergency-box-to-cure-lifes-pains
 description: This prompt instructs the AI to generate a cinematic, high-detail 3D scene of an emergency glass box isolated in a dark environment, lit by subtle white light and moody shadows. It specifies the box’s materials, reflections, and emotional tone, and includes placeholders to customize the emergency item inside and the situation text on the box, resulting in a realistic, emotionally charged render that feels quiet yet hopeful.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
