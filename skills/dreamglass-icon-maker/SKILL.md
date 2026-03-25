@@ -1,7 +1,24 @@
 ---
 name: dreamglass-icon-maker
 description: This prompt instructs an image model to generate a modern, UI-friendly 3D icon of a specified object, rendered in a dreamy translucent glass-like plastic with soft pink and purple tones. The result is a glossy, rounded, gently glowing icon with subtle shimmer effects, floating on a clean white background with soft shadows and natural lighting for an elegant, polished look.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
