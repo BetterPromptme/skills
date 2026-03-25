@@ -1,7 +1,24 @@
 ---
 name: figurine-showcase
 description: This prompt directs an AI image generator to produce a photorealistic scene featuring a commercial 1/7 scale figurine based on the characters shown in the provided image, displayed on a computer desk with a clear round acrylic base. It specifies environmental details and supporting props, including a computer monitor showing the figurine being modeled in 3D and a nearby premium-style collectible packaging box decorated with original 2D illustration artwork, resulting in a realistic product-style tabletop display.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
