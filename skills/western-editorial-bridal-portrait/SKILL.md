@@ -1,7 +1,24 @@
 ---
 name: western-editorial-bridal-portrait
 description: This prompt instructs an image generator to create a high-end, cinematic indoor bridal editorial portrait that preserves the subject’s exact identity from a reference photo while styling her in a voluminous white satin couture gown, wide-brim hat with veil, and layered pearls, seated on a vintage chair amid abundant roses, greenery, and soft overhead drapery. It specifies a joyful, candid pose with a hand partly covering her smile, a bouquet in rich red and blush tones, centered full-body composition, and warm candlelit, shallow-depth lighting with creamy highlights and rich shadows, yielding a romantic, luxurious vintage room scene without altering facial features or introducing off-theme elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
