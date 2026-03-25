@@ -1,7 +1,24 @@
 ---
 name: strategic-content-pillar-planner
 description: This prompt instructs the AI to act as a senior content strategist and create a structured content system for a specified brand or product, using provided details like industry, audience, tone, and business objectives. The output delivers 3–5 strategic content pillars aligned to goals, each broken into 3–5 actionable content angles, and for every angle includes a one-sentence core message, a recommended content format, and a concrete example post idea presented in a clear Pillar → Angles framework.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
