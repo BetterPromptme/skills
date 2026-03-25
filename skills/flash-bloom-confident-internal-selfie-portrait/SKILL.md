@@ -1,7 +1,24 @@
 ---
 name: flash-bloom-confident-internal-selfie-portrait
 description: This prompt instructs an AI image generator to produce a high-resolution, vertically framed, realistic fashion selfie that looks like a candid point-and-shoot flash photo taken outside a coffee shop at night. It specifies the subject’s expression, pose, styling (silk halter top, gold jewelry, reflective nails), and strict realism constraints (accurate anatomy, preserved facial proportions, sharp focus, direct-flash highlights, subtle analog grain, and flash bloom), resulting in a confident, spontaneous portrait with an urban café backdrop and a visible matcha drink for authenticity.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
