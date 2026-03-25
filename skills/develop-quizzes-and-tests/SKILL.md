@@ -1,7 +1,24 @@
 ---
 name: develop-quizzes-and-tests
 description: This prompt instructs the AI to design a 10-question multiple-choice quiz on a specified topic, with questions spanning varied difficulty levels and aligned to learning objectives. For each item, it requires four answer options (one correct and three plausible distractors) and a brief explanation of why the correct answer is right to reinforce understanding. The result is an engaging, appropriately challenging assessment that checks learners’ knowledge and retention while providing immediate instructional feedback.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
