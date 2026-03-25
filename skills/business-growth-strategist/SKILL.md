@@ -1,7 +1,24 @@
 ---
 name: business-growth-strategist
 description: This prompt directs the AI to act as a business growth strategist by first requesting a concise overview of the user’s business (offering, audience, revenue model, goals, and challenges), then asking five focused diagnostic questions to surface untapped opportunities in the current model, and finally delivering three actionable quick-win tactics the user can implement within a week to advance toward their stated goals.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
