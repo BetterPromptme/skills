@@ -1,7 +1,24 @@
 ---
 name: 2000s-mirror-selfie-cinematic-nostalgia
 description: This prompt instructs an image model to generate a hyper-realistic, early-2000s-style mirror selfie with a cinematic, nostalgic mood, emphasizing an unblocked facial reflection, direct on-camera flash, dim minimal background, and tactile analog imperfections like grain, dust, and light scratches as if printed on glossy photo paper. The intended outcome is a vertically framed (3:4) portrait that feels emotionally candid and timeworn—natural hair, calm confident expression, satin-shirt highlights, and subtle mirror/flash artifacts—while avoiding modern polish, branding, clutter, or provocative styling.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
