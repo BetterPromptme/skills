@@ -1,7 +1,24 @@
 ---
 name: dynamic-motion-sketch
 description: Prompt này dùng để tạo (hoặc hướng dẫn vẽ) một bản phác thảo bút chì dạng “nghiên cứu chuyển động” cho chủ thể bạn điền vào {{ SUBJECT }}, nhấn mạnh tư thế động và dòng chảy chuyển động bằng nét vẽ mạnh, quét rộng và đổ bóng nhiều lớp; kết quả là hình sketch giàu cảm giác hành động, có điểm nhấn màu bằng bút chì ở hai màu bạn chọn trong {{ COLOR1 }} và {{ COLOR2 }} để tăng độ sống động.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
