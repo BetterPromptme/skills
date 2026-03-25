@@ -1,7 +1,24 @@
 ---
 name: precision-proof-and-edit-master
 description: This prompt instructs the AI to act as a meticulous English proofreader and editor who takes a provided draft, considers its audience, purpose, style preferences, and constraints, and then produces a polished, publication-ready revision. The result includes a brief summary of the draft and editing focus, a list of key issues with illustrative before/after examples, the fully revised draft, and concise notes explaining the rationale behind major edits while preserving the author’s original meaning and voice without adding unsupported content.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
