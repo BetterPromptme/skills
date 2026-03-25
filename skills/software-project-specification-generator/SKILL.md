@@ -1,7 +1,24 @@
 ---
 name: software-project-specification-generator
 description: This prompt instructs the AI to produce a structured, developer-ready software feature specification for a given project by summarizing the project’s purpose and audience, enumerating and detailing core features, defining the intended technology stack, and capturing performance and security requirements. The expected outcome is a clear, technical document that stakeholders and engineers can use to align on scope, implementation expectations, and non-functional requirements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
