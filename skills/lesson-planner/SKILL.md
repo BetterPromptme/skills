@@ -1,7 +1,24 @@
 ---
 name: lesson-planner
 description: This prompt instructs the AI to act as an experienced educator and curriculum designer and produce a complete, teacher-ready lesson plan for a 60-minute class using the provided subject, grade/age level, and duration inputs. The resulting output is a clearly organized plan with labeled sections—overview, measurable learning objectives, required materials, timed introduction/main activities/conclusion, formative and summative assessments, and an optional extension or homework—written in professional, practical language designed for active student engagement and easy classroom reuse.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
