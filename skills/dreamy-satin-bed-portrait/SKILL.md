@@ -1,7 +1,24 @@
 ---
 name: dreamy-satin-bed-portrait
 description: This prompt instructs an AI image generator to produce an ultra-detailed, cinematic Y2K editorial portrait inspired by Chinese New Year nostalgia, staged as an intimate bedroom scene on satin bedding with retro accessories, soft glowing light, and specific wardrobe/jewelry styling that adapts to the subject’s gender. It tightly defines composition, lens/look, color palette, and realism constraints while requiring the subject’s face to remain identical to the provided reference, resulting in a high-fidelity, dreamy yet realistic fashion photograph with consistent Y2K glamour and festive warmth.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
