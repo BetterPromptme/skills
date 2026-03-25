@@ -1,7 +1,24 @@
 ---
 name: metro-editorial-subway-portrait
 description: This prompt directs an image generation or editing model to create a high-end fashion editorial photo set inside a modern stainless-steel subway car with open doors and a visible platform, using symmetrical full-body vertical composition and soft cinematic transit lighting. It instructs the model to keep the subject’s identity and outfit exactly as provided while placing them in a relaxed, confident pose centered in the doorway, producing a clean, magazine-style image with shallow depth of field, subtle film grain, and no text, logos, or overlays.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
