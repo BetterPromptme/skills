@@ -1,7 +1,24 @@
 ---
 name: disney-dreamland-hug-portrait
 description: This prompt instructs the AI to use a user-provided photo and a chosen Disney character as inputs to generate an ultra-realistic, cinematic theme-park portrait where the user appears with their face and proportions preserved, dressed in the character’s outfit, and sharing a natural, friendly hug with the character in front of the Disney Castle. The intended outcome is a high-resolution, family-friendly image with authentic park ambiance, soft dreamy lighting, accurate costume details, and safeguards against face/body distortion or unnatural blending.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
