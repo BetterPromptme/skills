@@ -1,7 +1,24 @@
 ---
 name: travel-dream-budget-planner
 description: This prompt instructs the assistant to act as a travel budget planner who, using the user’s trip details (destination, dates, trip length, travelers, budget range, travel style, and must-haves), produces a complete cost estimate and money-allocation plan. The expected outcome is a structured breakdown of total and category-level expenses, a daily spending allowance, percentage-based budgeting guidance, practical cost-saving tactics, budget-versus-luxury scenario comparisons, destination-specific food/experience/packing/etiquette tips, and a brief motivational close to encourage saving and enjoying the trip.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
