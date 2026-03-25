@@ -1,7 +1,24 @@
 ---
 name: poster-minimalist-beauty
 description: This prompt instructs an AI image generator to produce a premium, minimal commercial poster centered on a specified apparel item, shown front-facing and crisply lit while floating with realistic shadows. It directs the model to auto-match a smooth gradient background to the product’s dominant colors, add subtle atmospheric effects like fog or light flares for depth, and incorporate faint, non-readable background echoes of the apparel word without any actual text or branding, resulting in an ultra-HD 4:5 modern product-focused poster.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
