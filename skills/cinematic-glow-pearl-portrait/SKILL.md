@@ -1,7 +1,24 @@
 ---
 name: cinematic-glow-pearl-portrait
 description: This prompt instructs an image generator to produce a hyper-realistic, high-end cinematic editorial close-up portrait using a provided face reference while preserving the subject’s identity and facial proportions exactly. It specifies camera framing, warm diffused daylight, hairstyle, wardrobe accessories, neutral blurred background, and micro-texture detail (eyes, lips, pores, hair) with subtle filmic qualities like gentle bloom and grain. The intended outcome is an 8K, 4:5 vertical beauty portrait that feels intimate and magazine-polished, with sharp facial focus, creamy depth-of-field, and no beautifying alterations or heavy filtering.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
