@@ -1,7 +1,24 @@
 ---
 name: channel-growth-mentor
 description: This prompt instructs the AI to act as a channel growth and audience development expert and produce a comprehensive, platform-tailored growth plan for a new content channel, based on the user’s channel type, content theme, and primary goal. The result is a single, script-only deliverable that outlines clear positioning, a defined audience persona, ten actionable content ideas, a one-month posting calendar, engagement and community tactics, sustainable optimization steps, and recommendations for expanding into additional formats or platforms.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
