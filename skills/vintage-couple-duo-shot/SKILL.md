@@ -1,7 +1,24 @@
 ---
 name: vintage-couple-duo-shot
 description: This prompt instructs an image generator to recreate a nostalgic early-2000s Y2K mirror-selfie aesthetic by producing a vertical diptych of the same couple in a tiled, yellow-green bathroom setting, shot with harsh compact-digital-camera flash, visible glare, noise, and lo-fi JPEG artifacts. It specifies two stacked panels with different moods—an intimate pose on top and a playful pose on the bottom—while tightly controlling wardrobe, framing, lighting, and color cast to mimic a 2–5 MP consumer camera look. The intended outcome is a photorealistic, imperfect, flash-blown, warm green-tinted double selfie that feels authentic to Myspace-era digital photography, with the couple’s likeness preserved exactly as in the provided references.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
