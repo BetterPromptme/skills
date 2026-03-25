@@ -1,7 +1,24 @@
 ---
 name: minimalist-fragrance-editorial-portrait
 description: This prompt instructs the AI to generate an ultra-high-resolution, photorealistic studio fashion editorial portrait in a clean high-key cyclorama, featuring the referenced person seated on large matte pastel 3D letters spelling a specified word, with a small apple-shaped perfume bottle placed nearby. It defines precise composition, lighting, styling options by gender, color palette, camera/lens characteristics, and realism constraints, with the intended outcome being a modern, minimalist fragrance-campaign image that preserves the subject’s exact likeness while delivering a balanced, elegant, softly lit final portrait.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
