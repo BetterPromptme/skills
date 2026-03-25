@@ -1,7 +1,24 @@
 ---
 name: turn-everything-into-hot-glass
 description: This prompt instructs an image generator to create a high-resolution portrait of a specified object depicted as a glossy, semi-transparent, faceted gemstone with a hexagonal texture, featuring a radiant internal glow and a vivid red-to-yellow gradient, placed against a soft neutral gradient background to emphasize its smooth three-dimensional form.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
