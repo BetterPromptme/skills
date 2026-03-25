@@ -1,7 +1,24 @@
 ---
 name: trusted-cold-call-script-builder
 description: This prompt instructs the AI to generate a cold-calling phone script tailored to a specified role, offer, audience, location, tone, and goal, designed to establish credibility quickly, qualify prospects by interest and urgency, and guide toward a clear next step, while also providing ready-to-use replies to common objections.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
