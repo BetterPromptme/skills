@@ -1,7 +1,24 @@
 ---
 name: signature-dog-method-builder
 description: This prompt instructs the AI to act as both a canine behavior specialist and brand strategist to help a professional dog trainer design a distinctive, signature training system tailored to a specific breed and training objective. It guides the AI to clarify the trainer’s core philosophy and training style, then generate a memorable branded name for the method, while asking targeted follow-up questions to ensure the framework fits the trainer’s niche, values, and local market differentiation.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
