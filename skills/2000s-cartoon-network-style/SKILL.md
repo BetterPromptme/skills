@@ -1,7 +1,24 @@
 ---
 name: 2000s-cartoon-network-style
 description: The prompt instructs the AI to restyle a provided image into a 2000s Cartoon Network–inspired look reminiscent of Foster’s Home for Imaginary Friends, converting subjects into simplified, playful characters with exaggerated expressions, bold outlines, flat shapes, and vivid solid colors. It also directs the AI to reduce or stylize the background using minimal flat patterns or textures so the final output reads like a whimsical, graphic animation frame rather than a realistic scene.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
