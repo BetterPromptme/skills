@@ -1,7 +1,24 @@
 ---
 name: golden-hour-apartment-selfie
 description: This prompt instructs an image-restyling system to transform an input portrait into a photorealistic, cinematic golden-hour selfie set in a modern high-rise apartment, preserving the person’s identity and natural realism while adding physically accurate metallic silver snowflake cheek decals and sunset lighting effects. It also applies specific soft-glam makeup details only when the subject is female and enforces gender-appropriate posing, resulting in a premium DSLR-like sunset portrait with realistic reflections, textures, and an authentic apartment background.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
