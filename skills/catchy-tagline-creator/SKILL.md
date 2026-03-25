@@ -1,7 +1,24 @@
 ---
 name: catchy-tagline-creator
 description: This prompt instructs the AI to act as a creative marketing copywriter for a specified type of service business and generate five distinct, memorable slogans or taglines that emphasize the company’s core values, professionalism, and customer benefits, tailored to attract people seeking a trusted, high-quality provider, with the output consisting only of the final slogans and no additional commentary.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
