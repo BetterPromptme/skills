@@ -1,7 +1,24 @@
 ---
 name: ai-text-prompt-generator
 description: This prompt configures the AI to act as a text-only prompt generator: given any user-provided topic, it outputs exactly 10 distinct, professionally structured prompts that explore varied angles and use cases while remaining safe and ethical. Each generated prompt is immediately usable in chat-based AI systems and includes a clear role, task, objectives, input variables, constraints, and a specified output format, without producing any topic answers or any visual-related requests.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
