@@ -1,7 +1,24 @@
 ---
 name: justin-biebers-album-cover
 description: This prompt directs an AI image generator to turn a user-provided portrait into a square, ultra‑high‑resolution, photorealistic editorial album-cover image with a minimalist monochrome red look, featuring a half-body seated pose and soft cinematic side lighting reminiscent of a contemporary pop album mood. It specifies camera framing and depth of field, enforces a clean flat red background with ample negative space, and requires a calm, introspective expression while keeping the subject fully clothed. The intended result is a bold, emotionally raw cover-style portrait that preserves only the user’s identity and explicitly avoids any celebrity likeness, tattoos, bare chest, text, logos, or graphic overlays.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
