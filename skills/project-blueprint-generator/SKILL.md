@@ -1,7 +1,24 @@
 ---
 name: project-blueprint-generator
 description: This prompt instructs the AI to act as an experienced project manager and produce a comprehensive project blueprint derived from a provided project description, including requirements analysis, clearly defined objectives and scope, a detailed work breakdown structure, a milestone-based timeline, a costed budget, and a resource allocation plan aligned to skills. It also requires identifying risks with mitigation strategies, resulting in a structured roadmap that guides the team from initiation through completion while controlling scope and ensuring efficient delivery of project goals.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
