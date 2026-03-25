@@ -1,7 +1,24 @@
 ---
 name: digital-dream-y2k-flash-portrait
 description: This prompt directs an image-generation system to produce a photorealistic, early-2000s digicam-style fashion portrait of a young woman in a retro toy/model shop, specifying the setting, pose, Y2K outfit and accessories, flash-heavy lighting, warm nostalgic color grading, and intentional low-res camera artifacts. It also requires strict preservation of the subject’s facial identity from a provided reference image, resulting in a candid-looking, fashion-forward snapshot with a softly blurred collectible-filled background and strong on-camera flash realism.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
