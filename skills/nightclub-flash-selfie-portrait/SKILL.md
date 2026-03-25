@@ -1,7 +1,24 @@
 ---
 name: nightclub-flash-selfie-portrait
 description: This prompt instructs an image-generation or editing model to precisely recreate a reference subject as a photorealistic, arm’s-length smartphone selfie taken inside a crowded nightclub, specifying strict identity preservation and detailed requirements for framing, wardrobe, lighting, color, background motion, and camera characteristics so the result looks like an authentic high-ISO flash club portrait with blue/red LED ambience and a lively dance-floor scene.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
