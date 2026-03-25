@@ -1,7 +1,24 @@
 ---
 name: the-7-day-kickstart-plan
 description: This prompt instructs the AI to act as a supportive learning coach and produce a simple 7-day beginner starter plan for a chosen skill, with each day containing a short plain-language lesson, a practice activity that takes under 30 minutes, and a brief open-ended reflection question. The outcome is a consistent, easy-to-skim weeklong schedule designed to reduce overwhelm, build early confidence, and create momentum while avoiding jargon, advanced material, and any unsafe advice (including adding a brief caution to seek professional guidance for sensitive topics).
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
