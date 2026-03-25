@@ -1,7 +1,24 @@
 ---
 name: expresso-album-cover-studio-portrait-style
 description: This prompt instructs an AI image generator to create a high-end, photorealistic square album-cover portrait in a studio style, featuring a confident pop-artist pose with one arm raised, flowing hair, and direct eye contact. It specifies cinematic beauty lighting, a pastel light-blue gradient background with warm color grading, refined wardrobe and makeup, and minimal optional jewelry, while maintaining the subject’s likeness if an input image is provided. The expected outcome is a polished, editorial-quality cover artwork that includes the album title “Espresso” in elegant handwritten cursive placed in a top corner with a subtle premium finish.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
