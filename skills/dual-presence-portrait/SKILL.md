@@ -1,7 +1,24 @@
 ---
 name: dual-presence-portrait
 description: This prompt instructs an AI to edit a single, clear portrait photo of a real person into a high-end minimalist cinematic studio image, preserving the subject’s exact facial identity while creating a refined double-exposure effect: one sharp central face with two softly translucent duplicates offset left and right. The intended outcome is an ultra-realistic, portrait-oriented editorial photograph with clean neutral background, soft directional high-contrast lighting, muted matte color, and no added elements, distortions, or feature-altering retouching.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
