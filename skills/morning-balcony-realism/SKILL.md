@@ -1,7 +1,24 @@
 ---
 name: morning-balcony-realism
 description: This prompt instructs an image model to use an uploaded portrait as a strict identity reference and generate an ultra-realistic, DSLR-quality 8K lifestyle portrait of the same person standing naturally on a warm, vintage southern European balcony. It specifies cinematic yet natural morning lighting, a low-angle architectural composition with detailed balcony elements (flowers, turquoise windows, vines), and lifelike textures in skin, fabric, and masonry while avoiding stylization or unrealistic edits. The intended outcome is a tranquil, photorealistic scene that preserves the subject’s facial accuracy and delivers a cozy, timeless European atmosphere.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
