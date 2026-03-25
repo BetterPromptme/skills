@@ -1,7 +1,24 @@
 ---
 name: direct-flow-language-learning-plan
 description: This prompt instructs the AI to create a personalized, practical language-learning plan using the learner’s target language, current level, goals, available daily time, learning style, and timeframe. The AI outputs a structured daily and weekly schedule allocating time across vocabulary, listening, speaking, reading, and writing, plus level-appropriate video recommendations with progressive difficulty and specific video-based exercises (shadowing, dictation, oral/written summaries). It also includes periodic checkpoints with video-based progress measures (e.g., reducing subtitles, real-time summarizing) and finishes with motivation strategies to help the learner stay consistent.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
