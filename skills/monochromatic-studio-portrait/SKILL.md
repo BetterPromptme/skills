@@ -1,7 +1,24 @@
 ---
 name: monochromatic-studio-portrait
 description: This prompt instructs an image generator to create a high-contrast, black-and-white studio editorial portrait of the same woman as in a provided reference, strictly preserving her facial identity, natural asymmetries, and hair characteristics. It specifies a seated floor pose with a reflective sideward gaze, tailored styling (oversized black blazer, opaque black tights, hoop earrings, visible long red nails), and a clean light-gray studio backdrop. The intended outcome is a cinematic, fashion-forward, hyper-realistic monochrome image with soft directional lighting, rich shadows, crisp texture detail, and fine film grain, while maintaining tasteful, non-sexualized editorial presentation.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
