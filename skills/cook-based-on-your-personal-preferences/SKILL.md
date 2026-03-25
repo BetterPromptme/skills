@@ -1,7 +1,24 @@
 ---
 name: cook-based-on-your-personal-preferences
 description: This prompt instructs the AI to act as a professional chef and nutritionist to produce a customized recipe for a specified dish and serving size, tailored to the user’s flavor preferences, dietary restrictions, required main ingredients, excluded ingredients (with alternatives), available cooking equipment, and preferred cuisine/presentation style. The result is a structured, step-by-step recipe including an introduction, precise ingredient measurements, timed preparation instructions, plating guidance, and a notes section with substitutions, side-dish pairings, flavor-boosting tips, estimated calories per serving with lighter-adjustment options, and a summary of nutritional benefits aligned to the stated needs.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
