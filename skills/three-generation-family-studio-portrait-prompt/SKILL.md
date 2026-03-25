@@ -1,7 +1,24 @@
 ---
 name: three-generation-family-studio-portrait-prompt
 description: This prompt instructs an AI to act as a professional studio family portrait director and produce a single polished, photorealistic multi‑generation group portrait by seamlessly merging the provided individual reference photos into one cohesive studio scene. It specifies the desired studio backdrop color, lighting style, and coordinated wardrobe, and requires consistent shadows and color grading, authentic expressions, and preserved facial likeness and proportions for every person. The intended outcome is an elegant, timeless, print‑ready family portrait that includes exactly all original family members with no additions or omissions, avoids unrealistic edits or props, and follows privacy, workflow, and quality constraints to ensure a natural, high‑end result delivered reliably.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
