@@ -1,7 +1,24 @@
 ---
 name: the-alpine-express-lifestyle-portrait
 description: This prompt instructs an image generator to produce a photorealistic, cozy winter travel portrait in a vertical, medium close-up composition of a young person leaning out of a red alpine panoramic train window, holding a hot drink, with snowy pines, distant mountains, and a clear blue sky behind them, captured in natural daylight with crisp, realistic textures, shallow depth of field, and a cinematic-but-natural lifestyle mood while strictly preserving the subject’s exact facial identity, hair, and proportions from a provided reference.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
