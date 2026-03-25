@@ -1,7 +1,24 @@
 ---
 name: webinar-landing-page-copy
 description: This prompt instructs the AI to act as a conversion-focused copywriter and produce plain-text landing page copy designed to maximize free webinar registrations, using provided details like the webinar name, audience, duration, and language. The output is a structured set of sections (headline, optional subheadline, benefit-driven bullets, optional learning points and host bio, required logistics, and a repeated primary call-to-action) written in clear, concrete, grade-level language with character limits and compliance constraints to avoid hype or unsupported claims.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
