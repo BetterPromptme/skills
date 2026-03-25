@@ -1,7 +1,24 @@
 ---
 name: editorial-power-pose
 description: This prompt directs the AI to transform a user’s portrait into a high-end, photorealistic fashion editorial beauty campaign image by preserving the person’s exact facial identity while recreating a specified outfit and a strict, reference-matched pose featuring a clearly visible lipstick held near the lips, an upward gaze, elegant raised hands, and a dynamic, elongated stance. The result is a sharp, studio-lit, white-background full or near full-body photograph with intentional high-angle editorial perspective, clean makeup, and a bold, confident attitude, while avoiding any pose drift, extra props, logos, or non-photographic stylization.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
