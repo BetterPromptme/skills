@@ -1,7 +1,24 @@
 ---
 name: modern-muse-in-classical-halls
 description: This prompt instructs an image generation/editing model to produce a photorealistic, high-fashion editorial portrait using an uploaded face reference without altering the subject’s identity, placing her in a grand neoclassical interior on an upper-level balcony with a glass railing, styled in modern luxury tailoring (black leather trench, white shirt, tie, tailored shorts, sunglasses, minimal jewelry), and captured in a vertically framed, slightly low-angle composition with soft natural daylight, strong architectural symmetry, and shallow depth of field that keeps the subject sharp while the background figures remain subtly out of focus.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
