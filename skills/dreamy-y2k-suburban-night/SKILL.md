@@ -1,7 +1,24 @@
 ---
 name: dreamy-y2k-suburban-night
 description: This prompt instructs an image generator to create a full-body, photorealistic cinematic portrait based on an input face, preserving the subject’s identity while styling them in Y2K-inspired fashion and placing them in a dim suburban night setting. It specifies environment details, pose, props, lighting, lens and film-grain texture to produce a dreamy, nostalgic frame with a subtle horror undertone, resulting in a high-detail vertical image that feels like a still from a late-90s/early-2000s movie.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
