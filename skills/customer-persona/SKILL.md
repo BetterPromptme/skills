@@ -1,7 +1,24 @@
 ---
 name: customer-persona
 description: This prompt instructs the AI to create five distinct customer personas for a specified brand using the requested language, each detailing demographics, psychographics, and behavioral patterns, then summarizing key purchase drivers and barriers; the outcome is a clear markdown table that helps the user understand who the target customers are, how they think and behave, and what motivates or prevents them from buying or using the brand’s offering.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
