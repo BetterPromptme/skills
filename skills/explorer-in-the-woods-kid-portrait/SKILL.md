@@ -1,7 +1,24 @@
 ---
 name: explorer-in-the-woods-kid-portrait
 description: This prompt instructs an image-generation model to create a single photorealistic cinematic outdoor portrait of a child explorer on a hidden forest trail, using an uploaded child photo as the identity anchor to keep the face, skin tone, hairstyle, age, and proportions consistent. It specifies the exact wardrobe from a provided outfit description, adds only a simple explorer hat and small backpack, and defines a realistic woodland scene with dappled sunlight, shallow depth of field, and portrait-lens framing. The expected outcome is one clean, believable camera-like image with coherent lighting and no added text, logos, artifacts, or extra accessories.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
