@@ -1,7 +1,24 @@
 ---
 name: lego-collectors-car-render
 description: This prompt instructs an image model to generate a photorealistic, studio-quality 3D render of a LEGO-built version of a specified car, using realistic LEGO construction, accurate proportions, and the vehicle’s iconic design cues and color scheme. The expected result is an ultra-detailed square-format image on a clean white gradient background, featuring authentic plastic sheen, visible studs and seams, closed doors, and professionally lit, sharp, collector-grade presentation.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
