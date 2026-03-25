@@ -1,7 +1,24 @@
 ---
 name: miniature-professional-diorama
 description: This prompt instructs an image model to generate a top-down, wide-angle photograph of a handcrafted-looking miniature dollhouse diorama set on a real wooden surface, recreating the subject’s real professional workspace in accurate themed detail. It requires a fully visible, properly scaled toy figurine with the subject’s realistic face and profession-specific attire, along with custom furniture, tools, décor, and layout that clearly signal the occupation. The intended outcome is a warm-lit, cozy, collectible-style miniature scene that includes a themed nameplate displaying the person’s full name and occupation.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
