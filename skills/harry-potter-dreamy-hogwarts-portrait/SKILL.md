@@ -1,7 +1,24 @@
 ---
 name: harry-potter-dreamy-hogwarts-portrait
 description: This prompt instructs an AI image generator to produce a photorealistic, cinematic fantasy portrait set inside a Hogwarts-like castle, depicting a Gryffindor-uniformed student holding a glowing wand in a dreamy yet dark academic atmosphere. It specifies detailed styling, wardrobe, pose, lighting, camera framing, and color grading to achieve a high-budget film-still look while strictly preserving the subject’s exact facial identity from a provided reference image. The expected result is a vertical, ultra-detailed portrait where warm wand light contrasts with cool castle ambience, with realistic textures, subtle magical particles, and a dramatic but believable mood.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
