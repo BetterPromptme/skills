@@ -1,7 +1,24 @@
 ---
 name: dream-in-pink-soft-artistic-portrait
 description: This prompt instructs the AI to generate a hyper-realistic, vertically framed (3:4) close-up portrait of a woman lying on her side with her cheek resting on a clean white surface, surrounded by large pink hibiscus flowers. It specifies a minimal, serene composition with natural features (subtle blush, glossy lips, softly tousled brown hair), pure white background, and soft diffused daylight-style lighting for a calm, intimate mood. The intended outcome is a high-quality, phone-like fine-art image that feels dreamy and soothing while remaining realistic, minimally styled, and free of distracting props or heavy effects.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
