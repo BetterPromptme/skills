@@ -1,7 +1,24 @@
 ---
 name: museum-gaze-35mm-portrait-mirror-ultra-lock
 description: This prompt instructs an image-generation/inpainting system to recreate a specific museum gallery composition—painting on the left and a viewer on the right, photographed from a rear three‑quarter 35mm angle—while enforcing ultra-strict preservation of both the viewer’s identity/wardrobe and the painted portrait’s face to match the provided reference images. It specifies lighting, lens, framing, depth of field, color grade, and negative constraints, and includes verification thresholds and recovery steps so the final output is a single, warm low-key “museum” photograph where the portrait’s face remains exactly the same as the input and the viewer’s outfit, pose, and gaze stay consistent and directed to the painting’s center.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
