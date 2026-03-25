@@ -1,7 +1,24 @@
 ---
 name: weekly-stakeholder-report-template-generator
 description: This prompt instructs the AI to act as a business communications specialist and produce a reusable, executive-friendly weekly project status report email template in markdown. It uses provided project and recipient details to pre-fill the subject, greeting, and closing, and outputs a clearly structured, scannable report body with labeled sections (progress, achievements, blockers, upcoming priorities, metrics, and notes) containing bracketed placeholders so the template can be quickly completed and reused each week.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
