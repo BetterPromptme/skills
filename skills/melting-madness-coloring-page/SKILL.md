@@ -1,7 +1,24 @@
 ---
 name: melting-madness-coloring-page
 description: This prompt instructs an AI to generate a square, black-and-white psychedelic coloring page with a melting central subject, surrounded by spacious, playful, surreal motifs and flowing patterns. The expected result is a clean, uncluttered line-art illustration on a white background, using bold enclosed outlines suitable for coloring, with no text and no color.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
