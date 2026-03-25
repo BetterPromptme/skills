@@ -1,7 +1,24 @@
 ---
 name: thanksgiving-pixar-parade-balloon
 description: This prompt instructs the AI to generate a polished, Pixar-style 3D cinematic parade illustration set in bright daylight, featuring a giant floating balloon shaped like a specified animal and held by a specified group of joyful, expressive animal characters below. It defines the desired look (high-end rendering, realistic materials, soft global illumination, depth of field, vibrant colors, confetti, and lively city atmosphere) while enforcing constraints like avoiding humans, brands, and copyrighted characters, resulting in a family-safe, whimsical, story-ready scene suitable for animation concepts or social content.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
