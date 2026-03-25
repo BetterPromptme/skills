@@ -1,6 +1,19 @@
 ---
 name: betterprompt
 description: Discover, install, and run reusable AI prompt skills from the BetterPrompt registry via the CLI (betterprompt / bp). Use when a user needs to find a prompt skill, generate AI output (text, images, video), or manage their skill library. Covers installation, auth, skill discovery, generation, and output review for OpenClaw and Claude Code agents.
+metadata: 
+  openclaw:
+    homepage: https://betterprompt.me/skills
+    emoji: 🧩
+    requires:
+      bins:
+        - betterprompt
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 # BetterPrompt Skill
@@ -117,12 +130,8 @@ These flags work on most commands:
 --project       scope to the current project (vs global)
 --global        scope to global install
 --dir <path>    use an explicit working directory
---registry <url> override API registry endpoint
 --json          structured JSON output (machine-readable)
 --quiet         reduce non-essential output
---verbose       enable verbose output
---no-color      disable ANSI colors
---yes           answer yes to all confirmations
 -h, --help      show help for any command
 -V, --version   show CLI version
 ```
