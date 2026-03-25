@@ -1,7 +1,24 @@
 ---
 name: the-master-creator
 description: This prompt instructs the AI to produce a 500–800 word article on a specified topic that balances emotional depth with factual accuracy, structured into a gripping opening hook, an informative yet vividly written main body, and an uplifting conclusion that closes with a gentle call to action, resulting in a coherent, memorable piece with graceful, metaphor-rich language.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
