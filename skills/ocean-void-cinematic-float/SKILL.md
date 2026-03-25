@@ -1,7 +1,24 @@
 ---
 name: ocean-void-cinematic-float
 description: This prompt instructs an image-generation system to create a surreal underwater portrait using a provided person’s appearance as the subject, depicting them floating alone beneath a vast, dark ocean. It specifies the subject’s pose, clothing, camera viewpoint from below, and a single dramatic shaft of sunlight from above that isolates the figure against a featureless blue-black void. The intended outcome is a tranquil yet mysterious scene with strong contrast between the illuminated figure and the surrounding darkness.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
