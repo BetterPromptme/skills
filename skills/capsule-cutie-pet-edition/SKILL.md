@@ -1,7 +1,24 @@
 ---
 name: capsule-cutie-pet-edition
 description: This prompt instructs the AI to take a provided pet photo and recreate the animal as a high-end, studio-lit 3D collectible vinyl capsule toy render, preserving the pet’s exact identifying traits (colors/patterns, facial structure, ears, eyes, posture) while applying a chibi toy aesthetic with simplified features, oversized expressive eyes, realistic plastic materials, and a clean white background with soft shadow for a polished modern capsule-toy style result.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
