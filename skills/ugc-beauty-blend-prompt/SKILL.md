@@ -1,7 +1,24 @@
 ---
 name: ugc-beauty-blend-prompt
 description: This prompt instructs the AI to combine a user-provided portrait and a user-provided product photo into a single realistic UGC-style lifestyle image where the same person is shown chest-up in a bright, warm, marble-kitchen setting, smiling and holding the product close to the camera. The outcome is one polished, natural-looking testimonial-style product shot with soft daylight, readable and undistorted packaging, accurate color and proportions, and strict preservation of the person’s identity and the product’s branding without added effects or misleading edits.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
