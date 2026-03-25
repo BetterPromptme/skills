@@ -1,7 +1,24 @@
 ---
 name: modern-editorial-top-view-portrait
 description: This prompt instructs an image model to generate a hyper-realistic, magazine-style 8K editorial portrait from a top-down, slightly diagonal viewpoint, preserving the subject’s identity and natural features while placing them seated cross-legged on a bright red floor in oversized black streetwear with a left-ear earring. It specifies cinematic, dramatic overhead lighting that casts long shadows, arranges several best-selling novels neatly around the subject, and adds a small, subtle transparent text element in a bottom corner, resulting in a modern, high-detail fashion-editorial composition without logos, watermarks, or stylistic drift into non-photorealistic genres.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
