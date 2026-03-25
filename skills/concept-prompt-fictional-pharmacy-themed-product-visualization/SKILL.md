@@ -1,7 +1,24 @@
 ---
 name: concept-prompt-fictional-pharmacy-themed-product-visualization
 description: Generates a square, modern product-photo style image of a fictional pharmaceutical package branded for a specified pharmacy, with a minimalist box on the left displaying the given product name and a witty dosing line, alongside a silver blister pack holding 6–10 themed pills or capsules shaped like the provided icon description, all set against a neutral background with soft lighting and sharp focus.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
