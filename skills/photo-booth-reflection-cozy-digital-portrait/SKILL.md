@@ -1,7 +1,24 @@
 ---
 name: photo-booth-reflection-cozy-digital-portrait
 description: This prompt instructs an image-generation system to produce an 8K ultra-realistic, softly cinematic Y2K-style self-portrait seen entirely through a laptop screen, where the subject’s face appears as a slightly blurred, glowy reflection while she lies on a white bed in warm light. It specifies exact scene composition (angled view of screen and keyboard), on-screen UI details (desktop icons and Photo Booth interface with pink heart effects), and precise styling (hair, sweater, makeup, jewelry, phone and nail color) to achieve a cozy, playful, nostalgic webcam aesthetic. The intended outcome is a photorealistic laptop-screen reflection portrait that preserves the subject’s original likeness and proportions while capturing intimate early-2000s digital charm.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
