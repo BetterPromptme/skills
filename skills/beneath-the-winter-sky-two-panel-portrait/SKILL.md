@@ -1,7 +1,24 @@
 ---
 name: beneath-the-winter-sky-two-panel-portrait
 description: This prompt directs an image model to generate a photorealistic, cinematic 4K vertical diptych set in a serene blue-hour winter landscape, depicting the same unaltered subject consistently across two stacked panels: a wide full-body scene emphasizing scale and solitude, and a tight emotional close-up highlighting cold-weather details like breath vapor, snowflakes, and flushed skin. It specifies environment, wardrobe, props, lighting, lenses, color palette, mood, and composition to ensure tonal continuity, realistic texture, and a cohesive two-image narrative that balances expansive scenery with intimate human emotion.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
