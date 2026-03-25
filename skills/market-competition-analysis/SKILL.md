@@ -1,7 +1,24 @@
 ---
 name: market-competition-analysis
 description: This prompt instructs the AI to conduct a structured competitor analysis for a specified industry niche, focusing on named primary competitors within a defined geography and time period, and evaluated against chosen key metrics. The outcome is a set of deliverables covering competitive positioning, competitor strengths and weaknesses, identified market opportunities, actionable strategic recommendations, and a phased implementation timeline tied to measurable KPIs.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
