@@ -1,7 +1,24 @@
 ---
 name: christmas-carousel-dream
 description: This prompt instructs an AI image editor to take a user-provided portrait and restyle it into a warm, cinematic Christmas carousel scene shot at night, using a Kodak ColorPlus 200–inspired film look. It preserves the subject’s exact facial identity while applying cozy winter wardrobe details and a specified pose, placing them against a glowing merry-go-round with festive lights and decorations. The outcome is a family-friendly, nostalgic holiday portrait with soft warm illumination, subtle film grain, and a candid mid-shot composition, avoiding exaggerated effects, unsafe content, or non-Christmas settings.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
