@@ -1,7 +1,24 @@
 ---
 name: dreamy-y2k-gothic-bedroom-portrait
 description: This prompt instructs an image-generation system to create a photorealistic, grainy, dimly lit Y2K/90s-inspired bedroom portrait that preserves the real subject’s identity while adapting styling into gothic glamour. The resulting image places the subject lounging on shiny dark red satin bedding with loose curls, dark makeup, gothic jewelry, and a 90s corded phone, surrounded by nostalgic props like popcorn, magazines, and posters. It also adds a faint, ominous Ghostface silhouette in a doorway to evoke cinematic suspense without graphic violence, while avoiding modern artifacts, logos, or beauty-smoothing effects.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
