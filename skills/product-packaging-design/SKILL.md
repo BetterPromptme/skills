@@ -1,7 +1,24 @@
 ---
 name: product-packaging-design
 description: This prompt instructs an AI to create a photorealistic, retail-ready packaging mockup by placing an uploaded product image into an appropriate package design defined by user-supplied style, colors, material, quantity, and a clear main title. It specifies studio lighting, a pure white background, high resolution, legible minimal text, and generic branding unless assets are provided, while avoiding unrelated elements or prohibited content. The outcome is a clean, high-fidelity e-commerce–style packaging visualization suitable for online listings, marketing presentations, and rapid design iteration.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
