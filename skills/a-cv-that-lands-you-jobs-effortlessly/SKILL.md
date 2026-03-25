@@ -1,7 +1,24 @@
 ---
 name: a-cv-that-lands-you-jobs-effortlessly
 description: This prompt asks the AI to tailor a candidate’s CV content to a specific job description by generating recruiter-aligned sections: a 3–5 line career summary, a JD-linked skills section with evidence, an action-oriented experience/key projects section, an internship/part-time description framed as measurable value contribution, and a clear career objective with 2–3 year goals. Using the provided JD and existing CV details, the outcome is a set of concise, professional, and role-relevant statements that directly map the candidate’s skills and achievements to the position’s requirements while emphasizing growth mindset, adaptability, and long-term commitment.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
