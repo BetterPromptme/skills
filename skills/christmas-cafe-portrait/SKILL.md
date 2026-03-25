@@ -1,7 +1,24 @@
 ---
 name: christmas-cafe-portrait
 description: This prompt instructs an image model to generate a two-panel vertical collage of the same person in a cozy outdoor Christmas café setting at night, shot at eye level with strong flash in both frames. The top panel shows a waist-up pose beside a decorated tree with hands clasped near the chest, while the bottom panel is a tighter face-and-upper-torso close-up with the subject cupping her face; both maintain a gentle, subtle smile and direct gaze. It tightly constrains styling (white faux-fur coat and red plush bunny-ear hood), composition (tree on the left, subject on the right), lighting (flash plus warm ambient with sparkling tree lights), and—most importantly—demands an exact, unaltered match to the reference facial identity and natural skin texture, forbidding any beautification or facial changes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
