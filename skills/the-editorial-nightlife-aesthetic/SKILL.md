@@ -1,7 +1,24 @@
 ---
 name: the-editorial-nightlife-aesthetic
 description: This prompt instructs an image-generation or editing system to produce a photorealistic, luxury lounge portrait that preserves the subject’s exact facial identity while placing her in an upscale, dimly lit restaurant/cocktail lounge setting. It specifies vertical medium-shot framing, refined styling (strapless blue‑grey mini dress and jewelry), a poised seated pose, key foreground props (marble table, drink, white quilted handbag), and warm candlelit lighting with shallow depth of field. The outcome is a modern, elegant nightlife editorial image with realistic textures, natural skin detail, and no artificial effects or identity changes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
