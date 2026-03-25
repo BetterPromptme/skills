@@ -1,7 +1,24 @@
 ---
 name: story-based-puzzle-generator
 description: This prompt instructs the AI to generate a themed puzzle of a specified type and difficulty, tailored to a stated objective and optional mechanics and audience constraints. The response must include the complete puzzle text, a full solution, and a defined number of progressively helpful hints, all presented in a fixed sectioned format.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
