@@ -1,7 +1,24 @@
 ---
 name: comic-style-hero-shot
 description: This prompt directs an image model to generate a dynamic comic-book style illustration with a centered main subject, bold inked outlines, vibrant saturated colors, halftone and cel-shaded rendering, and a simple action-themed background framed like a comic panel. The result is a high-contrast, dramatic, print-textured image that looks like a polished pop-art comic page or cover, with added post-processing effects such as grain, ink outlines, and halftone dots.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
