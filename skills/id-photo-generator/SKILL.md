@@ -1,7 +1,24 @@
 ---
 name: id-photo-generator
 description: This prompt instructs the AI to create a hyper-realistic, passport-style ID portrait in a 4:6 vertical format, using the provided character description, pose, background, lighting, and style preferences. The outcome is a clean, professional head-and-shoulders image with sharp focus, neutral expression as specified, even lighting for natural skin tones, and a distraction-free background suitable for official identification or similar professional use.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
