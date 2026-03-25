@@ -1,7 +1,24 @@
 ---
 name: top-down-dachshund-circle
 description: This prompt instructs an image model to generate a realistic, cinematic editorial portrait captured from a strict 90-degree overhead viewpoint: a woman lies flat and horizontally across grey stone pavement in a glossy deep wine-red leather trench coat, with her hair spread naturally, a relaxed upward gaze, and two specific props placed nearby. It further specifies that her identity must remain unchanged, the lighting and shadows must look natural, and a near-perfect circular ring of realistically scaled dachshunds of varied coat patterns must surround her in candid, playful positions, while forbidding any tilt, pose change, added accessories, or stylized/fantastical elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
