@@ -1,7 +1,24 @@
 ---
 name: victorias-secret-backstage-angel
 description: This prompt instructs an image-generation/editing model to create an ultra-realistic, high-fashion backstage portrait that preserves the subject’s exact face, hairstyle, and expression from an input photo while placing them in a glamorous runway-prep environment. It specifies a waist-up, diagonally angled composition with a makeup artist’s hands applying lipstick, plus detailed wardrobe elements like a crystal-embroidered corset and feathered wings, all captured with realistic on-camera flash, cinematic backstage ambience, and crisp texture fidelity. The intended outcome is an 8K, 4:5 editorial-style image that looks like an authentic pre-runway moment—luxurious, sensual, and confidently poised—without altering the subject’s facial identity.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
