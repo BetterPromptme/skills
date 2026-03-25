@@ -1,7 +1,24 @@
 ---
 name: 05-indoor-selfie-with-any-outfit
 description: This prompt instructs an AI image generator to produce a photorealistic 4:5 indoor portrait that looks like a casual handheld selfie taken with an iPhone 17 Pro’s 0.5x ultra-wide back camera from a slightly overhead, downward-tilted angle. It uses a provided reference image to match the subject’s facial likeness, skin tone, and proportions, applies a user-specified outfit, and stages the scene with specific cozy room props, warm low-light realism, and subtle grain while avoiding fisheye distortion or stylized effects. The intended outcome is an authentic-looking wide-angle back-camera selfie that includes the subject’s extended arm and phone, upper body and partial legs, and the detailed background elements for a playful yet slightly mysterious everyday atmosphere.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
