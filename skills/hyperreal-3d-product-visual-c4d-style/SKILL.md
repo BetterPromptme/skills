@@ -1,7 +1,24 @@
 ---
 name: hyperreal-3d-product-visual-c4d-style
 description: This prompt defines a hyper-realistic Cinema 4D-style 3D product render for a specified object, detailing its geometry, materials, mechanical styling, decals, and color palette, then prescribing studio/HDRI lighting, camera angle, and a centered floating composition on a clean white background to produce an ultra-high-definition render with glossy reflections and subtle contact shadow.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
