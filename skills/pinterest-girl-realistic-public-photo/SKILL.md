@@ -1,7 +1,24 @@
 ---
 name: pinterest-girl-realistic-public-photo
 description: This prompt instructs an image model to generate a hyper-realistic, candid iPhone-style portrait of a young woman seated in a specified public location, wearing a quiet-luxury outfit and accessories in chosen color tones, with a defined mood and time of day. It emphasizes natural ambient lighting, true-to-life skin texture and imperfections, eye-level shallow depth of field, and a believable public background, while explicitly excluding common artificial or “AI” artifacts like plastic skin, heavy filtering, or fake-looking scenery to achieve a convincing real-world photograph.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
