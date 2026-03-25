@@ -1,7 +1,24 @@
 ---
 name: create-theme-ideas-for-your-shoots
 description: This prompt instructs the AI to take on the role of an experienced photographer and develop a set of original photoshoot themes and concepts around a specified topic, shaping them with clear mood, tone, and aesthetic direction. The outcome is a collection of distinctive, story-driven ideas that emphasize emotional impact and visual coherence, informed by professional considerations like composition, lighting choices, and narrative visual storytelling to help the shoot feel memorable and stand out.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
