@@ -1,7 +1,24 @@
 ---
 name: ariana-grandes-album-cover
 description: This prompt instructs an AI image system to edit a user-provided portrait into a photorealistic, square-format album-cover style image with a specific intimate floor-lying pose, dreamy pastel lavender/blue environment, and a diagonal mint-tinted spotlight across the face, using a separate reference only for color/lighting mood while strictly preserving the subject’s identity. The intended outcome is an Ultra-HD, cinematic editorial cover that matches the requested soft-focus, shallow depth-of-field look and overall vibe without adding text, logos, clutter, or copying any other person’s features.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
