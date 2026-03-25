@@ -1,7 +1,24 @@
 ---
 name: choose-a-focus-that-suits-you-best
 description: This prompt asks the AI to use the user’s year in school, major, and chosen subject to recommend advanced, research-oriented topics aligned with current trends in that field. The result is a tailored shortlist of specialized areas to explore—typically highlighting emerging subfields, key methods or technologies, and promising research directions suited to the user’s background and goals.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
