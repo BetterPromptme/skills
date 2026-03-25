@@ -1,7 +1,24 @@
 ---
 name: christmas-tree-film-style-photo
 description: This prompt instructs the AI to take a user-uploaded photo (optionally matching a specified single-person pose) and transform it into a realistic, festive Christmas portrait where the subject is wrapped like a Christmas tree with snug, depth-aware white crayon ribbon spirals, red/green crayon ornaments, and a yellow crayon star above the head, all rendered with imperfect waxy crayon texture. The result is composited into an outside-at-midnight city street setting and graded to emulate warm Kodak 200 film shot on a Fuji point-and-shoot, including analog-flash lighting, soft halation, and natural film grain while preserving the person’s facial identity.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
