@@ -1,7 +1,24 @@
 ---
 name: luxury-nightlife-editorial
 description: This prompt directs an AI image generator to produce a high-resolution, photorealistic, full-body vertical nighttime fashion portrait of a young woman posed confidently at the entrance of a luxury hotel or upscale building, with specific requirements for her hairstyle, makeup, outfit, accessories, and flash-lit editorial lighting while keeping her facial identity and natural skin texture unchanged; the result is a crisp, upscale nightlife photograph featuring marble columns, glowing glass doors, and subtle urban street context for a glamorous, luxury-entrance aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
