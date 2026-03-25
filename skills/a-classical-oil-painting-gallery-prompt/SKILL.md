@@ -1,7 +1,24 @@
 ---
 name: a-classical-oil-painting-gallery-prompt
 description: This prompt instructs an AI to generate a realistic oil painting-style image depicting a chosen country as a classical gallery artwork, featuring its most iconic landmark centered and surrounded by culturally and historically meaningful elements in a richly detailed, balanced composition. The final result is presented as a photographed canvas in an art gallery setting against a matte black wall, captured from a 45-degree angle with overhead white studio lighting that emphasizes texture and brushwork.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
