@@ -1,7 +1,24 @@
 ---
 name: aquarelle-urban-sketch-template
 description: This prompt instructs the AI to generate an aquarelle-style urban sketch featuring a specified subject, rendered with loose, expressive watercolor strokes that evoke lively city atmosphere. It directs the use of two chosen colors blended together to produce a vibrant, dynamic cityscape, resulting in an image that feels spontaneous, energetic, and rooted in everyday urban life.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
