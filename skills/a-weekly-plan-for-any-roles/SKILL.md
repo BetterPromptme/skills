@@ -1,7 +1,24 @@
 ---
 name: a-weekly-plan-for-any-roles
 description: This prompt instructs the AI to create a realistic, professional weekly work plan for a specified role using a provided task list, distributing work across the week with clear daily time blocks that include deadlines, meetings, focused work sessions, and short breaks. The result is an easy-to-read schedule that balances workload within normal working hours, identifies key objectives and deliverables for each block, and highlights the week’s top priorities to ensure effective execution and productivity.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
