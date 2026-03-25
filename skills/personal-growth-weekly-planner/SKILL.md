@@ -1,7 +1,24 @@
 ---
 name: personal-growth-weekly-planner
 description: This prompt instructs the AI to act as a detail-oriented personal coach who takes a user’s overall goal, timeframe, and a priority skill, then breaks the timeframe into weekly segments and outputs a realistic, practical, and motivating plan in a single table where each week includes a clear weekly goal, recommended resources, actionable daily tasks, and a progress check-in, with emphasis adjusted to accelerate development of the prioritized skill.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
