@@ -1,7 +1,24 @@
 ---
 name: winter-solitude-triptych-cinematic-portrait
 description: This prompt instructs an image-generation system to produce a 2160×3840 vertical 4K photorealistic triptych made of three equal horizontal panels that tell a cold, cinematic story of melancholy in a snowy landscape. It specifies consistent lighting, color grading, camera/lens characteristics, wardrobe, snowfall, and a panel-by-panel composition (portrait with transparent umbrella, isolated full-body walk, and an emotional eye close-up), while requiring the subject’s identity to match an accompanying reference image exactly without any facial or anatomical changes. The expected outcome is a cohesive, film-grain–treated fine-art triptych that preserves true likeness and delivers an introspective narrative of loneliness and nostalgia across the three frames.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
