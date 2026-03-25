@@ -1,7 +1,24 @@
 ---
 name: fantasy-productland-miniature-meets-max-impact
 description: This prompt directs the AI to keep the provided product image completely unchanged while generating a high‑resolution, surreal miniature “toyland” environment around it. The result is an editorial-style scene where the product appears oversized in the center of soft, fur-like mossy hills that blend naturally into its base, populated by small adventurous human-like figures interacting with the landscape or the product, all lit with consistent, soft cinematic lighting that matches the product’s existing shadows.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
