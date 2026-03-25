@@ -1,7 +1,24 @@
 ---
 name: multilingual-synonym-finder
 description: This prompt instructs the AI to act as a multilingual vocabulary expert and generate a curated set of natural, native-sounding synonyms for a given word in a specified language. The output is organized by nuance (such as formal vs. casual or stronger vs. softer meanings), and each synonym includes a brief meaning note plus a short example sentence to demonstrate correct usage. The result is an educational, learner-friendly synonym guide that improves word choice while staying strictly within the target language and clarifying subtle tone or context differences.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
