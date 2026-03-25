@@ -1,7 +1,24 @@
 ---
 name: alphabet-monsters-realistic-fur-edition
 description: This prompt instructs an image model to generate a highly realistic 3D studio render of a single chosen capital letter transformed into a fluffy monster, where the letter itself is the full body and facial features are integrated into its shape. It specifies the monster’s emotion, realistic dense fur material, bold solid-color palette, clean pastel backdrop, and minimal character-focused composition without extra props, resulting in a polished, playful letter-creature design.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
