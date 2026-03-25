@@ -1,7 +1,24 @@
 ---
 name: cinematic-halloween-party
 description: This prompt instructs an image model to generate an 8K, photoreal, cinematic fine‑art portrait in a vintage Hollywood horror fashion style, specifying camera angle, framing, shallow depth of field, lighting, wardrobe, props, and color palette to achieve an elegant yet unsettling mood. It emphasizes strict identity fidelity to a provided reference face while integrating period styling, candlelit ambience, and Halloween-themed foreground/background elements, resulting in a matte, filmic 4:5 portrait that looks like a still from an old glamour-horror film.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
