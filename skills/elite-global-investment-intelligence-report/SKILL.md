@@ -1,7 +1,24 @@
 ---
 name: elite-global-investment-intelligence-report
 description: This prompt instructs the AI to act as a senior global market analyst and generate a structured, 12-section investment intelligence report on a specified publicly traded company over two time horizons, combining conventional fundamentals with alternative signals (e.g., order backlog, off-exchange trading activity, leadership quality, and cyber/geopolitical exposure). The expected outcome is a neutral, evidence-based synthesis that postpones any call to action until the final section, where it delivers quantified short- and long-term price outlooks and a summarized Buy/Hold/Sell recommendation accompanied by a conviction score and confidence level, with key financial metrics presented in clear tables.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
