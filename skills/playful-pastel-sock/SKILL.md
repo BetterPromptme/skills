@@ -1,7 +1,24 @@
 ---
 name: playful-pastel-sock
 description: This prompt instructs an AI image generator to produce a centered 3D render of a cute, rounded toy-like object inspired by a specified emoji, styled as soft plasticine/clay with fine groove textures, pastel colors, and diffused studio lighting, placed against a smooth minimal pastel-blue background. The result is a clean, Pixar-like cartoon aesthetic depiction of the object only—no face or anthropomorphic features—designed to feel playful and adorable.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
