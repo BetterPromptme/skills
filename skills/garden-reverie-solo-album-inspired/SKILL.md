@@ -1,7 +1,24 @@
 ---
 name: garden-reverie-solo-album-inspired
 description: This prompt instructs an image-generation system to produce an 8K photorealistic, cinematic fine-art portrait of a young woman in a quiet garden, specifying her pose, wardrobe, chair, petals, foliage backdrop, camera/lens look, film-grain aesthetic, and warm natural afternoon lighting to evoke serene, slightly wistful contemplation. It also enforces strict realism and continuity by requiring the subject’s face, hair, and proportions to match a provided reference exactly, while prohibiting artificial glamorization, fantasy elements, or added text, resulting in a timeless fashion-meets-emotional still frame.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
