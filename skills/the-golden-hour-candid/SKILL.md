@@ -1,7 +1,24 @@
 ---
 name: the-golden-hour-candid
 description: This prompt instructs an image model to generate a photorealistic, vertical daytime street-style portrait of a young blonde woman kneeling by a city curb while applying pink lip gloss, shot from a slightly elevated downward angle with tight mid-body framing and detailed urban ground texture. It specifies strict identity preservation from a reference image (no changes to facial features, skin texture, hair, or expression), defines exact pose, outfit, accessories, lighting, color palette, and camera realism, and aims to produce a natural, candid, summery editorial-style result without filters or stylization.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
