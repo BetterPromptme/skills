@@ -1,7 +1,24 @@
 ---
 name: make-your-images-fantastical-and-dreamy
 description: This prompt instructs an AI image generator to create a hyperrealistic macro botanical-style portrait of a chosen subject with softly glowing, iridescent pastel petals, morning dew, and dreamy cinematic lighting. The result is a fantasy-inspired, high-contrast artwork with enhanced luminosity and fine natural-illustration detail, set against a deep black background to emphasize color, texture, and sparkle.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
