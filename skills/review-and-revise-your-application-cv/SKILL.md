@@ -1,7 +1,24 @@
 ---
 name: review-and-revise-your-application-cv
 description: This prompt instructs the AI to edit and optimize a resume for a specified target role by correcting language errors, tightening and professionalizing the writing, standardizing formatting, and rewriting content to be more achievement-focused with strong action verbs and measurable results, while also identifying missing or unclear sections and recommending improvements so the final CV is cleaner, more impactful, and better suited for job applications.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
