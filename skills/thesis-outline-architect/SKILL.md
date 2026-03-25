@@ -1,7 +1,24 @@
 ---
 name: thesis-outline-architect
 description: This prompt instructs the AI to act as an academic thesis advisor in a specified field, using the user’s provided topic and unstructured notes to extract core themes, generate several precise and debatable thesis statements, select one to build a coherent thesis-level outline, critically evaluate that outline for weaknesses and missing scholarship or counterarguments, and then refine research questions while recommending and justifying appropriate qualitative, quantitative, or mixed methodologies suited to committee-level expectations.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
