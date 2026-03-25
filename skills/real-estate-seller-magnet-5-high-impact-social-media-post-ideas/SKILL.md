@@ -1,7 +1,24 @@
 ---
 name: real-estate-seller-magnet-5-high-impact-social-media-post-ideas
 description: This prompt instructs the AI to generate five seller-focused social media post concepts tailored to a specific real estate role, market/property niche, location, target platforms, and desired tone, each designed to advance a stated campaign goal. For each concept, it outputs the theme, the optimal content format per platform, a short ready-to-post caption, market-relevant hashtags, and a clear call-to-action aimed at attracting and converting potential home sellers.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
