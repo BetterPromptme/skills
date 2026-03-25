@@ -1,7 +1,24 @@
 ---
 name: playful-vintage-tomato-glam-studio-portrait
 description: This prompt instructs an AI image editor to take an uploaded selfie or portrait and restyle it into a high-end, vintage-inspired studio beauty editorial with a clean white backdrop, soft flattering lighting, and polished-yet-natural retouching. The subject is dressed with a delicate lace headscarf and soft glam makeup, posed in an upper-body frame holding two fresh red tomatoes symmetrically near the face with a playful expression (wink or flirty gaze). The intended outcome is a bright, feminine, modern Asian–influenced editorial portrait that stays realistic and high-resolution while avoiding distortions, extra limbs, heavy smoothing, text, logos, or any explicit content.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
