@@ -1,7 +1,24 @@
 ---
 name: 1000-word-seo-blog-writer
 description: This prompt instructs the AI to act as an experienced SEO content strategist and copywriter to produce a ~1,000-word, search-optimized blog post on a provided topic and supporting details, formatted in professional Markdown with specific required sections (including meta fields, multiple H2s, a checklist, FAQ, internal/external link suggestions, a conclusion, and a brief SEO rationale). If essential inputs are missing—such as audience, region, tone, or data requirements—the AI must pause and ask up to three clarifying questions before writing, ensuring the final article is both reader-focused and structured for strong on-page SEO outcomes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
