@@ -1,7 +1,24 @@
 ---
 name: balloon-face
 description: Generates a highly detailed, surreal ultra-realistic 3D render of a collectible art-toy style balloon head: a glossy, inflated cartoon face with sculpted skin pores, chubby cheeks, oversized lips, and a whimsical expression, complete with a neck balloon knot and dangling string, isolated from any body and set against a smooth neutral beige studio backdrop with soft lighting and cinematic depth of field for Pixar-level stylization and poster-grade photographic clarity.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
