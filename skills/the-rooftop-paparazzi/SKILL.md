@@ -1,7 +1,24 @@
 ---
 name: the-rooftop-paparazzi
 description: This prompt directs an AI image generator to produce a photorealistic, vertical rooftop nightlife portrait in a paparazzi/editorial style, keeping the subject’s facial identity exactly consistent with a provided reference while surrounding them with a semicircle of hands holding smartphones whose screens visibly display the subject (some with camera UI). The intended result is two pose variations in the same modern city rooftop setting—one calm stance and one contemplative hand-to-cheek gesture—lit primarily by realistic smartphone flashes against a night skyline, with sharp documentary-style detail and no beautifying or identity-altering changes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
