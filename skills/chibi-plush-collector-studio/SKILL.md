@@ -1,7 +1,24 @@
 ---
 name: chibi-plush-collector-studio
 description: This prompt directs an AI image generator to create a centered, full-body 1080×1080 render of a realistic, collectible-style plush toy version of a specified character, featuring a cute chibi-like proportion (oversized head, small body), fuzzy fabric with visible stitching and embroidered facial details, optional simple clothing or iconic accessories, and soft, even lighting against a neutral background.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
