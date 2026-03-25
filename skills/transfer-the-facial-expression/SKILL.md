@@ -1,7 +1,24 @@
 ---
 name: transfer-the-facial-expression
 description: 该提示用于图像编辑：以图一的人物作为参考，保留其外观特征与整体风格，同时将其面部表情替换为图二人物的表情；最终输出是一张人物身份仍来自图一但表情与图二一致的合成结果图。
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
