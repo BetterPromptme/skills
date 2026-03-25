@@ -1,7 +1,24 @@
 ---
 name: under-the-christmas-light
 description: This prompt instructs an AI image generator to produce a realistic, cinematic nighttime holiday portrait that preserves the subject’s identity and hair exactly as in a provided reference photo, while placing them in a festive outdoor setting with warm street-lamp lighting, colorful bokeh Christmas lights, and a cheerful candid expression. The intended outcome is a believable winter holiday scene featuring the subject turning over their shoulder, wearing sparkly red bow ears and a light blue denim jacket with “HAPPY HOLIDAYS” embroidered in glittery gold on the back, rendered with natural skin texture and a cozy, joyful atmosphere.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
