@@ -1,7 +1,24 @@
 ---
 name: grace-in-motion-cinematic-fashion-turn
 description: This prompt instructs an AI video generator to produce a calm, modern, editorial fashion clip in which a character is filmed from behind and slowly turns into a profile view, showcasing an elegant outfit through subtle movement, fabric texture, and light glints. It specifies a soft neutral background and refined lighting to emphasize depth and sophistication, resulting in a cinematic, high-end fashion video focused on graceful motion and detailed styling.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
