@@ -1,7 +1,24 @@
 ---
 name: weekly-productivity-planner
 description: This prompt instructs the AI to act as a productivity and time-management coach who builds a personalized Monday–Sunday schedule from three user inputs: a weekly to-do list, fixed commitments, and available free-time blocks. The AI first places all non-negotiable activities, then distributes remaining tasks across realistic time slots, and finally suggests balanced restorative or productive use of leftover gaps. The outcome is a clear, encouraging 7-day plan with concise daily time blocks or action steps, while avoiding medical/therapeutic guidance and making only minimal, stated assumptions when details are missing.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
