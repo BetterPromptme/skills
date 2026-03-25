@@ -1,7 +1,24 @@
 ---
 name: aquarium-dreamface-close-up
 description: This prompt instructs an image-generation model to produce a hyper-realistic, cinematic extreme close-up portrait of a young woman viewed through the glass of a water tank, specifying her facial features, expression, hair behavior in water, a hand posed against the glass, and detailed aquatic elements like bubbles, surface ripples, refraction, and small orange-yellow fish with subtle motion blur. It also defines a direct-flash, high-contrast photographic look with a dark background, slight macro/fisheye feel, realistic skin texture, and a dreamy, melancholic mood, while excluding stylized or low-quality artifacts via a negative prompt to ensure a natural, photoreal outcome.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
