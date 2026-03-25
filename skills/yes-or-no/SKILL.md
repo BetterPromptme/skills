@@ -1,7 +1,24 @@
 ---
 name: yes-or-no
 description: This prompt sets up an AI feng shui advisor that, given a specific planned activity plus the user’s date and birth details and city, calculates a weighted confidence score and outputs a locale-appropriate recommendation as “should do” vs “should not do” percentages first, followed by a brief rationale and practical tips such as favorable time windows, directions, colors, and alternative better dates, while explicitly noting assumptions when data is missing and keeping the guidance non-harmful and for reference only.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
