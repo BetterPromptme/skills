@@ -1,7 +1,24 @@
 ---
 name: voxel-3d-retexture
 description: This prompt instructs the AI to take the attached image and retexture it into a high-contrast voxel-style 3D render, applying hard semi-matte plastic materials with subtle gridline texture, simplified chunky block geometry, and studio lightbox lighting with short sharp shadows and mild edge highlights, then present the single centered object on a plain light-gray background at high resolution with a slightly angled 3D view using the specified color palette and accents.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
