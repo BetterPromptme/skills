@@ -1,7 +1,24 @@
 ---
 name: glam-tech-fantasy-aesthetic
 description: This prompt defines a template for generating a high-resolution studio render of a chosen subject as a glossy, highly transparent magenta glass object with subtle emissive glow, crisp shadows, and a thin pastel outline, lit by key/fill/rim lights against a solid black background with anti-aliasing, supersampling, and mild depth of field to produce a sharp, neon-like final image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
