@@ -1,7 +1,24 @@
 ---
 name: make-an-3d-icon
 description: This prompt instructs the AI to generate a cute, minimalist 3D icon illustration of a specified symbol, rendered as a glossy, toy-like collectible with smooth curved surfaces, bright specular highlights, and pastel-to-vibrant gradient coloring. The intended outcome is a high-quality, kawaii-style image with strong depth and polished resin/enamel-pin realism, isolated on a clean or softly tinted background suitable for sticker or emoji pack use.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
