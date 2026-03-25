@@ -1,7 +1,24 @@
 ---
 name: genie-make-a-wish-netflix-series-poster
 description: This prompt instructs an AI image generator to create a vertical, high-fashion Netflix-style promotional poster for a Korean series titled “Genie, Make a Wish,” featuring the subject from a provided reference photo with their face, hairstyle, proportions, and expression preserved exactly while placing them full-body in a surreal cosmic scene dominated by a glowing clock, magical gold particles, and cinematic lighting; the intended outcome is a polished key art image in 4K–8K with specific props (a sparking golden drill and radiant magic lamp), luxury sci‑fi color grading, and complete on-poster branding (title, repeated tagline text, Netflix logo, and release date) composed naturally and proportionally.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
