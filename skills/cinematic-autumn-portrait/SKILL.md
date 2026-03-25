@@ -1,7 +1,24 @@
 ---
 name: cinematic-autumn-portrait
 description: This prompt instructs an AI image generator to use the provided photo as the only reference for the subject’s identity and to produce a highly realistic, cinematic autumn head-and-shoulders portrait that matches the original framing and emotional tone. It specifies film-grade photographic choices—golden-hour natural light, shallow depth of field with an 85mm look, foreground leaf bokeh, minimal uncluttered background, and accurate skin and material micro-texture—while enforcing physically based rendering realism, restrained color grading, and strict negatives to prevent artifacts, stylization, overlays, or any changes to facial features or hair. The intended outcome is an editorial-quality, lifelike fall portrait with tack-sharp eye focus, smooth highlight roll-off, authentic texture, and immersive depth.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
