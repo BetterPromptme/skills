@@ -1,7 +1,24 @@
 ---
 name: clearedit-professional-text-rewriter
 description: This prompt instructs an AI to act as a professional editor and rewrite a provided text into clear, concise business language while keeping the original meaning, facts, and any required structure intact. The result is a cleaned, easier-to-read version that preserves all names, dates, numbers, citations, URLs, quotations, and legal or regulatory wording, with improved grammar, consistency, and formatting—without adding new information or commentary.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
