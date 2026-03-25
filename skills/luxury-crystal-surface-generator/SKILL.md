@@ -1,7 +1,24 @@
 ---
 name: luxury-crystal-surface-generator
 description: This prompt takes a specified object (such as a logo, icon, or everyday item) and renders it in a hyper-realistic, fully diamond-encrusted glamour style, covering the entire surface with ultra-fine faceted gemstones that produce intense specular highlights and prismatic sparkle. It sets a hard directional lighting setup with flare-like glints, soft low-opacity shadows, and a minimalist solid-color backdrop to maximize contrast, using a slight top-down macro viewpoint with shallow depth of field. The outcome is a luxurious, surreal, high-detail image where the subject appears completely crystal-coated and brilliantly reflective against a clean, unobtrusive background.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
