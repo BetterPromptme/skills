@@ -1,7 +1,24 @@
 ---
 name: christmas-gift
 description: This prompt directs an image-generation system to create an ultra-realistic, cinematic Christmas-themed full-body seated portrait based on a provided reference photo, preserving the subject’s exact facial identity, hairstyle, and hair color while applying gender-appropriate festive wardrobe styling. It specifies a cozy holiday environment (decorated tree, gifts, carpet, fairy lights), golden-hour lighting with warm ambient glow, detailed camera settings, a calm serious expression and floor-level perspective, plus controlled post-processing for natural skin texture and subtle festive sparkle. The outcome is a high-end fashion-art holiday portrait that matches the reference person precisely while delivering a warm, dreamy, ultra-detailed seasonal scene.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
