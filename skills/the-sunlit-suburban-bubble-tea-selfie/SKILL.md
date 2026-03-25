@@ -1,7 +1,24 @@
 ---
 name: the-sunlit-suburban-bubble-tea-selfie
 description: This prompt instructs an AI image generator to produce a photorealistic, smartphone-style vertical selfie portrait of a young woman in a bright, upscale palm-lined suburban neighborhood, holding a pink bubble tea in strong midday sunlight. It tightly specifies framing, subject appearance, outfit, prop details, background elements, lighting, color palette, and overall summer California lifestyle mood, while enforcing guardrails to preserve the subject’s exact facial identity, natural skin texture, and unchanged hair without beauty filters. The intended outcome is a high-resolution, natural-looking daylight selfie with sharp focus on the face and drink and a slightly softened yet detailed background.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
