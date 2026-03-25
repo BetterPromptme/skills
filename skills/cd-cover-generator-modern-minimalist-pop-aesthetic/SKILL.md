@@ -1,7 +1,24 @@
 ---
 name: cd-cover-generator-modern-minimalist-pop-aesthetic
 description: This prompt directs an image model to create a high-resolution, square album cover featuring a tight, slightly side-angled close-up portrait of the user on a clean white studio background, preserving the user’s facial identity and natural appearance without stylization. It specifies minimalist pop styling, soft even lighting, and precise title typography using the provided album name plus a “Deluxe” subtitle, then composites the cover into a realistic clear CD jewel case with subtle reflections, a partially visible pastel-gradient disc, and a small parental advisory label, producing a polished, professional-looking final cover.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
