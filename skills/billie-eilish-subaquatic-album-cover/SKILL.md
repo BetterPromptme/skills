@@ -1,7 +1,24 @@
 ---
 name: billie-eilish-subaquatic-album-cover
 description: This prompt directs the creation of a square, ultra‑high‑resolution, photorealistic underwater album cover by transforming a provided portrait into a cinematic scene where the same recognizable subject—kept fully identity-accurate—floats horizontally in loose dark streetwear beneath a pale wooden door near the water’s surface. It specifies precise pose, framing, lens and exposure characteristics, and a clean cobalt-to-navy environment with volumetric sunlight, subtle bubbles, and dreamy door reflections, while enforcing strict realism constraints to avoid cutout edges, graphic artifacts, or extraneous elements, resulting in a moody, editorial, Billie Eilish–inspired cover image ready for release use.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
