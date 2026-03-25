@@ -1,7 +1,24 @@
 ---
 name: ramen-with-joker
 description: This prompt instructs an image model to generate an ultra-realistic, analog-flash, early-2000s bedroom snapshot in a 3:2 landscape frame, featuring the provided reference person seated cross-legged and teasing a comic-inspired Joker with a forkful of instant ramen, surrounded by period-accurate clutter and Y2K decor. It specifies camera/lens/film stock aesthetics, lighting mix, wardrobe, poses, props, and mood to achieve a gritty-yet-playful candid sleepover feel, while requiring the subject’s identity to remain exactly matched to the reference and the final output to read like a high-resolution Kodak Gold film scan with grain, flash artifacts, shallow depth of field, and an optional timestamp.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
