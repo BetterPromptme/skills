@@ -1,7 +1,24 @@
 ---
 name: pink-bunny-selfie-portrait
 description: This prompt instructs the AI to generate a hyper-realistic, close-up theme-park selfie portrait featuring a specific woman whose facial identity and natural features must be preserved exactly, while placing her in a vibrant park setting with warm golden-hour and decorative lighting, softly blurred character balloons in the background, and a precise pose, expression, outfit, and composition; the intended outcome is a high-detail, photorealistic portrait in a 3:4 or 4:5 ratio that matches the described cheerful atmosphere without stylization or facial alteration.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
