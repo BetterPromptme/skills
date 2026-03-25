@@ -1,7 +1,24 @@
 ---
 name: the-cognitive-cartographer-mental-map-reset
 description: This prompt instructs the AI to convert a user’s brief description of mental clutter into a structured map: a table that lists recurring surface thoughts, the likely underlying motives driving them, and a 1–10 estimate of how mentally draining each is. It then identifies the primary cognitive pattern organizing the user’s overthinking and proposes a single counterintuitive, immediately doable micro-action intended to interrupt the loop and restore clearer decision-making, presented in a practical, non-clinical tone.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
