@@ -1,7 +1,24 @@
 ---
 name: parenting-advice-assistant-tailored-tips-and-solutions
 description: This prompt instructs the AI to act as an expert parenting coach and generate age-appropriate, tailored guidance for a specific child behavior challenge, using the provided age, context, desired outcome, and preferred parenting style. The output is a clearly organized plan that explains likely developmental reasons for the behavior, offers 3–5 practical strategies grounded in positive reinforcement and consistency, provides ready-to-use phrases for parent–child conversations, and suggests relevant follow-up resources, concluding with a brief summary and noting that approaches may need adjustment for the individual child.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
