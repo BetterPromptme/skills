@@ -1,7 +1,24 @@
 ---
 name: dadaist-chaos-collage-generator
 description: Generates an image prompt that depicts the specified subject as a Dadaist-style collage, featuring chaotic composition, absurd juxtapositions, and fragmented imagery. It instructs the inclusion of found-object elements, layered textures, and a deliberately clashing two-color palette, all visually tied together with vintage film grain to produce a cohesive yet disruptive final look.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
