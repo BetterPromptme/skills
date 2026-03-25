@@ -1,7 +1,24 @@
 ---
 name: self-projection-portrait
 description: This prompt instructs an image model to generate a modern, gallery-installation style portrait in which a person stands calmly at eye level in front of a large, sharp projection of their own face, creating a layered, introspective self-reflection scene. It specifies framing, pose, expression, gender-inclusive hair and wardrobe variants, and projection-driven lighting so the result is a minimal, cinematic image where the real subject is subtly lit in the foreground while the oversized projected close-up dominates the background, emphasizing identity, scale, and quiet surrealism.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
