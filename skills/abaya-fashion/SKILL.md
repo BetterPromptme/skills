@@ -1,7 +1,24 @@
 ---
 name: abaya-fashion
 description: This prompt instructs the AI to use a provided reference image of a person to generate a full-body, high-fashion portrait featuring a sage green embroidered abaya, matching hijab, and gold earrings, set against a softly blurred twilight Arabian souq with lantern bokeh. The intended outcome is a cinematic, photorealistic vertical (9:16) image with a razor-sharp subject and creamy background blur, styled as if shot on a 35mm lens at f/1.4.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
