@@ -1,7 +1,24 @@
 ---
 name: academic-student-portrait-poster
 description: This prompt instructs an AI image editor to take an uploaded student portrait and recreate it as a classic, formal academic studio headshot while preserving the subject’s identity and natural features. It specifies a controlled yearbook-style setup—centered head-and-shoulders framing, neutral expression, soft even lighting, and a muted blue gradient backdrop—along with realistic formal attire (black suit, white shirt, black tie). The output is a single high-resolution, realistic “portrait poster” that includes a clean white margin beneath the photo with centered black serif typography displaying the student’s name in uppercase and a short quote below, with strict constraints against stylization, heavy retouching, casual elements, or distracting backgrounds.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
