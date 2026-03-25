@@ -1,7 +1,24 @@
 ---
 name: a-personalized-startup-journey
 description: This prompt asks the AI to write a supportive but candid mentor-style letter to a first-time founder entering a specified industry and serving a specified target customer. The letter is meant to set realistic expectations, outline the mindset required, call out common misconceptions to let go of, and highlight the key skills and knowledge areas to learn before launching. The result is an encouraging, practical roadmap that helps the reader feel motivated while also grounded in what it will take to start effectively.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
