@@ -1,7 +1,24 @@
 ---
 name: real-world-product-ad-builder
 description: This prompt instructs the AI to use the provided product image as a visual reference to generate a high-definition, cinematic-realistic commercial scene that fits the brand’s environment and aesthetic, accurately matching the product’s design, color scheme, logo placement, and integrating the brand name visibly. It also requires adding a floating three-word slogan near the product and rendering the scene with clean, high-Kelvin lighting, saturated color harmony, and storytelling composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
