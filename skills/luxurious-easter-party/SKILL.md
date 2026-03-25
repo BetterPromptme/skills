@@ -1,7 +1,24 @@
 ---
 name: luxurious-easter-party
 description: This prompt instructs an image generator to create a vertical three-panel, luxury Christmas editorial portrait sequence using an uploaded reference photo to strictly preserve the subject’s identity while placing them in an opulent, warmly lit mansion decorated for the holidays. It specifies gender-appropriate wardrobe (a burgundy sequin gown with fur wrap and diamonds for a woman, or a tailored black suit for a man), mandates a consistent festive cinematic look, and defines three distinct scenes—by a grand Christmas tree holding a small white dog, ascending a decorated staircase from behind, and a cozy candlelit moment raising a champagne glass—while prohibiting text, watermarks, extra characters, and any non-Christmas or stylized deviations.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
