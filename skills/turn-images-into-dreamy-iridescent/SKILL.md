@@ -1,7 +1,24 @@
 ---
 name: turn-images-into-dreamy-iridescent
 description: This prompt instructs the AI to retexture the attached image by applying an iridescent, ethereal sky-gradient color scheme (sky blue to lavender to pale pink with soft white edging) and rendering it as polished transparent acrylic with high gloss, medium reflectivity, and a subtle subsurface glow/refraction effect. The outcome is an updated version of the original image that retains its structure while adopting a smooth mixed radial/linear gradient finish under soft, diffused ambient lighting with gentle bloom and minimal feathered shadows.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
