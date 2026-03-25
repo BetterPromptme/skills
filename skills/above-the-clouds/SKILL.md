@@ -1,7 +1,24 @@
 ---
 name: above-the-clouds
 description: This prompt instructs the AI to produce a high-resolution, luxury editorial-style surreal product showcase by keeping the uploaded product image completely unchanged while replacing only the surrounding scene with a dreamy pastel sky and soft, cinematic clouds. The product is centered and appears to float above marshmallow-like clouds, with gentle atmospheric accents (e.g., subtle glow, sparkles, mist, soft sun rays) and lighting that matches the product’s original direction for seamless integration. The intended result is an elegant dreamscape background that elevates the product’s presence without altering, cropping, recoloring, or obscuring any part of the original product image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
