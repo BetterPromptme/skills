@@ -1,7 +1,24 @@
 ---
 name: restore-and-colorize-photo
 description: This prompt instructs an AI to act as a photo conservator and digital colorist to restore an old or damaged photograph by repairing defects like scratches, fading, and softness, then colorize it with realistic, historically accurate tones guided by optional reference inputs. It emphasizes preserving the subject’s identity and period authenticity, avoiding over-retouching or artificial saturation, and producing a high-resolution result suitable for printing and archival use without adding or altering scene elements beyond faithful color reconstruction.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
