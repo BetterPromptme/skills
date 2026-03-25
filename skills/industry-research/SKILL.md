@@ -1,7 +1,24 @@
 ---
 name: industry-research
 description: This prompt instructs the AI to act as a senior content strategist and market researcher, gathering and organizing comprehensive business and industry inputs—covering industry overview, marketing objectives and KPIs, competitor insights, channel performance, brand voice, available assets, current content challenges, and timeline/budget—so a content team or agency can be briefed effectively. The expected outcome is a structured, markdown-table summary tailored to a specified industry and written in the requested language, ready to serve as the foundation for a complete content strategy plan.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
