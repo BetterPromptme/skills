@@ -1,7 +1,24 @@
 ---
 name: navigate-and-decide
 description: This prompt instructs the AI to act as an expert psychologist to help the user examine a recurring emotional difficulty within their personal context by identifying likely root causes, patterns of thinking, and triggers, then producing deeper insights, targeted reflective questions, and practical, evidence-informed exercises aimed at building daily stability and improvement rather than offering generic advice.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
