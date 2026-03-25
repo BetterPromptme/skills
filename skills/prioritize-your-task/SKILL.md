@@ -1,7 +1,24 @@
 ---
 name: prioritize-your-task
 description: This prompt instructs the AI to act as a personal assistant that evaluates a provided task for its expected business impact and then outputs a single-word priority rating—either "high" or "low"—indicating how urgently the task should be addressed.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
