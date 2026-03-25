@@ -1,7 +1,24 @@
 ---
 name: summarize-investor-trends
 description: This prompt instructs the AI to act as a senior equity analyst and produce a concise executive brief for a specified industry using credible data from the past 12 months. The output summarizes funding and market trends with specific metrics on deal volume, stage-level valuation benchmarks, major rounds and investors, risk sentiment indicators, and notable exits, alongside brief macro context affecting the sector. It requires clear section headers in a fixed order, numerical ranges with stated currencies, disclosure of any data discrepancies, and a short bibliography of recent sources with titles, publishers, URLs, and dates, while avoiding fabricated or vague claims.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
