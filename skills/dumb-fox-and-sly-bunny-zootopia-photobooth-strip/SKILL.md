@@ -1,7 +1,24 @@
 ---
 name: dumb-fox-and-sly-bunny-zootopia-photobooth-strip
 description: This prompt instructs an image model to generate a vertical, four-frame photobooth strip of the same fully human young man and woman wearing fox and bunny ear headbands, keeping their faces, identities, and hair unchanged. Each frame specifies a distinct pose and mood—from playful selfie surprise to relaxed shoulder-touching, energetic hand gestures, and a warm cheek-to-cheek embrace—captured with soft warm studio lighting on a clean white photobooth background with borders. It also enforces strict exclusions, preventing any animal or anthropomorphic traits, extra props, or busy backgrounds so the outcome remains a simple, cinematic, human-only photobooth sequence.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
