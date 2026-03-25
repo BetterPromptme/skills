@@ -1,7 +1,24 @@
 ---
 name: flashback-on-the-sofa
 description: This prompt instructs an AI image generator to create a high-resolution, vertical, realistic portrait that preserves a provided face reference while depicting the subject lounging on an olive-green vintage sofa and holding a red rotary phone, styled like an authentic 1980s flash-lit editorial shoot. It specifies warm direct-flash lighting with crisp shadows, shallow depth of field, subtle analog grain, a simple uncluttered background, and an outfit that adapts to the subject’s gender, while forbidding logos, extra people, distracting props, over-stylization, or any suggestive content. The result should look like a believable retro magazine photo—confident, relaxed, centered, and ready for social or editorial use.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
