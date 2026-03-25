@@ -1,7 +1,24 @@
 ---
 name: hotel-bathroom-flash-editorial
 description: This prompt instructs an image model to transform the provided photo into a high-resolution, vertical (9:16) cinematic fashion editorial set in a luxury hotel bathroom at night, capturing an extreme close-up, low-angle moment of the same person adjusting a black stocking near a vanity mirror. It tightly preserves the subject’s identity and realistic skin/anatomy while specifying styling (black draped blazer, sleek blonde hair, smoky eyes, glossy lips, black manicure), on-camera flash lighting with crisp shadows, and fashion-snapshot post-processing (film grain, slight warmth, optional vignette), while explicitly avoiding artifacts like altered facial features, over-smoothing, extra limbs, or text/watermarks.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
