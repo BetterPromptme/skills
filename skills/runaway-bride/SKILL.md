@@ -1,7 +1,24 @@
 ---
 name: runaway-bride
 description: This prompt instructs the AI to create a portrait-oriented, fine-art black-and-white outdoor bridal portrait that preserves the subject’s exact facial identity while placing her in an elegant off-shoulder gown with a soft, translucent veil, gently looking down at a bouquet of roses and wildflowers. It specifies a serene, emotional mood with natural daylight, smooth tonal gradients, optional subtle film grain, and a shallow depth of field against softly blurred dark trees, resulting in a timeless, romantic image with soft contrast and no distracting elements or identity-altering stylization.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
