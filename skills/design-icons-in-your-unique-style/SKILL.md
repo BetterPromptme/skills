@@ -1,7 +1,24 @@
 ---
 name: design-icons-in-your-unique-style
 description: This prompt instructs an image-generation system to create a high‑resolution, 3D‑rendered cute character tailored for a specific UI screen, with configurable character type, action, expression, and design details aligned to the UI’s purpose. It specifies a playful minimalist look with soft studio lighting, matte plush materials, centered full‑body composition, and no background, resulting in a transparent PNG (square, 1024×1024+), saved with a UI‑relevant filename.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
