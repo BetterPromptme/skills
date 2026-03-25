@@ -1,7 +1,24 @@
 ---
 name: my-city-in-cyberpunk-style
 description: This prompt instructs the AI to transform a user-supplied photograph of a specific city into a film-quality cyberpunk future while preserving the city’s recognizable architecture and composition, then amplifying a named focal element as the central subject using neon glow, holographic overlays, and a defined color palette within a chosen atmospheric mood (e.g., rain, mist, neon haze). The intended outcome is a striking, narratively coherent, technically reproducible concept-art image with cinematic lighting, reflective surfaces, and hyper-detailed Blade Runner/Cyberpunk-style ambience, along with production-ready guidance and a request for additional references if required details are missing.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
