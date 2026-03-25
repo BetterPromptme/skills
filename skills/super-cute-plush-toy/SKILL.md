@@ -1,7 +1,24 @@
 ---
 name: super-cute-plush-toy
 description: This prompt instructs the AI to take an input image and recreate its subject as a hyper-realistic plush toy, preserving the original scene’s key visual details (shape, colors, lighting, and defining features) while translating materials and proportions into a toy-like aesthetic. The expected outcome is a finalized, highly detailed rendered image that looks like a real photographed plush version of the original subject, refined through iterative steps from basic form blocking to texture, lighting, and final color/contrast/sharpness adjustments.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
