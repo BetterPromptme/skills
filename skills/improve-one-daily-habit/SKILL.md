@@ -1,7 +1,24 @@
 ---
 name: improve-one-daily-habit
 description: This prompt asks the AI to help you replace an unhelpful habit with a healthier one by analyzing your specific habit, its negative impact, and the trigger situation, then redesigning the trigger → action → reward loop into a simple, realistic alternative. The outcome is a concise plan that includes a clear replacement behavior and one practical environmental tweak or mindset anchor to make the new habit easier to follow in the moments you typically slip into the old one.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
