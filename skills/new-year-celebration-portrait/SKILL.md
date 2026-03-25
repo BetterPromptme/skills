@@ -1,7 +1,24 @@
 ---
 name: new-year-celebration-portrait
 description: This prompt instructs an image-generation system to produce a portrait-oriented, photorealistic New Year celebration scene featuring a centered subject making direct eye contact while raising a champagne glass, styled in glamorous gold accessories and sequins. It specifies a warm, high-end party atmosphere with a black-and-gold tinsel backdrop, a visible “NEW YEAR” sign, sparkling bokeh lights, and gold confetti frozen mid-fall, emphasizing ultra-sharp, high-dynamic-range detail and realistic reflections. The outcome is an elegant, energetic holiday portrait that captures a precise celebratory moment without stylization, muted lighting, minimal backgrounds, or motion blur.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
