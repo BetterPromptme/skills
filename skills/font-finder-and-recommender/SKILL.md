@@ -1,7 +1,24 @@
 ---
 name: font-finder-and-recommender
 description: This prompt instructs the AI to act as a typography expert who examines an uploaded image of text, assesses key visual characteristics (such as serif/sans style, weight, contrast, spacing, and letter shapes), and returns a professional, user-friendly shortlist of at least five likely matching fonts in a numbered list, each with a brief justification and practical substitute options when an exact identification isn’t possible.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
