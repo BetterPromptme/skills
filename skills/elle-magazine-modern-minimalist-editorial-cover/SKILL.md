@@ -1,7 +1,24 @@
 ---
 name: elle-magazine-modern-minimalist-editorial-cover
 description: This prompt directs an AI image generator to produce a print-ready, modern minimalist ELLE magazine cover featuring a confident young subject photographed in a clean studio setup, with bright diffused lighting, neutral tones, and refined editorial typography. It specifies composition, pose, styling, makeup, backdrop, and layout details, and requires the subject’s identity and wardrobe to match a provided reference image exactly while maintaining realistic texture and an understated, high-end fashion aesthetic. The outcome is a polished, globally styled cover design with a large ELLE masthead and specific cover lines arranged with balanced white space and a subtle accent color.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
