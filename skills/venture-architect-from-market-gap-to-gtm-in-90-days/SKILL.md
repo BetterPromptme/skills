@@ -1,7 +1,24 @@
 ---
 name: venture-architect-from-market-gap-to-gtm-in-90-days
 description: This prompt instructs the AI to research a specified industry, identify fast-growing market segments and evidence-backed underserved customer pain points, then choose the best opportunity using a weighted scorecard. It then has the AI turn that opportunity into a venture plan that can be executed within 12 months, including a clear business thesis, MVP product scope and user journey, go-to-market strategy with CAC/LTV logic, defensibility, a year-one financial model with break-even timing, key risks with mitigations, and a detailed 90-day execution roadmap—producing an executive-ready structured output.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
