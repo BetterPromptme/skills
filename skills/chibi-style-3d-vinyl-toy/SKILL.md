@@ -1,7 +1,24 @@
 ---
 name: chibi-style-3d-vinyl-toy
 description: This prompt instructs the AI to take an input image and recreate its subject as a high-quality 3D chibi toy figurine, preserving key visual details like clothing, hair, and pose while transforming it into an adorable, compact form with an oversized head and tiny body. The intended result is a front-facing, Cinema 4D–style render featuring a glossy, smooth toy finish, a sturdy base, soft lighting with gentle shadows, and a clean white background in a minimalist composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
