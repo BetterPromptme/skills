@@ -1,7 +1,24 @@
 ---
 name: matcha-date-couple-portrait
 description: This prompt instructs an image model to generate a hyper-realistic, vertical 9:16 wide-angle POV street-café photograph based on a reference person, keeping the subject’s facial identity and texture unchanged while depicting them extending a hand toward the camera holding an iced matcha latte with slight fisheye perspective; it specifies natural outdoor lighting, candid urban background activity, and window reflections, and includes constraints to prevent face alteration, beautification, stylization, or unreal/empty scenes, with optional female and male variants that preserve the same core identity.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
