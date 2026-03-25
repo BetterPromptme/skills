@@ -1,7 +1,24 @@
 ---
 name: ghostface-reflection-cinematic-halloween-mirror-scene
 description: This prompt instructs an image-generation system to create a hyperrealistic, cinematic Halloween bathroom scene based on a provided reference photo of a woman, preserving her exact facial features and proportions while styling her wardrobe, accessories, and makeup as specified. It defines a mirror-focused composition where she calmly applies glossy red lipstick, and a masked killer figure appears only in the mirror behind her, with detailed guidance for environment, props, camera angle, lens, depth of field, lighting temperature, mood, and quality constraints. The outcome is a polished vertical-format horror portrait that balances elegant realism with suspense, emphasizing reflection, controlled focus, and cool cinematic lighting without added text or artifacts.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
