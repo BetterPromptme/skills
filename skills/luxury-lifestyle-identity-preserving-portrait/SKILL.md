@@ -1,7 +1,24 @@
 ---
 name: luxury-lifestyle-identity-preserving-portrait
 description: This prompt instructs an image generator/editor to produce a highly photorealistic, warm-lit mirror-selfie portrait in a luxury bathroom or dressing space, with strict constraints to preserve the subject’s exact identity and natural features. It specifies the vertical mid‑torso framing, symmetrical upscale interior elements (arched frames, marble counter, modern faucet), the subject’s pose (hair touch and compact held outward), wardrobe and accessories (structured black dress, rectangular gold earrings), and warm golden lighting and neutral palette, resulting in a polished, editorial lifestyle image with no stylization, added text, or facial alteration.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
