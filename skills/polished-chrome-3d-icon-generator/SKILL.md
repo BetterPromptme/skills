@@ -1,7 +1,24 @@
 ---
 name: polished-chrome-3d-icon-generator
 description: This prompt specifies a high-resolution, physically based 3D render of a single object in a polished chrome style, detailing its shape placeholder, mirror-gloss material properties, studio lighting, isometric/orthographic camera setup, and transparent background. The outcome is a centered PNG icon-like image with smooth gradients, sharp realistic reflections, and subtle grounding shadowing, with no text or additional elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
