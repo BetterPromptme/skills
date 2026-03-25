@@ -1,7 +1,24 @@
 ---
 name: customizable-fashion-model
 description: This prompt instructs an AI image generator to produce a highly detailed, photorealistic fashion model illustration tailored to user-defined attributes (such as demographics, facial features, hair, body type, expression, pose, wardrobe, makeup, setting, lighting, style, and mood), resulting in a visually striking, vibrant, professional composition with refined textures and background detail suitable for a high-end fashion magazine cover.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
