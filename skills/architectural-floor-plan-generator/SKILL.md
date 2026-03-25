@@ -1,7 +1,24 @@
 ---
 name: architectural-floor-plan-generator
 description: This prompt instructs the AI to act as a professional architect and produce a clean, CAD/blueprint-style, top-down floor plan for a house using the provided style, size/layout, room list, special features, and optional site context. The expected outcome is a computer-drawn schematic with clearly separated and labeled rooms, accurately indicated walls, doors, windows, stairs, and any requested elements (e.g., terrace, pool, rooftop garden) integrated logically into the layout, presented with precise lines and clear proportions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
