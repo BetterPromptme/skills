@@ -1,7 +1,24 @@
 ---
 name: ultimate-email-marketing-prompt-guide-easy-to-use-highly-effective
 description: This prompt instructs the AI to generate a polished, warmly written email marketing campaign aimed at loyal customers for a customizable business, using gratitude, floral-themed emotional language, and a limited-time discount to drive urgent purchases. The result is a complete email package—including subject line, preview text, and a cleanly structured body with a clear call-to-action—featuring tasteful floral emojis, elegant design guidance, and multiple personalization placeholders (customer name, business name, discount/promotion details, and offer end date) so the message feels tailored and on-brand.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
