@@ -1,7 +1,24 @@
 ---
 name: noir-elegance-vintage-portrait
 description: This prompt instructs an image generator to produce a photorealistic, black-and-white, shoulders-up vintage studio portrait in a 1940s film-noir aesthetic, using provided variables (gender, ethnicity, hair, accessories, expression) to shape the subject’s appearance and mood. It specifies close-up framing, soft diffused key lighting with strong light–shadow interplay, analog softness with film grain and vignette, and a natural finger-to-lips gesture, while forbidding color, modern retouching, props, explicitness, or identity imitation. The intended outcome is a dignified, cinematic monochrome headshot that looks like an authentic mid-century silver-print photograph and maintains consistent stylistic realism for reference or dataset use.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
