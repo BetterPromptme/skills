@@ -1,7 +1,24 @@
 ---
 name: identity-preserved-neon-cyber-portrait-prompt
 description: This prompt instructs the model to generate a highly realistic, identity-preserving vertical cinematic portrait of the provided subject, keeping facial proportions, age, skin tone, ethnicity, and any hair or head covering exactly unchanged while avoiding beautification or retouching. It places the subject in a neon-lit, rainy cyber street scene inspired by a specified city, with abstract non-readable signage, wet reflections, fog, and shallow depth of field, using clean front fill light and subtle cyan–magenta rim lighting to maintain natural, accurate skin color. The result is a 1080×1920 Instagram-ready cyber aesthetic portrait where the environment and lighting are stylized but the subject’s identity remains strictly consistent with the reference image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
