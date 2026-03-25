@@ -1,7 +1,24 @@
 ---
 name: soft-3d-ui-icon-generator-playful-matte-series
 description: This prompt instructs an AI image generator to create a single, centered 3D icon based on a provided concept, rendered in a soft, playful onboarding-style aesthetic. It specifies rounded minimal forms, matte plastic materials, vibrant pastel colors, and gentle studio lighting, all composed in a square format against a consistent cream background. The intended outcome is a high-resolution 1:1 PNG icon that feels clean, friendly, and UI-ready.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
