@@ -1,7 +1,24 @@
 ---
 name: movie-storyboard
 description: This prompt instructs an AI to produce a visually cohesive, 12-frame cinematic neo-noir storyboard featuring a detective duo investigating a missing treasure in a smoky, high-contrast urban setting. It specifies consistent character faces, outfits, and atmosphere across all frames, with each image representing a distinct story beat that escalates tension through emotional highs and lows before landing on a twist and satisfying resolution. The outcome is a sequence of exactly twelve text-free, film-noir-style images in a 16:9 format that can be used by creators as a consistent visual planning tool.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
