@@ -1,7 +1,24 @@
 ---
 name: annabelle-glass-box
 description: This prompt instructs an image-generation system to produce an 8K, 4:5 fine-art cinematic portrait that precisely preserves the real subject’s facial identity while depicting them seated inside a wooden-edged glass box in a dim, antique-filled room. It specifies centered mid-portrait framing, shallow depth of field, soft warm low-key lighting with realistic glass reflections, and vintage styling with red ribbon accents to create a dark, mysterious, subtly eerie mood. The intended outcome is a hyper-realistic, film-like photograph where the subject remains the focal point and the surrounding antiques fade into a softly blurred, atmospheric background.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
