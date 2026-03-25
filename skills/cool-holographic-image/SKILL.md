@@ -1,7 +1,24 @@
 ---
 name: cool-holographic-image
 description: This prompt instructs an image-editing/generation model to transform a given image with a cinematic holographic overlay, producing a glossy, high-contrast, iridescent look featuring dreamy rainbow gradients, soft radial light reflections, subtle edge lighting and shadows for depth, and a gentle noise texture. The intended result is an ultra-HD, centered 1:1 composition set against a dark background, emphasizing pink, teal, cyan, and purple hues with smooth, luminous blending.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
