@@ -1,7 +1,24 @@
 ---
 name: kopitiam-1970s-film-mood-nostalgia-retro
 description: This prompt instructs an image generator/editor to create a photorealistic portrait of the referenced person seated in a vintage 1970s Malaysian kopitiam, with era-appropriate wardrobe, props, lighting, and film-like color/optics. The primary constraint is strict 1:1 identity preservation—matching the subject’s facial anatomy, proportions, skin tone, hair/head covering, and expression exactly—while placing them in the specified nostalgic environment with warm window light, shallow depth of field, and subtle vintage film characteristics.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
