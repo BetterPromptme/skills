@@ -1,7 +1,24 @@
 ---
 name: gothic-overhead-editorial-portrait
 description: This prompt instructs an AI to generate a photorealistic, full-body gothic editorial portrait with a bridal-inspired mood, shot from an overhead angle in warm candlelight. It specifies the subject’s gender-dependent styling, outfit and jewelry details, a curated set of antique props, a neutral draped backdrop, and a calm seated pose to achieve a quiet, romantic, introspective atmosphere. The expected result is a cinematic, editorial-grade image with balanced top-down composition, soft chiaroscuro shadows, and an ivory-and-amber palette that emphasizes lace, glass, and texture.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
