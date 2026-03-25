@@ -1,7 +1,24 @@
 ---
 name: flower-garden-elevator
 description: This prompt instructs an image-generation system to produce an 8K, photorealistic high-fashion editorial portrait of a young woman posed full-body in a sleek metallic elevator that has been overtaken by lush flowers and vines, blending industrial reflections with an enchanted indoor-garden atmosphere. It specifies precise composition, wardrobe, pose, lighting, color palette, and environmental details to achieve a dreamy, cinematic, melancholic mood, while requiring the subject’s face to match a provided reference with exact identity fidelity and no stylization. The intended outcome is a magazine-quality surreal fashion image in a 4:5 portrait format where the woman in a voluminous pink dress holds white tulips amid floral overgrowth and softly glowing metallic surfaces.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
