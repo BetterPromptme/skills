@@ -1,7 +1,24 @@
 ---
 name: zootopia-three-panel-portrait
 description: This prompt instructs an image generator/editor to create a cozy, realistic three-panel vertical photobooth strip using the person’s original face and identity unchanged, placing them in a consistent warm indoor setting with a cream curtain backdrop and a beige cable-knit sweater. Across the three frames, it directs specific poses and expressions while adding a large plush character-ears hat and Zootopia plush toys (Nick Wilde and Judy Hopps) in designated positions, with expression rules adapted to the subject’s perceived gender presentation. The intended result is a clean, natural-texture photobooth collage that looks like real photos, strictly avoiding any stylization, beautification, identity changes, wardrobe changes, or extra elements beyond what’s specified.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
