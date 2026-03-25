@@ -1,7 +1,24 @@
 ---
 name: cinematic-newspaper-motion
 description: This prompt instructs an AI image model to take a user’s portrait and transform it into a high-fashion, cinematic editorial scene that matches a provided reference style—specifically replicating its warm studio lighting, atmospheric tone, wind-driven motion blur, and flying newspaper elements—while keeping the user’s face perfectly preserved and sharp. The outcome is a single realistic, motion-rich portrait with a minimal studio background, the user wearing their specified outfit, and no readable text or unwanted additions, ensuring identity accuracy and an elegant editorial finish.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
