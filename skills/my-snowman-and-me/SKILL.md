@@ -1,7 +1,24 @@
 ---
 name: my-snowman-and-me
 description: This prompt instructs the AI to create a photorealistic, softly cinematic winter triptych portrait: three vertically stacked panels depicting the same person consistently (including an unaltered face, hair, and proportions) in a snow-covered park with warm morning light and a nostalgic film-like color grade. Each panel is precisely defined with distinct framing, pose, and emotion—resting on the snow in a calm gaze, standing among rows of snowmen in quiet contentment, and sharing an intimate close moment beside a smaller snowman—resulting in one cohesive visual story with consistent styling, lighting, and output specifications for a high-resolution 9:16 composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
