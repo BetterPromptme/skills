@@ -1,7 +1,24 @@
 ---
 name: y2k-aesthetic-portrait
 description: This prompt instructs an image-generation system to produce a high-resolution, photorealistic vertical street-fashion portrait of a specific young woman in bright midday sunlight, posed casually against a white stucco wall at a Mediterranean-style urban street corner. It tightly defines framing, pose, wardrobe, accessories, background elements (including a “Beverly St” sign), lighting, and color palette while enforcing strict constraints to preserve the subject’s exact facial identity and natural skin texture without beautification or reshaping. The expected outcome is a clean, editorial-quality three-quarter-body image with crisp shadows and minimalist architecture that matches the described coastal urban aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
