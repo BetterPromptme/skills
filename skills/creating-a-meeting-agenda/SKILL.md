@@ -1,7 +1,24 @@
 ---
 name: creating-a-meeting-agenda
 description: This prompt instructs the AI to generate a professional, shareable meeting agenda tailored to a specified topic, duration, and attendee group. It produces a time-boxed schedule divided into logically ordered sections, each with a clear title, allocated time, and a concrete objective or expected outcome, ensuring the agenda flows realistically within the total meeting length.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
