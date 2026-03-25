@@ -1,7 +1,24 @@
 ---
 name: modern-glamour-mirror-selfie-chic-reflection
 description: This prompt instructs an image generator to produce a hyper-realistic, waist-up indoor mirror selfie with a warm wooden backdrop, soft flattering lighting, and a minimalist luxury fashion editorial mood. It specifies the subject’s styling (white spaghetti-strap top, slim black rectangular sunglasses, subtle gold jewelry), pose and composition (phone visible without obscuring the face, clean mirror, centered vertical framing), and photorealistic surface details (natural skin sheen, reflections, jewelry glint) while constraining the result to remain tasteful, unbranded, and free of heavy filters or stylization.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
