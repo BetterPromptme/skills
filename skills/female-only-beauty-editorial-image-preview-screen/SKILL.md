@@ -1,7 +1,24 @@
 ---
 name: female-only-beauty-editorial-image-preview-screen
 description: This prompt directs an AI image workflow to create or refine a close-up view of a MacBook Pro screen showing two side-by-side beauty portraits in macOS Preview, emphasizing a realistic behind-the-scenes image review moment. It specifies consistent high-end editorial makeup, lighting, background, and accessories across both portraits while preserving the subject’s exact facial identity and natural skin texture, with only subtle pose differences between the two images. The intended outcome is a clean, professional, readable screen display where both portraits remain clearly comparable, with realistic UI details and reflections and without stylized effects or unnecessary distractions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
