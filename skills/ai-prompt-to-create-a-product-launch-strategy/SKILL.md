@@ -1,7 +1,24 @@
 ---
 name: ai-prompt-to-create-a-product-launch-strategy
 description: This prompt instructs the AI to act as an experienced marketing expert for a specified business and produce a premium-feeling product launch plan for a new offering within a defined total budget. The output is a sharp, modern strategy covering a core brand message, a social-first “Big Idea,” a three-phase (pre-launch/launch/post-launch) digital campaign within one month, concrete content concepts and captions per phase, recommended channels with rationale, stage-specific calls to action, and a detailed budget allocation designed to maximize impact with limited resources.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
