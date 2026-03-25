@@ -1,7 +1,24 @@
 ---
 name: predicted-exam-questions-and-model-answers-for-any-subjects
 description: This prompt instructs the AI to behave like a senior examiner for a specified topic, forecasting the most probable exam questions and providing full-mark model answers. Each response must explicitly link to the relevant syllabus knowledge area, justify the reasoning behind the solution, and highlight common mistakes that cost marks, producing concise, examiner-focused content aimed at maximizing exam credit.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
