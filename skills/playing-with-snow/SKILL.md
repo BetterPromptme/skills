@@ -1,7 +1,24 @@
 ---
 name: playing-with-snow
 description: This prompt instructs an image generator to create a highly realistic, winter-cinematic vertical triptych (three stacked panels) using a provided reference photo, preserving the subject’s face, hairstyle, and hair color exactly. It specifies gender-inclusive styling, wardrobe, environment, lighting, color palette, and mood, and defines distinct narrative actions for each panel—snow-in-hands warmth, a calm close-up portrait, and a sparkler-lit moment—resulting in a cohesive three-panel winter story portrait with consistent identity and cinematic atmosphere.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
