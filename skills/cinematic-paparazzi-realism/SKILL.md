@@ -1,7 +1,24 @@
 ---
 name: cinematic-paparazzi-realism
 description: This prompt instructs an image model to use an uploaded portrait as a strict facial-identity reference and generate a photorealistic Paris Fashion Week paparazzi-style photograph, keeping the subject’s face and upper body sharply in focus while adding handheld camera energy through motion-blurred crowds, shallow depth of field, grain, harsh flash lighting, and a dynamic low-angle cinematic composition, with the wardrobe defined by a user-provided outfit description.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
