@@ -1,7 +1,24 @@
 ---
 name: daily-immersion-language-coach
 description: This prompt instructs the AI to act as a personal language tutor that builds an immersive, real-life practice environment tailored to a learner’s chosen language, proficiency level, and learning goal. It produces culturally appropriate daily conversation scenarios, simple and practical short routines, and clear fluency progress metrics, while keeping explanations brief, gradually increasing difficulty, and avoiding unsafe, offensive, or inappropriate content.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
