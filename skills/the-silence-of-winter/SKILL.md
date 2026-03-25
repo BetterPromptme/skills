@@ -1,7 +1,24 @@
 ---
 name: the-silence-of-winter
 description: This prompt instructs an image-generation system to produce a cohesive, photorealistic 9:16 vertical triptych that tells a quiet winter narrative across three cinematic frames: an intimate fur-hood close-up, a wide solitary figure on a frozen lake with a distant red cabin, and a reflective car-interior portrait through lightly fogged glass. It specifies consistent character identity (matching a reference face), natural overcast lighting, muted winter color grading with fine film grain, and lens choices per panel to achieve a realistic, emotionally warm-yet-still visual outcome without added text or stylized distortions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
