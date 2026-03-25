@@ -1,7 +1,24 @@
 ---
 name: stranger-things-group-fisheye-selfie
 description: This prompt instructs an image editor to use a provided reference photo and perform a precise face-swap on only the front-center person taking the selfie, replacing that person’s face with the user’s face while preserving the user’s exact identity (including hair and natural realism) and matching the original serious expression. All other characters, their poses, and the full 1980s living-room setting, lighting, fisheye selfie perspective, and cinematic styling must remain unchanged, producing a photorealistic composite where only the central selfie-taker’s face is different.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
