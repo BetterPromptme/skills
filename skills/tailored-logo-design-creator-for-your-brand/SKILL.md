@@ -1,7 +1,24 @@
 ---
 name: tailored-logo-design-creator-for-your-brand
 description: This prompt instructs the AI to create a logo concept for a specified brand by tailoring the shape, colors, typography, and symbolic elements to reflect the brand’s named identity and core values while aiming for a modern, clean, and recognizable look. The expected result is a cohesive logo design direction that evokes a chosen emotional tone and remains versatile and legible across both digital and print applications at various sizes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
