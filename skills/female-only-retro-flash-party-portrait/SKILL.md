@@ -1,7 +1,24 @@
 ---
 name: female-only-retro-flash-party-portrait
 description: This prompt instructs an image model to generate a high-resolution, photorealistic party portrait with a late-1990s/early-2000s direct-flash aesthetic, featuring a centered subject in a sparkling pink outfit holding a reflective “2026” ornament against a contrasting turquoise tinsel backdrop. It specifies the subject’s pose, expression, makeup, wardrobe, props, and celebratory atmosphere (confetti, glittering particles, star-like specular flares), while enforcing realistic proportions and texture, bold color contrast, and analog-like grain and saturation. The expected outcome is a polished, iconic-looking glamour celebration portrait that feels like a candid retro flash photo captured mid-party.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
