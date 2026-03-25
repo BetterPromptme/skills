@@ -1,7 +1,24 @@
 ---
 name: turn-any-photo-into-a-coloring-book-page
 description: El prompt pide transformar la imagen proporcionada en una ilustración tipo libro para colorear, manteniendo exactamente los elementos originales y convirtiéndolos en contornos negros finos, limpios y bien definidos sobre fondo blanco, con un estilo sencillo y amigable, sin sombras ni colores, dejando áreas claras y amplias para facilitar el coloreado.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
