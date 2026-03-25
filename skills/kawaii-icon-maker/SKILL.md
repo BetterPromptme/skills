@@ -1,7 +1,24 @@
 ---
 name: kawaii-icon-maker
 description: This prompt instructs an image model to generate a simple, square-format kawaii icon depicting a specified object, rendered in soft pastel colors with rounded, friendly, hand-drawn shapes. The resulting image includes a cute smiling face with blush cheeks, clean slightly dark outlines for contrast, a minimal uncluttered composition on a white background, and avoids any text, gradients, or shadows.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
