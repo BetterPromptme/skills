@@ -1,7 +1,24 @@
 ---
 name: google-map-style-mobile-screenshot
 description: This prompt instructs the AI to create a realistic 9:16 mobile screenshot styled like a Google Maps place preview, using the user’s uploaded group selfie unchanged as the top image area and generating an authentic-looking Google Maps info card beneath it. The user can customize the place name, rating, review count, category, open/close status, action buttons, and the language/UI style, while the AI reconstructs matching Maps typography, icons, spacing, colors, and rounded card layout. The intended result is a high-quality, Google Maps–identical composite screenshot where the photo remains intact and all UI elements look native to the app.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
