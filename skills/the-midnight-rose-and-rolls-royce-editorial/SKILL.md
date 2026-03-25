@@ -1,7 +1,24 @@
 ---
 name: the-midnight-rose-and-rolls-royce-editorial
 description: This prompt instructs an image model to generate a high-resolution, photorealistic vertical nighttime fashion portrait in a luxury urban setting: a young woman with specific hair, makeup, outfit, jewelry, and pose sits on the hood of a black Rolls‑Royce while holding deep red roses, lit with strong frontal flash against a cinematic city street background. It tightly constrains composition (three-quarter/full-body framing, subject placement, visible grille and hood ornament, street perspective), lighting and color palette, and realism requirements (no facial reshaping, natural skin texture, accurate reflections and vehicle proportions), resulting in a polished editorial-style automotive glamour image with an upscale romantic nightlife mood.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
