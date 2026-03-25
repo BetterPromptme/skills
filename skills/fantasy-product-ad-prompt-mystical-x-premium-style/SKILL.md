@@ -1,7 +1,24 @@
 ---
 name: fantasy-product-ad-prompt-mystical-x-premium-style
 description: This prompt instructs an image generator to produce an ultra-detailed, photorealistic fantasy product photo in a square or 4:5 format, placing a user-specified product on an intricately carved ancient stone pedestal in a misty tropical jungle with cinematic golden-hour lighting. It specifies luxurious “ancient-meets-modern” styling via treasure-like props (coins, gems, small pyramids, moss), shallow depth of field that keeps the product and pedestal crisp while softly blurring the background, and realistic shadows/reflections. The final result also includes the brand name at the top in clean, elegant typography to complete a polished, mystical marketing-ready composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
