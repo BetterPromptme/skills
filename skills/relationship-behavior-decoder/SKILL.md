@@ -1,7 +1,24 @@
 ---
 name: relationship-behavior-decoder
 description: This prompt instructs the AI to act as a relationship psychology expert and assess someone’s behavior toward the user using provided descriptions and behavioral details, then produce an empathetic, objective response that offers a few plausible interpretations, outlines relevant contextual influences, and recommends practical direct and indirect next steps to clarify the situation or improve the relationship without making absolute judgments.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
