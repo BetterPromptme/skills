@@ -1,7 +1,24 @@
 ---
 name: common-startup-mistakes-to-avoid
 description: This prompt instructs the AI to generate a tailored list of seven frequent early-stage founder mistakes specific to a chosen business industry and limited-capital startup context, paired with practical avoidance strategies. The result is an actionable, industry-relevant checklist (optionally illustrated with real-world examples) that helps a new founder anticipate common pitfalls and make better early decisions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
