@@ -1,7 +1,24 @@
 ---
 name: future-baby-portrait-pro
 description: 该提示旨在根据图片中两位人物的外貌特征，合成生成他们孩子的可能长相，并以专业摄影风格输出一张逼真的人像成片；结果是一幅高质量、写实、光影与质感接近商业肖像摄影的儿童面部图像，体现两位人物特征的融合与遗传倾向。
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
