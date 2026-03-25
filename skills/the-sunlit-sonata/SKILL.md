@@ -1,7 +1,24 @@
 ---
 name: the-sunlit-sonata
 description: This prompt directs an image-generation system to create an ultra-detailed, cinematic indoor portrait of the person from a reference photo posed intimately with a white grand piano, preserving the subject’s identity while shaping a warm, nostalgic, softly melancholic mood. It specifies precise constraints for facial and hair fidelity, diffused late-afternoon lighting, gentle color harmony, realistic piano reflections, and fine-art fashion styling, resulting in an 8K, painterly photoreal image with shallow depth of field, subtle film grain, and dreamlike atmospheric details.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
