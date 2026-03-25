@@ -1,7 +1,24 @@
 ---
 name: make-a-glossy-3d-rendered-chrome-1
 description: This prompt instructs an image-generation model to depict a chosen subject as a macro, studio-style render with a hyper-glossy iridescent surface, holographic rainbow reflections, and candy-smooth specular highlights. It emphasizes futuristic, chrome-like and liquid-crystal aesthetics, dramatic cinematic lighting, and a deep black background to maximize contrast, resulting in a striking, high-end 3D visual with surreal reflective detail.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
