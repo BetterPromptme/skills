@@ -1,7 +1,24 @@
 ---
 name: design-a-dream-garden-for-your-product
 description: This prompt directs an AI to generate a luxury skincare advertisement image set in a dreamy, magical garden, with the product centered on an elegant pedestal and surrounded by softly glowing natural elements. It specifies the environment, lighting, color palette, camera styling, and optional tagline placement to achieve a cinematic, romantic, fairy-tale aesthetic that conveys self-care, beauty, and nature-inspired radiance.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
