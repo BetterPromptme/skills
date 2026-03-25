@@ -1,7 +1,24 @@
 ---
 name: seaside-solitude-portrait
 description: This prompt instructs the AI to generate a photorealistic, golden-hour ocean-deck portrait in a cinematic coastal lifestyle style, depicting a specific woman in a precise medium close-up composition with an exact pose, wardrobe, jewelry, makeup, and serene expression while strictly preserving her facial identity and natural textures. The intended outcome is a realistic sunset scene on a boat with a visible horizon, deep blue water, and pastel sky, captured with natural light, true-to-life color, and shallow depth of field, without filters, text, watermarks, or any changes that would alter her appearance or styling.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
