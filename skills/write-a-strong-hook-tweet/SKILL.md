@@ -1,7 +1,24 @@
 ---
 name: write-a-strong-hook-tweet
 description: This prompt instructs the AI to create a promotional tweet for a specified business, tailored to a chosen focus topic, and structured using the hook–value–call-to-action framework. The outcome is a concise, social-ready tweet that grabs attention, delivers a clear benefit related to the focus area, and ends with a direct next step for the reader.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
