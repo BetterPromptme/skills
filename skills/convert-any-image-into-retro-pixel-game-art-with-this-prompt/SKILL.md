@@ -1,7 +1,24 @@
 ---
 name: convert-any-image-into-retro-pixel-game-art-with-this-prompt
 description: This prompt instructs an image model to take a provided reference image and recreate it as a highly detailed yet low-resolution 8-bit pixel art scene, preserving the original composition, key shapes, and overall color palette while converting all elements into blocky pixels with sharp edges and minimal shading. It specifies a vertical cinematic aspect ratio, strong stylization toward retro video game graphics, and pixelated lighting consistent with the source image, resulting in a nostalgic, cohesive pixel-art rendition that remains clearly recognizable as the original scene.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
