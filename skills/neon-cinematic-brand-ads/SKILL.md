@@ -1,7 +1,24 @@
 ---
 name: neon-cinematic-brand-ads
 description: This prompt directs an image-generation model to create a square, ultra-cinematic sci‑fi poster-style branded visual with the brand’s real logo centered, surrounded by a surreal neon abstract background that reflects the brand identity, enhanced with HDR lighting, glowing edges, and motion trails, and finished with a bold futuristic-font slogan placed beneath the logo for a vibrant, photorealistic, visually epic result.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
