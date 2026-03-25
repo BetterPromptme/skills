@@ -1,7 +1,24 @@
 ---
 name: minimalist-flat-icon-design
 description: This prompt instructs an AI to generate a minimalist, modern flat icon representing a specified topic, using clean symmetrical shapes, bold outlines, and a limited 2–3 color palette drawn from provided color choices. The expected outcome is a scalable, digital-ready, vector-like icon suitable for apps or websites, delivered on a fully transparent (or solid white) background with no extraneous elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
