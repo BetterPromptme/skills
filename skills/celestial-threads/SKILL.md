@@ -1,7 +1,24 @@
 ---
 name: celestial-threads
 description: This prompt instructs an AI image generator to create a highly detailed, surreal depiction of a celestial subject formed from flowing fiber-optic filaments and glowing particles, posed in a graceful curved silhouette with semi-transparent, pearlescent white and deep-blue luminosity. The result is an ethereal, majestic figure set against a dark void, with starlight-like streams, drifting sparks, and magical dust accentuating the glowing, otherworldly atmosphere.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
