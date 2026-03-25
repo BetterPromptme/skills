@@ -1,7 +1,24 @@
 ---
 name: simple-human-writing-style
 description: This prompt sets the assistant up as a plain-language writing helper that rewrites or creates text for casual online readers. It tells the assistant to keep sentences short, sound natural and grounded, avoid marketing or “AI-ish” wording, and not add any new claims or facts. The result is clear, straightforward writing that reads like a real person, not a polished promo.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
