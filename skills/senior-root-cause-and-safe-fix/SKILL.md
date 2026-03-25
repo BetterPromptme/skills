@@ -1,7 +1,24 @@
 ---
 name: senior-root-cause-and-safe-fix
 description: This prompt instructs the AI to act as a staff-level Node.js debugging engineer who, given a Node.js stack trace and the relevant source code (plus optional context), produces a production-ready incident-style report: it determines the root cause and precise failure location, proposes the smallest safe code change to fix the bug without altering intended behavior, and supplies a Jest/Vitest regression test that would have failed before the fix and passed after, with clear structure and explicit assumptions when details are ambiguous.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
