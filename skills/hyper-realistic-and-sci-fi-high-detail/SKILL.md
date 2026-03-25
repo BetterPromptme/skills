@@ -1,7 +1,24 @@
 ---
 name: hyper-realistic-and-sci-fi-high-detail
 description: This prompt instructs the AI to generate an ultra-high-resolution, studio-lit, microscopic-style photograph of an impossibly tiny “Nano Banana” presented as a Google-engineered object, featuring a chrome metallic peel with subtle, glowing blue circuitry visible beneath the surface, rendered with extreme depth of field and crisp detail to create a convincing nano-scale sci‑fi product shot.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
