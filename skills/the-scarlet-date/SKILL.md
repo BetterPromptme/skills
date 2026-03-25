@@ -1,7 +1,24 @@
 ---
 name: the-scarlet-date
 description: This prompt instructs an image-generation workflow to produce a photorealistic, luxury fine-dining lifestyle portrait of a woman in an upscale candle-lit restaurant, keeping her facial identity and natural textures exactly consistent with a provided reference while controlling pose, wardrobe, accessories, table props (roses, handbag, jewelry box, champagne), warm golden lighting, shallow depth of field, and a romantic celebratory mood for a refined, cinematic vertical waist-up composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
