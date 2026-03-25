@@ -1,7 +1,24 @@
 ---
 name: stadium-light-editorial
 description: This prompt directs an image-generation model to create a cinematic, low-angle long shot of a young woman on vivid green stadium seating in natural sunlight, styled in minimalist white sportswear against a clean blue sky. The intended outcome is a high-end editorial fashion photograph with 35mm film characteristics—vintage color tone, visible grain, gentle highlight roll-off, and strong contrast—producing a nostalgic, magazine-quality aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
