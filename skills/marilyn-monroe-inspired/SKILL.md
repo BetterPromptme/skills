@@ -1,7 +1,24 @@
 ---
 name: marilyn-monroe-inspired
 description: This prompt directs an AI image generator to produce an ultra-detailed, high-contrast film-noir editorial portrait that preserves the subject’s original facial features and expression while styling them in retro Hollywood glamour: deep red waved hair, a black gown, and a cigarette mid-exhale. It specifies a mid-shot composition in a dark, smoky setting where multiple men’s hands extend in from the edges holding lit lighters that form a ring of small flames, shaping dramatic chiaroscuro lighting with warm fire reflections, shallow depth of field, subtle grain, and an 8K cinematic finish that conveys sensual confidence and danger.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
