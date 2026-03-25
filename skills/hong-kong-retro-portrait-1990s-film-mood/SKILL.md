@@ -1,7 +1,24 @@
 ---
 name: hong-kong-retro-portrait-1990s-film-mood
 description: This prompt directs an AI image generator to produce a high-resolution, photorealistic vertical ¾-body portrait of a woman in a cramped, cluttered 1990s Hong Kong room, with precise pose and expression, period-accurate set dressing, and mixed tungsten-plus red/cyan neon lighting diffused through mist. It specifies an analog film look (shallow depth of field, heavy grain, gentle bloom, muted nostalgic color grade) and enforces tasteful realism while emphasizing emotional restraint and cultural authenticity. The intended outcome is a single cinematic, Wong Kar-wai–like film-still portrait that preserves the subject’s facial identity exactly and conveys quiet melancholy within a lived-in retro interior.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
