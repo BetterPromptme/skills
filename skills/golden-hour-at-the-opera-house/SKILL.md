@@ -1,7 +1,24 @@
 ---
 name: golden-hour-at-the-opera-house
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical travel-lifestyle portrait of a young woman seated on a sunny Sydney waterfront promenade, composed as a medium to three-quarter body shot with the Sydney Opera House prominently and accurately framed behind her. It specifies strict identity preservation for the subject’s face, detailed pose, outfit, environment elements (harbor, skyline, café, pedestrians), and bright natural daylight aesthetics so the resulting image looks like a clean, editorial travel photograph with crisp shadows, vivid color, and sharp focus on both the subject and landmark.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
