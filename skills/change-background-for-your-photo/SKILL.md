@@ -1,7 +1,24 @@
 ---
 name: change-background-for-your-photo
 description: This prompt instructs the AI to perform a precise photo edit where the subject from the first image is kept exactly unchanged (pixel-for-pixel) while the background is replaced with the background from a second image. The intended outcome is a realistic, professional-looking composite that matches perspective, lighting, and color grading, with no alteration, regeneration, distortion, or enhancement of the subject’s face, body, clothing, or foreground elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
