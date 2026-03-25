@@ -1,7 +1,24 @@
 ---
 name: turn-your-logo-or-icon-into-a-hug-pillow-with-this-prompt
 description: Il prompt richiede di realizzare un rendering 3D ad alta risoluzione del logo trasformato in un oggetto gonfiabile, con forme morbide e arrotondate, texture liscia opaca e dettagli come pieghe e cuciture, inquadrato a 45° per mettere in risalto la profondità e inserito in una scena di soggiorno dove il logo è appoggiato su un divano e l’arredamento riprende i suoi colori, ottenendo un’immagine finale realistica e coerente con l’estetica “inflatable”.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
