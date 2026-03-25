@@ -1,7 +1,24 @@
 ---
 name: sunlit-gaze-natural-high-contrast-headshot
 description: This prompt instructs an AI to generate a hyper-realistic, high-contrast extreme close-up portrait in harsh natural midday sunlight while precisely preserving the subject’s original identity and facial structure from a reference image. It specifies exact framing, head tilt, gaze direction, lighting physics, skin texture fidelity, minimal background, and gender-appropriate hair handling without beautification or stylized grading. The intended outcome is an intimate 3:4 vertical headshot with crisp sunlight-defined highlights and shadows, visible natural imperfections, and a fully recognizable likeness.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
