@@ -1,7 +1,24 @@
 ---
 name: three-member-family-photo
 description: This prompt instructs an image-generation/editing system to take separate photos of a father, mother, and child and rebuild them into a single premium, studio-quality family portrait that exactly preserves each person’s facial identity while matching a provided style reference and a specific stacked, top-down pose reference. The expected outcome is a high-resolution, cinematic-looking portrait on a clean white background with simple white clothing, faithful pose alignment (father above mother above child), and no added elements, text, or identity-altering edits.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
