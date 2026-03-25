@@ -1,7 +1,24 @@
 ---
 name: the-post-workout-glow
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical handheld selfie of a young woman walking mid-motion on a quiet residential street, dressed in coordinated sporty attire with specific accessories, hair, and subtle natural makeup, captured in soft overcast daylight. It tightly controls composition, environment details, color palette, and camera feel while enforcing strict identity preservation and realistic texture/lighting, resulting in a natural, casual urban lifestyle portrait without stylization, reshaping, or added text.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
