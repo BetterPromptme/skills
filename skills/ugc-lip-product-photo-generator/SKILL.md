@@ -1,7 +1,24 @@
 ---
 name: ugc-lip-product-photo-generator
 description: This prompt instructs an image-generation/editing system to produce a premium, natural-light UGC-style beauty photo using one reference image to preserve the model’s exact identity and another reference image to accurately replicate and depict a specific lip product. The intended result is a realistic mid-application shot by a bright window, with minimal styling and a clean background, where the model remains fully recognizable and the lip color, finish, applicator, and packaging match the product reference precisely, while avoiding retouching, stylization, or any changes to facial features.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
