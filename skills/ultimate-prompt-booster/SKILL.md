@@ -1,7 +1,24 @@
 ---
 name: ultimate-prompt-booster
 description: This prompt instructs the AI to act as an expert prompt engineer who analyzes a user-supplied basic prompt to identify its intent, domain, audience, and goals, then designs three distinct enhancement strategies and produces exactly three substantially improved, highly structured “super-prompts” that include clear roles, guidelines, criteria, user-fillable placeholders, and explicit output formatting, delivered in a specified markdown structure.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
