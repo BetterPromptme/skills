@@ -1,7 +1,24 @@
 ---
 name: food-and-drink-grip-05x
 description: This prompt instructs the AI to generate a realistic, unedited-looking iPhone 0.5x ultra‑wide lifestyle photo by compositing the provided person and the provided dish/drink into a bright, natural café setting that matches the supplied style references. The result is a slightly top‑down wide‑angle shot where the seated subject leans forward and holds the exact dish/drink very close to the camera as the dominant foreground element, while preserving the person’s identity, natural skin texture, and true-to-source food appearance, with no added people, graphics, or unrealistic alterations.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
