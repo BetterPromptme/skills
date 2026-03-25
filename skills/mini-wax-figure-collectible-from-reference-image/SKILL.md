@@ -1,7 +1,24 @@
 ---
 name: mini-wax-figure-collectible-from-reference-image
 description: This prompt instructs the AI to act as a professional 3D product designer and generate a CAD- and manufacturing-oriented design specification for a hyper-realistic mini wax-figure collectible based on a provided reference image, including the figure’s pose, outfit, clear display stand, background scene, and a matching branded packaging box with a specified title and logo. The expected outcome is a prototype-ready, manufacturable 3D product concept with defined geometry deliverables, materials, tolerances, assembly/manufacturing constraints, and rationale/tradeoffs, alongside guidance for producing high-resolution product-photography style renders; if required dimensions or manufacturing targets are missing, the AI must request exact specifications or defer to engineering/testing.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
