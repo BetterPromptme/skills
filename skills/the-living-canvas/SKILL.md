@@ -1,7 +1,24 @@
 ---
 name: the-living-canvas
 description: This prompt instructs the AI to generate a photorealistic contemporary art gallery scene that preserves the exact likeness of the person from an input portrait, showing them standing full-body in front of a large, expressive oil-painted version of themselves mounted on a solid red gallery wall. It specifies strict identity consistency between the live subject and the painted portrait (including matching hair and clothing), along with minimalist gallery lighting, subdued painterly aesthetics, and a quiet contemplative mood, producing a high-detail cinematic composition with visible brush texture and no added text, logos, or watermarks.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
