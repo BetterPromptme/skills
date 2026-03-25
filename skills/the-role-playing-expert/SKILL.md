@@ -1,7 +1,24 @@
 ---
 name: the-role-playing-expert
 description: This prompt instructs the AI to adopt a specified professional persona and deliver an expert-quality output for a defined goal, using provided context and tailored to a particular audience. It requires the response to explicitly state the assumed role up front, apply domain-appropriate reasoning, and, when details are missing, make clear assumptions rather than guessing. It also sets guardrails to keep the output professional and in-scope, avoiding unsupported claims, irrelevant content, and regulated advice unless explicitly requested.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
