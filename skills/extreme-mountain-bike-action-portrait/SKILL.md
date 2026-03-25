@@ -1,7 +1,24 @@
 ---
 name: extreme-mountain-bike-action-portrait
 description: This prompt directs an AI image editor to use an uploaded portrait as the identity source and generate an ultra-photorealistic, cinematic action photograph of that same person mid-air on a mountain bike high jump in a sunlit forest. It specifies an extreme low (frog-eye) camera angle with oversized, highly detailed tires in the foreground, warm afternoon lighting, sharp 8K DSLR realism, and a wide 4:3 landscape composition, while enforcing strict constraints to preserve the subject’s facial identity and proportions and to avoid stylization, distortions, text, or unrelated elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
