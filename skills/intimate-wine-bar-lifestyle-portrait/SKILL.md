@@ -1,7 +1,24 @@
 ---
 name: intimate-wine-bar-lifestyle-portrait
 description: This prompt instructs an image-generation workflow to recreate a photorealistic, warm, intimate evening restaurant portrait using a provided face reference, keeping the subject’s identity and natural skin texture unchanged while placing her in a cozy wine-bar setting with specific pose, outfit, jewelry, and props. It defines the desired composition (medium close-up, shallow depth of field), environment details (Edison bulbs, greenery, wooden blinds, blurred diners), and lighting/camera feel (soft golden ambient light, realistic color and texture, no stylized grading), so the resulting image reads like an authentic candid lifestyle photo focused sharply on her face and raised glass of red wine.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
