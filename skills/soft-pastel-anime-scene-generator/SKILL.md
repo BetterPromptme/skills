@@ -1,7 +1,24 @@
 ---
 name: soft-pastel-anime-scene-generator
 description: This prompt instructs an image model to generate a 2D animated-style illustration of a specified subject in a fluid, anime-inspired watercolor aesthetic, emphasizing soft linework, delicate motion cues, and a dreamy, weightless mood. It also guides the creation of a harmonious background using the provided setting and two chosen colors blended gently to add emotional depth and cohesive visual balance.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
