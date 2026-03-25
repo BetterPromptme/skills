@@ -1,7 +1,24 @@
 ---
 name: lessons-learned-from-a-similar-startup
 description: This prompt asks the AI to role‑play as an experienced founder who has already built a similar company in your chosen business sector, scale ambition, and target audience, and to deliver five high‑impact lessons drawn from real‑world execution. The output is a concise set of founder insights that explicitly covers major mistakes to avoid, decisions that worked well, and actionable advice the founder would give their earlier self when starting over, tailored to the specified market and growth goals.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
