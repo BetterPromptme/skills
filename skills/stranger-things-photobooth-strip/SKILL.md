@@ -1,7 +1,24 @@
 ---
 name: stranger-things-photobooth-strip
 description: This prompt instructs an image model to generate a realistic 4-frame, 2×2 photobooth strip on a white canvas in an authentic 1980s film aesthetic, using the provided reference image to keep the subject’s identity strictly unchanged (face, hair, glasses, skin texture, body shape) and gender-neutral. It specifies a constant “alphabet wall” living-room background with Christmas lights, requires the subject to wear a Hellfire Club raglan shirt, and defines distinct poses and Stranger Things-themed props for each frame, while enforcing strict negatives to prevent any stylization, beautification, layout changes, or identity alteration.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
