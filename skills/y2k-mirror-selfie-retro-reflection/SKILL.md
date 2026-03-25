@@ -1,7 +1,24 @@
 ---
 name: y2k-mirror-selfie-retro-reflection
 description: This prompt instructs an image generator to produce a hyper-realistic, early-2000s Y2K editorial-style mirror selfie set in a cozy nighttime bedroom, composed through a large red circular mirror with subtle fish-eye curvature. It specifies the subject’s pose, expression, outfit, accessories, and a detailed set dressing (bed, collage wall, disco ball, clothes rack), along with warm cinematic lighting, a defined color palette, and strict realism constraints (accurate anatomy, crisp reflection, no text/logos or artificial effects). The intended outcome is a polished, nostalgic, magazine-like portrait that feels playful and intimate while remaining grounded in natural photographic behavior.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
