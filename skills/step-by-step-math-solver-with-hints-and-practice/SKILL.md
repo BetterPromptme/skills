@@ -1,7 +1,24 @@
 ---
 name: step-by-step-math-solver-with-hints-and-practice
 description: This prompt instructs the AI to act as a patient math tutor and solution checker by taking a user-specified math context (subject, topic, audience, language, notation) and a fully defined problem (statement, data, constraints, goal) and producing a structured, step-by-step solution with formulas, brief justifications, intermediate results, domain checks, and a final verified answer. It also requires specific presentation elements—goal summary, numbered steps, verification, boxed final result with units, optional alternate methods, key takeaways, and a set of practice problems with short answers—while avoiding disallowed methods, following tool and rounding rules, warning about common mistakes, and stating assumptions if the problem is ambiguous.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
