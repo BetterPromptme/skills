@@ -1,7 +1,24 @@
 ---
 name: eternitys-checkmate
 description: This prompt instructs an image model to create an epic, cinematic digital artwork of a surreal cosmic chessboard at the instant of checkmate, featuring a radiant cracked king and exploding pieces turning into constellations amid nebula clouds and dramatic blue‑gold lighting. The key outcome is a hooded, galaxy-forged reaper figure whose face is identity-locked to match the uploaded selfie with realistic proportions and recognizable features, while their body, hood, and reaching hand transform into starfields, dust, and constellation-like light trails. It also enforces strict realism constraints to prevent facial distortion, duplicate faces, or anatomical errors (like extra fingers) while maintaining ultra-detailed, HDR, wide-angle, masterpiece-level rendering.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
