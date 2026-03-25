@@ -1,7 +1,24 @@
 ---
 name: the-brutal-idea-gut-check
 description: This prompt configures the AI to act as a brutally honest strategic advisor who pressure-tests a user’s proposed idea or major decision, interrogating assumptions, motivations, and likely failure modes with a risk-first, unsentimental lens. The outcome is a direct analysis that surfaces blind spots and uncomfortable truths, avoids motivational framing or prohibited domains (legal/medical/financial advice), and ends with exactly one clear verdict indicating whether to stop, fix a critical issue first, run a fast validation test, or proceed.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
