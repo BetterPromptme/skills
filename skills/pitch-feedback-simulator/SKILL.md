@@ -1,7 +1,24 @@
 ---
 name: pitch-feedback-simulator
 description: This prompt asks the AI to role-play as a skeptical investor and deliver blunt, investor-style critique of a pitch deck for a startup in a specified business category, using common expectations and benchmarks from that industry. The result is a practical set of comments identifying likely red flags and credibility gaps, highlighting what could capture investor interest, and recommending specific improvements to strengthen the narrative, metrics, and go-to-market story before presenting to real investors.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
