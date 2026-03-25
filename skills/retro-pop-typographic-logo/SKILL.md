@@ -1,7 +1,24 @@
 ---
 name: retro-pop-typographic-logo
 description: This prompt instructs the AI to generate a single, polished, vector-style retro typographic word logo in a strict 1970s pop-art bubble-letter aesthetic, where the provided main text is warped and integrated so the letters themselves form a recognizable specified silhouette, rendered in a flat solid chosen color with a very subtle rim glow, centered on a transparent background with no extra elements, textures, gradients, shadows, or 3D effects.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
