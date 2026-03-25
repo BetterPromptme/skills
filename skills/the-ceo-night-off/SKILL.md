@@ -1,7 +1,24 @@
 ---
 name: the-ceo-night-off
 description: This prompt instructs an image-generation model to produce a high-resolution, photorealistic vertical nighttime interior portrait of a young woman seated on a beige sofa in a modern apartment, styled in refined evening fashion and framed against large windows showing a glowing city skyline. It specifies precise composition, pose, wardrobe, accessories, lighting balance, color palette, and camera feel to achieve a quiet-luxury editorial aesthetic, while enforcing strict guardrails that preserve the subject’s natural facial identity and realistic texture without beauty filters, text overlays, or distortions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
