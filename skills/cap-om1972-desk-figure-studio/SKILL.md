@@ -1,7 +1,24 @@
 ---
 name: cap-om1972-desk-figure-studio
 description: This prompt instructs an image-generation/editing system to create a realistic 1/7 scale commercial figure based on the user’s uploaded portrait, placing the unhelmeted, face-accurate Captain America–costumed figure on a computer desk atop a clear round acrylic base labeled “CAP OM1972,” with an iMac displaying a Blender modeling workflow of the same figure and a nearby Captain America–themed toy packaging box featuring original artwork and an included shield element.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
