@@ -1,7 +1,24 @@
 ---
 name: midnight-floral-window-cinema
 description: This prompt directs an image model to generate an editorial, vintage-cinematic photograph of a person in the back seat of an old car, framed from outside through an open window, with a bouquet of pastel flowers spilling toward the viewer. It specifies the subject’s pose and subdued expression, detailed environment cues (worn vintage interior, deep muted tones), and a film-inspired visual treatment (soft natural light with subtle flash, Portra-like color, 35mm perspective, gentle grain). The intended outcome is a realistic, intimate fashion-style image that matches the original input subject’s identity and appearance while adding the described composition, lighting, and mood.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
