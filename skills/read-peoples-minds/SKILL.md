@@ -1,7 +1,24 @@
 ---
 name: read-peoples-minds
 description: This prompt instructs the AI to act as a nonverbal communication and emotional intelligence coach who interprets everyday people’s behaviors by explaining likely psychological intent, overlooked body-language cues and subtle “energy” shifts, and ways to notice them in real time. It asks for contextual examples of signals and what they typically mean, guidance on the hidden motivations behind the behavior and what the other person may want, plus recommended responses or actions to take. It also requests a brief mindfulness exercise to improve conversational attunement, with optional tailoring to offline vs. online interactions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
