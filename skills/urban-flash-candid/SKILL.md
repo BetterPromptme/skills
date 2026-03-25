@@ -1,7 +1,24 @@
 ---
 name: urban-flash-candid
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical waist-up nighttime street portrait of a specific young woman in a lively neon-lit downtown setting, captured with a strong on-camera flash and shallow depth of field. It tightly defines the subject’s unchanged facial identity, pose, expression, outfit, accessories, and a bright blue iced drink prop, while specifying background elements like blurred pedestrians, storefronts, traffic lights, and warm streetlighting with neon accents. The intended outcome is a sharp, candid-feeling urban nightlife photograph with realistic skin texture and lighting, energetic atmosphere, and controlled motion blur confined to the background.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
