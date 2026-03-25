@@ -1,7 +1,24 @@
 ---
 name: write-a-professional-email
 description: This prompt instructs the AI to draft a concise, polished business email addressed to a specified recipient about a given topic, following strict formatting, length, and style constraints. The result is a ready-to-send email with an appropriate subject line, a brief body in a limited number of sentences, a clear next step when relevant, and a professional closing, while avoiding invented details, excessive questions, jargon, and any extra commentary.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
