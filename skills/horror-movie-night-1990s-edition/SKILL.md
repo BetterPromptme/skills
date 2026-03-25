@@ -1,7 +1,24 @@
 ---
 name: horror-movie-night-1990s-edition
 description: This prompt instructs the AI to use the provided person’s reference photo to create a grainy, analog-looking 1990s horror-cinema portrait set in a dim movie theater, with the subject seated beside Ghostface while clearly sharing a popcorn bucket and reacting wide-eyed to the screen. It specifies wardrobe and makeup inputs, arranges multiple rows of iconic horror characters in the background for depth, and enforces constraints such as preserving the subject’s facial features, maintaining realistic screen-lit lighting and proportions, and avoiding modern additions, gore, or disturbing violence—resulting in a nostalgic, playful, cinematic still with authentic retro film texture.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
