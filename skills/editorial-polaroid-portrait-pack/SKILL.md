@@ -1,7 +1,24 @@
 ---
 name: editorial-polaroid-portrait-pack
 description: This prompt instructs an image-generation system to produce a photorealistic, top-down fashion/editorial flat-lay still life featuring a casual collage of six overlapping white-bordered instant photos on a cream textured fabric backdrop, accented with lipstick kiss marks. It specifies strict identity consistency so the same woman appears naturally and unchanged across all Polaroids, while detailing her hair, makeup, outfit, jewelry, and a distinct set of playful expressions and poses for each photo. The expected outcome is a high-resolution, evenly lit, clean, unbranded composition with sharp tactile fabric and film-border detail, cohesive neutral color styling, and an intimate, youthful editorial mood.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
