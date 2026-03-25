@@ -1,7 +1,24 @@
 ---
 name: image-to-film-color-simulation
 description: This prompt directs an AI to take a standard digital photograph and apply an authentic, stock-specific film emulation—replicating the chosen film’s color palette, contrast curve, grain structure, and characteristic effects (e.g., halation or vignette) while keeping the image’s original size, composition, and subject detail intact. The outcome is a high-resolution, editorial-grade film-styled image that looks like it was shot on the selected analog stock, optionally with a film border, without resorting to generic retro filtering or altering identity-critical features.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
