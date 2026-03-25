@@ -1,7 +1,24 @@
 ---
 name: startup-market-research-strategy-generator
 description: This prompt instructs the AI to act as a market research analyst and produce a structured, end-to-end market analysis for a startup using the provided industry, region, customer segment, offering, stage, and research goal as inputs. The expected outcome is a report covering market size and growth, trends and drivers, customer needs and barriers, competitive dynamics, opportunity areas, risks and regulatory hurdles, region-specific adoption factors, and a 3–5 year outlook, concluding with a clear judgment on whether the market represents a strong opportunity for the startup given its stage and objectives.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
