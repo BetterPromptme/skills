@@ -1,7 +1,24 @@
 ---
 name: prismatic-bioluminescent-fusion-series
 description: This prompt instructs an image-generation model to depict a prismatic, bioluminescent interpretation of a specified subject, combining organic, flowing translucent forms with holographic light effects. The result is a visually dynamic scene where undulating structures glow with rhythmic accents in two chosen colors, creating a futuristic, luminous fusion aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
