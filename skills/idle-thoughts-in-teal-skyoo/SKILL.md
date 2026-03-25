@@ -1,7 +1,24 @@
 ---
 name: idle-thoughts-in-teal-skyoo
 description: This prompt instructs an image-generation or editing system to create a vertical, low-angle portrait based on a provided reference photo, specifying the subject’s pose, mood, clothing, and placement atop a teal lifeguard stand against a wide, bright blue sky. The expected outcome is a vivid, daylight-lit, retro-cinematic photograph with strong color contrast and a melancholic, contemplative feel, emphasizing height and open sky in the composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
