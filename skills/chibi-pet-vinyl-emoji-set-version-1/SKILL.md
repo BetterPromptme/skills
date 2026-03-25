@@ -1,7 +1,24 @@
 ---
 name: chibi-pet-vinyl-emoji-set-version-1
 description: This prompt instructs an image-generation workflow to create a cohesive pack of nine polished, 3D-rendered digital stickers depicting a chibi-style vinyl capsule toy version of a specific real pet based on an uploaded reference photo, preserving the pet’s exact identifying traits while translating them into a smooth collectible-toy aesthetic. The result is a modern, consistent 2025-style “pet emoji” sticker set on a clean background, with each sticker showing a different specified facial expression and maintaining uniform lighting, materials, and toy proportions for easy cropping and pack-wide visual cohesion.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
