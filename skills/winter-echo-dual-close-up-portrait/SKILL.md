@@ -1,7 +1,24 @@
 ---
 name: winter-echo-dual-close-up-portrait
 description: This prompt instructs an AI image generator to produce an 8K, photorealistic two-frame vertical winter portrait featuring the same young woman as in a provided reference, preserving her exact facial identity and realism. It specifies a snow-filled outdoor setting, tight close-up compositions with slight angle changes between the upper and lower frames, detailed wardrobe elements (white over-ear headphones, black scarf, black gloves), subtle expression shifts, and soft overcast daylight for a cool cinematic look. The intended outcome is a cohesive dual-portrait set with visible snowfall textures and natural skin tone, delivering intimate, emotionally quiet winter imagery without altering or beautifying the subject’s face.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
