@@ -1,7 +1,24 @@
 ---
 name: timeless-kisses-vintage-photo-booth-romance
 description: This prompt instructs an AI image generator to produce an 8K, ultra-realistic vintage photo booth strip consisting of three vertically stacked, sepia-toned frames depicting a couple’s evolving affectionate moments—playful cheek kiss, joyful hug, and passionate kiss—shot from a fixed booth-like camera angle with consistent warm lighting, subtle film grain, and soft vignette for nostalgic authenticity, while strictly preserving the woman’s exact facial identity, skin tone, and proportions from a provided reference image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
