@@ -1,7 +1,24 @@
 ---
 name: galactic-geometric-tide-visualizer
 description: This prompt directs the AI to generate a stylized visual depiction of a chosen subject within an abstract “Galactic Geometric Tide” theme, combining flowing, wave-like arcs with crisp triangular geometry. The result is a cosmic-yet-liquid composition rendered in luminous gradients of two specified colors, creating an image that blends solid structure with fluid motion.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
