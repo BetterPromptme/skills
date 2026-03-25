@@ -1,7 +1,24 @@
 ---
 name: cozy-christmas-selfie
 description: This prompt instructs an image model to generate a vertical, three-panel Christmas-themed selfie portrait featuring the same subject in all panels, with consistent cozy indoor lighting and a festive background of decorated trees and gifts. It specifies arm’s-length, medium close-up framing and three slightly different casual poses and expressions to create candid holiday variety while keeping the overall look warm and authentic. The key outcome is a cohesive triptych that preserves the subject’s identity exactly—maintaining natural facial features, skin texture, hair, age, and gender expression—without any beautification or stylized alteration.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
