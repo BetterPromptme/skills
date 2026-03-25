@@ -1,7 +1,24 @@
 ---
 name: contemporary-crayon-art
 description: This prompt instructs an image generator to create an expressive oil pastel-style sketch featuring a specified subject, using bold linework and saturated smudged colors drawn from three chosen hues on a rough paper texture. The resulting artwork should emphasize exaggerated expression and energetic, chaotic vibrancy, and it should be presented as if displayed in a gallery—framed with taped corners for an exhibited, wall-mounted look.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
