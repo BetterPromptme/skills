@@ -1,7 +1,24 @@
 ---
 name: the-silent-harbor-portrait
 description: This prompt instructs an image model to generate a photorealistic, high-end editorial balcony portrait of a specific young woman while strictly preserving her facial identity and natural texture, staging her in a refined waterfront setting with a white railing, sheer curtains, and palm greenery overlooking a sailboat-filled harbor and distant skyline under dramatic overcast skies. It specifies vertical, eye-level medium-full framing, a poised leftward gaze and elegant posture, luxury styling with a metallic gold strapless midi dress and coordinated gold jewelry and clutch, and soft diffused daylight to balance subject and background. The expected outcome is a sharp, realistic luxury lifestyle image with accurate scale, natural depth of field, and a calm yet dramatic mood without artificial filters or facial reshaping.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
