@@ -1,7 +1,24 @@
 ---
 name: proposal-for-weset-english-center-ielts-event
 description: This prompt requests an event proposal for an offline IELTS-learning talkshow aimed at university students, outlining the objective, target audience, agenda and engagement plan, measurable goals, budget scope, task timeline with responsibilities, and agency deliverables (costing, risk management, and reporting). The result is a structured, ready-to-use talkshow proposal document that can be customized by filling in placeholders such as names, dates, university details, attendee numbers, and team roles.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
