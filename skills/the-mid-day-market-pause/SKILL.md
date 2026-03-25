@@ -1,7 +1,24 @@
 ---
 name: the-mid-day-market-pause
 description: This prompt instructs an image-generation workflow to produce a highly photorealistic, candid modern-office lifestyle portrait using a provided face reference, depicting a young woman stretching at her desk during a work break. It specifies exact framing, pose, outfit details, office environment props (including dual monitors with a readable trading chart and software dashboard), neutral fluorescent lighting, and a calm professional mood, while enforcing guardrails to preserve the subject’s facial identity, avoid beautification or stylized filters, and keep the scene realistic and grounded.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
