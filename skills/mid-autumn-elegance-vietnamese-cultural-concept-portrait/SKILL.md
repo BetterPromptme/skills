@@ -1,7 +1,24 @@
 ---
 name: mid-autumn-elegance-vietnamese-cultural-concept-portrait
 description: This prompt instructs an AI image generator to use an uploaded reference photo to create a full-body, photorealistic fine-art editorial portrait of the same young Vietnamese woman, preserving her exact facial identity and skin tone while placing her in an authentic Vietnamese Mid-Autumn Festival scene. It specifies wardrobe, pose, expression, hairstyle, props, background, and a cinematic lighting and color treatment, with adjustable variables for gown color, lighting mood, and camera angle. The intended result is an elegant, culturally accurate, high-resolution (8K/HDR) festival-themed portrait that looks like a professionally shot editorial photograph.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
