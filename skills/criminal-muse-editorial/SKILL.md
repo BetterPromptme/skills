@@ -1,7 +1,24 @@
 ---
 name: criminal-muse-editorial
 description: This prompt instructs an AI image system to edit a provided portrait into a hyperreal, mugshot-inspired high-fashion editorial image, keeping the subject’s identity completely unchanged (face shape, features, skin tone, hair, and natural texture) while changing the setting and styling. The output is a head-and-shoulders, eye-level lineup-style portrait against a height-chart wall with harsh on-camera flash, strong contrast and shadows, and rebellious luxury wardrobe/accessories, optionally including a small attitude prop, resulting in a crisp, magazine-quality fashion mugshot aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
