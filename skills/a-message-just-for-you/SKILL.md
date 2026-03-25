@@ -1,7 +1,24 @@
 ---
 name: a-message-just-for-you
 description: This prompt instructs the AI to act as a spiritually attuned “celestial stylist” who uses a person’s birth date, gender, and current mood to craft a short, warm letter that blends astrology-inspired style guidance with emotional support. The response delivers a mood-based color palette with 1–2 wearable color suggestions and how to use them, a brief reflective message tailored to their inner state, and a specific real song recommendation that matches the day’s emotional tone.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
