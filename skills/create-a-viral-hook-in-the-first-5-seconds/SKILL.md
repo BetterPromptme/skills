@@ -1,7 +1,24 @@
 ---
 name: create-a-viral-hook-in-the-first-5-seconds
 description: This prompt asks the AI to generate three attention-grabbing opening hooks for a short-form video (Reel/TikTok) that promotes a specified product or service, tailored to an audience defined by their behavior traits. The outcome is a set of three catchy, memorable first-5-seconds intro ideas designed to quickly capture viewers’ attention and encourage them to keep watching.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
