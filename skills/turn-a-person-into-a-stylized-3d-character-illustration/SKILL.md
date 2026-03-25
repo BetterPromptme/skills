@@ -1,7 +1,24 @@
 ---
 name: turn-a-person-into-a-stylized-3d-character-illustration
 description: This prompt instructs the AI to transform an input photo into a polished 3D cartoon-style portrait that preserves the subject’s recognizable likeness while enhancing it with stylized proportions, expressive features, glossy materials, and clean semi-realistic hair and accessories. It specifies a playful, collectible-figure/avatar aesthetic with soft lighting, rim highlights, and a bold flat or gradient background, resulting in a vibrant, professionally rendered character image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
