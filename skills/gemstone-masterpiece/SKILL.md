@@ -1,7 +1,24 @@
 ---
 name: gemstone-masterpiece
 description: This prompt instructs the AI to recreate a reference image as a photorealistic, ultra‑high‑resolution 3D render of a crystal/faceted gemstone object, using physically based ray‑traced studio lighting, sharp reflective facets, high clarity refraction, internal shimmer/dispersion, and optional gold/chrome edge accents. The expected outcome is a luxury jewelry‑style visualization matching the source image’s detected color and form while applying the specified rendering engine look and subtle post‑processing (glow, enhanced reflections, contrast boost).
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
