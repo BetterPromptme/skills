@@ -1,7 +1,24 @@
 ---
 name: starry-mosaic-transform
 description: This prompt instructs the AI to transform the provided image into a vibrant mosaic-style reinterpretation reminiscent of an expressive night-sky painting, preserving the original scene’s composition while replacing its look with swirling motion, bold contours, glowing stars, and richly textured strokes. The result is a dreamy, magical artwork featuring a star-filled sky, dynamic lighting, and colorful abstract tile-like details with a stained-glass or pointillist feel.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
