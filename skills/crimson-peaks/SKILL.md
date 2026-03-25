@@ -1,7 +1,24 @@
 ---
 name: crimson-peaks
 description: This prompt instructs an image model to generate a photorealistic, cinematic 4:5 full-body winter fashion portrait on a snowy alpine slope, keeping the subject’s face, hairstyle, and proportions identical to a provided reference while styling them in a glossy red fur-trimmed puffer jacket with matching ski accessories and crisp natural daylight; the outcome is an 8K editorial-quality image with realistic cold-weather details (breath vapor, wind, snow texture), cool-toned lighting, and a modern luxury-meets-adventure mood.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
