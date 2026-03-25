@@ -1,7 +1,24 @@
 ---
 name: viral-youtube-thumbnail-generator
 description: This prompt instructs an image-generation system to design a viral-style YouTube thumbnail in a 16:9 format using provided video-specific inputs (title, concept, character details, text, font, background, and lighting). The task is to create a scroll-stopping composition with the main character centered and highly expressive, bold readable text that doesn’t cover the face, dramatic high-contrast color and lighting, and a simplified background with optional cinematic effects. The outcome is a clickable, mobile-legible thumbnail optimized for strong emotional storytelling and clear visual hierarchy.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
