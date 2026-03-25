@@ -1,7 +1,24 @@
 ---
 name: market-size-estimator
 description: This prompt instructs the AI to act as a business analyst and produce a reasoned estimate of the Total Addressable Market, Serviceable Addressable Market, and Serviceable Obtainable Market for a specified product, industry, geography, and customer type. The expected outcome is a structured analysis that defines market boundaries, documents assumptions, walks through the calculation logic step by step, cites credible public data sources where possible, and summarizes key drivers and uncertainties in both a table and a brief narrative.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
