@@ -1,7 +1,24 @@
 ---
 name: suggest-healthy-recipes
 description: This prompt instructs the AI to act as a nutritionist and fitness expert to generate five easy, high-protein recipes tailored to a person’s age, gender, weight, diet type, and optional fitness goal and activity level. The expected result is a set of recipes that use common ingredients, comply with the specified dietary restrictions, and support the individual’s nutritional needs, each presented with a dish name, precise ingredient quantities, step-by-step instructions, prep and cook times, serving size, and per-serving nutrition facts with protein clearly emphasized, including at least one option that is meal-prep friendly or ready in under 20 minutes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
