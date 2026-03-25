@@ -1,7 +1,24 @@
 ---
 name: realistic-urban-street-portrait-with-playful-fisheye-angle
 description: This prompt instructs an AI image generator to use an uploaded portrait as an identity reference and produce a high-resolution, photorealistic, editorial-style street portrait at night, shot with a fisheye lens from a slightly high angle on a city sidewalk with motion-blurred traffic, cinematic color and contrast, and a specified outfit matched to the subject’s gender, while strictly preserving the person’s face, hairstyle, and proportions and avoiding any stylization, text, logos, extra people, or unwanted alterations.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
