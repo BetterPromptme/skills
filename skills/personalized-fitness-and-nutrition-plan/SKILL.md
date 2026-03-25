@@ -1,7 +1,24 @@
 ---
 name: personalized-fitness-and-nutrition-plan
 description: This prompt instructs the AI to act as a personal trainer and, using the user’s provided demographics, location, activity level, and goal details (including optional target weight, body fat percentage, preferred foods, and output language), calculate TDEE, set a daily calorie target, estimate the timeline to reach the goal, and produce a practical daily meal plan and exercise recommendations, along with key notes to help achieve the target safely and effectively.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
