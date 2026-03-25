@@ -1,7 +1,24 @@
 ---
 name: object-poster-transformation
 description: This prompt instructs the AI to take a user-supplied image of an object and redesign it into a polished, print-ready poster by applying the user’s chosen poster style, headline and subtext, color palette, and any requested design accents. It ensures the original object remains clearly recognizable and central, while guiding composition, lighting, typography hierarchy, and visual balance to achieve a cohesive, professional poster look. The outcome is a high-quality poster concept tailored to the user’s creative direction, with guardrails that prevent unwanted object replacement, distortions, or unrequested additions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
