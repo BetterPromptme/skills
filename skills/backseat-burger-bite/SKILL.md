@@ -1,7 +1,24 @@
 ---
 name: backseat-burger-bite
 description: This prompt instructs an image-generation model to produce a photorealistic, amateur iPhone-style candid photo taken from a car’s backseat, showing the referenced person mid-bite into a large burger wrapped in white paper with red lettering. It specifies composition (tilted, off-center, mid-close framing), environment details (softly blurred dashboard/infotainment), natural daylight lighting, muted iPhone-like color and texture (including visible pores and mild noise), and wardrobe/accessory options by gender, with the outcome being an unfiltered, spontaneous snapshot that preserves the subject’s exact identity and realistic skin detail.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
