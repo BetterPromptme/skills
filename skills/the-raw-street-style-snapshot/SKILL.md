@@ -1,7 +1,24 @@
 ---
 name: the-raw-street-style-snapshot
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical nighttime selfie portrait of a young woman beside an open car door on a busy, holiday-lit downtown street, specifying precise framing, pose, outfit, lighting, color palette, and background street activity to create an energetic festive nightlife mood while enforcing strict constraints to preserve the subject’s natural facial identity, proportions, skin texture, and realistic exposure.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
