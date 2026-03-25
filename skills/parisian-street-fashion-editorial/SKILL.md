@@ -1,7 +1,24 @@
 ---
 name: parisian-street-fashion-editorial
 description: This prompt instructs an AI image generator to produce a full-body, cinematic street-style fashion editorial photo of a specific woman, preserving her exact facial identity and original hair color while precisely replicating a one-leg balance pose with windswept hair and a defined luxury outfit. It specifies an upscale Parisian crosswalk setting in front of a black-and-gold café with visible warm interior details and a motion-blurred pedestrian, under crisp daylight with soft shadows and a film-plus-digital editorial finish. The intended outcome is a realistic, high-fashion image with no deviations in pose, styling, proportions, or accessories and no beautification or additional props.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
