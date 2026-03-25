@@ -1,7 +1,24 @@
 ---
 name: blooming-train-vintage-boho-portrait
 description: This prompt instructs an AI image generator to produce an ultra-high-resolution, photorealistic fine-art cinematic portrait of a Korean woman seated in a flower-overgrown vintage train carriage, specifying composition, lighting, styling, color palette, mood, and camera settings to achieve a warm, nostalgic, dreamlike spring aesthetic while preserving the subject’s exact likeness from a reference photo.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
