@@ -1,7 +1,24 @@
 ---
 name: taylor-swift-the-life-of-a-showgirl-poster-transformation
 description: This prompt instructs the AI to create a photorealistic, cinematic luxury album-style poster that closely matches a specific “The Life of a Showgirl” reference in composition, pose, water-bath environment, lighting, color grade, jeweled styling, and glittery serif typography layout, while replacing the original subject with the user by preserving the user’s facial identity and expression and adapting the outfit concept appropriately for gender; the result is a high-end editorial poster featuring the user in the same framed, underwater-glow aesthetic with identical text placement and overall mood.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
