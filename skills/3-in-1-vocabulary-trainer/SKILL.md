@@ -1,7 +1,24 @@
 ---
 name: 3-in-1-vocabulary-trainer
 description: This prompt instructs the AI to create a curated list of exactly 80 vocabulary words in a specified target language centered on a given topic, organized into subtopics. The result is delivered as readable Markdown tables with six columns covering the word, a beginner-friendly phonetic transcription, a pronunciation guide, meanings in Vietnamese and English, and a trilingual example sentence for each entry.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
