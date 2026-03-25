@@ -1,7 +1,24 @@
 ---
 name: trainyard-scene
 description: This prompt specifies a cinematic, photochemically inspired video scene on an urban commuter platform at dawn, detailing camera behavior, lens and filtration choices, color grade, lighting, atmosphere, sound design, and a two-part shot progression, with placeholders for subject, extras, and props. The outcome is a tightly art-directed, realistic-feeling sequence featuring an arriving train in misty morning light, culminating in an intimate character moment and a defined “poster frame” for finishing and delivery.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
