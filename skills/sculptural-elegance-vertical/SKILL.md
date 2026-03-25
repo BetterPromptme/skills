@@ -1,7 +1,24 @@
 ---
 name: sculptural-elegance-vertical
 description: This prompt instructs an AI image generator to create a vertical 1080×1920 cinematic portrait that preserves the subject’s facial identity while styling them in a black blazer under stark, high-contrast lighting. It guides the composition by specifying a camera angle, a focal emphasis, an intended mood or theme, and a bold background color to heighten contrast with luminous skin and dark clothing. It also defines the subject’s facial expression, resulting in a dramatic, tightly art-directed portrait with consistent features and a clear visual tone.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
