@@ -1,7 +1,24 @@
 ---
 name: ultra-deep-thinking-mode-prompt
 description: This prompt instructs an AI to tackle a user-specified task with an unusually rigorous, structured process: first decomposing the problem into subtasks, then exploring multiple angles for each, actively challenging assumptions, and repeatedly validating conclusions through independent cross-checks and alternative methods. The intended outcome is a thoroughly scrutinized, well-documented solution that highlights uncertainties, potential pitfalls, and verification steps, culminating in a final end-to-end re-evaluation before presenting the result.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
