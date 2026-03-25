@@ -1,7 +1,24 @@
 ---
 name: jedi-om1972-desk-figure-studio
 description: This prompt instructs an AI to create a realistic, commercial-grade 1/7 scale figure concept based on the user’s uploaded likeness, staged on a computer desk atop a clear circular acrylic base labeled “JEDI OM1972,” dressed in classic Jedi robes and holding a glowing blue lightsaber. It also specifies a scene composition that includes an iMac displaying the Blender modeling workflow for the figure and a Star Wars–inspired toy-style packaging box with original Jedi-themed artwork placed beside the monitor, resulting in a cohesive product-style render or design visualization.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
