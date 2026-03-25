@@ -1,7 +1,24 @@
 ---
 name: 3d-cartoon-render
 description: This prompt directs an image-generation model to create a high-quality 3D cartoon portrait of a thoughtful young boy in a pondering pose, specifying key facial features, hairstyle, clothing textures, lighting, background, and a polished cinematic “Pixar-like” aesthetic, along with rendering and aspect-ratio settings to produce a detailed vertical render.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
