@@ -1,7 +1,24 @@
 ---
 name: personal-schedule-assistant
 description: This prompt gathers your profession, fixed work hours and workdays, days off, and the additional commitments you want to prioritize (a personal project, a subject you’re studying, and preferred entertainment). Using those details, it enables an AI to generate a balanced weekly time plan that fits around your work schedule and intentionally allocates dedicated blocks for each goal and leisure activity, especially leveraging your days off.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
