@@ -1,7 +1,24 @@
 ---
 name: crochet-doll-style
 description: This prompt directs an image generator to create a crochet doll-style depiction of a chosen subject with soft yarn textures and detailed handcrafted features. It specifies bright and secondary clothing colors, includes a small handheld prop, and places the figure in a cozy setting with a warm, muted mood to produce a charming, nostalgic scene.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
