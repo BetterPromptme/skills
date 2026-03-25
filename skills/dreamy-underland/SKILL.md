@@ -1,7 +1,24 @@
 ---
 name: dreamy-underland
 description: This prompt directs an image-generation workflow to produce a vertical, low-angle, medium-shot cinematic fashion editorial portrait that keeps the subject’s facial identity completely unchanged while transforming the setting into a refined Alice-in-Wonderland–inspired field scene. It specifies luxury couture styling (a light-blue tulle gown and wind-swept hair with a blue tie), golden-hour side lighting, shallow depth-of-field foreground blur, and key whimsical details like a tuxedoed rabbit holding a clock and subtly integrated playing cards, resulting in a romantic, dreamy, Vogue-level fantasy photograph without distortions, retouching, or dark elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
