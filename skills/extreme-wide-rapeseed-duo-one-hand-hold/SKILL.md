@@ -1,7 +1,24 @@
 ---
 name: extreme-wide-rapeseed-duo-one-hand-hold
 description: This prompt instructs an image-generation system to produce a high-resolution, photoreal extreme-wide establishing shot of two referenced individuals centered in a vast yellow rapeseed field, front-facing, with strict one-hand-only downward handholding and all other hands relaxed, while enforcing near-perfect preservation of each person’s identity, gender expression, facial features, hair, and skin tone from the provided reference images. The intended outcome is a calm, romantic, golden-hour scene with precise composition, camera and background constraints, and automatic rejection or retry rules if similarity, gender confidence, framing, hand-contact count, or prohibited elements (e.g., text/logos or specified banned objects) deviate from the requirements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
