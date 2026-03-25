@@ -1,7 +1,24 @@
 ---
 name: hand-drawn-outdoor-chalkboard-menu-european-cafe-style
 description: This prompt instructs an image generator to create a high-resolution, hand-drawn chalkboard menu on a wooden A-frame sidewalk sign in an outdoor café setting, featuring user-provided menu items and a specified handwriting style, enhanced with small chalk illustrations and optional quote text. The result is a realistic chalkboard-art scene with soft natural lighting, shallow depth of field, and a subtle vignette, composed in either a 4:5 or 1:1 format.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
