@@ -1,7 +1,24 @@
 ---
 name: content-video-script-fixer
 description: This prompt instructs the AI to act as a strict, detail-focused marketing manager who reviews a provided video script against a specified topic and explicit video requirements, then delivers a structured, evidence-based critique. The outcome is a blunt but constructive assessment that pinpoints what meets the requirements, what fails or weakens conversion impact, why those issues matter, and exactly how to improve clarity, engagement, and marketing effectiveness—without rewriting the full script unless requested.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
