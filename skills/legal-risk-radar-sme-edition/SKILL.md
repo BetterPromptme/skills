@@ -1,7 +1,24 @@
 ---
 name: legal-risk-radar-sme-edition
 description: This prompt instructs the AI to act as a senior commercial-law and compliance advisor for a specified country and industry, and to produce a plain-language, SME-focused assessment of the ten most important legal risk areas. The expected outcome is a professional table that concisely explains each risk, provides a practical local-context example, outlines potential business impacts, and suggests basic, cost-effective mitigation steps, while flagging one or two high-priority items for immediate attention. It also requires a brief closing summary that distills the analysis into three quick first actions a small business owner should take.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
