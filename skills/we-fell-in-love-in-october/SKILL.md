@@ -1,7 +1,24 @@
 ---
 name: we-fell-in-love-in-october
 description: This prompt instructs an image-generation/editing system to turn an input portrait into a photorealistic, dreamy Scandinavian-autumn film still with a specific nostalgic mood, while keeping the subject’s facial identity and expression exactly unchanged. It specifies the exact pose, environment, composition, color palette, lighting, depth of field, and analog-film artifacts to emulate, and it explicitly forbids common unwanted additions or stylistic deviations. The intended outcome is a square, overhead, leaf-strewn autumn portrait that looks like a cinematic poster frame with natural grain, soft haze, and authentic fabric and texture detail.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
