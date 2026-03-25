@@ -1,7 +1,24 @@
 ---
 name: 90s-minimalist-editorial
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic, vertically framed indoor fashion portrait of a young woman posed centered before a dark wooden door, with specified hair, makeup, outfit, accessories, and body language, in warm, softly dim cinematic lighting. The expected outcome is a clean, minimal, elegant three-quarter portrait with realistic skin texture and lighting, strong subject-to-background separation, accurate interior details (door panels, brass hardware, neutral wall edge), and strict preservation of the subject’s facial identity without reshaping or beautification effects.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
