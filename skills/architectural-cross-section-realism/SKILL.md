@@ -1,7 +1,24 @@
 ---
 name: architectural-cross-section-realism
 description: This prompt instructs an image model to generate a hyper-realistic poster in a specified aspect ratio showing a highly detailed 3D square isometric diorama of a chosen city as a miniature, including its iconic landmarks, placed on a terrain block with a visible geological cross-section (soil, water, rock) beneath a grassy surface. It specifies cinematic lighting, subtle depth of field, and vibrant but natural color grading to make the scene look like a meticulously crafted physical display, all presented on a clean white background for a striking, immersive result.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
