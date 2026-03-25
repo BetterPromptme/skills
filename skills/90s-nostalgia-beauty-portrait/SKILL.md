@@ -1,7 +1,24 @@
 ---
 name: 90s-nostalgia-beauty-portrait
 description: This prompt instructs an AI image generator to produce an intimate, face-dominant close-up selfie with a warm 1990s flash-camera look—soft grain, slight nostalgic glow, and minimal background—while strictly preserving the subject’s exact facial identity and natural skin texture. It specifies the pose, angle, expression, hair, makeup, jewelry, outfit, and lighting to achieve a dreamy, doll-like beauty portrait outcome without any facial reshaping, smoothing, or modern beauty filtering.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
