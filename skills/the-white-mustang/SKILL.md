@@ -1,7 +1,24 @@
 ---
 name: the-white-mustang
 description: This prompt instructs an image-generation model to produce a photorealistic, 1970s-inspired cinematic portrait of a specific woman, keeping her face, hair, proportions, and skin tone identical to a provided reference while placing her in a golden-hour field scene leaning out of a classic silver coupe. It specifies wardrobe, pose, expression, lighting, lens/film characteristics, color grading, and vehicle/environment details to achieve a warm sepia, fashion-editorial mood of solitary vintage glamour, resulting in a high-resolution frame-like still with shallow depth of field, subtle film grain, and grounded realism.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
