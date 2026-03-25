@@ -1,7 +1,24 @@
 ---
 name: whimsical-windowsill-reverie
 description: This prompt instructs an image-generation system to depict a chosen subject seated on a windowsill, gazing out at a vivid sunset, and to render the scene in a whimsical, richly detailed anime aesthetic reminiscent of classic hand-drawn fantasy films. The expected result is a warm, cinematic illustration featuring soft lighting, expressive atmosphere, and carefully crafted environmental details that emphasize tranquility and wonder.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
