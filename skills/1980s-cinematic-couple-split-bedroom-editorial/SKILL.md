@@ -1,7 +1,24 @@
 ---
 name: 1980s-cinematic-couple-split-bedroom-editorial
 description: This prompt instructs an AI image editor to take an uploaded couple’s photo and recreate it as a hyper-photorealistic late-1980s split-room editorial portrait: the pair are separated by a wall yet emotionally connected via vintage rotary phones, with one side lit by cool natural daylight and the other by warm tungsten. It emphasizes exact facial preservation, realistic anatomy, authentic film-era camera/film characteristics and lighting (without artificial grading or stylized artifacts), and outputs a high-resolution vertical cinematic image suitable for editorial or concept use.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
