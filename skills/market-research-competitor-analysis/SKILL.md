@@ -1,7 +1,24 @@
 ---
 name: market-research-competitor-analysis
 description: This prompt instructs the AI to act as a seasoned market researcher and produce a comprehensive competitor analysis for a specified business concept in a specified location. The expected outcome is a detailed, current report that maps the competitive landscape, identifies key players, evaluates each competitor’s strengths and weaknesses (plus broader opportunities and threats), summarizes relevant market trends, and provides actionable strategic recommendations for positioning—grounded in a mix of primary-style inputs (e.g., surveys/interviews) and secondary data analysis.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
