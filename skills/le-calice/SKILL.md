@@ -1,7 +1,24 @@
 ---
 name: le-calice
 description: Ce prompt demande de générer une image ultra‑réaliste en 4K (16:9) d’un homme dont le visage doit rester parfaitement identique à celui de l’image fournie, intégré dans une scène de temple au trésor façon aventurier‑archéologue. Il précise sa tenue complète, sa pose (remplacer un calice doré par une pierre), l’environnement (portes monumentales, trésors poussiéreux, plantes, racines, stalactites et petits animaux), ainsi que le cadrage, la mise au point, la palette, l’éclairage en clair‑obscur et des contraintes négatives. Le résultat attendu est un plan moyen cinématographique, fortement texturé et contrasté, centré sur son visage concentré et le calice éclairé par un rayon de lumière, sans altérer le visage ni ajouter de nouvelles personnes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
