@@ -1,7 +1,24 @@
 ---
 name: beach-twilight-portrait
 description: This prompt instructs an AI image generator to produce an 8K, 4:5 vertical, hyper-realistic fashion portrait on a nearly dark beach just after sunset, using harsh on-camera flash to freeze a candid over-the-shoulder mid-turn moment while the horizon glows in purple-crimson tones. It specifies composition, environment details, wardrobe options by gender, color palette, grainy flash-photography aesthetics, and realistic lighting behavior to blend raw realism with glamour. The intended outcome is a cinematic, nostalgic flash-lit beach portrait where the subject’s identity and facial features match the provided reference exactly, without stylization or alteration.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
