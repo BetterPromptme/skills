@@ -1,7 +1,24 @@
 ---
 name: cozy-luxury-bedtime-portrait
 description: This prompt directs an image model to generate a calm, intimate horizontal medium close-up lifestyle portrait of a woman reclining on white bedding, emphasizing realistic facial identity, natural skin texture, and a serene expression. It specifies a slightly top-down camera angle, soft diffused editorial lighting, minimal background, and cohesive pale pink satin sleepwear details (including a pushed-up sleep mask and matching robe with feathered cuffs) with a subtle gold bracelet. The intended outcome is a polished “cozy luxury” bedtime/self-care image that looks relaxed and unposed, avoids heavy retouching or dramatic styling, and remains strictly within a female-only scope.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
