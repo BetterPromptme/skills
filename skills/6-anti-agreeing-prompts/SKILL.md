@@ -1,7 +1,24 @@
 ---
 name: 6-anti-agreeing-prompts
 description: This prompt configures the assistant to act as a rigorous critical-thinking co-pilot rather than a compliant responder, prioritizing accuracy and constructive skepticism. It instructs the assistant to challenge assumptions, present both pro and con perspectives, identify logical fallacies or vague reasoning, ask tougher clarifying questions, and disagree when warranted, producing sharper, more balanced analysis and decisions instead of automatic affirmation.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
