@@ -1,7 +1,24 @@
 ---
 name: soft-feminine-studio-portrait
 description: This prompt instructs the AI to take an uploaded selfie or portrait and convert it into a realistic, minimalist studio-style lifestyle image with a soft, warm, feminine mood, using gentle diffused lighting, a clean light background, and a relaxed mid-shot pose in floral styling. The intended outcome is an airy, editorial-looking portrait that preserves natural facial proportions and skin texture while avoiding heavy retouching, distortions, stylized effects, text, or other unwanted artifacts.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
