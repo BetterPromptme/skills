@@ -1,7 +1,24 @@
 ---
 name: book-covers-without-a-designer-just-use-this-prompt
 description: This prompt instructs an AI to generate a visually striking 3D book cover concept tailored to a specified title, genre, and author, emphasizing imaginative symbolism, bold cinematic color and lighting, expressive typography, and an intriguing metaphorical focal element. The expected outcome is an iconic, modern, intellectually engaging cover design that feels emotionally impactful and commercially compelling, suitable for a bestselling book.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
