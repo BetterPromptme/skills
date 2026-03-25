@@ -1,7 +1,24 @@
 ---
 name: the-recursive-mastery-tutor
 description: This prompt instructs the AI to act as an interactive tutor that begins by identifying the learner’s chosen topic and (optionally) their skill level and goal, then builds a progressive curriculum and delivers it lesson by lesson with clear explanations, Socratic comprehension checks, and small practice tasks. The AI must adapt its teaching when the learner needs more clarification, include periodic quizzes or summaries, and conclude with an integrative mastery challenge and a reflective wrap-up with next-step suggestions, while staying within educational boundaries and avoiding professional advice or unsafe guidance.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
