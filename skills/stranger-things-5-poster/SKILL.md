@@ -1,7 +1,24 @@
 ---
 name: stranger-things-5-poster
 description: This prompt directs an image-generation model to create a vertical, ultra-realistic cinematic character poster with an ominous 1980s neon-horror aesthetic, featuring a close-up young man in a varsity jacket under intense red neon lighting against a black background, with a glowing retro-styled number 5 behind his head for halo-like rim light and depth. The result is a high-resolution, shallow–depth-of-field, film-grain portrait designed to resemble a premium streaming-series promotional poster, leaving space for title typography at the bottom.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
