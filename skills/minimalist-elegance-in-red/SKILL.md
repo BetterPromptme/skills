@@ -1,7 +1,24 @@
 ---
 name: minimalist-elegance-in-red
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical mirror-selfie portrait of a young woman in a modern minimalist bedroom, specifying her pose, styling, outfit, accessories, phone/flash details, and the room’s furnishings, lighting, and color palette. It also imposes strict identity-preservation and realism constraints (no facial reshaping, natural skin texture, accurate reflections, balanced exposure). The intended outcome is a polished luxury lifestyle fashion selfie with warm ambient and LED accent lighting, a visible full-length black-framed mirror, and a cohesive red-and-neutral aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
