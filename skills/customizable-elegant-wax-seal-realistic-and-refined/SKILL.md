@@ -1,7 +1,24 @@
 ---
 name: customizable-elegant-wax-seal-realistic-and-refined
 description: This prompt instructs the AI to generate a photorealistic wax seal image that looks like a real stamped seal, featuring subtly imperfect edges, a gentle sheen, and natural lighting on a plain or neutral background. It reserves a central area for user-supplied custom content (such as a letter, logo, or icon), applies a user-selected wax color, and surrounds the center with classic ornamental flourishes to create a timeless, elegant result that reads as a real photograph rather than a digital render.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
