@@ -1,7 +1,24 @@
 ---
 name: dark-carnival-clown-cinematic-full-body-portrait
 description: This prompt instructs an AI image generator to create a cinematic, hyperrealistic full-body portrait of a person reimagined as a dark carnival clown, using a provided reference photo to preserve the subject’s identity while applying specified hairstyle, outfit, makeup, pose, and atmosphere. It defines a centered seated composition on a metal stool with a single red balloon, a gritty carnival-like backdrop with chaotic red markings and haze, and detailed camera/lighting parameters for shallow depth of field and mixed warm–cool cinematic contrast. The intended outcome is an editorial-quality, unsettling-yet-elegant image with sharp focus on the face and balloon, realistic textures, and no added text or branding.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
