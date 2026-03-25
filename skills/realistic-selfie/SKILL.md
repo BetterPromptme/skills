@@ -1,7 +1,24 @@
 ---
 name: realistic-selfie
 description: This prompt instructs an image model to generate an ultra-realistic, high-angle close-up selfie of a young woman in a dark room, using strong flash lighting to create dramatic contrast and a minimalist background. It specifies detailed attributes for hair, makeup, clothing, accessories, nails, pose, expression, mood, and camera aesthetics to achieve a cool-toned, cinematic film-noir look with sharp facial illumination and textured knit details as the final outcome.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
