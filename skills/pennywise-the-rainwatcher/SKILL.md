@@ -1,7 +1,24 @@
 ---
 name: pennywise-the-rainwatcher
 description: This prompt instructs an image model to generate a hyper-realistic, cinematic horror photograph in a rain-soaked park: a solitary person in a yellow raincoat sits on a wet bench lit by cold streetlight and phone glow, with a vivid red balloon hovering nearby and a blurred, ominous clown-like figure in the distant background. It specifies composition, lighting, color palette, depth of field, and mood to create quiet dread, while demanding strict identity fidelity to a provided reference face and keeping the background threat indistinct to maintain suspense.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
