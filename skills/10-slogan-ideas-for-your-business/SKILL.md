@@ -1,7 +1,24 @@
 ---
 name: 10-slogan-ideas-for-your-business
 description: This prompt instructs the AI to act as a poetic branding marketer and, using the provided brand details (name, industry, tone, target audience, and slogan objective), produce 10 original, elegant, emotionally resonant slogans tailored to the brand’s voice and audience, each followed by a concise one-sentence explanation of its intended meaning or emotional appeal.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
