@@ -1,7 +1,24 @@
 ---
 name: runway-seraph-studio-makeover
 description: This prompt instructs an image model to use an uploaded woman’s photo as the exact identity reference and transform it into a high-end, cinematic angel-themed fashion campaign portrait, preserving her real facial features, skin tone, and body proportions with natural beauty retouching. It specifies an editorial white corset look with lace details, thigh accent, platform heels, styled hair and makeup, plus large white feather wings in a clean high-key studio setting, with a confident three-quarter/full-body pose, flattering lens perspective, and glossy lighting; optionally, it adds a vertical screen displaying an alternate pose of the same woman. The intended outcome is a realistic photograph-like studio image (not illustrative), with soft depth shadows, subtle glow and grain, and clear constraints to avoid identity changes, explicit styling, or unwanted text/logos.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
