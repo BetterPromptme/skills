@@ -1,7 +1,24 @@
 ---
 name: keychain
 description: This prompt instructs an image generation/editing system to produce a high-resolution vertical portrait that preserves the subject’s exact real-world likeness while adding a physically plausible keychain in their hand featuring a small, stylized 3D cartoon version of the same person. The result should look like professional photography—natural skin texture, cinematic lighting, shallow depth of field, warm indoor background—while the mini figure reads as a toy-like 3D character with matching outfit and clear resemblance, integrated with consistent lighting, realistic metallic materials, and correct shadows, avoiding artifacts like distorted hands, mismatched identity, or watermarks.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
