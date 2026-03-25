@@ -1,7 +1,24 @@
 ---
 name: the-burning-sky
 description: This prompt instructs an AI to generate a dramatic fantasy battle scene dominated by a divine firestorm, specifying the core action (flaming torrents and serpentine strikes), the intended magical behavior, and detailed visual cues for lighting and texture. The expected outcome is a vividly rendered image or cinematic description with molten, branching flames, golden-crimson illumination, and a scorched battlefield environment shaped by intense, precise, all-consuming fire effects.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
