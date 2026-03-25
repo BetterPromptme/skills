@@ -1,7 +1,24 @@
 ---
 name: turn-a-childs-drawing-into-a-photorealistic-image-or-3d-render-that-looks-like-a-real-life-object
 description: This prompt instructs the AI to take a child’s drawing and convert it into a photorealistic image or realistic 3D render that preserves the drawing’s exact silhouette, proportions, line placements, and imperfections without any “fixing” or stylizing. The result should look like the imagined subject exists in the real world, with believable materials, natural lighting, shadows, and an appropriate environment or background, while keeping every original detail of the child’s design unchanged.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
