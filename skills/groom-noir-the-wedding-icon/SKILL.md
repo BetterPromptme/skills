@@ -1,7 +1,24 @@
 ---
 name: groom-noir-the-wedding-icon
 description: This prompt instructs an image-editing system to take an uploaded photo of a person and produce a fashion-editorial, full-body black-and-white wedding portrait that keeps the subject’s face and expression exactly the same while changing the outfit, pose, lighting, accessories, and background to depict a stylish groom in a high-contrast, retro film-grain studio/backstage setting, resulting in a polished magazine-style monochrome image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
