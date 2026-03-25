@@ -1,7 +1,24 @@
 ---
 name: cyber-preppy-girl
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic, waist-up studio fashion portrait of a young woman centered against a solid teal backdrop, styled with braided pigtails, specific makeup and accessories, and a playful pose involving a pink lollipop, lit with strong directional studio lighting and a soft wall shadow. It tightly constrains composition, wardrobe, color palette, and environment while enforcing strict identity preservation and natural skin texture, resulting in a clean, bold, editorial-style portrait with crisp detail and realistic lighting behavior.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
