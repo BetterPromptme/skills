@@ -1,7 +1,24 @@
 ---
 name: toxic-till-the-end-mv-behind-the-scene
 description: This prompt instructs an image-generation system to create an 8K, photorealistic, cinematic golden-hour outdoor portrait in a sunlit park, with the subject posed by a stone balustrade and the background softly blurred. It requires strict identity preservation from a reference image (face, hairstyle, proportions, and skin tone unchanged) and provides two wardrobe/pose variants (female or male) featuring a white polo with black trim, a peace-sign gesture, confident expression, warm directional lighting, shallow depth of field, and a vertical portrait composition for an editorial-style result.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
