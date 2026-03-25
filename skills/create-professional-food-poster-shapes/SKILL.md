@@ -1,7 +1,24 @@
 ---
 name: create-professional-food-poster-shapes
 description: This prompt instructs an image model to generate a studio-style food photograph depicting a deconstructed “explosion” of a specified dish, with the listed ingredients suspended midair in a dynamic, fresh, appetizing composition. The result is a high-resolution, raw-styled image with controlled studio lighting and a Canon EOS R5 look, framed in a 7:8 aspect ratio with moderate chaos and strong stylization for dramatic motion and detail.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
