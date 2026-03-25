@@ -1,7 +1,24 @@
 ---
 name: the-midnight-muse-luxe
 description: This prompt instructs an image-generation or photo-editing system to produce a high-resolution, photorealistic vertical rooftop night dining portrait of a young woman at an upscale poolside restaurant, specifying precise composition, pose, wardrobe, props, environment, and warm ambient lighting to achieve a romantic luxury editorial look. It also includes strict identity-preservation rules to keep the subject’s facial structure, hair, and natural skin texture unchanged and to avoid beautification filters, resulting in a realistic, intimate evening scene with softly blurred city lights and candlelit atmosphere.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
