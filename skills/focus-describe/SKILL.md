@@ -1,7 +1,24 @@
 ---
 name: focus-describe
 description: This prompt instructs the AI to examine an input image and generate a concise, vivid, and neutral accessibility-focused description of a user-specified subject, covering visible elements such as colors, composition, objects, actions, and overall mood while avoiding opinions, copyrighted content creation, and unsupported inferences; if details are unclear, it explicitly requires the AI to note uncertainty.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
