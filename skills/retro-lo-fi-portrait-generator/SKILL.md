@@ -1,7 +1,24 @@
 ---
 name: retro-lo-fi-portrait-generator
 description: This prompt instructs an image model to take a supplied reference photo and restyle it into a cinematic retro lo‑fi portrait by specifying a location, an unusual camera angle, and optional background props. It guides the look toward warm vintage color grading, soft film grain, muted tones, dreamy lighting, and off‑center composition to evoke a nostalgic, surreal film-photo feel. The outcome is a set of consistent, authentic-looking vintage portraits that can be rapidly varied by swapping simple placeholder values for place and added elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
