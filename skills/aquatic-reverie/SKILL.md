@@ -1,7 +1,24 @@
 ---
 name: aquatic-reverie
 description: This prompt directs an image-generation/editing model to create a realistic, surreal cinematic portrait using the uploaded person’s face, placing them in a dark minimalist room where a projector paints vivid orange-gold, goldfish-like light patterns across the surfaces to evoke an underwater illusion. It specifies gender-dependent wardrobe styling, dreamy immersive lighting with blue haze, soft depth of field, rim lighting, and reflective floor effects, resulting in a calm, contemplative scene that blends futuristic projection technology with magical aquatic fantasy while preserving facial likeness and photographic realism.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
