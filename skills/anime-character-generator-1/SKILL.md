@@ -1,7 +1,24 @@
 ---
 name: anime-character-generator-1
 description: This prompt instructs an AI image generator to produce a polished, high-quality anime character illustration by filling in the character description, art style, pose, and mood variables, then applying specific visual constraints such as clean line work, expressive facial detail, appropriate proportions, cohesive composition, subtle complementary background, and mood-matched lighting and color, resulting in a vibrant, ready-to-use character artwork without any text or watermarks.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
