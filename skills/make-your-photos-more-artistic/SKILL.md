@@ -1,7 +1,24 @@
 ---
 name: make-your-photos-more-artistic
 description: This prompt instructs an image model to generate a high-resolution, cinematic, 3D-style full-body portrait based on an uploaded reference photo, keeping the subject’s facial identity, body proportions, and hands anatomically accurate while placing them in a specified outfit and pose with modern wireless headphones. It also directs the scene design by adding a chosen animal floating or swimming around the subject with realistic lighting and shadows, setting a defined background, and using dramatic directional light to create a vertically composed, clean, balanced final image without stylization or distortion.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
