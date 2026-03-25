@@ -1,7 +1,24 @@
 ---
 name: ai-text-detection
 description: This prompt instructs an AI to evaluate a provided text for signs of AI, human, or mixed authorship by examining observable linguistic, structural, semantic, and repetition-based features, then assign a composite AI-likelihood score with evidence-based indicators, a confidence level, and a final classification in a fixed, interpretable output format.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
