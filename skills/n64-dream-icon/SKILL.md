@@ -1,7 +1,24 @@
 ---
 name: n64-dream-icon
 description: This prompt instructs an image model to generate a high-resolution, square 3D render of a chosen object as a floating icon styled like retro N64-era plastic hardware, using rounded semi-matte forms, bold saturated colors, subtle seams, and gentle reflections, centered on a clean white background with no text, shadows, or controller-shaped elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
