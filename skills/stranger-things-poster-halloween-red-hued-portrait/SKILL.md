@@ -1,7 +1,24 @@
 ---
 name: stranger-things-poster-halloween-red-hued-portrait
 description: This prompt instructs an image-generation model to produce a widescreen, 4K cinematic film-still portrait of the provided subject moving through a decayed, abandoned suburban street on a vintage pedal bike, dressed in retro casual clothing and carrying an analog camera, under moody low light with red, ash-filled atmospheric haze and subtle film grain. It specifies detailed composition, lighting, color grading, motion cues, and background storytelling elements— including a faint, silhouetted multi-limbed supernatural figure—while strictly requiring that the subject’s real face, gender, and natural skin texture remain completely unchanged and realistically preserved.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
