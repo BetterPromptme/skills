@@ -1,7 +1,24 @@
 ---
 name: cinematic-mirror-self-portrait
 description: This prompt instructs an image model to create a hyperrealistic, full-body cinematic self-portrait of a specific woman based on a provided reference image, shown as a standing-mirror reflection in a minimalist bedroom. It specifies the exact pose (drawing a red heart on the mirror with lipstick), wardrobe and jewelry details, lens and depth-of-field choices, and a single diffused neutral-warm lighting setup to achieve a moody, intimate filmic look. The expected result is a vertically framed, identity-faithful portrait with sharp focus on the face and reflection, soft background blur, clean composition, and no added text, distortions, or clutter.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
