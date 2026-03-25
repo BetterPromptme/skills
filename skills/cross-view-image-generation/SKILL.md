@@ -1,7 +1,24 @@
 ---
 name: cross-view-image-generation
 description: This prompt instructs the assistant to generate a photorealistic, spatially consistent top-down (bird’s-eye) view corresponding to a given ground-level photograph, conditioned on specified environment type, preferred resolution, and output format. The result is a technical, informative overhead map that preserves real-world proportions, lighting, and color fidelity while explicitly marking the photographer’s location with a red dot labeled “Photographer,” avoiding any stylized or non-photographic renderings.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
