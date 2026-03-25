@@ -1,7 +1,24 @@
 ---
 name: neoncraft-render-kit
 description: This prompt instructs an image-generation model to produce a high-resolution, square-format 3D icon of a user-specified object, rendered in a vibrant neon gradient palette (purples, pinks, blues) with rounded forms, semi-glossy shading, subtle reflections, and soft glow lighting for depth. The expected result is a clean, playful, digitally styled icon on a black background, with exaggerated proportions as needed and no outlines or surface textures.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
