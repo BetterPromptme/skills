@@ -1,7 +1,24 @@
 ---
 name: monochrome-quad-grid-with-exact-face-and-uniform-outfit
 description: This prompt directs an image generation workflow to take a single uploaded portrait and produce a high‑resolution 2×2 black‑and‑white grid of portraits where the subject’s face and expression remain exactly identical to the reference and the outfit stays unchanged across all panels. It specifies controlled, subtle variation only through upper‑body posing and cropping, enforces consistent lighting, grain, and a soft gradient background, and includes strict validation rules to reject any outputs that introduce identity drift, wardrobe changes, color, text, extra people, or other deviations, resulting in a production‑ready collage plus matching individual panel exports.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
