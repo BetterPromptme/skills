@@ -1,7 +1,24 @@
 ---
 name: standing-on-your-music
 description: This prompt instructs an AI image editor to take a user-provided portrait and composite it into a photorealistic, studio-style scene where the same person—without any facial alteration—stands naturally on the glass surface of a modern smartphone angled like a premium product mockup, with a readable Spotify screen showing a playlist and track list associated with the user’s chosen singer; the result is a clean, minimal, commercial-quality image with realistic scale, perspective, and shadows, and without extra subjects, distracting elements, or non-Spotify branding.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
