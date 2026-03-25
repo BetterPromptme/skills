@@ -1,7 +1,24 @@
 ---
 name: fuji-dream-retro-cafe-portrait
 description: This prompt instructs an image model to generate a hyperrealistic, vertical, film-photography-style portrait of a young person seated at a cozy bread café table, with specific wardrobe, props, composition, lighting, and FujiFilm Pro 400H-inspired color/grain characteristics. The key requirement is to preserve the subject’s facial identity exactly as provided by a reference image while applying a nostalgic Y2K café mood, shallow depth of field, and vintage lens bloom. The expected outcome is a cinematic, dreamy café portrait that looks like an authentic analog film photo, with the subject in focus and the warm café environment softly blurred behind them.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
