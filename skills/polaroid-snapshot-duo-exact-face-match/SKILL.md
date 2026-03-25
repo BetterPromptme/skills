@@ -1,7 +1,24 @@
 ---
 name: polaroid-snapshot-duo-exact-face-match
 description: This prompt instructs an image-editing workflow to transform a provided photo into a square, photoreal instant-film style portrait with a Polaroid-like frame, replacing the background with a softly wrinkled white fabric curtain and adjusting the subjects’ bodies into a very tight hug while keeping both faces exactly the same as the supplied face references. It applies a dim-room direct-flash look with slight motion blur, soft contrast, light vignette, and moderate grain, then reinforces and verifies facial identity with multiple identity-lock modules and automatic retries, and if identity similarity still falls short it composites the original faces back in as a failsafe, producing a clean output with no added text, logos, watermarks, or new props.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
