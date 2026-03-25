@@ -1,7 +1,24 @@
 ---
 name: dreamy-christmas-snow-globe
 description: This prompt instructs an image-generation system to create an ultra-realistic, cinematic editorial portrait that preserves the subject’s exact facial identity and natural skin texture while placing her elegantly inside a pristine, distortion-free Christmas snow globe. It specifies a luxury holiday magazine aesthetic with DSLR clarity, shallow depth of field, warm golden fairy-light reflections, floating snow, and detailed festive elements (toys, candy canes, holly, gingerbread houses, and a woven illuminated base) against a softly dark bokeh background. The intended outcome is a dreamy, high-end holiday cover–style image with strict constraints against text, logos, body distortion, style shifts, or any unsettling or sexualized content.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
