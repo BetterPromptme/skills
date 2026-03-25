@@ -1,7 +1,24 @@
 ---
 name: generate-50-personalized-english-vocabulary-words
 description: This prompt asks the AI to act as an English instructor and generate 50 two-sided flashcards tailored to the learner’s level, goal, and chosen topic focus. The flashcards’ fronts present key English concepts or terms, and the backs provide brief explanations plus a memorable image idea or example to aid recall. The outcome is a curated set of basic-to-intermediate English learning cards designed for efficient study and preparation for the specified purpose.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
