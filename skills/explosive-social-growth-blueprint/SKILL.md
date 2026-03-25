@@ -1,7 +1,24 @@
 ---
 name: explosive-social-growth-blueprint
 description: This prompt instructs the AI to act as a high-level viral content strategist and build a repeatable, daily content engine tailored to a specified niche, platform, audience, and style. The outcome is a practical growth blueprint that outlines proven viral content patterns, the optimal posting cadence and format mix, the key psychological and visual triggers to drive attention and shares, and concrete tactics to increase authentic reach and engagement over time.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
