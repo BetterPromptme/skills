@@ -1,7 +1,24 @@
 ---
 name: modern-muse-studio
 description: This prompt instructs an AI to take a standard portrait photo and restyle it into a high-end fashion editorial beauty image, art-directed for a minimalist magazine look. The task is to keep the subject’s identity and natural skin texture while upgrading composition, styling, and especially studio lighting into a sculpted, side-lit setup with refined contrast and clean negative space. The intended outcome is a photorealistic, high-resolution head-and-shoulders portrait with sharp eyes, subtle attitude, neutral background, and restrained retouching that reads as a professional studio test rather than a casual snapshot.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
