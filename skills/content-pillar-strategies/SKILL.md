@@ -1,7 +1,24 @@
 ---
 name: content-pillar-strategies
 description: This prompt instructs the AI to act as a content marketing strategist and build a scalable content pillar strategy for a specified product or service using five pillar frameworks (brand objectives, customer journey, expertise level, target audience segments, and content themes). The outcome is a structured set of 15 broad pillar topics (three per framework), each with short descriptions, multiple reusable content angles, example content assets, and a summarized table, plus a brief implementation guide recommending channel mix, content allocation, and metrics—making clear assumptions if key inputs are missing.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
