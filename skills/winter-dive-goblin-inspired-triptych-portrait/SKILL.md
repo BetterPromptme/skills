@@ -1,7 +1,24 @@
 ---
 name: winter-dive-goblin-inspired-triptych-portrait
 description: This prompt instructs an image-generation system to create a high-resolution, photorealistic three-panel (triptych) cinematic winter portrait series of the same person, using an unchanged likeness from a provided reference image. It specifies a serene snowy mountain-and-lake setting with light snowfall and soft overcast lighting, and defines each panel’s viewpoint (rear, profile, and close-up), wardrobe, props, mood, and consistent color/texture treatment so the final output forms a visually harmonized, introspective editorial-style sequence.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
