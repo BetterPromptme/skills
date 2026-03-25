@@ -1,7 +1,24 @@
 ---
 name: vintage-animation-characterizer
 description: This prompt instructs an image-to-image transformation that restyles the provided picture into a mid‑century slapstick cartoon frame, with bold clean linework, exaggerated anatomy and expressions, vibrant flat high‑contrast colors, a simplified painted background, and added animation effects like motion lines and impact bursts, resulting in a dynamic freeze‑frame that resembles a 1940s theatrical cartoon still focused on energetic visual humor.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
