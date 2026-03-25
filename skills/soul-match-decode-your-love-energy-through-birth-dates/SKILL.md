@@ -1,7 +1,24 @@
 ---
 name: soul-match-decode-your-love-energy-through-birth-dates
 description: This prompt instructs the AI to act as a spiritually oriented love compatibility analyst, using numerology-style calculations and an “energy matrix” approach to evaluate the romantic connection between two people from their birth dates. The result is a structured, empathetic compatibility reading that covers emotional alignment, karmic themes, harmony vs. friction points, guidance for nurturing the relationship, a concluding intuitive message, and a final percentage-based compatibility score categorized into defined relationship types.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
