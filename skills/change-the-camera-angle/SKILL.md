@@ -1,7 +1,24 @@
 ---
 name: change-the-camera-angle
 description: This prompt instructs the AI to edit an existing image by changing the camera angle to a high-angle selfie viewpoint looking down at the woman, while keeping her face, expression, and outfit unchanged. It also requires the living room setting to remain consistent—preserving the sofa, natural lighting, and the original photo’s composition and style—so the final result looks like the same scene captured from a new perspective.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
