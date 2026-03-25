@@ -1,7 +1,24 @@
 ---
 name: urban-glow-mural-neon-graffiti-night-series
 description: This prompt generates an image of a neon graffiti-style mural depicting a specified subject on a concrete alley wall, using two chosen paint colors. The resulting scene features glowing accents, layered tags and stencils, dripping spray textures, and gritty urban grime, set at night with an orange streetlamp flare to enhance the atmosphere.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
