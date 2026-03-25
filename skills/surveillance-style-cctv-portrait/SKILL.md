@@ -1,7 +1,24 @@
 ---
 name: surveillance-style-cctv-portrait
 description: This prompt instructs an image model to generate a vertical 4:5, high-mounted retail CCTV still showing a person behind a cluttered checkout counter, shot from a steep top-down angle with slight fisheye distortion. It specifies a defiant pose with an upward gaze and a raised hand, while keeping facial identity unreadable under oversized dark sunglasses and an open mouth, all under harsh fluorescent lighting. The intended outcome is a convincingly unedited, low-fidelity surveillance capture with heavy motion blur, compression artifacts, noise, scan lines, banding, and reduced dynamic range, set in a cramped, chaotic shop interior without any cinematic polish or beautification.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
