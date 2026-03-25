@@ -1,7 +1,24 @@
 ---
 name: decision-filter-stay-focused-achieve-your-long-term-goals
 description: This prompt asks the AI to help you design a simple, repeatable decision filter for evaluating new options or opportunities against your long-term goals so you can stay focused. It guides you to clarify your priorities, define objective criteria (e.g., goal alignment, impact, time cost, opportunity cost, and timing), and produce a checklist or scoring rubric you can apply quickly whenever a distraction appears. The outcome is a practical framework—often including rules for when to say yes/no, a short set of questions to ask, and a process for parking ideas—that reduces impulsive pivots and keeps your time and energy aligned with what matters most.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
