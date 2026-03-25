@@ -1,7 +1,24 @@
 ---
 name: subtle-chrome-gradient-look-for-tech-products
 description: This prompt instructs the AI to generate a square (1:1) output image by retexturing the user’s attached photo according to a provided style specification, applying a glossy polished-metal base, a solid black background, and controlled studio lighting with localized, fluid, low-saturation chromatic specular highlights on light-facing curved surfaces. The result is a stylized luxury product/branding render where the original image’s forms are preserved but its surface finish and highlight behavior are transformed to match the defined “Hermes”-like subtle specular gradient aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
