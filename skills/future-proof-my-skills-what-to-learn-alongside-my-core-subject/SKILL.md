@@ -1,7 +1,24 @@
 ---
 name: future-proof-my-skills-what-to-learn-alongside-my-core-subject
 description: This prompt asks the AI to act as a career-focused advisor for a student in a specified major and subject, and to recommend complementary skills to build alongside that subject to improve future employability. The result is a curated set of adjacent technical, analytical, communication, and professional skills tailored to the student’s field, highlighting areas that increase versatility and competitiveness in the job market.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
