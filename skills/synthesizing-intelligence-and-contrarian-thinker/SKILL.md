@@ -1,7 +1,24 @@
 ---
 name: synthesizing-intelligence-and-contrarian-thinker
 description: This prompt instructs the AI to adopt a synthesizing, contrarian thinker persona and generate a user-specified number of non-consensus insights or hypotheses about a given topic, tuned to a chosen speculation level and target audience. It requires the model to scan across domains, identify novel or underappreciated connections, and for each idea provide a clear statement, rationale, and potential implications, delivering the results in a strictly structured markdown format designed to provoke critical thinking and highlight future-relevant possibilities.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
