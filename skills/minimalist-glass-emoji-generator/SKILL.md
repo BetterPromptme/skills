@@ -1,7 +1,24 @@
 ---
 name: minimalist-glass-emoji-generator
 description: This prompt instructs an AI image generator to produce a square, 1024×1024 high-resolution 3D render of a specified icon as a minimalist, Apple-inspired frosted-glass object, featuring rounded edges, matte semi-transparency with an icy blue–to–lavender/pink gradient, subtle refraction and internal glow, centered on a pure white background with an orthographic camera and a soft top-left-lit drop shadow for gentle elevation.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
