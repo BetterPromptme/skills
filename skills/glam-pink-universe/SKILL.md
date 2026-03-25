@@ -1,7 +1,24 @@
 ---
 name: glam-pink-universe
 description: This prompt defines a photorealistic “Glam Pink Glitter” visual style template to generate a square-format image of a specified subject, applying extreme high-shine pink glitter textures, sharp reflective sparkles, luxe studio lighting, and coordinated colors across the object, background, and key details (like logos and buttons) to produce a bold, hyperreal, glamorous final render.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
