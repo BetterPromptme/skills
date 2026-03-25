@@ -1,7 +1,24 @@
 ---
 name: prompt-evaluation-system
 description: This prompt instructs an AI to act as a structured prompt-quality inspector that evaluates a provided user prompt against ten specified prompt-engineering components, marking each as Full/Partial/Missing with a 0–10 score and a brief justification, then computing an overall average score and qualitative rating while following neutrality, formatting, and safety-stop rules (refusing to proceed if the prompt requests harmful content).
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
