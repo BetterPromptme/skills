@@ -1,7 +1,24 @@
 ---
 name: minimalist-plush-head-poster-generator
 description: This prompt instructs an image-generation model to design a stylish minimalist poster featuring a floating, highly detailed 3D-rendered plush animal head on a clean white background. It specifies ultra-realistic materials like visible stitching, fabric seams, and soft fur, along with soft studio lighting and subtle shadows to create depth and a premium aesthetic. The expected result is a sleek, modern, heartwarming poster that balances meticulous craftsmanship with strong kawaii, huggable appeal.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
