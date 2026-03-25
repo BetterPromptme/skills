@@ -1,7 +1,24 @@
 ---
 name: authentic-hand-stamped-wax-seal-with-script-monogram-realistic-and-organic-finish
 description: This prompt instructs an image generator to produce a close-up, photorealistic wax seal freshly stamped on paper, emphasizing natural imperfections such as uneven edges, pressure marks, marbled texture, and angled lighting reflections. It also specifies a slightly recessed, hand-engraved script monogram using a provided letter, encircled by a subtly irregular ornamental rim, and rendered in a user-selected wax color with realistic tonal variation, resulting in an authentic hand-made seal appearance rather than a digitally perfect graphic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
