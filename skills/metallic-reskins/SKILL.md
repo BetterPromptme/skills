@@ -1,7 +1,24 @@
 ---
 name: metallic-reskins
 description: This prompt directs an image generation task to create a futuristic minimalist subject rendered as ultra-smooth, high-gloss liquid chrome with crisp studio hard lighting and subtle fill, emphasizing strong specular highlights and deep shadows. It specifies a mirror-silver and white palette on a seamless pure white background with high-contrast, sharply detailed output, while avoiding effects like bloom, glow, grain, refraction, or chromatic aberration. The result is a clean, reflective chrome visual that preserves the original aspect ratio.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
