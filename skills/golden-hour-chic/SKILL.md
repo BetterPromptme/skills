@@ -1,7 +1,24 @@
 ---
 name: golden-hour-chic
 description: This prompt instructs the AI to generate a high-resolution, photorealistic, vertically framed golden-hour street fashion portrait of a young woman captured mid-motion at a city intersection, keeping her facial identity and natural skin texture unchanged while specifying exact styling, pose, environment, architecture, and lighting details. The result is a cinematic urban image with warm low-angle sunlight, crosswalk-leading lines, visible traffic and classic buildings, and a cohesive color-graded look centered on a pink outfit and dynamic movement.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
