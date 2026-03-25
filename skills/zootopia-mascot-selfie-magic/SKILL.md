@@ -1,7 +1,24 @@
 ---
 name: zootopia-mascot-selfie-magic
 description: This prompt instructs an image model to generate an ultra-realistic, high-angle smartphone-style selfie featuring the exact likeness of the woman from a provided reference photo, centered in frame and smiling (with black braces visible), while posing outdoors against a simple concrete wall beside life-size 3D mascot-costume versions of Judy Hopps (left) and Nick Wilde (right). It specifies strict constraints for facial fidelity, outfit, accessories, character appearance, lighting, composition, camera characteristics, and negative traits to avoid, resulting in a bright, natural-looking, high-resolution selfie scene with crisp, believable textures and a cheerful mood.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
