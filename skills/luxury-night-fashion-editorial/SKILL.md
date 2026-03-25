@@ -1,7 +1,24 @@
 ---
 name: luxury-night-fashion-editorial
 description: This prompt instructs an image-generation or editing model to produce a photorealistic, high-fashion nighttime urban portrait that precisely preserves the subject’s facial identity from a provided reference while constructing a cinematic scene: the woman crouches confidently in the foreground with specified hand placement, outfit, accessories, and makeup, positioned in front of a glossy black supercar and an illuminated skyscraper backdrop, captured in a vertical editorial composition with strong flash-style lighting, high contrast, and realistic textures for a luxurious, dramatic result.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
