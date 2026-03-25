@@ -1,7 +1,24 @@
 ---
 name: funkome-in-squid-game-mode-can-choose-the-number
 description: This prompt instructs an AI image generator to create a polished, highly detailed 3D product-style render of a 1:1 vinyl collectible figure inspired by the provided reference image, featuring a neutral symmetrical pose on a clean white background, dressed in a green tracksuit with specified stripes and chest number, and rendered with large glossy eyes, matte skin texture, cream sneakers, and soft balanced lighting with natural shadows.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
