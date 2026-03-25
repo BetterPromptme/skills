@@ -1,7 +1,24 @@
 ---
 name: turn-what-you-like-into-crystal
 description: This prompt instructs an image-generation/editing model to take the primary subject from an uploaded image and re-render it as a high-end, photorealistic multifaceted crystal sculpture, preserving the subject’s original shape and visual identity while optionally embedding its colors or patterns as subtle inlays. It specifies a luxury studio presentation—soft, controlled lighting, realistic refraction and highlights, and placement on a glossy or mirrored pedestal with natural reflections and shadows—resulting in an ultra-high-definition, elegant product-style render.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
