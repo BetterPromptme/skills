@@ -1,7 +1,24 @@
 ---
 name: product-mockup-for-marketing
 description: This prompt instructs the AI to create a professional, on-brand studio-style product mockup image by inserting the specified product, brand logo, and packaging type into a controlled scene with defined background, lighting, and subtle visual effects, optimized for clarity and commercial shelf impact. The expected outcome is a sharp, natural-textured, high-resolution, color-accurate visual suitable for the stated marketing use case (e.g., e-commerce or ads), while also calling for manufacturable packaging considerations and requesting missing brand or print specifications when needed.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
