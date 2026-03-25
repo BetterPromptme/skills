@@ -1,7 +1,24 @@
 ---
 name: custom-collectible-plush-doll
 description: This prompt instructs an image-generation system to produce a realistic product-style photograph of a collectible plush doll modeled after a real person, matching the person’s hair, outfit, and expression, and presented inside bright retro packaging. The result is a warmly lit, high-quality boxed-toy photo featuring a specific box color with a clear window, a teal “Plush Doll” badge, repeated bold orange name text with icons, additional decorative icons, and visible soft fabric and embroidered details on the doll against a minimalist neutral background.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
