@@ -1,7 +1,24 @@
 ---
 name: first-year-startup-roadmap
 description: This prompt asks the AI to create a practical, month-by-month 12‑month launch roadmap for a new startup, tailored to the specified business type and intended scale. The output will lay out key milestones and priorities for each month (from validation and setup through launch and growth), along with the main focus areas at each stage and the most common pitfalls to avoid, resulting in a clear execution plan for the first year.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
