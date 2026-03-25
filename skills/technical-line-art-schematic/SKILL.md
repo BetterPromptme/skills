@@ -1,7 +1,24 @@
 ---
 name: technical-line-art-schematic
 description: Generates a professional blueprint-style technical illustration of a specified object, rendered as precise white line art on a solid blue background in an isometric view. The output includes clean CAD-like drafting details such as technical annotations, measurement markings, and high-precision schematic styling with minimal shading.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
