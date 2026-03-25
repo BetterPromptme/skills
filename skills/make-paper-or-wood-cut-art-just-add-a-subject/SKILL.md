@@ -1,7 +1,24 @@
 ---
 name: make-paper-or-wood-cut-art-just-add-a-subject
 description: Generates a clean, flat paper-cutout style design of the specified subject themed after a chosen character or style, formatted as a multilayer SVG optimized for plywood laser cutting. The result is a bold, simplified silhouette composition on a white background, organized into three base structural layers plus four additional color layers to support easy assembly and use in craft projects.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
