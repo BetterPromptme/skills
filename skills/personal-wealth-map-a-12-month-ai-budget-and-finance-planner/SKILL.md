@@ -1,7 +1,24 @@
 ---
 name: personal-wealth-map-a-12-month-ai-budget-and-finance-planner
 description: This prompt has the AI use your stated salary (and any provided income/expense, debt, and goal details) to pinpoint overspending, build a 50/30/20 budget, specify exact monthly amounts to save/invest/spend, set a 3‑month emergency fund target with a fast timeline, suggest starter investing options under $100/month, create a debt-payoff strategy that balances high-interest repayment with continued saving, and output a clear 12‑month financial roadmap with actionable numbers and steps.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
