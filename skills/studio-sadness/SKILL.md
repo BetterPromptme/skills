@@ -1,7 +1,24 @@
 ---
 name: studio-sadness
 description: This prompt instructs an image-generation system to produce a high-definition, photorealistic, high-angle cinematic portrait of a young musician inside a realistically cluttered recording studio, using a single flash-lit, gritty analog aesthetic. It specifies wardrobe options by gender, detailed placement of instruments and gear, and a dark, moody color palette while requiring strict identity preservation from a provided reference photo. The expected result is an intimate, emotionally charged studio scene with strong flash contrast, realistic textures, and accurate environmental details without altering the subject’s face, body, or skin tone.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
