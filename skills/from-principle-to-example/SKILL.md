@@ -1,7 +1,24 @@
 ---
 name: from-principle-to-example
 description: This prompt instructs the AI to act as a practical educator who takes an abstract theory provided by the user and turns it into clear, real-world examples that demonstrate how the idea plays out in everyday situations. The result is one or more concise, focused scenarios (without jargon, added assumptions, or unrelated concepts) that preserve the theory’s original meaning while making it easier to understand and apply.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
