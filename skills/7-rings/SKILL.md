@@ -1,7 +1,24 @@
 ---
 name: 7-rings
 description: This prompt instructs an AI image generator to produce a hyper-realistic, high-gloss luxury editorial portrait of the woman from a reference photo while preserving her exact face and hair color, placing her in a studio setup with specified camera/lens settings, lighting, makeup, wardrobe, and a pink-to-fuchsia gradient backdrop. The intended outcome is a tightly framed, magazine-ready chest-up image featuring dollar-bill hair curlers and a fan of banknotes, with sharp eye focus, shallow depth of field, refined skin retouching, and polished cinematic color and shine.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
