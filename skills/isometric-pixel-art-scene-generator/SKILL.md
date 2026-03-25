@@ -1,7 +1,24 @@
 ---
 name: isometric-pixel-art-scene-generator
 description: This prompt is used to generate a highly detailed isometric, top-down pixel art scene for a retro-style 2D video game environment. By filling in the placeholders for setting, color palette, key scene elements, lighting, and a visual style reference, it produces a cohesive environment image that matches the specified aesthetic and game inspiration.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
