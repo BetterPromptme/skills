@@ -1,7 +1,24 @@
 ---
 name: mini-event-mc-script-generator
 description: This prompt instructs the AI to act as an experienced event MC and scriptwriter and produce a complete, professional MC script for a mini event using the provided event details (name, theme, type, audience, duration, venue, organizer, key segments, tone, and special mentions). The outcome is a natural, spoken-style script organized by clear segments (e.g., opening, transitions, closing), with consistent tone, smooth audience engagement, optional ad-libs, and pacing designed to fit the stated event duration.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
