@@ -1,7 +1,24 @@
 ---
 name: minimal-pixar-avatar
 description: This prompt instructs the AI to transform the person in the provided image into a friendly, soft 3D cartoon character with a clean, Pixar-inspired look while preserving the original hairstyle, outfit, pose, and any existing accessories (including sunglasses), and without adding new items. The result is a simplified, clay-textured, pastel-toned render with softened facial features and subtle shadows, placed on a plain light background for a UI-friendly, respectful depiction.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
