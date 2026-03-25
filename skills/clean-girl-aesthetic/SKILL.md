@@ -1,7 +1,24 @@
 ---
 name: clean-girl-aesthetic
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical mirror-selfie portrait of a young woman seated in a softly lit, minimalist modern bedroom, specifying exact pose, outfit, accessories, background elements, color palette, and natural daylight lighting to achieve a calm, elegant lifestyle aesthetic while enforcing strict guardrails that preserve the subject’s facial identity, proportions, and realistic skin texture without beautification or reshaping.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
