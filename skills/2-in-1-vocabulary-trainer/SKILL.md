@@ -1,7 +1,24 @@
 ---
 name: 2-in-1-vocabulary-trainer
 description: This prompt instructs the AI to create a set of 80 topic-specific vocabulary items in a specified target language, organized evenly across defined subtopics, and present them in a single six-column Markdown table containing the word, consistent beginner-friendly phonetics, a pronunciation guide, the translation, and a short bilingual example sentence that includes the target word, with strict formatting and length constraints and no extra text outside the table.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
