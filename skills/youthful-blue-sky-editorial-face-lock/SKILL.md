@@ -1,7 +1,24 @@
 ---
 name: youthful-blue-sky-editorial-face-lock
 description: This prompt instructs an image model to generate a vertical, photoreal 35mm film–style fashion-editorial portrait using a provided reference face, with strict identity preservation and no retouching or feature changes, placing the subject in a white open-collar top from a low upward camera angle against a vast clear blue sky so the subject fills roughly one-third of the frame, and requiring the system to halt and request a clearer reference image if the face is not fully visible and sharp.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
