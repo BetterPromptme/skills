@@ -1,7 +1,24 @@
 ---
 name: golden-hour-backseat-editorial
 description: This prompt instructs an image-generation workflow to produce a photorealistic, editorial-style lifestyle portrait inside a modern car using the provided reference image as the sole, unaltered source of the subject’s face and identity. It specifies vertical framing, pose, wardrobe contrast (delicate white dress with black boots), modern car interior details, visible urban exterior context, and warm late-afternoon natural light through a panoramic sunroof, while enforcing realism and prohibiting beauty retouching or stylized effects. The intended outcome is a calm, introspective fashion photograph with sharp, natural depth and true-to-life textures.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
