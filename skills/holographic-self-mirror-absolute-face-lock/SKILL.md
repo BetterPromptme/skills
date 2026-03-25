@@ -1,7 +1,24 @@
 ---
 name: holographic-self-mirror-absolute-face-lock
 description: This prompt directs an image-generation system to create an ultra-realistic indoor scene where the subject views an electric-blue holographic projection of themselves above a small tabletop projector, while enforcing strict identity preservation by locking the entire face from the reference image and rejecting outputs if the reference is unclear or if any facial features, hairline, makeup, or facial hair change beyond tight similarity thresholds. The outcome is a high-resolution 3:4 PNG showing a half-body subject and the full hologram in frame with soft warm room lighting, a subtle blue rim light, shallow depth of field, and automated quality checks that ensure the face matches the reference with near-pixel accuracy.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
