@@ -1,7 +1,24 @@
 ---
 name: amigurumi-in-hands-cozy-close-up
 description: This prompt instructs an AI to generate a close-up, professional-style photograph of a handmade crocheted chibi yarn doll being gently held in both hands, emphasizing realistic skin texture, soft natural lighting, shallow depth of field, and a warm indoor setting. The intended result is a cozy, heartwarming image that highlights craftsmanship through vivid color, fine detail, and tender human interaction.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
