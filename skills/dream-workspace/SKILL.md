@@ -1,7 +1,24 @@
 ---
 name: dream-workspace
 description: This prompt instructs the AI to act as an interior designer and architectural visualizer to produce a feasible, photorealistic rendering concept for a “dream workspace,” tailored to a client-defined workspace type, design style, color palette, furniture/layout, lighting, decor, and environmental context. The expected outcome is a natural-looking, ultra-realistic, visually persuasive scene that supports decision-making while staying aligned with budget and constructability, clearly stating any assumptions and requesting missing measurements, plans, or specifications when needed.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
