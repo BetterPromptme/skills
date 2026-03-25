@@ -1,7 +1,24 @@
 ---
 name: virtual-hair-test-fit
 description: This prompt instructs an AI image editor to take a user-provided portrait and seamlessly replace only the subject’s hair with a user-specified hairstyle, producing a high-fidelity, photorealistic result. It emphasizes preserving the person’s identity and all non-hair elements (face, skin, expression, background, clothing, lighting setup) while integrating the new hair with accurate hairline placement, natural texture, and consistent lighting and shadows. The intended outcome is an image that looks like an untouched real photograph of the same person, differing only in hairstyle and avoiding artifacts, stylization, or unintended enhancements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
