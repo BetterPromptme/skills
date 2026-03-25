@@ -1,7 +1,24 @@
 ---
 name: ugc-fashion-photo-generator
 description: This prompt instructs an image generator to create a photorealistic, high-end UGC fashion photo featuring the same woman from a provided reference face image, captured mid–upper body as she steps out of a luxury car in a dark underground parking garage with harsh on-camera flash lighting. It specifies exact identity preservation, a precise street-chic outfit and pose, and mandates swapping in a second reference image of a designer bag with accurate texture, hardware, branding, and physically correct lighting/perspective. The intended result is an ultra-sharp, paparazzi-style editorial flash photograph with strong highlights/shadows, faithful face and bag integration, and no added props or stylized rendering.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
