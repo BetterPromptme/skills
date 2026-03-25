@@ -1,7 +1,24 @@
 ---
 name: the-night-is-still-young
 description: This prompt instructs an image generator to create a vertical two-panel (top/bottom) cinematic nighttime portrait of a specific reference woman, preserving her exact facial identity, uniform, hair color/length, and overall styling, while varying only her gaze and emotional expression between panels. The intended outcome is a warm, dreamy, atmospheric close-up with consistent setting and composition across both frames, featuring soft backlighting with glowing bokeh, subtle floating particles, gentle hair movement, and filmic post-processing that maintains natural skin texture and avoids any added props, wardrobe changes, or harsh lighting artifacts.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
