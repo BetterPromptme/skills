@@ -1,7 +1,24 @@
 ---
 name: create-focus-challenges-for-adhd-person
 description: This prompt instructs the AI to create an interactive, ADHD-friendly focus challenge that breaks concentration and productivity skills into small, daily, easy-to-follow steps, using gamified progress tracking to keep participants motivated. The resulting output is a structured yet flexible program with clear instructions, objectives, and expected outcomes for each segment, offering varied activities to suit different learning styles, plus practical strategies to handle distractions and sustain attention so participants can build lasting habits that improve personal and professional performance.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
