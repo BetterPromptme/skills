@@ -1,7 +1,24 @@
 ---
 name: youtube-reaction-thumbnail-maker
 description: This prompt instructs an AI thumbnail designer to produce a hyper-realistic 16:9 YouTube reaction thumbnail by compositing a provided reactor photo with an excited, surprised expression alongside the provided reaction content displayed inside a realistic, dimensional device/player mockup, then adding the exact specified title text in a single white bold font with no extra wording. The intended outcome is a clean, high-CTR thumbnail with natural lighting, accurate skin texture, professional blending/shadows, vibrant but controlled color grading, strict identity preservation, and a clear composition hierarchy (reactor → text → content → background).
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
