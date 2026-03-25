@@ -1,7 +1,24 @@
 ---
 name: hp-om1972-wizard-desk-figure-studio
 description: This prompt instructs the AI to create a realistic commercial-style 1/7 scale figure concept based on the user’s uploaded photo, preserving the person’s exact facial likeness, and to stage the figure on a computer desk on a clear circular acrylic base labeled “HP OM1972.” The scene includes the figure in a Hogwarts robe holding a wand with glowing magical energy, an iMac displaying the Blender modeling process of the figure, and a nearby Harry Potter–inspired toy packaging box with original artwork featuring a Hogwarts crest, resulting in a cohesive product-render-like composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
