@@ -1,7 +1,24 @@
 ---
 name: high-conversion-b2b-cold-email-copywriter-prompt
 description: This prompt instructs the AI to act as an expert B2B cold email copywriter and, using your provided business inputs (target persona, core problem/value hook, product details, tone preferences, and optional relevance triggers), produce three high-open-rate subject line options plus a concise 100–150 word personalized cold email. The resulting email is designed to feel natural and non-fluffy, lead with an ICP-relevant hook, include a standout insight or stat, connect the offering directly to the recipient’s pain point, spark curiosity rather than oversell, and finish with a clear low-friction call to action, optionally capped with a brief P.S. for personality or urgency.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
