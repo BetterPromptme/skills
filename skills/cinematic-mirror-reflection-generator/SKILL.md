@@ -1,7 +1,24 @@
 ---
 name: cinematic-mirror-reflection-generator
 description: This prompt instructs an AI video generator to produce a short, hyper-realistic cinematic mirror-shot sequence of a specified character performing a specified grooming or self-adjustment action, framed chest-up with both the subject and their synchronized reflection visible under bright, clean lighting against a dark background. The intended result is an intimate, modern-feeling clip with subtle handheld camera micro-movement, accurate mirror behavior and lighting consistency, faithful preservation of the character’s appearance from an input image, and action-matched natural sound effects with no music, text, logos, or stylized/CGI elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
