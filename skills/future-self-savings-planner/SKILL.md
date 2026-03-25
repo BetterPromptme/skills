@@ -1,7 +1,24 @@
 ---
 name: future-self-savings-planner
 description: This prompt instructs the AI to act as a practical financial planner who gathers any missing details and then estimates how long it will take the user to reach a savings goal using their job, income, expenses, and leftover cash flow. The outcome is a clear, step-by-step plan that includes timeline calculations, a recommended savings-rate target, what-if scenarios based on expense cuts, currency/inflation considerations when applicable, and a brief motivational summary to help the user follow through.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
