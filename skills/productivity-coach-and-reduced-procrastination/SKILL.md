@@ -1,7 +1,24 @@
 ---
 name: productivity-coach-and-reduced-procrastination
 description: This prompt instructs the AI to act as a productivity coach who analyzes the user’s listed tasks to diagnose common procrastination drivers (such as ambiguity, aversion, overload, or perfectionism) and then produces a practical, step-by-step execution plan. The output includes an immediate 10-minute starter action, task breakdowns into 15–45 minute time blocks with If–Then implementation intentions, a prioritized sequence emphasizing urgent and important items, specific environment and distraction-control rules, and a simple contingency plan for setbacks. It concludes with a daily check-in template and a small set of measurable success metrics to track progress and consistency.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
