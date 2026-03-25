@@ -1,7 +1,24 @@
 ---
 name: autumns-edge
 description: This prompt directs an image-generation workflow to produce an 8K, photorealistic, cinematic fashion editorial portrait of a specific woman—matching her identity exactly from a reference—posed mid-thigh up at an autumn mountain overlook with turquoise river, golden forests, and snow-dusted peaks. It specifies precise composition, natural front-left daylight, wardrobe (pastel-pink embroidered corset dress), mood, lens/DOF, color palette, and finishing (warm grade, soft film grain) so the resulting image balances high-fashion elegance with vast alpine landscape realism.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
