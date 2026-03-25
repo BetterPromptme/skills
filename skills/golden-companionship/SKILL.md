@@ -1,7 +1,24 @@
 ---
 name: golden-companionship
 description: This prompt instructs an image model to generate a photorealistic, cinematic two-panel vertical portrait story of a young person tenderly interacting with their cat inside a cozy vintage wooden interior during golden hour. It specifies the environment, poses, wardrobe variations by gender, cat color, lighting, film-like texture, lens and aperture choices, and a warm nostalgic mood, while enforcing strict realism and consistency across panels—especially preserving the subject’s exact face, hair, skin tone, and natural expression from a reference image—with the intended outcome being an intimate, softly sunlit narrative moment rendered in high resolution without text or artificial effects.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
