@@ -1,7 +1,24 @@
 ---
 name: trophy-diorama-portrait
 description: This prompt instructs an image generator to create a hyper-realistic, cinematic 3D studio scene featuring a large, bold number representing a specified age, with the digits packed with high-end feminine luxury items, and a woman accurately matching an uploaded reference photo posed leaning on and pointing to the numbers. The intended outcome is a premium, ultra-detailed 8K square-format illustration on a neutral minimalist backdrop with soft shadows, emphasizing photorealism, likeness to the reference subject, and a polished luxury aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
