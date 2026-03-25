@@ -1,7 +1,24 @@
 ---
 name: fashion
 description: This prompt instructs an image-generation system to recreate a specific fashion model exactly as shown in a provided reference—matching face, hair, body proportions, outfit details, and accessories—while keeping the same studio setup, lighting, background, and camera look, and to output a high-detail, sharp, full-body catalog-style studio photo with a subtle dynamic standing pose and neutral professional expression.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
