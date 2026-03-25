@@ -1,7 +1,24 @@
 ---
 name: marionette-dark-cinematic-ballet-portrait
 description: This prompt instructs an image-generation workflow to create a photorealistic, high-resolution vertical cinematic portrait of a ballet dancer posed en pointe and visually “suspended” by puppet strings on a dark stage, lit by a hard theatrical spotlight with high-contrast blacks and subtle haze. It specifies detailed composition elements (centered full-body framing, realistic strings anchored above, shattered porcelain mask at the feet, and a faint ominous silhouette in the background), strict wardrobe and texture requirements, and a monochrome-forward palette with restrained warm accents. The intended outcome is a haunting, editorial fine-art image that conveys control and fragility while preserving the subject’s exact facial identity, bone structure, and makeup tone from the provided input image without alteration.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
