@@ -1,7 +1,24 @@
 ---
 name: spectral-aura-style
 description: This prompt directs an image generator to depict a chosen subject as a spectral diffraction-style portrait, emphasizing prismatic light separation and chromatic edge fringing in two specified colors. The intended result is an ethereal, crystal-like aura with visible rainbow banding and distorted edges that heighten the sense of refracted light.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
