@@ -1,7 +1,24 @@
 ---
 name: untitled-prompt-local-culture-and-food-explorer-the-ultimate-travel-and-conversation-guide
 description: This prompt instructs the AI to act as a culturally savvy, food-focused travel guide and, using the user’s trip details (destination, traveler type, duration, interests, dietary needs, and meal budget), produce a structured guide that covers local etiquette and laws, essential greetings and travel phrases with script and pronunciation, curated street foods and recommended markets/eateries with practical visit details and dietary-friendly options, plus actionable tips on when and how to eat like a local while avoiding common food or hygiene pitfalls.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
