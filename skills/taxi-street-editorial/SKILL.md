@@ -1,7 +1,24 @@
 ---
 name: taxi-street-editorial
 description: This prompt instructs an image-generation system to create a magazine-quality urban street-style editorial photograph featuring a fashionable young adult posed casually beside a yellow New York City taxi while applying lipstick, with specified outfit details, accessories, body language, city-street environment, late-afternoon natural lighting, and an eye-level full-body composition using shallow depth of field to keep the subject and taxi sharp while the background recedes into a lively, cinematic NYC atmosphere.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
