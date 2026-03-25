@@ -1,7 +1,24 @@
 ---
 name: kaizen-habit-architect
 description: This prompt instructs an AI to act as a Kaizen-focused system architect who first assesses a user’s current routines and constraints, then designs a personalized continuous-improvement protocol built from 1–3 trivial micro-changes, friction-reducing environmental tweaks, and simple measurement methods. The intended outcome is an actionable, ritualized plan tied to existing habits, with a conservative 30+ day review cycle that iterates based on data rather than motivation or dramatic overhauls.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
