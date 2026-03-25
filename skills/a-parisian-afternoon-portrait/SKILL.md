@@ -1,7 +1,24 @@
 ---
 name: a-parisian-afternoon-portrait
 description: This prompt instructs an AI to generate a high-resolution, photorealistic travel-lifestyle portrait of a specific young woman seated on a bench in bright midday sunlight, styled in neutral beige fashion with defined pose, accessories, and an Eiffel Tower backdrop. It tightly constrains composition (vertical, three-quarter to full-body), environment details (tourist urban setting, fence, tree shadows, passing bus), and camera look (sharp, balanced exposure), while enforcing strict identity preservation and natural, unretouched facial features and lighting. The outcome is a polished, realistic urban landmark portrait that feels like a professional tourist-fashion shoot without text overlays or artificial beautification.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
