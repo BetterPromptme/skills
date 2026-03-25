@@ -1,7 +1,24 @@
 ---
 name: crystal-frame
 description: Generates a surreal, hyperrealistic high-fashion editorial image featuring a clear ice cube that encases a specified object, set on a glossy pastel blue surface under cinematic lighting. The result is a minimalist yet dramatic composition with reflective textures, soft pastel tones, and strong contrast, emphasizing luxurious detail and surreal presentation.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
