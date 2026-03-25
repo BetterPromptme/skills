@@ -1,7 +1,24 @@
 ---
 name: couple-peanut-wallpaper
 description: This prompt instructs an AI illustrator to convert an uploaded person into a simple, recognizable cartoon character in a classic sketchy, flat-color children’s comic style, while preserving key identity traits like clothing, hair, accessories, pose, expression, and skin tone. It also sets wallpaper-specific output requirements (desktop vs. phone aspect ratio, with extra top space on phone) and limits the look to clean, family-friendly, minimal-shading artwork with optional background and accent color choices. The result is a playful, nostalgic character illustration formatted as a ready-to-use wallpaper or avatar.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
