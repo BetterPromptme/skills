@@ -1,7 +1,24 @@
 ---
 name: geometric-dream-core
 description: This prompt instructs the AI to generate a clean, minimalist geometric illustration featuring a specified subject centered on a lightly textured background, rendered as an elegant, futuristic crystal formed by fine intersecting lines with blue-violet gradients and a soft neon glow. The resulting image includes subtle dots and sparkles for a dreamy cosmic atmosphere, uses smooth pastel lighting with a grainy finish for depth, maintains symmetrical, uncluttered composition, and contains no text or typography.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
