@@ -1,7 +1,24 @@
 ---
 name: giant-figure-museum-surreal-fashion-editorial
 description: This prompt instructs an AI image generator to create a photorealistic, cinematic fashion-editorial scene in a minimalist modern art museum where a reference subject’s face, skin tone, and hairstyle are preserved exactly while the subject is depicted as a giant seated on a circular pedestal, surrounded by tiny museum visitors. It specifies architectural composition, camera angle, lighting physics, color palette, wardrobe continuity from the reference, and subtle accessory additions (notably a black designer handbag and gold details) to produce a serene, balanced, print-quality surreal tableau that feels believable despite the scale illusion.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
