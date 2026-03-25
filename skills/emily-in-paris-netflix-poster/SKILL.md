@@ -1,7 +1,24 @@
 ---
 name: emily-in-paris-netflix-poster
 description: This prompt instructs the AI to generate a high-end, cinematic Netflix-style promotional poster set on a Parisian balcony at dusk, featuring the main character in a romantic yet empowered fashion-editorial scene overlooking the Eiffel Tower. It specifies strict identity preservation from a reference image, detailed composition, lighting, wardrobe, color palette, and branded typography placement, culminating in an 8K vertical key visual with integrated tagline, series title, and Netflix logo that feels luxurious, realistic, and distinctly Parisian.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
