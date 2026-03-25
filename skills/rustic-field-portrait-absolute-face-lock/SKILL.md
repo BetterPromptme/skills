@@ -1,7 +1,24 @@
 ---
 name: rustic-field-portrait-absolute-face-lock
 description: This prompt instructs an image generator to produce a hyper‑realistic, full‑body outdoor cinematic portrait that strictly preserves the subject’s identity from a provided reference image, including exact facial geometry and the original gender. It defines a specific autumn/winter countryside setting, wardrobe, pose, camera/lens parameters, lighting, composition, and a muted brown film-grade look, while forbidding added marks, accessories, or logos and requiring a clearer reference if key facial details aren’t visible. The intended outcome is a single high-resolution PNG portrait with the subject placed far in a vast landscape, sharply focused against a softly rendered background, using identity-locking guidance to prevent any face changes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
