@@ -1,7 +1,24 @@
 ---
 name: frozen-motion-subway-editorial
 description: This prompt defines a highly specific, editorial-style subway-platform photo scene featuring a fashionable young woman held sharply in focus while a silver train streaks by in motion blur, detailing her pose, outfit, accessories, lighting, and composition. The outcome is a clear blueprint for generating or directing a digital photograph with a strong stillness-versus-speed contrast, consistent Y2K street-style aesthetics, and controlled camera/lighting behavior to achieve a crisp subject against a dynamically blurred background.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
