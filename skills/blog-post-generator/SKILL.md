@@ -1,7 +1,24 @@
 ---
 name: blog-post-generator
 description: This prompt instructs the AI to generate a well-structured blog post on a specified topic, targeting an approximate word count and a defined writing tone while optionally integrating a given SEO keyword. It requires the content to be original, informative, and easy to read through the use of headings, subheadings, and bullet points where appropriate. The expected outcome is a polished, engaging article that delivers clear value to readers and ends with a compelling call-to-action.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
