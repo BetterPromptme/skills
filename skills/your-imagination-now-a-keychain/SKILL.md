@@ -1,7 +1,24 @@
 ---
 name: your-imagination-now-a-keychain
 description: This prompt instructs the AI to turn the person in the provided photo into a cute 3D cartoon keychain character, simplifying facial features and pose into a smooth, toy-like figure with a silicone-style texture and pastel colors. It specifies adding a keychain component and an attached name tag displaying “{{ Name }}” in a playful rounded font, while keeping the output as a clean product-style render with no background and minimal shadows.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
