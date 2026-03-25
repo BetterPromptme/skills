@@ -1,7 +1,24 @@
 ---
 name: freelance-growth-blueprint
 description: This prompt instructs the AI to act as a seasoned freelance business strategist and produce a practical, inspiring 90-day growth blueprint tailored to the user’s role, current and target income, platforms, strengths, challenges, weekly availability, and non-negotiables. The outcome is a structured plan with a motivating goal-alignment statement, a three-phase timeline (foundation, outreach/marketing, scaling), clear platform and outreach recommendations, portfolio and branding upgrades, concrete client-acquisition tactics (including sample messaging), pricing and offer packaging guidance with rate-increase timing, workflow automation systems, and a closing encouragement to sustain consistent action across the full 90 days.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
