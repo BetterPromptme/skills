@@ -1,7 +1,24 @@
 ---
 name: crimson-halo-cinematic-portrait
 description: This prompt instructs an AI image editor to convert a provided portrait into a high-fashion, cinematic studio campaign image by keeping the subject’s facial identity intact while restyling them in a gender-appropriate formal outfit, placing them in a confident editorial pose, and replacing the scene with a seamless deep crimson studio background. It specifies dramatic high-contrast lighting with strong back/rim light and minimal front fill, along with detailed pose and mood guidance, to produce a polished, realistic, high-resolution editorial portrait with sharp eyes, clean texture, and no facial structure distortion.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
