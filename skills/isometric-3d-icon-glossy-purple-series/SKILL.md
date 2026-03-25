@@ -1,7 +1,24 @@
 ---
 name: isometric-3d-icon-glossy-purple-series
 description: This prompt generates a high-detail 3D isometric icon of the specified subject, using a rounded plastic form in dark purple with metallic silver accents. It directs the lighting, shadows, and surface finishes to achieve a hyper-polished matte/gloss mix with strong contrast, while keeping the background minimal and proportions consistent so the result fits cleanly into a cohesive icon set.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
