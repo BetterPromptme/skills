@@ -1,7 +1,24 @@
 ---
 name: create-ai-models-with-your-products
 description: This prompt instructs an image-generation system to create a high-fashion editorial scene in which a user-uploaded product remains unchanged and becomes the central, sharpest, most brightly lit focal point. It specifies a stylish model whose gender and expression are variable, posing to elegantly frame the product without competing for attention, while coordinating wardrobe, textures, background color, and a cinematic spotlight-style lighting setup to match the product’s tone. The result is a dramatic, art-directed campaign-style image with no text or overlays that prioritizes showcasing the product’s form, texture, and color.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
