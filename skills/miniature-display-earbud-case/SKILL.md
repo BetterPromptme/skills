@@ -1,7 +1,24 @@
 ---
 name: miniature-display-earbud-case
 description: This prompt generates a high-end studio product photograph of a realistic, transparent wireless earbud charging case with a compact rectangular form, featuring functional hinge and clasp details, subtle modern branding, and soft even lighting. The key outcome is a minimalistic, premium-looking case designed as a miniature display, with the interior filled with the user-specified theme rendered in clear resin-like detail to create depth and a collectible showcase effect.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
