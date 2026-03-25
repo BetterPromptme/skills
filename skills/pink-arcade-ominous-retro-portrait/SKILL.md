@@ -1,7 +1,24 @@
 ---
 name: pink-arcade-ominous-retro-portrait
 description: This prompt instructs the AI to generate a photorealistic, cinematic fashion-horror portrait set in a neon-soaked retro arcade, featuring the provided subject posed inside a Ghostface-themed claw machine while holding a red 90s phone (and blowing a gum bubble or smirking), with legible pink neon “GAME OVER” and a Ghostface figure behind the glass holding a heart-shaped “CALL ME” sign. It defines precise composition, lighting, color grading, wardrobe, props, and mood to deliver a high-resolution album-cover style image that feels ominous yet playful, while strictly preserving the subject’s original facial features, hair, and skin tone from the input image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
