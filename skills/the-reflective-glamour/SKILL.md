@@ -1,7 +1,24 @@
 ---
 name: the-reflective-glamour
 description: This prompt directs an image-generation/editing system to produce a photorealistic, luxury nighttime city portrait using a provided woman’s photo as the identity reference, keeping her face, hair, and expression unchanged while placing her in a vertically framed, mid-thigh-up selfie-style pose beside a reflective pool with a dramatic illuminated skyline and a tall tapering skyscraper behind her. It specifies wardrobe, accessories, pose, environment details, lighting balance, color palette, and camera feel so the result is a sharp, realistic urban glamour photograph with accurate reflections and high-end nighttime ambiance.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
