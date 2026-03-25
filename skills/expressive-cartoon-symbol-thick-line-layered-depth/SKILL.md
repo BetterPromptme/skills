@@ -1,7 +1,24 @@
 ---
 name: expressive-cartoon-symbol-thick-line-layered-depth
 description: This prompt instructs an image model to generate a square, vector-friendly cartoon icon of a specified object using thick navy outlines, mostly white fills, and limited light-blue offset accents to create a faux 3D layered look. The result should be a crisp, clean, white-background icon with simple rounded shapes, subtle depth cues, and a lightly animated, lively feel, without gradients or textures.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
