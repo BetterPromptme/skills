@@ -1,7 +1,24 @@
 ---
 name: forest-muse-fisheye-camera-taken
 description: This prompt instructs an AI image generator to produce an ultra-high-definition, photorealistic editorial fashion photograph of a young woman in a warm, sunlit redwood forest clearing, styled in soft pastel luxury and posed in an intimate wide-angle, low-perspective full-body composition. It specifies precise scene elements (glittering pink duvet on wildflowers), cinematic natural lighting and color palette, camera and lens characteristics, and a dreamy yet realistic mood. The intended outcome is an 8K magazine-grade image that preserves the subject’s exact facial identity from a reference photo while delivering detailed textures, believable depth of field, and polished high-fashion realism.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
