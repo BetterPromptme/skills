@@ -1,7 +1,24 @@
 ---
 name: christmas-child-portrait-masterpiece
 description: This prompt instructs an AI image generator to create an ultra-realistic, high-end 8K Christmas portrait by using a user-supplied child photo as a strict identity reference, reproducing the child’s face and expression faithfully while placing them in a specified rustic cabin scene sitting on Santa’s lap. It defines exact wardrobe, environment elements, cinematic lighting, camera-style settings, and quality constraints to ensure a natural commercial-photography look, while forbidding stylization, facial changes, artifacts, text/watermarks, or unsafe content, resulting in a polished, family-friendly holiday portrait that matches the child’s real likeness.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
