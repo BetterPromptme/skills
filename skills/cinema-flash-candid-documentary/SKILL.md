@@ -1,7 +1,24 @@
 ---
 name: cinema-flash-candid-documentary
 description: This prompt instructs an AI to transform an input image into a vertical, candid documentary-style snapshot that feels spontaneously captured with a harsh on-camera flash, emphasizing imperfect framing, mid-action natural expression, and gritty realism. The intended result is a close-to-medium 9:16 photo with strong flash shadows, occasional blur or focus imperfection, visible grain and skin texture, and an unpolished “caught in the moment” look while avoiding polished studio lighting, heavy retouching, or any text/logos/watermarks.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
