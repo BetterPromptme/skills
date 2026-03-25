@@ -1,7 +1,24 @@
 ---
 name: logo-design-idea
 description: This prompt instructs the AI to propose multiple creative logo concept directions tailored to a brand’s name, business type, and preferred visual style, then complement those concepts with matching color palette suggestions, typography recommendations, and optional comparable brand references. The outcome is a concise set of 3–5 logo idea routes—each explained by its symbolism and intended feel—plus practical design guidance to help a designer or stakeholder quickly choose and refine a direction.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
