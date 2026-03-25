@@ -1,7 +1,24 @@
 ---
 name: noir-candlelight-portrait-black-and-white-cinematic-photo
 description: This prompt instructs an image-generation/editing model to produce a photorealistic, low-key black-and-white cinematic portrait based on an input photo, preserving the subject’s exact facial identity, expression, and hairstyle. It specifies a tight, straight-on composition with dramatic right-side key lighting and realistic candlelight fill, including a candle held under the chin and a candelabra with additional flames for nuanced reflections and shadow play. The intended outcome is a high-contrast, noir-inspired, old-Hollywood image with subtle film grain, a dark receding background, and print-ready vertical output that feels intimate, elegant, and mysterious.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
