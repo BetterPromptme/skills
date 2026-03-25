@@ -1,7 +1,24 @@
 ---
 name: lego-models-that-simulate-you
 description: This prompt instructs the AI to use the user’s uploaded photo as visual reference to generate a portrait-oriented image styled as a classic LEGO minifigure diorama, pairing the figure with an original animal whose colors and vibe match the user. It specifies a premium collector-display look: a minimal scene inside a transparent glass cube on a matte black base with sleek silver accents, an engraved serif label naming the animal, subtle museum-style biological classification etchings, balanced composition, reverent lighting, and a dark-to-light gradient background keyed to the main color palette.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
