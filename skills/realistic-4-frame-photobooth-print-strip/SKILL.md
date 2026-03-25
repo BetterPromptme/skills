@@ -1,7 +1,24 @@
 ---
 name: realistic-4-frame-photobooth-print-strip
 description: This prompt instructs the AI to act as a professional photobooth-strip photographer and produce a realistic, print-style vertical strip featuring a specified person or character in four evenly spaced frames, each with a distinct playful pose or expression, all shot with consistent lighting, composition, background, and photo style. It also directs the AI to apply client-chosen border colors and frame elements, add authentic photobooth print cues (clean margins, glossy texture, and natural shadows), and maintain a client-facing workflow mindset—preserving skin tones, respecting consent and copyrights, and prompting for missing event specs or approvals to ensure a cohesive, shareable, print/web-ready final strip.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
