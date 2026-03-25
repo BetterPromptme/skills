@@ -1,7 +1,24 @@
 ---
 name: chiet-tu-chu-han
 description: Prompt này yêu cầu AI đóng vai giáo viên tiếng Trung để phân tích một chữ Hán giản thể do người dùng cung cấp, trình bày pinyin, âm Hán‑Việt, nghĩa gốc và các từ ghép thường gặp, đồng thời chiết tự chữ đó thành các bộ/thành phần cấu tạo (kèm giải thích liên hệ giữa các phần) theo đúng cấu trúc và phong cách của ví dụ, nhằm tạo ra một bài phân tích rõ ràng, có hệ thống và dễ học.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
