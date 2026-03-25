@@ -1,7 +1,24 @@
 ---
 name: snowfall-elegance-london-winter-portrait-series
 description: This prompt instructs the AI to generate a cohesive three-image, 8K photorealistic winter portrait series set in snowy London at dusk, depicting the same woman consistently across a close-up, mid-body umbrella shot, and full-body Thames/Tower Bridge scene. It specifies precise composition, pose, wardrobe, makeup, lighting, camera settings, color palette, and cinematic fine-art finishing so the output reads as an elegant, romantic, fashion-editorial sequence with warm city light reflecting through falling snow.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
