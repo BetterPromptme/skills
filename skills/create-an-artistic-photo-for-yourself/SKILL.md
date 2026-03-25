@@ -1,7 +1,24 @@
 ---
 name: create-an-artistic-photo-for-yourself
 description: This prompt instructs an image model to create a cinematic double-exposure, color film–style portrait featuring the side-profile face of a specified subject blended with a chosen city or location. The outcome is a music album–poster composition that preserves the subject’s recognizable features while integrating the location imagery into a cohesive, stylized overlay.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
