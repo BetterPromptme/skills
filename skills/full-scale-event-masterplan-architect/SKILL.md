@@ -1,7 +1,24 @@
 ---
 name: full-scale-event-masterplan-architect
 description: This prompt instructs the AI to create a comprehensive, blueprint-style masterplan for an event using the user’s provided parameters (event type, theme, budget, timing, guest count, venue context, goals, and non-negotiables). The resulting output delivers a clear vision statement, a phased timeline from initial planning through post-event wrap-up (including an hour-by-hour event-day run of show), bold creative experience concepts, a percentage-based budget allocation with cost-saving options, contingency and risk-management plans, a guest-journey experience map, and a final motivational note to support confident execution.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
