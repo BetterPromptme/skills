@@ -1,7 +1,24 @@
 ---
 name: behind-the-scenes-studio-portrait
 description: This prompt instructs an image generator to create a realistic behind-the-scenes photograph of a professional studio during a tethered portrait session, emphasizing the technical workflow and equipment. It specifies a foreground monitor and laptop that both display the same high-resolution, softly lit portrait of the subject (with the subject’s face and hair preserved exactly from a provided reference image), along with believable studio lights, reflectors, cables, and a subtle background assistant. The intended result is a clean, professional, documentary-style scene that contrasts the polished portrait on-screen with the practical working environment, without stylization, clutter, or any alteration of the subject’s identity.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
