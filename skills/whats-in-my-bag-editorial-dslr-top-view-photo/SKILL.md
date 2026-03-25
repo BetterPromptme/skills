@@ -1,7 +1,24 @@
 ---
 name: whats-in-my-bag-editorial-dslr-top-view-photo
 description: This prompt directs an image-generation system to produce a photorealistic, luxury editorial-style DSLR macro photograph from a top-down viewpoint, depicting a realistically scaled miniature woman seated inside an open leather handbag of a specified color, surrounded by neatly arranged personal items. It tightly defines camera settings, composition, pose, lighting, texture fidelity, and color consistency while enforcing strict realism and anatomy constraints, with the intended outcome being an 8K, cinematic yet natural-looking fashion image that preserves authentic facial features and tactile material detail without stylization, artifacts, or non-photographic rendering.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
