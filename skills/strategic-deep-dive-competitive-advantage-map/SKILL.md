@@ -1,7 +1,24 @@
 ---
 name: strategic-deep-dive-competitive-advantage-map
 description: This prompt instructs the AI to act as a strategy consultant and produce a structured competitive-and-growth assessment for a specified company, using the provided business context to identify key direct competitors and adjacent disruptors, summarize their positioning/pricing/recent moves, and then surface at least five untapped growth or profitability levers for the company. It then requires the AI to score each lever on impact and feasibility, recommend the top three actions by combined score, and return the results in a strict XML format along with a list of supporting sources, explicitly noting when required information cannot be found.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
