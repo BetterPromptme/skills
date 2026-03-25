@@ -1,7 +1,24 @@
 ---
 name: turn-an-idea-into-a-short-essay
 description: This prompt instructs the AI to take a provided idea and develop it into a clear, flowing paragraph suitable for a first draft, adding context, examples, and broader relevance in a conversational but coherent voice. The expected outcome is a thoughtful expansion that explores the idea’s meaning rather than polishing it to perfection, and it ends with an open-ended transition that naturally sets up the next paragraph.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
