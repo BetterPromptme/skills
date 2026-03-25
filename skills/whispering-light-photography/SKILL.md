@@ -1,7 +1,24 @@
 ---
 name: whispering-light-photography
 description: This prompt instructs the AI to transform an uploaded person’s photo into an ultra-realistic yet semi-surreal editorial portrait, placing the centered subject against a minimal gradient blue studio backdrop while applying transparent vertical glass-like refraction, sliced band distortions, and directional motion blur that fragment and shift facial and body features. The result is a futuristic, high-concept image with soft studio lighting, gentle glowing edge highlights, and an abstract avatar aesthetic, composed as a half-length or full-body view in a 4:5 (or square) aspect ratio.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
