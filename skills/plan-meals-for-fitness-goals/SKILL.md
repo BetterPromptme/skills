@@ -1,7 +1,24 @@
 ---
 name: plan-meals-for-fitness-goals
 description: This prompt instructs the AI to act as a nutritionist and fitness expert to generate a personalized, nutritionally balanced 7‑day meal plan tailored to a user’s age, gender, weight, and specific fitness goal, complete with daily meals and snacks, portion sizes, and macronutrient alignment. The expected result is a practical, sustainable weekly plan that includes flexible options (such as alternatives or a planned indulgence) and a clear list of foods to limit or avoid based on the stated goal.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
