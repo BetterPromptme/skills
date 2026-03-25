@@ -1,7 +1,24 @@
 ---
 name: 1989-album-cover-summerlight-nostalgic-portrait
 description: This prompt instructs an AI to generate a square, high-resolution, cinematic album-cover portrait set outdoors on a sunlit coast, keeping the subject’s face and proportions intact while applying warm golden-hour lighting, a clear blue-sky backdrop with distant seagulls, and a light beige Polaroid-style border with subtle film grain. It also specifies the exact typography layout—a large handwritten white “1989” title at the top with a smaller serif subtitle using the provided name—resulting in a dreamy, nostalgic, editorial-realistic cover suitable for either a male or female pop artist.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
