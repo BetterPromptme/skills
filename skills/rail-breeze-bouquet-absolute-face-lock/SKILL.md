@@ -1,7 +1,24 @@
 ---
 name: rail-breeze-bouquet-absolute-face-lock
 description: This prompt instructs an image-editing AI to transform a user-provided face photo into a repeatable, warm, dim, vintage film–styled cinematic half-body portrait set trackside with a blurred moving train in the background and a visible red-orange flower bouquet, while enforcing strict identity preservation so the subject’s face remains unchanged; it also defines composition, lighting, wardrobe variants by detected gender, quality checks, and a fail-fast rule to request a clearer reference image if the face cannot be reliably used.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
