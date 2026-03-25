@@ -1,7 +1,24 @@
 ---
 name: car-window-night
 description: This prompt instructs an image-generation AI to produce a photorealistic, cinematic portrait of a person leaning back out of a moving car window at night, emphasizing wind, subtle motion blur, shallow depth of field, and nostalgic mood. Using variable inputs for subject type, age, clothing, hair, and ambient lighting, it guides composition, color palette, texture, and camera settings to yield a dark, dreamy scene with softly blurred city or road lights and an emotional tone of quiet freedom mixed with solitude.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
