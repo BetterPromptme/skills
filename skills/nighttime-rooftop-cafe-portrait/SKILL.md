@@ -1,7 +1,24 @@
 ---
 name: nighttime-rooftop-cafe-portrait
 description: This prompt instructs an image-generation/editing system to produce a photorealistic, vertical, waist-up night portrait in a rooftop or balcony café setting, preserving a separately provided woman’s face exactly while depicting her in a calm, introspective moment using a phone and holding an iced drink at a wooden table. It specifies wardrobe, accessories, pose, framing, shallow depth of field, and a layered city-night background with string lights, blurred guests, skyline glow, and traffic light streaks, resulting in a cinematic yet natural-looking urban lifestyle photograph with balanced warm and cool lighting and minimal processing.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
