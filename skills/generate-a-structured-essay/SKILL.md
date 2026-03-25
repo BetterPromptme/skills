@@ -1,7 +1,24 @@
 ---
 name: generate-a-structured-essay
 description: This prompt instructs the AI to create an academically formatted, detailed essay outline using the user’s supplied topic, thesis, essay type, and desired number of body paragraphs, incorporating any provided key points or generating appropriate ones if none are given. The resulting output includes a structured introduction, logically ordered body paragraphs with main ideas, supporting evidence, and transitions, and a conclusion that reinforces the thesis, with the outline tailored to the specified essay type (including counterarguments and rebuttals for argumentative essays or heightened persuasive emphasis for persuasive essays).
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
