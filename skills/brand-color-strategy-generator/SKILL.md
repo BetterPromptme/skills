@@ -1,7 +1,24 @@
 ---
 name: brand-color-strategy-generator
 description: This prompt instructs the AI to act as a brand strategist and color psychology expert to create a 3–5 color brand palette tailored to a company’s industry, values, personality, audience, and desired visual tone. The outcome is a structured set of recommended primary, secondary, and accent colors with HEX codes and brief psychological/brand rationales, optionally including tonal variations for flexible use across digital and print design.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
