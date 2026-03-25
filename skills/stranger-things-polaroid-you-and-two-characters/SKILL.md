@@ -1,7 +1,24 @@
 ---
 name: stranger-things-polaroid-you-and-two-characters
 description: This prompt instructs an image model to use the user’s provided face photo without altering their identity and generate a photorealistic, polaroid-framed “Stranger Things” cast-style portrait of three people standing shoulder-to-shoulder: a specified character on the left, the user centered with a relaxed smile, and a specified character on the right, with both characters’ arms casually placed behind the user, set against a simple retro white-curtain backdrop with warm 1980s film lighting and strict constraints to avoid stylization, extra subjects, or background changes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
