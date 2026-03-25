@@ -1,7 +1,24 @@
 ---
 name: iron-om1972-desk-figure-studio
 description: This prompt instructs the AI to create a realistic product-style scene featuring a 1/7 scale figure based on the user’s uploaded photo, depicting the user’s exact face on an Ironman suit without a helmet, posed on a clear circular acrylic base labeled “IRON OM1972” atop a computer desk. It also specifies environment details including an iMac screen showing the Blender modeling workflow of the same figure and a MARVEL-inspired toy packaging box with original artwork placed beside the monitor, resulting in a cohesive commercialized collectible display concept.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
