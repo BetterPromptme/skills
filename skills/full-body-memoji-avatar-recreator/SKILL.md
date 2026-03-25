@@ -1,7 +1,24 @@
 ---
 name: full-body-memoji-avatar-recreator
 description: This prompt instructs an AI to recreate the subjects shown in an input image as high-quality, Apple Memoji-inspired 3D emoji avatars, preserving the original pose, expressions, interactions, and all key visual details (such as clothing, accessories, facial features, and props), and to deliver the finished characters fully visible on a transparent background in a soft, rounded, smoothly shaded cartoon style.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
