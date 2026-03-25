@@ -1,7 +1,24 @@
 ---
 name: mirror-message-cinematic-bathroom-thriller
 description: This prompt instructs an image generator to create a photorealistic, tense cinematic bathroom scene using an uploaded portrait as the main subject, dressed in a simple school-uniform outfit, framed through a dirty mirror under harsh fluorescent lighting. The resulting image is a medium, shallow–depth-of-field photograph where the subject’s reflection and the red lipstick message on the mirror are sharp, while a menacing Joker figure appears behind them in the mirror slightly out of focus, with strict constraints to preserve realism, coherent reflections/lighting, and exclude extra text, logos, or stylized rendering.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
