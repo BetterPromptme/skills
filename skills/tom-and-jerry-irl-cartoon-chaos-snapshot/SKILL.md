@@ -1,7 +1,24 @@
 ---
 name: tom-and-jerry-irl-cartoon-chaos-snapshot
 description: This prompt instructs an image generator to produce a tilted 3:2, 1993-style disposable-camera flash snapshot of a messy, post–cartoon-house-party living room where one strictly photorealistic human (matching an attached reference face exactly, seated on a sofa holding a remote and popcorn) is composited alongside eight specific classic Tom & Jerry characters rendered once each in flat, on-model 2D animation, with detailed character actions, environmental chaos props, and authentic cheap-camera artifacts (grain, red-eye, motion blur, yellow tint) plus a corner timestamp, while enforcing absolute separation between realistic and cartoon styles.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
