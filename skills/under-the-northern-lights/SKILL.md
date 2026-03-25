@@ -1,7 +1,24 @@
 ---
 name: under-the-northern-lights
 description: This prompt instructs an image model to generate a photorealistic, cinematic winter portrait set in Finnish Lapland, showing a front-facing subject standing in snow beneath vivid green, purple, and turquoise aurora borealis light, with specified wardrobe, framing, lens/DOF, and color/lighting mood. It emphasizes preserving the reference subject’s exact facial identity and hairstyle without beautification or stylization, while achieving a tranquil, awe-filled atmosphere through natural aurora and moonlit illumination, cinematic composition, and high-resolution portrait-oriented output settings.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
