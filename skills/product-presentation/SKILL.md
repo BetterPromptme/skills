@@ -1,7 +1,24 @@
 ---
 name: product-presentation
 description: This prompt defines a premium, filmic production blueprint for a short promotional video featuring the product from a provided reference image, specifying camera motion, lenses/filtration, lighting, grading, set design, talent/props, and sound. It culminates in an optimized 15-second, two-scene shot list that first delivers a high-end hero reveal and then a tactile in-use moment highlighting a key feature, yielding consistent visuals, controlled reflections, and a polished end frame with a clear logo and negative space for an end card.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
