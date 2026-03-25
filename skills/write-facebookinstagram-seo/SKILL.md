@@ -1,7 +1,24 @@
 ---
 name: write-facebookinstagram-seo
 description: This prompt instructs the AI to create an engaging, Facebook-optimized promotional post based on a product photo, showcasing stylish wireless earbuds with specified signature features, color, and a premium modern aesthetic. The resulting post is formatted with emojis and line breaks, targets young adults and professionals, includes persuasive yet natural-sounding calls-to-action, highlights any exclusive promotions, and ends with a time-sensitive urgency message to drive immediate purchases.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
