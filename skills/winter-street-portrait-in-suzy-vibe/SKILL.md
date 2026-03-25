@@ -1,7 +1,24 @@
 ---
 name: winter-street-portrait-in-suzy-vibe
 description: This prompt instructs an image-generation or editing system to take an uploaded person’s photo and produce a photorealistic, cinematic winter street portrait that preserves the subject’s true identity while shifting the scene to a calm, overcast snowy setting. It specifies the desired mood, expression, composition, lens depth-of-field, and film-like color grading, and it automatically adapts wardrobe and styling based on detected gender and a chosen background context. The expected result is a high-resolution vertical portrait with gentle snowfall, subtle bokeh, and a single blue-scarf color accent, maintaining a natural, unposed, emotionally introspective look without celebrity imitation or unrealistic beautification.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
