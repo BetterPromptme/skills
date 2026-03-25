@@ -1,7 +1,24 @@
 ---
 name: urban-catwalk-film-grain
 description: This prompt instructs an image-generation system to produce a vertical, photoreal high-fashion editorial portrait set in a nighttime urban underpass with a cool green fluorescent 35mm film aesthetic, while enforcing strict identity preservation from a provided reference face. It specifies wardrobe, pose, setting, lighting, framing, and grain/contrast requirements, bans smoothing and any new readable text or logos, and requires the model to stop and request a clearer reference image if the face is not fully visible and sharp.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
