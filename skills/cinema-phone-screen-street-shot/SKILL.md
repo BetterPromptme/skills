@@ -1,7 +1,24 @@
 ---
 name: cinema-phone-screen-street-shot
 description: This prompt instructs the AI to transform an input portrait into a realistic smartphone-style street photo set in an underground parking garage, while strictly preserving the person’s identity. The resulting image is composed as a phone-held-in-frame “on-camera roll” shot where the phone screen (showing the person with specified streetwear styling and a subtle camera UI) is the sharp focal point, and the real person plus garage background are slightly blurred with gritty, cold fluorescent lighting, mild motion blur, and authentic grain, delivered in a high-resolution 3:4 output without logos, watermarks, or anatomy/geometry distortions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
