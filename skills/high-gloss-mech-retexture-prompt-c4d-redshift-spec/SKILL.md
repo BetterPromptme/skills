@@ -1,7 +1,24 @@
 ---
 name: high-gloss-mech-retexture-prompt-c4d-redshift-spec
 description: This prompt instructs an image-editing model to retexture the attached object into a hyper-realistic, Cinema 4D–style 3D render with high-poly mechanical detailing, glossy polished plastic and carbon-fiber materials, subtle decals and emissive/anodized accents, and a specific teal/black/white/red color palette. It specifies studio HDRI three-point lighting, strong specular highlights, soft contact shadows, a centered three-quarter front camera view with a slightly elevated 35mm lens, and a clean white background, resulting in a 4K+ object-focused render that appears to float with a realistic shadow beneath it.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
