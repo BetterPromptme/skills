@@ -1,7 +1,24 @@
 ---
 name: black-christmas
 description: This prompt instructs an AI image generator to produce a high-definition, film-textured, editorial-style holiday glamour portrait of a woman in a red velvet Santa outfit, shot waist-up in a studio with a solid black background. It specifies cinematic low-key lighting, composition, color palette, styling details (fur trim, hat, glossy black gloves, bold makeup), and a subtle early-2000s film grain look. The intended outcome is a moody, sophisticated, and festive fashion portrait that preserves the subject’s original facial identity and hair exactly while maintaining realistic proportions and natural post-processing.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
