@@ -1,7 +1,24 @@
 ---
 name: winter-road-trip-diptych-portrait
 description: This prompt instructs an image model to generate a photorealistic, cinematic two-panel vertical diptych of the same young traveler inside a car on a winter road trip, preserving the person’s exact identity from a reference image while keeping styling, lighting, and realism consistent. It specifies two complementary moments—one calm and contemplative while looking out at snowy mountains, and one joyful while smiling and holding a compact camera—captured with natural window light, a cozy film-like color palette, and matched composition for an emotionally cohesive travel photo story.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
