@@ -1,7 +1,24 @@
 ---
 name: neon-pup-velocity-cinematic-street-skateboarding-scene
 description: This prompt instructs an AI to act as a cinematic video director and generate a 5–10 second photorealistic, documentary-style sequence of a real copper Maltipoo skateboarding at speed through a specific New York City location, using specified camera and lighting choices. It defines realism-focused constraints—authentic dog anatomy and fur, natural motion blur and depth of field, handheld/gimbal-like camera behavior, and true-to-life lighting with reflections—while outlining a clear action beat (tricks, passing pedestrians with coffee, close camera moment, then a jump) and safety requirements to ensure the outcome resembles professionally captured real-world footage without stylization or overlays.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
