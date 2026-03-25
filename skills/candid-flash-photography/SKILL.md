@@ -1,7 +1,24 @@
 ---
 name: candid-flash-photography
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical portrait set in an upscale cocktail lounge, depicting a young woman in a specific over-the-shoulder seated pose with defined styling, outfit, accessories, and props, lit by warm cinematic bar lighting with a softly blurred but recognizable background of bartenders, bottles, and guests. The intended outcome is an elegant, glamorous nightlife photograph with sharp subject focus, realistic skin texture and proportions, and strict preservation of the subject’s facial identity without reshaping or artificial beautification.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
