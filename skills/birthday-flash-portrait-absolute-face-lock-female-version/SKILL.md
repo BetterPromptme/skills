@@ -1,7 +1,24 @@
 ---
 name: birthday-flash-portrait-absolute-face-lock-female-version
 description: This prompt instructs an image-generation system to produce a photorealistic, cinematic birthday portrait using a provided reference face with near-perfect identity locking, depicting the subject in strict side profile leaning toward a white cake with lit numeric candles showing the specified age. It tightly defines composition (neutral wall with a round spotlight and crisp shadow), wardrobe (white ball gown), camera/flash lighting settings, and rendering constraints to prevent any facial alteration, extra props, or incorrect candle digits, with explicit quality checks and a fail-fast request for a clearer reference image if identity verification cannot be reliably maintained.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
