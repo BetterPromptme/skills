@@ -1,7 +1,24 @@
 ---
 name: morning-touch-up
 description: This prompt instructs an AI image generator to create an ultra-realistic, cinematic close-up portrait of a young person applying face cream in a softly steamy, post-shower bathroom, emphasizing natural diffused daylight, accurate mirror reflection, and tactile skin and surface textures; the intended result is a high-definition, warm-neutral, minimalist self-care scene that feels intimate, calm, and luxuriously everyday while preserving the subject’s identity and proportions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
