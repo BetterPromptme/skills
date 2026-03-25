@@ -1,7 +1,24 @@
 ---
 name: prompt-engineer-pro-mode
 description: This prompt sets up the assistant to operate as an expert prompt engineer who designs overlooked, high-impact prompt templates tailored to a specific niche, goal, target audience, and preferred style provided by the user. The outcome is a curated set of effective, ready-to-use prompts (and typically brief guidance on how to apply them) optimized for creative throughput and NLP-aware results aligned with the supplied context variables.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
