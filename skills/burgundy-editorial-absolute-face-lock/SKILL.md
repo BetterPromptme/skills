@@ -1,7 +1,24 @@
 ---
 name: burgundy-editorial-absolute-face-lock
 description: This prompt instructs an AI portrait generator to produce a hyper-realistic, luxury editorial, cinematic half-to-three-quarter portrait in a vertical 9:16 frame, featuring the subject leaning on an elegant chair against a deep burgundy seamless backdrop with a single golden spotlight and shallow depth of field. It prioritizes absolute preservation of the subject’s facial identity from a clear reference image (including facial proportions and features) while applying specified hair, wardrobe (with gender-aware tailoring), minimal gold accents, high-contrast cinematic grading, and natural skin texture, and it requires the process to halt and request a clearer reference if the face is not fully visible and well-lit.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
