@@ -1,7 +1,24 @@
 ---
 name: mirror-selfie-2010s-flash-and-grain
 description: Prompt này hướng dẫn AI tạo ra một ảnh mirror selfie full-body kiểu “snapshot” lo‑fi đúng vibe đầu thập niên 2010 (iPhone 4/5, flash gắt, hạt nhiễu/JPEG, phòng ngủ/nhà tắm hơi bừa), đồng thời nếu có ảnh tham chiếu thì phải giữ nguyên danh tính/khuôn mặt và giới tính theo ảnh đó với mức ràng buộc chặt chẽ. Kết quả mong muốn là 1 ảnh dọc tỉ lệ 4:3 kích thước 1200×1600, thấy trọn người từ đầu đến giày (có sàn và mép dưới), mặt lộ tối thiểu theo ngưỡng đặt ra, trang phục đời thường, không cinematic/DSLR/bokeh, không logo/chữ đọc được, không NSFW và không tạo người khác hoặc đổi giới.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
