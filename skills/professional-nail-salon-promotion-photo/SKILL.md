@@ -1,7 +1,24 @@
 ---
 name: professional-nail-salon-promotion-photo
 description: This prompt instructs the AI to transform an uploaded nail photo into a high-end, realistic salon advertising image by keeping the original nail design exactly the same while generating a premium studio composition: two hands posed elegantly with one resting over the other, dramatic directional lighting from the upper left to emphasize glossy highlights, and a clean solid-black background. The intended outcome is an ultra‑high‑resolution, tightly framed promotional photograph that looks commercially shot and retouched, with natural skin texture preserved and no added elements like jewelry, text, or environmental scenery.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
