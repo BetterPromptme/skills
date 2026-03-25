@@ -1,7 +1,24 @@
 ---
 name: cinematic-underwater-car-portrait
 description: This prompt instructs an AI image editor to use the uploaded portrait as the faithful facial and emotional reference while transforming the scene into a photorealistic, cinematic underwater car interior. It specifies a tranquil surreal narrative: the woman remains seated in the passenger seat with unchanged identity, pose, clothing, and natural skin texture, while her hair drifts in water and fish, bubbles, refraction, and light beams sell the submerged realism. The result is an 8K fine‑art image with shallow depth of field and balanced warm orange/gold highlights against cool turquoise/blue glow, producing an intimate, dreamlike yet realistic underwater composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
