@@ -1,7 +1,24 @@
 ---
 name: 4-frame-zootopia-photobooth-strip
 description: This prompt instructs an image generator to create a vertical four-frame photobooth strip on a plain gray background with warm lighting, featuring the same fixed left-to-right lineup in every frame: Nick Wilde hugging Human 1 (wearing a fox-ears headband), Human 2 (wearing gray bunny-ears headband), and Judy Hopps hugging Human 2. It specifies that the two humans must remain fully realistic and identity-locked while Nick and Judy retain their original 3D film designs, and it defines distinct poses and expressions for each of the four frames while forbidding any reordering, extra characters, props, busy backgrounds, or any animal/cartoon alterations to the humans.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
