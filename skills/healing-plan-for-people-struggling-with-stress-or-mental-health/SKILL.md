@@ -1,7 +1,24 @@
 ---
 name: healing-plan-for-people-struggling-with-stress-or-mental-health
 description: This prompt instructs the AI to generate a gentle, day-by-day (7-day) emotional healing plan tailored to the user’s current feelings and basic demographics, aimed at helping them reconnect with themselves, find calm, and build emotional resilience through accessible self-care. The outcome is a warmly written schedule from Day 1 to Day 7 that includes a brief daily meditation/mindfulness recommendation, one soothing mental-health or personal-growth podcast episode, a calming music suggestion, and a simple healing activity such as journaling, breathing, gratitude, or a nature walk.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
