@@ -1,7 +1,24 @@
 ---
 name: analyze-any-research-paper
 description: This prompt instructs the AI to produce a structured analysis of a provided research paper, summarizing its main findings and conclusions, detailing the study’s methodologies (including sample sizes, data collection methods, and statistical tests), and calling out significant quantitative results. It also requires a critical review that surfaces limitations, inconsistencies, and potential biases, with page-referenced citations for each major point. The outcome is a clearly formatted report consisting of an executive summary, page-numbered key findings, a methodology overview, a critical analysis section, and proposed directions for future research based on identified gaps.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
