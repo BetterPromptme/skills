@@ -1,7 +1,24 @@
 ---
 name: cute-christmas-selfie
 description: This prompt directs an image model to generate a cozy, intimate Christmas-themed selfie featuring a female subject in a two-frame vertical layout: a shoulder-up flash portrait on top and a tighter face-and-eyes close-up below. It specifies a playful spoon-to-lips gesture, gentle pouty expressions, natural hair and minimal makeup, a Santa hat, simple indoor background, and strong on-camera flash with warm ambient light. The intended result is a candid, sweet, festive two-shot composition that keeps attention on the subject’s face and expression without dramatic posing, heavy retouching, or busy scenery.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
