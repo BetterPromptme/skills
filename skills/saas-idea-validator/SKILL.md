@@ -1,7 +1,24 @@
 ---
 name: saas-idea-validator
 description: This prompt instructs the AI to act as an experienced SaaS analyst and produce a structured validation report for a given SaaS concept, using the provided idea details, target audience, pricing model, and stage. It evaluates the opportunity across market, competition, product-market fit, technical feasibility, monetization, and execution risk, assigns scores, summarizes key risks, and outputs clear next steps, success metrics, and estimated resources to guide a founder’s go/no-go decision.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
