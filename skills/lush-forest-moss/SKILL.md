@@ -1,7 +1,24 @@
 ---
 name: lush-forest-moss
 description: This prompt instructs an image model to produce a centered, highly detailed 3D render of a specific logo transformed into a living, nature-grown object, fully coated in lush moss, fine grass, visible roots, moisture, and small pink/white/violet wildflowers. It specifies bright natural lighting with soft shadows and a clean black background for strong contrast, aiming for a soft, tactile, richly organic surface while avoiding any additional elements beyond the moss-covered logo.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
