@@ -1,7 +1,24 @@
 ---
 name: bts-spring-day-station-portrait-poster-accurate
 description: This prompt instructs the AI to produce a photorealistic reconstruction of a specific iconic bus-stop scene from the BTS Spring Day era, treating that reference as the definitive blueprint for architecture, composition, color grading, lighting, and mood, while inserting the exact person or group from an input photo without altering their identity. The intended outcome is a wide, eye-level image that matches the original station’s structure and seaside backdrop with poster-like pastel overcast tones, showing the input subjects seated in a straight line on the bench as if they were always part of the original environment, with no redesigns, added elements, or stylistic reinterpretation.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
