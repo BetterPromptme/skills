@@ -1,7 +1,24 @@
 ---
 name: personalized-high-achiever-study-plan
 description: This prompt asks the AI to act as an academic coach that tailors proven high-achiever study habits to the user’s specific goal, challenges, available time, and learning style, producing a structured plan that includes a timed daily schedule, specific evidence-based techniques, mindset reframes matched to the user’s obstacles, recommended resources, and a clear 7-day day-by-day action plan the user can follow immediately.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
