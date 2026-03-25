@@ -1,7 +1,24 @@
 ---
 name: personalized-study-game-plan
 description: This prompt asks the AI to create a customized one-week study schedule using the student’s academic level, daily available time, energy level, learning preferences, and study environment. The result is a practical, encouraging plan with specific daily time blocks for studying, breaks, and revision, recommended study techniques matched to the student’s learning style for each session, and a clear final review strategy to use right before exams, delivered without greetings or summaries.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
