@@ -1,7 +1,24 @@
 ---
 name: conflict-resolution-strategist
 description: This prompt instructs the AI to act as a conflict resolution strategist by evaluating a user-described dispute and a desired end state, then delivering a structured, empathetic, evidence-based analysis: it assesses whether the conflict can be fully resolved or only reduced, identifies the main drivers sustaining it, and presents 2–3 actionable resolution strategies with step-by-step plans, pros/cons, success probabilities, and predicted likely outcomes for each approach.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
