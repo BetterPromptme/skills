@@ -1,7 +1,24 @@
 ---
 name: viral-tweet-generator
 description: This prompt instructs the AI to act as a viral tweet strategist and produce 10 distinct, high-performing tweet drafts tailored to a specified topic, audience, goal, tone, optional call-to-action, and length. It enforces strict platform-native constraints (character limit, no hashtags/emojis/fluff, no fabricated stats, no unsafe content) and requires variety across multiple hook styles. The outcome is a clean, numbered list of tweet-ready options, each labeled with its hook type and presented without any extra commentary.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
