@@ -1,7 +1,24 @@
 ---
 name: shadow-gaze-studio-portrait
 description: This prompt instructs an AI to generate an ultra-realistic, fine-art studio close-up portrait in a 3:4 vertical format, matching the exact identity of a provided reference face while staging a minimalist, cinematic composition. It specifies pose (sweater collar raised to conceal the lower face), intense direct eye contact, messy dark hair, warm diffused directional lighting, shallow depth of field, and a dark gradient backdrop to produce an intimate, mysterious, emotionally strong 8K-quality image with sharp eyes, authentic skin texture, and subtle fabric detail, with slight variant adjustments for male vs. female rendering.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
