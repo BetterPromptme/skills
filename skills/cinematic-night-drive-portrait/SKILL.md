@@ -1,7 +1,24 @@
 ---
 name: cinematic-night-drive-portrait
 description: This prompt instructs an AI image model to take a user-provided portrait and restyle it into a safe-for-work, nostalgic late-night cinematic scene where the same person leans out of a moving car window, with wind-swept hair, ambient city glow, motion-blurred streetlights and traffic streaks, and a subtle film-grain finish. It emphasizes single-pass execution, strong identity preservation (no changes to age, facial structure, skin tone, or defining traits), natural adaptation of clothing and styling based on the subject, and prohibits unsafe content, watermarks, and overly smoothing retouching, resulting in a dreamy, film-like night-drive portrait.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
