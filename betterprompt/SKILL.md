@@ -5,9 +5,6 @@ metadata:
   openclaw:
     homepage: https://betterprompt.me/skills
     emoji: 🧩
-    requires:
-      bins:
-        - betterprompt
     install:
       - id: node
         kind: node
