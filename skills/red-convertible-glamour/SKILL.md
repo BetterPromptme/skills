@@ -1,7 +1,24 @@
 ---
 name: red-convertible-glamour
 description: This prompt instructs an image-generation or editing system to produce a high-resolution, photorealistic vertical luxury lifestyle portrait of a young woman with specified hair, makeup, outfit, accessories, and pose, leaning against the open driver-side door of a glossy red convertible on a sunny palm-lined upscale residential street. It defines strict identity-preservation rules for the subject’s face, precise composition and vehicle/environment details, and bright natural California-style lighting with bold color contrast. The expected outcome is a clean, editorial-quality daytime image with realistic skin texture, accurate car proportions and reflections, and a confident, polished mood set against white luxury homes, blue sky, and crisp shadows.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
