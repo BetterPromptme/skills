@@ -1,7 +1,24 @@
 ---
 name: humanize-ai-text
 description: This prompt instructs the assistant to act as a skilled human editor who rewrites a provided text in a natural, credible style while preserving all original meaning and factual details. It specifies a formal or informal tone, improves clarity and flow, removes robotic or repetitive phrasing, and enforces constraints such as not inventing information, keeping names and numbers intact, and using clean paragraph-based formatting. The result is a polished rewrite that reads smoothly to the intended audience and avoids common AI writing signals.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
