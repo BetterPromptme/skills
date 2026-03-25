@@ -1,7 +1,24 @@
 ---
 name: universal-character-creator
 description: This prompt guides an AI image model to generate a hyper-realistic, cinematic studio portrait of a human character using user-specified traits (e.g., nationality/ethnicity, gender identity, age, framing, expression, and outfit), producing a natural, professionally lit casting-photo look. It enforces a softly lit warm off-white background, centered composition, accurate anatomy, and subtle emotional expression while prohibiting text, logos, props, stylization, fantasy elements, and unsafe or controversial content, resulting in a clean, timeless 4K portrait aligned to strict realism and safety constraints.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
