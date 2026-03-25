@@ -1,7 +1,24 @@
 ---
 name: infographic-generation
 description: This prompt instructs the AI to act as a visual communication designer and infographic specialist, using provided content and placeholders to plan an infographic for a defined audience and aspect ratio. It requires a clear, modern, visually balanced layout with consistent typography, color, spacing, and hierarchy, emphasizing essential information and readability for digital use. The expected result is a production-ready infographic blueprint describing the overall structure, section breakdown, recommended visual types per section, and specific color/icon and styling guidance to support accurate final graphic creation.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
