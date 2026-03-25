@@ -1,7 +1,24 @@
 ---
 name: motion-blur-runway-portrait
 description: This prompt instructs an AI image editor to convert a simple portrait into a high-resolution, vertical editorial fashion scene where the same subject appears as a full-body, side-profile figure walking mid-stride, with dramatic long-exposure motion-blur trails on the body and clothing while keeping the face sharp and identity-accurate. It specifies a clean, minimal studio-like background, cinematic cool-toned grading, and strict constraints (no facial/skin/hair changes, no clutter, no logos), culminating in an exact 1080×1920 output that reads like a runway-style magazine photograph.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
