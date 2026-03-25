@@ -1,7 +1,24 @@
 ---
 name: structured-short-story-plot-builder
 description: This prompt instructs the AI to generate an engaging, genre- and theme-specific short story plot outline using a standard narrative arc, incorporating the provided main character, setting, and an optional plot twist. The output is organized into clear sections—exposition, rising action, climax, falling action, and resolution—with explicit attention to character motivations, escalating obstacles, and smooth transitions between beats. If an additional condition is enabled, it also appends a concise moral or lesson the protagonist learns by the end.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
