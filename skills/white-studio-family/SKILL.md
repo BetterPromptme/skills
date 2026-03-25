@@ -1,7 +1,24 @@
 ---
 name: white-studio-family
 description: This prompt directs an image editor to turn an existing family photo into a clean, minimal white-background studio portrait while strictly preserving each person’s exact facial identity and keeping the same family member count. It specifies a precise stacked, side-lying pose with a mandatory top-to-bottom size order, close physical connection, and warm natural smiles, then standardizes everyone’s wardrobe into plain long-sleeve shirts in a single user-provided color. The intended outcome is a modern, softly lit, evenly exposed studio-style family portrait with all faces clearly visible, no props or background elements, and only subtle professional retouching.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
