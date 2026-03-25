@@ -1,7 +1,24 @@
 ---
 name: leica-monochrome-duality
 description: This prompt instructs an AI image generator to produce an ultra-realistic, 8K high-fashion editorial portrait in stark black and white, using a minimalist studio setup with sculptural single-source lighting and a clean light background. It specifies tight framing, Leica-style optics and depth of field, matte monochrome tonality with fine grain, and gender-specific wardrobe/grooming options, while requiring the subject’s identity to match the provided reference exactly without facial reshaping or heavy retouching. The result is a timeless, high-contrast monochrome portrait with razor-sharp eyes, authentic skin and fabric texture, and an introspective, confident mood.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
