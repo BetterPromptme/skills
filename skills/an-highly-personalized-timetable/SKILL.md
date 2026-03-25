@@ -1,7 +1,24 @@
 ---
 name: an-highly-personalized-timetable
 description: This prompt instructs the AI to generate an achievable, well-structured weekly timetable tailored to the user’s provided routine, fixed commitments, and personal preferences, producing a clean day-by-day table of start–end time blocks that covers work/study, exercise, meals, rest, and includes short breaks plus a proper daily lunch break while balancing productivity with recovery.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
