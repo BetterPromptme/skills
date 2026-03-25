@@ -1,7 +1,24 @@
 ---
 name: weekly-schedule-planner-for-busy-individuals
 description: This prompt instructs the assistant to act as a time-management and productivity-focused personal assistant and produce a detailed Monday–Sunday weekly timetable that balances work, study (including a Thursday class and homework), steady progress on an internship report toward a weekly deadline, and 2–3 badminton sessions, while guaranteeing 7–8 hours of sleep, scheduled meals, regular short breaks, relaxation blocks, and buffer time for flexibility. The expected outcome is a day-by-day timeline plus a notes section with practical productivity methods, stress-reduction techniques, energy/health guidance, and a scheduled weekly review slot to help the user stay productive without burnout.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
