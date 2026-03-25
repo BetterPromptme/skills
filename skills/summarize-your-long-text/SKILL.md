@@ -1,7 +1,24 @@
 ---
 name: summarize-your-long-text
 description: This prompt instructs the AI to act as a professional summarizer and produce a single-paragraph summary of a user-provided text that captures the main ideas and essential details in a clear, concise, and in-depth way, removing unnecessary wording and avoiding any information not found in the source.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
