@@ -1,7 +1,24 @@
 ---
 name: riddle-of-thoughts
 description: This prompt instructs an image model to generate a photorealistic, film-poster-style cinematic portrait using the subject’s unchanged likeness from a provided reference, depicting them in a dim room gazing introspectively at a glowing fish tank. It specifies tight framing, moody blue-and-amber aquarium lighting with realistic reflections, a dark bokeh background, and two contrasting betta fish as symbolic elements, with filmic texture and precise camera/look settings. The intended outcome is an emotionally resonant, melancholic-yet-hopeful still that conveys solitude, healing, and rebirth through grounded realism and poetic lighting.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
