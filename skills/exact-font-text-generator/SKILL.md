@@ -1,7 +1,24 @@
 ---
 name: exact-font-text-generator
 description: This prompt instructs the AI to render a user-provided text string exactly as written in a specified real-world font, matching authentic typographic details (glyph shapes, spacing, and proportions) and using the font’s commonly associated default color, placed centered on a solid white background with no additional visual effects or decorations, producing a clean final image containing only the styled text.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
