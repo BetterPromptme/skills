@@ -1,7 +1,24 @@
 ---
 name: job-description-builder-any-role-any-industry
 description: This prompt instructs the AI to act as an experienced HR consultant and recruiter to produce a complete, professional job description using the supplied role, company, and candidate requirement details. The outcome is a clear, inclusive, and candidate-attractive posting that consolidates title, team, industry, location and work arrangement, employment type, responsibilities, required and preferred qualifications, culture and values, compensation/benefits (if provided), and precise application instructions into a structured job ad ready for publication.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
