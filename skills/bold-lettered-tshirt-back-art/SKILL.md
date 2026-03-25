@@ -1,7 +1,24 @@
 ---
 name: bold-lettered-tshirt-back-art
 description: This prompt instructs the AI to generate a black-and-white, whimsical hand-drawn cartoon illustration based on a user-provided description, featuring bold outlines, stipple shading, and a minimal background. The outcome is a fun, energetic, cartoonish scene that clearly incorporates the user’s specific details while keeping the focus on the main character and action.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
