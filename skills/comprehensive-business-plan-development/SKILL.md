@@ -1,7 +1,24 @@
 ---
 name: comprehensive-business-plan-development
 description: This prompt instructs the AI to act as an expert business strategist and produce a comprehensive, clearly structured business plan for a new venture using the user’s provided business details. The resulting output includes an executive summary, market analysis (customers, competitors, trends), marketing and sales strategies, financial projections (income statement, cash flow, break-even), and an implementation action plan with milestones and timelines, all organized under distinct headings with bullet points for key information.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
