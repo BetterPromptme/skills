@@ -1,7 +1,24 @@
 ---
 name: turn-any-photo-into-embroidered-artwork-with-just-one-prompt
 description: This prompt instructs an image model to generate a square, close-up photograph of an embroidered patch that reinterprets the uploaded subject in a clean cartoon style with vivid thread texture, placed on an off-white fabric background under natural light. It specifies the patch shape (while keeping the final image 1:1), adds capital-letter text in a chosen layout, and incorporates the represented country’s flag colors into elements like the border or accents to reinforce local identity, resulting in a realistic, tactile embroidered patch image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
