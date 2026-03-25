@@ -1,7 +1,24 @@
 ---
 name: ribbon-dream-birthday-portrait
 description: This prompt instructs an image generator to produce an ultra-photorealistic, high-key studio portrait of a young woman in a tender, dreamy pose—leaning forward with her head resting on crossed arms—styled with ribbon accents in a specified color, delicate makeup details, and a minimal white backdrop, while adding a softly blurred celebratory cake-and-candle foreground element. The expected outcome is a crisp, identity-faithful, mid-torso-up portrait with shallow depth of field, realistic textures (skin, hair, lace), and an intimate, whimsical mood suitable for editorial-style visual storytelling.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
