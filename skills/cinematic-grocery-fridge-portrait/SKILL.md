@@ -1,7 +1,24 @@
 ---
 name: cinematic-grocery-fridge-portrait
 description: This prompt instructs an AI image generator to take an uploaded portrait and realistically transform it into a cinematic, half-body smartphone-style photo set in a grocery aisle, with the subject posed in front of a glass-door soda fridge. It specifies the scene composition, pose, and framing, emphasizes cool fridge lighting mixed with warm store ambience, and requests film-like color grading with mild grain and low-light mobile texture. The intended outcome is an authentic, moody indie-film still that preserves the person’s facial identity and proportions while avoiding stylized, surreal, or inappropriate elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
