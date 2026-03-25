@@ -1,7 +1,24 @@
 ---
 name: cartoon-pantheon-portrait
 description: This prompt instructs an image-generation system to produce an ultra-detailed, cinematic 3D scene of a casually dressed man posed as a collectible figure atop a vibrant toy-like pedestal, with multiple well-known cartoon characters arranged around him in playful interactions. The intended result is an 8K, richly colored, ultra-realistic render that blends nostalgic cartoon energy with modern action-figure aesthetics and dramatic lighting.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
