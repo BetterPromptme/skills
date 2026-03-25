@@ -1,7 +1,24 @@
 ---
 name: tiktok-viral-video-generator
 description: This prompt instructs the AI to act as a TikTok content strategist and produce three viral-ready short-form video concepts tailored to a specific product or niche, audience, goal, vibe, and region. For each concept, it delivers a strong opening hook, a clear format/angle, a concise storyline of what unfolds, and an optional call-to-action, while also requiring the AI to ask up to two clarifying questions if the provided inputs are too vague. The outcome is a set of shareable, high-converting TikTok video ideas optimized for retention and engagement.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
