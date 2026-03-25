@@ -1,7 +1,24 @@
 ---
 name: cinematic-backlight-elegance
 description: This prompt directs an image model to generate a hyper-realistic, luxury studio-style cinematic portrait using an uploaded photo as the identity reference, preserving the subject’s exact facial features, hair, and expression while re-lighting them with dramatic warm backlighting. The result is a high-contrast three-quarter/half-turn portrait on a pure matte black background, with golden rim light creating a clean halo edge and optional subtle front fill to retain facial detail, paired with an outfit that naturally catches highlights. It also constrains the output to remain photorealistic and free of added props, text/logos, stylized filters, distortions, or NSFW elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
