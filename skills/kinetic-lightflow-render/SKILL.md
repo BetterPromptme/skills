@@ -1,7 +1,24 @@
 ---
 name: kinetic-lightflow-render
 description: This prompt instructs an AI image generator to depict a chosen subject enveloped in translucent, flowing energy currents that trace motion with luminous filaments, using two specified colors to heighten the glowing trails against a dark, minimal background. The resulting image emphasizes fluid movement and an ethereal digital look with soft transitions, avoiding harsh outlines in favor of smooth, radiant lines.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
