@@ -1,7 +1,24 @@
 ---
 name: customizable-travel-ad-image-generator
 description: This prompt instructs an AI image generator to produce an advertising-style travel campaign visual tailored to a specific brand or service, location, time of day, and seasonal or weather conditions, featuring designated landmarks and added scene details to achieve a chosen mood. The outcome is a cohesive, marketing-ready image that visually emphasizes the requested destination attributes and atmosphere in a polished promotional style.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
