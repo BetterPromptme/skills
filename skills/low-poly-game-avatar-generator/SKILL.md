@@ -1,7 +1,24 @@
 ---
 name: low-poly-game-avatar-generator
 description: This prompt instructs the AI to look at the provided reference image, identify its primary subject (such as a person, animal, vehicle, or object), and recreate that same subject as a stylized 3D low‑poly/voxel-like avatar. The result is a clean, angular, game-ready digital model that preserves the subject’s visible shape, proportions, colors, and pose while simplifying details into blocky forms, then places it in a modern, softly lit scene with realistic depth-of-field blur—without adding or changing any elements not present in the original image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
