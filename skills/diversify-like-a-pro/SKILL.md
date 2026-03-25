@@ -1,7 +1,24 @@
 ---
 name: diversify-like-a-pro
 description: This prompt instructs the AI to act as an experienced portfolio strategist and produce a structured, educational diversification blueprint for an experienced investor transitioning from a concentrated, single-industry portfolio to a multi-asset, multi-sector approach. Using the investor’s stated goals, risk tolerance, time horizon, sector interests, portfolio size range, and liquidity needs, the AI synthesizes the profile, explains concentration risks and the rationale for diversification, proposes example asset classes with risk/return context, provides sample target allocation ranges that sum to 100%, and outlines a generic, tax-aware implementation and monitoring plan, all preceded by a clear disclaimer that it is illustrative and not personalized financial advice.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
