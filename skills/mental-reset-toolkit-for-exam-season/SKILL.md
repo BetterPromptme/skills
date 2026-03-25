@@ -1,7 +1,24 @@
 ---
 name: mental-reset-toolkit-for-exam-season
 description: This prompt asks the AI to use the user’s stated stress level, triggers, and usual relaxation method to generate a structured 7-day mental wellness plan for exam season, written in a calm, high-achieving friend’s voice. The result is a day-by-day schedule that includes a consistent 3-minute mental reset habit, tailored motivational quotes or affirmations, grounding strategies to prevent burnout, and a brief daily reminder to support emotional balance, delivered succinctly without greetings or summaries.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
