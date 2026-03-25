@@ -1,7 +1,24 @@
 ---
 name: universal-jewelry
 description: This prompt instructs the AI to produce a 3–8 second, ultra-photorealistic 4K macro marketing video of a specified jewelry piece, using an uploaded reference image plus material, key design details, and a complementary background color to preserve accurate form and finish. The result is a luxury-style cinematic shot featuring shallow depth of field, physically realistic reflections and gemstone sparkle, and only subtle camera/object motion (e.g., slow pan or gentle rotation). It explicitly restricts the scene to the jewelry and its presentation surface—no humans, body parts, logos, text, or stylized/CGI-looking rendering—so the output resembles a professional high-end jewelry brand reel.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
