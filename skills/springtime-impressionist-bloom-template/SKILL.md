@@ -1,7 +1,24 @@
 ---
 name: springtime-impressionist-bloom-template
 description: This prompt instructs the AI to generate an Impressionist-style springtime artwork featuring the specified subject, rendered with soft, dappled brushstrokes that suggest a vibrant garden coming to life. It also constrains the composition’s color palette to two chosen dominant colors to convey the fresh, delicate tones of blossoms and new foliage, resulting in a cohesive, seasonally evocative image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
