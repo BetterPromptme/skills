@@ -1,7 +1,24 @@
 ---
 name: restore-image-prompt
 description: This prompt instructs the AI to professionally restore an attached aged black-and-white photograph into a natural, period-accurate color image by cleaning physical blemishes (dust, scratches, creases, stains), correcting tonal range and white balance without losing detail, and applying realistic, era-faithful colorization—especially for faces and skin—while preserving authentic textures and subtle film grain. The expected outcome is a clean, balanced, gently sharpened, color-corrected photo that retains original detail and avoids common artifacts like oversaturation, waxy smoothing, halos, banding, and clipped highlights/shadows, without altering the scene’s content or composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
