@@ -1,7 +1,24 @@
 ---
 name: weekly-workflow-automator-for-solo-founders
 description: This prompt instructs the AI to act as an automation architect who reviews provided details about a user’s business type, weekly activities, current tools, and biggest time-wasters, then identifies five likely repetitive weekly tasks and outlines practical ways to fully or partially automate each using ChatGPT and free/no-code tools (e.g., Notion, Zapier/Make, Google Workspace), including specific tool recommendations, step-by-step workflow ideas, time-saving tactics, and a few creative “bonus” automations the user may not have considered.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
