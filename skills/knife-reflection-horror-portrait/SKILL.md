@@ -1,7 +1,24 @@
 ---
 name: knife-reflection-horror-portrait
 description: This prompt instructs an image model to generate a hyper-realistic, modern slasher-inspired horror poster portrait that preserves the subject’s exact identity from a provided reference photo, placing them in a straight-on, high-contrast, cinematic composition with a vertically held reflective knife, a black-gloved hand, a fully dark background, and optional faint title typography, resulting in an 8K, 4:5, film-grade promotional-style image with cold key lighting, subtle rim color, and sharp focus on the eyes and blade.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
