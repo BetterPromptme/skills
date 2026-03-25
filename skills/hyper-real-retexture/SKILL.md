@@ -1,7 +1,24 @@
 ---
 name: hyper-real-retexture
 description: This prompt instructs an image retexturing operation that keeps the attached object’s exact shape and surface geometry while replacing its material appearance with a hyper-realistic aqua-tinted translucent glass look featuring glossy highlights, micro-bubble clusters, and a frosted green tip and stem. It specifies high-angle natural daylight with strong specular reflections and soft diffused shadows, and it standardizes the scene to a centered, top-down flat lay on a pure white matte background with only a single cast shadow, producing a high-contrast, sharply focused final render.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
