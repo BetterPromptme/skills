@@ -1,7 +1,24 @@
 ---
 name: retro-smile
 description: This prompt instructs an image model to generate a photorealistic, analog-film street portrait of a teenager on a subway platform, captured as if on a disposable camera with warm golden backlight, cinematic haze, and authentic film artifacts like grain, dust, halation, and vignette. It specifies the subject’s pose (holding the camera toward the viewer with a mid-smile), environment details (aged station, soft background blur, tunnel lights), wardrobe options, color palette, and camera-like settings to achieve a nostalgic rediscovered-print look. The intended result is a high-resolution 4:5 or 3:2 portrait that preserves the exact likeness from the provided reference image while avoiding digital beautification or stylized facial changes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
