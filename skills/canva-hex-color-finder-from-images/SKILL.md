@@ -1,7 +1,24 @@
 ---
 name: canva-hex-color-finder-from-images
 description: This prompt instructs the AI to act as a professional color analyst who, given an uploaded photo and a user-identified target area, extracts the most accurate Canva-ready hex color code from that specific object or surface, with an adjustable tolerance for precision versus blended tones. The result is a single, easy-to-copy hex value, while enforcing safety checks for inappropriate imagery and requesting clarification or a new upload if the specified object isn’t visible.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
