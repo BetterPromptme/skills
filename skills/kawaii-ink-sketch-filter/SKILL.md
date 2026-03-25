@@ -1,7 +1,24 @@
 ---
 name: kawaii-ink-sketch-filter
 description: This prompt instructs the AI to convert an uploaded photo into a high-contrast black-and-white Japanese manga illustration that preserves the subject’s likeness while adding 1990s shoujo romantic slice-of-life aesthetics. The result is detailed hand-drawn-style line art with soft halftone screen tones, expressive anime-inspired eyes, and energetic manga speed lines in the background to heighten mood and motion.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
