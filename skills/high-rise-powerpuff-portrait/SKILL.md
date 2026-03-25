@@ -1,7 +1,24 @@
 ---
 name: high-rise-powerpuff-portrait
 description: This prompt instructs an image-generation system to produce a photorealistic, vertical, eye-level nighttime bedroom portrait in a modern high-rise: a young woman with specified hair, makeup, outfit, jewelry, and a relaxed seated pose on white satin bedding, hugging a Blossom plush while other plush toys and styled props are arranged around her. It tightly defines composition, lighting (warm ambient plus pink LED accents), color palette, background city-skyline visibility through floor-to-ceiling windows, and a crisp influencer-style aesthetic, while explicitly requiring the subject’s identity and natural skin texture to remain unchanged. The intended outcome is a high-resolution, cozy-yet-glam image with clear prop placement, balanced interior-versus-city lighting, and realistic textures and depth of field.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
