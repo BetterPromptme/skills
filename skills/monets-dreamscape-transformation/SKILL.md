@@ -1,7 +1,24 @@
 ---
 name: monets-dreamscape-transformation
 description: This prompt instructs an AI image model to take the provided photo and recreate it as a high‑resolution digital painting in the late‑19th‑century impressionist style associated with Claude Monet, preserving the original composition while replacing photographic detail with soft, pastel color blending, visible brushwork, diffused light, and a dreamlike, textured canvas finish that emphasizes atmosphere, movement, and the interplay of light and shadow.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
