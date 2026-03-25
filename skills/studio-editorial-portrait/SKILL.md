@@ -1,7 +1,24 @@
 ---
 name: studio-editorial-portrait
 description: This prompt instructs an AI image generator to produce an 8K, 4:5 minimalist editorial studio beauty portrait that matches the provided reference subject exactly, preserving identical facial features, proportions, and expression. It specifies a tight head-and-shoulders composition against a mid-gray seamless background, a serene hand-to-cheek pose, and refined styling with a black minimalist outfit. It also defines soft, professional studio lighting, neutral grayscale color treatment, realistic skin texture, and restrained retouching so the final result reads as a high-end fashion magazine beauty photograph of the same person.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
