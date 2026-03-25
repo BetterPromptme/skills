@@ -1,7 +1,24 @@
 ---
 name: macbook-selfie-screen-reflection
 description: This prompt instructs an image-generation system to produce a photorealistic portrait seen only as a soft, natural reflection on a MacBook’s glossy screen, depicting a young person in a dim room taking a playful iPhone selfie (winking with tongue out) while the laptop UI remains subtly visible. It specifies realistic lighting from the phone and screen, accurate reflections and anatomy, neutral color balance, minimal stylization, and respectful presentation, with conditional appearance details (e.g., glasses and specific outfit if female). The expected outcome is an ultra-realistic, modern, screen-reflection selfie composition in a horizontal aspect ratio with clean, believable digital and glass-surface rendering.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
