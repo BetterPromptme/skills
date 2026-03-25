@@ -1,7 +1,24 @@
 ---
 name: develop-pricing-strategy
 description: This prompt instructs the AI to act as a senior pricing strategist for a DTC brand and produce a data-driven, value-based pricing plan using provided product, cost, audience, and competitor price inputs. The expected outcome is a structured strategy that benchmarks competitors, recommends an optimal price tied to perceived value and unit economics, designs discount and promotion mechanics (including psychological tactics and urgency/scarcity triggers), proposes A/B tests for price sensitivity, and outlines an ongoing optimization process with metrics, tools, and review cadence to balance competitiveness and profitability.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
