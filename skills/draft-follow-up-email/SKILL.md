@@ -1,7 +1,24 @@
 ---
 name: draft-follow-up-email
 description: This prompt instructs the AI to draft a professional follow-up email responding to an announcement or offer about a specified topic, starting with a polite acknowledgment and then clearly communicating the sender’s decision (accepting, requesting clarification, or declining with a brief, respectful reason). The resulting email maintains a confident, empathetic tone, includes any pertinent context and next steps, and ends with a courteous professional sign-off.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
