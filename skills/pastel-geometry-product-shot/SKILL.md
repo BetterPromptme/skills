@@ -1,7 +1,24 @@
 ---
 name: pastel-geometry-product-shot
 description: This prompt instructs an image model to generate a square, high-end editorial product photograph featuring a minimalist product staged on pastel geometric pedestals against a soft gradient background, with complementary natural ingredients/textures arranged on their own coordinated stands. It specifies a modern premium composition with 3D realism, subtle surface detail, and professional studio lighting—diffused from the right—with diagonal leaf-shadow patterns to mimic filtered sunlight, resulting in a clean, balanced, high-resolution hero image suitable for luxury branding.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
