@@ -1,7 +1,24 @@
 ---
 name: predict-your-future
 description: This prompt instructs the AI to produce a supportive, practical astrological future outlook using the user’s birth details and selected focus areas, defaulting to Western Tropical astrology (or optionally Vedic Sidereal). The result includes a brief natal snapshot (highlighting Sun, Moon, and Ascendant if birth time is known), a transit-based forecast for the next three and/or twelve months with opportunity and challenge windows, 5–8 key date ranges with strength ratings and recommended actions, targeted guidance and checklists for the chosen life areas, optional balancing/timing suggestions (e.g., journaling prompts or rituals), and a clear note of any assumptions made due to missing data and how they affect confidence, all delivered in a specified structured format with a gentle disclaimer.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
