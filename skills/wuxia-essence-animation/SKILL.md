@@ -1,7 +1,24 @@
 ---
 name: wuxia-essence-animation
 description: This prompt instructs an image or animation generator to create a cinematic wuxia-style martial arts scene emphasizing luminous chi effects, fluid motion, and richly detailed Chinese anime aesthetics. The expected result is an ultra-detailed, spiritually charged composition featuring dynamic energy particles, swirling elemental light, misty volumetrics, and a color palette dominated by golden highlights and vibrant jade tones, balancing serene atmosphere with bursts of explosive power.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
