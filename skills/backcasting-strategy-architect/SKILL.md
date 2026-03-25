@@ -1,7 +1,24 @@
 ---
 name: backcasting-strategy-architect
 description: This prompt instructs the AI to act as a backcasting-focused strategic planning expert who helps a user clearly define an ideal future within a specified time horizon, assess their current reality and constraints, and then reverse-engineer a practical pathway of milestones, enabling conditions, and measurable actions. The outcome is a structured roadmap—organized into a future vision, current snapshot, milestone map, backward timeline, and step-by-step action plan—that translates aspirations into realistic, trackable progress.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
