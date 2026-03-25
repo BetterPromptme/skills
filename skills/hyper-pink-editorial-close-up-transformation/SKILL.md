@@ -1,7 +1,24 @@
 ---
 name: hyper-pink-editorial-close-up-transformation
 description: This prompt directs an AI image editor to convert a provided portrait into an ultra-clean, high-fashion beauty campaign shot with an extreme close-up, centered composition and the same pose and expression, featuring symmetrical hands on the cheeks, half-lidded eyes, and slightly parted lips. It specifies an all-pink editorial styling package (translucent pink sunglasses, sheer pink gloves, pink wardrobe and accessories) with chrome nails, dewy highlighted skin, glossy nude-pink lips, and soft pink eye makeup. The outcome is a sharp, studio-lit, high-contrast monochrome hot-pink fashion editorial image on a bright neutral background that preserves the subject’s identity, facial proportions, and realistic skin texture while maintaining precise framing and symmetry.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
