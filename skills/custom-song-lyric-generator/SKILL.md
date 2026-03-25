@@ -1,7 +1,24 @@
 ---
 name: custom-song-lyric-generator
 description: This prompt instructs the AI to generate original song lyrics tailored to user-provided theme, genre, and vibe, following a specified song structure with set counts of verses and choruses and an optional bridge. The expected result is a creative, engaging set of lyrics arranged into labeled sections (verses, choruses, and possibly a bridge) with attention to rhythm and rhyme for memorability and impact.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
