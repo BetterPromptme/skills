@@ -1,7 +1,24 @@
 ---
 name: snowy-husky-selfie-portrait
 description: This prompt instructs the AI to edit an existing, clearly lit human portrait into a photorealistic, phone-style winter selfie taken in a snowy pine forest, keeping the person’s face and expression exactly unchanged while adding a white puffer jacket, heavy falling snow, and natural snow accumulation on hair and lashes. It also requires integrating a large, realistic grey-and-white husky very close to the subject, matching scale, lighting, depth of field, and environment so the final image reads as an authentic candid outdoor selfie with cool, muted winter tones and soft background blur.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
