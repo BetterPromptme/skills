@@ -1,7 +1,24 @@
 ---
 name: email-architect
 description: This prompt instructs the AI to act as an experienced business communication specialist and generate a ready-to-send professional email template based on user-supplied details such as email type, recipient, purpose, key points, tone, and context. The result is a clearly structured, concise, and persuasive email—including a short subject line, appropriate greeting, organized body (with bullets when helpful), a specific call-to-action, and a professional closing—formatted for immediate use with customizable placeholders and checked against clarity, tone consistency, and completeness standards.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
