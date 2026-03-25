@@ -1,7 +1,24 @@
 ---
 name: hot-wheels-blister-pack
 description: This prompt instructs an image-generation/editing task to turn the uploaded person into a stylized, vinyl-like Hot Wheels toy figure and place them fully inside a realistic clear blister bubble on a classic bright blue Hot Wheels card, alongside a chosen Hot Wheels vehicle in the same blister. The result is a convincing collectible blister-pack mockup with accurate packaging aesthetics—logo, gradient background, metallic flame accents, reflections, glare, and subtle embossed collector details—while ensuring the figure and car remain entirely enclosed by the plastic and no extra text is added.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
