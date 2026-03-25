@@ -1,7 +1,24 @@
 ---
 name: heather-album-cover
 description: This prompt instructs an image-generation system to create a high-definition, photorealistic editorial studio portrait in two gender variants (female and male) featuring the same preserved facial identity, with the subject seated calmly against a seamless white backdrop under soft diffused lighting. It specifies minimalist styling, wardrobe, pose, and a consistent warm cinematic tone while adding a proportionally realistic black crow with wings open behind the subject’s right shoulder to introduce subtle surreal tension. The intended outcome is a clean, tactile, emotionally introspective portrait series where lighting, textures, and symbolism feel cohesive and realistic without altering the subject’s facial proportions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
