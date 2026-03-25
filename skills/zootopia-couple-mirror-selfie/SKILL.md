@@ -1,7 +1,24 @@
 ---
 name: zootopia-couple-mirror-selfie
 description: This prompt instructs an image model to generate an ultra-photorealistic 8K iPhone-style mirror selfie of two specific people—locking the man’s face to Photo 1 and the woman’s face to Photo 2—posed together in a brightly lit, Zootopia-themed Disney toy store. It specifies exact wardrobe and character plush hats, the woman’s wink-and-phone pose, detailed makeup and accessories, and a shallow depth-of-field environment with realistic mirror reflections and imperfections, resulting in a crisp, identity-preserved couple portrait centered in the mirror with playful, saturated mall lighting and richly detailed textures.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
