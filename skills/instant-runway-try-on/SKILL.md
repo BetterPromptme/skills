@@ -1,7 +1,24 @@
 ---
 name: instant-runway-try-on
 description: This prompt instructs an AI to generate a single, photorealistic 4‑second vertical runway video featuring a lifelike model built from provided identity attributes and wearing an uploaded outfit exactly as referenced, while maintaining a fixed cinematic runway environment, continuous forward-tracking camera move, realistic walk cycle with cloth physics, and embedded runway ambience audio, enforcing strict consistency and prohibiting any overlays, text, branding, cuts, or display of the reference image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
