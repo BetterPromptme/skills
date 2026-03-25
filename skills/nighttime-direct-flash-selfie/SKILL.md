@@ -1,7 +1,24 @@
 ---
 name: nighttime-direct-flash-selfie
 description: This prompt instructs an image-generation workflow to produce a photorealistic, direct-flash nighttime indoor selfie in a vertical, mid‑torso framing, featuring the same unchanged face from a provided reference image and a calm, polished subject seated on a light beige sofa holding a sharply detailed bouquet of deep red roses wrapped in white paper, with specific hair, makeup, outfit, jewelry, background darkness, and smartphone editorial flash aesthetics enforced to yield an intimate, elegant, celebratory portrait without stylization or identity alteration.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
