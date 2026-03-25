@@ -1,7 +1,24 @@
 ---
 name: y2k-denim-lovers-portrait
 description: This prompt instructs an image-generation or photo-editing model to produce an ultra-realistic, early-2000s digital-flash couple portrait based on a provided reference image, keeping both subjects’ faces exactly the same while changing the surrounding scene, styling, pose, and camera aesthetics. It specifies an intimate indoor setting with distressed posters, wooden floor clutter, coordinated denim-and-dark outfits, precise body positioning and hand placement, and a harsh compact-camera flash look with warm, slightly washed color and Y2K grain. The intended outcome is a candid-feeling, emotionally grounded, cinematic snapshot-style close-up that preserves identity while delivering a nostalgic editorial result in a horizontal 3:2 frame at very high resolution.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
