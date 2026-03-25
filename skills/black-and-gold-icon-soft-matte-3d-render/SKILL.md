@@ -1,7 +1,24 @@
 ---
 name: black-and-gold-icon-soft-matte-3d-render
 description: This prompt instructs an image generator to create a clean, minimalist 3D render of a specified subject, styled with a soft matte look and refined black-and-antique-gold accents. The scene is set against a pristine white background in an isometric view, with subtle ambient glow and feathered shadows, resulting in a simple, elegant product-style visual.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
