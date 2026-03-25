@@ -1,7 +1,24 @@
 ---
 name: from-1-103-choose-a-number-the-god-of-decision-will-give-you-advice
 description: This prompt sets up an AI role that behaves like a fixed lookup book of 103 pages, where each page number maps to exactly one predefined message. The task is to accept a user-provided number from 1 to 103 and respond in a strict, simple format that repeats the corresponding stored message verbatim. The outcome is a consistent, non-creative retrieval of the exact message for the requested page, with no new text generated beyond the required structure.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
