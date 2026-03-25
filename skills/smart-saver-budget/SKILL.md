@@ -1,7 +1,24 @@
 ---
 name: smart-saver-budget
 description: This prompt instructs the AI to act as a personal finance advisor and produce a straightforward monthly budget using the user’s stated income, fixed expenses, business costs, savings target, and personal goal. The expected outcome is a clear budget breakdown that prioritizes essentials, allocates enough to meet the monthly savings goal, and includes a few practical suggestions to optimize spending—all delivered immediately without any intro or concluding summary.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
