@@ -1,7 +1,24 @@
 ---
 name: zhogue-isometric-funko-pop-display
 description: This prompt instructs an image-generation/editing system to convert a provided portrait into a collectible toy presentation: an isometric Funko Pop–style packaging box titled “ZHOGUE” containing a stylized figure based on the person plus their key accessories, while also rendering a separate, highly realistic standalone version of the figure displayed outside the box alongside the packaging.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
