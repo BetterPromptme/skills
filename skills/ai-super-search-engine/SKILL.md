@@ -1,7 +1,24 @@
 ---
 name: ai-super-search-engine
 description: This prompt sets up an AI “super search” workflow that takes a user’s specified search term, gathers recent and credible information from multiple online sources, and presents the findings in a structured, Google-style SERP list (title, brief summary, URL, source, date) followed by a categorized insight summary (e.g., guides, discussions, videos, code, tools, key takeaways), while explicitly avoiding fabricated citations and clearly flagging any uncertainty.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
