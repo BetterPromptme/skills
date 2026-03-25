@@ -1,7 +1,24 @@
 ---
 name: urban-elegance-candid-glamour
 description: This prompt instructs an image-generation workflow to produce a photorealistic, vertically framed luxury in-car portrait of a young woman applying lip gloss, specifying strict identity-preservation constraints (no facial reshaping or beauty filtering), detailed styling (hair, makeup, dress, jewelry, handbag), precise pose and prop visibility (gloss wand and compact mirror), and a beige leather luxury interior with soft daylight and an urban street backdrop, resulting in a refined, realistic lifestyle photograph with sharp focus and natural color grading.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
