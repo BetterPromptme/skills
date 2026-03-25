@@ -1,7 +1,24 @@
 ---
 name: whimsical-food-inspired-bed-design-generator
 description: This prompt directs an image-generation model to create a highly detailed, vertical illustration of a cozy, whimsical bedroom scene featuring a bed stylized as an oversized food item, rendered with soft plush materials, realistic fabric folds, and fluffy pillows. The resulting image should feel dreamy and inviting, lit by warm morning sunlight filtering through sheer curtains, and set against a wooden floor for a natural, homey atmosphere.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
