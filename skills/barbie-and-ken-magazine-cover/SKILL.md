@@ -1,7 +1,24 @@
 ---
 name: barbie-and-ken-magazine-cover
 description: This prompt instructs an AI image generator to create two matching, ultra‑high‑definition fashion magazine cover compositions—one Barbie-inspired female version and one Ken-inspired male version—using the same framing, editorial typography, and retro early‑2000s pastel aesthetic while preserving the reference subject’s exact facial identity and proportions. It specifies photorealistic styling, lighting, wardrobe, accessories, makeup, expressions, background text elements, props, and a vintage magazine layout so the result is a pair of cohesive, modern‑realism covers that blend nostalgic pop glamour with professional editorial polish.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
