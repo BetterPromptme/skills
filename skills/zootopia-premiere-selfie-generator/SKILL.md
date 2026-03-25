@@ -1,7 +1,24 @@
 ---
 name: zootopia-premiere-selfie-generator
 description: This prompt instructs the AI to generate a high-angle, wide-angle selfie-style portrait set inside a crowded cinema during a Zootopia 2 premiere, featuring the uploaded person’s face preserved exactly while they stand between fully 3D, movie-quality Judy Hopps and Nick Wilde, with a giant theater screen displaying the Zootopia 2 poster, vivid cinematic lighting from the screen, and an energetic fan-event atmosphere rendered in ultra-realistic high resolution.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
