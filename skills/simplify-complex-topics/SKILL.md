@@ -1,7 +1,24 @@
 ---
 name: simplify-complex-topics
 description: This prompt instructs the AI to act as an expert educator who explains a provided topic in simple, step-by-step language that a general audience (even a 12-year-old) can understand. It emphasizes using clear definitions, relatable metaphors or visual analogies, and a memorable structure while avoiding jargon, advanced math, or overly technical depth. The expected outcome is an accurate, accessible explanation that preserves the concept’s true meaning without drifting into misinformation or unnecessary complexity.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
