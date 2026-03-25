@@ -1,7 +1,24 @@
 ---
 name: whispered-features
 description: The prompt asks the AI to transform a provided product feature description into a short, under-100-word bedtime story written for adults, with a warm, whimsical, and lightly poetic tone. The result is a concise, soothing narrative that preserves the core meaning of the feature while making it feel dreamy and inviting rather than technical or bland.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
