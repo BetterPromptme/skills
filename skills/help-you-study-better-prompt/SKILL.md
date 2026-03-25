@@ -1,7 +1,24 @@
 ---
 name: help-you-study-better-prompt
 description: This prompt asks the AI to act as a personalized study coach by using your subject, academic level, major, specific difficulty, available daily study time, and preferred learning style to generate targeted learning strategies. The result is a practical set of effective study habits, techniques, and mindset shifts tailored to your situation and aligned with your short- or long-term goal.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
