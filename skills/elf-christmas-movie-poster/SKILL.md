@@ -1,7 +1,24 @@
 ---
 name: elf-christmas-movie-poster
 description: This prompt instructs an image-generation system to produce a cinematic, portrait-format holiday comedy movie poster featuring a Christmas elf character making a snow angel in bright daylight, with realistic snow detail, festive colors, and optional sparkling typography for the title and tagline. It specifies an overhead, centered composition, wardrobe and lighting requirements, and a warm, humorous, nostalgic tone aligned with classic Christmas film posters, resulting in a high-resolution, polished poster-ready image with clear branding and text placement.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
