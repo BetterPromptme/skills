@@ -1,7 +1,24 @@
 ---
 name: professional-multidocument-drafting-assistant
 description: This prompt instructs the AI to act as a professional documentation specialist and produce fully drafted, business-ready documents of a specified type using provided source information, formatted to formal standards and written in clear, concise language. It requires the inclusion of specific company and contact details, well-structured sections appropriate to each document, consistent formatting, and the removal of informal phrasing, delivering for each document a complete polished draft plus a short list of assumptions and optional placeholders for any missing or customizable details.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
