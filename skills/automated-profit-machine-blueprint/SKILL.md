@@ -1,7 +1,24 @@
 ---
 name: automated-profit-machine-blueprint
 description: This prompt instructs the AI to act as a seasoned business architect in a specified niche and design an automated, recurring-revenue “profit machine” with minimal manual effort. The expected outcome is a complete monetization blueprint that defines a compelling core offer, a lead capture approach, a sales and upsell funnel, a customer retention plan, and the essential automation tools required to run and scale the system.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
