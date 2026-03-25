@@ -1,7 +1,24 @@
 ---
 name: making-profestional-email
 description: This prompt instructs the AI to create a single professional marketing email tailored to a specified audience and offering, producing a complete message with a sub-50-character subject line, a personalized opening, a concise 3–5 sentence benefits-focused body that sparks curiosity, and a clear call-to-action, all written in an engaging, professional tone that avoids common spam signals.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
