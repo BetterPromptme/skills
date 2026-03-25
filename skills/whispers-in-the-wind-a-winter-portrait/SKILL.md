@@ -1,7 +1,24 @@
 ---
 name: whispers-in-the-wind-a-winter-portrait
 description: This prompt instructs the AI to generate an 8K ultra-realistic, cinematic winter portrait in a tight close-up or medium close-up, depicting a woman turning back toward the camera amid wind and falling snow, with precise control over composition, lighting, color palette, wardrobe, texture detail, and emotional tone. It emphasizes razor-sharp focus on the eyes with shallow depth of field, a moody cold atmosphere, and photorealistic rendering of hair motion and snow particles, while requiring the subject’s identity to remain exactly consistent with the provided reference face. The result is an intimate, dramatic fine-art image that feels like a frozen film still—raw, vulnerable, and authentic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
