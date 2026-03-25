@@ -1,7 +1,24 @@
 ---
 name: viral-content-growth-hacker
 description: This prompt instructs the AI to act as a growth-focused content strategist and produce 10 platform-native, viral-oriented content ideas to promote a specified product or service on a chosen social platform. For each idea, it requires a concise hook title, an emotionally driven caption, a clear format/style, the target emotion, the virality mechanism behind it, and a simple call-to-action—resulting in a ready-to-execute list of low-cost, repeatable concepts optimized for high reach.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
