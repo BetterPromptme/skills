@@ -1,7 +1,24 @@
 ---
 name: whisper-in-warm-light-cinematic-intimate-portrait
 description: This prompt instructs an AI image generator to produce an ultra-high-resolution, photo-realistic 8K cinematic close-up portrait of a woman in a dark, minimal indoor setting, leaning over a polished wooden surface and holding a small white flower near her face while making soft eye contact with the camera. It specifies strict identity preservation to match a provided reference face exactly, and tightly defines pose, styling, makeup, lighting, color palette, lens/depth-of-field, framing, and finishing grade to achieve an intimate, warm, high-contrast fine-art result with crisp facial and texture detail against a deep, moody background.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
