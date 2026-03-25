@@ -1,7 +1,24 @@
 ---
 name: 2026-gold-balloon-editorial
 description: This prompt instructs an image model to generate a high-resolution, photorealistic studio editorial portrait with a festive party aesthetic, featuring a subject styled in gender-specific wardrobe options while preserving key hair attributes. The subject wears a gold party hat, poses with clearly readable gold foil number balloons “20” and “26,” and displays a playful off-camera expression in a clean beige studio setup. The intended outcome is a sharply detailed fashion-style image with realistic lighting, textures, and materials, free of logos, clutter, or exaggerated effects.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
