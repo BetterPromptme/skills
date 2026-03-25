@@ -1,7 +1,24 @@
 ---
 name: job-application-email-for-any-positions
 description: This prompt instructs the AI to generate a polished, persuasive job application email tailored to a specified position and company, using a formal yet authentic business tone. The resulting email includes a strong subject line, a brief introduction and referral source, a targeted statement of interest in the company, a concise summary of relevant experience, 2–4 role-aligned bullet points highlighting measurable strengths or achievements, and a professional closing that references attached application materials and invites follow-up, ending with a sign-off and contact information.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
