@@ -1,7 +1,24 @@
 ---
 name: professional-email-rewriter
 description: This prompt instructs the AI to transform a provided email draft into a polished, professional business email that preserves the original intent while improving clarity, structure, tone, and correctness. It produces a complete email with a suggested subject line, proper greeting and closing, and a brief summary of the key edits made to enhance professionalism and concision.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
