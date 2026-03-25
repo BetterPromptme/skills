@@ -1,7 +1,24 @@
 ---
 name: building-a-dream-team
 description: This prompt guides an AI to recommend an ideal lean startup founding team for a specified industry by outlining the key co-founder roles to recruit, the must-have hands-on skills each should bring, and the personality dynamics that best support early execution. It also produces a practical checklist of warning signs—skill gaps, mismatched incentives, poor collaboration habits, or unhealthy risk profiles—to help you avoid problematic co-founder choices and assemble a complementary, high-functioning team.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
