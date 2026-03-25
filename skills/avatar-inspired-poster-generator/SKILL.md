@@ -1,7 +1,24 @@
 ---
 name: avatar-inspired-poster-generator
 description: This prompt instructs an AI to act as an image director and design a cinematic, highly detailed movie-poster-style artwork inspired by the Avatar film universe, using provided inputs for title, characters, theme, visual elements, color palette, and optional tagline. The expected outcome is a cohesive, official-looking promotional poster with epic composition, glowing bioluminescent atmosphere, and clear typography placement for the title and tagline, all aligned to the specified mood and palette.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
