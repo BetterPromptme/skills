@@ -1,7 +1,24 @@
 ---
 name: retro-style-icons
 description: This prompt instructs an AI to generate a square, retro cartoon-style illustration of a specified object using a simplified flat-color palette, thick black outlines, and clean blocky shading, with optional small sparkle or motion accents. The expected outcome is a crisp, vector-friendly icon on a plain white background with sharp edges, no textures, and no gradient or blur effects.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
