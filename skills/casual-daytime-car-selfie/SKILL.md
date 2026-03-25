@@ -1,7 +1,24 @@
 ---
 name: casual-daytime-car-selfie
 description: This prompt directs an image generator to produce a candid, phone-style, chest-up selfie of a casually styled person sitting in the driver’s seat of a modern car with the sunroof open in bright natural daylight, sipping a clear matcha latte through a straw while looking at the camera. It specifies wardrobe, grooming, accessories, framing, lighting, and background details (palm trees, blue sky, soft urban greenery blur) to ensure a realistic, unposed lifestyle moment, and it explicitly avoids studio polish, heavy retouching, full-body framing, or artificial-looking elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
