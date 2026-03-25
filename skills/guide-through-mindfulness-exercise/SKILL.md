@@ -1,7 +1,24 @@
 ---
 name: guide-through-mindfulness-exercise
 description: This prompt instructs the AI to act as a mindfulness expert and deliver a beginner-friendly, portable mindfulness session that reduces stress and improves mental clarity. It asks for a brief explanation of mindfulness and its benefits, followed by a structured, step-by-step exercise incorporating breathing, a body scan, and visualization, with reminders to stay present and non-judgmental. The outcome is a complete guided practice that ends with practical advice for building consistency and weaving mindfulness into everyday routines.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
