@@ -1,7 +1,24 @@
 ---
 name: the-neon-arcade-lifestyle-portrait
 description: This prompt instructs an image-generation system to create a photorealistic, neon-saturated indoor arcade lifestyle portrait featuring one or two young subjects playing shooting-game cabinets, using the exact faces from provided reference images without altering identity. It specifies framing, poses, wardrobe, environment details, lighting, color palette, and camera feel to produce a candid, stylish youth-culture scene with clearly visible arcade guns, screens, and glowing cabinets in a dim, industrial arcade setting.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
