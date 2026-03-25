@@ -1,7 +1,24 @@
 ---
 name: untitled-neon-glass-glow-icon-renderer
 description: This prompt instructs the AI to generate a centered, isolated futuristic holographic 3D icon of a specified subject, preserving its original silhouette while applying sharp stylized outlines and geometry-aware detailing. It specifies neon glass-like materials, a high-contrast fluorescent color palette, and intense backlit lighting to produce refractive surfaces, glowing edge auras, rim bloom, and soft luminous shadows. The intended outcome is a crisp, high-gloss “Neon Glass Glow Icons” style render on a pure black background with a subtle halo glow.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
