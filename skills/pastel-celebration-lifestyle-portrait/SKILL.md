@@ -1,7 +1,24 @@
 ---
 name: pastel-celebration-lifestyle-portrait
 description: This prompt instructs the AI to generate a high-resolution, photorealistic indoor lifestyle portrait that preserves the subject’s exact facial identity while placing her in a bright, modern living space styled for a pastel celebration. It specifies the framing, pose, wardrobe, bouquet and balloon props, background furnishings, lighting, color palette, and overall feminine mood to produce a polished, natural-looking waist-up/medium shot with sharp focus on the face and flowers and softly visible celebratory décor behind her.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
