@@ -1,7 +1,24 @@
 ---
 name: alice-in-the-wonderland
 description: This prompt instructs an AI image generator to produce an 8K, photorealistic, wide-angle high-fashion editorial portrait of a young woman in a cinematic, surreal indoor-outdoor garden set, with meticulously specified styling, color palette, props, animals, and lighting. It emphasizes luxury realism and editorial precision while strictly preserving the subject’s exact facial identity, hair, and natural makeup from a reference image. The expected result is a richly detailed, warm, dreamlike fashion photograph that blends nature and vintage technology in a cohesive, vibrant composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
