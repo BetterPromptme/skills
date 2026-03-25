@@ -1,7 +1,24 @@
 ---
 name: coffee-and-cat-eyes-portrait
 description: This prompt directs an AI image generator to produce a high-resolution, photorealistic, vertical selfie-style portrait of a young woman in a modern café, precisely specifying her styling, pose, outfit, accessories, iced-coffee prop details, background elements, and soft natural lighting. It emphasizes a casual Parisian-inspired café lifestyle aesthetic with sharp focus on the face and drink while enforcing strict constraints to preserve the subject’s exact facial identity, natural skin texture, and realistic proportions without beautification or structural changes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
