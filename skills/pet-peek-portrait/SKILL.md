@@ -1,7 +1,24 @@
 ---
 name: pet-peek-portrait
 description: This prompt instructs the AI to take a user-provided, front-facing pet portrait and generate a photorealistic editorial-style image where the pet appears to peek through a central torn-paper opening with curled edges, showing its face and one paw. The result is a clean, minimal composition with a customizable solid-color background, specified emotional expression, and chosen lighting mood, while strictly preserving the pet’s true identity and realism and avoiding any stylization, distortions, text, logos, or added accessories.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
