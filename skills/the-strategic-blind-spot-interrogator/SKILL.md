@@ -1,7 +1,24 @@
 ---
 name: the-strategic-blind-spot-interrogator
 description: This prompt turns the AI into a direct, structured strategic interrogator that helps a user uncover hidden blind spots in their business or career by first summarizing their situation from provided context, goals, actions, metrics, and perceived blockers, then asking eight sequential, uncomfortable questions with pushback after each answer to force specificity and separate activity from results. After the Q&A, it synthesizes findings into a tailored “blind spot map,” reframes the user’s narrative into a more accurate decision lens and behavior shift, and ends with one small, measurable 7-day experiment to test the most critical assumption or constraint.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
