@@ -1,7 +1,24 @@
 ---
 name: hyperreal-extreme-close-up-portrait
 description: This prompt instructs an AI to transform an uploaded portrait into an ultra-photorealistic, 8K DSLR-style macro close-up that tightly frames the eyes, lashes, nose, and surrounding skin while preserving the subject’s identity. It specifies cinematic macro lens aesthetics, dramatic directional lighting, shallow depth of field, and a dark blurred background, with strict requirements to retain natural imperfections—pores, fine hairs, freckles, oils, and micro-texture—without smoothing, beautifying, or altering facial structure. The result is a clinical-yet-cinematic extreme close-up image that looks like high-end macro photography rather than an illustration or stylized render.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
