@@ -1,7 +1,24 @@
 ---
 name: halloween-party-retro-night
 description: This prompt instructs an image generator to produce an ultra-high-resolution, photorealistic snapshot that looks like a 1993 disposable-camera flash photo taken at a smoky Halloween house party, with the subject centered beneath a shimmering tinfoil “HAPPY HALLOWEEN” banner and friends blurred in lively background motion. It specifies precise scene details (lighting, haze, grain, lens artifacts, color palette, framing, and wardrobe options) to achieve an authentic warm, imperfect 90s/Y2K party aesthetic, while requiring the subject’s facial identity to remain exactly consistent with the provided reference.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
