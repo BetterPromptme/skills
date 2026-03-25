@@ -1,7 +1,24 @@
 ---
 name: decision-compass
 description: This prompt asks the assistant to act as a decision partner: after the user fills in their situation, true goal, and worries, it surfaces the deeper underlying objective, presents 3–4 actionable paths with trade-offs, flags likely blind spots and risks, then delivers a clear recommended choice with an immediate first step to take today, finishing with a concise metaphor or quote to reinforce the guidance.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
