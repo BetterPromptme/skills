@@ -1,7 +1,24 @@
 ---
 name: pro-bono-legal-advisor
 description: This prompt instructs the AI to act as a pro bono litigation-focused legal advisor who, based on the user’s dispute type, facts, evidence, and location, provides a clear, jurisdiction-specific analysis in plain language, offers multiple realistic resolution options with pros and cons, outlines concrete next steps, and includes appropriate disclaimers and referrals to free legal aid resources while avoiding irrelevant or inaccurate legal guidance.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
