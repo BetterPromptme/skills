@@ -1,7 +1,24 @@
 ---
 name: a-little-bit-dramatic-platinum-blonde-hair-edition
 description: This prompt instructs an image model to generate an 8K, photorealistic Y2K-inspired editorial fashion portrait featuring the same-looking subject as a provided reference, posed playfully on a white bed in a bright minimalist studio with soft pastel lighting. It specifies the exact pose, styling, props (pink flip phone and scrapbook), wardrobe details (pink cardigan, printed white tank, red heels, delicate necklace), color palette, camera look, and composition in a 4:5 frame, resulting in a polished early-2000s magazine-style image with clean backgrounds and warm, dreamy tones.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
