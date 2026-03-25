@@ -1,7 +1,24 @@
 ---
 name: six-frame-polaroid-rope-gallery
 description: Prompt này hướng dẫn AI tạo một ảnh collage duy nhất gồm sáu khung Polaroid vintage được kẹp trên dây bằng kẹp gỗ trước nền tường pastel có bóng đổ nhẹ, theo mood retro tạp chí thập niên 70 với ánh sáng tản mềm và chất liệu giấy cũ. Kết quả yêu cầu khuôn mặt trong cả sáu khung phải trùng khớp tuyệt đối với ảnh tham chiếu (khóa nhận diện nghiêm ngặt), đồng thời mỗi khung thể hiện đúng sáu tư thế/cảm xúc đã liệt kê, không có chữ trên viền Polaroid, giữ tông màu ấm dịu và xuất ra một file PNG đúng thông số.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
