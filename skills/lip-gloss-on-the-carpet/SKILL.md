@@ -1,7 +1,24 @@
 ---
 name: lip-gloss-on-the-carpet
 description: This prompt instructs an AI image generator to produce an ultra-realistic, high-resolution Y2K-inspired bedroom editorial photo of a young woman posed on a pink carpet amid scattered makeup, teen magazines, and reflective CDs, styled with early-2000s fashion and glossy beauty details and lit with warm on-camera flash plus soft ambient room light. It specifies the camera angle, props, color palette, textures, and period-accurate flash imperfections to achieve authentic nostalgic “teen-mag” energy, and it requires the subject’s face and proportions to match a provided reference image exactly. The intended outcome is a crisp 4:5 vertical portrait that feels intimate, glamorous, and unmistakably early-digital, with visible sparkle, sheen, and reflective highlights throughout the scene.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
