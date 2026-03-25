@@ -1,7 +1,24 @@
 ---
 name: call-me-by-your-name-cinematic-window-portrait
 description: This prompt instructs an image editor/generator to composite the person from an input photo into a fixed, cinematic window portrait scene while keeping the original environment, framing, props, and lighting unchanged, matching a nostalgic European film look. It specifies the subject’s pose on a stack of books, the warm natural daylight and subtle film-grain style, and requires adding handwritten yellow title text at the top, producing a high-resolution, ultra-realistic vertical portrait where only the person is replaced and everything else remains identical to the reference scene.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
