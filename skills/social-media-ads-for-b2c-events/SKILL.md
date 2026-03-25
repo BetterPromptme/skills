@@ -1,7 +1,24 @@
 ---
 name: social-media-ads-for-b2c-events
 description: Generates nine ready-to-run B2C social ad concepts to promote a free webinar, tailored to the provided webinar title and target audience, with three variations each for Facebook, Instagram Stories, and LinkedIn. Each concept includes a compelling headline, concise body copy, and a strong call-to-action, resulting in platform-appropriate scripts you can paste directly into ad managers.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
