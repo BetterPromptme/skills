@@ -1,7 +1,24 @@
 ---
 name: transform-your-logo-or-icon-into-a-luxurious-diamond-design
 description: This prompt instructs the AI to generate an ultra‑high‑resolution 3D render of an existing logo, preserving its original shape and text layout while transforming it into a realistic diamond‑crafted object with transparent, faceted, highly reflective surfaces and subtle white/pale‑blue/soft‑violet refraction shimmer, all presented on a pure white background at 8K detail.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
