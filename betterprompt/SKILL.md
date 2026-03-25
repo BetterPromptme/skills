@@ -150,7 +150,9 @@ betterprompt resources --models-only
 
 Run these steps in order and stop when the user's goal is satisfied:
 
-1. **Search** — `betterprompt skill search ...`
+Always use `--json` flag on every command for machine-readable output.
+
+1. **Search** — `betterprompt skill search "<query>" --json`
 2. **Inspect** — `betterprompt skill info <slug> --json`
 3. **Fetch resources** — `betterprompt resources --models-only --json`
 4. **Validate** from `skillmd`
@@ -161,7 +163,8 @@ Run these steps in order and stop when the user's goal is satisfied:
 - default model's options
 - other supported models
 
-6. **Execute** only after required inputs are present
+6. **Execute** — `betterprompt generate <skill-slug> [input flags] --json`
+7. **Poll if needed** — `betterprompt outputs <run-id> --sync --json`
 
 Do not skip any steps. If any step fails due to transient error, retry once.
 
