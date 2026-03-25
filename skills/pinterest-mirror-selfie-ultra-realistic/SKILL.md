@@ -1,7 +1,24 @@
 ---
 name: pinterest-mirror-selfie-ultra-realistic
 description: This prompt instructs an image model to generate a hyper-realistic mirror selfie of a gender-neutral person in a specified location, wearing a defined outfit with particular hair and accessories, conveying a chosen vibe and pose under specified lighting. It emphasizes an authentic smartphone aesthetic with natural skin and fabric detail, subtle lens distortion, and realistic reflections while explicitly forbidding common artificial or stylized traits, resulting in a believable iPhone-style RAW photo rather than a polished or cinematic image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
