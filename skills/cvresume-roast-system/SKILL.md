@@ -1,7 +1,24 @@
 ---
 name: cvresume-roast-system
 description: This prompt instructs the AI to act as a harsh, sarcastic visual reviewer and art director to produce a single “roasted” version of a resume by overlaying it with red-ink, handwritten-style critiques—cross-outs, arrows, circles, underlines, margin notes, and messy-but-intentional doodles—each accurately anchored to specific resume lines or sections while keeping the underlying text readable, resulting in an aggressively marked-up image suitable for humor-forward social content.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
