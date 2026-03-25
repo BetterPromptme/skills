@@ -1,7 +1,24 @@
 ---
 name: stranger-things-final-season-poster
 description: This prompt instructs an image-generation system to take a user-supplied portrait and convert it into an ultra-realistic, Netflix-style character poster that matches the look and layout of a Stranger Things Season 5 promo, preserving the person’s identity while adding cinematic red-and-black lighting, a single clearly readable neon “5” in the background, specified wardrobe styling based on gender presentation, and fixed branding text/logos placed in exact positions for a print-ready, high-resolution poster result.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
