@@ -1,7 +1,24 @@
 ---
 name: alpine-luxury-lake-moment
 description: This prompt instructs an image editing model to take a reference photo of a person and place them into a realistic, candid outdoor lifestyle scene where they are casually leaning against a matte black luxury SUV beside a calm alpine lake. It specifies strict identity and outfit preservation while defining the desired pose, setting (pine forests, mountains, lakeside road), lighting, composition, realism, and overall quiet luxury mood, resulting in a natural-looking high-end travel snapshot that still matches the original subject exactly.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
