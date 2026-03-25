@@ -1,7 +1,24 @@
 ---
 name: plushstyle-studio-doll
 description: This prompt instructs the AI to take a provided human photo and generate a stylized image of the person as a modern collectible plush doll, keeping the original outfit’s style and colors while converting all elements into smooth, matte fabric materials with visible plush construction details. The result is a studio-lit, confidently posed character with an oversized head and short limbs, minimal facial features, and hair and clothing re-created as high-quality felt and soft textile components rather than crochet or yarn-knit aesthetics.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
