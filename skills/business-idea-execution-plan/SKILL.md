@@ -1,7 +1,24 @@
 ---
 name: business-idea-execution-plan
 description: This prompt instructs the AI to act as a lean startup strategist for a solo founder and produce an execution-ready, budget-conscious plan to validate and launch a specified business idea from zero to early product–market fit, delivering structured outputs that cover positioning, assumptions and risk testing, customer discovery, MVP definition, build and integration choices, 30/60/90-day milestones, experiment and go-to-market backlogs, budget/tooling options, analytics and PMF signals, and essential legal/ops checklists—optimized for fast, instrumented experiments using no-code, automation, and low-cost tools.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
