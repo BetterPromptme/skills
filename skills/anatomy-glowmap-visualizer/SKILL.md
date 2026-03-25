@@ -1,7 +1,24 @@
 ---
 name: anatomy-glowmap-visualizer
 description: This prompt instructs an AI to generate a digital illustration of a chosen subject depicted like an advanced anatomical scan, using luminous blue linework to define its structure against a dark background, while highlighting a specified body part with a contrasting red glow to draw attention. The result is an educational, visually striking image that emphasizes the subject’s form and the highlighted area as a focal point of significance.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
