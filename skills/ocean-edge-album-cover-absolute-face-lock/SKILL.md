@@ -1,7 +1,24 @@
 ---
 name: ocean-edge-album-cover-absolute-face-lock
 description: This prompt instructs an image generator to produce a photorealistic, square-format album cover depicting a person seated at the very end of a white spring diving board extending over a vast, horizonless ocean in a cool blue-hour film aesthetic, with specific wardrobe, camera, lighting, composition, and post-processing constraints. Its intended outcome is a high-resolution cover image with crisp subject detail and textured waves, no visible text or logos, and—most critically—strict, unaltered preservation of the provided reference face (with a requirement to halt and request a clearer reference if facial visibility is insufficient).
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
