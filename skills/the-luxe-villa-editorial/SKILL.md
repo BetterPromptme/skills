@@ -1,7 +1,24 @@
 ---
 name: the-luxe-villa-editorial
 description: This prompt instructs an image model to generate a photorealistic, natural-light luxury resort portrait of a specific young woman seated under a wooden pergola, with precise requirements for identity preservation, pose, wardrobe, accessories, architectural setting, lighting, color palette, and camera feel. The intended outcome is a high-resolution vertical editorial-style villa photograph that keeps realistic skin texture and proportions while delivering a calm, refined lifestyle aesthetic with clean modern background elements and soft depth of field.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
