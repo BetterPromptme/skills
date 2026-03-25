@@ -1,7 +1,24 @@
 ---
 name: misty-seascape-monochrome-absolute-face-lock
 description: This prompt instructs an image model to take one clear facial reference photo and generate a hyper-realistic black-and-white, waist-up cinematic portrait set against a quiet, misty seascape, while locking the subject’s facial identity exactly to the reference with no retouching or feature changes. It specifies pose, lighting, lens/framing, shallow depth of field, and film-like grain, automatically selects a gender-appropriate loose white long-sleeve top, and enforces strict constraints (no logos/text, no extra people, no obscuring wind or effects); if the reference face is not clearly visible, it halts and requests a better image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
