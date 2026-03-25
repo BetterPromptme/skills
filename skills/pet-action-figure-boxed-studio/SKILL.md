@@ -1,7 +1,24 @@
 ---
 name: pet-action-figure-boxed-studio
 description: This prompt instructs an image generator to create a single, square, photorealistic studio-style product photo that transforms the user’s pet from a reference image into a glossy 6-inch PVC action figure, shown as one loose figure placed in front of a matching window-box package. It specifies a clean modern catalog look, a natural species-appropriate pose, strong preservation of the pet’s identity and outfit details, and packaging that clearly reveals a second identical in-box figure secured in a clear tray, while avoiding real-world branding, excessive reflections, clutter, or anatomical errors.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
