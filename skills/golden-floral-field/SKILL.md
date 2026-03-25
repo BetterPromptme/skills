@@ -1,7 +1,24 @@
 ---
 name: golden-floral-field
 description: This prompt instructs an image model to generate a cinematic, natural-light close-up portrait that preserves the subject’s exact facial identity while styling the scene as a dreamy golden-hour floral editorial. It specifies camera and lens characteristics, shallow depth of field, film-grain texture, muted color palette, wardrobe and makeup details, and a softly blurred wildflower environment that casts intricate floral shadows across realistically detailed skin. The intended outcome is a romantic, intimate portrait with crisp texture and authentic lighting, while strictly avoiding face alterations, heavy retouching, distortion, text, or any non-realistic elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
