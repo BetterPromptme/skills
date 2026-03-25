@@ -1,7 +1,24 @@
 ---
 name: frozen-elegance
 description: This prompt instructs an AI to generate a photorealistic, cinematic Arctic fashion editorial close-up featuring the same woman as in the provided selfie, preserving her identity exactly while depicting her cautiously walking over cracked glacier ice and looking into the camera. It specifies strict realism requirements—no beautification or stylization, accurate skin texture, hard cold daylight, detailed ice coloration, subtle wind motion, and a precise high-fashion outfit—so the resulting image reads like a luxury winter campaign photograph with sharp detail, natural facial accuracy, and authentic environmental lighting.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
