@@ -1,7 +1,24 @@
 ---
 name: soft-jelly-3d-icon-style-prompt
 description: This prompt directs an image-generation system to create a consistent set of modern 1:1 jelly-like 3D icons for UI use, specifying materials, layered composition with floating internal elements, a cohesive pastel color palette, soft studio lighting, and a neutral background to ensure clean depth, contrast, and uniform style across the icon pack at high resolution.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
