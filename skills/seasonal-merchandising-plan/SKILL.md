@@ -1,7 +1,24 @@
 ---
 name: seasonal-merchandising-plan
 description: This prompt instructs the AI to act as a seasonal retail merchandiser and produce a complete four-quarter merchandising plan for a specific store by assuming or filling in missing details (store type, location, product focus, brand style, and business goal). The expected outcome is a season-by-season set of in-store display concepts with promotional hooks plus low-cost suburban marketing tactics—such as flyers, events, and email—aligned to the desired store vibe and the stated business objective.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
