@@ -63,8 +63,8 @@ Then collect all inputs from the human:
   - `Main_Characters`
   - `Visual_Elements`
 - Optional: model and options.
-  - Present the human with the default model **`gpt-image-1`** and its available options. Look up `gpt-image-1` in the `betterprompt resources` output (filtered to modality `"image"`) and show its `availableOptions` as: `key: val1, val2 (default), val3  |  key2: ...`. Mark a value `(default)` if it matches these defaults: `{"image":{"quality":2},"quality":"high"}`.
-  - If the human does not specify, defaults are used: model `gpt-image-1`, options `{"image":{"quality":2},"quality":"high"}`. Other models from the resources call are also available.
+  - Present the human with the default model **`gpt-image-1`** and its available options. Look up `gpt-image-1` in the `betterprompt resources` output (filtered to modality `"image"`) and show its `availableOptions` as: `key: val1, val2 (default), val3  |  key2: ...`. Mark a value `(default)` if it matches these defaults: `{"quality":"high"}`.
+  - If the human does not specify, defaults are used: model `gpt-image-1`, options `{"quality":"high"}`. Other models from the resources call are also available.
 
 If any required text input is missing, **ask the human for what's missing**. Do not assume or fabricate values.
 
@@ -86,7 +86,7 @@ Notes:
 
 - Pass each text input as a separate `--input <key>=<value>` flag.
 - If the human does **not** mention a model, **omit** `--model` and BetterPrompt will use the default model: **`gpt-image-1`**.
-- If the human does **not** mention options, **omit** `--options` and BetterPrompt will use the default options: **`{"image":{"quality":2},"quality":"high"}`**.
+- If the human does **not** mention options, **omit** `--options` and BetterPrompt will use the default options: **`{"quality":"high"}`**.
 - If the run times out, the response will include a `runId` you can use to fetch the result later.
 
 Example (using defaults shown above):
@@ -100,5 +100,5 @@ betterprompt generate avatar-inspired-poster-generator \
   --input Main_Characters=<value> \
   --input Visual_Elements=<value> \
   --model gpt-image-1 \
-  --options '{"image":{"quality":2},"quality":"high"}'
+  --options '{"quality":"high"}'
 ```
