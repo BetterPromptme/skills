@@ -1,7 +1,24 @@
 ---
 name: linkedln-headline-that-sells
 description: This prompt instructs the AI to act as a LinkedIn personal-branding specialist and generate three concise, recruiter-attractive LinkedIn headline options tailored to a user’s field, current role, key expertise areas, and career level. The outcome is three professional, bold, SEO-optimized yet readable headlines (each under 220 characters) designed to boost search visibility and credibility with both recruiters and peers.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
