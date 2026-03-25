@@ -1,7 +1,24 @@
 ---
 name: make-your-photos-more-striking
 description: This prompt instructs an image-generation model to create a cinematic, overhead portrait of a single stationary subject on a brick city sidewalk, styled with a moody 35mm film aesthetic. The outcome is a 4:3 image with shallow depth of field and sharp focus on the subject, while the surrounding crowd appears motion-blurred to emphasize contrast between stillness and movement.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
