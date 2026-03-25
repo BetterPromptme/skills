@@ -1,7 +1,24 @@
 ---
 name: write-a-product-description
 description: This prompt instructs the AI to examine a provided product image and generate a visually vivid, emotionally compelling, marketing-focused description suitable for a product ad or launch. It directs the model to accurately translate observable design details—such as materials, form, colors, and key features—into clear benefits and lifestyle appeal, while maintaining a specified brand tone and output format. The outcome is a high-converting product description, optionally including a tagline, that stays grounded in what’s visible and avoids claiming unverified functionality.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
