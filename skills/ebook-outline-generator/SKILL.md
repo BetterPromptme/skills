@@ -1,7 +1,24 @@
 ---
 name: ebook-outline-generator
 description: This prompt instructs the AI to create a detailed, reader-focused outline for an ebook on a specified title and topic, starting with the ebook’s objective and intended audience and then organizing the content into well-scoped chapters. For each chapter, it requires a concise summary, key points, and suggested examples or case studies to support clarity and engagement, while also integrating practical reader-value elements like actionable tips, worksheets, and checklists. The outcome is a structured blueprint that guides the ebook’s narrative flow and ensures comprehensive coverage of the subject.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
