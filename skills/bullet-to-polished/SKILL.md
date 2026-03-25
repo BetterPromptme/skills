@@ -1,7 +1,24 @@
 ---
 name: bullet-to-polished
 description: This prompt instructs an expert editor to convert supplied bullet notes or fragmented ideas into polished, coherent prose that reads naturally while preserving the original meaning, intent, and logic exactly. The result is one or more clear, professional paragraphs that improve flow, grammar, transitions, and readability without adding, omitting, or reinterpreting any core information, and it outputs only the refined text with no commentary or extra formatting.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
