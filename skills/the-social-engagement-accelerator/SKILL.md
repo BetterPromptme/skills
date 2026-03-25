@@ -1,7 +1,24 @@
 ---
 name: the-social-engagement-accelerator
 description: This prompt instructs the AI to act as a social media content strategist and produce a numbered list of 10 scroll-stopping post ideas tailored to a specified platform and topic/product. Each idea is constrained to under 20 words and must include a hook, an emotional angle, and a call-to-action suggestion, all written in the requested brand tone.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
