@@ -1,7 +1,24 @@
 ---
 name: timeless-glamour
 description: This prompt instructs an AI image generator to produce a high-definition, cinematic editorial fashion portrait set in a luxurious marble-and-gold bathroom, featuring a poised, vintage-inspired subject lit by warm ambient lamp light and framed with shallow depth of field and realistic reflections. The result is a timeless, intimate, photorealistic fashion image that emphasizes refined styling, accurate identity preservation, and detailed rendering of skin, fabric, and reflective surfaces.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
