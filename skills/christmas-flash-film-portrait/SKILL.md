@@ -1,7 +1,24 @@
 ---
 name: christmas-flash-film-portrait
 description: This prompt instructs an AI image editor to take a single uploaded portrait photo and transform it into a realistic, vintage-style Christmas dinner film photograph shot indoors at night with direct on-camera flash. It specifies a warm, nostalgic 35mm aesthetic with visible grain, subtle imperfections, and cozy holiday decor while keeping the subject’s identity, facial features, age, skin tone, and gender presentation unchanged. The expected outcome is an editorial yet candid-looking festive portrait—tasteful and commercially appropriate—without adding text, logos, fantasy elements, or non-photographic styles.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
