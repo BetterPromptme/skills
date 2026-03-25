@@ -1,7 +1,24 @@
 ---
 name: neon-backseat-night-drive
 description: This prompt instructs an image model to edit a provided portrait so the same person appears in a candid, handheld iPhone-like photo taken from the front passenger seat, capturing them leaning forward from the backseat at night. It specifies an intimate angle and medium close-up composition with the headrest foreground, preserves the subject’s exact identity and unchanged outfit, and places them inside a modern moving car amid neon-lit city streets. The intended result is a realistic, slightly imperfect snapshot with mixed neon/headlight/dashboard lighting, mild motion blur, and grain that conveys energetic nighttime urban motion.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
