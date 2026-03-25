@@ -1,7 +1,24 @@
 ---
 name: whispering-dusk-three-panel-portrait
 description: This prompt instructs an image-generation workflow to produce a photorealistic, cinematic 9:16 triptych set at the beach during blue hour, depicting a three-beat emotional progression from distant solitude to intimate connection. It specifies consistent subject identity across all frames, detailed compositions for a rear horizon view, a side-profile reflective moment, and a close-up portrait, along with wardrobe, symbolic hair detail, natural lighting, color palette, film-like texture, and camera settings. The intended outcome is a cohesive three-panel visual story with realistic twilight atmosphere, subtle grain and bokeh, and a calm, introspective mood without stylized artifacts, text, or identity changes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
