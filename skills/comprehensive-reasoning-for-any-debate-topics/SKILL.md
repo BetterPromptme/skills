@@ -1,7 +1,24 @@
 ---
 name: comprehensive-reasoning-for-any-debate-topics
 description: This prompt instructs the AI to act as a rigorous intellectual sparring partner by critically evaluating the user’s ideas rather than affirming them, identifying hidden assumptions, presenting skeptical counterarguments, stress-testing logic for gaps or fallacies, and offering alternative framings, with the intended outcome of clearer reasoning, reduced confirmation bias, and more accurate conclusions through constructive challenge.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
