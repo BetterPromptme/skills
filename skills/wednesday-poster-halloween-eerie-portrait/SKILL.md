@@ -1,7 +1,24 @@
 ---
 name: wednesday-poster-halloween-eerie-portrait
 description: This prompt directs an AI image generator to produce a vertical, ultra-detailed cinematic gothic portrait of a solemn woman whose face must remain exactly identical to a provided reference, depicting her centered and standing still while holding a lit white candle amid cool blue-grey smoke, with warm candlelight modeling her features and a subtly revealed organic clawed hand resting on her right shoulder; the intended outcome is a realistic, restrained, and haunting “Wednesday”-inspired scene that balances warm–cool lighting, minimal composition, and symbolic tension without altering the subject’s identity.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
