@@ -1,7 +1,24 @@
 ---
 name: tangled-live-action-portrait-style
 description: This prompt instructs the model to edit a provided girl’s portrait into a live-action, photorealistic fantasy princess-style photograph by preserving her exact facial identity while changing her hair to long, flowing blonde hair that matches a supplied reference and adding a single small green animal companion in the same placement, pose, and expression as the reference. It tightly specifies cinematic lighting, depth of field, realistic skin and material textures, and composition to ensure the result reads as an authentic camera-captured image. The intended outcome is an ultra-high-resolution fantasy portrait that adheres to the reference for styling and mood without copying the reference face, while explicitly avoiding any animated, illustrated, or 3D-rendered look and minimizing common AI artifacts.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
