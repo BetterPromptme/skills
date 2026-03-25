@@ -1,7 +1,24 @@
 ---
 name: shh-paparazzi-taken-portrait
 description: This prompt instructs an image-generation model to produce an 8K, 4:5 photorealistic, low-key cinematic fashion portrait set in a dim underground mall parking garage, featuring a young woman whose face, hairstyle, and proportions must exactly match a provided reference. It specifies camera, lighting, color grade, wardrobe, pose, and mood, and adds narrative props—multiple surrounding smartphones displaying her from different angles with realistic reflections—to create a gritty-yet-futuristic editorial scene exploring identity, technology, and voyeurism without adding logos or artificial distortion.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
