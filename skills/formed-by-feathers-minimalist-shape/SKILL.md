@@ -1,7 +1,24 @@
 ---
 name: formed-by-feathers-minimalist-shape
 description: This prompt directs an image generator to create a minimalist composition on a clean white background where vibrant, richly textured feathers are precisely and symmetrically arranged to form a phoenix silhouette. The result is a calm, softly lit, gentle, and elegant artwork emphasizing balanced layout and detailed feather surfaces with varied color.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
