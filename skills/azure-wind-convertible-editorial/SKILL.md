@@ -1,7 +1,24 @@
 ---
 name: azure-wind-convertible-editorial
 description: This prompt instructs an image-generation model to create an ultra-photorealistic, high-fashion editorial portrait of a stylish subject in a vintage convertible on a sunlit coastal road, emphasizing a specific leaning pose, intense natural wind-driven motion in hair and a translucent scarf, and luxury details like sunglasses, jewelry, and chrome reflections. The intended outcome is a cinematic magazine-cover-style image with sharp subject focus, shallow depth of field, high-contrast summer lighting, and a softly blurred ocean-and-sky background rendered at very high detail.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
