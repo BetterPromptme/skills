@@ -1,7 +1,24 @@
 ---
 name: rouge-and-refinement-portrait
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic editorial portrait of a young woman applying lip gloss in a modern luxury marble bathroom, with precise requirements for composition, pose, wardrobe, accessories, props, lighting, color palette, and camera feel, while strictly preserving the subject’s natural facial identity, realistic skin texture, and accurate reflections. The intended outcome is a polished, intimate beauty-moment image that integrates the subject and her mirror reflection alongside key luxury elements (vanity, backlit mirror, designer compact, and a red quilted handbag) in a clean, high-end interior aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
