@@ -1,7 +1,24 @@
 ---
 name: hong-kong-90s-newspaper-room-face-lock
 description: This prompt directs an image generator to produce a high‑resolution, photorealistic half‑body portrait set in a cramped 1990s Hong Kong interior lined with aged Cantonese newspapers, while using an uploaded face reference with extremely strict identity locking and consistency checks. It specifies period-accurate film color, lighting, lens and grain, offers gender-based wardrobe and styling variants for a youthful street mood, and enforces safety and privacy constraints (e.g., no minors, no sexualized content, no weapons, no readable or identifying text). The intended outcome is a repeatable, one-click set of authentic nineties Hong Kong–styled portraits that retain the subject’s exact facial identity and avoid disallowed content, or a request for a clearer reference if the face can’t be reliably matched.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
