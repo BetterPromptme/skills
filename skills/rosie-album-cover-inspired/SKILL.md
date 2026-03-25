@@ -1,7 +1,24 @@
 ---
 name: rosie-album-cover-inspired
 description: This prompt instructs an image model to generate a high-resolution, photorealistic, film-textured close-up portrait with a warm, nostalgic editorial mood: a young blonde woman lying on a wooden floor, shot from a slightly top-down angle with soft makeup, golden diffused lighting, and subtle grain. It specifies tight composition, color palette, and typography details—adding bold red “rosie” text along the bottom—while requiring strict preservation of the subject’s identity from a provided reference image for an intimate, timeless cinematic result.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
