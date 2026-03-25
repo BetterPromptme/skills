@@ -1,7 +1,24 @@
 ---
 name: 3d-brand-ad-in-vapor-grid
 description: This prompt instructs an image generator to produce a square (1:1) advertising visual for a specified brand, set in a 3D Y2K-inspired product-photography scene featuring distorted grid planes, retro-futuristic materials (chrome, reflective metals, translucent plastics), controlled glow and reflections, and a brand-led synthetic color palette with select neon accents. It directs the composition to use minimal modular brand elements instead of excessive bubbles, add holographic/UI/vaporwave-style overlays aligned to the brand aesthetic, and finish with a small brand logo and micro-slogan at the bottom styled as a pixel-like signature or digital watermark.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
