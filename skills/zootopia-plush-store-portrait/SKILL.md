@@ -1,7 +1,24 @@
 ---
 name: zootopia-plush-store-portrait
 description: This prompt instructs an AI to generate a realistic, close-up upper-body photo of a real human child (girl or boy) in a brightly lit, cozy plush-toy store, with the person’s identity and core traits preserved. It requires choosing one of two themed setups—either Nick Wilde or Judy Hopps—where the child wears a large character plush hat, holds the matching plush, and stands before densely stocked shelves of both characters’ plush toys. The result is a vibrant, warm retail scene with a specific cute pose (finger to cheek), gentle expression, natural skin tones, and detailed fabric textures, while strictly avoiding identity changes, animation styles, character distortion, extra people, or surreal effects.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
