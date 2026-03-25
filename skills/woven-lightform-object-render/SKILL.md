@@ -1,7 +1,24 @@
 ---
 name: woven-lightform-object-render
 description: This prompt instructs an image-generation model to create a highly realistic 3D studio-style product render of a specified object, where the entire form is constructed from intricately woven, translucent strands of light and shadow. The resulting image features layered filament detail, subtle gradient patterns, soft even lighting, and a clean background for a premium, modern abstract aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
