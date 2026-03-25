@@ -1,7 +1,24 @@
 ---
 name: complete-scholarship-essay-generator-tailored-by-topic-purpose-and-english-level
 description: This prompt instructs the AI to produce a full, polished scholarship application essay tailored to a specific topic, university, purpose, language proficiency level, and word count. It incorporates optional personal anecdotes, achievements, goals, and the university’s mission to craft a sincere first-person narrative with a clear introduction, body, and conclusion. The outcome is a compelling, well-structured essay that demonstrates motivation, fit with the institution’s values, and the impact of the scholarship on the applicant’s future, while staying close to the requested length and appropriate to the stated English level.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
