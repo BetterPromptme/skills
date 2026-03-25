@@ -1,7 +1,24 @@
 ---
 name: the-reference-to-poses-is-very-good-high-accuracy-though-theres-a-chance-of-drawing-a-card
 description: This prompt instructs the AI to create a studio-quality composite image by taking the subject/character from the first image and reposing them to match the stance and body positioning shown in the second image. The result is a professionally lit, polished studio shot featuring the original character but adopting the exact pose from the reference, maintaining a cohesive, high-end photographic look.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
