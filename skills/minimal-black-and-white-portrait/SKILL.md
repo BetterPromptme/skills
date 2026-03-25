@@ -1,7 +1,24 @@
 ---
 name: minimal-black-and-white-portrait
 description: This prompt instructs the AI to take an uploaded selfie or portrait and convert it into a minimalist, high-contrast black-and-white studio editorial image: the subject is posed squatting on a stool in simple streetwear, lit with soft studio lighting against a plain wall with negative space, while preserving identity, natural proportions, and realistic texture. The expected outcome is a clean, modern, slightly moody monochrome near full-body portrait with sharp facial focus, visible stool and shoes, subtle accessories for realism, and strict constraints to avoid distortions, extra limbs, heavy retouching, text, logos, or any off-style elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
