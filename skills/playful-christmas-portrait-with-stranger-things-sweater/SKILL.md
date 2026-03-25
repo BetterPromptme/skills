@@ -1,7 +1,24 @@
 ---
 name: playful-christmas-portrait-with-stranger-things-sweater
 description: This prompt instructs an AI image generator to create a casual, eye-level medium shot of a person in a clean, neutral closet setting, playfully holding the collar of an oversized holiday knit sweater so the graphic text and festive pattern are the clear focal point. It specifies a goofy, candid facial expression (wink and open mouth), relaxed everyday hair styling, and soft, even lighting to keep colors vivid without dramatic shadows, while explicitly avoiding editorial posing, cinematic lighting, clutter, or full-body framing. The intended outcome is a youthful, approachable holiday lifestyle image suitable for pop-culture/fandom merchandise promotion and cozy seasonal content.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
