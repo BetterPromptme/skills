@@ -1,7 +1,24 @@
 ---
 name: art-fair-booth-branding-toolkit
 description: This prompt asks the AI to act as an art-fair booth branding expert and develop a tailored brand concept for a vendor, including a catchy booth name, an on-theme color palette, and attention-grabbing signage ideas designed to increase foot traffic. It also directs the AI to match a specified creative style and to ask follow-up questions needed to customize the recommendations to the product, audience, and event vibe.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
