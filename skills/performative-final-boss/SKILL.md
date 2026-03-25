@@ -1,7 +1,24 @@
 ---
 name: performative-final-boss
 description: Prompt này dùng để tạo một ảnh chân dung lifestyle theo thẩm mỹ “performative street” từ đúng một ảnh tham chiếu, trong đó khuôn mặt được khóa tuyệt đối (không đổi tuổi/giới/tỉ lệ/tông da hay đặc điểm nhận dạng) và chỉ thay đổi phần tóc–phụ kiện–trang phục–đạo cụ–bối cảnh theo các preset đã định. Kết quả mong muốn là một ảnh 3:4 độ phân giải cao với ánh sáng tự nhiên, bokeh nhẹ, bố cục sạch không logo/chữ thương hiệu, nhân vật cầm matcha và sách kèm tai nghe và tote đúng vị trí, đồng thời có cơ chế kiểm định/loại bỏ nếu ảnh tham chiếu không đủ rõ hoặc nếu độ khớp khuôn mặt không đạt ngưỡng.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
