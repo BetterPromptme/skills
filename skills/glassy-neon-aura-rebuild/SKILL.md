@@ -1,7 +1,24 @@
 ---
 name: glassy-neon-aura-rebuild
 description: This prompt instructs the AI to take the provided image and retexture it into a stylized “Floating Glassy Neon 3D” look while locking the original shape and preserving contours and layered details. The result is the same object silhouette rendered as translucent neon glass-gel with smooth aqua-to-blue-to-violet gradients, soft refractive glow and internal light scatter, lit by a bright softbox HDRI, floating above a clean white background with a very soft, faint contact shadow and subtle depth-of-field for high-resolution product-style branding output.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
