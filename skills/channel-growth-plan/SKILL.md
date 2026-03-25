@@ -1,7 +1,24 @@
 ---
 name: channel-growth-plan
 description: This prompt instructs the AI to act as a channel growth strategist and produce a concise, actionable growth plan for a specified channel type, content focus, and goal. The output includes clear positioning bullets, a target persona summary, five hook-driven content ideas with execution guidance, a one-week posting schedule with suggested timing and formats, a core engagement playbook, and prioritized short-term optimization steps for the first 1–3 months, ending with a single-page table that summarizes the entire plan at a glance.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
