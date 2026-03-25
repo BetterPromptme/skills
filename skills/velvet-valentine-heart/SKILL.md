@@ -1,7 +1,24 @@
 ---
 name: velvet-valentine-heart
 description: This prompt instructs an AI image editor to turn a provided portrait into a premium, Valentine-themed fashion campaign image by keeping the subject’s facial identity intact while re-staging them in a clean studio set built from oversized plush red heart cushions, directing a relaxed romantic pose, casual-luxury styling, and soft diffused lighting to achieve a refined, high-resolution editorial finish with realistic textures, natural skin tones, and sharp focus.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
