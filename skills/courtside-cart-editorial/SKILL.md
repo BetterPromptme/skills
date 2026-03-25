@@ -1,7 +1,24 @@
 ---
 name: courtside-cart-editorial
 description: This prompt instructs an image-generation model to produce a high-end fashion editorial portrait shot from a low angle, featuring a person reclining in an empty shopping cart filled with tennis balls on a blue clay tennis court. It specifies the subject’s minimalist sportswear, the autumnal court details and chain-link fence backdrop, and an overcast natural-light mood to achieve a soft, cinematic, magazine-style photograph in high resolution with natural textures and balanced contrast, while ensuring no visible text, logos, or graphic elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
