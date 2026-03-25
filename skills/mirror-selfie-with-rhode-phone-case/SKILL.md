@@ -1,7 +1,24 @@
 ---
 name: mirror-selfie-with-rhode-phone-case
 description: This prompt instructs an image model to generate a close-up bathroom mirror selfie of a female subject while strictly preserving the person’s exact facial identity, proportions, skin tone, and hair color from the first reference image, and accurately featuring the Rhode phone case from the second reference image. It specifies the camera angle, framing, pose, expression, hair styling, makeup, outfit, jewelry, nails, lighting, and upscale bathroom setting to achieve a polished, beauty-influencer aesthetic with realistic texture and reflections, while explicitly avoiding male subjects, heavy retouching, background clutter, extra props, or any changes to the phone case design.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
