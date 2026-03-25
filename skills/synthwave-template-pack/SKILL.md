@@ -1,7 +1,24 @@
 ---
 name: synthwave-template-pack
 description: This prompt instructs an AI image generator to create a retro synthwave scene featuring the specified subject as a sunset silhouette against a gradient sky and a low‑poly grid landscape, using two provided colors in a cohesive retro‑futuristic palette. The result is a high-contrast composition that clearly separates the dark foreground figure from the vibrant background for a classic 1980s-inspired aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
