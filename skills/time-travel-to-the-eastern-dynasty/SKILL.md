@@ -1,7 +1,24 @@
 ---
 name: time-travel-to-the-eastern-dynasty
 description: This prompt defines a single-turn cinematic portrait generation task that uses a provided reference face as a strictly locked identity source, requiring an ultra-realistic 8K 9:16 close-up of the subject on a white horse in a historical East Asian courtyard while preserving the reference facial features, gender expression, skin texture, and color tone exactly. It specifies period-accurate long-hair styling that extends behind the unchanged hairline without covering any facial landmarks, detailed royal wardrobe and props, camera and lighting settings, and strict rejection criteria that halt the process if the reference image is insufficiently clear or if any identity drift, facial alteration, modern anachronism, or over-smoothing occurs.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
