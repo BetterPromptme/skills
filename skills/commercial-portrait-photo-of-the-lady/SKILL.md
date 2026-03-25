@@ -1,7 +1,24 @@
 ---
 name: commercial-portrait-photo-of-the-lady
 description: This prompt instructs an image-generation or photo-editing system to create a high-end commercial half-body portrait of the woman from the provided image while preserving her identity, specifying her hairstyle, natural dewy makeup, black spaghetti-strap dress with rhinestone/chain details, coordinated jewelry, and a seated sideways pose with direct eye contact. It defines a minimalist studio setup with a plain gray backdrop, a glossy black marble/glass table, soft side studio lighting, and a shallow depth-of-field medium-telephoto portrait look with low-saturation warm-gray tones. The intended outcome is a clean, sophisticated, professionally lit portrait that keeps attention on the subject and maintains consistent facial features.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
