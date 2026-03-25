@@ -1,7 +1,24 @@
 ---
 name: lead-magnet-generator-to-boost-engagement
 description: This prompt instructs the AI to act as a sales assistant and generate 10 lead magnet ideas tailored to a specified target audience and niche, each designed to drive quick sign-ups or inquiries. For every idea, it produces a brief value-focused description plus ready-to-use copy for a cold DM, a concise cold email with a clear call to action, and an engagement-optimized social caption, all written in a natural, non-salesy tone while following formatting and style constraints.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
