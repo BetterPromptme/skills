@@ -1,7 +1,24 @@
 ---
 name: keyword-rich-blog-blueprint
 description: This prompt instructs the AI to generate a detailed, SEO-optimized blog post outline for a specified topic, using provided target keywords, tone, and audience. The resulting output includes a keyword-focused blog title, an engaging introduction that sets purpose and audience, several structured main sections with keyword-rich subsection headings, and a conclusion that recaps key takeaways, repeats important keywords naturally, and ends with a clear call to action.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
