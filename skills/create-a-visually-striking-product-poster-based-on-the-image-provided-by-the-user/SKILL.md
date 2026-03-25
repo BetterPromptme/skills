@@ -1,7 +1,24 @@
 ---
 name: create-a-visually-striking-product-poster-based-on-the-image-provided-by-the-user
 description: This prompt instructs an AI design system to turn a user-supplied product photo into a polished, market-ready advertising poster by making the product the visual centerpiece and enhancing it with theme-driven backgrounds, dramatic yet clear lighting, depth-building shadows/gradients, and brand-aligned storytelling. It also supports optional user parameters (style elements, mood, color palette, and audience/voice) to tailor the composition for high-impact use across both digital and print media.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
