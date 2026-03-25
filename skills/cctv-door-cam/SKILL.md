@@ -1,7 +1,24 @@
 ---
 name: cctv-door-cam
 description: This prompt instructs an AI video generator to create a short, photorealistic vertical CCTV-style clip of a suburban front yard viewed from a fixed camera above a front door, with bright natural sunlight and subtle grain. A specified subject approaches along the pathway, stops beneath the camera, looks up, smiles, and says “Hello,” while realistic ambient outdoor sounds and a voice matched to the subject’s characteristics complete the scene.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
