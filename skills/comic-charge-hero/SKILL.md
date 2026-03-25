@@ -1,7 +1,24 @@
 ---
 name: comic-charge-hero
 description: This prompt generates a high-energy 2D cartoon comic-book illustration featuring a specified subject charging forward in a chosen action pose. The result is a dynamic, print-ready image with bold black outlines, vivid primary colors, expressive motion lines, exaggerated perspective, and an energetic composition designed for strong visual impact in a 3:2 aspect ratio.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
