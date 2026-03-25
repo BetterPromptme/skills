@@ -1,7 +1,24 @@
 ---
 name: stranger-things-eddie-munson-expression-portrait
 description: This prompt instructs an image-generation/editing system to turn a user-provided portrait into an ultra-realistic, 80s gritty, rebellious, TV-cinematic character-style medium close-up while preserving the person’s exact facial identity. It specifies replicating a particular outfit style (a themed graphic tee with a worn denim jacket), matching a precise pose (hands behind the head forming “devil horns”) and expression (wide eyes, open mouth, tongue out), and aligning lighting, color palette, camera angle, and film-grain mood to a reference, while explicitly avoiding copying the reference person’s identity, face, or hairstyle.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
