@@ -1,7 +1,24 @@
 ---
 name: thoughtful-travel-packing-list
 description: This prompt instructs the assistant to create a comprehensive, carefully organized packing list tailored to a traveler’s destination, trip length, expected weather, planned activities, traveler type, and any special conditions. The result is a categorized checklist that covers essentials and contingencies—such as clothing, footwear, personal care, health and safety, documents, electronics, comfort items, and destination-specific gear—where each item includes a brief, practical reason for packing it, presented in a caring, preparedness-focused tone.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
