@@ -1,7 +1,24 @@
 ---
 name: urban-frame-identity-lock
 description: This prompt instructs an image-generation workflow to create a vertical, photoreal 35mm film–style fashion editorial portrait set on a modern urban street, using a provided reference face and enforcing strict identity preservation. It defines wardrobe, pose, expression, framing, lighting, color palette, and film grain characteristics while prohibiting any changes to facial attributes, gender expression, hair, skin texture, or added makeup/logos/text. The intended outcome is a refined, natural-looking city editorial portrait with clear fine grain and balanced daylight contrast, and it halts to request a clearer reference image if the face is not adequately visible.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
