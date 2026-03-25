@@ -1,7 +1,24 @@
 ---
 name: choosing-the-right-business-model
 description: This prompt asks the AI to compare three proposed business models for a resource-limited startup in a specified industry, outlining the key advantages and disadvantages of each option with an emphasis on early-stage constraints (capital, team, time, customer acquisition, and execution risk). It then directs the AI to recommend the most suitable model for the user’s situation and justify the choice based on fit, feasibility, and likelihood of success in the given industry context.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
