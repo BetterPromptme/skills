@@ -1,7 +1,24 @@
 ---
 name: alpine-cabin-photorealism
 description: This prompt instructs an image-generation/editing system to reconstruct a photorealistic selfie-style scene inside a gondola cabin suspended over snowy mountains, placing two specified subjects in an exact foreground/background arrangement with precise clothing, expressions, and props. It emphasizes ultra-real environmental detail (overcast cold lighting, fogged windows, reflections, and mountain textures) while requiring strict identity preservation for both people so their faces, features, and overall presence remain unchanged, producing a high-resolution, natural-looking winter gondola portrait.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
