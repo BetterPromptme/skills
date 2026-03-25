@@ -1,7 +1,24 @@
 ---
 name: neon-pulse-in-times-square
 description: This prompt instructs an AI image generator to produce a photorealistic, high-resolution cinematic night portrait of a woman in Times Square, framed in a medium shot on public steps while leaning on a railing, with a confident, calm expression and natural hair movement. It specifies that the subject’s facial identity must be preserved exactly, while directing the scene’s environment, pose, wardrobe, and composition, and emphasizing natural neon billboard lighting dominated by red/pink glow with cooler contrasting highlights, plus crowd energy, motion blur, and balanced HDR contrast for a vibrant urban atmosphere.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
