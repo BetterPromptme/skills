@@ -1,7 +1,24 @@
 ---
 name: zootopia-inspired-photobooth
 description: This prompt instructs the AI to take two provided photos—one of a man and one of a woman—and generate a crisp, bright, photobooth-realistic 2×2 collage where both people appear together in all four panels with consistent white background, flash lighting, and framing. It specifies an original outfit color scheme, a playful four-step pose and emotion sequence that mirrors the rhythm of a well-known photobooth interaction without copying any copyrighted characters, and requires that both faces remain fully accurate and unaltered. The expected result is a clean four-frame collage with coordinated outfits, matching pose flow, and stable identity, lighting, and composition across every panel.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
