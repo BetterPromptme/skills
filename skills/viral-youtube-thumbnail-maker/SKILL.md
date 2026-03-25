@@ -1,7 +1,24 @@
 ---
 name: viral-youtube-thumbnail-maker
 description: This prompt instructs the AI to take a user-provided photo and redesign it into a high-CTR YouTube thumbnail with a cinematic, saturated, high-contrast look: it must cleanly cut out and enhance the user as the main subject, place the exact provided topic title in huge readable text, add one clear secondary visual element tied to the topic, and build a dramatic glowing background with depth while preserving the user’s identity and maintaining a simple, uncluttered composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
