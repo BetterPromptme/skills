@@ -1,7 +1,24 @@
 ---
 name: realtalk-character-generator
 description: This prompt instructs an AI to direct and generate a 6–10 second, cinematic, hyper-realistic talking-head video based on a user-provided portrait, with the subject delivering a short supplied script in a specified emotional tone and setting. It defines realism requirements (accurate lip-sync, natural micro-expressions and gestures, subtle camera movement, warm lighting, clear audio with ambient sound, and shallow depth of field) while preserving the person’s identity and avoiding robotic motion. The outcome is a polished, authentic-looking announcement-style clip suitable for social media or updates, constrained by safety rules that limit misuse and require consent and non-misleading content.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
