@@ -1,7 +1,24 @@
 ---
 name: all-i-want-for-christmas-is-you
 description: This prompt directs an image-generation system to produce a high-resolution, photorealistic, editorial Christmas portrait of a specific woman (kept identical to a reference) kneeling in fresh snow under soft, warm daylight, with natural light snowfall, cinematic depth of field, and a balanced red-calligraphy holiday title layout placed to the left, resulting in a timeless, cozy, high-fashion winter scene with realistic lighting and minimal retouching.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
