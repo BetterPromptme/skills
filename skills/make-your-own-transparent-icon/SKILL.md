@@ -1,7 +1,24 @@
 ---
 name: make-your-own-transparent-icon
 description: This prompt instructs the AI to generate a square (1:1) image that converts a simple flat vector icon or emoji into an isometric 3D set of objects rendered as realistic translucent matte glass, enhanced with a subtle inner glow. The final output is a high-contrast studio-lit composition on a black background with controlled lighting and a crisp rim light to emphasize edges and depth.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
