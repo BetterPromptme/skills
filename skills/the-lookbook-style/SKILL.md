@@ -1,7 +1,24 @@
 ---
 name: the-lookbook-style
 description: This prompt instructs the AI to generate a high-resolution, photorealistic vertical upper-body indoor selfie portrait of a young woman in a modern neutral-toned luxury interior, with strict constraints to preserve her exact facial identity and natural skin texture. It specifies precise framing, pose, hairstyle, makeup, eyewear, outfit, accessories, lighting, color palette, and background elements to achieve a polished fashion-editorial lifestyle look. The expected outcome is a realistic, softly daylight-lit selfie featuring a cream strapless dress, gold accents (sunglasses, earrings, handbag), and a minimal beige interior with sheer-curtained windows and a stone vanity, without any facial reshaping or artificial beautification.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
