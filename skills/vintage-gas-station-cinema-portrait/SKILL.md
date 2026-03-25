@@ -1,7 +1,24 @@
 ---
 name: vintage-gas-station-cinema-portrait
 description: This prompt instructs an image model to generate an ultra-realistic, film-still-style fashion portrait at a weathered vintage roadside gas station, featuring a subject posed confidently near a classic car with a cigarette and dressed in textured vintage outerwear. It emphasizes strict preservation of the person’s identity from a provided reference face, while specifying warm midday natural light, shallow depth of field, subtle haze and film grain, and a vertical medium-shot composition to achieve a nostalgic American indie cinema look with high photorealism and no artificial or stylized facial changes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
