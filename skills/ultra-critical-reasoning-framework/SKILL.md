@@ -1,7 +1,24 @@
 ---
 name: ultra-critical-reasoning-framework
 description: This prompt instructs the AI to handle a user-specified task with unusually high rigor by first decomposing it into clear subtasks, then analyzing each from multiple angles while actively challenging its own assumptions and attempting to find counterexamples. It requires repeated self-critique, explicit uncertainty tracking, and systematic cross-checking using alternative methods and external validation approaches, followed by a final end-to-end reconsideration of the entire reasoning chain. The intended outcome is a thoroughly vetted, transparently justified solution that documents verification steps, identifies potential pitfalls, and minimizes unnoticed errors or unsupported claims.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
