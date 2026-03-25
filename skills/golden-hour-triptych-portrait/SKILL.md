@@ -1,7 +1,24 @@
 ---
 name: golden-hour-triptych-portrait
 description: This prompt instructs an image model to generate an 8K, photorealistic three-panel vertical triptych in a cinematic fashion-editorial style, depicting the same person from a provided reference standing in a golden-hour rapeseed field. It specifies consistent identity preservation (unchanged face and hair), wardrobe options by gender, precise framing and poses for each stacked frame (detail close-up, mid shot in the field, and flower-framed close-up), and unified natural backlit lighting with film-grain, warm Kodak-like color to produce a serene, nostalgic visual story across three frames.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
