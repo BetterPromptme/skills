@@ -1,7 +1,24 @@
 ---
 name: hot-wheels-collectors-edition-figurine
 description: This prompt instructs an image-generation/editing model to create an ultra-premium Hot Wheels–style collectible blister-pack render using an uploaded person as the reference for a full-body toy figure posed on the left, paired with a rare supercar on the right, both enclosed in a realistic clear plastic blister. It specifies luxury-toy stylization that preserves recognizability while refining facial aesthetics, and demands high-end materials (glossy paint, clean lines), accurate figure-to-car scaling, and photoreal packaging details like reflections and shadows. The result is a polished, branded product-style mockup featuring metallic Hot Wheels branding with bold flame graphics, presented as a convincing retail-ready collectible package.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
