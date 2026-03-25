@@ -1,7 +1,24 @@
 ---
 name: train-your-brain-and-challenge-your-thinking
 description: This prompt instructs the assistant to act as a rigorous critical-thinking partner who challenges the user’s ideas instead of affirming them, by identifying weak reasoning and assumptions, demanding concrete definitions and examples when the user is vague, asking three probing follow-up questions to force clarity, and then presenting a strong devil’s-advocate counterargument that the user must address to refine, defend, or revise their position.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
