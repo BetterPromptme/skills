@@ -1,7 +1,24 @@
 ---
 name: rain-drops
 description: This prompt directs an image-generation model to create an ultra-photorealistic, dreamy fashion editorial portrait that precisely matches the subject’s facial identity from a provided reference image. It specifies styling and beauty details (oversized shirt, warm natural makeup, porcelain glow), a cinematic rainy-afternoon window scene with raindrops and bokeh reflections, and a very shallow depth of field for a creamy blurred background. The intended outcome is a hyper-detailed, intimate, romantic portrait with warm, soft lighting and a high-end editorial mood.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
