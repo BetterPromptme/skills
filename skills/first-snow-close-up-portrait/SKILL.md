@@ -1,7 +1,24 @@
 ---
 name: first-snow-close-up-portrait
 description: This prompt instructs an image model to generate an ultra-realistic, low-angle close-up winter portrait of the person in a provided reference photo, preserving their exact identity and hair color while applying gender-appropriate styling and a white fur coat. It specifies an outdoor snowy environment with falling snow, subtle dry leaves, shallow depth of field, and soft bokeh, lit with natural dramatic chiaroscuro sunlight filtering through trees to balance cool winter tones with warm, lifelike skin. The intended outcome is a high-end, photoreal cinematic portrait with crisp texture, restrained retouching, and a calm, slightly melancholic expression focused sharply on the eyes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
