@@ -1,7 +1,24 @@
 ---
 name: moonlight-grace-cinematic-vietnamese-portrait
 description: This prompt instructs an AI image generator to create a full-body, ultra-realistic fine-art editorial portrait by using an uploaded reference photo to preserve the subject’s exact facial identity and expression while transforming the scene into a modern Vietnamese mid-autumn, moonlit fashion concept. The result is a cinematic, professionally lit composition featuring a red-and-gold embroidered dress with chiffon movement, a black backdrop dominated by a glowing full moon, and culturally respectful symbolic elements like drifting red petals and a red paper umbrella, all composed with clean negative space and natural proportions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
