@@ -1,7 +1,24 @@
 ---
 name: turn-anything-into-marble
 description: This prompt instructs the AI to reimagine a chosen subject as a hyper-realistic, highly detailed marble sculpture crafted from rare, polished stone with visible natural veining. It specifies pristine reflective surfaces, graceful surreal contours, lifelike facial detail, and an ethereal expression, all presented against a neutral softly lit background. The result is a refined, museum-quality sculptural depiction that emphasizes craftsmanship, texture, and surreal beauty.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
