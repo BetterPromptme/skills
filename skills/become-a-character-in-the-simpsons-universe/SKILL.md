@@ -1,7 +1,24 @@
 ---
 name: become-a-character-in-the-simpsons-universe
 description: This prompt instructs the AI to take a provided photo of a person and generate an edited version that reimagines them as a character in a classic TV cartoon style, preserving recognizable traits like hairstyle and clothing colors while simplifying features into the show’s look. The result is a humorous, personality-filled character depiction placed into a familiar small-town bar or living-room backdrop reminiscent of that series’ setting.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
