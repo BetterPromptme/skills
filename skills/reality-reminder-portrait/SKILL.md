@@ -1,7 +1,24 @@
 ---
 name: reality-reminder-portrait
 description: This prompt instructs the AI to generate a single new urban, wide‑angle street-style image that preserves the exact identity and outfit of the provided person photo while using a separate reference image only to guide composition, pose, camera angle, typography placement, and overall aesthetic. The result is a gritty, candid full-body scene with oversized background text (exactly Text_input_2) positioned behind and partially occluded by the subject, plus an iOS-style “Reminder” alert box containing Text_input_1 that appears physically held in the subject’s extended hand with correct perspective, occlusion, and lighting, and a small bottom-center credit reading Text_input_3—all without copying the reference’s specific person, location, or wording.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
