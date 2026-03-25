@@ -1,7 +1,24 @@
 ---
 name: upgrade-your-writing-style
 description: This prompt instructs the AI to revise a provided piece of writing to improve clarity, coherence, and reader engagement while preserving the original meaning. The result is a polished rewrite that opens with a compelling hook, uses a natural and conversational (or appropriately formal academic) tone, features smoother transitions and logical flow, and avoids em dashes, producing an authentic, professional final version.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
