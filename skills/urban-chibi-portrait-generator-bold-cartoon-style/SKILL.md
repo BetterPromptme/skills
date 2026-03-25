@@ -1,7 +1,24 @@
 ---
 name: urban-chibi-portrait-generator-bold-cartoon-style
 description: This prompt instructs an AI image generator to produce a sticker-ready, square-format cartoon full-body portrait of a specified character rendered in a bold, urban chibi style, with customizable expression, pose, outfit, and accessories. The result is a clean vector-like illustration featuring thick black outlines, vibrant flat colors on a white background, and simplified facial details, designed to convey an energetic, modern personality.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
