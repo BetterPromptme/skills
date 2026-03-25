@@ -1,7 +1,24 @@
 ---
 name: hair-in-progress-selfie
 description: This prompt instructs an AI image generator to create a photorealistic, vertical mirror-selfie scene of a blonde woman in a walk-in closet/dressing room, captured from the waist up with a phone in her right hand, symmetrical shelving in the background, and bright natural daylight. It specifies her exact styling (hair rollers with clips, black cropped tank and black belted pants with a silver rectangular buckle, minimal jewelry and neutral nails), her playful exaggerated expression and relaxed stance, and a tidy-but-lived-in closet setting with folded clothes, hanging garments, and items on the carpet. The intended outcome is an authentic, unfiltered, realistic lifestyle snapshot that preserves the subject’s identity and natural texture while avoiding beautification, text, logos, or cinematic effects.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
