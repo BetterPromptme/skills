@@ -1,7 +1,24 @@
 ---
 name: faker-duo-photo
 description: This prompt instructs an AI image compositor to create a single 4K photorealistic esports-stage photo by combining a user’s uploaded portrait with a specific reference photo of Faker, preserving both identities exactly while matching lighting, lens characteristics, depth of field, and stage ambience. The expected outcome is a believable live-event style image where Faker stands beside the user with his arm on the user’s shoulder, the user makes a “shhh” gesture toward the camera, and the background features cinematic tournament lighting and crowd/stage details with seamless blending and no visible AI artifacts.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
