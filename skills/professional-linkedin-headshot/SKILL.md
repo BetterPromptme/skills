@@ -1,7 +1,24 @@
 ---
 name: professional-linkedin-headshot
 description: This prompt instructs an image-to-image model to transform a supplied portrait into a polished, LinkedIn-ready headshot that strongly preserves the subject’s identity. It specifies professional studio-style composition, lens and depth-of-field characteristics, Rembrandt-inspired lighting, a seamless neutral background with subtle gradient, restrained corporate color grading, and texture-preserving retouching while explicitly avoiding common artifacts (distortion, oversmoothing, busy backgrounds, and harsh effects). The intended result is a clean, credible, approachable head-and-shoulders headshot delivered in platform-friendly square and vertical output sizes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
