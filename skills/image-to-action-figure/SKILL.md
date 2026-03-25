@@ -1,7 +1,24 @@
 ---
 name: image-to-action-figure
 description: This prompt instructs an AI to transform a provided character photo into a realistic, daylight-lit indoor 3D product render depicting a premium collectible figurine display, including the figurine on a round plastic base, a branded box behind it featuring the character’s image, and a nearby computer monitor showing the Blender modeling workflow, resulting in a high-quality scene suitable for showcasing an expensive toy-like product.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
