@@ -1,7 +1,24 @@
 ---
 name: a-personalized-nutrition-meal-plan
 description: This prompt instructs the AI to generate a personalized, medically appropriate daily or weekly nutrition meal plan for a person with a specified health condition, using provided demographics and lifestyle factors (age, gender, weight, height, activity level) and any allergies or dietary restrictions. The resulting output is a clear, non-technical plan that includes at least three main meals plus one to two healthy snacks per day, with meal names, suggested times, estimated portion sizes, avoidance of condition-harmful foods, and an approximate daily calorie total with macronutrient breakdown, along with suitable substitutions for restricted foods.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
