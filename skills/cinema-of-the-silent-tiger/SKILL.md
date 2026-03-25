@@ -1,7 +1,24 @@
 ---
 name: cinema-of-the-silent-tiger
 description: This prompt directs an image-generation system to create an ultra-high-resolution, photorealistic editorial close-up of a person lying in bed beside a calm, majestic tiger, emphasizing a tight composition, intimate emotional connection, luxury cinematic lighting, and hyper-detailed textures. The expected outcome is a serene, high-fashion portrait with shallow depth of field, natural tones contrasted against vivid tiger fur, and a polished, cinematic realism focused on facial expression and fine detail.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
