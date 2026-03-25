@@ -1,7 +1,24 @@
 ---
 name: mini-keychain-plush-portrait-edition
 description: This prompt instructs the AI to generate a square, studio-style close-up image of a cute handcrafted plush keychain resembling the referenced character, held between two fingers, with soft felt-like texture, embroidered facial details, a shiny silver keyring, and a neutral beige background using shallow depth of field and soft natural lighting to produce a highly detailed, cozy product-photography result.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
