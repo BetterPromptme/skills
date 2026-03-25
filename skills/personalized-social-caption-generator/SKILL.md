@@ -1,7 +1,24 @@
 ---
 name: personalized-social-caption-generator
 description: This prompt instructs the AI to act as a creative copywriter and produce three distinct social media caption options tailored to a provided image description, desired tone, platform, posting goal, and hashtag style. The outcome is a set of short, authentic, scroll-stopping captions with varied styles (including one bold and one more narrative), optionally using emojis when appropriate, and aligned with the language norms of the specified platform.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
