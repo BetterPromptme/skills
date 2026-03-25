@@ -1,7 +1,24 @@
 ---
 name: luxury-airplane-cabin-night-selfie
 description: This prompt instructs an image model to edit a single-person reference photo into a photorealistic, candid-looking wide-lens smartphone selfie set in a high-end airplane cabin at night, while strictly preserving the subject’s exact facial identity, natural skin texture, proportions, hairstyle, and outfit. It specifies a low-angle handheld framing, realistic dim mixed lighting (cool blue cabin LEDs with warm accents), shallow depth of field, subtle noise, and visible cabin cues like windows with night lights outside, aiming for an authentic, cozy late-night travel moment. The expected result is a believable social-media-style selfie that clearly reads as taken in a luxury aircraft interior, without visible phone, anatomy distortions, or overly retouched/studio-like effects.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
