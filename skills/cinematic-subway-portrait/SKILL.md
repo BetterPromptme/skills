@@ -1,7 +1,24 @@
 ---
 name: cinematic-subway-portrait
 description: This prompt instructs the AI to transform the uploaded person’s photo into a film-like, realistic subway portrait: the subject remains identity-accurate and unaltered in facial/body features, is dressed according to the provided outfit description, and wears generic non-branded headphones while seated in a clean modern subway car. The result is a centered, waist-up cinematic frame with soft natural subway lighting, cool-neutral desaturated color grading, shallow depth of field, and subtle film grain, while avoiding any sexualized, violent, surreal, celebrity, or multi-person content.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
