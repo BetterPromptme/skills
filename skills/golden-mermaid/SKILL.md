@@ -1,7 +1,24 @@
 ---
 name: golden-mermaid
 description: This prompt instructs an AI image generator to produce a high-definition, two-panel vertical sunset portrait featuring the same woman in a cohesive seaside setting, emphasizing cinematic golden-hour backlighting, realistic depth, and filmic texture. It specifies strict identity preservation and natural proportions while directing distinct emotional storytelling across the two frames—one introspective profile and one forward-facing connection—using consistent wardrobe, accessories, color palette, and environmental details to achieve a warm, nostalgic, photorealistic outcome.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
