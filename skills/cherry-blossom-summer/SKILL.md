@@ -1,7 +1,24 @@
 ---
 name: cherry-blossom-summer
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical outdoor lifestyle portrait of a specific young woman seated on a wooden garden bench, with strict constraints to preserve her exact facial identity, proportions, and natural skin texture. It specifies detailed composition, pose, outfit and accessories, as well as a quiet residential garden environment with identifiable background elements and soft overcast lighting. The intended outcome is a calm, editorial-style three-quarter body portrait with realistic color, depth, and natural atmosphere, free of artificial beauty effects, text, or watermarks.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
