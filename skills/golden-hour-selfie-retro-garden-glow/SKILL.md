@@ -1,7 +1,24 @@
 ---
 name: golden-hour-selfie-retro-garden-glow
 description: This prompt instructs an image-generation system to produce an ultra-realistic, cinematic 8K vertical close-up selfie portrait of a confident young woman, photographed from a very low, wide/fisheye perspective in a vibrant summer garden. It specifies strict identity preservation for the subject’s face while detailing her styling (hair, sunglasses, earrings, makeup, and embroidered off-shoulder blouse), the warm natural daylight look, and the surrounding environment of succulents, pastel cosmos flowers, and a deep blue sky with clouds. The expected outcome is a high-contrast, sun-kissed fashion-editorial image with shallow depth of field and a dynamic, empowering low-angle composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
