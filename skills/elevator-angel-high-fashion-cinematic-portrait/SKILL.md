@@ -1,7 +1,24 @@
 ---
 name: elevator-angel-high-fashion-cinematic-portrait
 description: This prompt instructs an image-generation system to create a hyperrealistic, high-fashion cinematic portrait that preserves the identity from a provided reference photo while placing the subject in a modern stainless-steel elevator. It specifies the subject’s pose, expression, couture all-white styling, ethereal tulle-like wings, and a cool, fluorescent-lit lighting setup, along with a centered 4:5 composition and sharp, detailed focus. The intended outcome is a polished, surreal editorial image that contrasts angelic elegance against a confined metallic environment, conveying quiet melancholy and isolation without added text, logos, or distortions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
