@@ -1,7 +1,24 @@
 ---
 name: create-stunning-ai-portraits-with-just-one-prompt
 description: This prompt directs an AI image generator to create a high-end, ultra-realistic editorial portrait matching a provided reference subject, styled in a luxury fashion magazine aesthetic. The result is a symmetrical 4K composition featuring the person in a black turtleneck with arms crossed and a visible blue-dial wristwatch on a brown leather strap, set against a dramatic red gradient with cinematic lighting and a minimal background.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
