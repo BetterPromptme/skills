@@ -1,7 +1,24 @@
 ---
 name: realistic-mirror-selfie-iphone
 description: Prompt này cấu hình một quy trình tạo ảnh mirror selfie chân thực từ ảnh tham chiếu, trong đó khuôn mặt người và chiếc iPhone (đặc biệt là màu cam và cụm camera) được “khóa” theo ảnh mẫu với mức sai khác cực thấp, áp dụng denoise theo vùng để giữ chi tiết quan trọng, thiết lập bố cục/ánh sáng tự nhiên như chụp bằng smartphone, thêm các ràng buộc và tiêu chí kiểm định để tự động loại kết quả lệch mặt hoặc sai thiết kế điện thoại; nếu thiếu ảnh tham chiếu bắt buộc thì dừng và yêu cầu người dùng tải ảnh.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
