@@ -1,7 +1,24 @@
 ---
 name: make-a-glossy-3d-rendered-chrome
 description: This prompt instructs an image generator to create a high-quality Blender-style 3D render of an abstract object shaped like a specified icon or text, using a chosen metallic color and glossy reflective material with soft shadows and subtle reflections, isolated in a minimalistic composition on a specified background color.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
