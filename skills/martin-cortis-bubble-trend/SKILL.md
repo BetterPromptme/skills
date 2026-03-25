@@ -1,7 +1,24 @@
 ---
 name: martin-cortis-bubble-trend
 description: This prompt instructs the AI to transform a single-person portrait into a single 3:4 vertical image containing two stacked film-style frames that preserve the subject’s exact identity and outfit while placing them outdoors in a lush green park at golden hour, adding realistic soap-bubble overlays (one overlapping the face and others floating nearby) and finishing the composite with authentic 35mm-inspired color grading, grain, and subtle bloom for a playful early-2000s candid nostalgia look.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
