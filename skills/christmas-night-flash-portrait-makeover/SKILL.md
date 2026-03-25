@@ -1,7 +1,24 @@
 ---
 name: christmas-night-flash-portrait-makeover
 description: This prompt instructs an image editor to take a single-person portrait photo and realistically restyle it into a chest-up, phone-flash nighttime winter street scene with falling snow and subtle Christmas ambience, while strictly preserving the subject’s exact identity, age/gender, and natural skin texture. The result should look like an authentic smartphone photo: the face sharply lit by flash, a darker softly blurred city background featuring warm holiday lights and a decorated tree, the subject posed looking down with hands near the mouth as if warming breath, dressed in a light puffer jacket with a plaid scarf and winter gloves, and free of common artifacts like distorted hands, extra fingers, text, logos, or artificial/CGI aesthetics.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
