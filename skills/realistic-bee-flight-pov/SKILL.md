@@ -1,7 +1,24 @@
 ---
 name: realistic-bee-flight-pov
 description: This prompt instructs an AI to produce an ultra-photorealistic, documentary-style video shot from a bee’s point of view as it flies through a real-looking apartment, with the camera tracking just behind the insect so its body and wings are partially visible. It specifies physically accurate flight motion, true-to-life lighting, depth of field, and detailed interior textures (including a wooden green closet), while enforcing strict constraints against any stylized/CGI appearance. It also defines a realistic soundscape dominated by spatially accurate buzzing with subtle distant human reactions and no music or artificial effects, resulting in footage intended to be indistinguishable from real wildlife cinematography.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
