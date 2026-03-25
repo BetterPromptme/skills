@@ -1,7 +1,24 @@
 ---
 name: three-panel-christmas-torn-paper
 description: This prompt directs an image model to generate a vertical three-panel, shoulder-up portrait of the same person in each panel, presented as a handmade torn-paper collage over a subtly patterned, vintage Christmas wallpaper in a user-selected festive background color. It specifies consistent flash-style snapshot lighting, layered paper textures with curled torn edges, light white doodle accents, and gender-inclusive wardrobe options, while defining distinct facial expressions and hand poses for the top, middle, and bottom panels. The intended outcome is a cohesive, cozy, nostalgic holiday collage that keeps the festive pattern visible yet secondary, preserves natural facial detail, and avoids full-body framing or overly polished studio aesthetics.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
