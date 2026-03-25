@@ -1,7 +1,24 @@
 ---
 name: neon-x-ray-sci-fi-scanner
 description: This prompt directs an image model to generate a stylized X-ray scan of the specified subject, highlighting bones and internal anatomy with neon cyan and soft magenta illumination against a matte black background. It also calls for scientific overlay graphics and scan-like metadata to create a medical, sci‑fi diagnostic aesthetic, resulting in a high-contrast, futuristic radiography-style composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
