@@ -1,7 +1,24 @@
 ---
 name: quiet-goodbye-rooftop-face-lock
 description: This prompt instructs an image generator to produce a photorealistic, cinematic full-body portrait on a rainy school rooftop at blue hour, with specific camera, lighting, environment, and mood details, while enforcing strict identity preservation by keeping the subject’s face and gender exactly matched to a provided adult reference image. It also sets safety and realism constraints (modest wardrobe, no sexualization, no logos or extra text beyond a single chalk phrase, no anatomy distortions, no added identity-altering features) and defines output framing and file specs, resulting in a clean 4:5, high-resolution PNG that looks like a film still with subtle grain.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
