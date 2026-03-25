@@ -1,7 +1,24 @@
 ---
 name: write-a-30-60-second-voice-over-script-for-a-brand-commercial
 description: This prompt instructs the AI to create a 30–60 second cinematic voice-over for a specified product, using soft, hypnotic, poetic language and vivid visual metaphors to build an emotional connection and curiosity. The resulting script follows a clear emotional arc, is designed to pair with evocative imagery, avoids clichés, and culminates in a striking, memorable tagline that leaves a lasting impression of the brand.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
