@@ -1,7 +1,24 @@
 ---
 name: biomorphic-futuristic-core-sculpture
 description: This prompt instructs an image-generation model to create a futuristic, hyperrealistic 3D digital sculpture of a specified object, featuring a translucent colored internal core enclosed by a smooth white shell with organic perforations and flowing biomorphic forms. The result is a high-contrast, octane-style render of the object floating against a minimal soft gray background, emphasizing modern materials, depth, and sculptural detail.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
