@@ -1,7 +1,24 @@
 ---
 name: voxel-nation-cube-minecraft-style-country-diorama
 description: This prompt instructs an image model to generate a square, cinematic voxel/Minecraft-inspired scene featuring a floating layered terrain cube themed to a specified country, topped with a miniature blocky diorama showcasing that country’s most recognizable landmarks, nature, and cultural elements. It also requires a prominent hovering wooden sign with the country name and flag emoji, set against a bright, soft daytime voxel sky so the country cube remains the clear focal point with gentle shadows and atmospheric haze.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
