@@ -1,7 +1,24 @@
 ---
 name: weekend-vibes-portrait
 description: This prompt instructs an image-generation system to produce a high-resolution, photorealistic vertical lifestyle street portrait of a specific young woman seated waist-up at a sunny sidewalk café, preserving her exact facial identity while depicting a natural pose, defined outfit and accessories, and a detailed table setting with a seafood rice dish and strawberry dessert, all set against a modern city street backdrop with midday daylight, realistic color, and crisp focus without text or artificial beauty alterations.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
