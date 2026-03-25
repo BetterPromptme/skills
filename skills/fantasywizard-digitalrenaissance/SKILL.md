@@ -1,7 +1,24 @@
 ---
 name: fantasywizard-digitalrenaissance
 description: This prompt instructs the AI to generate a vivid acrylic-style artwork concept that reinterprets the chosen subject as a “Digital Renaissance” fusion, blending classical aesthetics with contemporary graphic energy. The resulting image description emphasizes bold, opaque paint handling and lively, high-contrast detail, with two specified colors prominently interacting to create a modern twist on an old-world visual mood.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
