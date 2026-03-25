@@ -1,7 +1,24 @@
 ---
 name: ugc-zoom-in-skin-texture-beauty-shot
 description: This prompt instructs an image generation/editing system to take two user-supplied images—a portrait of a specific person and a photo of a beauty product—and create a high-resolution, extreme close-up UGC-style beauty visual in which the person’s exact identity and facial features are preserved while the product is reproduced with precise, readable label and identical packaging details. The resulting image places the product held near the face, includes a realistic serum droplet application on the cheek/under-eye area that matches the product’s applicator and droplet look, and uses soft natural studio lighting with a neutral minimal background and a color palette aligned to the product photo.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
