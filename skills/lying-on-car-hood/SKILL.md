@@ -1,7 +1,24 @@
 ---
 name: lying-on-car-hood
 description: This prompt instructs an image-generation or editing model to produce a cinematic, high-end winter fashion editorial portrait featuring the same subject as a provided reference, with her identity preserved exactly. It specifies a strict, fully horizontal lying-down pose across the hood of a dark convertible sports car with a visible red interior, dressed in a luxurious cream fur coat, surrounded by snow and cold, diffused daylight with film-like grain. The expected outcome is an elegant, moody winter scene that adheres to precise pose, styling, lighting, and realism constraints while avoiding any standing/sitting/kneeling poses, distortions, beautification, logos, or sexualized framing.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
