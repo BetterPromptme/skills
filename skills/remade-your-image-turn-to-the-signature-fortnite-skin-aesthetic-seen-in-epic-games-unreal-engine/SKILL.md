@@ -1,7 +1,24 @@
 ---
 name: remade-your-image-turn-to-the-signature-fortnite-skin-aesthetic-seen-in-epic-games-unreal-engine
 description: This prompt instructs an image-generation system to create a 3D-rendered, Fortnite-inspired character modeled after a referenced person, specifying a stylized Unreal Engine–like aesthetic with exaggerated proportions, smooth cartoon materials, and vibrant textures. It defines the character’s key visual attributes—hair, outfit, color palette, accessories—along with a specific pose and facial expression, resulting in a cohesive custom “skin” concept render that matches the recognizable Fortnite style.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
