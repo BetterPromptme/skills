@@ -1,7 +1,24 @@
 ---
 name: shadow-glimpse-elegant-portrait-behind-the-blinds
 description: This prompt instructs an image-generation workflow to produce an ultra-realistic, magazine-quality vertical portrait that faithfully preserves the uploaded subject’s identity while placing them in a cinematic noir setup behind horizontal black window blinds. It specifies a medium close-up composition, precise hand interactions with two adjacent blind slats to create a single clean viewing gap, direct eye contact, and soft directional low-key studio lighting that casts crisp horizontal shadows across the face. The intended outcome is a dark, minimalist, editorial-style photograph with shallow depth of field and cool/neutral tones, focusing attention on the subject’s eyes through the blinds at 1080×1350 resolution.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
