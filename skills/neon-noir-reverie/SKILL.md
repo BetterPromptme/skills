@@ -1,7 +1,24 @@
 ---
 name: neon-noir-reverie
 description: This prompt instructs the AI to take an uploaded portrait and, using a specified outfit detail, generate an ultra-realistic cinematic still that preserves the subject’s identity exactly while reimagining the scene in a Wong Kar-wai–inspired aesthetic. The result is a melancholic, neon red-green–lit taxi interior shot from outside a rain-streaked, fogged window with reflections, film grain, slight motion blur, hazy glow, and damp hair, conveying quiet solitude and nostalgic longing in a bustling city night.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
