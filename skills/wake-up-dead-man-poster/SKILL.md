@@ -1,7 +1,24 @@
 ---
 name: wake-up-dead-man-poster
 description: This prompt instructs an AI image compositor to recreate the official mystery ensemble poster’s exact composition, environment, perspective, lighting, and all supporting characters unchanged, while swapping only the central squatting figure with the provided person from the input photo. The expected outcome is a poster-grade, photorealistic composite where the inserted subject matches the original pose, scale, and cinematic color grading and blends seamlessly into the locked layout, with the subject’s face identity preserved exactly without any alteration.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
