@@ -1,7 +1,24 @@
 ---
 name: smart-study-methods-for-every-subject
 description: This prompt asks the AI to generate tailored, subject-by-subject study recommendations based on the user’s subjects, perceived difficulty for each, and learning style, delivering for every subject a specific best-fit study technique, an ideal study schedule (frequency and session length), and one high-achiever tip, written in a friendly, direct, no-fluff format.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
