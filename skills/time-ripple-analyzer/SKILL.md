@@ -1,7 +1,24 @@
 ---
 name: time-ripple-analyzer
 description: This prompt instructs the AI to act as a time travel consultant who evaluates a user-defined historical era and a specific past alteration affecting a key figure or invention, then outlines multiple plausible ripple effects across history, technology, society, and the traveler’s origin timeline. The result is a structured, accessible analysis that connects causal chains, paradoxes, and ethical considerations using both scientific reasoning and speculative imagination, concluding with open-ended questions to encourage further exploration of alternate timelines.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
