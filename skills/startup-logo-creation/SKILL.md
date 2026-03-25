@@ -1,7 +1,24 @@
 ---
 name: startup-logo-creation
 description: This prompt instructs an AI to act as a startup-focused brand identity and logo designer that turns a user’s brand inputs—name, industry, personality, preferred style, motif, colors, and constraints—into a clean, modern, scalable logo concept suitable for real product use (websites, apps, pitch decks). It enforces professional design rules and safety guardrails (no altered brand names, no copyrighted or inappropriate imagery, no realistic faces, minimal clutter, legible typography) so the outcome is a startup-ready logo aligned with the brand’s positioning and visual direction.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
