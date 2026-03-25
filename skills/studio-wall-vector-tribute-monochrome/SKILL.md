@@ -1,7 +1,24 @@
 ---
 name: studio-wall-vector-tribute-monochrome
 description: This prompt instructs an image model to generate a high-resolution, photorealistic full-body studio portrait of the person in the provided reference image, with strict identity preservation of their face while posing against a light gray wall in a minimal black-and-white outfit. It also directs the model to add a clean, high-contrast geometric black-and-white vector-style portrait of the same person on the wall, with specified title and handle text placed beneath it, resulting in a modern premium monochrome composition with controlled lighting and no extraneous elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
