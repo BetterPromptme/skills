@@ -1,7 +1,24 @@
 ---
 name: photography
 description: This prompt directs an image-generation task to create a high-quality lifestyle photograph of a woman in a modern minimalist living room, specifying her outfit, the neutral curated decor, and the soft natural lighting. The expected result is an Instagram-ready, sharply focused, well-composed scene with a calm, airy atmosphere and elegant, cohesive styling.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
