@@ -1,7 +1,24 @@
 ---
 name: the-expert-conductor-framework
 description: This prompt instructs the AI to act as a facilitator who assembles and moderates a diverse panel of domain experts to solve a user-specified task, capturing their iterative debate, critique, and refinement in a structured “reasoning” section, then delivering a final, self-contained solution in a separate “answer” section that synthesizes the experts’ key insights into a complete outcome.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
