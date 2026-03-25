@@ -1,7 +1,24 @@
 ---
 name: realistic-character-illustration
 description: This prompt instructs the AI to generate a full-body, semi-realistic 2D digital character illustration that closely replicates the person shown in the uploaded image, including accurate proportions, facial features, skin tone, hairstyle, clothing, colors, textures, accessories, and the same pose and expression. The expected result is a polished, realistic-looking character artwork with soft shading and clean lines, delivered as a transparent-background PNG containing only the person and no additional elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
