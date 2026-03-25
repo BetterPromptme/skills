@@ -1,7 +1,24 @@
 ---
 name: lego-bouquets-by-betterprompt
 description: This prompt directs an image generation task to create a vertical, cinematic product-photography scene of a hyper-realistic LEGO bouquet featuring a specified flower type and color, complete with translucent petals, realistic stems, elegant pastel wrapping, a glowing brick base, and a minifigure holding a matching flower, set against a dark minimal background with ambient glow and a branded packaging box displaying the same flower label.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
