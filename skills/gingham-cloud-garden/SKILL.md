@@ -1,7 +1,24 @@
 ---
 name: gingham-cloud-garden
 description: This prompt instructs an AI image generator to produce an ultra-realistic, high-fashion editorial portrait in a romantic surrealist style: a centered woman, shown mid-thigh up, standing knee-deep in an endless field of pale roses while wearing a sculptural pink gingham ruffled couture mini-dress, photographed with soft natural light, shallow depth of field, and a matte pastel finish. The intended outcome is a dreamy, cinematic fashion-magazine-quality image that preserves the subject’s exact facial identity and expression from the provided reference while emphasizing ethereal floral atmosphere, dramatic garment volume, and refined editorial color and texture.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
