@@ -1,7 +1,24 @@
 ---
 name: it-movie-poster-halloween-horror-portrait
 description: This prompt instructs an AI image generator to create a vertical, photorealistic cinematic horror poster in which a real person’s face remains fully recognizable and unaltered while being partially obscured and framed by two close-up red balloons. It specifies precise composition, depth, foggy dark background, realistic low-key lighting with subtle red reflections and faint amber eye glow, and directs the inclusion of a bold red “IT” title (with optional tagline and credits) to deliver an eerie, claustrophobic, print-ready horror poster aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
