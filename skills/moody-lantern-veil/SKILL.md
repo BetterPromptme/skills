@@ -1,7 +1,24 @@
 ---
 name: moody-lantern-veil
 description: This prompt directs an image-generation workflow to produce a high-resolution, cinematic fine-art portrait in which a young subject stands in a pure black void, holding a softly glowing vintage lantern close to their chest as the only light source. It specifies composition, pose, wardrobe (veil and lace or an embroidered robe), and a warm chiaroscuro lighting style that reveals delicate fabric textures while preserving the subject’s exact identity—face, hair, and skin tone—unchanged from the provided reference. The intended result is an intimate, timeless image with shallow depth of field, matte film grain, and a quiet, melancholy atmosphere shaped entirely by the lantern’s golden illumination.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
