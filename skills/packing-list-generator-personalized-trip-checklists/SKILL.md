@@ -1,7 +1,24 @@
 ---
 name: packing-list-generator-personalized-trip-checklists
 description: This prompt instructs the AI to create a comprehensive, carry-on–only packing list tailored to a specified destination, trip duration, trip type, expected weather, and planned activities. The result is a detailed checklist in markdown, organized under clear category headings (such as Clothing, Toiletries, Electronics, Medications, Documents, and Other Essentials) with suggested quantities and items appropriate for the climate and itinerary.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
