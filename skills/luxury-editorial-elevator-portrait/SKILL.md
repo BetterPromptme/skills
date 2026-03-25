@@ -1,7 +1,24 @@
 ---
 name: luxury-editorial-elevator-portrait
 description: This prompt instructs an AI image generator to produce a photorealistic, luxury editorial portrait of a specific woman—matching her exact facial identity from a reference—posed in a classic wood-paneled, brass-accented elevator with mirrored reflections. It specifies vertical framing, medium-to-full body composition, precise styling (strapless black slit dress and gold accessories), confident pose and gaze, and warm, even ceiling light to create an intimate vintage-meets-modern fashion mood with realistic textures and reflections and minimal retouching.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
