@@ -1,7 +1,24 @@
 ---
 name: product-spec-generator
 description: This prompt instructs the AI to produce a structured feature specification document for a proposed product feature, using provided inputs such as target users, key functionalities, technical considerations, and estimated development effort. The resulting output is a clear, implementation-ready spec organized into standard product and engineering sections—overview, goals with success metrics, user stories, acceptance criteria mapped to those stories, a high-level technical design, and future considerations—so developers can begin building with aligned requirements and scope.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
