@@ -1,7 +1,24 @@
 ---
 name: surreal-stylized-baddies
 description: This prompt instructs an image generator to transform the provided reference into a square, full-body, highly stylized cartoon character rendered in a bold Y2K punk pop‑surrealist aesthetic, emphasizing exaggerated attitude and proportions, gritty halftone/photocopied zine textures, heavy outlines, and saturated neon colors. The resulting image features rebellious punk fashion details (e.g., piercings and spiked accessories) against a flat neon or grainy gradient background with a blacklight-poster vibe.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
