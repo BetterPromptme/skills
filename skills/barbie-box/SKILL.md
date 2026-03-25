@@ -1,7 +1,24 @@
 ---
 name: barbie-box
 description: This prompt instructs an image generator to design a premium, collector-style Barbie box on a store shelf containing a doll inspired by an uploaded person’s look, while explicitly avoiding a direct copy of the real face by rendering a classic Barbie (or Ken-style, if male) plastic doll visage. It specifies a horizontal deluxe packaging layout with signature branding elements (logo, clear window, vibrant color theme), and directs the model to match the outfit, hair, makeup vibe, interior background, and included accessories from provided parameters to produce a polished retail-ready collector’s edition set.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
