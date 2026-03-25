@@ -52,8 +52,8 @@ Then collect all inputs from the human:
 - Optional text inputs (use defaults if not provided by the human):
     - `An_icon` (default: `icon`)
 - Optional: model and options.
-  - Present the human with the default model **`gpt-image-1`** and its available options. Look up `gpt-image-1` in the `betterprompt resources` output (filtered to modality `"image"`) and show its `availableOptions` as: `key: val1, val2 (default), val3  |  key2: ...`. Mark a value `(default)` if it matches these defaults: `{"image":{"quality":0},"quality":"low"}`.
-  - If the human does not specify, defaults are used: model `gpt-image-1`, options `{"image":{"quality":0},"quality":"low"}`. Other models from the resources call are also available.
+  - Present the human with the default model **`gpt-image-1`** and its available options. Look up `gpt-image-1` in the `betterprompt resources` output (filtered to modality `"image"`) and show its `availableOptions` as: `key: val1, val2 (default), val3  |  key2: ...`. Mark a value `(default)` if it matches these defaults: `{"quality":"low"}`.
+  - If the human does not specify, defaults are used: model `gpt-image-1`, options `{"quality":"low"}`. Other models from the resources call are also available.
 
 
 ### Step 2: Run via BetterPrompt CLI
@@ -74,7 +74,7 @@ Notes:
 
 - Pass each text input as a separate `--input <key>=<value>` flag.
 - If the human does **not** mention a model, **omit** `--model` and BetterPrompt will use the default model: **`gpt-image-1`**.
-- If the human does **not** mention options, **omit** `--options` and BetterPrompt will use the default options: **`{"image":{"quality":0},"quality":"low"}`**.
+- If the human does **not** mention options, **omit** `--options` and BetterPrompt will use the default options: **`{"quality":"low"}`**.
 - If the run times out, the response will include a `runId` you can use to fetch the result later.
 
 Example (using defaults shown above):
@@ -83,5 +83,5 @@ Example (using defaults shown above):
 betterprompt generate minimalist-glass-emoji-generator \
   --input An_icon=icon \
   --model gpt-image-1 \
-  --options '{"image":{"quality":0},"quality":"low"}'
+  --options '{"quality":"low"}'
 ```
