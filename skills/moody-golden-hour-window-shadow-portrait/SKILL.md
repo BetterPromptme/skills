@@ -1,7 +1,24 @@
 ---
 name: moody-golden-hour-window-shadow-portrait
 description: This prompt instructs an AI image editor to take an uploaded selfie or portrait and convert it into a realistic, cinematic golden-hour editorial portrait featuring warm low-angle sunlight, soft haze, and window/blind shadow patterns across the subject and a minimal indoor background. It specifies a three-quarter over-the-shoulder mid-shot pose, long natural hair, simple dark clothing, sharp facial focus, and film-like contrast while enforcing strict realism and quality guardrails (no distortion, text, watermarks, heavy retouching, or sexualized styling) and excluding unrelated looks such as outdoor, fantasy, neon, or harsh flash aesthetics.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
