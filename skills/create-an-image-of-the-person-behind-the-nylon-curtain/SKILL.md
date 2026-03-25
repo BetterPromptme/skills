@@ -1,7 +1,24 @@
 ---
 name: create-an-image-of-the-person-behind-the-nylon-curtain
 description: This prompt directs an image-generation/editing task that uses the uploaded portrait as the primary subject reference and transforms it into a high-resolution, hyperrealistic, cinematic fashion-editorial composition. The result places the subject partially obscured behind a jagged tear in a semi-transparent frosted plastic sheet, with cool bluish diffused lighting, minimal atmospheric background, subtle vignetting, and tense stretched plastic to create an isolated, mysterious, dreamlike, emotionally charged mood in a 3:4 frame.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
