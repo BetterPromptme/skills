@@ -1,7 +1,24 @@
 ---
 name: zootopia-polaroid-judy-and-nick
 description: This prompt instructs an image-generation system to create a bright, studio-lit polaroid-style group portrait featuring three shoulder-to-shoulder subjects: Judy Hopps on the left making a peace sign, a fully realistic human girl in the center smiling naturally, and Nick Wilde on the right with a smug expression and crossed arms, with both animated characters’ arms positioned casually behind the girl. It specifies a clean white curtain backdrop, soft even lighting with a subtle top-left lens flare, a white polaroid frame, and a mixed visual style that keeps the girl photorealistic while rendering Judy and Nick in faithful 3D Disney-like form, while explicitly preventing design changes, additional characters, or any busy background elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
