@@ -1,7 +1,24 @@
 ---
 name: intelligent-chat-condenser-for-seamless-restart
 description: This prompt instructs an AI to read the full user–assistant conversation and produce a structured “Cold Start Summary” that prioritizes the user’s intent, motivations, and evolving requirements, while briefly noting the assistant’s key contributions. The result is a concise, professional recap organized into context, goals and reasoning, key progress/decisions, open threads/next actions, and brief guidance for a new assistant to continue, with safeguards against inventing details or exposing sensitive information.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
