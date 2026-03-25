@@ -1,7 +1,24 @@
 ---
 name: running-up-that-hill-stranger-things-maxs-scene
 description: This prompt instructs an AI image generator to create a high-resolution, cinematic golden-hour photograph in a tranquil graveyard where a young person levitates while three 1980s-styled onlookers watch in awe, blending grounded filmic realism with subtle supernatural energy. It specifies strict identity preservation for the main subject, consistent anatomy, shadows, and lighting, a restrained story-first composition, and an analog nostalgic color grade with haze, grain, and gentle bloom. The intended outcome is a visually coherent, emotionally tense yet reverent coming-of-age scene that feels like a still from an 1980s supernatural adventure film, delivered in a wide cinematic aspect ratio with detailed environment and mood cues.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
