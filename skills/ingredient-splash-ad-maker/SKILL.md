@@ -1,7 +1,24 @@
 ---
 name: ingredient-splash-ad-maker
 description: This prompt instructs an AI to turn an uploaded product photo into a luxury skincare-style advertising image by keeping the product clean, centered, and hero-lit while adding premium 3D ingredient elements and dynamic liquid splash effects that match specified ingredients, background color mood, and material, resulting in an ultra‑high‑definition, studio-lit visual with a smooth gradient backdrop, glossy highlights, soft shadows, and cinematic depth of field suitable for commercial campaign use.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
