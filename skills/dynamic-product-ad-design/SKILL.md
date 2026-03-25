@@ -1,7 +1,24 @@
 ---
 name: dynamic-product-ad-design
 description: This prompt instructs the AI to take a provided beverage can product photo and replace its background with a modern, advertisement-ready scene themed around a specified concept, featuring realistic flying milk streams and floating themed fragments. The can itself must remain intact and accurately scaled, while the new background is composed dynamically with vibrant lighting and textures that highlight the product and create an eye-catching, lively promotional image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
