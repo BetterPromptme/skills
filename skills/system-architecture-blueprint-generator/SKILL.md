@@ -1,7 +1,24 @@
 ---
 name: system-architecture-blueprint-generator
 description: This prompt instructs the AI to behave as a senior software architect and produce a complete, structured system architecture for a specified project, covering high-level design, service decomposition, technology and infrastructure choices, data/storage design, scalability, reliability, security/compliance, DevOps/CI/CD, and an MVP-to-scale roadmap with explicit trade-offs. The outcome is a pragmatic, actionable architecture document organized into clearly labeled sections with bullet points and a simple text diagram, tailored to the project description and expected user-base growth.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
