@@ -1,7 +1,24 @@
 ---
 name: christmas-pet-box
 description: This prompt instructs the AI to take a user-provided pet photo and generate a single, high-resolution, photorealistic Christmas studio image that preserves the pet’s exact identity while placing it centered inside a warm, golden-brown cardboard box setup with soft festive lighting, fairy lights, snowy mini trees, and a cute holiday outfit, resulting in a clean, cozy, professionally staged holiday photoshoot look.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
