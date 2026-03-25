@@ -1,7 +1,24 @@
 ---
 name: valorant-agent-transformation
 description: This prompt instructs the AI to act as a production-ready game concept artist and turn a person from a provided photo into a cinematic, photo-real “Valorant-style” agent image while preserving the subject’s facial likeness and traits, applying a specific chosen agent’s exact outfit and gear, and optionally staging them in a defined scene context; it also sets constraints for distinct, gameplay-readable design communication and requires refusing direct IP copying or requesting missing brief details when necessary, with the intended outcome being a realistic, professional-looking character depiction suitable for art direction and development review.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
