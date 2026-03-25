@@ -1,7 +1,24 @@
 ---
 name: pastel-kawaii-vinyl-figure
 description: This prompt instructs an image model to generate a studio-style product photo of a kawaii pastel vinyl figure depicting a user-specified character or object, with rounded features, big eyes, and a friendly expression in a lavender–pink–baby-blue palette. It also requests that a chosen name be incorporated as a stylized detail on the figure or base, and includes matching toy packaging in the background with themed artwork, shot with soft lighting and minimal shadows.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
