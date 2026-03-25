@@ -1,7 +1,24 @@
 ---
 name: where-they-rage-you-sell
 description: This prompt instructs the AI to act as a customer intelligence researcher who scans a large set of online platforms to find recent, high-volume discussions about problems related to a specified product, then extracts and ranks users’ exact pain points with verbatim quotes, identifies solution-seekers versus venters along with their objections, and delivers a report listing the best communities to monitor or join (with links), the strongest recurring issues and language patterns, buyer intent signals such as urgency and budget, and a prioritized strategy for where and how to engage first.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
