@@ -1,7 +1,24 @@
 ---
 name: top-interview-questions-for-all-fields
 description: This prompt asks the AI to generate a curated set of common interview questions for a specified field and provide professional-but-conversational sample answers tailored to a given level of work experience. The expected result is a realistic, practice-ready Q&A list that highlights real-world application, strategic thinking, problem-solving, and lessons learned from past work, helping the user prepare responses that sound credible and experience-based rather than purely theoretical.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
