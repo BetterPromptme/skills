@@ -1,7 +1,24 @@
 ---
 name: detailed-feature-specification-document-generator
 description: This prompt instructs the AI to produce a structured feature specification document for a proposed product capability, using the provided inputs (feature idea, target users, key functionalities, technical considerations, and estimated effort). The resulting output is a clear, implementation-ready spec organized into standard sections—overview, goals with success metrics, user stories, acceptance criteria tied to each story, a high-level technical design addressing architecture and nonfunctional needs, and future enhancements—so teams can align on scope and begin development.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
