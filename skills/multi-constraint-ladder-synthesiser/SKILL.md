@@ -1,7 +1,24 @@
 ---
 name: multi-constraint-ladder-synthesiser
 description: This prompt instructs the AI to act as an expert systems designer and produce a structured solution to a provided problem while satisfying multiple explicit constraints and stated assumptions. The expected outcome is a concise final plan within a word limit, a bullet-point mapping that demonstrates how each constraint is met by specific parts of the plan, and a short section outlining risks, trade-offs, or assumptions made to reconcile competing requirements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
