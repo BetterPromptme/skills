@@ -1,7 +1,24 @@
 ---
 name: cozy-christmas-tree-moment
 description: This prompt directs an AI image generator to create a realistic, cozy holiday lifestyle photograph featuring a person decorating a Christmas tree in a warm, modern living room. It specifies the camera angle, medium framing, subject placement, pose, expression, grooming, outfit options by gender, lighting style, and background details to achieve a calm, candid, intimate mood. The expected outcome is a balanced, eye-level, warmly lit scene with natural textures and soft bokeh that feels like an authentic at-home decorating moment while avoiding exaggerated posing, cinematic lighting, clutter, or full-body/leg visibility.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
