@@ -1,7 +1,24 @@
 ---
 name: cozy-natural-light-mirror-selfie-portrait
 description: This prompt instructs an AI image generator to produce a hyper-realistic indoor mirror selfie that matches a provided reference subject with strict identity preservation, specifying the exact pose, expression, outfit, accessories, lighting, smartphone selfie look, and cozy warm interior environment, and the expected outcome is a photorealistic portrait in a 3:4 or 4:5 ratio that recreates the original scene without facial alteration, beautification, or stylistic changes.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
