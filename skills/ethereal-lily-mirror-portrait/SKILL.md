@@ -1,7 +1,24 @@
 ---
 name: ethereal-lily-mirror-portrait
 description: This prompt instructs an image-generation assistant to produce a single, ultra-realistic, high-resolution studio portrait of the provided subject lying beside fresh white lilies on a glossy black surface that creates a clean, undistorted mirror reflection, using soft cinematic lighting and tight half-body framing. It requires automatic respect of the subject’s gender from the reference and strict, absolute preservation of the uploaded face and defining features with no alterations, while enforcing quality constraints, disallowed elements, and a fail-fast request for a clearer reference if the face is not sufficiently visible or sharp.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
