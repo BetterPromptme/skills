@@ -1,7 +1,24 @@
 ---
 name: golden-hour-beach-cafe-aesthetic
 description: This prompt instructs an AI image generator to produce a photorealistic, vertical mirror-selfie style portrait set in a romantic seaside café, using an uploaded reference image as the sole, unaltered face source. It specifies exact subject expression, pose, outfit, accessories, lighting, color palette, and environmental elements (sand, flowers, café furniture, ocean, thatched roof, string lights) to achieve a soft, playful, summery lifestyle photograph with realistic textures and depth while explicitly preventing any facial modification or over-stylized effects.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
