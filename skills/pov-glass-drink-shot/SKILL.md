@@ -1,7 +1,24 @@
 ---
 name: pov-glass-drink-shot
 description: This prompt instructs an image-generation/editing workflow to recreate a cinematic POV photograph that matches a given reference image exactly in composition, camera placement, glass/straw/liquid optics, lighting, color grade, depth of field, and overall realism, while preserving the subject’s face identity precisely from the uploaded image as the sole exception. The intended outcome is a high-resolution, photo-real editorial image with zero creative deviation from the reference scene logic and visual parameters, apart from any face changes that occur naturally through the same glass distortion present in the reference.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
