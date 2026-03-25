@@ -1,7 +1,24 @@
 ---
 name: elevator-noir-absolute-face-lock
 description: This prompt instructs an AI image editor to transform a provided reference photo into a high-end, photoreal editorial portrait of the same person standing relaxed inside a modern stainless-steel elevator with soft fluorescent ceiling lighting, while enforcing strict identity preservation and wardrobe constraints (all-black oversized blazer, long skirt-like bottom, sunglasses, takeaway cup), controlling composition and mood, and rejecting unusable reference images or any forbidden elements such as pants, scarves, readable logos, excessive skin smoothing, or distorted facial reflections.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
