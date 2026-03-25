@@ -1,7 +1,24 @@
 ---
 name: luxury-hotel-corridor-portrait
 description: This prompt instructs an image-generation/editing model to produce a photorealistic, full-body smartphone mirror selfie set in a narrow, upscale hallway, with centered symmetry, warm nighttime interior lighting, and luxury hotel-like materials (dark walls, wood doors, reflective marble floor). It specifies the subject’s exact pose, outfit, and overall mood while strictly requiring that the person’s identity match the provided reference face without any facial alteration, resulting in a polished modern-luxury fashion photograph aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
