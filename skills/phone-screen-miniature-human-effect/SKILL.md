@@ -1,7 +1,24 @@
 ---
 name: phone-screen-miniature-human-effect
 description: This prompt instructs an AI image generator to composite a hyper-realistic forced-perspective photograph in which a real, full-body person appears miniaturized and physically standing on top of an iPhone’s glass screen while the phone is naturally held in a hand and a believable camera app interface remains visible beneath them. It specifies strict realism requirements—matching perspective, lighting, contact shadows, slight screen reflections, and partial UI occlusion by the person’s feet—while prohibiting any interpretation where the person is inside the screen, part of the display content, framed by the UI, floating, or rendered as a toy/CGI effect. The intended outcome is a single vertical street-photography-style image that instantly reads as a practical, physical illusion with consistent scale and photographic imperfections.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
