@@ -1,7 +1,24 @@
 ---
 name: translucent-hyperglass-close-up
 description: This prompt directs an image retexturing process to keep an object’s original shape while transforming its surface into a hyperreal translucent “hyperglass” look, emphasizing refraction, internal scattering, bubbles, and subtle iridescent glints. It specifies hard studio lighting with crisp shadows and sharp specular highlights, a pure black void background, and a macro close-up render with shallow depth of field. The outcome is a silhouette-faithful, glossy, crystal-clear glass-like version of the object with pronounced internal reflections and curved distortions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
