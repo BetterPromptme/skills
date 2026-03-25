@@ -1,7 +1,24 @@
 ---
 name: set-your-daily-direction
 description: This prompt asks the AI to act as an emotionally intelligent productivity coach who turns a user’s long-term goal and today’s constraints (time and energy) into a single, concrete micro-action that’s easy to start and designed to build momentum. It also requires the AI to provide an emotionally resonant mindset reframe, a grounded motivational tie-back to the user’s bigger transformation, and a strong closing line that sparks immediate action. The outcome is a brief, layered coaching response that reduces resistance, clarifies the next step, and helps the user feel supported while taking meaningful progress today.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
