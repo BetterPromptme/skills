@@ -1,7 +1,24 @@
 ---
 name: i-see-daisies-in-the-green-grass
 description: This prompt instructs the AI to generate a cohesive, photorealistic three-panel vertical film-style triptych featuring the same reference-identical subject in a sunlit natural setting, with daisies as a recurring motif. It specifies composition, poses, wardrobe, lens and film emulation, lighting, color palette, and texture for each panel (tree portrait, close-up with flower, reclining on grass), while enforcing strict identity preservation and realistic proportions. The outcome is an 8K cinematic series with warm, slightly overexposed daylight, soft grain, and a consistent nostalgic mood that visually progresses from gentle stillness to serene intimacy.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
