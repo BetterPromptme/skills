@@ -1,7 +1,24 @@
 ---
 name: collaborative-startup-blueprint-generator
 description: This prompt instructs the AI to act as a lean startup strategist who uses your personal constraints and preferences (skills, budget, available time, interests, goals, and risk tolerance) to propose 2–3 tailored startup ideas. For each idea, it delivers a practical snapshot—what it is, why it matches you, estimated startup costs, target customers, and revenue model—then ends by asking you to choose one idea to develop further toward MVP, marketing, and launch.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
