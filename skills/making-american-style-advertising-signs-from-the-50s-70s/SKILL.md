@@ -1,7 +1,24 @@
 ---
 name: making-american-style-advertising-signs-from-the-50s-70s
 description: This prompt instructs an image-generation model to create a square, mid-century (1950s diner) vintage American roadside sign featuring user-supplied text and a user-specified icon-shaped sign silhouette, rendered in colorful, slightly weathered painted metal or neon with retro fonts, drop shadows, and playful composition against a clear blue sky, producing a polished retro sign illustration in a raw, realistic style.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
