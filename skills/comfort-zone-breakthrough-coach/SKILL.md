@@ -1,7 +1,24 @@
 ---
 name: comfort-zone-breakthrough-coach
 description: This prompt instructs the AI to act as an emotionally intelligent mentor and produce a numbered list of 10 warm, open-ended coaching questions tailored to a specified challenge context. The questions are designed to help a capable but hesitant colleague uncover underlying beliefs, fears, assumptions, and internal barriers driving their discomfort, without offering advice, action plans, or judgment. It also sets safety boundaries to avoid diagnosis or risky guidance and to encourage professional help if mental-health concerns are implicated.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
