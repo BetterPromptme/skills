@@ -1,7 +1,24 @@
 ---
 name: seo-optimized-blog-post-writer-1
 description: This prompt instructs the AI to create a complete, SEO-optimized blog post tailored to a given topic, keyword, tone, and word count, including an on-brand title and meta description, a well-structured article with headings and concise paragraphs, a keyword-focused FAQ, internal link ideas, and a clear call-to-action, resulting in a publish-ready piece designed to rank for the primary keyword and guide readers toward next steps.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
