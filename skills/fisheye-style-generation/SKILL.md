@@ -1,7 +1,24 @@
 ---
 name: fisheye-style-generation
 description: This prompt instructs the AI to take an uploaded reference photo and re-render it as a realistic fisheye-lens image, using a specified distortion strength, scene context, color grading, and described background. The task focuses on producing a circular, ultra-wide camera look with smooth edge curvature while keeping people recognizable and maintaining the original lighting and overall tone, resulting in a fun, photobooth-style wide-angle photo rather than a collage-like edit.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
