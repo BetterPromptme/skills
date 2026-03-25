@@ -1,7 +1,24 @@
 ---
 name: wrapped-in-texture
 description: This prompt instructs an AI to generate a square, high-end studio product-style photograph of a specified object whose original shape remains recognizable while being entirely wrapped in an ultra-realistic animal (or other) surface texture. The expected result is a clean, minimalist image on a neutral background with professional lighting, soft shadows, sharp focus, and highly detailed, lifelike textures visible across the object.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
