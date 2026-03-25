@@ -1,7 +1,24 @@
 ---
 name: tell-me-what-youre-going-through-and-well-work-together-to-find-the-right-way
 description: This prompt instructs the AI to respond when someone shares their age and a current struggle by offering a calm, compassionate message that helps them feel seen and supported, followed by a thoughtful, age-appropriate reflection that gently reframes their situation without prescribing solutions. The outcome is a personal, sincere reply that provides comfort, restores a sense of steadiness, and leaves the person with a bit more clarity and peace.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
