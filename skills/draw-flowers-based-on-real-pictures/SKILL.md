@@ -1,7 +1,24 @@
 ---
 name: draw-flowers-based-on-real-pictures
 description: This prompt instructs the AI to take a provided flower image and restyle it into a dreamy, glowing digital illustration. It specifies a soft vector look with pastel gradients, subtle inner and edge lighting, smooth shaded petals, and a simple pastel gradient background, keeping the composition centered and free of text. The intended result is a serene, emotionally soothing, mental-wellness-inspired floral artwork with harmonious colors, gentle shadows, and an ethereal, calming mood.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
