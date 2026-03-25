@@ -1,7 +1,24 @@
 ---
 name: isometric-soft-plastic-retexture-prompt
 description: This prompt directs an image retexturing/editing task where the attached object’s shape and silhouette are preserved while its surface materials, colors, and lighting are transformed into a “soft minimal 3D plastic” isometric render. The outcome is a simplified, clean version of the original object with matte plastic surfaces, satin metallic trim, and a semi-reflective black screen, rendered under soft ambient gradient lighting with minimal shadows and gentle highlights, placed on a smooth pastel blue-to-cream gradient background using the specified cool greys/blues with subtle pastel accent tones.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
