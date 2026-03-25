@@ -1,7 +1,24 @@
 ---
 name: brand-x-celebration-minimalist-poster-design-prompt
 description: This prompt instructs the AI to act as a creative visual strategist and produce an original minimalist poster concept that leverages negative space to express emotion, symbolism, and brand identity. Using provided inputs for the business name, product or service, occasion or holiday, and message or tagline, it outputs a structured concept detailing the occasion, a negative-space-driven visual idea, a two-color palette with strong contrast, a fitting tagline, and concise style notes to ensure the result is clever, resonant, and non-cliché.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
