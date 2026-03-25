@@ -1,7 +1,24 @@
 ---
 name: project-risk-analysis-generator
 description: This prompt instructs the AI to act as a seasoned project manager and produce a comprehensive risk analysis for a specified business project using provided project details (name, goal, team size, timeline, budget, and target market). The expected outcome is a prioritized risk register spanning financial, operational, technological, and legal categories, with likelihood/impact assessments, mitigation and contingency actions, ownership, and a defined cadence and approach for ongoing risk monitoring and reporting throughout the project lifecycle.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
