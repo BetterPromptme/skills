@@ -1,7 +1,24 @@
 ---
 name: studio-portrait-face-and-hair-lock
 description: This prompt configures an image-generation workflow to produce a high-resolution black-and-white studio portrait with cinematic lighting and minimal styling while strictly preserving the subject’s original identity, gender presentation, and exact hairstyle from a provided reference (including required face/hair mattes and guides), applying only controlled monochrome tonal grading; if required reference materials are missing or any identity/gender/hair drift is detected against specified similarity metrics, the process aborts rather than outputting an altered result.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
