@@ -1,7 +1,24 @@
 ---
 name: line-lives-minimal-sketch-figures-in-real-spaces
 description: This prompt instructs an image editor to add clean, minimal white line-drawing people onto an existing photo, ensuring the illustrations match the scene’s perspective, lighting, and scale while interacting naturally with the environment. The result is a set of simple, expressive, faceless figures that preserve all original photo elements and subtly enhance the image with a modern, warm, slightly whimsical mood that feels seamlessly integrated.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
