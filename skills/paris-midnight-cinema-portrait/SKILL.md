@@ -1,7 +1,24 @@
 ---
 name: paris-midnight-cinema-portrait
 description: This prompt instructs an image-editing AI to composite the person from the provided input photo into a vertical, cinematic night portrait set on a luxury Paris rooftop terrace, ensuring the subject’s face, hair, proportions, skin tone, and outfit remain unchanged. The final result is a medium, photographer-taken shot (mid-thigh to head) with a relaxed standing pose, warm lantern lighting on the subject, and a softly blurred, romantic city backdrop where the illuminated Eiffel Tower is clearly visible and centered behind them, enhanced by railing, greenery, and elegant terrace lights for depth and a high-end travel aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
