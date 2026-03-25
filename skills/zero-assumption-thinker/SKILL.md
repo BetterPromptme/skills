@@ -1,7 +1,24 @@
 ---
 name: zero-assumption-thinker
 description: This prompt instructs the AI to solve a user-specified question by decomposing it into a structured first-principles workflow: it must list a small set of directly verifiable facts or constraints, derive a single immediate implication from each fact, synthesize those implications into a solution plan explicitly grounded in the facts, and finally stress-test the reasoning by identifying the weakest link and proposing a way to validate it, all while adhering to strict brevity and section-isolation rules.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
