@@ -1,7 +1,24 @@
 ---
 name: baby-lift-portrait
 description: This prompt instructs an image-generation model to create a high-resolution, documentary-style winter outdoor portrait of a baby being safely lifted upward, matching a specified pose and facial expression while preserving realistic proportions. It defines precise requirements for the baby’s winter outfit, the visible adult hands and clothing, the vertical upward camera angle, and crisp diffused daylight with shallow depth of field. The intended result is a clean, uplifting family moment set against a softly blurred snowy pine forest and bright winter sky, rendered with believable textures, natural lighting, and no stylization, distortion, or added graphic elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
