@@ -1,7 +1,24 @@
 ---
 name: casual-thrift-shop-snapshot
 description: This prompt instructs an image-generation model to produce a candid, mid-thigh-up fashion photo taken inside an industrial, thrift-style clothing store, with warm in-store lighting, visible racks and accessories, and a natural chest-level, straight-on framing that feels like a real moment captured by someone nearby. It specifies an unposed pose and distracted expression, and details two wardrobe variants (female or male) featuring an oversized off-shoulder graphic sweatshirt, neutral streetwear styling, a low-worn beige cap, and a small accent-color bag. The expected outcome is an authentic, urban retail lifestyle image that avoids studio polish, dramatic posing, artificial lighting, heavy retouching, or full-body composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
