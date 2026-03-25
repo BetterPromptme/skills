@@ -1,7 +1,24 @@
 ---
 name: remake-your-image-based-on-dark-comic-style
 description: This prompt instructs an AI image generator to create a modern comic-book style digital illustration of a person with a retro 80s/90s pop-art-meets-noir mood, using bold inks, halftone texture, cold desaturated colors, and dramatic lighting. It specifies key character details (goth-leaning locker-room aesthetic, stylized hair, sunglasses reflections, edgy jewelry), a cool-toned locker-room/classroom setting, and a camera composition that preserves the original photo’s pose with a slight dramatic tilt. The result is a cinematic, introspective portrait that feels confident and rebellious, with clean shading and strong emotional framing.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
