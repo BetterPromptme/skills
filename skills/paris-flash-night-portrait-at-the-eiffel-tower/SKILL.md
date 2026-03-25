@@ -1,7 +1,24 @@
 ---
 name: paris-flash-night-portrait-at-the-eiffel-tower
 description: This prompt instructs an image generator to produce a realistic, amateur-looking nighttime iPhone flash portrait in Paris, using provided reference images to accurately match the subject’s identity and outfit, and placing them in front of an illuminated Eiffel Tower with nearby Seine reflections. The intended result is an unedited, handheld-feeling travel photo with harsh direct flash on the subject, natural ambient city lighting in the background, full-scene sharpness, and authentic noise and exposure typical of a casual smartphone shot.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
