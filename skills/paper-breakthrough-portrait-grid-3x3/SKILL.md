@@ -1,7 +1,24 @@
 ---
 name: paper-breakthrough-portrait-grid-3x3
 description: Prompt này hướng dẫn AI tạo một ảnh collage studio 3x3 tỷ lệ 9:16 theo phong cách photoreal thương mại, trong đó cùng một nhân vật từ ảnh tham chiếu xuất hiện ở 9 ô với cử chỉ và trang phục khác nhau, hiệu ứng chui qua lỗ giấy xé 3D và ánh sáng nhất quán trên nền xám nhạt. Kết quả mong muốn là một ảnh chất lượng cao (>=2160x3840) không chữ/không watermark, có kiểm soát chặt để khóa danh tính (khuôn mặt, tóc, màu mắt, tông da) và đảm bảo mỗi ô khác biệt, rìa giấy và bóng tiếp xúc trông chân thực.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
