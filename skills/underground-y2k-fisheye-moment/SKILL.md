@@ -1,7 +1,24 @@
 ---
 name: underground-y2k-fisheye-moment
 description: This prompt instructs an AI image generator to produce an ultra-realistic, high-resolution fisheye street-fashion portrait of the same young woman from a provided reference, keeping her facial identity unchanged, and placing her in a dim underground parking garage. It specifies a high-angle, wide distorted lens look, Y2K-inspired styling, accessories, pose, expression, lighting, and color accents so the final result is a dynamic, playful, urban portrait with strong fisheye curvature and vivid retro streetwear energy.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
