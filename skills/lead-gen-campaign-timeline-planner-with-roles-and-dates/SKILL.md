@@ -1,7 +1,24 @@
 ---
 name: lead-gen-campaign-timeline-planner-with-roles-and-dates
 description: It instructs the AI to act as a project manager and produce a date-specific, step-by-step implementation timeline for a lead generation campaign for a specified business type running between given start and end dates. The output should map each phase—planning/content creation, platform setup/testing, launch milestones, optimization checkpoints, and final evaluation—to concrete dates and assign accountable roles such as content, ads, and design, presented immediately without any introductory text.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
