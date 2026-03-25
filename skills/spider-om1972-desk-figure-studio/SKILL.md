@@ -1,7 +1,24 @@
 ---
 name: spider-om1972-desk-figure-studio
 description: This prompt instructs the AI to create a realistic product-style concept image of a 1/7 scale figure modeled after the user’s uploaded photo, placed on a computer desk on a clear circular acrylic base labeled “SPIDER OM1972,” wearing a Spider-Man suit without the mask while preserving the user’s exact face. It also specifies environmental details: an iMac displaying a Blender modeling workflow of the figure and a Spider-Man–inspired toy packaging box with original web-pattern artwork positioned beside the monitor, resulting in a cohesive commercialized figure presentation scene.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
