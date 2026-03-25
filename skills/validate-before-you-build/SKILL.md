@@ -1,7 +1,24 @@
 ---
 name: validate-before-you-build
 description: It produces a step-by-step, low-cost customer validation plan for an untested startup idea, customized to the specified industry and business type. The result is a practical sequence of actions—such as defining assumptions, identifying target users, conducting interviews, running simple landing-page or prototype tests, and measuring demand signals—so the founder can confirm or reject the idea before investing time or money in building it.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
