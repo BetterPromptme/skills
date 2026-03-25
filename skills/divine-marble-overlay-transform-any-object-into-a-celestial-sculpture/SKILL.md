@@ -1,7 +1,24 @@
 ---
 name: divine-marble-overlay-transform-any-object-into-a-celestial-sculpture
 description: This prompt instructs an image-editing system to retexture the attached image in a stylized 3D celestial marble aesthetic while preserving the original object’s silhouette and geometry. It specifies high-fidelity detail retention for sculptural folds and depth, applies polished cosmic stone materials with sparkles, iridescent edge glints, and chiseled grooves, and sets high-intensity studio spotlight lighting with soft shadows and glowing reflective highlights. The output is a clean, solid white–background image where the subject appears as luminous divine marble with subtle gold and cool-tinted accents, enhanced by glow, specular bloom, and depth boosting.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
