@@ -1,7 +1,24 @@
 ---
 name: midnight-grocery-flash-diary
 description: This prompt instructs an image-generation/editing system to create a raw, candid direct-flash documentary-style photo of a person pushing a grocery cart in a real, fully stocked supermarket aisle at night, while strictly preserving the subject’s original facial identity, hair, body proportions, skin tone, and exact outfit from an input photo. The intended result is an imperfect, messy, spontaneous-looking wide-angle shot with harsh on-camera flash, strong shadows, blown highlights, slight motion blur, visible grain/noise, and zero beautification or retouching, capturing an authentic late-night errand atmosphere rather than a polished or cinematic image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
