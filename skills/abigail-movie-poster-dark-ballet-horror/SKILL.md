@@ -1,7 +1,24 @@
 ---
 name: abigail-movie-poster-dark-ballet-horror
 description: This prompt instructs the AI to produce a photorealistic, minimalist horror movie poster in a vertical print-ready format, shot from a perfectly top-down perspective with strict symmetry and high-contrast lighting. The result is a centered composition of a ballerina in a wide circular white tutu against a pure black void, with the subject’s real face and hair preserved exactly as provided, a subtle red stain on the dress for psychological tension, and clean red title typography (“ABIGAIL”) anchored at the bottom to complete a calm yet unsettling cinematic poster design.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
