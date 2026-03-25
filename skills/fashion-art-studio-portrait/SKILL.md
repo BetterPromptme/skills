@@ -1,7 +1,24 @@
 ---
 name: fashion-art-studio-portrait
 description: This prompt directs an AI image generator to produce a hyper-realistic, minimalist 4K fashion studio portrait based on a reference subject, preserving the person’s identity and natural skin texture while following precise camera, lighting, styling, pose, composition, and post-processing requirements. The intended outcome is a clean, editorial-quality image with soft cinematic lighting, a neutral gradient backdrop, sharp focus on the eyes, controlled highlights and shadows, and no distracting artifacts or over-retouching.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
