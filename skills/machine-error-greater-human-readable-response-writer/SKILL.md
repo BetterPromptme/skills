@@ -1,7 +1,24 @@
 ---
 name: machine-error-greater-human-readable-response-writer
 description: This prompt instructs the AI to take an HTTP error (status code plus what the user was trying to do, and optional context) and rewrite it into a short, user-friendly message. The output clearly explains what happened in plain language, suggests 1–3 concrete next steps, uses a specified tone, avoids blame, and redacts any sensitive technical details while keeping the response brief and text-only.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
