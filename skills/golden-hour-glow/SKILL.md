@@ -1,7 +1,24 @@
 ---
 name: golden-hour-glow
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic golden-hour lifestyle portrait of a specific young woman in a relaxed outdoor beach-bar setting, with strict rules to preserve her exact facial identity and natural texture while detailing composition, pose, wardrobe, accessories, props, background elements, and warm sunlight direction. The expected outcome is a vertically framed three-quarter body image with the subject casually leaning on a white bar counter holding a beer bottle, set against softly blurred bar details, palm shadows, and a coastal summer mood with realistic lighting and no added text or beautification.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
