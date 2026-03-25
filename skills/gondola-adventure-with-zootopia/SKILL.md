@@ -1,7 +1,24 @@
 ---
 name: gondola-adventure-with-zootopia
 description: This prompt instructs an AI image generator to produce an ultra-realistic, high-resolution portrait inside a bright gondola cabin, using the exact face and hair from a provided human reference photo while placing the person naturally between the 3D-animated characters Nick Wilde and Judy Hopps. It specifies the environment (snowy mountains, clear sky, and a red train on a high stone bridge), precise posing, wardrobe, expressions, lighting integration, and camera settings to achieve a seamless blend of photoreal human and authentic Disney-style characters. The intended result is a sharply detailed, symmetrical 4:5 cinematic image with consistent daylight illumination and no common artifacts like blur, distorted anatomy, or incorrect character designs.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
