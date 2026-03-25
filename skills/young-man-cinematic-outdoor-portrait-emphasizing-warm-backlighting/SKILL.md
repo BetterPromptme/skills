@@ -1,7 +1,24 @@
 ---
 name: young-man-cinematic-outdoor-portrait-emphasizing-warm-backlighting
 description: This prompt directs an image-generation model to create an ultra-realistic, cinematic fashion portrait of a young dark-haired man in a light suit and open-collar striped shirt, seated outdoors beside a canal in Venice. It specifies golden-hour backlighting with warm reflections on the water, a soft-focus background with shallow depth of field, and a photorealistic, high-resolution look styled like Kodak Portra 400 film. The expected result is a polished 8K, editorial-quality photograph with strong natural light and a romantic waterfront atmosphere.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
