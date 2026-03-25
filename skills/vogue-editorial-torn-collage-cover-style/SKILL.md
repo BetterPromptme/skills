@@ -1,7 +1,24 @@
 ---
 name: vogue-editorial-torn-collage-cover-style
 description: This prompt instructs an AI image generator to produce a 4:5 high-fashion magazine cover in a minimal torn-paper editorial style, featuring a dominant, uninterrupted top portrait against a deep royal-blue background with oversized white serif type partially obscured behind the subject, and a single horizontal torn-paper strip across the lower third that reveals only a close-up of the lips. It also specifies premium Vogue-like layout elements (logo bottom left, small centered editorial text, barcode bottom right) and luxury beauty lighting/retouching, ensuring the outcome is elegant, intentional, and limited to exactly two image sections.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
