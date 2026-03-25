@@ -1,7 +1,24 @@
 ---
 name: corkboard-story-layout
 description: This prompt instructs an image model to generate a 1080×1080 square corkboard “case board” that summarizes a user-specified movie as a clear, readable visual timeline: the movie title appears pinned at the top, 5–6 stylized Polaroid-like scene recreations with short handwritten captions are arranged in loose chronological order, and colored strings plus realistic corkboard ephemera (tacks, clips, torn notes, scribbles, arrows, coffee rings) connect plot points and characters under warm nostalgic lighting, while avoiding direct copyrighted stills or recognizable actor likenesses and maintaining balanced composition with minimal clutter.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
