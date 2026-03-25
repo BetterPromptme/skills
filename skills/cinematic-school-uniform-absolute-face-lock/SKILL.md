@@ -1,7 +1,24 @@
 ---
 name: cinematic-school-uniform-absolute-face-lock
 description: This prompt instructs an AI image generator to produce a photoreal, cinematic head-and-upper-body portrait that matches a provided reference face with strict identity preservation, using a modern school-uniform styling that automatically adapts wardrobe details to the subject’s gender. It specifies controlled lighting, camera framing, a textured blue shallow‑focus background, and added accessories (headphones at the neck and a subtle lollipop stick), with an optional ultra-light freckle overlay that must not alter facial geometry or obscure key landmarks. The expected outcome is a high-resolution 3:4 editorial-style portrait with natural skin detail, muted color grading, fine film grain, no readable text or logos, and a fail-safe that requests a clearer reference image if the face is not fully visible.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
