@@ -1,7 +1,24 @@
 ---
 name: make-everything-pixel-style
 description: This prompt instructs an AI image generator to use the uploaded image as a reference and recreate its main subject as a stylized 16-bit-era pixel-art sprite, simplifying shapes into clear pixel blocks with bold outlines, vibrant high-contrast colors, and a cute retro-futuristic arcade aesthetic. The intended result is a playful, surreal, non-photoreal pixel illustration placed on a pure black background in a 1:1 format, optimized for a 90s-style retro-sci-fi look.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
