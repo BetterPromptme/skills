@@ -1,7 +1,24 @@
 ---
 name: crimson-contrast-half-body-golden-shadow-portrait
 description: Generates instructions for creating a 1080x1920 vertical portrait image featuring a half-body subject in a black suit and shirt, shot from a slightly low upward angle with stark cinematic, high-contrast lighting. The result is a sculptural, dominant mood achieved through warm directional highlights on one side of the face, deep shadow on the other, and a saturated customizable background color that intensifies the contrast with the subject’s luminous skin and dark wardrobe.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
