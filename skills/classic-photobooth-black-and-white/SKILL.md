@@ -1,7 +1,24 @@
 ---
 name: classic-photobooth-black-and-white
 description: This prompt instructs the AI to convert an input photo into a single, high-resolution, photorealistic black-and-white studio/photobooth-style portrait, emphasizing strong monochrome contrast, subtle film grain, clean white seamless background, tight centered waist-up cropping, and soft flash-like lighting. It requires strict, exact preservation of every subject’s face and original clothing/accessories with no beautification or identity changes, while adjusting the pose to match a specified friends-versus-couple hugging arrangement. The intended result is a frameless, borderless, sharply focused, real-photography-looking image that meets detailed validation checks for facial fidelity, pose logic, and overall photobooth aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
