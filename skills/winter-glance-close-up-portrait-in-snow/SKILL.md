@@ -1,7 +1,24 @@
 ---
 name: winter-glance-close-up-portrait-in-snow
 description: This prompt instructs an image-generation model to produce a high-definition, photorealistic, tight close-up winter portrait of a young person in a softly blurred snowy forest, with natural overcast lighting and cinematic, introspective mood. It specifies composition, wardrobe (black scarf and gloves), texture details (snowflakes on hair and scarf, visible skin and fabric texture), and color/lighting parameters to ensure realistic, film-grain finish. The intended outcome is a 4:5 vertical 4K/8K portrait where the subject’s facial proportions, hairstyle, and hair color match a provided reference exactly, preserving authentic expression without beautification or stylization.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
