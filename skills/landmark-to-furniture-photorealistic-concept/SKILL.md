@@ -1,7 +1,24 @@
 ---
 name: landmark-to-furniture-photorealistic-concept
 description: This prompt instructs an image generator to create a photorealistic scene in which a specified landmark is realistically transformed into a functional piece of furniture, placed in a living room at normal human scale. The expected result is a highly detailed, believable render that emphasizes both the recognizable landmark features and practical furniture design within a coherent interior setting.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
