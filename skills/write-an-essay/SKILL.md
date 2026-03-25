@@ -1,7 +1,24 @@
 ---
 name: write-an-essay
 description: This prompt instructs the AI to write a polished, academically styled essay of a specified length on a user-chosen topic. It requires a clear thesis-led structure with an engaging introduction, evidence-based body paragraphs, and a concise conclusion that synthesizes the main arguments. The outcome is a coherent, grammatically accurate, critically informed essay that incorporates appropriate citations in the requested format where needed.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
