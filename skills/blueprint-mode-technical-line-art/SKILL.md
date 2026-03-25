@@ -1,7 +1,24 @@
 ---
 name: blueprint-mode-technical-line-art
 description: This prompt instructs the AI to examine a provided reference image and recreate its subject as a precise blueprint-style technical schematic, preserving key visual details such as form, structure, design elements, colors, and background. The output is a clean, engineering-oriented line drawing rendered in multiple specified pen colors on a specified paper type, enhanced with technical annotations, dimension lines, and other drafting conventions to produce a professional, highly detailed technical blueprint aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
