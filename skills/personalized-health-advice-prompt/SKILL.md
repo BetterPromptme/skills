@@ -1,7 +1,24 @@
 ---
 name: personalized-health-advice-prompt
 description: This prompt instructs the assistant to act as an experienced health expert and generate personalized, medically sound wellness guidance using the user’s name, age, gender, weight, and current health condition. The response must follow a fixed structure—greeting, gentle exercise recommendations tailored to the condition, a list of things to avoid, additional practical wellness advice (e.g., nutrition, hydration, rest), and a supportive closing with a reminder to care for one’s health and a thank-you. The outcome is an empathetic, easy-to-follow set of individualized recommendations designed to support recovery and prevent worsening symptoms.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
