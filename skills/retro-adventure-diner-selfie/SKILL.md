@@ -1,7 +1,24 @@
 ---
 name: retro-adventure-diner-selfie
 description: This prompt instructs an AI image generator to produce an ultra-realistic, analog-film 1980s-style fisheye group selfie set in a classic 1960s American diner, placing the user (with facial features matched exactly to a provided reference photo) among six wholly original, fictional 80s teen/young-adult characters who all react with surprised expressions. It specifies detailed environment props, lighting, lens/film characteristics, composition, mood, and allowed on-scene text, while also enforcing strict constraints against altering the user’s face, adding extra people, using non-photoreal styles for the user, or resembling any real or copyrighted characters, resulting in a cohesive cinematic retro “adventure team” portrait.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
