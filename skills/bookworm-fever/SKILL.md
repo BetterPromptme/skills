@@ -1,7 +1,24 @@
 ---
 name: bookworm-fever
 description: This prompt instructs an AI image generator to create a cohesive, three-panel vertical triptych of photorealistic, golden-hour fine-art portraits featuring the same subject consistently across all frames, with a warm pastoral film aesthetic. It specifies the composition and actions for each panel (an intimate restful close-up, a wider full-body meadow scene, and an expressive sensory close-up), recurring props and flora, and detailed camera/film characteristics (lens, shallow depth of field, grain, halation, color grade) to produce a timeless, serene, cinematic sequence that feels like analog film photography.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
