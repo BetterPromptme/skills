@@ -1,7 +1,24 @@
 ---
 name: ethereal-floral-beauty-editorial
 description: This prompt instructs an AI image editor to take a clear portrait photo and transform it into a luxury, hyperrealistic beauty editorial image with a soft floral, ethereal mood. It specifies high-end portrait composition, lens and depth-of-field behavior, diffused studio lighting, pastel-neutral color grading, natural-yet-refined makeup and hair styling with subtle floral accents, and meticulous realism that preserves the subject’s identity and skin texture. The expected outcome is a vertically framed, high-detail editorial portrait on a clean gradient backdrop, with sharp eyes, gentle highlight bloom, and an elegant, timeless finish suitable for a fashion beauty campaign.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
