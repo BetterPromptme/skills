@@ -1,7 +1,24 @@
 ---
 name: transparent-studio-render-no-base
 description: This prompt defines a consistent visual style guide for generating a clean, studio-quality product render of an object on a fully transparent background. It instructs the model to preserve the object’s original shape while using smooth, outline-free geometry, semi-matte plastic-like materials, subtle specular highlights, and high-contrast decal-style branding, with slightly boosted color for clarity. The expected result is a centered, sharp, professional-looking cutout render with only a soft drop shadow for depth and no visible base, floor, or background elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
