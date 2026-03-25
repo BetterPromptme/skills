@@ -1,7 +1,24 @@
 ---
 name: ugc-beauty-product-visualizer
 description: This prompt instructs an AI to turn a user’s standard portrait into a clean, studio-style UGC beauty image where the same person is shown in a shoulders-up, commercially appropriate framing while naturally holding the exact product from a separate uploaded product photo. The result is a premium, minimal campaign-like visual with soft diffused lighting, a pastel background matched to the product’s main color, preserved identity and realistic skin texture, and strict brand-accurate product rendering (logo, label, colors, packaging) without redesigns, distortions, or sexualized styling.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
