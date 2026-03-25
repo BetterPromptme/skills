@@ -1,7 +1,24 @@
 ---
 name: sunlit-architectural-editorial-portrait
 description: This prompt directs an image model to generate a high-resolution, photorealistic, chest-up outdoor editorial fashion portrait using the provided reference image as the sole, unaltered face source, preserving identical facial identity and natural skin texture. It specifies a vertical, centered composition in strong direct sunlight with the subject shading her eyes by hand, styled in modern fashion (cream zip sweater, yellow-tinted sunglasses, gold jewelry, manicured nails) against a light gray classical stone building with a visible fluted column. The intended outcome is a confident, sun-drenched, modern-meets-classic architectural portrait with sharp detail, natural contrast, and no beauty filters, retouching, or stylistic effects that would change identity or realism.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
