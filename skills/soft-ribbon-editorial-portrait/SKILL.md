@@ -1,7 +1,24 @@
 ---
 name: soft-ribbon-editorial-portrait
 description: This prompt instructs an AI to generate a minimalist, high-fashion studio editorial portrait of a specific woman, preserving her facial identity and natural skin tone while styling her with long messy hair, subtle makeup, a black oversized blazer over a white tube top, and a sheer ribbon bow, shot as a medium close-up in a clean white studio with soft, diffused, dreamy lighting and 4:5 vertical framing for an ultra-sharp, polished fashion outcome.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
