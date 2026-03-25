@@ -1,7 +1,24 @@
 ---
 name: excalidraw-style-architecture-diagram
 description: This prompt instructs an AI to produce a minimalist, Excalidraw-style architecture diagram for a specified system, choosing an appropriate 16:9 horizontal or vertical layout and organizing the design into clearly labeled modules with their key functions. It requires clean box-and-arrow visuals on a white background, uses arrows for primary data/process flows and dashed lines for auxiliary or supervisory relationships, and allows limited red highlights to emphasize important lines or labels, resulting in a professional technical sketch that communicates the system’s structure and interactions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
