@@ -1,7 +1,24 @@
 ---
 name: clear-technical-explainer-with-use-case
 description: This prompt instructs the AI to act as a technical explainer who adapts an explanation of a specified technical topic to a defined audience and knowledge level. It requires the response to start by stating scope and assumptions, give a high-level overview, then break the concept into 3–5 clear steps using plain language, brief definitions of necessary jargon, and helpful analogies or simple visuals when appropriate. It also asks the AI to note limitations and common pitfalls, avoid speculation, and finish with a practical real-world example based on the provided use case, while requesting more details if key inputs are missing.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
