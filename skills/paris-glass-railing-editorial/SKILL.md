@@ -1,7 +1,24 @@
 ---
 name: paris-glass-railing-editorial
 description: This prompt instructs an image-generation or editing system to create a high-fashion, low-angle editorial photograph set on a quiet Parisian street, precisely matching a provided reference environment and composition. It requires preserving the person’s identity and outfit exactly while placing them in a specific pose over a transparent glass railing with accurate reflections, cobblestones, and symmetrical Haussmann-style buildings. The intended outcome is a vertically framed, 28mm wide-angle look with natural daylight, crisp subject detail, subtle background blur, and a clean luxury editorial finish conveying refined modern Parisian elegance.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
