@@ -1,7 +1,24 @@
 ---
 name: cozy-christmas-portrait-with-cat
 description: This prompt instructs an image-generation or editing system to create a tight, intimate close-up portrait of a person cuddling a small black cat in dim, warm indoor lighting with a subdued, introspective mood, while strictly preserving the subject’s exact identity and natural skin and hair details. The intended outcome is a cozy, non-commercial holiday-at-home scene featuring a red Santa hat and minimal black clothing, framed closely with an unobtrusive dark background, ensuring no beautification, facial changes, or distracting festive elements are introduced.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
