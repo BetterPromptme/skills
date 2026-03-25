@@ -1,7 +1,24 @@
 ---
 name: flexible-ai-assistant-for-everyday-work
 description: This prompt sets up the AI as a practical writing partner that turns a user’s inputs into sharp, real‑world deliverables by consistently applying a structured workflow (role, target reader, style limits, task, and any provided draft/source). It aims to eliminate generic tone, enforce clear constraints, and produce an initial high‑quality output that matches the specified persona and audience, then drive a short refinement loop by ending each response with a few focused questions to improve the next iteration.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
