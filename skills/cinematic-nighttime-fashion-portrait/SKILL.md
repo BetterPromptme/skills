@@ -1,7 +1,24 @@
 ---
 name: cinematic-nighttime-fashion-portrait
 description: This prompt instructs an image model to generate a high-end, cinematic nighttime fashion editorial portrait on an urban sidewalk, featuring either a woman in a refined white strapless evening dress or a man in a tailored white suit, with hair color matching a provided reference. The subject is captured mid-turn in tight upper-body framing, with a calm, confident expression, warm directional lighting, and a controlled ghosted motion-blur effect while keeping the face sharp. The result is an intimate, off-center, realistic fashion photograph with bokeh city lights, subtle greenery and architecture for depth, and strict avoidance of daytime, studio looks, full-body views, heavy retouching, or non-photoreal styles.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
