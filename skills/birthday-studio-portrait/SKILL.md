@@ -1,7 +1,24 @@
 ---
 name: birthday-studio-portrait
 description: This prompt instructs an image model to generate a square, high-resolution, realistic 3D scene featuring a large bold number based on a provided age value, with the digits filled with themed items like books, tech devices, sneakers, medals, and trophies. It also requires incorporating a person from an uploaded reference photo with matching facial likeness, hairstyle, outfit, and expression, posed leaning on and pointing to the numbers, set against a clean minimalist background with soft shadows for a modern look.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
