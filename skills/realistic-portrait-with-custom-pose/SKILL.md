@@ -1,7 +1,24 @@
 ---
 name: realistic-portrait-with-custom-pose
 description: This prompt instructs the AI to act as a professional portrait photographer/digital artist and produce a realistic, high-quality studio portrait by combining two client-provided references: a face photo for identity and a sketch for body pose. It requires preserving the subject’s facial features and existing clothing, applying soft studio lighting against a neutral background, and delivering a natural, polished composite that looks like a clean professional head-to-toe studio photograph while adhering to consent, permissions, and ethical standards.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
