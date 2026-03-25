@@ -1,7 +1,24 @@
 ---
 name: real-world-relevance-how-my-course-connects-to-my-future-career
 description: This prompt asks the AI to tailor an explanation to a student’s major, year level, and current subject, showing how the subject is used in real-world careers connected to that major. The result is a set of practical, career-relevant examples or brief case studies that demonstrate how concepts from the subject translate into professional tasks, projects, and job roles the student might pursue.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
