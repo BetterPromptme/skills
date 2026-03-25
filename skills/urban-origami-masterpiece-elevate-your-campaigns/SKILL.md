@@ -1,7 +1,24 @@
 ---
 name: urban-origami-masterpiece-elevate-your-campaigns
 description: This prompt instructs an AI image generator to create a square, realistic-looking digital photograph of a handcrafted paper-origami scene: a detailed origami model depicting a specified monument centered in frame, with the specified city name above it formed from bold origami-style letters in the country’s national colors arranged in an arch. It specifies a soft minimal pastel/neutral background with subtle paper textures, and diffused lighting that casts natural shadows to emphasize fold depth, material texture, geometric precision, and a clean, harmonious composition.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
