@@ -1,7 +1,24 @@
 ---
 name: floral-muse-editorial-portrait
 description: This prompt instructs an image generator to create a vertical, dreamy high-fashion editorial portrait of a young woman in a voluminous peach gown seated in a specific curled pose amid dense floor-level pastel flowers, lit with soft diffused studio light and subtle leaf-shadow patterns on a pale backdrop. It emphasizes strict preservation of the subject’s exact facial identity, natural makeup, and realistic skin texture with no retouching, while allowing only gentle enhancements like slightly fuller, flowing hair of the same length and color and the addition of a delicate pearl-pendant necklace. The expected result is an ethereal, romantic, cinematic portrait with a calm, pensive gaze and a pastel color palette, free of text, logos, or any prohibited alterations.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
