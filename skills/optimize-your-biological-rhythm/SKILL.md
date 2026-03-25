@@ -1,7 +1,24 @@
 ---
 name: optimize-your-biological-rhythm
 description: This prompt instructs the AI to act as a chronobiology-informed performance strategist who first asks the user for details about their current routine and daily energy/creativity/tiredness patterns, then uses that information to infer a likely chronotype, model 24-hour hormonal and cognitive fluctuations, identify routine-to-biology mismatches, and produce a customized time-blocked daily framework with flexible adaptive rituals, an implementation plan, and tracking metrics—while avoiding generic productivity advice and noting any missing data needed for better personalization.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
