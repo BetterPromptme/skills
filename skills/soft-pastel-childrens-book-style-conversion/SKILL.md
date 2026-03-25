@@ -1,7 +1,24 @@
 ---
 name: soft-pastel-childrens-book-style-conversion
 description: This prompt instructs the AI to take the user’s uploaded image and recreate it as a whimsical watercolor children’s-book illustration, using a soft pastel palette and airy blended background, with visible hand-painted brush textures, gentle shading, subtle outlines, and cute large-eyed stylized characters, resulting in a dreamy, playful, artistic rendition of the original scene.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
