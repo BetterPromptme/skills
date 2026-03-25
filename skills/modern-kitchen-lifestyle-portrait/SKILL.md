@@ -1,7 +1,24 @@
 ---
 name: modern-kitchen-lifestyle-portrait
 description: This prompt instructs an AI image generator to produce a photorealistic, fashion-editorial indoor portrait in a modern minimalist kitchen, using the provided reference image as the sole, unchanged source of the subject’s facial identity. It specifies a vertical, counter-height medium composition with a confident leaning pose, glam hair and makeup, pink Y2K-inspired lounge outfit, and minimal foreground props (shot glasses and a clear bottle), along with controlled overhead lighting and a late-night upscale mood, resulting in a realistic, high-contrast lifestyle photograph that preserves the subject’s exact face and expression.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
