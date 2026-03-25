@@ -1,7 +1,24 @@
 ---
 name: grayscale-multi-view-technical-sketch-with-annotations-for-industrial-design
 description: This prompt instructs an image-generation/editing model to transform a provided object into an engineering-style grayscale concept sketch presented as a multi-view technical drawing (front, side, top, and perspective). The resulting image should feature clean industrial linework, precise contours, soft pencil shading for subtle depth, and annotated callouts such as part labels, dimensions, and brief functional notes, all laid out on a white background to resemble a realistic hand-drafted technical design sheet.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
