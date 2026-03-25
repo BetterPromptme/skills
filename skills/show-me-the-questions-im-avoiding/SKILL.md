@@ -1,7 +1,24 @@
 ---
 name: show-me-the-questions-im-avoiding
 description: This prompt asks the AI to avoid giving advice and instead generate five probing, potentially uncomfortable self-reflection questions tailored to the user’s stated emotion and area of life. The outcome is a concise set of challenging prompts designed to surface hidden fears, assumptions, responsibilities, or desires that may be acting as the user’s real block, helping them move toward clearer understanding through introspection rather than solutions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
