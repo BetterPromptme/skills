@@ -1,7 +1,24 @@
 ---
 name: turn-icons-into-soft-furry-icons
 description: This prompt instructs the AI to take a specified flat vector icon and reimagine it as a soft, three-dimensional, fur-covered object with hyperrealistic hair detail, gentle floating presentation, and modern studio-lit rendering on a clean light gray background, resulting in a high-resolution, tactile, playful 3D image that preserves the original icon’s silhouette while adding plush depth, texture, and soft shadows.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
