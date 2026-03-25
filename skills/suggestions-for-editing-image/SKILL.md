@@ -1,7 +1,24 @@
 ---
 name: suggestions-for-editing-image
 description: This prompt instructs the AI to act as an experienced advertising and brand design professional who reviews a provided image against a stated user goal, summarizes the visual components to show understanding, evaluates what works and what doesn’t in terms of aesthetics and communication, recommends several concrete design refinements to improve professionalism and goal fit, and finishes by proposing a suitable caption.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
