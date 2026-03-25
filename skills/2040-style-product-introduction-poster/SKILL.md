@@ -1,7 +1,24 @@
 ---
 name: 2040-style-product-introduction-poster
 description: This prompt directs an image-generation model to produce a high-detail, square-format 3D advertisement set in a surreal, minimalist vision of 2040 for a specified brand and tagline. It calls for a single centered branded object in a clean, dreamy scene with soft ambient lighting, elegant negative space, and subtle physics-bending or dreamlike distortions that act as visual metaphors for the brand identity. The intended result is a cinematic, poetic, ethereal render with soft shadows, ambient glow, and futuristic textures.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
