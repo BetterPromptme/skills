@@ -1,7 +1,24 @@
 ---
 name: upsell-idea-generator
 description: This prompt instructs the AI to act as an e-commerce upselling marketing consultant and produce a specified number of upsell ideas for a given core product, using provided product details and target audience information. The output delivers clearly structured recommendations that include both complementary related products and themed bundles, each with a name and a concise rationale explaining how it enhances the customer experience and can increase average order value.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
