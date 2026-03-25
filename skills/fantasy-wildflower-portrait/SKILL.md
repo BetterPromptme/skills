@@ -1,7 +1,24 @@
 ---
 name: fantasy-wildflower-portrait
 description: This prompt instructs an image-generation workflow to produce a vertical, ultra-detailed cinematic fashion editorial portrait that keeps the subject’s facial identity exactly matching a provided reference while transforming everything else into a romantic haute couture fantasy scene. The result is a low-angle medium shot in a vibrant wildflower field at golden hour, featuring wind-blown hair with subtle petals, a pale cream layered tulle-and-feather gown with blended floral accents, shallow depth of field with blurred foreground flowers, and a dreamy Vogue-style composition—without any added characters, text, or stylistic deviations such as sci-fi, horror, or illustration.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
