@@ -1,7 +1,24 @@
 ---
 name: feature-requirement
 description: This prompt instructs the AI to act as a professional Business Analyst and produce a comprehensive Feature Requirement document based on a provided business description, using a specified template structure with English section headings while writing the body content in a chosen language, resulting in a detailed, ready-to-use requirements specification for the requested feature.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
