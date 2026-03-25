@@ -1,7 +1,24 @@
 ---
 name: no-fluff-onboarding-roles-and-workflow
 description: This prompt instructs the AI to act as an expert onboarding guide for a new employee on their first day at a specified company and department, providing a clear overview of the typical roles and responsibilities of team members in that department and explaining the common collaboration practices. The expected result is a direct, department-focused summary of what the employee will generally do, who they’ll work with, and how work is coordinated, with no introductory preamble.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
