@@ -107,10 +107,17 @@ export function buildOptionalTextInputsList(
     .join("\n");
 }
 
+export function sanitizeOptions(
+  options: Record<string, unknown>
+): Record<string, unknown> {
+  const { image: _, ...rest } = options;
+  return rest;
+}
+
 export function formatOptionsJson(
   options: Record<string, unknown>
 ): string {
-  return JSON.stringify(options);
+  return JSON.stringify(sanitizeOptions(options));
 }
 
 export function joinWithAnd(items: string[]): string {
