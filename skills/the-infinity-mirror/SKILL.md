@@ -1,7 +1,24 @@
 ---
 name: the-infinity-mirror
 description: This prompt instructs an AI image generator to produce a high-resolution, photorealistic vertical mirror-selfie fashion portrait set in a modern retail fitting-room corridor made of repeating floor-to-ceiling mirrors. It specifies strict identity preservation for the subject’s face, detailed styling (hair, makeup, outfit, footwear), precise pose and framing, and a minimalist interior with symmetrical reflections, neutral color palette, and soft, even retail lighting. The intended outcome is a sharp, editorial-looking image with realistic reflections, perspective depth, and a clean high-end store aesthetic.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
