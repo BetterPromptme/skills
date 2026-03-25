@@ -1,7 +1,24 @@
 ---
 name: turn-any-movie-or-anime-into-a-mirror-for-your-life
 description: This prompt asks the AI to use the user’s stated life challenge, chosen movie/show, goal, timeline, and the story’s complexity to produce a tailored reflection: it summarizes the plot, draws parallels between the narrative and the user’s situation, extracts practical lessons as an analogy, and turns those insights into a concrete step-by-step action plan aimed at achieving the goal within the specified period, concluding with an interpretation of how the story symbolically mirrors the user’s own life.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
