@@ -1,7 +1,24 @@
 ---
 name: the-dollhouse-illusion
 description: This prompt instructs an AI image generator to produce a hyperreal, cinematic fashion editorial portrait in which a person—matching a provided reference identity—appears oversized and physically confined within a detailed miniature dollhouse room, dressed in a pastel green couture look, posed with calm tension, and photographed with specified camera settings and soft neutral studio lighting to emphasize realistic textures, miniature props, and a refined surreal mood without distortion or cartoon styling.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
