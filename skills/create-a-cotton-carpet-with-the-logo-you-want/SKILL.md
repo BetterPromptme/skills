@@ -1,7 +1,24 @@
 ---
 name: create-a-cotton-carpet-with-the-logo-you-want
 description: This prompt directs an image model to generate a square, photorealistic studio scene featuring a premium custom tufted rug shaped exactly to a supplied logo’s contours, with realistic yarn texture and subtle raised details for depth. It specifies a clean minimal floor surface, a top-down or slightly angled camera view, and natural window light that casts soft blind shadows, while adding a white fluffy chair in the upper-left and a plant on the opposite edge as understated contextual props. The intended outcome is a high-end mockup that showcases the rug as a luxury design object without distracting background elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
