@@ -1,7 +1,24 @@
 ---
 name: bat-om1972-desk-figure-studio
 description: This prompt instructs an AI to create a realistic product-style concept render of a 1/7 scale commercial figure based on the user’s uploaded photo, depicting the person in a Batman costume without the cowl so their face matches the photo, posed on a computer desk and mounted on a clear circular acrylic base labeled “BAT OM1972.” It specifies environmental details including an iMac screen showing the figure’s Blender modeling workflow and a Batman-inspired toy packaging box with original artwork placed beside the monitor, resulting in a cohesive commercialized collectible figure scene.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
