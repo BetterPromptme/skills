@@ -1,7 +1,24 @@
 ---
 name: demogorgon-mirror-stranger-things-inspired
 description: This prompt instructs an image model to generate two photorealistic horror bathroom scenes—one with a woman in a white lace dress and one with a man in a white garment—each using an exact, undistorted reference face, posed front-facing at a sink with a fearful expression. In both versions, the mirror behind them shows a Demogorgon-like creature only in the reflection, aligned correctly with the subject and rendered in a cold, desaturated, cinematic style with grime/fog for tension. The intended result is a consistent, Stranger Things–inspired composition where the human remains clearly visible in the foreground while the monster dominates the mirror, with strict negatives preventing pose changes, face obstruction, stylization, or creature substitution.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
