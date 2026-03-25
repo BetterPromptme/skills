@@ -1,7 +1,24 @@
 ---
 name: ad-refinery-360
 description: This prompt guides an AI to act as an advertising strategist and behavioral psychologist by taking product details, performance goals, market context, and a desired style to build three target personas, generate three ad concepts, run multiple rounds of persona-based critique and iterative refinement, and then select the best-performing ad with clear reasoning and actionable targeting and optimization recommendations.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
