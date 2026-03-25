@@ -1,7 +1,24 @@
 ---
 name: healing-meadow-piano-portrait
 description: This prompt instructs an AI image generator to use an uploaded portrait to create a hyper-realistic, magazine-quality 8K cinematic scene in a 9:16 frame, depicting the same person (with identity and proportions preserved) playing a grand piano alone in a windswept meadow. It defines lighting, color palette, texture, composition, and mood to emphasize natural daylight, film-like grain, and emotional stillness, while enforcing constraints that prevent stylization artifacts, added text/branding, exaggerated features, or surreal elements. The outcome is a respectful, editorial-grade image with convincing atmospheric depth and visible motion in the grass, tailored to a user-specified outfit description.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
