@@ -1,7 +1,24 @@
 ---
 name: hyper-realistic-beauiful-girl
 description: This prompt instructs an image-generation model to create a hyperrealistic, cinematic 8K portrait of a beautiful young girl with expressive eyes and a radiant smile, wearing an elegant flowing dress in a vivid randomly chosen color, posed in a dynamic, natural environment such as a golden-hour enchanted forest clearing or an artistic city street with soft bokeh, with meticulously detailed hair and lighting that together produce an intricate, dreamlike, photorealistic final image.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
