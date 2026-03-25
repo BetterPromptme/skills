@@ -1,7 +1,24 @@
 ---
 name: neo-noir-rebellion-cinematic-red-portrait
 description: This prompt directs an image-generation system to produce a realistic, ultra-detailed neo-noir cinematic portrait featuring two characters in a tight widescreen composition dominated by deep red lighting and smoky atmosphere, with the lead holding a burning match and matchbox for warm contrast and symbolic tension. It specifies camera framing, lens feel, color grading, wardrobe and accessories, and emotional tone (rebellion, seduction, danger), while enforcing strict identity preservation for both subjects and avoiding stylization or distortions, resulting in a film-still-like red-lit scene with sharp facial detail, subtle grain, and focused interplay between firelight and shadow.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
