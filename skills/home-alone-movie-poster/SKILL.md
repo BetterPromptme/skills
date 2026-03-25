@@ -1,7 +1,24 @@
 ---
 name: home-alone-movie-poster
 description: This prompt instructs an AI image generator to transform a provided portrait into a full-bleed, photorealistic recreation of the classic “Home Alone” movie poster by preserving the subject’s real face and lifelike skin texture, matching the iconic shocked pose and red sweater, placing the two burglars behind the window in their original look and position, and outputting a print-ready 2:3, 4K cinematic poster with only the specified bottom title and tagline and absolutely no borders or margins.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
