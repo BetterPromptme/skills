@@ -1,7 +1,24 @@
 ---
 name: master-prompt
 description: This prompt directs an AI tool to generate a manga-style comic using the “Nano Banana Pro” theme, typically featuring banana-inspired characters or motifs, and to output a cohesive set of illustrated panels (or a single comic image) with consistent character design, expressive line art, and readable dialogue or captions that match the intended tone and story beat.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
