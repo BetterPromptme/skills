@@ -1,7 +1,24 @@
 ---
 name: reflective-mirror-candid-lifestyle-portrait
 description: This prompt instructs an AI to generate a realistic candid lifestyle photograph set in a warm, artsy Indonesian coffee shop, featuring a casually dressed young person seen from behind while their wavy-mirror reflection faces the camera with a calm, expressive gaze and an iced coffee in hand. It specifies wardrobe, accessories, posture, lighting, lens/framing, and detailed café decor (including doodle-covered walls and specific handwritten quotes) to ensure an authentic streetwear-and-café vibe. The intended outcome is a high-resolution, natural-looking image with sharp focus on the reflection, gentle background blur, and an intimate, unposed moment that highlights individuality and creative youth culture.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
