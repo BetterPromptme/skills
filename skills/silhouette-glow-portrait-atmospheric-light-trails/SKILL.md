@@ -1,7 +1,24 @@
 ---
 name: silhouette-glow-portrait-atmospheric-light-trails
 description: Generates a cinematic, film-like image concept featuring a silhouetted subject backlit by a soft colored glow, set against an abstract hazy background. The result emphasizes depth-of-field blur, long-exposure light trails, atmospheric lighting, color-negative tonality, and subtle grain for a moody, stylized scene.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
