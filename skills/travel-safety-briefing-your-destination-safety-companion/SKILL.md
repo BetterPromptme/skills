@@ -1,7 +1,24 @@
 ---
 name: travel-safety-briefing-your-destination-safety-companion
 description: This prompt instructs the AI to act as a travel safety advisor and, using the traveler’s destination, trip length, travel style, planned activities, and any special considerations, produce a friendly but realistic, sectioned safety briefing. The resulting output summarizes the destination’s current safety situation (including crime, scams, and stability), highlights any areas to avoid with reasons, provides five destination-specific safety tips, notes key local laws and cultural norms, lists relevant emergency contacts, and recommends useful safety gear or apps in clear bullet-pointed sections.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
