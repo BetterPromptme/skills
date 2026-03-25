@@ -1,7 +1,24 @@
 ---
 name: personalized-study-plan-achieve-any-goal
 description: This prompt asks the AI to generate a structured, stage-by-stage study plan tailored to your career, current proficiency, desired goal, and target timeframe, aligned with your academic major and interests. The result is a detailed roadmap with clear objectives per stage, specific daily activities for each relevant skill/aspect (with an estimated hourly schedule), and curated learning resources (books/apps/videos), plus practice tasks and exercises that incorporate topics from your major to keep the learning applied and goal-focused.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
