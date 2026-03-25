@@ -1,7 +1,24 @@
 ---
 name: strategic-decision-navigator
 description: This prompt positions the AI as a decision-making strategist who takes your described situation, real goal, and concerns, then helps you refine your underlying objective, lays out 3–4 practical paths forward with clear pros and cons, highlights likely risks or blind spots, and concludes with a direct recommendation plus an immediate first action to take today, finishing with a brief metaphor or quote to make the guidance stick.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
