@@ -1,7 +1,24 @@
 ---
 name: human-checking-mirror-grid-portrait
 description: This prompt instructs an image-editing model to take a real person’s photo and convert it into a photorealistic mirror-selfie scene framed as a modern “human verification” interface. The result is a natural-looking indoor reflection with the subject’s identity preserved exactly, a uniform CAPTCHA-style square grid overlay across the mirror, subtle glass imperfections, and minimal UI elements (instruction banner and a SKIP button) presented in a clean, realistic system frame without stylization, face alteration, or exaggerated graphics.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
