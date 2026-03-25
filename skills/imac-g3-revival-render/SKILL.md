@@ -1,7 +1,24 @@
 ---
 name: imac-g3-revival-render
 description: This prompt instructs an image model to generate a high-resolution, square 3D icon of a specified object rendered in the classic iMac G3 style, featuring glossy translucent colored plastic shells with soft white/gray accents. The result should be a perfectly centered, weightless, fully floating object on a pure white background with no text, shadows, reflections, or grounding elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
