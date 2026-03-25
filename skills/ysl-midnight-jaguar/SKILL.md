@@ -1,7 +1,24 @@
 ---
 name: ysl-midnight-jaguar
 description: This prompt instructs an image-generation/editing model to convert a provided photo into an ultra-realistic luxury fashion editorial scene inspired by high-end designer campaign aesthetics: the same recognizable person is preserved while being placed in the driver’s seat of a vintage convertible in a narrow city alley, styled in elegant fashion, and photographed from a specific passenger-side angle with soft daylight. The intended result is a magazine-quality, cinematic image where a clearly identifiable YSL shoulder bag—with its recognizable monogram hardware facing the camera—becomes the central fashion focus amid detailed textures, natural lighting, and shallow depth of field.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
