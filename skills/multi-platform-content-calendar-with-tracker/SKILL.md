@@ -1,7 +1,24 @@
 ---
 name: multi-platform-content-calendar-with-tracker
 description: This prompt instructs the AI to act as a short-form, cross-platform social growth strategist and produce a ready-to-execute 7-day cross-posting plan for a campaign, tailored to a specified timezone and campaign inputs. The output is a platform-aware calendar with recommended posting times per channel, practical editing/logistics guidance (aspect ratios, cropping, and cover/thumbnail text placement), a reusable two-line caption/description template with a clear CTA, and a performance tracker table to log key metrics (views, watch time, saves, comments, clicks, opt-ins) so the creator can measure and optimize reach, engagement, and conversions across platforms.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
