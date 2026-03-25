@@ -1,7 +1,24 @@
 ---
 name: ultrarealistic-artistic-portrait
 description: This prompt instructs an image-generation system to create a hyperreal, cinematic close-up portrait based on an uploaded reference photo, strictly preserving the subject’s identity and natural skin texture. It specifies a black sweatshirt, a slight-profile pose with a thoughtful expression and averted gaze, dramatic dual lighting with a golden rim/backlight on the hair and cool green illumination across the face and chest, and a pure black distraction-free background, while explicitly forbidding beautifying, stylization, text/logos, or visual artifacts.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
