@@ -1,7 +1,24 @@
 ---
 name: modern-photo-booth-strip-candid-duo-portraits
 description: This prompt instructs the AI to generate a photorealistic, modern photo booth-style film strip composed of four vertically stacked, evenly spaced frames, each showing the same young man and young woman waist-up against a plain neutral studio background under soft, diffused lighting. Across the sequence, their poses and expressions shift subtly (e.g., laughing, leaning in, pointing, and smiling) to convey natural chemistry and candid interaction while maintaining consistent framing, color balance, and minimal white borders, with no text, logos, props, or decorative elements.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
