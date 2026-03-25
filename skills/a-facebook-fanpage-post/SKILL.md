@@ -1,7 +1,24 @@
 ---
 name: a-facebook-fanpage-post
 description: This prompt instructs the AI to create a Facebook fanpage post that promotes a specified product or service by using provided details (name, key benefits, and target audience), opening with a compelling hook tied to the audience’s needs, emphasizing benefits in a friendly and engaging social-media tone, naturally repeating the primary SEO keyword multiple times, and ending with a clear call-to-action, while formatting the post for readability with line breaks and appropriate emojis.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
