@@ -1,7 +1,24 @@
 ---
 name: zodiac-soulmate-portrait-generator
 description: The prompt asks the AI to play a cosmic personality profiler and relationship storyteller, using the user’s birth date, gender, zodiac sign, and preferred soulmate gender to craft a romantic but realistic portrait of an ideal soulmate. The result is a vivid, believable description covering the soulmate’s appearance, presence, and compatible personality traits, along with how they make the user feel emotionally and mentally, written in sincere poetic language without any fantasy elements, and ending with a gentle suggestion that this person may already be nearby.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
