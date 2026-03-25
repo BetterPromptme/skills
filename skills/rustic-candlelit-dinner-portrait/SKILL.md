@@ -1,7 +1,24 @@
 ---
 name: rustic-candlelit-dinner-portrait
 description: This prompt directs an image-generation model to produce a high-resolution, photorealistic, vertically framed waist-up dinner portrait of a specific young woman seated across a wooden table in a warmly lit rustic restaurant at night, with strict constraints to preserve her exact facial identity and natural skin texture. It specifies her hairstyle, makeup, outfit, pose, and expression, along with detailed foreground table items (including a partially eaten Margherita pizza, plates, water glass, and candle) and a cozy upscale background (stone textures, window reflections, pendant lights, and softly blurred diners). The intended outcome is an intimate, romantic, warm-toned candlelit restaurant photograph with sharp focus on the subject and gentle depth-of-field separation from the ambient background.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
