@@ -1,7 +1,24 @@
 ---
 name: get-your-icon
 description: This prompt instructs an AI image generator to create an icon representing a specified concept, following a detailed, consistent visual system. It defines an isometric 3D composition with a small set of clearly arranged elements, soft ambient lighting, gentle shadows, semi-matte textures, crisp high-resolution rendering, a harmonious muted color palette, and a pure white background. The outcome is a clean, premium, scalable icon that matches a cohesive icon set and remains readable across sizes and use cases.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
