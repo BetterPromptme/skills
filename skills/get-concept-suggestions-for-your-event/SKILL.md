@@ -1,7 +1,24 @@
 ---
 name: get-concept-suggestions-for-your-event
 description: This prompt instructs the AI to generate three clearly differentiated event concept proposals for a specified event, each tailored to the provided name, message, purpose, and desired style. For every concept, it requires structured details covering the core thematic idea, color palette, modern “magical” lighting approach, music direction, attendee experiences that reinforce the event purpose and brand recognition, and a clear plan for how the stated message is embedded throughout. The outcome is a set of creative yet purpose-driven concepts that remain grounded strictly in the supplied inputs, avoiding unsupported assumptions.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
