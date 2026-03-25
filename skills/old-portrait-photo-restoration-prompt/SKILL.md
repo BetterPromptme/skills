@@ -1,7 +1,24 @@
 ---
 name: old-portrait-photo-restoration-prompt
 description: This prompt instructs the AI to restore an old portrait photograph by repairing physical damage and improving clarity while preserving the subject’s authentic appearance and the photo’s historical mood. It uses the provided ethnicity/nationality, age, gender, and chosen restoration type (color or black-and-white) to guide accurate, natural-looking enhancement without adding new elements or over-editing. The expected outcome is a high-resolution, archival-quality restored portrait with balanced tones, refined facial detail, and culturally appropriate coloration if colorization is requested.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
