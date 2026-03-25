@@ -1,7 +1,24 @@
 ---
 name: robloxify-anything
 description: This prompt instructs the AI to take the uploaded photo and recreate it as a high-detail 3D scene in a Roblox-like game style, converting all subjects, objects, and the setting into blocky, low-poly forms with appropriate avatar clothing, expressions, and accessories while preserving the original composition and mood. The outcome is an image that looks like an in-game Roblox screenshot, featuring soft lighting, realistic shadows, and a cool, slightly desaturated color grade to match the intended atmosphere.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
