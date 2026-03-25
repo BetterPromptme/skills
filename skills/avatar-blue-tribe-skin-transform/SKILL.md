@@ -1,7 +1,24 @@
 ---
 name: avatar-blue-tribe-skin-transform
 description: This prompt instructs the AI to take a single uploaded portrait photo and perform a high-end, photorealistic VFX-style makeover that preserves the subject’s identity, pose, and lighting while converting them into an original, Avatar-inspired tribal blue-skinned alien. The expected result is one final transformed image featuring realistic blue skin with anatomically wrapped darker striping, subtle bioluminescent freckles, slightly enlarged amber cat-like eyes with natural catchlights, and elongated pointed ears, all blended cleanly without altering the background, wardrobe, or adding artifacts or mature/unsafe content.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
