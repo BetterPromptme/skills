@@ -1,7 +1,24 @@
 ---
 name: the-playful-minimalist-mirror-selfie
 description: This prompt instructs an image-generation/editing model to produce a high-resolution, photorealistic vertical mirror selfie of a young woman in a bright, minimalist indoor setting, using an uploaded reference image as the only source for an unchanged, identical face. It specifies exact framing, pose, playful expression, outfit and accessories, lighting, color palette, and realism constraints so the final result looks like a natural smartphone mirror selfie with accurate reflections, clean composition, and no beautification or stylistic distortion.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
