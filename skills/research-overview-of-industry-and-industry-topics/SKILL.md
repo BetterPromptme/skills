@@ -1,7 +1,24 @@
 ---
 name: research-overview-of-industry-and-industry-topics
 description: This prompt instructs the AI to act as an experienced semantic SEO and topical authority strategist for a specified brand and industry, then build a comprehensive, four-level topical map centered on a given seed keyword. The outcome is a structured content-planning framework with at least 10 subcategories and a minimum of 8 uniquely assigned, nested related keywords per subcategory, tailored to the target audience and market to guide systematic content creation without topic duplication.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
