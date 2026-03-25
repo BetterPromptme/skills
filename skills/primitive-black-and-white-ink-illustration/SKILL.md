@@ -1,7 +1,24 @@
 ---
 name: primitive-black-and-white-ink-illustration
 description: This prompt instructs an AI to generate a minimalist, high-contrast black-and-white ink illustration of a user-specified subject, mimicking the rough, handmade look of block printing or linocut. The result is a bold, primitive, symbolic image on a plain paper-like background, using thick imperfect lines, simple iconic shapes, and intentional negative space, with no color, shading, or modern digital effects.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
