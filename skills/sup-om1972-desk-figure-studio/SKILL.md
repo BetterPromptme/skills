@@ -1,7 +1,24 @@
 ---
 name: sup-om1972-desk-figure-studio
 description: This prompt instructs an AI image generator to create a realistic product-style scene featuring a 1/7 scale commercial figure modeled after the user’s uploaded photo, placed on a computer desk atop a clear circular acrylic base labeled “SUP OM1972.” It specifies that the figure must wear a Superman-inspired costume while preserving the user’s exact facial likeness, and that the environment should include an iMac displaying the figure’s Blender modeling process plus a nearby Superman-themed toy packaging box with original artwork, resulting in a cohesive commercialized collectible presentation.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
