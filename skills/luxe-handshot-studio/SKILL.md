@@ -1,7 +1,24 @@
 ---
 name: luxe-handshot-studio
 description: This prompt instructs an image-generation workflow to produce a hyper-realistic, ultra-high-resolution studio photograph of a single luxury product held in a woman’s hand, using controlled professional lighting and a clean, specified background color. It guides composition, camera/look fidelity, and texture-rendering priorities while enforcing constraints such as minimal props, realistic proportions, non-branded presentation, and tasteful, non-suggestive imagery. The outcome is a polished, advertising-ready product shot tailored to designers and marketers, with adjustable product type, lighting intensity, and backdrop tone.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
