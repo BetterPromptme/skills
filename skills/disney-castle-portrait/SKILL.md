@@ -1,7 +1,24 @@
 ---
 name: disney-castle-portrait
 description: This prompt instructs the AI to use a provided photo of the user as a likeness reference and generate a high-resolution, photorealistic, Disney-inspired travel portrait of them seated confidently on a stone ledge in front of a Cinderella-like fairytale castle. It specifies configurable details such as outfit and hand gesture, along with default composition, lighting, mood, accessories, and framing requirements. The expected outcome is a bright, cinematic, social-media-ready vacation-style image that preserves the subject’s recognizable features while placing them in the themed landmark setting.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
