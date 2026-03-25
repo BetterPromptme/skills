@@ -1,7 +1,24 @@
 ---
 name: soft-minimal-3d-retexture
 description: This prompt instructs an image-editing model to retexture the attached image’s main object into a soft, minimal isometric 3D “plastic” look while locking the original silhouette and using geometry-aware mapping to simplify fine details into clean, blocky forms. It specifies matte plastic surfaces with satin metallic edge trim and a semi-reflective black screen, subtle gradients, rounded bevels, and diffused low-intensity highlights with minimal soft shadows. It also directs a smooth pastel blue-to-cream gradient background with no added elements, a high-resolution render with slight bloom and no depth blur, and a cool grey/steel blue/charcoal palette with light lavender and pastel yellow accents.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
