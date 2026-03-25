@@ -1,7 +1,24 @@
 ---
 name: mini-keychain-from-emoji
 description: This prompt instructs the AI to generate a square, studio-style close-up image of a cute handcrafted plush keychain character based on the provided text or emojis, held between two fingers and attached to a shiny silver keyring, with soft natural lighting, shallow depth of field, a neutral beige background, and highly detailed fuzzy or felt textures with simple embroidered facial features.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
