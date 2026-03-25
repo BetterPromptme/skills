@@ -1,7 +1,24 @@
 ---
 name: object-eraser
 description: This prompt instructs an AI photo-editing assistant to remove a user-specified unwanted object from an uploaded image and convincingly inpaint the missing area so the background continues naturally. It emphasizes preserving everything else in the photo—especially the main subject—while matching lighting, shadows, texture, and perspective to avoid visible artifacts. The outcome is a clean, realistic image where the removed item leaves no trace and the scene looks unchanged apart from that deletion.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
