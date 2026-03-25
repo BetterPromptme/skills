@@ -1,7 +1,24 @@
 ---
 name: designer-layout-blueprint-generator
 description: This prompt instructs an AI, acting as a professional layout designer, to take supplied campaign inputs (message, audience, format size, and visual tone) and produce a dimensionally accurate blueprint-style mockup image for the specified surface, showing placeholder regions for key elements (headline, supporting text, imagery, logo/CTA) along with measured margins, spacing, safe zones, and alignment grids; the outcome is a ready-to-follow annotated layout image plus a brief rationale explaining why the arrangement suits the intended audience and format.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
