@@ -1,7 +1,24 @@
 ---
 name: golden-diagonal-quiet-classroom
 description: This prompt directs an image model to generate a campaign-ready, cinematic portrait set in a vintage classroom while strictly preserving the subject’s exact facial identity from a supplied, clear front-facing reference photo. It enforces a locked warm “Classic Chrome” film look with specific lighting (a diagonal golden window key), fixed composition and props, uniform sharpness with analog grain, and a tightly constrained color palette, producing either a male or female wardrobe variant; if the reference image is insufficient for reliable face locking, it halts and requests a clearer photo.
-compatibility: Requires betterprompt >= 0.1.0
+compatibility: Requires betterprompt >= 0.1.3
+metadata:
+  openclaw:
+    homepage: https://github.com/BetterPromptme/skills
+    emoji: 🧩
+    requires:
+      anyBins:
+        - betterprompt
+        - bp
+    os:
+      - linux
+      - darwin
+    install:
+      - id: node
+        kind: node
+        package: betterprompt
+        bins: [betterprompt, bp]
+        label: Install BetterPrompt CLI (node)
 ---
 
 ## What it does
