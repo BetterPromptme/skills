@@ -49,8 +49,8 @@ This prompt requires **exactly 2 images**. You **must pass exactly 2 image flags
 
 | Index | Required | Description | Allowed CLI flags |
 | ---: | ---: | --- | --- |
-| 1 | Yes | The photo of you | `--image-input-url <url>` or `--image-input-base64 <base64>` or `--image-input-path <absolute path to image>` |
-| 2 | Yes | The photo of your crush/friend/anyone you want | `--image-input-url <url>` or `--image-input-base64 <base64>` or `--image-input-path <absolute path to image>` |
+| 1 | Yes | The photo of you | `--image-input-url <url>` or `--image-input-path <path>` |
+| 2 | Yes | The photo of your crush/friend/anyone you want | `--image-input-url <url>` or `--image-input-path <path>` |
 
 
 ### Models and options
@@ -102,8 +102,7 @@ Command form:
 betterprompt generate couple-peanut-wallpaper \
   [--input <key>=<value>] \
   [--image-input-url <url>] \
-  [--image-input-base64 <base64>] \
-  [--image-input-path <absolute path to image>] \
+  [--image-input-path <path>] \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -112,7 +111,7 @@ betterprompt generate couple-peanut-wallpaper \
 Notes:
 
 - Pass each text input as a separate `--input <key>=<value>` flag.
-- Pass each image using one of `--image-input-url`, `--image-input-base64`, or `--image-input-path`, in the order matching the imageInputs descriptions (image 1 first, then image 2, etc.).
+- Pass each image using `--image-input-url` or `--image-input-path`, in the order matching the imageInputs descriptions (image 1 first, then image 2, etc.).
 - If the human does **not** mention a model, **omit** `--model` and BetterPrompt will use the default model: **`gemini-2.5-flash-image-preview`**.
 - If the human does **not** mention options, **omit** `--options` and BetterPrompt will use the default options: **`{}`**.
 - If the run times out, the response will include a `runId` you can use to fetch the result later.
