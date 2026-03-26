@@ -52,7 +52,7 @@ betterprompt skill info <skill-slug>
 
 ## Output Generation
 
-A skill is essentially a prompt with instructions. Run the following command to generate output::
+A skill is essentially a prompt with instructions. Run the following command to generate output:
 
 ```sh
 betterprompt generate <skill-slug> [input flags] [--model <model>] [--options <json>] [--json]
@@ -113,11 +113,15 @@ Output types:
 ## Skill Management
 
 ```sh
-betterprompt skill install <skill-slug>
-betterprompt skill uninstall <skill-slug>
+betterprompt skill install <skill-slug> --agent <name>
+betterprompt skill uninstall <skill-slug> --agent <name>
 betterprompt skill list
 betterprompt skill update <skill-slug>
 ```
+
+The `--agent` flag specifies which agent to install/uninstall the skill into. Use your own agent name if you know it (e.g., `--agent openclaw` for OpenClaw, `--agent claude` for Claude). If you don't know which agent you are, ask the human. Install supports multiple agents (`--agent claude --agent cursor`). Uninstall accepts one agent or `--agent "*"` to remove from all.
+
+Supported agents: `agents`, `openclaw`, `cursor`, `claude`, `windsurf`, `antigravity`.
 
 ## Global Flags
 
