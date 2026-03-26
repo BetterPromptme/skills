@@ -109,8 +109,7 @@ betterprompt generate {{{name}}} \
 {{/if}}
 {{#if hasImages}}
   [--image-input-url <url>] \
-  [--image-input-base64 <base64>] \
-  [--image-input-path <absolute path to image>] \
+  [--image-input-path <path>] \
 {{/if}}
   [--model <model>] \
   [--options <options JSON>] \
@@ -122,9 +121,9 @@ Notes:
 {{#if hasTextInputs}}
 - Pass each text input as a separate `--input <key>=<value>` flag.
 {{/if}}
-  {{#if hasImages}}
-- Pass each image using one of `--image-input-url`, `--image-input-base64`, or `--image-input-path`, in the order matching the imageInputs descriptions (image 1 first, then image 2, etc.).
-  {{/if}}
+{{#if hasImages}}
+- Pass each image using `--image-input-url` or `--image-input-path`, in the order matching the imageInputs descriptions (image 1 first, then image 2, etc.).
+{{/if}}
 - If the human does **not** mention a model, **omit** `--model` and BetterPrompt will use the default model: **`{{{defaultModel}}}`**.
 - If the human does **not** mention options, **omit** `--options` and BetterPrompt will use the default options: **`{{{defaultOptionsJson}}}`**.
 - If the run times out, the response will include a `runId` you can use to fetch the result later.
