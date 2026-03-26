@@ -78,7 +78,7 @@ export function buildImageInputsTable(
   const header = "| Index | Required | Description | Allowed CLI flags |";
   const separator = "| ---: | ---: | --- | --- |";
   const cliFlags =
-    "`--image-input-url <url>` or `--image-input-base64 <base64>` or `--image-input-path <absolute path to image>`";
+    "`--image-input-url <url>` or `--image-input-path <path>`";
   const rows = images.map((img, i) => {
     return `| ${i + 1} | Yes | ${escapeTableCell(img.description ?? "")} | ${cliFlags} |`;
   });

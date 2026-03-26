@@ -170,7 +170,7 @@ describe("buildImageInputsTable", () => {
     expect(lines[2]).toContain("Yes");
     expect(lines[2]).toContain("Char");
     expect(lines[2]).toContain("--image-input-url");
-    expect(lines[2]).toContain("--image-input-base64");
+    expect(lines[2]).not.toContain("--image-input-base64");
     expect(lines[2]).toContain("--image-input-path");
     // Image 2
     expect(lines[3]).toContain("| 2 |");
