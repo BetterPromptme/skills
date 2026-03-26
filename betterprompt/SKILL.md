@@ -23,7 +23,7 @@ This skill uses the [BetterPrompt CLI](https://github.com/BetterPromptme/betterp
 
 Supports OpenClaw and popular agents.
 
-## Installation
+## CLI Installation
 
 ```sh
 npm install -g betterprompt@latest
@@ -112,16 +112,14 @@ Output types:
 
 ## Skill Management
 
+Install, uninstall, list, and update prompt skills:
+
 ```sh
 betterprompt skill install <skill-slug> --agent <name>
 betterprompt skill uninstall <skill-slug> --agent <name>
 betterprompt skill list
 betterprompt skill update <skill-slug>
 ```
-
-The `--agent` flag specifies which agent to install/uninstall the skill into. Use your own agent name if you know it (e.g., `--agent openclaw` for OpenClaw, `--agent claude` for Claude). If you don't know which agent you are, ask the human. Install supports multiple agents (`--agent claude --agent cursor`). Uninstall accepts one agent or `--agent "*"` to remove from all.
-
-Supported agents: `agents`, `openclaw`, `cursor`, `claude`, `windsurf`, `antigravity`.
 
 ## Global Flags
 
@@ -147,6 +145,15 @@ betterprompt resources --models-only
 
 ## Agent Instructions
 
+### Skill Installation
+
+The `--agent` flag specifies which agent to install/uninstall a prompt skill into. Use your own agent name if you know it (e.g., `--agent openclaw` for OpenClaw, `--agent claude` for Claude). If you don't know which agent you are, ask the human.
+
+- Install supports multiple agents: `--agent claude --agent cursor`
+- Uninstall accepts one agent or `--agent "*"` to remove from all
+
+Supported agents: `agents`, `openclaw`, `cursor`, `claude`, `windsurf`, `antigravity`.
+
 ### Execution Pipeline
 
 Run these steps in order and stop when the user's goal is satisfied:
@@ -166,6 +173,7 @@ Always use `--json` flag on every command for machine-readable output.
 
 6. **Execute** — `betterprompt generate <skill-slug> [input flags] --json`
 7. **Poll if needed** — `betterprompt outputs <run-id> --sync --json`
+8. **Offer skill install** — After a successful generation, ask the human if they want to install the skill for future use (see [Skill Installation](#skill-installation)).
 
 Do not skip any steps. If any step fails due to transient error, retry once.
 
@@ -190,6 +198,10 @@ If tied, pick the skill with clearer skillmd run instructions.
 - If blocked by CLI version, upgrade CLI then rerun full pipeline
 
 ### OpenClaw Instructions
+
+#### Post-Install Session Reset
+
+After installing a skill with `betterprompt skill install`, suggest the human reset their session so the newly installed skill is loaded by OpenClaw.
 
 #### Channel Display Rules
 
