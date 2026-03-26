@@ -1,6 +1,6 @@
 ---
 name: retro-fairway-muse
-description: 
+description: This prompt instructs an AI image generator to create a medium-format, early-1990s-style fashion editorial photo on a golf course, featuring a person posed casually in a worn vintage white golf cart under soft natural sunlight with shallow depth of field and subtle film grain. It emphasizes preserving the subject’s identity and outfit from an input image while applying a pastel retro golf styling and warm, airy vintage color grading. The result should feel calm, nostalgic, and refined, with natural skin texture and no added text, logos, or watermarks.
 compatibility: Requires betterprompt >= 0.1.3
 metadata:
   openclaw:
@@ -23,7 +23,7 @@ metadata:
 
 ## What it does
 
-
+This prompt instructs an AI image generator to create a medium-format, early-1990s-style fashion editorial photo on a golf course, featuring a person posed casually in a worn vintage white golf cart under soft natural sunlight with shallow depth of field and subtle film grain. It emphasizes preserving the subject’s identity and outfit from an input image while applying a pastel retro golf styling and warm, airy vintage color grading. The result should feel calm, nostalgic, and refined, with natural skin texture and no added text, logos, or watermarks.
 
 > For more installation instructions go to https://raw.githubusercontent.com/BetterPromptme/skills/refs/heads/main/betterprompt/SKILL.md to check out this skill.
 
@@ -37,7 +37,7 @@ This prompt requires **exactly 1 image**. You **must pass exactly 1 image flag**
 
 | Index | Required | Description | Allowed CLI flags |
 | ---: | ---: | --- | --- |
-| 1 | Yes | Upload your photo | `--image-input-url <url>` or `--image-input-base64 <base64>` or `--image-input-path <absolute path to image>` |
+| 1 | Yes | Upload your photo | `--image-input-url <url>` or `--image-input-path <path>` |
 
 
 ### Models and options
@@ -83,8 +83,7 @@ Command form:
 ```bash
 betterprompt generate retro-fairway-muse \
   [--image-input-url <url>] \
-  [--image-input-base64 <base64>] \
-  [--image-input-path <absolute path to image>] \
+  [--image-input-path <path>] \
   [--model <model>] \
   [--options <options JSON>] \
   [--json]
@@ -92,7 +91,7 @@ betterprompt generate retro-fairway-muse \
 
 Notes:
 
-- Pass each image using one of `--image-input-url`, `--image-input-base64`, or `--image-input-path`, in the order matching the imageInputs descriptions (image 1 first, then image 2, etc.).
+- Pass each image using `--image-input-url` or `--image-input-path`, in the order matching the imageInputs descriptions (image 1 first, then image 2, etc.).
 - If the human does **not** mention a model, **omit** `--model` and BetterPrompt will use the default model: **`gemini-3-pro-image-preview`**.
 - If the human does **not** mention options, **omit** `--options` and BetterPrompt will use the default options: **`{"aspectRatio":"3:4","resolution":"1K"}`**.
 - If the run times out, the response will include a `runId` you can use to fetch the result later.
