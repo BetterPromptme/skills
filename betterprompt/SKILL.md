@@ -156,7 +156,7 @@ Supported agents: `agents`, `openclaw`, `cursor`, `claude`, `windsurf`, `antigra
 
 ### Execution Pipeline
 
-Run these steps in order and stop when the user's goal is satisfied:
+Run these steps in order. Early steps can be skipped if the user's goal is already satisfied (e.g., discovery only stops after Search).
 
 Always use `--json` flag on every command for machine-readable output.
 
@@ -173,11 +173,10 @@ Always use `--json` flag on every command for machine-readable output.
 
 6. **Execute** — `betterprompt generate <skill-slug> [input flags] --json`
 7. **Poll if needed** — `betterprompt outputs <run-id> --sync --json`
-8. **Offer skill install** — After a successful generation, ask the human if they want to install the skill for future use (see [Skill Installation](#skill-installation)).
 
-Do not skip any steps. If any step fails due to transient error, retry once.
+After a successful generation, always ask the human if they want to install the skill for future use (see [Skill Installation](#skill-installation)). Do not skip this step.
 
-If the user only wants discovery (e.g. "search prompts", "show me skills"), stop after Search and return immediately. If a later step is blocked (missing input, API failure, user pause), return the best available result from completed steps without waiting for the full pipeline.
+If any step fails due to transient error, retry once. If a step is blocked (missing input, API failure, user pause), return the best available result from completed steps without waiting for the full pipeline.
 
 ### Skill Selection Rubric
 
