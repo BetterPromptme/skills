@@ -23,7 +23,7 @@ This skill uses the [BetterPrompt CLI](https://github.com/BetterPromptme/betterp
 
 Supports OpenClaw and popular agents.
 
-## Installation
+## CLI Installation
 
 ```sh
 npm install -g betterprompt@latest
@@ -52,7 +52,7 @@ betterprompt skill info <skill-slug>
 
 ## Output Generation
 
-A skill is essentially a prompt with instructions. Run the following command to generate output::
+A skill is essentially a prompt with instructions. Run the following command to generate output:
 
 ```sh
 betterprompt generate <skill-slug> [input flags] [--model <model>] [--options <json>] [--json]
@@ -112,9 +112,11 @@ Output types:
 
 ## Skill Management
 
+Install, uninstall, list, and update prompt skills:
+
 ```sh
-betterprompt skill install <skill-slug>
-betterprompt skill uninstall <skill-slug>
+betterprompt skill install <skill-slug> --agent <name>
+betterprompt skill uninstall <skill-slug> --agent <name>
 betterprompt skill list
 betterprompt skill update <skill-slug>
 ```
@@ -143,9 +145,18 @@ betterprompt resources --models-only
 
 ## Agent Instructions
 
+### Skill Installation
+
+The `--agent` flag specifies which agent to install/uninstall a prompt skill into. Use your own agent name if you know it (e.g., `--agent openclaw` for OpenClaw, `--agent claude` for Claude). If you don't know which agent you are, ask the human.
+
+- Install supports multiple agents: `--agent claude --agent cursor`
+- Uninstall accepts one agent or `--agent "*"` to remove from all
+
+Supported agents: `agents`, `openclaw`, `cursor`, `claude`, `windsurf`, `antigravity`.
+
 ### Execution Pipeline
 
-Run these steps in order and stop when the user's goal is satisfied:
+Run these steps in order. Early steps can be skipped if the user's goal is already satisfied (e.g., discovery only stops after Search).
 
 Always use `--json` flag on every command for machine-readable output.
 
@@ -163,9 +174,9 @@ Always use `--json` flag on every command for machine-readable output.
 6. **Execute** — `betterprompt generate <skill-slug> [input flags] --json`
 7. **Poll if needed** — `betterprompt outputs <run-id> --sync --json`
 
-Do not skip any steps. If any step fails due to transient error, retry once.
+After a successful generation, always ask the human if they want to install the skill for future use (see [Skill Installation](#skill-installation)). Do not skip this step.
 
-If the user only wants discovery (e.g. "search prompts", "show me skills"), stop after Search and return immediately. If a later step is blocked (missing input, API failure, user pause), return the best available result from completed steps without waiting for the full pipeline.
+If any step fails due to transient error, retry once. If a step is blocked (missing input, API failure, user pause), return the best available result from completed steps without waiting for the full pipeline.
 
 ### Skill Selection Rubric
 
@@ -186,6 +197,10 @@ If tied, pick the skill with clearer skillmd run instructions.
 - If blocked by CLI version, upgrade CLI then rerun full pipeline
 
 ### OpenClaw Instructions
+
+#### Post-Install Session Reset
+
+After installing a skill with `betterprompt skill install`, suggest the human reset their session so the newly installed skill is loaded by OpenClaw.
 
 #### Channel Display Rules
 
